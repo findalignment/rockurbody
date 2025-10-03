@@ -1,16 +1,41 @@
-# React + Vite
+# Rock Your Body
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movement education and structural integration website with AI-powered conversational navigation.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🤖 AI-powered chat interface using OpenAI
+- 💬 Floating speech bubbles over hero image
+- 📱 Fully responsive design
+- ✨ Smooth animations and transitions
+- 🎨 Professional design system inspired by Apple and Square
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React + Vite
+- **Styling:** Tailwind CSS
+- **AI:** OpenAI GPT-4o-mini
+- **Deployment:** Vercel (coming soon)
+- **Version Control:** Git + GitHub
 
-## Expanding the ESLint configuration
+## Design System
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Colors:**
+- Primary: Deep Blue (#1e3a8a)
+- Secondary: Coral Orange (#fb923c)
+- Accent: Bright Cyan (#06b6d4)
+
+**Typography:**
+- Headings: Playfair Display
+- Body: Source Sans Pro
+
+## Local Development
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
