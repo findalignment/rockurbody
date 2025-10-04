@@ -1,11 +1,14 @@
+import Header from './Header';
+import Footer from './Footer';
+
 function PageLayout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
-      <div>Header goes here</div>
+      <Header />
       <main className="flex-1">
         {children}
       </main>
-      <div>Footer goes here</div>
+      <Footer />
     </div>
   );
 }

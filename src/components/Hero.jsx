@@ -1,6 +1,10 @@
+import Header from './Header';
+import Footer from './Footer';
+
 function Hero({ children, backgroundImage = '/hero-background.jpg' }) {
   return (
     <div className="relative min-h-screen flex flex-col">
+      <Header />
       {/* Background Image Section */}
       <div className="relative flex-1 flex flex-col min-h-screen">
         {/* Background Image with Overlay */}
@@ -24,6 +28,7 @@ function Hero({ children, backgroundImage = '/hero-background.jpg' }) {
           {children}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

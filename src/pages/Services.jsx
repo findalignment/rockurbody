@@ -17,20 +17,81 @@ function Services() {
             {/* Service 1 */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <h2 className="text-3xl font-heading text-neutralDark mb-4">
-                Structural Integration Sessions
+                Structural Integration
               </h2>
-              <p className="text-lg text-neutralDark/80 mb-4">
-                Hands-on fascial release to address restrictions in your connective tissue. This systematic approach reorganizes your body's structure, improving alignment and ease of movement.
+              <p className="text-lg text-neutralDark/80 mb-6">
+                Structural Integration is precise hands-on work that helps your body's connective tissue (fascia) glide and coordinate better. I pair it with simple movement cues so changes "stick" when you stand, walk, lift, and live.
               </p>
-              <div className="space-y-2 text-neutralDark/80">
-                <p><strong>What to expect:</strong></p>
-                <ul className="space-y-1 ml-6">
-                  <li>• 90-minute sessions</li>
-                  <li>• Assessment of your movement patterns and structure</li>
-                  <li>• Hands-on work to release fascial restrictions</li>
-                  <li>• Movement integration to retrain patterns</li>
-                  <li>• Between-session exercises and awareness practices</li>
-                </ul>
+              
+              <div className="bg-accent/10 border border-accent/20 rounded-lg p-6 mb-6">
+                <p className="text-lg font-semibold text-neutralDark mb-2">
+                  Hands-on fascia work + movement education to realign how you move so life feels easier
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Why People Book This</h3>
+                  <ul className="space-y-2 text-neutralDark/80">
+                    <li>• Relief from nagging tension and "stuck" spots</li>
+                    <li>• Better posture and easier breathing</li>
+                    <li>• Stronger, smoother movement in daily life and training</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">How It Works</h3>
+                  <div className="space-y-3 text-neutralDark/80">
+                    <div>
+                      <strong>Assess & map</strong> – We look at how you stand, walk, and breathe to find the bottlenecks.
+                    </div>
+                    <div>
+                      <strong>Hands-on + cueing</strong> – Targeted work to free tissue + movements that teach your body a better option.
+                    </div>
+                    <div>
+                      <strong>Reinforce</strong> – Leave with 1–2 micro-practices tailored to your patterns.
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">What to Expect</h3>
+                  <ul className="space-y-2 text-neutralDark/80">
+                    <li>• Wear comfy clothing</li>
+                    <li>• No oils</li>
+                    <li>• We'll get you up and moving during the session</li>
+                    <li>• You may feel lighter or a bit worked. This is normal and temporary</li>
+                    <li>• Typical session lengths: 60 / 90 / 120 minutes</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">What's Realistic</h3>
+                  <ul className="space-y-2 text-neutralDark/80">
+                    <li>• Many feel a meaningful shift in 1–3 sessions</li>
+                    <li>• Lasting change usually needs 6–12 sessions with light homework</li>
+                    <li>• Not a quick fix. It's change that holds because your movement changes</li>
+                    <li>• I'll tell you if I'm not the right fit and refer out</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Smart Ways to Start</h3>
+                  <div className="space-y-3">
+                    <div className="bg-neutralLight/50 p-4 rounded-lg">
+                      <p className="font-semibold text-neutralDark mb-1">The Reset (3 weeks)</p>
+                      <p className="text-neutralDark/80 text-sm">SI + movement to clear the biggest roadblocks.</p>
+                    </div>
+                    <div className="bg-neutralLight/50 p-4 rounded-lg">
+                      <p className="font-semibold text-neutralDark mb-1">The Hip Series</p>
+                      <p className="text-neutralDark/80 text-sm">Unstick hips/low back and restore stride.</p>
+                    </div>
+                    <div className="bg-neutralLight/50 p-4 rounded-lg">
+                      <p className="font-semibold text-neutralDark mb-1">Full Repatterning (12 weeks)</p>
+                      <p className="text-neutralDark/80 text-sm">Complete SI series + movement habit change.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             

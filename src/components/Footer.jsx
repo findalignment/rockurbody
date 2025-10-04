@@ -25,6 +25,9 @@ function Footer() {
               <Link to="/services" className="block text-white/70 hover:text-white transition">
                 Services
               </Link>
+              <Link to="/training-lineage" className="block text-white/70 hover:text-white transition">
+                Training & Lineage
+              </Link>
               <Link to="/pricing" className="block text-white/70 hover:text-white transition">
                 Pricing
               </Link>
@@ -54,6 +57,15 @@ function Footer() {
         
         <div className="border-t border-white/10 mt-8 pt-8 text-center text-white/50 text-sm">
           <p>&copy; {new Date().getFullYear()} Rock Your Body. All rights reserved.</p>
+          <div className="mt-2 space-x-4">
+            <Link to="/privacy-policy" className="text-white/50 hover:text-white transition">
+              Privacy Policy
+            </Link>
+            <span className="text-white/30">•</span>
+            <Link to="/refund-policy" className="text-white/50 hover:text-white transition">
+              Refund Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

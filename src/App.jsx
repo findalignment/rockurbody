@@ -18,6 +18,9 @@ import TwelveSeries from './pages/12-Series';
 import HipSeries from './pages/Hip-Series';
 import Approach from './pages/Approach';
 import Credentials from './pages/Credentials';
+import TrainingLineage from './pages/TrainingLineage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
 
 function App() {
   return (
@@ -33,6 +36,9 @@ function App() {
         <Route path="/hip-series" element={<HipSeries />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/credentials" element={<Credentials />} />
+        <Route path="/training-lineage" element={<TrainingLineage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/book" element={<Book />} />
         <Route path="/book/consult" element={<BookConsult />} />
         <Route path="/book/move30" element={<BookMove30 />} />

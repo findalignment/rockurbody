@@ -28,7 +28,7 @@ function LandingPage() {
     setIsLoading(true);
 
     const detectedPage = detectIntent(userMessage);
-    const aiResponse = await sendMessageToAI(userMessage, conversation);
+    const aiResponse = await sendMessageToAI(userMessage, conversation, detectedPage);
     
     const newAIMessage = {
       id: Date.now() + 1,
@@ -125,7 +125,7 @@ function LandingPage() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
-                placeholder="What is structural integration? • How much do sessions cost? • How do I book?"
+                placeholder="Hi, I'm Rock. What question can I answer for you today?"
                 disabled={isLoading}
                 className="flex-1 px-5 py-4 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-accent text-neutralDark placeholder:text-neutralDark/50 disabled:bg-neutralLight disabled:cursor-not-allowed text-sm md:text-base"
               />
