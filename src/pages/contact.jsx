@@ -15,7 +15,7 @@ function Contact() {
                   Location
                 </h3>
                 <p className="text-neutralDark/80">
-                  Monterey, California
+                  Santa Cruz, California
                 </p>
               </div>
               
@@ -25,8 +25,8 @@ function Contact() {
                 </h3>
                 <p className="text-neutralDark/80">
                   By appointment only<br />
-                  Monday - Friday: 9am - 6pm<br />
-                  Saturday: 10am - 2pm
+                  Monday - Friday: 6am - 8pm<br />
+                  Saturday & Sunday: 8am - 5pm
                 </p>
               </div>
               

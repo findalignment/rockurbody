@@ -8,11 +8,14 @@ function Header() {
   const isHomePage = location.pathname === '/';
   
   const navLinks = [
-    { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Pricing', path: '/pricing' },
-    { name: 'Contact', path: '/contact' },
-  ];
+  { name: 'About', path: '/about' },
+  { name: 'Services', path: '/services' },
+  { name: 'Packages', path: '/packages' },
+  { name: 'Pricing', path: '/pricing' },
+  { name: 'Contact', path: '/contact' },
+];
+
+// OR create a dropdown for "Learn More"
   
   return (
     <header className={`w-full ${isHomePage ? 'absolute top-0 left-0 right-0 z-50' : 'bg-white shadow-sm'}`}>
@@ -39,7 +42,7 @@ function Header() {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/book"
               className="px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
             >
               Book Now
@@ -77,7 +80,7 @@ function Header() {
               </Link>
             ))}
             <Link
-              to="/contact"
+              to="/book"
               onClick={() => setMobileMenuOpen(false)}
               className="block w-full text-center px-6 py-2 bg-accent text-white rounded-lg font-semibold"
             >
