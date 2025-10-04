@@ -96,6 +96,17 @@ It’s a great intro to the 12-series
 Best for: Hip pain, limited mobility, groin issues, hip-related back pain
 See /hip-series for full details
 
+BLOG POSTS:
+Rock has written detailed blog posts that explain his approach. Reference these when relevant:
+
+**"Why Training with Rock is Different: The Power of Integrating Structure and Movement"**
+URL: /blog/integrating-structure-and-movement
+- Explains how Rock combines Structural Integration and Movement Education
+- Discusses the 12-session progressive protocol based on Anatomy Trains
+- Covers why movement education is the "missing link" that makes changes last
+- Details real results clients experience
+- Perfect for people who've tried everything but still feel something is missing
+
 PHILOSOPHY & APPROACH:
 - The body is a system - pain in one area often comes from somewhere else
 - Structure influences function - reorganize structure for better movement
@@ -368,6 +379,25 @@ if (message.includes('approach') || message.includes('philosophy') || message.in
 if (message.includes('credential') || message.includes('certification') || message.includes('training') ||
     message.includes('qualified') || message.includes('education')) {
   return '/credentials';
+}
+
+// Blog posts
+if (message.includes('blog') || message.includes('article') || message.includes('read more')) {
+  return '/blog';
+}
+
+// Specific blog post about Rock's approach
+if ((message.includes('different') || message.includes('unique') || message.includes('special')) &&
+    (message.includes('approach') || message.includes('method') || message.includes('training'))) {
+  return '/blog/integrating-structure-and-movement';
+}
+
+// Integration of structure and movement
+if ((message.includes('structure') && message.includes('movement')) ||
+    message.includes('integrated approach') || 
+    message.includes('whole body') ||
+    (message.includes('tried everything') && (message.includes('pain') || message.includes('help')))) {
+  return '/blog/integrating-structure-and-movement';
 }
   
   // No clear intent detected

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-// import { useAuth } from '../contexts/AuthContext';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 import stripePromise from '../config/stripe';
-// import { SessionService } from '../services/sessionService';
 
 function PaymentButton({ 
   amount, 
@@ -14,12 +14,14 @@ function PaymentButton({
   children 
 }) {
   const [loading, setLoading] = useState(false);
-  // const { currentUser } = useAuth();
-  const currentUser = null; // Temporarily disable auth
+  const { currentUser } = useAuth();
+  const navigate = useNavigate();
 
   const handlePayment = async () => {
     if (!currentUser) {
-      alert('Please sign in to purchase sessions');
+      if (window.confirm('You need to sign in to purchase sessions. Would you like to sign in now?')) {
+        navigate('/auth/login');
+      }
       return;
     }
 

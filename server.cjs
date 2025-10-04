@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const cors = require('cors');
@@ -135,11 +136,38 @@ app.post('/api/cal-webhook', express.json(), async (req, res) => {
   }
 });
 
-// Serve React app for all other routes
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+// Get user's session packages
+app.get('/api/user-packages/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    
+    const records = await airtable('Session Packages')
+      .select({
+        filterByFormula: `{User ID} = '${userId}'`,
+        sort: [{ field: 'Purchase Date', direction: 'desc' }]
+      })
+      .all();
+    
+    const packages = records.map(record => ({
+      id: record.id,
+      packageName: record.get('Package Name'),
+      totalSessions: record.get('Total Sessions'),
+      sessionsUsed: record.get('Sessions Used') || 0,
+      sessionsRemaining: record.get('Sessions Remaining'),
+      purchaseDate: record.get('Purchase Date'),
+      status: record.get('Status'),
+      amount: record.get('Amount')
+    }));
+    
+    res.json({ packages });
+  } catch (error) {
+    console.error('Error fetching user packages:', error);
+    res.status(500).json({ error: 'Failed to fetch packages' });
+  }
 });
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+  console.log(`Stripe webhook endpoint: http://localhost:${PORT}/api/stripe-webhook`);
+  console.log(`Cal.com webhook endpoint: http://localhost:${PORT}/api/calcom-webhook`);
 });

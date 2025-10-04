@@ -12,7 +12,7 @@ function About() {
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <h2 className="text-3xl font-heading text-neutralDark mb-6">
-                Movement Education That Goes Deeper
+              Tired of chasing pain around your body?
               </h2>
               <p className="text-lg text-neutralDark/80 mb-4">
                 I help people move the way they were meant to. Not through endless reps or rigid protocols, but by addressing the fascial restrictions and movement patterns that hold you back.

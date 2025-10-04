@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './contexts/AuthContext';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -21,11 +22,17 @@ import BookMove120 from './pages/BookMove120';
 import BookSI60 from './pages/BookSI60';
 import BookSI90 from './pages/BookSI90';
 import BookSI120 from './pages/BookSI120';
+import BlogIndex from './pages/blog/BlogIndex';
+import IntegratingStructureAndMovement from './pages/blog/IntegratingStructureAndMovement';
+import Dashboard from './pages/Dashboard';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
-    <Router>
-      <Routes>
+    <AuthProvider>
+      <Router>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -50,8 +57,20 @@ function App() {
         <Route path="/book/si60" element={<BookSI60 />} />
         <Route path="/book/si90" element={<BookSI90 />} />
         <Route path="/book/si120" element={<BookSI120 />} />
+        
+        {/* Dashboard */}
+        <Route path="/dashboard" element={<Dashboard />} />
+        
+        {/* Auth Routes */}
+        <Route path="/auth/login" element={<Login />} />
+        <Route path="/auth/signup" element={<Signup />} />
+        
+        {/* Blog Routes - Not in navigation menu */}
+        <Route path="/blog" element={<BlogIndex />} />
+        <Route path="/blog/integrating-structure-and-movement" element={<IntegratingStructureAndMovement />} />
       </Routes>
     </Router>
+    </AuthProvider>
   );
 }
 

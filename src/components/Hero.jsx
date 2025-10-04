@@ -1,7 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 
-function Hero({ children, backgroundImage = '/hero-background.jpg' }) {
+function Hero({ children, backgroundImage = '/hero-raccoons.jpg' }) {
   return (
     <div className="relative min-h-screen flex flex-col">
       <Header />

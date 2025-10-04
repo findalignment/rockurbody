@@ -1,22 +1,24 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import { useAuth } from '../contexts/AuthContext';
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { currentUser } = useAuth();
   
   const isHomePage = location.pathname === '/';
   
   const navLinks = [
-  { name: 'About', path: '/about' },
-  { name: 'Services', path: '/services' },
-  { name: 'Packages', path: '/packages' },
-  { name: 'Pricing', path: '/pricing' },
-  { name: 'Training & Lineage', path: '/training-lineage' },
-  { name: 'Contact', path: '/contact' },
-];
-
-// OR create a dropdown for "Learn More"
+    { name: 'About', path: '/about' },
+    { name: 'Services', path: '/services' },
+    { name: 'Pricing', path: '/pricing' },
+  ];
+  
+  // Show different menu items based on auth state
+  const authLinks = currentUser 
+    ? [{ name: 'My Account', path: '/dashboard' }]
+    : [{ name: 'Sign In', path: '/auth/login' }];
   
   return (
     <header className={`w-full ${isHomePage ? 'absolute top-0 left-0 right-0 z-50' : 'bg-white shadow-sm'}`}>
@@ -42,16 +44,19 @@ function Header() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/dashboard"
-              className={`font-semibold transition-colors ${
-                isHomePage 
-                  ? 'text-white hover:text-white/80' 
-                  : 'text-neutralDark hover:text-accent'
-              }`}
-            >
-              My Account
-            </Link>
+            {authLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`font-semibold transition-colors ${
+                  isHomePage 
+                    ? 'text-white hover:text-white/80' 
+                    : 'text-neutralDark hover:text-accent'
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
             <Link
               to="/book"
               className="px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
@@ -90,15 +95,18 @@ function Header() {
                 {link.name}
               </Link>
             ))}
-            <Link
-              to="/dashboard"
-              onClick={() => setMobileMenuOpen(false)}
-              className={`block font-semibold ${
-                isHomePage ? 'text-white' : 'text-neutralDark'
-              }`}
-            >
-              My Account
-            </Link>
+            {authLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block font-semibold ${
+                  isHomePage ? 'text-white' : 'text-neutralDark'
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
             <Link
               to="/book"
               onClick={() => setMobileMenuOpen(false)}
