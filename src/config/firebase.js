@@ -31,7 +31,8 @@ try {
   console.log('Firebase initialized successfully');
 } catch (error) {
   console.error('Firebase initialization error:', error);
-  throw error;
+  // Don't throw - allow app to load without Firebase
+  console.warn('App will continue without Firebase authentication');
 }
 
 export { auth, db };
