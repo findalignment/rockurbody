@@ -11,7 +11,7 @@ function Footer() {
               Rock Your Body
             </h3>
             <p className="text-white/70">
-              Movement education and structural integration in Monterey, CA
+              Movement education and structural integration in Santa Cruz, CA
             </p>
           </div>
           
@@ -41,7 +41,7 @@ function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Get in Touch</h4>
             <p className="text-white/70 mb-2">
-              Monterey, California
+              Santa Cruz, California
             </p>
             <p className="text-white/70 mb-4">
               By appointment only

@@ -15,16 +15,14 @@ function TrainingLineage() {
           <div className="space-y-8">
             {/* Tom Myers */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="md:w-1/3">
-                  <div className="w-full h-48 bg-gradient-to-br from-accent/20 to-accent/10 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-accent/20 rounded-full mx-auto mb-3 flex items-center justify-center">
-                        <span className="text-2xl font-bold text-accent">TM</span>
-                      </div>
-                      <h3 className="text-xl font-heading text-neutralDark">Tom Myers</h3>
-                    </div>
-                  </div>
+              <div className="flex flex-col md:flex-row gap-6 md:items-center">
+                <div className="md:w-1/3 flex-shrink-0">
+                  <img 
+                    src="/tom-myers.jpg" 
+                    alt="Tom Myers" 
+                    className="w-full h-64 object-cover rounded-lg"
+                    style={{ border: '2px solid black' }}
+                  />
                 </div>
                 <div className="md:w-2/3">
                   <h2 className="text-2xl font-heading text-neutralDark mb-4">
@@ -47,16 +45,14 @@ function TrainingLineage() {
 
             {/* Sharon Wheeler */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="md:w-1/3">
-                  <div className="w-full h-48 bg-gradient-to-br from-green-100 to-green-50 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-green-200 rounded-full mx-auto mb-3 flex items-center justify-center">
-                        <span className="text-2xl font-bold text-green-700">SW</span>
-                      </div>
-                      <h3 className="text-xl font-heading text-neutralDark">Sharon Wheeler</h3>
-                    </div>
-                  </div>
+              <div className="flex flex-col md:flex-row gap-6 md:items-center">
+                <div className="md:w-1/3 flex-shrink-0">
+                  <img 
+                    src="/sharon-wheeler.jpg" 
+                    alt="Sharon Wheeler" 
+                    className="w-full h-64 object-cover rounded-lg"
+                    style={{ border: '2px solid black' }}
+                  />
                 </div>
                 <div className="md:w-2/3">
                   <h2 className="text-2xl font-heading text-neutralDark mb-4">
@@ -80,16 +76,14 @@ function TrainingLineage() {
 
             {/* Til Luchau */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="md:w-1/3">
-                  <div className="w-full h-48 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-blue-200 rounded-full mx-auto mb-3 flex items-center justify-center">
-                        <span className="text-2xl font-bold text-blue-700">TL</span>
-                      </div>
-                      <h3 className="text-xl font-heading text-neutralDark">Til Luchau</h3>
-                    </div>
-                  </div>
+              <div className="flex flex-col md:flex-row gap-6 md:items-center">
+                <div className="md:w-1/3 flex-shrink-0">
+                  <img 
+                    src="/til-luchau.jpg" 
+                    alt="Til Luchau" 
+                    className="w-full h-64 object-cover rounded-lg"
+                    style={{ border: '2px solid black' }}
+                  />
                 </div>
                 <div className="md:w-2/3">
                   <h2 className="text-2xl font-heading text-neutralDark mb-4">
@@ -112,16 +106,14 @@ function TrainingLineage() {
 
             {/* Wojtek Cackowski */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="md:w-1/3">
-                  <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-purple-50 rounded-lg flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-purple-200 rounded-full mx-auto mb-3 flex items-center justify-center">
-                        <span className="text-2xl font-bold text-purple-700">WC</span>
-                      </div>
-                      <h3 className="text-xl font-heading text-neutralDark">Wojtek Cackowski</h3>
-                    </div>
-                  </div>
+              <div className="flex flex-col md:flex-row gap-6 md:items-center">
+                <div className="md:w-1/3 flex-shrink-0">
+                  <img 
+                    src="/wojtek-cackowski.jpg" 
+                    alt="Wojtek Cackowski" 
+                    className="w-full h-64 object-cover rounded-lg"
+                    style={{ border: '2px solid black' }}
+                  />
                 </div>
                 <div className="md:w-2/3">
                   <h2 className="text-2xl font-heading text-neutralDark mb-4">

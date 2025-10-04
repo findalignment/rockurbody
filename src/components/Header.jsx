@@ -10,9 +10,9 @@ function Header() {
   const navLinks = [
   { name: 'About', path: '/about' },
   { name: 'Services', path: '/services' },
-  { name: 'Training & Lineage', path: '/training-lineage' },
   { name: 'Packages', path: '/packages' },
   { name: 'Pricing', path: '/pricing' },
+  { name: 'Training & Lineage', path: '/training-lineage' },
   { name: 'Contact', path: '/contact' },
 ];
 
@@ -28,7 +28,7 @@ function Header() {
           </Link>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -42,6 +42,16 @@ function Header() {
                 {link.name}
               </Link>
             ))}
+            <Link
+              to="/dashboard"
+              className={`font-semibold transition-colors ${
+                isHomePage 
+                  ? 'text-white hover:text-white/80' 
+                  : 'text-neutralDark hover:text-accent'
+              }`}
+            >
+              My Account
+            </Link>
             <Link
               to="/book"
               className="px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
@@ -80,6 +90,15 @@ function Header() {
                 {link.name}
               </Link>
             ))}
+            <Link
+              to="/dashboard"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block font-semibold ${
+                isHomePage ? 'text-white' : 'text-neutralDark'
+              }`}
+            >
+              My Account
+            </Link>
             <Link
               to="/book"
               onClick={() => setMobileMenuOpen(false)}

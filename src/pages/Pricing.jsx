@@ -1,4 +1,5 @@
 import PageLayout from '../components/PageLayout';
+import PaymentButton from '../components/PaymentButton';
 
 function Pricing() {
   return (
@@ -38,9 +39,18 @@ function Pricing() {
                     60min Movement
                   </h3>
                   <p className="text-3xl font-bold text-accent mb-4">$180</p>
-                  <p className="text-neutralDark/80">
+                  <p className="text-neutralDark/80 mb-4">
                     Extended movement session
                   </p>
+                  <PaymentButton
+                    amount={18000} // $180 in cents
+                    description="60-minute Movement Education Session"
+                    packageType="60min Movement"
+                    totalSessions={1}
+                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-center text-sm"
+                  >
+                    Book & Pay - $180
+                  </PaymentButton>
                 </div>
                 
                 <div className="bg-white rounded-2xl p-8 shadow-sm">

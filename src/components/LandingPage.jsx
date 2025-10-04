@@ -125,14 +125,14 @@ function LandingPage() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyPress={handleKeyPress}
-                placeholder="Hi, I'm Rock. What question can I answer for you today?"
+                placeholder="How can I help you?"
                 disabled={isLoading}
-                className="flex-1 px-5 py-4 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-accent text-neutralDark placeholder:text-neutralDark/50 disabled:bg-neutralLight disabled:cursor-not-allowed text-sm md:text-base"
+                className="flex-1 px-4 py-3 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-accent text-neutralDark placeholder:text-neutralDark/50 disabled:bg-neutralLight disabled:cursor-not-allowed text-sm md:text-base"
               />
               <button 
                 type="submit"
                 disabled={isLoading || !input.trim()}
-                className="px-6 py-4 bg-accent text-white rounded-xl font-semibold hover:bg-accent/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 whitespace-nowrap"
+                className="px-5 py-3 bg-accent text-white rounded-xl font-semibold hover:bg-accent/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 whitespace-nowrap text-sm md:text-base"
               >
                 {isLoading ? '...' : 'Send'}
               </button>

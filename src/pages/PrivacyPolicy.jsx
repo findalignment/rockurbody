@@ -147,7 +147,7 @@ function PrivacyPolicy() {
                   <strong>Email:</strong> <a href="mailto:rock@rockurbody.com" className="text-accent hover:underline">rock@rockurbody.com</a>
                 </p>
                 <p className="text-neutralDark/80">
-                  <strong>Location:</strong> Monterey, California
+                  <strong>Location:</strong> Santa Cruz, California
                 </p>
               </div>
             </section>

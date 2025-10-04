@@ -4,6 +4,14 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
+import Packages from './pages/Packages';
+import TwelveSeries from './pages/12-Series';
+import HipSeries from './pages/Hip-Series';
+import Approach from './pages/Approach';
+import Credentials from './pages/Credentials';
+import TrainingLineage from './pages/TrainingLineage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
 import Book from './pages/Book';
 import BookConsult from './pages/BookConsult';
 import BookMove30 from './pages/BookMove30';
@@ -13,14 +21,6 @@ import BookMove120 from './pages/BookMove120';
 import BookSI60 from './pages/BookSI60';
 import BookSI90 from './pages/BookSI90';
 import BookSI120 from './pages/BookSI120';
-import Packages from './pages/Packages';
-import TwelveSeries from './pages/12-Series';
-import HipSeries from './pages/Hip-Series';
-import Approach from './pages/Approach';
-import Credentials from './pages/Credentials';
-import TrainingLineage from './pages/TrainingLineage';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import RefundPolicy from './pages/RefundPolicy';
 
 function App() {
   return (
@@ -39,6 +39,8 @@ function App() {
         <Route path="/training-lineage" element={<TrainingLineage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
+        
+        {/* Booking Routes */}
         <Route path="/book" element={<Book />} />
         <Route path="/book/consult" element={<BookConsult />} />
         <Route path="/book/move30" element={<BookMove30 />} />
