@@ -18,17 +18,19 @@ Create a table called "Session Packages" with these fields:
 | Stripe Session ID | Single line text | Stripe checkout session ID |
 | Cal.com Link | URL | Link to book sessions |
 
-### 2. Sessions Table
-Create a table called "Sessions" with these fields:
+### 2. Individual Sessions Table
+Create a table called "Individual Sessions" with these fields:
 
 | Field Name | Field Type | Description |
 |------------|------------|-------------|
-| Package ID | Single line text | ID of the session package |
 | User ID | Single line text | Firebase user ID |
+| Package ID | Single line text | ID of the session package (optional) |
 | Session Date | Date | When session was held |
-| Session Type | Single line text | Type of session (SI, Movement, etc.) |
+| Session Type | Single line text | e.g., "Movement Education", "Structural Integration" |
+| Duration | Number | Session length in minutes (30, 60, 90, 120) |
 | Status | Single select | Scheduled, Completed, Cancelled |
-| Notes | Long text | Any notes about the session |
+| Notes | Long text | Session notes and progress tracking |
+| Cal.com Booking ID | Single line text | Cal.com booking reference |
 
 ## Environment Variables
 

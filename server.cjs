@@ -166,6 +166,36 @@ app.get('/api/user-packages/:userId', async (req, res) => {
   }
 });
 
+// Get user's session history
+app.get('/api/user-sessions/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    
+    const records = await airtable('Individual Sessions')
+      .select({
+        filterByFormula: `{User ID} = '${userId}'`,
+        sort: [{ field: 'Session Date', direction: 'desc' }]
+      })
+      .all();
+    
+    const sessions = records.map(record => ({
+      id: record.id,
+      sessionDate: record.get('Session Date'),
+      sessionType: record.get('Session Type'), // Movement or SI
+      duration: record.get('Duration'), // 30, 60, 90, 120
+      packageId: record.get('Package ID'),
+      notes: record.get('Notes'),
+      status: record.get('Status'), // Completed, Scheduled, Cancelled
+      calComBookingId: record.get('Cal.com Booking ID')
+    }));
+    
+    res.json({ sessions });
+  } catch (error) {
+    console.error('Error fetching user sessions:', error);
+    res.status(500).json({ error: 'Failed to fetch sessions' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log(`Stripe webhook endpoint: http://localhost:${PORT}/api/stripe-webhook`);
