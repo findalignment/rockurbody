@@ -10,27 +10,38 @@ export const designSystem = {
   // COLOR PALETTE (WCAG AA/AAA Compliant)
   // ============================================
   colors: {
-    // Brand Colors
+    // Brand Colors - Deep Ocean Blue Palette
     brand: {
-      primary: '#0f172a',        // Dark slate - main brand color
-      primaryLight: '#1e293b',   // Lighter slate for hover states
-      primaryDark: '#020617',    // Darker slate for emphasis
+      primary: '#0a2540',        // Deep ocean blue - main brand color
+      primaryLight: '#1e4a6f',   // Medium ocean blue for hover states
+      primaryDark: '#051729',    // Darker ocean blue for emphasis
     },
     
-    // Accent Colors (WCAG AA Compliant)
+    // Accent Colors (Cyan - use sparingly)
     accent: {
-      cyan: '#0891b2',           // Main accent (4.51:1 on white) ✅ AA
+      cyan: '#0891b2',           // Main accent (4.51:1 on white) ✅ AA - use for borders, underlines, hover
       cyanDark: '#0e7490',       // Darker cyan (5.72:1) ✅ AAA
-      cyanLight: '#06b6d4',      // Light cyan (backgrounds only)
+      cyanLight: '#06b6d4',      // Light cyan (fine accents only)
       cyanPale: '#cffafe',       // Very light (backgrounds)
     },
     
-    // Secondary Colors
+    // Secondary Colors - Ocean Blues
     secondary: {
-      blue: '#2563eb',           // Main blue (4.56:1) ✅ AA
-      blueDark: '#1d4ed8',       // Darker blue (6.29:1) ✅ AAA
-      blueLight: '#3b82f6',      // Light blue (backgrounds)
-      bluePale: '#dbeafe',       // Very light (backgrounds)
+      blue: '#1e4a6f',           // Medium ocean blue
+      blueDark: '#0a2540',       // Deep ocean blue
+      blueLight: '#3d6a99',      // Light ocean blue (backgrounds)
+      bluePale: '#e8f1f8',       // Very light blue (backgrounds)
+    },
+    
+    // Natural Colors - Sand & Sage
+    natural: {
+      sand: '#d4c5b0',           // Desaturated sand
+      sandLight: '#e8dfd0',      // Light sand
+      sandDark: '#b8a890',       // Dark sand
+      sage: '#8ba888',           // Sage green - vitality & calm
+      sageLight: '#a8c4a5',      // Light sage
+      sageDark: '#6d8a6b',       // Dark sage
+      offWhite: '#faf8f5',       // Off-white background
     },
     
     // Highlight/CTA
@@ -81,22 +92,24 @@ export const designSystem = {
     
     // Text Colors (Semantic)
     text: {
-      primary: '#0f172a',        // Primary text (21:1) ✅ AAA
-      secondary: '#475569',      // Secondary text (7.59:1) ✅ AAA
-      tertiary: '#64748b',       // Tertiary text (4.93:1) ✅ AA
-      muted: '#94a3b8',          // Muted text (3.37:1) - large text only
-      inverse: '#ffffff',        // Text on dark backgrounds
-      link: '#0891b2',           // Link color (4.51:1) ✅ AA
-      linkHover: '#0e7490',      // Link hover (5.72:1) ✅ AAA
+      primary: '#1a1a1a',        // Near black - Primary text ✅ AAA
+      secondary: '#2c3e50',      // Dark blue-gray - Secondary text ✅ AAA
+      tertiary: '#5a6c7d',       // Medium blue-gray - Tertiary text ✅ AA
+      muted: '#8a9ba8',          // Muted blue-gray - large text only
+      inverse: '#faf8f5',        // Off-white - Text on dark backgrounds
+      link: '#0891b2',           // Cyan - Link color (4.51:1) ✅ AA
+      linkHover: '#0e7490',      // Dark cyan - Link hover (5.72:1) ✅ AAA
+      sage: '#6d8a6b',           // Dark sage for accents
     },
     
     // Background Colors (Semantic)
     background: {
-      primary: '#ffffff',
-      secondary: '#f8fafc',
-      tertiary: '#f1f5f9',
-      dark: '#0f172a',
-      darkSecondary: '#1e293b',
+      primary: '#faf8f5',        // Off-white
+      secondary: '#f5f1ea',      // Light sand
+      tertiary: '#e8f1f8',       // Very light blue
+      sand: '#d4c5b0',           // Sand accent
+      dark: '#0a2540',           // Deep ocean blue
+      darkSecondary: '#1e4a6f',  // Medium ocean blue
     },
     
     // Border Colors

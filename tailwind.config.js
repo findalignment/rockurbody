@@ -7,21 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0f172a',      // Dark slate
-        accent: '#06b6d4',       // Cyan
-        secondary: '#3b82f6',    // Blue
-        highlight: '#f97316',    // Orange
-        text: '#e2e8f0',         // Light slate
-        neutralLight: '#f8fafc', // Cool white
-        neutralDark: '#1e293b',  // Dark slate for body text
-        success: '#10b981',
+        primary: '#0a2540',      // Deep ocean blue
+        accent: '#06b6d4',       // Cyan (fine accent only)
+        secondary: '#1e4a6f',    // Medium ocean blue
+        sand: '#d4c5b0',         // Desaturated sand
+        offWhite: '#faf8f5',     // Off-white
+        sage: '#8ba888',         // Sage green
+        highlight: '#f97316',    // Orange (kept for CTAs)
+        text: '#1a1a1a',         // Near black for text
+        neutralLight: '#faf8f5', // Off-white
+        neutralDark: '#2c3e50',  // Dark blue-gray for body text
+        success: '#8ba888',      // Sage green
         warning: '#f59e0b',
         error: '#ef4444',
       },
       fontFamily: {
-        display: ['Inter', 'system-ui', 'sans-serif'], // Bold display font for heroes
-        heading: ['Inter', 'system-ui', 'sans-serif'], // Display font for headings
-        body: ['Inter', 'system-ui', 'sans-serif'], // Clean sans serif for body
+        display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Geometric sans for display
+        heading: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Geometric sans for headings
+        body: ['"Source Serif 4"', 'Georgia', 'Cambria', 'serif'], // Neutral serif for body
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Fallback sans
       },
       fontSize: {
         base: '20px', // Base body text size

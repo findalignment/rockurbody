@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  /* Add padding for fixed header */
+  .page-container {
+    @apply pt-20 md:pt-24;
+  }
+}
+
 @layer base {
   body {
     @apply font-body text-neutralDark bg-neutralLight;
