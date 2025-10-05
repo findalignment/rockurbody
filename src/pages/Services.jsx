@@ -3,36 +3,36 @@ import PageLayout from '../components/PageLayout';
 function Services() {
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <div className="pt-32 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-8">
+          <h1 className="text-5xl font-heading text-primary mb-12">
             Services
           </h1>
           
-          <p className="text-xl text-neutralDark/80 mb-12">
+          <p className="text-xl text-neutralDark/80 mb-16 leading-relaxed">
             I offer two complementary approaches: hands-on structural work and movement education. Most clients benefit from both.
           </p>
           
-          <div className="space-y-8">
+          <div className="space-y-16">
             {/* Service 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h2 className="text-3xl font-heading text-neutralDark mb-4">
+            <div className="bg-white rounded-2xl p-10 shadow-sm">
+              <h2 className="text-3xl font-heading text-neutralDark mb-6">
                 Structural Integration
               </h2>
-              <p className="text-lg text-neutralDark/80 mb-6">
+              <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
                 Structural Integration is precise hands-on work that helps your body's connective tissue (fascia) glide and coordinate better. I pair it with simple movement cues so changes "stick" when you stand, walk, lift, and live.
               </p>
               
-              <div className="bg-accent/10 border border-accent/20 rounded-lg p-6 mb-6">
+              <div className="bg-accent/10 border border-accent/20 rounded-lg p-8 mb-8">
                 <p className="text-lg font-semibold text-neutralDark mb-2">
                   Hands-on fascia work + movement education to realign how you move so life feels easier
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Why People Book This</h3>
-                  <ul className="space-y-2 text-neutralDark/80">
+                  <h3 className="text-xl font-semibold text-neutralDark mb-4">Why People Book This</h3>
+                  <ul className="space-y-3 text-lg text-neutralDark/80 leading-relaxed">
                     <li>• Relief from nagging tension and "stuck" spots</li>
                     <li>• Better posture and easier breathing</li>
                     <li>• Stronger, smoother movement in daily life and training</li>
@@ -40,8 +40,8 @@ function Services() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-neutralDark mb-3">How It Works</h3>
-                  <div className="space-y-3 text-neutralDark/80">
+                  <h3 className="text-xl font-semibold text-neutralDark mb-4">How It Works</h3>
+                  <div className="space-y-4 text-lg text-neutralDark/80 leading-relaxed">
                     <div>
                       <strong>Assess & map</strong> – We look at how you stand, walk, and breathe to find the bottlenecks.
                     </div>

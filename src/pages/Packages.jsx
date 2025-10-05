@@ -71,28 +71,28 @@ function Packages() {
 
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <div className="pt-32 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-8 text-center">
+          <h1 className="text-5xl font-heading text-primary mb-12 text-center">
             Programs Designed Around You
           </h1>
-          <p className="text-2xl font-semibold text-neutralDark mb-4 text-center">
+          <p className="text-2xl font-semibold text-neutralDark mb-6 text-center">
             Move Better. Feel Stronger. Stay Adventurous.
           </p>
-          <p className="text-xl text-neutralDark/80 mb-12 text-center max-w-4xl mx-auto">
+          <p className="text-xl text-neutralDark/80 mb-20 text-center max-w-4xl mx-auto leading-relaxed">
             The movement and structural integration programs are thoughtfully crafted around real client needs: relieving tension, improving mobility, and supporting lifelong vitality. Each program offers a proven path to freedom in your body, yet every journey is personal. That's why each plan is adaptable to your unique goals and lifestyle. Not sure where to start? Explore your options with a free consultation and let's find the right fit together.
           </p>
 
           {/* Package Options */}
-          <div className="space-y-12">
+          <div className="space-y-20">
             {/* The Reset */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-neutralLight">
-              <div className="text-center mb-6">
-                <h2 className="text-3xl font-heading text-primary mb-2">The Reset</h2>
-                <p className="text-neutralDark/80">Perfect for getting back on track</p>
+            <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-heading text-primary mb-4">The Reset</h2>
+                <p className="text-lg text-neutralDark/80">Perfect for getting back on track</p>
               </div>
               
-              <div className="text-center mb-6">
+              <div className="text-center mb-8">
                 <div className="bg-accent/10 p-4 rounded-lg mb-4">
                   <p className="text-3xl font-bold text-accent mb-2">$990</p>
                   <p className="text-sm text-neutralDark/80">
@@ -113,13 +113,13 @@ function Packages() {
             </div>
 
             {/* Hip Freedom Options */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-neutralLight">
-              <div className="text-center mb-6">
-                <h2 className="text-3xl font-heading text-primary mb-2">Hip Freedom</h2>
-                <p className="text-neutralDark/80">Reclaim how your hips are meant to move</p>
+            <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl font-heading text-primary mb-4">Hip Freedom</h2>
+                <p className="text-lg text-neutralDark/80">Reclaim how your hips are meant to move</p>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-8">
                 {/* Basic Option */}
                 <div className="border border-neutralLight rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-neutralDark mb-3">Basic</h3>
@@ -170,13 +170,13 @@ function Packages() {
             </div>
 
             {/* Full Repatterning Options */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-neutralLight">
-              <div className="text-center mb-6">
-                <h2 className="text-3xl font-heading text-primary mb-2">Full Repatterning</h2>
-                <p className="text-neutralDark/80">Complete transformation of how you move</p>
+            <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
+              <div className="text-center mb-10">
+                <h2 className="text-3xl font-heading text-primary mb-4">Full Repatterning</h2>
+                <p className="text-lg text-neutralDark/80">Complete transformation of how you move</p>
               </div>
               
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-3 gap-8">
                 {/* Basic */}
                 <div className="border border-neutralLight rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-neutralDark mb-3">Basic</h3>
@@ -249,10 +249,10 @@ function Packages() {
           </div>
 
           {/* Free Consultation */}
-          <div className="mt-12 text-center">
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-neutralLight max-w-2xl mx-auto">
-              <h3 className="text-2xl font-heading text-primary mb-4">Not Sure Which Package?</h3>
-              <p className="text-neutralDark/80 mb-6">
+          <div className="mt-20 text-center">
+            <div className="bg-white rounded-2xl p-12 shadow-sm border border-neutralLight max-w-2xl mx-auto">
+              <h3 className="text-2xl font-heading text-primary mb-6">Not Sure Which Package?</h3>
+              <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
                 Book a free consultation to discuss your goals and find the perfect program for you.
               </p>
               <a
