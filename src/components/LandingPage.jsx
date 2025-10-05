@@ -12,9 +12,12 @@ function LandingPage() {
   const [error, setError] = useState('');
   const [userId, setUserId] = useState('');
   const [questionCount, setQuestionCount] = useState(0);
+  const [chatFailed, setChatFailed] = useState(false);
+  const [failureCount, setFailureCount] = useState(0);
   const navigate = useNavigate();
 
   const MAX_QUESTIONS = 5;
+  const MAX_FAILURES = 2; // Show fallback after 2 consecutive failures
 
   // Quick suggestion buttons
   const suggestionButtons = [
@@ -111,6 +114,9 @@ function LandingPage() {
       const detectedPage = detectIntent(userMessage);
       const aiResponse = await sendMessageToAI(userMessage, conversation, detectedPage);
       
+      // Reset failure count on success
+      setFailureCount(0);
+      
       // Add question count reminder after 3rd and 4th questions
       let responseContent = aiResponse;
       if (newCount === 3) {
@@ -142,13 +148,23 @@ function LandingPage() {
       }
     } catch (err) {
       console.error('AI Error:', err);
-      const errorMessage = {
-        id: Date.now() + 1,
-        role: 'system',
-        content: 'Sorry, I\'m having trouble responding right now. Please try again or use the navigation menu above.',
-        isError: true
-      };
-      setConversation(prev => [...prev, errorMessage]);
+      
+      // Increment failure count
+      const newFailureCount = failureCount + 1;
+      setFailureCount(newFailureCount);
+      
+      // Show fallback after MAX_FAILURES consecutive failures
+      if (newFailureCount >= MAX_FAILURES) {
+        setChatFailed(true);
+      } else {
+        const errorMessage = {
+          id: Date.now() + 1,
+          role: 'system',
+          content: 'Sorry, I\'m having trouble responding right now. Please try again or use the navigation menu above.',
+          isError: true
+        };
+        setConversation(prev => [...prev, errorMessage]);
+      }
     }
     
     setIsLoading(false);
@@ -202,7 +218,81 @@ function LandingPage() {
         <HeroContent />
         
         <div className="w-full max-w-4xl mx-auto px-4">
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 animate-fadeIn">
+          {/* Fallback UI when chat fails */}
+          {chatFailed ? (
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 animate-fadeIn p-8">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-heading font-bold text-white mb-2">
+                  Chat Temporarily Unavailable
+                </h3>
+                <p className="text-white/80 mb-6">
+                  I'm having trouble connecting right now, but I'd still love to help you!
+                </p>
+              </div>
+
+              {/* Contact Options */}
+              <div className="space-y-4">
+                <a
+                  href="mailto:rock@rockurbody.com?subject=Question from Website"
+                  className="block w-full px-6 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center justify-center gap-3"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span>Email Me: rock@rockurbody.com</span>
+                </a>
+
+                <a
+                  href="https://cal.com/rockyourbody/consultation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full px-6 py-4 bg-sage text-white rounded-xl font-semibold hover:bg-sage/90 transition-all duration-200 flex items-center justify-center gap-3"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <span>Schedule Free Consultation</span>
+                </a>
+
+                <div className="grid grid-cols-2 gap-3 mt-6">
+                  <button
+                    onClick={() => navigate('/services')}
+                    className="px-4 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 border border-white/20"
+                  >
+                    <span>View Services</span>
+                  </button>
+                  <button
+                    onClick={() => navigate('/packages')}
+                    className="px-4 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 border border-white/20"
+                  >
+                    <span>View Packages</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Retry Option */}
+              <div className="mt-6 pt-6 border-t border-white/20 text-center">
+                <button
+                  onClick={() => {
+                    setChatFailed(false);
+                    setFailureCount(0);
+                  }}
+                  className="text-white/70 hover:text-white text-sm font-semibold transition-colors flex items-center justify-center gap-2 mx-auto"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  <span>Try Chat Again</span>
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 animate-fadeIn">
             {conversation.length > 0 && (
               <div className="p-4 max-h-[400px] overflow-y-auto space-y-3 border-b border-white/20">
                 {conversation.map((message) => (
@@ -346,6 +436,7 @@ function LandingPage() {
               </div>
             </form>
           </div>
+          )}
         </div>
       </div>
     </Hero>
