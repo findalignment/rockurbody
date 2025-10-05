@@ -30,6 +30,12 @@ function PaymentButton({
     try {
       const stripe = await stripePromise;
       
+      if (!stripe) {
+        alert('Payment system is not configured. Please contact rock@rockurbody.com to complete your purchase.');
+        setLoading(false);
+        return;
+      }
+      
       // Create checkout session on your backend
       const response = await fetch('/api/create-checkout-session', {
         method: 'POST',
@@ -47,7 +53,22 @@ function PaymentButton({
         }),
       });
 
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error('Backend error:', errorText);
+        alert('Payment system is temporarily unavailable. Please email rock@rockurbody.com to complete your purchase.');
+        setLoading(false);
+        return;
+      }
+
       const session = await response.json();
+
+      if (!session.id) {
+        console.error('No session ID returned');
+        alert('Payment system error. Please contact rock@rockurbody.com to complete your purchase.');
+        setLoading(false);
+        return;
+      }
 
       // Redirect to Stripe Checkout
       const result = await stripe.redirectToCheckout({
@@ -56,11 +77,11 @@ function PaymentButton({
 
       if (result.error) {
         console.error('Stripe error:', result.error);
-        alert('Payment failed. Please try again.');
+        alert(`Payment failed: ${result.error.message}. Please contact rock@rockurbody.com for assistance.`);
       }
     } catch (error) {
       console.error('Payment error:', error);
-      alert('Payment failed. Please try again.');
+      alert('Payment system is temporarily unavailable. Please email rock@rockurbody.com to complete your purchase.');
     } finally {
       setLoading(false);
     }

@@ -67,7 +67,8 @@ function Dashboard() {
         setPackages(data.packages);
       } catch (error) {
         console.error('Error fetching packages:', error);
-        setPackagesError('Unable to load your packages. Please try again later.');
+        // Don't set error - just show empty state
+        setPackages([]);
       } finally {
         setPackagesLoading(false);
       }
@@ -95,7 +96,8 @@ function Dashboard() {
         setUpcomingSessions(data.sessions);
       } catch (error) {
         console.error('Error fetching upcoming sessions:', error);
-        setUpcomingError('Unable to load your upcoming appointments. Please try again later.');
+        // Don't set error - just show empty state
+        setUpcomingSessions([]);
       } finally {
         setUpcomingLoading(false);
       }
@@ -123,7 +125,8 @@ function Dashboard() {
         setSessions(data.sessions);
       } catch (error) {
         console.error('Error fetching sessions:', error);
-        setSessionsError('Unable to load your session history. Please try again later.');
+        // Don't set error - just show empty state
+        setSessions([]);
       } finally {
         setSessionsLoading(false);
       }
@@ -151,7 +154,8 @@ function Dashboard() {
         setPayments(data.payments);
       } catch (error) {
         console.error('Error fetching payment history:', error);
-        setPaymentsError('Unable to load your payment history. Please try again later.');
+        // Don't set error - just show empty state
+        setPayments([]);
       } finally {
         setPaymentsLoading(false);
       }
@@ -272,10 +276,6 @@ function Dashboard() {
                   <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
                   <p className="text-neutralDark/60 mt-4">Loading your packages...</p>
                 </div>
-              ) : packagesError ? (
-                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
-                  {packagesError}
-                </div>
               ) : packages.length === 0 ? (
                 <div className="text-center py-8">
                   <svg className="w-16 h-16 text-neutralDark/20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -363,10 +363,6 @@ function Dashboard() {
                 <div className="text-center py-8">
                   <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
                   <p className="text-neutralDark/60 mt-4">Loading your appointments...</p>
-                </div>
-              ) : upcomingError ? (
-                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
-                  {upcomingError}
                 </div>
               ) : upcomingSessions.length === 0 ? (
                 <div className="text-center py-8">
@@ -524,10 +520,6 @@ function Dashboard() {
                   <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
                   <p className="text-neutralDark/60 mt-4">Loading your sessions...</p>
                 </div>
-              ) : sessionsError ? (
-                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
-                  {sessionsError}
-                </div>
               ) : sessions.length === 0 ? (
                 <div className="text-center py-8">
                   <svg className="w-16 h-16 text-neutralDark/20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -623,10 +615,6 @@ function Dashboard() {
                 <div className="text-center py-8">
                   <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
                   <p className="text-neutralDark/60 mt-4">Loading your payment history...</p>
-                </div>
-              ) : paymentsError ? (
-                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
-                  {paymentsError}
                 </div>
               ) : payments.length === 0 ? (
                 <div className="text-center py-8">

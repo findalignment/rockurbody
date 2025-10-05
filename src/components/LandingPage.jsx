@@ -214,7 +214,7 @@ function LandingPage() {
 
   return (
     <Hero>
-      <div className="w-full flex flex-col items-center justify-end space-y-4 pb-4">
+      <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-32">
         <HeroContent />
         
         <div className="w-full max-w-4xl mx-auto px-4">
