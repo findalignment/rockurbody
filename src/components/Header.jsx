@@ -13,7 +13,7 @@ function Header() {
   const navLinks = [
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Pricing', path: '/pricing' },
+    { name: 'Packages', path: '/packages' },
   ];
   
   // Show different menu items based on auth state

@@ -101,8 +101,16 @@ export function AuthProvider({ children }) {
   // Send password reset email
   async function resetPassword(email) {
     try {
-      await sendPasswordResetEmail(auth, email);
+      // Configure action code settings for password reset
+      const actionCodeSettings = {
+        url: `${window.location.origin}/auth/login`,
+        handleCodeInApp: false,
+      };
+      
+      await sendPasswordResetEmail(auth, email, actionCodeSettings);
+      console.log('Password reset email sent successfully to:', email);
     } catch (error) {
+      console.error('Password reset error:', error);
       throw error;
     }
   }

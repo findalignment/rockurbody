@@ -115,9 +115,18 @@ function ForgotPassword() {
 
             {/* Info Notice */}
             <div className="mt-8 p-4 bg-secondary/10 border border-secondary/20 rounded-lg">
-              <p className="text-xs text-neutralDark/70">
-                <strong>Note:</strong> The password reset link will expire in 1 hour. 
-                If you don't receive the email, check your spam folder or try again.
+              <p className="text-sm font-semibold text-neutralDark mb-2">
+                Didn't receive the email?
+              </p>
+              <ul className="text-xs text-neutralDark/70 space-y-1 list-disc list-inside">
+                <li>Check your spam/junk folder</li>
+                <li>Make sure you entered the correct email address</li>
+                <li>Wait a few minutes - emails can take up to 5 minutes to arrive</li>
+                <li>Check that the email is registered with an account</li>
+                <li>The reset link expires in 1 hour</li>
+              </ul>
+              <p className="text-xs text-neutralDark/70 mt-3">
+                <strong>Still having issues?</strong> Contact rock@rockurbody.com for help.
               </p>
             </div>
           </div>
