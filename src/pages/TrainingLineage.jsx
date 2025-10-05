@@ -14,7 +14,7 @@ function TrainingLineage() {
 
           <div className="space-y-8">
             {/* Tom Myers */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
@@ -44,7 +44,7 @@ function TrainingLineage() {
             </div>
 
             {/* Sharon Wheeler */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
@@ -75,7 +75,7 @@ function TrainingLineage() {
             </div>
 
             {/* Til Luchau */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
@@ -105,7 +105,7 @@ function TrainingLineage() {
             </div>
 
             {/* Wojtek Cackowski */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
