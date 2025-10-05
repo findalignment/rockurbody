@@ -170,6 +170,7 @@ app.get('/api/user-packages/:userId', async (req, res) => {
 app.get('/api/user-sessions/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
+    const { type } = req.query; // 'upcoming', 'past', or 'all'
     
     const records = await airtable('Individual Sessions')
       .select({
@@ -178,7 +179,7 @@ app.get('/api/user-sessions/:userId', async (req, res) => {
       })
       .all();
     
-    const sessions = records.map(record => ({
+    const allSessions = records.map(record => ({
       id: record.id,
       sessionDate: record.get('Session Date'),
       sessionType: record.get('Session Type'), // Movement or SI
@@ -186,8 +187,28 @@ app.get('/api/user-sessions/:userId', async (req, res) => {
       packageId: record.get('Package ID'),
       notes: record.get('Notes'),
       status: record.get('Status'), // Completed, Scheduled, Cancelled
-      calComBookingId: record.get('Cal.com Booking ID')
+      calComBookingId: record.get('Cal.com Booking ID'),
+      calComRescheduleUrl: record.get('Cal.com Reschedule URL'),
+      calComCancelUrl: record.get('Cal.com Cancel URL')
     }));
+    
+    // Filter based on type
+    let sessions = allSessions;
+    const now = new Date();
+    
+    if (type === 'upcoming') {
+      sessions = allSessions.filter(s => {
+        const sessionDate = new Date(s.sessionDate);
+        return sessionDate >= now && s.status === 'Scheduled';
+      });
+      // Sort upcoming sessions ascending (soonest first)
+      sessions.sort((a, b) => new Date(a.sessionDate) - new Date(b.sessionDate));
+    } else if (type === 'past') {
+      sessions = allSessions.filter(s => {
+        const sessionDate = new Date(s.sessionDate);
+        return sessionDate < now || s.status === 'Completed' || s.status === 'Cancelled';
+      });
+    }
     
     res.json({ sessions });
   } catch (error) {

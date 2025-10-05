@@ -25,12 +25,14 @@ Create a table called "Individual Sessions" with these fields:
 |------------|------------|-------------|
 | User ID | Single line text | Firebase user ID |
 | Package ID | Single line text | ID of the session package (optional) |
-| Session Date | Date | When session was held |
+| Session Date | Date | When session was held (include time) |
 | Session Type | Single line text | e.g., "Movement Education", "Structural Integration" |
 | Duration | Number | Session length in minutes (30, 60, 90, 120) |
 | Status | Single select | Scheduled, Completed, Cancelled |
 | Notes | Long text | Session notes and progress tracking |
 | Cal.com Booking ID | Single line text | Cal.com booking reference |
+| Cal.com Reschedule URL | URL | Link to reschedule the session |
+| Cal.com Cancel URL | URL | Link to cancel the session |
 
 ## Environment Variables
 

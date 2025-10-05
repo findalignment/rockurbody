@@ -13,6 +13,9 @@ function Dashboard() {
   const [sessionsLoading, setSessionsLoading] = useState(true);
   const [sessionsError, setSessionsError] = useState(null);
   const [sessionFilter, setSessionFilter] = useState('all'); // all, movement, si
+  const [upcomingSessions, setUpcomingSessions] = useState([]);
+  const [upcomingLoading, setUpcomingLoading] = useState(true);
+  const [upcomingError, setUpcomingError] = useState(null);
   const navigate = useNavigate();
 
   // Redirect to login if not authenticated
@@ -50,7 +53,35 @@ function Dashboard() {
     fetchPackages();
   }, [currentUser]);
 
-  // Fetch user's session history
+  // Fetch user's upcoming sessions
+  useEffect(() => {
+    async function fetchUpcomingSessions() {
+      if (!currentUser) return;
+      
+      try {
+        setUpcomingLoading(true);
+        setUpcomingError(null);
+        
+        const response = await fetch(`http://localhost:3001/api/user-sessions/${currentUser.uid}?type=upcoming`);
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch upcoming sessions');
+        }
+        
+        const data = await response.json();
+        setUpcomingSessions(data.sessions);
+      } catch (error) {
+        console.error('Error fetching upcoming sessions:', error);
+        setUpcomingError('Unable to load your upcoming appointments. Please try again later.');
+      } finally {
+        setUpcomingLoading(false);
+      }
+    }
+    
+    fetchUpcomingSessions();
+  }, [currentUser]);
+
+  // Fetch user's past session history
   useEffect(() => {
     async function fetchSessions() {
       if (!currentUser) return;
@@ -59,7 +90,7 @@ function Dashboard() {
         setSessionsLoading(true);
         setSessionsError(null);
         
-        const response = await fetch(`http://localhost:3001/api/user-sessions/${currentUser.uid}`);
+        const response = await fetch(`http://localhost:3001/api/user-sessions/${currentUser.uid}?type=past`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch sessions');
@@ -207,6 +238,130 @@ function Dashboard() {
               )}
             </div>
 
+            {/* Upcoming Appointments */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <h2 className="text-2xl font-heading text-neutralDark mb-6">
+                Upcoming Appointments
+              </h2>
+              
+              {upcomingLoading ? (
+                <div className="text-center py-8">
+                  <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
+                  <p className="text-neutralDark/60 mt-4">Loading your appointments...</p>
+                </div>
+              ) : upcomingError ? (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                  {upcomingError}
+                </div>
+              ) : upcomingSessions.length === 0 ? (
+                <div className="text-center py-8">
+                  <svg className="w-16 h-16 text-neutralDark/20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-neutralDark mb-2">No upcoming appointments</h3>
+                  <p className="text-neutralDark/70 mb-4">Schedule your next session to continue your progress</p>
+                  <Link
+                    to="/book"
+                    className="inline-block px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
+                  >
+                    Book a Session
+                  </Link>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  {upcomingSessions.map((session) => {
+                    const sessionDate = new Date(session.sessionDate);
+                    const now = new Date();
+                    const daysUntil = Math.ceil((sessionDate - now) / (1000 * 60 * 60 * 24));
+                    const isToday = daysUntil === 0;
+                    const isTomorrow = daysUntil === 1;
+                    
+                    return (
+                      <div key={session.id} className="border-2 border-accent/20 rounded-lg p-6 bg-accent/5">
+                        <div className="flex items-start justify-between mb-4">
+                          <div className="flex items-start gap-4">
+                            <div className="flex-shrink-0">
+                              <div className={`w-16 h-16 rounded-lg flex flex-col items-center justify-center ${
+                                isToday ? 'bg-highlight text-white' : 'bg-accent text-white'
+                              }`}>
+                                <span className="text-xs font-semibold uppercase">
+                                  {sessionDate.toLocaleDateString('en-US', { month: 'short' })}
+                                </span>
+                                <span className="text-2xl font-bold">
+                                  {sessionDate.getDate()}
+                                </span>
+                              </div>
+                            </div>
+                            <div>
+                              <h3 className="text-xl font-semibold text-neutralDark mb-1">
+                                {session.duration}min {session.sessionType}
+                              </h3>
+                              <p className="text-sm text-neutralDark/70 mb-2">
+                                {sessionDate.toLocaleDateString('en-US', {
+                                  weekday: 'long',
+                                  year: 'numeric',
+                                  month: 'long',
+                                  day: 'numeric'
+                                })} at {sessionDate.toLocaleTimeString('en-US', {
+                                  hour: 'numeric',
+                                  minute: '2-digit',
+                                  hour12: true
+                                })}
+                              </p>
+                              {isToday && (
+                                <span className="inline-block px-2 py-1 bg-highlight text-white text-xs font-semibold rounded">
+                                  TODAY
+                                </span>
+                              )}
+                              {isTomorrow && (
+                                <span className="inline-block px-2 py-1 bg-accent text-white text-xs font-semibold rounded">
+                                  TOMORROW
+                                </span>
+                              )}
+                              {!isToday && !isTomorrow && daysUntil > 0 && (
+                                <span className="inline-block px-2 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded">
+                                  IN {daysUntil} DAYS
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex flex-wrap gap-3 mt-4">
+                          {session.calComRescheduleUrl && (
+                            <a
+                              href={session.calComRescheduleUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-4 py-2 bg-secondary text-white rounded-lg text-sm font-semibold hover:bg-secondary/90 transition"
+                            >
+                              Reschedule
+                            </a>
+                          )}
+                          {session.calComCancelUrl && (
+                            <a
+                              href={session.calComCancelUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-4 py-2 bg-neutralDark/10 text-neutralDark rounded-lg text-sm font-semibold hover:bg-neutralDark/20 transition"
+                            >
+                              Cancel
+                            </a>
+                          )}
+                        </div>
+                        
+                        <div className="mt-4 p-3 bg-warning/10 border border-warning/20 rounded-lg">
+                          <p className="text-xs text-neutralDark/70">
+                            <strong>Cancellation Policy:</strong> Please provide at least 4 hours notice to avoid being charged for the session.
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+
             {/* Session History */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <div className="flex justify-between items-center mb-6">
@@ -349,16 +504,6 @@ function Dashboard() {
                 Coming Soon
               </h2>
               <div className="space-y-4">
-                <div className="flex items-start gap-3 p-4 bg-neutralDark/5 rounded-lg opacity-60">
-                  <svg className="w-6 h-6 text-neutralDark/40 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <div>
-                    <h3 className="font-semibold text-neutralDark mb-1">Manage Upcoming Appointments</h3>
-                    <p className="text-sm text-neutralDark/70">View, reschedule, or cancel your upcoming sessions</p>
-                  </div>
-                </div>
-                
                 <div className="flex items-start gap-3 p-4 bg-neutralDark/5 rounded-lg opacity-60">
                   <svg className="w-6 h-6 text-neutralDark/40 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
