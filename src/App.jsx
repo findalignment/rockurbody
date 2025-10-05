@@ -27,6 +27,7 @@ import IntegratingStructureAndMovement from './pages/blog/IntegratingStructureAn
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
         {/* Auth Routes */}
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/signup" element={<Signup />} />
+        <Route path="/auth/forgot-password" element={<ForgotPassword />} />
         
         {/* Blog Routes - Not in navigation menu */}
         <Route path="/blog" element={<BlogIndex />} />

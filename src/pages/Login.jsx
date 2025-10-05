@@ -96,6 +96,16 @@ function Login() {
                 </div>
               </div>
 
+              {/* Forgot Password Link */}
+              <div className="text-right">
+                <Link
+                  to="/auth/forgot-password"
+                  className="text-sm text-secondary hover:text-secondary/80 font-semibold"
+                >
+                  Forgot password?
+                </Link>
+              </div>
+
               <button
                 type="submit"
                 disabled={loading}

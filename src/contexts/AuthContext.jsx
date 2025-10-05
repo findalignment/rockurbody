@@ -4,7 +4,12 @@ import {
   signInWithEmailAndPassword, 
   signOut, 
   onAuthStateChanged,
-  updateProfile
+  updateProfile,
+  updateEmail,
+  updatePassword,
+  reauthenticateWithCredential,
+  EmailAuthProvider,
+  sendPasswordResetEmail
 } from 'firebase/auth';
 import { auth } from '../config/firebase';
 
@@ -48,10 +53,55 @@ export function AuthProvider({ children }) {
     }
   }
 
-  // Update user profile
+  // Update user profile (display name, photo URL)
   async function updateUserProfile(updates) {
     try {
       await updateProfile(currentUser, updates);
+      // Refresh the current user to reflect changes
+      setCurrentUser({ ...currentUser, ...updates });
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  // Update user email
+  async function updateUserEmail(newEmail, currentPassword) {
+    try {
+      // Re-authenticate user before email change (Firebase security requirement)
+      const credential = EmailAuthProvider.credential(
+        currentUser.email,
+        currentPassword
+      );
+      await reauthenticateWithCredential(currentUser, credential);
+      
+      // Update email
+      await updateEmail(currentUser, newEmail);
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  // Update user password
+  async function updateUserPassword(currentPassword, newPassword) {
+    try {
+      // Re-authenticate user before password change (Firebase security requirement)
+      const credential = EmailAuthProvider.credential(
+        currentUser.email,
+        currentPassword
+      );
+      await reauthenticateWithCredential(currentUser, credential);
+      
+      // Update password
+      await updatePassword(currentUser, newPassword);
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  // Send password reset email
+  async function resetPassword(email) {
+    try {
+      await sendPasswordResetEmail(auth, email);
     } catch (error) {
       throw error;
     }
@@ -71,7 +121,10 @@ export function AuthProvider({ children }) {
     signup,
     login,
     logout,
-    updateUserProfile
+    updateUserProfile,
+    updateUserEmail,
+    updateUserPassword,
+    resetPassword
   };
 
   return (

@@ -4,7 +4,7 @@ import PageLayout from '../components/PageLayout';
 import { useAuth } from '../contexts/AuthContext';
 
 function Dashboard() {
-  const { currentUser, logout } = useAuth();
+  const { currentUser, logout, updateUserProfile, updateUserEmail, updateUserPassword } = useAuth();
   const [loading, setLoading] = useState(false);
   const [packages, setPackages] = useState([]);
   const [packagesLoading, setPackagesLoading] = useState(true);
@@ -19,6 +19,18 @@ function Dashboard() {
   const [payments, setPayments] = useState([]);
   const [paymentsLoading, setPaymentsLoading] = useState(true);
   const [paymentsError, setPaymentsError] = useState(null);
+  
+  // Profile update state
+  const [displayName, setDisplayName] = useState('');
+  const [email, setEmail] = useState('');
+  const [currentPassword, setCurrentPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [updateLoading, setUpdateLoading] = useState(false);
+  const [updateSuccess, setUpdateSuccess] = useState('');
+  const [updateError, setUpdateError] = useState('');
+  const [showPasswordFields, setShowPasswordFields] = useState(false);
+  
   const navigate = useNavigate();
 
   // Redirect to login if not authenticated
@@ -27,6 +39,14 @@ function Dashboard() {
       navigate('/auth/login', { state: { from: '/dashboard' } });
     }
   }, [currentUser, navigate]);
+
+  // Initialize form with current user data
+  useEffect(() => {
+    if (currentUser) {
+      setDisplayName(currentUser.displayName || '');
+      setEmail(currentUser.email || '');
+    }
+  }, [currentUser]);
 
   // Fetch user's packages
   useEffect(() => {
@@ -149,6 +169,70 @@ function Dashboard() {
       console.error('Logout error:', error);
     }
     setLoading(false);
+  }
+
+  async function handleProfileUpdate(e) {
+    e.preventDefault();
+    setUpdateError('');
+    setUpdateSuccess('');
+    setUpdateLoading(true);
+
+    try {
+      // Update display name if changed
+      if (displayName !== currentUser.displayName) {
+        await updateUserProfile({ displayName });
+      }
+
+      // Update email if changed (requires current password)
+      if (email !== currentUser.email) {
+        if (!currentPassword) {
+          throw new Error('Current password is required to change email');
+        }
+        await updateUserEmail(email, currentPassword);
+      }
+
+      // Update password if provided
+      if (newPassword) {
+        if (!currentPassword) {
+          throw new Error('Current password is required to change password');
+        }
+        if (newPassword !== confirmPassword) {
+          throw new Error('New passwords do not match');
+        }
+        if (newPassword.length < 8) {
+          throw new Error('New password must be at least 8 characters');
+        }
+        await updateUserPassword(currentPassword, newPassword);
+      }
+
+      setUpdateSuccess('Profile updated successfully!');
+      setCurrentPassword('');
+      setNewPassword('');
+      setConfirmPassword('');
+      setShowPasswordFields(false);
+      
+      // Clear success message after 5 seconds
+      setTimeout(() => setUpdateSuccess(''), 5000);
+    } catch (error) {
+      console.error('Profile update error:', error);
+      let errorMessage = 'Failed to update profile. ';
+      
+      if (error.code === 'auth/wrong-password') {
+        errorMessage += 'Current password is incorrect.';
+      } else if (error.code === 'auth/email-already-in-use') {
+        errorMessage += 'This email is already in use.';
+      } else if (error.code === 'auth/invalid-email') {
+        errorMessage += 'Invalid email address.';
+      } else if (error.code === 'auth/requires-recent-login') {
+        errorMessage += 'Please log out and log back in before making this change.';
+      } else {
+        errorMessage += error.message;
+      }
+      
+      setUpdateError(errorMessage);
+    } finally {
+      setUpdateLoading(false);
+    }
   }
 
   return (
@@ -635,23 +719,159 @@ function Dashboard() {
               )}
             </div>
 
-            {/* Other Account Features */}
+            {/* Update Profile */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <h2 className="text-2xl font-heading text-neutralDark mb-6">
-                Coming Soon
+                Update Your Profile
               </h2>
-              <div className="space-y-4">
-                
-                <div className="flex items-start gap-3 p-4 bg-neutralDark/5 rounded-lg opacity-60">
-                  <svg className="w-6 h-6 text-neutralDark/40 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              
+              {updateSuccess && (
+                <div className="mb-6 bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg flex items-center gap-2">
+                  <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <div>
-                    <h3 className="font-semibold text-neutralDark mb-1">Update Your Profile Information</h3>
-                    <p className="text-sm text-neutralDark/70">Keep your contact details and preferences up to date</p>
-                  </div>
+                  {updateSuccess}
                 </div>
-              </div>
+              )}
+              
+              {updateError && (
+                <div className="mb-6 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                  {updateError}
+                </div>
+              )}
+              
+              <form onSubmit={handleProfileUpdate} className="space-y-6">
+                {/* Display Name */}
+                <div>
+                  <label htmlFor="displayName" className="block text-sm font-semibold text-neutralDark mb-2">
+                    Display Name
+                  </label>
+                  <input
+                    type="text"
+                    id="displayName"
+                    value={displayName}
+                    onChange={(e) => setDisplayName(e.target.value)}
+                    className="w-full px-4 py-3 border border-neutralDark/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                    placeholder="Your name"
+                  />
+                </div>
+                
+                {/* Email */}
+                <div>
+                  <label htmlFor="email" className="block text-sm font-semibold text-neutralDark mb-2">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full px-4 py-3 border border-neutralDark/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                    placeholder="your@email.com"
+                  />
+                  {email !== currentUser?.email && (
+                    <p className="mt-2 text-xs text-warning">
+                      ⚠️ Changing your email requires your current password
+                    </p>
+                  )}
+                </div>
+                
+                {/* Change Password Toggle */}
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => setShowPasswordFields(!showPasswordFields)}
+                    className="text-secondary hover:text-secondary/80 font-semibold text-sm flex items-center gap-2"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={showPasswordFields ? "M19 9l-7 7-7-7" : "M9 5l7 7-7 7"} />
+                    </svg>
+                    {showPasswordFields ? 'Cancel Password Change' : 'Change Password'}
+                  </button>
+                </div>
+                
+                {/* Password Fields (shown when toggled) */}
+                {showPasswordFields && (
+                  <div className="space-y-4 p-4 bg-neutralDark/5 rounded-lg">
+                    <div>
+                      <label htmlFor="newPassword" className="block text-sm font-semibold text-neutralDark mb-2">
+                        New Password
+                      </label>
+                      <input
+                        type="password"
+                        id="newPassword"
+                        value={newPassword}
+                        onChange={(e) => setNewPassword(e.target.value)}
+                        className="w-full px-4 py-3 border border-neutralDark/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                        placeholder="At least 8 characters"
+                        minLength={8}
+                      />
+                    </div>
+                    
+                    <div>
+                      <label htmlFor="confirmPassword" className="block text-sm font-semibold text-neutralDark mb-2">
+                        Confirm New Password
+                      </label>
+                      <input
+                        type="password"
+                        id="confirmPassword"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        className="w-full px-4 py-3 border border-neutralDark/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                        placeholder="Re-enter new password"
+                      />
+                    </div>
+                  </div>
+                )}
+                
+                {/* Current Password (required for email/password changes) */}
+                {(email !== currentUser?.email || showPasswordFields) && (
+                  <div>
+                    <label htmlFor="currentPassword" className="block text-sm font-semibold text-neutralDark mb-2">
+                      Current Password <span className="text-red-500">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      id="currentPassword"
+                      value={currentPassword}
+                      onChange={(e) => setCurrentPassword(e.target.value)}
+                      className="w-full px-4 py-3 border border-neutralDark/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+                      placeholder="Enter your current password"
+                      required
+                    />
+                    <p className="mt-2 text-xs text-neutralDark/60">
+                      Required to verify your identity before making changes
+                    </p>
+                  </div>
+                )}
+                
+                {/* Submit Button */}
+                <div className="flex gap-3 pt-4">
+                  <button
+                    type="submit"
+                    disabled={updateLoading}
+                    className="px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {updateLoading ? 'Updating...' : 'Save Changes'}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setDisplayName(currentUser?.displayName || '');
+                      setEmail(currentUser?.email || '');
+                      setCurrentPassword('');
+                      setNewPassword('');
+                      setConfirmPassword('');
+                      setShowPasswordFields(false);
+                      setUpdateError('');
+                      setUpdateSuccess('');
+                    }}
+                    className="px-6 py-3 bg-neutralDark/10 text-neutralDark rounded-lg font-semibold hover:bg-neutralDark/20 transition"
+                  >
+                    Reset
+                  </button>
+                </div>
+              </form>
             </div>
             
             {/* Security Notice */}
