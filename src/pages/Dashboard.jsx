@@ -16,6 +16,9 @@ function Dashboard() {
   const [upcomingSessions, setUpcomingSessions] = useState([]);
   const [upcomingLoading, setUpcomingLoading] = useState(true);
   const [upcomingError, setUpcomingError] = useState(null);
+  const [payments, setPayments] = useState([]);
+  const [paymentsLoading, setPaymentsLoading] = useState(true);
+  const [paymentsError, setPaymentsError] = useState(null);
   const navigate = useNavigate();
 
   // Redirect to login if not authenticated
@@ -107,6 +110,34 @@ function Dashboard() {
     }
     
     fetchSessions();
+  }, [currentUser]);
+
+  // Fetch user's payment history
+  useEffect(() => {
+    async function fetchPayments() {
+      if (!currentUser) return;
+      
+      try {
+        setPaymentsLoading(true);
+        setPaymentsError(null);
+        
+        const response = await fetch(`http://localhost:3001/api/user-payments/${currentUser.uid}`);
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch payment history');
+        }
+        
+        const data = await response.json();
+        setPayments(data.payments);
+      } catch (error) {
+        console.error('Error fetching payment history:', error);
+        setPaymentsError('Unable to load your payment history. Please try again later.');
+      } finally {
+        setPaymentsLoading(false);
+      }
+    }
+    
+    fetchPayments();
   }, [currentUser]);
 
   async function handleLogout() {
@@ -498,21 +529,118 @@ function Dashboard() {
               )}
             </div>
 
+            {/* Payment History */}
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <h2 className="text-2xl font-heading text-neutralDark mb-6">
+                Payment History
+              </h2>
+              
+              {paymentsLoading ? (
+                <div className="text-center py-8">
+                  <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-accent"></div>
+                  <p className="text-neutralDark/60 mt-4">Loading your payment history...</p>
+                </div>
+              ) : paymentsError ? (
+                <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                  {paymentsError}
+                </div>
+              ) : payments.length === 0 ? (
+                <div className="text-center py-8">
+                  <svg className="w-16 h-16 text-neutralDark/20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                  </svg>
+                  <h3 className="text-lg font-semibold text-neutralDark mb-2">No payments yet</h3>
+                  <p className="text-neutralDark/70 mb-4">Your payment history will appear here after your first purchase</p>
+                  <Link
+                    to="/packages"
+                    className="inline-block px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
+                  >
+                    View Packages
+                  </Link>
+                </div>
+              ) : (
+                <div className="space-y-4">
+                  {payments.map((payment) => (
+                    <div key={payment.id} className="border border-neutralDark/10 rounded-lg p-6 hover:border-accent/30 transition">
+                      <div className="flex items-start justify-between mb-3">
+                        <div className="flex items-start gap-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                              <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                          </div>
+                          <div>
+                            <h3 className="text-lg font-semibold text-neutralDark mb-1">
+                              {payment.packageName}
+                            </h3>
+                            <p className="text-sm text-neutralDark/60 mb-2">
+                              {new Date(payment.date).toLocaleDateString('en-US', {
+                                weekday: 'long',
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                              })}
+                            </p>
+                            <div className="flex items-center gap-2">
+                              <span className="text-xs text-neutralDark/60">
+                                {payment.paymentMethod}
+                              </span>
+                              <span className="text-xs text-neutralDark/40">•</span>
+                              <span className="px-2 py-0.5 bg-green-100 text-green-700 text-xs font-semibold rounded">
+                                {payment.status}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="text-right">
+                          <p className="text-2xl font-bold text-neutralDark">
+                            ${(payment.amount / 100).toFixed(2)}
+                          </p>
+                        </div>
+                      </div>
+                      
+                      {payment.receiptUrl && (
+                        <div className="mt-4 pt-4 border-t border-neutralDark/10">
+                          <a
+                            href={payment.receiptUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/10 text-secondary rounded-lg text-sm font-semibold hover:bg-secondary/20 transition"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            View Receipt
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                  
+                  {/* Total Spent Summary */}
+                  <div className="mt-6 p-6 bg-accent/5 border border-accent/20 rounded-lg">
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <h3 className="text-lg font-semibold text-neutralDark mb-1">Total Invested</h3>
+                        <p className="text-sm text-neutralDark/60">Lifetime spending on your wellness journey</p>
+                      </div>
+                      <p className="text-3xl font-bold text-accent">
+                        ${(payments.reduce((sum, p) => sum + p.amount, 0) / 100).toFixed(2)}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
             {/* Other Account Features */}
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <h2 className="text-2xl font-heading text-neutralDark mb-6">
                 Coming Soon
               </h2>
               <div className="space-y-4">
-                <div className="flex items-start gap-3 p-4 bg-neutralDark/5 rounded-lg opacity-60">
-                  <svg className="w-6 h-6 text-neutralDark/40 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <div>
-                    <h3 className="font-semibold text-neutralDark mb-1">Access Payment History</h3>
-                    <p className="text-sm text-neutralDark/70">View all your transactions and download receipts</p>
-                  </div>
-                </div>
                 
                 <div className="flex items-start gap-3 p-4 bg-neutralDark/5 rounded-lg opacity-60">
                   <svg className="w-6 h-6 text-neutralDark/40 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

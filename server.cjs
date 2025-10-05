@@ -217,6 +217,71 @@ app.get('/api/user-sessions/:userId', async (req, res) => {
   }
 });
 
+// Get user's payment history
+app.get('/api/user-payments/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    
+    // Fetch packages from Airtable (which contain Stripe session IDs)
+    const records = await airtable('Session Packages')
+      .select({
+        filterByFormula: `{User ID} = '${userId}'`,
+        sort: [{ field: 'Purchase Date', direction: 'desc' }]
+      })
+      .all();
+    
+    const payments = [];
+    
+    // For each package, fetch Stripe payment details
+    for (const record of records) {
+      const stripeSessionId = record.get('Stripe Session ID');
+      const amount = record.get('Amount');
+      const purchaseDate = record.get('Purchase Date');
+      const packageName = record.get('Package Name');
+      
+      let paymentDetails = {
+        id: record.id,
+        packageName: packageName,
+        amount: amount,
+        date: purchaseDate,
+        status: 'Paid',
+        paymentMethod: 'Card',
+        receiptUrl: null
+      };
+      
+      // If we have a Stripe session ID, fetch additional details
+      if (stripeSessionId) {
+        try {
+          const session = await stripe.checkout.sessions.retrieve(stripeSessionId);
+          
+          // Get payment intent for receipt
+          if (session.payment_intent) {
+            const paymentIntent = await stripe.paymentIntents.retrieve(session.payment_intent);
+            
+            if (paymentIntent.charges && paymentIntent.charges.data.length > 0) {
+              const charge = paymentIntent.charges.data[0];
+              paymentDetails.receiptUrl = charge.receipt_url;
+              paymentDetails.paymentMethod = charge.payment_method_details?.card?.brand 
+                ? `${charge.payment_method_details.card.brand.toUpperCase()} •••• ${charge.payment_method_details.card.last4}`
+                : 'Card';
+            }
+          }
+        } catch (stripeError) {
+          console.error('Error fetching Stripe details:', stripeError);
+          // Continue with basic details from Airtable
+        }
+      }
+      
+      payments.push(paymentDetails);
+    }
+    
+    res.json({ payments });
+  } catch (error) {
+    console.error('Error fetching user payments:', error);
+    res.status(500).json({ error: 'Failed to fetch payment history' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log(`Stripe webhook endpoint: http://localhost:${PORT}/api/stripe-webhook`);

@@ -15,8 +15,10 @@ Create a table called "Session Packages" with these fields:
 | Amount Paid | Currency | Amount paid for package |
 | Purchase Date | Date | When package was purchased |
 | Status | Single select | Active, Completed, Cancelled |
-| Stripe Session ID | Single line text | Stripe checkout session ID |
+| Stripe Session ID | Single line text | Stripe checkout session ID (for receipt lookup) |
 | Cal.com Link | URL | Link to book sessions |
+
+**Note:** The Stripe Session ID is used to fetch payment receipts and card details from Stripe.
 
 ### 2. Individual Sessions Table
 Create a table called "Individual Sessions" with these fields:
