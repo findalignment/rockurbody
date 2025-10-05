@@ -28,8 +28,8 @@ function Footer() {
               <Link to="/training-lineage" className="block text-white/70 hover:text-white transition">
                 Training & Lineage
               </Link>
-              <Link to="/pricing" className="block text-white/70 hover:text-white transition">
-                Pricing
+              <Link to="/packages" className="block text-white/70 hover:text-white transition">
+                Packages
               </Link>
               <Link to="/contact" className="block text-white/70 hover:text-white transition">
                 Contact
