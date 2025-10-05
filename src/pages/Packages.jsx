@@ -176,13 +176,13 @@ function Packages() {
                 <p className="text-neutralDark/80">Complete transformation of how you move</p>
               </div>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid md:grid-cols-3 gap-6">
                 {/* Basic */}
-                <div className="border border-neutralLight rounded-lg p-4">
-                  <h3 className="font-semibold text-neutralDark mb-2">Basic</h3>
-                  <div className="bg-accent/10 p-3 rounded-lg mb-3">
-                    <p className="text-xl font-bold text-accent mb-1">$3,720</p>
-                    <p className="text-xs text-neutralDark/80">
+                <div className="border border-neutralLight rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Basic</h3>
+                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
+                    <p className="text-2xl font-bold text-accent mb-2">$3,720</p>
+                    <p className="text-sm text-neutralDark/80">
                       {packageConfigs['Full Repatterning - Basic'].description}
                     </p>
                   </div>
@@ -192,44 +192,23 @@ function Packages() {
                     description={packageConfigs['Full Repatterning - Basic'].name}
                     packageType={packageConfigs['Full Repatterning - Basic'].name}
                     totalSessions={packageConfigs['Full Repatterning - Basic'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-3 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-xs"
+                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
                   >
-                    $3,720
-                  </PaymentButton>
-                </div>
-
-                {/* Extended */}
-                <div className="border border-neutralLight rounded-lg p-4">
-                  <h3 className="font-semibold text-neutralDark mb-2">Extended</h3>
-                  <div className="bg-accent/10 p-3 rounded-lg mb-3">
-                    <p className="text-xl font-bold text-accent mb-1">$5,400</p>
-                    <p className="text-xs text-neutralDark/80">
-                      {packageConfigs['Full Repatterning - Extended'].description}
-                    </p>
-                  </div>
-                  
-                  <PaymentButton
-                    amount={packageConfigs['Full Repatterning - Extended'].price * 100}
-                    description={packageConfigs['Full Repatterning - Extended'].name}
-                    packageType={packageConfigs['Full Repatterning - Extended'].name}
-                    totalSessions={packageConfigs['Full Repatterning - Extended'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-3 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-xs"
-                  >
-                    $5,400
+                    Purchase Basic - $3,720
                   </PaymentButton>
                 </div>
 
                 {/* Premium */}
-                <div className="border border-accent rounded-lg p-4 relative">
-                  <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-accent text-white px-2 py-1 rounded-full text-xs font-semibold">
-                      Premium
+                <div className="border border-accent rounded-lg p-6 relative">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold">
+                      Most Popular
                     </span>
                   </div>
-                  <h3 className="font-semibold text-neutralDark mb-2">Premium</h3>
-                  <div className="bg-accent/10 p-3 rounded-lg mb-3">
-                    <p className="text-xl font-bold text-accent mb-1">$5,400</p>
-                    <p className="text-xs text-neutralDark/80">
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Premium</h3>
+                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
+                    <p className="text-2xl font-bold text-accent mb-2">$5,400</p>
+                    <p className="text-sm text-neutralDark/80">
                       {packageConfigs['Full Repatterning - Premium'].description}
                     </p>
                   </div>
@@ -239,23 +218,18 @@ function Packages() {
                     description={packageConfigs['Full Repatterning - Premium'].name}
                     packageType={packageConfigs['Full Repatterning - Premium'].name}
                     totalSessions={packageConfigs['Full Repatterning - Premium'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-3 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-xs"
+                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
                   >
-                    $5,400
+                    Purchase Premium - $5,400
                   </PaymentButton>
                 </div>
 
                 {/* Ultimate */}
-                <div className="border border-accent rounded-lg p-4 relative">
-                  <div className="absolute -top-2 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-accent text-white px-2 py-1 rounded-full text-xs font-semibold">
-                      Ultimate
-                    </span>
-                  </div>
-                  <h3 className="font-semibold text-neutralDark mb-2">Ultimate</h3>
-                  <div className="bg-accent/10 p-3 rounded-lg mb-3">
-                    <p className="text-xl font-bold text-accent mb-1">$7,200</p>
-                    <p className="text-xs text-neutralDark/80">
+                <div className="border border-neutralLight rounded-lg p-6">
+                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Ultimate</h3>
+                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
+                    <p className="text-2xl font-bold text-accent mb-2">$7,200</p>
+                    <p className="text-sm text-neutralDark/80">
                       {packageConfigs['Full Repatterning - Ultimate'].description}
                     </p>
                   </div>
@@ -265,9 +239,9 @@ function Packages() {
                     description={packageConfigs['Full Repatterning - Ultimate'].name}
                     packageType={packageConfigs['Full Repatterning - Ultimate'].name}
                     totalSessions={packageConfigs['Full Repatterning - Ultimate'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-3 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-xs"
+                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
                   >
-                    $7,200
+                    Purchase Ultimate - $7,200
                   </PaymentButton>
                 </div>
               </div>

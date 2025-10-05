@@ -13,7 +13,7 @@ export const getOrganizationSchema = () => ({
   url: 'https://rockyourbody.com',
   logo: 'https://rockyourbody.com/logo.png',
   image: 'https://rockyourbody.com/og-image.jpg',
-  telephone: '+1-XXX-XXX-XXXX', // Add your phone number
+  telephone: '+1-831-216-6410', // Add your phone number
   email: 'rock@rockyourbody.com', // Add your email
   address: {
     '@type': 'PostalAddress',
@@ -23,16 +23,16 @@ export const getOrganizationSchema = () => ({
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '36.9741', // Update with actual coordinates
-    longitude: '-122.0308',
+    latitude: '36.927', // Update with actual coordinates
+    longitude: '-122.023',
   },
   priceRange: '$$',
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:00',
+      opens: '06:00',
+      closes: '20:00',
     },
   ],
   sameAs: [
