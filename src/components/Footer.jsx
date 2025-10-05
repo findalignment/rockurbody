@@ -47,7 +47,7 @@ function Footer() {
               By appointment only
             </p>
             <Link
-              to="/contact"
+              to="/book"
               className="inline-block px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
             >
               Book a Session

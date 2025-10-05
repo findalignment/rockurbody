@@ -20,15 +20,22 @@ function ForgotPassword() {
       await resetPassword(email);
       setSuccess(true);
       setEmail('');
+      console.log('✅ Password reset email sent successfully to:', email);
     } catch (error) {
-      console.error('Password reset error:', error);
+      console.error('❌ Password reset error:', error);
+      console.error('Error code:', error.code);
+      console.error('Error message:', error.message);
       
       if (error.code === 'auth/user-not-found') {
         setError('No account found with this email address.');
       } else if (error.code === 'auth/invalid-email') {
         setError('Invalid email address.');
+      } else if (error.code === 'auth/missing-email') {
+        setError('Please enter an email address.');
+      } else if (error.code === 'auth/invalid-action-code') {
+        setError('The password reset link has expired or is invalid.');
       } else {
-        setError('Failed to send password reset email. Please try again.');
+        setError(`Failed to send password reset email: ${error.message}. Please contact rock@rockurbody.com for assistance.`);
       }
     } finally {
       setLoading(false);
@@ -119,14 +126,15 @@ function ForgotPassword() {
                 Didn't receive the email?
               </p>
               <ul className="text-xs text-neutralDark/70 space-y-1 list-disc list-inside">
-                <li>Check your spam/junk folder</li>
+                <li>Check your spam/junk folder (look for emails from Firebase)</li>
                 <li>Make sure you entered the correct email address</li>
                 <li>Wait a few minutes - emails can take up to 5 minutes to arrive</li>
                 <li>Check that the email is registered with an account</li>
                 <li>The reset link expires in 1 hour</li>
+                <li>Check browser console (F12) for detailed error messages</li>
               </ul>
               <p className="text-xs text-neutralDark/70 mt-3">
-                <strong>Still having issues?</strong> Contact rock@rockurbody.com for help.
+                <strong>Still having issues?</strong> Email rock@rockurbody.com with your email address and any error messages from the browser console.
               </p>
             </div>
           </div>
