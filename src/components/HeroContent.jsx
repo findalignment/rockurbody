@@ -10,6 +10,11 @@ function HeroContent() {
       <p className="text-white/90 text-base md:text-lg lg:text-xl font-light max-w-xs md:max-w-sm leading-relaxed">
         Movement and Alignment Specialist
       </p>
+      
+      {/* Call to Action */}
+      <p className="text-white/80 text-sm md:text-base lg:text-lg font-normal mt-3 md:mt-4 italic">
+        Ask me anything
+      </p>
     </div>
   );
 }

@@ -1,5 +1,9 @@
 import PageLayout from '../components/PageLayout';
 import PaymentButton from '../components/PaymentButton';
+import FadeInSection from '../components/FadeInSection';
+import AnimatedCard from '../components/AnimatedCard';
+import AnimatedButton from '../components/AnimatedButton';
+import ParallaxSection from '../components/ParallaxSection';
 
 function Pricing() {
   // Base prices
@@ -22,33 +26,44 @@ function Pricing() {
 
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <ParallaxSection 
+        backgroundColor="#faf8f5"
+        speed={0.2}
+        className="pt-24 pb-16 px-4"
+      >
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-8">
-            Pricing
-          </h1>
+          <FadeInSection direction="up">
+            <h1 className="text-5xl font-heading text-primary mb-8">
+              Pricing
+            </h1>
+          </FadeInSection>
+          
           <div className="space-y-12">
             {/* Consultation */}
-            <div>
-              <h2 className="text-3xl font-heading text-neutralDark mb-6">Consultation</h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="bg-white rounded-xl p-6 shadow-sm border border-black">
-                  <h3 className="font-semibold text-neutralDark mb-2">
-                    Free Consultation
-              </h3>
-                  <p className="text-2xl font-bold text-accent mb-3">Free</p>
-                  <p className="text-sm text-neutralDark/80 mb-3">
-                    Initial assessment
-                  </p>
-                  <a
-                    href="/book/consult"
-                    className="inline-block w-full px-3 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-center text-sm border border-black"
-                  >
-                    Book Now
-                  </a>
+            <FadeInSection delay={100}>
+              <div>
+                <h2 className="text-3xl font-heading text-neutralDark mb-6">Consultation</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  <AnimatedCard glassmorphism>
+                    <h3 className="font-semibold text-neutralDark mb-2">
+                      Free Consultation
+                    </h3>
+                    <p className="text-2xl font-bold text-sage mb-3">Free</p>
+                    <p className="text-sm text-neutralDark/80 mb-4">
+                      Initial assessment to understand your needs
+                    </p>
+                    <AnimatedButton
+                      href="/book/consult"
+                      variant="cta"
+                      size="sm"
+                      className="w-full"
+                    >
+                      Book Now
+                    </AnimatedButton>
+                  </AnimatedCard>
                 </div>
               </div>
-            </div>
+            </FadeInSection>
 
             {/* Movement Education */}
             <div>
@@ -288,7 +303,7 @@ function Pricing() {
             </div>
           </div>
         </div>
-      </div>
+      </ParallaxSection>
     </PageLayout>
   );
 }

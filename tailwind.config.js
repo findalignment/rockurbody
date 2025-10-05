@@ -43,6 +43,12 @@ export default {
         'loose': '2',
         'extra-loose': '2.25',
       },
+      transitionDuration: {
+        '400': '400ms',
+      },
+      transitionTimingFunction: {
+        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      },
     },
   },
   plugins: [],
