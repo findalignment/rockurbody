@@ -19,7 +19,7 @@ function PageHero({
     <ParallaxSection
       backgroundImage={imageSrc}
       speed={0.3}
-      className="relative h-screen flex items-end pb-16 md:pb-24"
+      className="relative min-h-[150vh] flex items-end pb-16 md:pb-24 -mt-20"
     >
       {/* Dark overlay for text readability */}
       <div 
@@ -29,8 +29,8 @@ function PageHero({
       
       {/* Content - sleek modern box positioned lower over the image */}
       <div className="relative z-10 px-4 max-w-5xl mx-auto w-full">
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-black shadow-2xl py-12 md:py-16 px-6 md:px-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 text-center">
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-black shadow-2xl py-16 md:py-20 lg:py-24 px-8 md:px-16">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-8 md:mb-10 text-center">
             {title}
           </h1>
           {subtitle && (
