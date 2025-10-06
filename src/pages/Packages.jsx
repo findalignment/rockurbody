@@ -3,28 +3,28 @@ import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
 
 function Packages() {
-  // Movement session packages - based on pricing from Pricing page
+  // Movement session packages - matches Pricing page
   const movementPackages = {
     '5 Sessions': {
       sessions: 5,
-      price: 825, // $165 * 5 * 0.90 (10% off)
+      price: 810, // $180 * 5 * 0.90 (10% off)
       discount: '10%',
-      pricePerSession: 165,
-      savings: 82.50
+      pricePerSession: 162,
+      savings: 90
     },
     '10 Sessions': {
       sessions: 10,
-      price: 1402.50, // $165 * 10 * 0.85 (15% off)
+      price: 1530, // $180 * 10 * 0.85 (15% off)
       discount: '15%',
-      pricePerSession: 140.25,
-      savings: 247.50
+      pricePerSession: 153,
+      savings: 270
     },
     '20 Sessions': {
       sessions: 20,
-      price: 2640, // $165 * 20 * 0.80 (20% off)
+      price: 2880, // $180 * 20 * 0.80 (20% off)
       discount: '20%',
-      pricePerSession: 132,
-      savings: 660
+      pricePerSession: 144,
+      savings: 720
     }
   };
 
@@ -112,7 +112,7 @@ function Packages() {
           <div className="mb-20">
             <h2 className="text-3xl font-heading text-primary mb-8 text-center">Movement Education Packages</h2>
             <p className="text-lg text-neutralDark/80 mb-12 text-center max-w-3xl mx-auto">
-              Save on multiple sessions of one-on-one movement training. Focus on how you move, not just what exercises you do.
+              Save on multiple 60-minute sessions of one-on-one movement training. Focus on how you move, not just what exercises you do.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -124,7 +124,7 @@ function Packages() {
                   </div>
                   <h3 className="text-2xl font-heading text-primary mb-2">5 Sessions</h3>
                   <div className="text-4xl font-bold text-accent mb-2">${movementPackages['5 Sessions'].price}</div>
-                  <p className="text-sm text-neutralDark/60 line-through mb-1">${movementPackages['5 Sessions'].pricePerSession * 5}</p>
+                  <p className="text-sm text-neutralDark/60 line-through mb-1">$900</p>
                   <p className="text-lg text-neutralDark/80">${movementPackages['5 Sessions'].pricePerSession}/session</p>
                 </div>
                 
@@ -157,7 +157,7 @@ function Packages() {
                   </div>
                   <h3 className="text-2xl font-heading text-primary mb-2">10 Sessions</h3>
                   <div className="text-4xl font-bold text-accent mb-2">${movementPackages['10 Sessions'].price}</div>
-                  <p className="text-sm text-neutralDark/60 line-through mb-1">${movementPackages['10 Sessions'].pricePerSession * 10 + movementPackages['10 Sessions'].savings}</p>
+                  <p className="text-sm text-neutralDark/60 line-through mb-1">$1,800</p>
                   <p className="text-lg text-neutralDark/80">${movementPackages['10 Sessions'].pricePerSession}/session</p>
                 </div>
                 
@@ -187,7 +187,7 @@ function Packages() {
                   </div>
                   <h3 className="text-2xl font-heading text-primary mb-2">20 Sessions</h3>
                   <div className="text-4xl font-bold text-accent mb-2">${movementPackages['20 Sessions'].price}</div>
-                  <p className="text-sm text-neutralDark/60 line-through mb-1">${movementPackages['20 Sessions'].pricePerSession * 20 + movementPackages['20 Sessions'].savings}</p>
+                  <p className="text-sm text-neutralDark/60 line-through mb-1">$3,600</p>
                   <p className="text-lg text-neutralDark/80">${movementPackages['20 Sessions'].pricePerSession}/session</p>
                 </div>
                 
