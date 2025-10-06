@@ -139,7 +139,7 @@ function Packages() {
                   packageType="Movement 5-Pack"
                   totalSessions={5}
                   amount={movementPackages['5 Sessions'].price}
-                  className="w-full"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Get Started
                 </PaymentButton>
@@ -173,8 +173,7 @@ function Packages() {
                   packageType="Movement 10-Pack"
                   totalSessions={10}
                   amount={movementPackages['10 Sessions'].price}
-                  className="w-full"
-                  variant="primary"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Get Started
                 </PaymentButton>
@@ -204,7 +203,7 @@ function Packages() {
                   packageType="Movement 20-Pack"
                   totalSessions={20}
                   amount={movementPackages['20 Sessions'].price}
-                  className="w-full"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Get Started
                 </PaymentButton>
@@ -222,8 +221,9 @@ function Packages() {
 
           {/* Package Options */}
           <div className="space-y-20">
-            {/* The Reset */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
+            {/* The Reset - Half width, centered */}
+            <div className="max-w-2xl mx-auto">
+              <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-heading text-primary mb-4">The Reset</h2>
                 <p className="text-lg text-neutralDark/80">Perfect for getting back on track</p>
@@ -246,6 +246,7 @@ function Packages() {
                 >
                   Purchase The Reset - $990
                 </PaymentButton>
+              </div>
               </div>
             </div>
 
