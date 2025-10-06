@@ -211,6 +211,76 @@ function Packages() {
             </div>
           </div>
 
+          {/* Structural Integration Packages */}
+          <div className="mb-20">
+            <h2 className="text-3xl font-heading text-primary mb-8 text-center">Structural Integration Series</h2>
+            <p className="text-lg text-neutralDark/80 mb-12 text-center max-w-3xl mx-auto">
+              Transform your body's structure through comprehensive Structural Integration protocols. Each series offers a complete approach to realigning your body and restoring natural movement patterns.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Hip Series */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                <div className="text-center mb-6">
+                  <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Great Introduction
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">Hip Series</h3>
+                  <div className="text-4xl font-bold text-accent mb-2">$720</div>
+                  <p className="text-lg text-neutralDark/80">4 targeted sessions</p>
+                </div>
+                
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                  <li>✓ 4-session focused hip work</li>
+                  <li>✓ Targeted hip mobility & alignment</li>
+                  <li>✓ Great intro to the work</li>
+                  <li>✓ Perfect precursor to 12-Series</li>
+                </ul>
+                
+                <PaymentButton
+                  packageType="Hip Series"
+                  totalSessions={4}
+                  amount={720}
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                >
+                  Get Started
+                </PaymentButton>
+              </div>
+
+              {/* 12-Series */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
+                  MOST POPULAR
+                </div>
+                
+                <div className="text-center mb-6 mt-2">
+                  <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Complete Protocol
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">12-Series</h3>
+                  <div className="text-4xl font-bold text-accent mb-2">$3,000</div>
+                  <p className="text-lg text-neutralDark/80">12 comprehensive sessions</p>
+                </div>
+                
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                  <li>✓ Complete Anatomy Trains protocol</li>
+                  <li>✓ Full structural transformation</li>
+                  <li>✓ Proven systematic approach</li>
+                  <li>✓ Life-changing results</li>
+                </ul>
+                
+                <PaymentButton
+                  packageType="12-Series"
+                  totalSessions={12}
+                  amount={3000}
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                >
+                  Get Started
+                </PaymentButton>
+              </div>
+            </div>
+          </div>
+
           {/* Specialized Programs */}
           <div className="mb-12">
             <h2 className="text-3xl font-heading text-primary mb-4 text-center">Specialized Programs</h2>
