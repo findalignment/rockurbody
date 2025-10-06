@@ -61,7 +61,7 @@ function ParallaxSection({
           transform: `translate3d(0, ${offset}px, 0)`,
           willChange: 'transform',
           // Add scale to prevent gaps during parallax
-          scale: '1.2',  // Slight scale up
+          scale: '0.8',  // Slight scale up
         }}
       />
       

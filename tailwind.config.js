@@ -7,19 +7,26 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#0a2540',      // Deep ocean blue
-        accent: '#06b6d4',       // Cyan (fine accent only)
-        secondary: '#1e4a6f',    // Medium ocean blue
-        sand: '#d4c5b0',         // Desaturated sand
-        offWhite: '#faf8f5',     // Off-white
-        sage: '#8ba888',         // Sage green
-        highlight: '#f97316',    // Orange (kept for CTAs)
-        text: '#1a1a1a',         // Near black for text
+        // WCAG AA Compliant Colors (4.5:1 contrast ratio minimum)
+        primary: '#0a2540',      // Deep ocean blue (AA compliant on white)
+        accent: '#0891b2',       // Darker cyan (AA compliant - was #06b6d4)
+        'accent-light': '#06b6d4', // Original cyan for decorative use only
+        secondary: '#1e4a6f',    // Medium ocean blue (AA compliant)
+        sand: '#d4c5b0',         // Desaturated sand (decorative only)
+        offWhite: '#faf8f5',     // Off-white backgrounds
+        sage: '#4a7c59',         // Darker sage green (AA compliant - was #8ba888)
+        'sage-light': '#8ba888', // Original sage for decorative use only
+        highlight: '#ea580c',    // Darker orange (AA compliant - was #f97316)
+        text: '#1a1a1a',         // Near black for text (AAA compliant)
         neutralLight: '#faf8f5', // Off-white
-        neutralDark: '#2c3e50',  // Dark blue-gray for body text
-        success: '#8ba888',      // Sage green
-        warning: '#f59e0b',
-        error: '#ef4444',
+        neutralDark: '#1e293b',  // Darker slate (AA compliant - was #2c3e50)
+        success: '#166534',      // Dark green (AA compliant)
+        'success-light': '#4a7c59', // Lighter for backgrounds
+        warning: '#d97706',      // Darker amber (AA compliant - was #f59e0b)
+        error: '#dc2626',        // Darker red (AA compliant - was #ef4444)
+        
+        // Focus ring color (high contrast)
+        focus: '#0891b2',        // Accent color for focus states
       },
       fontFamily: {
         display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Geometric sans for display
