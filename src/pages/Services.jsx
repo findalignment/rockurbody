@@ -1,14 +1,16 @@
 import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 
 function Services() {
   return (
     <PageLayout>
-      <div className="pt-32 pb-24 px-6">
+      <PageHero 
+        imageSrc="/services-hero.jpg"
+        title="Our Services"
+        subtitle="Structural Integration & Movement Education"
+      />
+      <div className="pt-16 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-12">
-            Services
-          </h1>
-          
           <p className="text-xl text-neutralDark/80 mb-16 leading-relaxed">
             I offer two complementary approaches: hands-on structural work and movement education. Most clients benefit from both.
           </p>

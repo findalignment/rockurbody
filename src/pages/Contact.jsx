@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 
 function Contact() {
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <PageHero 
+        imageSrc="/contact-hero.jpg"
+        title="Get in Touch"
+        subtitle="Located in Santa Cruz, CA"
+      />
+      <div className="pt-16 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-8">
-            Contact & Location
-          </h1>
           <div className="bg-white rounded-2xl p-8 shadow-sm">
             <div className="space-y-6">
               <div>

@@ -1,14 +1,16 @@
 import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 
 function About() {
   return (
     <PageLayout>
-      <div className="pt-32 pb-24 px-6">
+      <PageHero 
+        imageSrc="/about-hero.jpg"
+        title="About Rock Your Body"
+        subtitle="Helping you move better, feel better, and live better"
+      />
+      <div className="pt-16 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-12">
-            About Rock Your Body
-          </h1>
-          
           <div className="space-y-12">
             <div className="bg-white rounded-2xl p-10 shadow-sm">
               <h2 className="text-3xl font-heading text-neutralDark mb-6">

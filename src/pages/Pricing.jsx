@@ -1,4 +1,5 @@
 import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
 import FadeInSection from '../components/FadeInSection';
 import AnimatedCard from '../components/AnimatedCard';
@@ -26,17 +27,17 @@ function Pricing() {
 
   return (
     <PageLayout>
+      <PageHero 
+        imageSrc="/pricing-hero.jpg"
+        title="Pricing"
+        subtitle="Transparent, flexible investment in your wellbeing"
+      />
       <ParallaxSection 
         backgroundColor="#faf8f5"
         speed={0.2}
-        className="pt-24 pb-16 px-4"
+        className="pt-16 pb-16 px-4"
       >
         <div className="max-w-6xl mx-auto">
-          <FadeInSection direction="up">
-            <h1 className="text-5xl font-heading text-primary mb-8">
-              Pricing
-            </h1>
-          </FadeInSection>
           
           <div className="space-y-12">
             {/* Consultation */}

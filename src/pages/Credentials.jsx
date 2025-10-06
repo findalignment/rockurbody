@@ -1,12 +1,15 @@
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
+
 function Credentials() {
   return (
-    <div style={{ padding: '100px 20px 50px', maxWidth: '1000px', margin: '0 auto' }}>
-      <h1 style={{ fontSize: '48px', marginBottom: '20px' }}>
-        Experience & Education
-      </h1>
-      <p style={{ fontSize: '20px', color: '#666', marginBottom: '40px' }}>
-        My background and training
-      </p>
+    <PageLayout>
+      <PageHero 
+        imageSrc="/credentials-hero.jpg"
+        title="Credentials & Certifications"
+        subtitle="Professional training and expertise"
+      />
+    <div style={{ padding: '40px 20px 50px', maxWidth: '1000px', margin: '0 auto' }}>
 
       {/* Add your actual credentials here - template below */}
 
@@ -128,6 +131,7 @@ function Credentials() {
         </p>
       </div>
     </div>
+    </PageLayout>
   );
 }
 

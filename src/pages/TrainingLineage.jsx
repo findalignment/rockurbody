@@ -1,13 +1,16 @@
 import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 
 function TrainingLineage() {
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <PageHero 
+        imageSrc="/training-hero.jpg"
+        title="Training & Lineage"
+        subtitle="Mentors who shaped my approach"
+      />
+      <div className="pt-16 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-8">
-            Training & Lineage
-          </h1>
           <p className="text-xl text-neutralDark/80 mb-12">
             The mentors and teachers who have shaped my approach to structural integration and movement education
           </p>

@@ -1,4 +1,5 @@
 import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
 
 function Packages() {
@@ -71,14 +72,13 @@ function Packages() {
 
   return (
     <PageLayout>
-      <div className="pt-32 pb-24 px-6">
+      <PageHero 
+        imageSrc="/packages-hero.jpg"
+        title="Programs Designed Around You"
+        subtitle="Move Better. Feel Stronger. Stay Adventurous."
+      />
+      <div className="pt-16 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-12 text-center">
-            Programs Designed Around You
-          </h1>
-          <p className="text-2xl font-semibold text-neutralDark mb-6 text-center">
-            Move Better. Feel Stronger. Stay Adventurous.
-          </p>
           <p className="text-xl text-neutralDark/80 mb-20 text-center max-w-4xl mx-auto leading-relaxed">
             The movement and structural integration programs are thoughtfully crafted around real client needs: relieving tension, improving mobility, and supporting lifelong vitality. Each program offers a proven path to freedom in your body, yet every journey is personal. That's why each plan is adaptable to your unique goals and lifestyle. Not sure where to start? Explore your options with a free consultation and let's find the right fit together.
           </p>

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PageLayout from '../../components/PageLayout';
+import PageHero from '../../components/PageHero';
 
 function BlogIndex() {
   const blogPosts = [
@@ -15,14 +16,13 @@ function BlogIndex() {
 
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <PageHero 
+        imageSrc="/blog-hero.jpg"
+        title="Blog"
+        subtitle="Insights on movement, structure, and wellness"
+      />
+      <div className="pt-16 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-4">
-            Blog
-          </h1>
-          <p className="text-xl text-neutralDark/80 mb-12">
-            Insights on movement, structural integration, and whole-body transformation
-          </p>
 
           <div className="space-y-8">
             {blogPosts.map((post) => (

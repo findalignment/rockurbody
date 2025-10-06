@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import { useAuth } from '../contexts/AuthContext';
 
 function Dashboard() {
@@ -241,11 +242,13 @@ function Dashboard() {
 
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <PageHero 
+        imageSrc="/dashboard-hero.jpg"
+        title="My Account"
+        subtitle="Manage your sessions and appointments"
+      />
+      <div className="pt-16 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-heading text-primary mb-8 text-center">
-            My Account
-          </h1>
 
           <div className="space-y-8">
             {/* Welcome Message */}
