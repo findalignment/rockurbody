@@ -67,8 +67,9 @@ function ParallaxSection({
         style={{
           backgroundColor,
           backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center top',
           transform: `translateY(${offset}px)`,
           transition: 'transform 0.1s ease-out',
         }}
