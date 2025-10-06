@@ -22,20 +22,22 @@ function PageHero({
         speed={0.3}
         className="relative min-h-[150vh] flex items-end pb-16 md:pb-24"
       >
-        {/* Dark overlay for text readability */}
+        {/* Modern gradient overlay - dark at bottom, transparent at top */}
         <div 
-          className="absolute inset-0 bg-primary z-0"
-          style={{ opacity: overlayOpacity / 100 }}
+          className="absolute inset-0 z-0"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.3) 40%, rgba(15, 23, 42, 0.7) 80%, rgba(15, 23, 42, 0.85) 100%)'
+          }}
         />
         
-        {/* Content - sleek modern box positioned lower over the image (50% smaller) */}
+        {/* Content - modern minimal card */}
         <div className="relative z-10 px-4 max-w-3xl mx-auto w-full">
-          <div className="relative bg-white/10 backdrop-blur-md rounded-2xl border border-black py-10 md:py-12 lg:py-14 px-6 md:px-10" style={{ boxShadow: 'none' }}>
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-5 md:mb-6 text-center">
+          <div className="relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl rounded-3xl border-2 border-white/30 py-10 md:py-12 lg:py-14 px-6 md:px-10" style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)' }}>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-5 md:mb-6 text-center drop-shadow-lg">
               {title}
             </h1>
             {subtitle && (
-              <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto text-center leading-relaxed">
+              <p className="text-base md:text-lg lg:text-xl text-white/95 max-w-2xl mx-auto text-center leading-relaxed drop-shadow-md">
                 {subtitle}
               </p>
             )}
