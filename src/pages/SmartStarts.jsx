@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
+import Button from '../components/Button';
 
 function SmartStarts() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -245,14 +246,13 @@ function SmartStarts() {
           <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
             Let's talk. A free consultation helps us figure out together what makes sense for your body, your goals, and your life right now.
           </p>
-          <a
+          <Button
             href="https://cal.com/rockyourbody/consultation"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-primary text-white rounded-xl font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg"
+            variant="primary"
+            size="lg"
           >
             Book Free Consultation
-          </a>
+          </Button>
         </div>
       </div>
 

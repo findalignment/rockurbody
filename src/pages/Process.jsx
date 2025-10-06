@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
+import Button from '../components/Button';
 
 function Process() {
   const [activeStep, setActiveStep] = useState(0);
@@ -189,14 +190,13 @@ function Process() {
           <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
             Book a free consultation to explore how this process can work for you. We'll assess where you are, discuss your goals, and create a path forward that makes sense for your body and your life.
           </p>
-          <a
+          <Button
             href="https://cal.com/rockyourbody/consultation"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-accent text-white rounded-xl font-semibold hover:bg-accent/90 transition-all transform hover:scale-105 shadow-lg"
+            variant="accent"
+            size="lg"
           >
             Book Free Consultation
-          </a>
+          </Button>
         </div>
       </div>
     </PageLayout>

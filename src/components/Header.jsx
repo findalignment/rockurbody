@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
+import Button from './Button';
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -96,12 +97,13 @@ function Header() {
                 }`}></span>
               </Link>
             ))}
-            <Link
+            <Button
               to="/book"
-              className="px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 hover:shadow-lg transition-all duration-300"
+              variant="accent"
+              className="border-transparent"
             >
               Book Now
-            </Link>
+            </Button>
           </nav>
           
           {/* Mobile Menu Button */}
@@ -148,13 +150,15 @@ function Header() {
                 {link.name}
               </Link>
             ))}
-            <Link
+            <Button
               to="/book"
               onClick={() => setMobileMenuOpen(false)}
-              className="block w-full text-center px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition-all"
+              variant="accent"
+              fullWidth
+              className="border-transparent"
             >
               Book Now
-            </Link>
+            </Button>
           </nav>
         )}
       </div>

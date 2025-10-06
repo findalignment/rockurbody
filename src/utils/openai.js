@@ -96,6 +96,38 @@ It’s a great intro to the 12-series
 Best for: Hip pain, limited mobility, groin issues, hip-related back pain
 See /hip-series for full details
 
+MY APPROACH:
+I combine three elements:
+1. I work hands-on - Structural Integration to reorganize your body's connective tissue
+2. I teach movement - Movement Education so you learn patterns that stick
+3. I help your body remember - Integration so the changes become automatic
+
+Core Principles:
+- The body is a system (pain in one area often comes from somewhere else)
+- Structure influences function (how you're built affects how you move)
+- Movement is a skill (it's about learning patterns, not just getting stronger)
+- Fascia is key (your connective tissue holds patterns that can be released)
+- You have to move it (I can release restrictions, but you integrate the change through movement)
+
+What makes this different: Most personal training focuses on exercises. Most bodywork focuses on relaxation. I combine both: structural work to reorganize your body, plus movement education to make the changes last.
+
+See /approach for full details
+
+THE PROCESS:
+1. ASSESS - Where are you now? Comprehensive movement and structural assessment
+2. WORK - Meeting your body where it is through hands-on SI and movement training
+3. REINFORCE - Making it stick with practices you can do at home
+
+See /process for full details
+
+SMART STARTS:
+Three clear entry points for new clients:
+1. The Reset ($990, 6 sessions) - Get back on track, perfect for getting restarted
+2. Hip Series ($720, 4 sessions) - Great intro to the work, focused on hip freedom
+3. Full Repatterning ($3,720+, 24+ sessions) - Complete transformation
+
+See /smart-starts for full details and to help decide which is right
+
 BLOG POSTS:
 Rock has written detailed blog posts that explain his approach. Reference these when relevant:
 
@@ -371,8 +403,26 @@ if (message.includes('hip series') || message.includes('hip pain') || message.in
 }
 
 // Approach
-if (message.includes('approach') || message.includes('philosophy') || message.includes('how do you work')) {
+if (message.includes('approach') || message.includes('philosophy') || 
+    message.includes('how do you work') || message.includes('your method') ||
+    message.includes('what makes you different') || message.includes('principles') ||
+    (message.includes('work') && (message.includes('hands') || message.includes('teach')))) {
   return '/approach';
+}
+
+// Process
+if (message.includes('process') || message.includes('how does it work') || 
+    message.includes('what happens') || message.includes('step by step') ||
+    (message.includes('assess') && (message.includes('work') || message.includes('reinforce')))) {
+  return '/process';
+}
+
+// Smart Starts
+if (message.includes('where') && (message.includes('start') || message.includes('begin')) ||
+    message.includes('smart start') || message.includes('new') && message.includes('client') ||
+    message.includes('first time') || message.includes('getting started') ||
+    (message.includes('which') && (message.includes('program') || message.includes('package')))) {
+  return '/smart-starts';
 }
 
 // Credentials

@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
+import Button from '../components/Button';
 
 function Contact() {
   return (
@@ -53,12 +53,12 @@ function Contact() {
                 <p className="text-neutralDark/80 mb-4">
                   Ready to transform how you move?
                 </p>
-                <Link 
+                <Button 
                   to="/book"
-                  className="inline-block px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
+                  variant="accent"
                 >
                   Schedule Now
-                </Link>
+                </Button>
               </div>
             </div>
           </div>
