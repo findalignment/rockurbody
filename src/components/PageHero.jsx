@@ -21,7 +21,7 @@ function PageHero({
       <ParallaxSection
         backgroundImage={imageSrc}
         speed={0.3}
-        className="relative min-h-[2150vh]"
+        className="relative h-[60vh] md:h-[70vh]"
       >
         {/* Optional subtle vignette */}
         <div 
@@ -33,7 +33,7 @@ function PageHero({
       </ParallaxSection>
       
       {/* Hero Text Below Parallax */}
-      <div className="bg-white py-12 md:py-16 px-6">
+      <div className="bg-white py-8 md:py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
             {title}
