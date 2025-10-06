@@ -21,7 +21,7 @@ function PageHero({
       <ParallaxSection
         backgroundImage={imageSrc}
         speed={0.3}
-        className="relative min-h-[200vh]"
+        className="relative min-h-[2150vh]"
       >
         {/* Optional subtle vignette */}
         <div 
