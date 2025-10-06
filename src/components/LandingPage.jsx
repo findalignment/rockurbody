@@ -22,11 +22,9 @@ function LandingPage() {
 
   // Quick suggestion buttons
   const suggestionButtons = [
-    { text: "What services do you offer?", icon: "💪" },
-    { text: "Tell me about your packages", icon: "📦" },
-    { text: "Who are you?", icon: "👤" },
+    { text: "Where should I start?", icon: "🚀", route: "/smart-starts" },
     { text: "What's your approach?", icon: "🎯" },
-    { text: "How does structural integration work?", icon: "🔧" },
+    { text: "Tell me about your packages", icon: "📦" },
     { text: "Book a consultation", icon: "📅" },
   ];
 
@@ -178,7 +176,15 @@ function LandingPage() {
     }
   };
 
-  const handleSuggestionClick = (suggestionText) => {
+  const handleSuggestionClick = (suggestion) => {
+    // If suggestion has a route, navigate directly
+    if (typeof suggestion === 'object' && suggestion.route) {
+      navigate(suggestion.route);
+      return;
+    }
+    
+    // Otherwise, treat as a chat question
+    const suggestionText = typeof suggestion === 'string' ? suggestion : suggestion.text;
     if (questionCount >= MAX_QUESTIONS) return;
     setInput(suggestionText);
     // Automatically submit after a brief delay
@@ -368,7 +374,7 @@ function LandingPage() {
                           {suggestionButtons.slice(0, 3).map((suggestion, index) => (
                             <button
                               key={index}
-                              onClick={() => handleSuggestionClick(suggestion.text)}
+                              onClick={() => handleSuggestionClick(suggestion)}
                               className="px-3 py-1.5 bg-white/20 hover:bg-white/30 text-white text-xs rounded-lg transition-all duration-200 flex items-center gap-1.5 backdrop-blur-sm border border-white/20"
                             >
                               <span>{suggestion.icon}</span>
@@ -397,11 +403,11 @@ function LandingPage() {
             {conversation.length === 0 && (
               <div className="p-4 border-b border-white/20">
                 <p className="text-xs text-white/70 mb-3 text-center">Popular questions:</p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 gap-2">
                   {suggestionButtons.map((suggestion, index) => (
                     <button
                       key={index}
-                      onClick={() => handleSuggestionClick(suggestion.text)}
+                      onClick={() => handleSuggestionClick(suggestion)}
                       className="px-3 py-2 bg-white/10 hover:bg-white/20 text-white text-xs rounded-lg transition-all duration-200 flex items-center justify-center gap-2 backdrop-blur-sm border border-white/20"
                     >
                       <span className="text-base">{suggestion.icon}</span>
