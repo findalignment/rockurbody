@@ -282,174 +282,199 @@ function Packages() {
           </div>
 
           {/* Specialized Programs */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-heading text-primary mb-4 text-center">Specialized Programs</h2>
+          <div className="mb-20">
+            <h2 className="text-3xl font-heading text-primary mb-8 text-center">Specialized Programs</h2>
             <p className="text-lg text-neutralDark/80 mb-12 text-center max-w-3xl mx-auto">
               Comprehensive programs combining Structural Integration and Movement Education for lasting change.
             </p>
-          </div>
 
-          {/* Package Options */}
-          <div className="space-y-20">
-            {/* The Reset - Half width, centered */}
-            <div className="max-w-2xl mx-auto">
-              <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl font-heading text-primary mb-4">The Reset</h2>
-                <p className="text-lg text-neutralDark/80">Perfect for getting back on track</p>
-              </div>
-              
-              <div className="text-center mb-8">
-                <div className="bg-accent/10 p-4 rounded-lg mb-4">
-                  <p className="text-3xl font-bold text-accent mb-2">$990</p>
-                  <p className="text-sm text-neutralDark/80">
-                    {packageConfigs['The Reset'].description}
-                  </p>
+            {/* The Reset - Single Card */}
+            <div className="max-w-md mx-auto mb-16">
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                <div className="text-center mb-6">
+                  <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Quick Reset
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">The Reset</h3>
+                  <div className="text-4xl font-bold text-accent mb-2">$990</div>
+                  <p className="text-lg text-neutralDark/80">6 sessions total</p>
                 </div>
+                
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                  <li>✓ 3 SI sessions (60 min)</li>
+                  <li>✓ 3 Movement sessions (60 min)</li>
+                  <li>✓ Perfect for getting back on track</li>
+                  <li>✓ Reset your foundation</li>
+                </ul>
                 
                 <PaymentButton
                   amount={packageConfigs['The Reset'].price * 100}
                   description={packageConfigs['The Reset'].name}
                   packageType={packageConfigs['The Reset'].name}
                   totalSessions={packageConfigs['The Reset'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                  className="w-full px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
-                  Purchase The Reset - $990
+                  Get Started
                 </PaymentButton>
-              </div>
               </div>
             </div>
 
             {/* Hip Freedom Options */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
-              <div className="text-center mb-10">
-                <h2 className="text-3xl font-heading text-primary mb-4">Hip Freedom</h2>
-                <p className="text-lg text-neutralDark/80">Reclaim how your hips are meant to move</p>
-              </div>
+            <div className="mb-16">
+              <h3 className="text-2xl font-heading text-primary mb-8 text-center">Hip Freedom</h3>
+              <p className="text-base text-neutralDark/80 mb-8 text-center max-w-2xl mx-auto">
+                Reclaim how your hips are meant to move
+              </p>
               
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 {/* Basic Option */}
-                <div className="border border-neutralLight rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Basic</h3>
-                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
-                    <p className="text-2xl font-bold text-accent mb-2">$1,320</p>
-                    <p className="text-sm text-neutralDark/80">
-                      {packageConfigs['Hip Freedom - Basic'].description}
-                    </p>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                  <div className="text-center mb-6">
+                    <h4 className="text-2xl font-heading text-primary mb-2">Basic</h4>
+                    <div className="text-4xl font-bold text-accent mb-2">$1,320</div>
+                    <p className="text-lg text-neutralDark/80">8 sessions total</p>
                   </div>
+                  
+                  <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                    <li>✓ 4 SI sessions (60 min)</li>
+                    <li>✓ 4 Movement sessions (60 min)</li>
+                    <li>✓ Targeted hip work</li>
+                    <li>✓ Restore natural movement</li>
+                  </ul>
                   
                   <PaymentButton
                     amount={packageConfigs['Hip Freedom - Basic'].price * 100}
                     description={packageConfigs['Hip Freedom - Basic'].name}
                     packageType={packageConfigs['Hip Freedom - Basic'].name}
                     totalSessions={packageConfigs['Hip Freedom - Basic'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                   >
-                    Purchase Basic - $1,320
+                    Get Started
                   </PaymentButton>
                 </div>
 
                 {/* Extended Option */}
-                <div className="border border-accent rounded-lg p-6 relative">
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold">
-                      Most Popular
-                    </span>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
+                    POPULAR
                   </div>
-                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Extended</h3>
-                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
-                    <p className="text-2xl font-bold text-accent mb-2">$1,920</p>
-                    <p className="text-sm text-neutralDark/80">
-                      {packageConfigs['Hip Freedom - Extended'].description}
-                    </p>
+                  
+                  <div className="text-center mb-6 mt-2">
+                    <h4 className="text-2xl font-heading text-primary mb-2">Extended</h4>
+                    <div className="text-4xl font-bold text-accent mb-2">$1,920</div>
+                    <p className="text-lg text-neutralDark/80">12 sessions total</p>
                   </div>
+                  
+                  <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                    <li>✓ 6 SI sessions (60 min)</li>
+                    <li>✓ 6 Movement sessions (60 min)</li>
+                    <li>✓ Comprehensive hip transformation</li>
+                    <li>✓ Long-lasting results</li>
+                  </ul>
                   
                   <PaymentButton
                     amount={packageConfigs['Hip Freedom - Extended'].price * 100}
                     description={packageConfigs['Hip Freedom - Extended'].name}
                     packageType={packageConfigs['Hip Freedom - Extended'].name}
                     totalSessions={packageConfigs['Hip Freedom - Extended'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                   >
-                    Purchase Extended - $1,920
+                    Get Started
                   </PaymentButton>
                 </div>
               </div>
             </div>
 
             {/* Full Repatterning Options */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm border border-neutralLight">
-              <div className="text-center mb-10">
-                <h2 className="text-3xl font-heading text-primary mb-4">Full Repatterning</h2>
-                <p className="text-lg text-neutralDark/80">Complete transformation of how you move</p>
-              </div>
+            <div>
+              <h3 className="text-2xl font-heading text-primary mb-8 text-center">Full Repatterning</h3>
+              <p className="text-base text-neutralDark/80 mb-8 text-center max-w-2xl mx-auto">
+                Complete transformation of how you move
+              </p>
               
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Basic */}
-                <div className="border border-neutralLight rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Basic</h3>
-                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
-                    <p className="text-2xl font-bold text-accent mb-2">$3,720</p>
-                    <p className="text-sm text-neutralDark/80">
-                      {packageConfigs['Full Repatterning - Basic'].description}
-                    </p>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                  <div className="text-center mb-6">
+                    <h4 className="text-2xl font-heading text-primary mb-2">Basic</h4>
+                    <div className="text-4xl font-bold text-accent mb-2">$3,720</div>
+                    <p className="text-lg text-neutralDark/80">24 sessions total</p>
                   </div>
+                  
+                  <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                    <li>✓ 12 SI sessions (60 min)</li>
+                    <li>✓ 12 Movement sessions (60 min)</li>
+                    <li>✓ Complete body transformation</li>
+                    <li>✓ Foundation for lasting change</li>
+                  </ul>
                   
                   <PaymentButton
                     amount={packageConfigs['Full Repatterning - Basic'].price * 100}
                     description={packageConfigs['Full Repatterning - Basic'].name}
                     packageType={packageConfigs['Full Repatterning - Basic'].name}
                     totalSessions={packageConfigs['Full Repatterning - Basic'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                   >
-                    Purchase Basic - $3,720
+                    Get Started
                   </PaymentButton>
                 </div>
 
                 {/* Premium */}
-                <div className="border border-accent rounded-lg p-6 relative">
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-accent text-white px-3 py-1 rounded-full text-xs font-semibold">
-                      Most Popular
-                    </span>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
+                    MOST POPULAR
                   </div>
-                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Premium</h3>
-                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
-                    <p className="text-2xl font-bold text-accent mb-2">$5,400</p>
-                    <p className="text-sm text-neutralDark/80">
-                      {packageConfigs['Full Repatterning - Premium'].description}
-                    </p>
+                  
+                  <div className="text-center mb-6 mt-2">
+                    <h4 className="text-2xl font-heading text-primary mb-2">Premium</h4>
+                    <div className="text-4xl font-bold text-accent mb-2">$5,400</div>
+                    <p className="text-lg text-neutralDark/80">36 sessions total</p>
                   </div>
+                  
+                  <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                    <li>✓ 12 SI sessions</li>
+                    <li>✓ 24 Movement sessions (60 min)</li>
+                    <li>✓ Deep integration work</li>
+                    <li>✓ Optimal results & retention</li>
+                  </ul>
                   
                   <PaymentButton
                     amount={packageConfigs['Full Repatterning - Premium'].price * 100}
                     description={packageConfigs['Full Repatterning - Premium'].name}
                     packageType={packageConfigs['Full Repatterning - Premium'].name}
                     totalSessions={packageConfigs['Full Repatterning - Premium'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                   >
-                    Purchase Premium - $5,400
+                    Get Started
                   </PaymentButton>
                 </div>
 
                 {/* Ultimate */}
-                <div className="border border-neutralLight rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-neutralDark mb-3">Ultimate</h3>
-                  <div className="bg-accent/10 p-4 rounded-lg mb-4">
-                    <p className="text-2xl font-bold text-accent mb-2">$7,200</p>
-                    <p className="text-sm text-neutralDark/80">
-                      {packageConfigs['Full Repatterning - Ultimate'].description}
-                    </p>
+                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                  <div className="text-center mb-6">
+                    <div className="inline-block bg-highlight/10 text-highlight px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                      Maximum Support
+                    </div>
+                    <h4 className="text-2xl font-heading text-primary mb-2">Ultimate</h4>
+                    <div className="text-4xl font-bold text-accent mb-2">$7,200</div>
+                    <p className="text-lg text-neutralDark/80">48 sessions total</p>
                   </div>
+                  
+                  <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                    <li>✓ 12 SI sessions</li>
+                    <li>✓ 36 Movement sessions (60 min)</li>
+                    <li>✓ Maximum transformation</li>
+                    <li>✓ Life-changing results</li>
+                  </ul>
                   
                   <PaymentButton
                     amount={packageConfigs['Full Repatterning - Ultimate'].price * 100}
                     description={packageConfigs['Full Repatterning - Ultimate'].name}
                     packageType={packageConfigs['Full Repatterning - Ultimate'].name}
                     totalSessions={packageConfigs['Full Repatterning - Ultimate'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full px-4 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition text-sm"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                   >
-                    Purchase Ultimate - $7,200
+                    Get Started
                   </PaymentButton>
                 </div>
               </div>
