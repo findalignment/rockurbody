@@ -9,7 +9,7 @@ function Services() {
         title="Our Services"
         subtitle="Structural Integration & Movement Education"
       />
-      <div className="pt-16 pb-24 px-6">
+      <div className="pt-8 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
           <p className="text-xl text-neutralDark/80 mb-16 leading-relaxed">
             I offer two complementary approaches: hands-on structural work and movement education. Most clients benefit from both.
