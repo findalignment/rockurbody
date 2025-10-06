@@ -5,8 +5,8 @@ function Hero({ children, backgroundImage = '/hero-raccoons.jpg' }) {
   return (
     <div className="relative min-h-screen flex flex-col">
       <Header />
-      {/* Background Image Section */}
-      <div className="relative flex-1 flex flex-col min-h-screen">
+      {/* Background Image Section - Extended for more visibility */}
+      <div className="relative flex-1 flex flex-col" style={{ minHeight: '150vh' }}>
         {/* Background Image with Overlay */}
         <div 
           className="absolute inset-0 z-0"
@@ -15,7 +15,7 @@ function Hero({ children, backgroundImage = '/hero-raccoons.jpg' }) {
               ? `url(${backgroundImage})` 
               : 'linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #1e293b 100%)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center 5%', 
+            backgroundPosition: 'center center', 
             backgroundRepeat: 'no-repeat'
           }}
         >
