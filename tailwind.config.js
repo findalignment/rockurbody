@@ -29,10 +29,10 @@ export default {
         focus: '#0891b2',        // Accent color for focus states
       },
       fontFamily: {
-        display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Geometric sans for display
-        heading: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Geometric sans for headings
-        body: ['"Source Serif 4"', 'Georgia', 'Cambria', 'serif'], // Neutral serif for body
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Fallback sans
+        display: ['"Playfair Display"', 'Georgia', 'serif'], // Elegant serif for display
+        heading: ['"Playfair Display"', 'Georgia', 'serif'], // Elegant serif for headings
+        body: ['"Source Sans 3"', 'system-ui', '-apple-system', 'sans-serif'], // Clean sans for body
+        sans: ['"Source Sans 3"', 'system-ui', '-apple-system', 'sans-serif'], // Fallback sans
       },
       fontSize: {
         base: '20px', // Base body text size
