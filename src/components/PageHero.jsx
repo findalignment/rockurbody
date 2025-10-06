@@ -30,9 +30,14 @@ function PageHero({
           }}
         />
         
-        {/* Content - modern minimal card */}
+        {/* Content - modern minimal card with inner glow */}
         <div className="relative z-10 px-4 max-w-3xl mx-auto w-full">
-          <div className="relative bg-gradient-to-br from-white/15 via-white/10 to-white/5 backdrop-blur-xl rounded-3xl border-2 border-white/30 py-10 md:py-12 lg:py-14 px-6 md:px-10" style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.2)' }}>
+          <div className="relative overflow-hidden rounded-3xl border-2 border-white/30 py-10 md:py-12 lg:py-14 px-6 md:px-10" style={{ 
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.05) 100%)',
+            backdropFilter: 'blur(20px)',
+            WebkitBackdropFilter: 'blur(20px)',
+            boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 20px 40px rgba(0, 0, 0, 0.1)'
+          }}>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-5 md:mb-6 text-center drop-shadow-lg">
               {title}
             </h1>
