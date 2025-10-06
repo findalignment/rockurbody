@@ -1,6 +1,6 @@
 function HeroContent() {
   return (
-    <div className="absolute top-24 right-4 md:right-8 lg:right-12 text-right animate-slideDown">
+    <div className="absolute top-48 md:top-56 lg:top-64 right-4 md:right-8 lg:right-12 text-right animate-slideDown">
       {/* Main Headline */}
       <h2 className="text-white text-3xl md:text-4xl lg:text-5xl mb-3 md:mb-4 font-bold">
         Hi! I'm Rock Hudson
