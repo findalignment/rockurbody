@@ -36,14 +36,14 @@ function Header() {
       className={`w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isHomePage 
           ? scrolled 
-            ? 'bg-white/80 backdrop-blur-xl shadow-md py-3' 
-            : 'bg-transparent backdrop-blur-md py-4'
-          : 'bg-white shadow-sm'
+            ? 'bg-white/80 backdrop-blur-xl shadow-md py-4' 
+            : 'bg-transparent backdrop-blur-md py-6'
+          : 'bg-white shadow-sm py-4'
       }`}
       style={isHomePage && !scrolled ? { backdropFilter: 'blur(12px)' } : {}}
     >
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           {/* Logo */}
           <Link 
             to="/" 
@@ -98,7 +98,7 @@ function Header() {
             ))}
             <Link
               to="/book"
-              className="px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 hover:shadow-lg transition-all duration-300"
+              className="px-6 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 hover:shadow-lg transition-all duration-300"
             >
               Book Now
             </Link>

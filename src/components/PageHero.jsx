@@ -16,31 +16,33 @@ function PageHero({
   overlayOpacity = 40 
 }) {
   return (
-    <ParallaxSection
-      backgroundImage={imageSrc}
-      speed={0.3}
-      className="relative min-h-[150vh] flex items-end pb-16 md:pb-24 -mt-20"
-    >
-      {/* Dark overlay for text readability */}
-      <div 
-        className="absolute inset-0 bg-primary z-0"
-        style={{ opacity: overlayOpacity / 100 }}
-      />
-      
-      {/* Content - sleek modern box positioned lower over the image */}
-      <div className="relative z-10 px-4 max-w-5xl mx-auto w-full">
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-black shadow-2xl py-16 md:py-20 lg:py-24 px-8 md:px-16">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-8 md:mb-10 text-center">
-            {title}
-          </h1>
-          {subtitle && (
-            <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto text-center leading-relaxed">
-              {subtitle}
-            </p>
-          )}
+    <div className="relative -mt-24 pt-24">
+      <ParallaxSection
+        backgroundImage={imageSrc}
+        speed={0.3}
+        className="relative min-h-[150vh] flex items-end pb-16 md:pb-24"
+      >
+        {/* Dark overlay for text readability */}
+        <div 
+          className="absolute inset-0 bg-primary z-0"
+          style={{ opacity: overlayOpacity / 100 }}
+        />
+        
+        {/* Content - sleek modern box positioned lower over the image (50% smaller) */}
+        <div className="relative z-10 px-4 max-w-3xl mx-auto w-full">
+          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-black overflow-hidden py-10 md:py-12 lg:py-14 px-6 md:px-10">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-5 md:mb-6 text-center">
+              {title}
+            </h1>
+            {subtitle && (
+              <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto text-center leading-relaxed">
+                {subtitle}
+              </p>
+            )}
+          </div>
         </div>
-      </div>
-    </ParallaxSection>
+      </ParallaxSection>
+    </div>
   );
 }
 
