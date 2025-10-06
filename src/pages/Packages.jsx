@@ -77,7 +77,7 @@ function Packages() {
     },
     'Full Repatterning - Premium': {
       name: 'Full Repatterning - Premium',
-      description: '36 sessions: 12 SI (90min) + 24 Movement',
+      description: '36 sessions: 12 SI + 24 Movement',
       price: 5400,
       sessions: [
         { type: 'SI', duration: 90, count: 12 },
