@@ -19,7 +19,7 @@ function PageHero({
     <ParallaxSection
       backgroundImage={imageSrc}
       speed={0.3}
-      className="relative h-[500px] md:h-[600px] lg:h-[700px] flex items-end pb-16 md:pb-20"
+      className="relative h-screen flex items-end pb-16 md:pb-24"
     >
       {/* Dark overlay for text readability */}
       <div 
@@ -27,16 +27,18 @@ function PageHero({
         style={{ opacity: overlayOpacity / 100 }}
       />
       
-      {/* Content - positioned lower over the image */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto w-full">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4">
-          {title}
-        </h1>
-        {subtitle && (
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
-            {subtitle}
-          </p>
-        )}
+      {/* Content - sleek modern box positioned lower over the image */}
+      <div className="relative z-10 px-4 max-w-5xl mx-auto w-full">
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-black shadow-2xl py-12 md:py-16 px-6 md:px-12">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 text-center">
+            {title}
+          </h1>
+          {subtitle && (
+            <p className="text-lg md:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto text-center leading-relaxed">
+              {subtitle}
+            </p>
+          )}
+        </div>
       </div>
     </ParallaxSection>
   );
