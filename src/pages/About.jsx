@@ -6,7 +6,7 @@ function About() {
     <PageLayout>
       <PageHero 
         imageSrc="/about-hero.jpg"
-        title="About Rock Hudson"
+        title="About"
         subtitle="Helping you move better, feel better, and live better"
       />
       <div className="pt-16 pb-24 px-6">

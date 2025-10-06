@@ -16,12 +16,12 @@ function PageHero({
   overlayOpacity = 40 
 }) {
   return (
-    <div className="relative -mt-24 pt-24">
-      {/* Parallax Image Only */}
+    <div className="relative -mt-24 pt-24 -mx-[100vw] left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
+      {/* Parallax Image Only - Full Width */}
       <ParallaxSection
         backgroundImage={imageSrc}
         speed={0.3}
-        className="relative h-[60vh] md:h-[70vh]"
+        className="relative min-h-[150vh]"
       >
         {/* Optional subtle vignette */}
         <div 
