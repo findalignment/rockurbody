@@ -51,17 +51,17 @@ function ParallaxSection({
     >
       {/* Parallax Background */}
       <div
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 -z-10 w-full h-full"
         style={{
           backgroundColor,
           backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
-          backgroundSize: 'cover',  // CHANGED FROM 'contain'
+          backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',  // CHANGED FROM 'center top'
-          transform: `translate3d(0, ${offset}px, 0)`,
+          backgroundPosition: 'center center',
+          transform: `translate3d(0, ${offset}px, 0) scale(1.1)`,
           willChange: 'transform',
-          // Add scale to prevent gaps during parallax
-          scale: '0.4',  // Slight scale up
+          minWidth: '100%',
+          minHeight: '100%',
         }}
       />
       
