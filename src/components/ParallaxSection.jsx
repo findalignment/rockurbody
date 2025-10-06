@@ -55,9 +55,9 @@ function ParallaxSection({
         style={{
           backgroundColor,
           backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
-          backgroundSize: 'cover',
+          backgroundSize: '100% auto',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center center',
+          backgroundPosition: 'center top',
           transform: `translate3d(0, ${offset}px, 0)`,
           willChange: 'transform',
         }}
