@@ -17,33 +17,34 @@ function PageHero({
 }) {
   return (
     <div className="relative -mt-24 pt-24">
+      {/* Parallax Image Only */}
       <ParallaxSection
         backgroundImage={imageSrc}
         speed={0.3}
-        className="relative min-h-[150vh] flex items-end pb-16 md:pb-24"
+        className="relative h-[60vh] md:h-[70vh]"
       >
-        {/* Solid vignette overlay - dark edges, clear center */}
+        {/* Optional subtle vignette */}
         <div 
           className="absolute inset-0 z-0"
           style={{
-            background: 'radial-gradient(ellipse at center, transparent 20%, rgba(15, 23, 42, 0.4) 70%, rgba(15, 23, 42, 0.8) 100%)'
+            background: 'radial-gradient(ellipse at center, transparent 40%, rgba(15, 23, 42, 0.2) 100%)'
           }}
         />
-        
-        {/* Content - solid card with shadow */}
-        <div className="relative z-10 px-4 max-w-3xl mx-auto w-full">
-          <div className="bg-white rounded-2xl shadow-lg py-10 md:py-12 lg:py-14 px-6 md:px-10">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-primary mb-5 md:mb-6 text-center">
-              {title}
-            </h1>
-            {subtitle && (
-              <p className="text-base md:text-lg lg:text-xl text-neutralDark max-w-2xl mx-auto text-center leading-relaxed">
-                {subtitle}
-              </p>
-            )}
-          </div>
-        </div>
       </ParallaxSection>
+      
+      {/* Hero Text Below Parallax */}
+      <div className="bg-white py-12 md:py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
+            {title}
+          </h1>
+          {subtitle && (
+            <p className="text-lg md:text-xl lg:text-2xl text-neutralDark max-w-3xl mx-auto leading-relaxed">
+              {subtitle}
+            </p>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
