@@ -19,7 +19,7 @@ function PageHero({
     <ParallaxSection
       backgroundImage={imageSrc}
       speed={0.3}
-      className="relative h-80 md:h-96 flex items-center justify-center"
+      className="relative h-[500px] md:h-[600px] lg:h-[700px] flex items-end pb-16 md:pb-20"
     >
       {/* Dark overlay for text readability */}
       <div 
@@ -27,8 +27,8 @@ function PageHero({
         style={{ opacity: overlayOpacity / 100 }}
       />
       
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      {/* Content - positioned lower over the image */}
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto w-full">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4">
           {title}
         </h1>
