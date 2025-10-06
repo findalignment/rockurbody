@@ -117,7 +117,7 @@ function Packages() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* 5 Sessions */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <div className="text-center mb-6">
                   <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Save {movementPackages['5 Sessions'].discount}
@@ -128,7 +128,7 @@ function Packages() {
                   <p className="text-lg text-neutralDark/80">${movementPackages['5 Sessions'].pricePerSession}/session</p>
                 </div>
                 
-                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80">
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                   <li>✓ Five 60-minute sessions</li>
                   <li>✓ Save ${movementPackages['5 Sessions'].savings}</li>
                   <li>✓ Personalized movement training</li>
@@ -146,7 +146,7 @@ function Packages() {
               </div>
 
               {/* 10 Sessions */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform">
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                   POPULAR
                 </div>
@@ -161,7 +161,7 @@ function Packages() {
                   <p className="text-lg text-neutralDark/80">${movementPackages['10 Sessions'].pricePerSession}/session</p>
                 </div>
                 
-                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80">
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                   <li>✓ Ten 60-minute sessions</li>
                   <li>✓ Save ${movementPackages['10 Sessions'].savings}</li>
                   <li>✓ Personalized movement training</li>
@@ -180,7 +180,7 @@ function Packages() {
               </div>
 
               {/* 20 Sessions */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <div className="text-center mb-6">
                   <div className="inline-block bg-highlight/10 text-highlight px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Save {movementPackages['20 Sessions'].discount}
@@ -191,7 +191,7 @@ function Packages() {
                   <p className="text-lg text-neutralDark/80">${movementPackages['20 Sessions'].pricePerSession}/session</p>
                 </div>
                 
-                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80">
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                   <li>✓ Twenty 60-minute sessions</li>
                   <li>✓ Save ${movementPackages['20 Sessions'].savings}</li>
                   <li>✓ Personalized movement training</li>
