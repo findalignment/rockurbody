@@ -3,6 +3,31 @@ import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
 
 function Packages() {
+  // Movement session packages - based on pricing from Pricing page
+  const movementPackages = {
+    '5 Sessions': {
+      sessions: 5,
+      price: 825, // $165 * 5 * 0.90 (10% off)
+      discount: '10%',
+      pricePerSession: 165,
+      savings: 82.50
+    },
+    '10 Sessions': {
+      sessions: 10,
+      price: 1402.50, // $165 * 10 * 0.85 (15% off)
+      discount: '15%',
+      pricePerSession: 140.25,
+      savings: 247.50
+    },
+    '20 Sessions': {
+      sessions: 20,
+      price: 2640, // $165 * 20 * 0.80 (20% off)
+      discount: '20%',
+      pricePerSession: 132,
+      savings: 660
+    }
+  };
+
   // Package configurations - moved from SessionService to avoid Airtable browser import
   const packageConfigs = {
     'The Reset': {
@@ -82,6 +107,118 @@ function Packages() {
           <p className="text-xl text-neutralDark/80 mb-20 text-center max-w-4xl mx-auto leading-relaxed">
             The movement and structural integration programs are thoughtfully crafted around real client needs: relieving tension, improving mobility, and supporting lifelong vitality. Each program offers a proven path to freedom in your body, yet every journey is personal. That's why each plan is adaptable to your unique goals and lifestyle. Not sure where to start? Explore your options with a free consultation and let's find the right fit together.
           </p>
+
+          {/* Movement Session Packages */}
+          <div className="mb-20">
+            <h2 className="text-3xl font-heading text-primary mb-8 text-center">Movement Education Packages</h2>
+            <p className="text-lg text-neutralDark/80 mb-12 text-center max-w-3xl mx-auto">
+              Save on multiple sessions of one-on-one movement training. Focus on how you move, not just what exercises you do.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* 5 Sessions */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+                <div className="text-center mb-6">
+                  <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Save {movementPackages['5 Sessions'].discount}
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">5 Sessions</h3>
+                  <div className="text-4xl font-bold text-accent mb-2">${movementPackages['5 Sessions'].price}</div>
+                  <p className="text-sm text-neutralDark/60 line-through mb-1">${movementPackages['5 Sessions'].pricePerSession * 5}</p>
+                  <p className="text-lg text-neutralDark/80">${movementPackages['5 Sessions'].pricePerSession}/session</p>
+                </div>
+                
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80">
+                  <li>✓ Five 60-minute sessions</li>
+                  <li>✓ Save ${movementPackages['5 Sessions'].savings}</li>
+                  <li>✓ Personalized movement training</li>
+                  <li>✓ Flexible scheduling</li>
+                </ul>
+                
+                <PaymentButton
+                  packageType="Movement 5-Pack"
+                  totalSessions={5}
+                  amount={movementPackages['5 Sessions'].price}
+                  className="w-full"
+                >
+                  Get Started
+                </PaymentButton>
+              </div>
+
+              {/* 10 Sessions */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
+                  POPULAR
+                </div>
+                
+                <div className="text-center mb-6 mt-2">
+                  <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Save {movementPackages['10 Sessions'].discount}
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">10 Sessions</h3>
+                  <div className="text-4xl font-bold text-accent mb-2">${movementPackages['10 Sessions'].price}</div>
+                  <p className="text-sm text-neutralDark/60 line-through mb-1">${movementPackages['10 Sessions'].pricePerSession * 10 + movementPackages['10 Sessions'].savings}</p>
+                  <p className="text-lg text-neutralDark/80">${movementPackages['10 Sessions'].pricePerSession}/session</p>
+                </div>
+                
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80">
+                  <li>✓ Ten 60-minute sessions</li>
+                  <li>✓ Save ${movementPackages['10 Sessions'].savings}</li>
+                  <li>✓ Personalized movement training</li>
+                  <li>✓ Flexible scheduling</li>
+                  <li>✓ Best value for progress</li>
+                </ul>
+                
+                <PaymentButton
+                  packageType="Movement 10-Pack"
+                  totalSessions={10}
+                  amount={movementPackages['10 Sessions'].price}
+                  className="w-full"
+                  variant="primary"
+                >
+                  Get Started
+                </PaymentButton>
+              </div>
+
+              {/* 20 Sessions */}
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+                <div className="text-center mb-6">
+                  <div className="inline-block bg-highlight/10 text-highlight px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    Save {movementPackages['20 Sessions'].discount}
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">20 Sessions</h3>
+                  <div className="text-4xl font-bold text-accent mb-2">${movementPackages['20 Sessions'].price}</div>
+                  <p className="text-sm text-neutralDark/60 line-through mb-1">${movementPackages['20 Sessions'].pricePerSession * 20 + movementPackages['20 Sessions'].savings}</p>
+                  <p className="text-lg text-neutralDark/80">${movementPackages['20 Sessions'].pricePerSession}/session</p>
+                </div>
+                
+                <ul className="space-y-3 mb-8 text-sm text-neutralDark/80">
+                  <li>✓ Twenty 60-minute sessions</li>
+                  <li>✓ Save ${movementPackages['20 Sessions'].savings}</li>
+                  <li>✓ Personalized movement training</li>
+                  <li>✓ Flexible scheduling</li>
+                  <li>✓ Maximum savings & results</li>
+                </ul>
+                
+                <PaymentButton
+                  packageType="Movement 20-Pack"
+                  totalSessions={20}
+                  amount={movementPackages['20 Sessions'].price}
+                  className="w-full"
+                >
+                  Get Started
+                </PaymentButton>
+              </div>
+            </div>
+          </div>
+
+          {/* Specialized Programs */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-heading text-primary mb-4 text-center">Specialized Programs</h2>
+            <p className="text-lg text-neutralDark/80 mb-12 text-center max-w-3xl mx-auto">
+              Comprehensive programs combining Structural Integration and Movement Education for lasting change.
+            </p>
+          </div>
 
           {/* Package Options */}
           <div className="space-y-20">
