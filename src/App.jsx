@@ -12,6 +12,8 @@ import HipSeries from './pages/Hip-Series';
 import Approach from './pages/Approach';
 import Process from './pages/Process';
 import SmartStarts from './pages/SmartStarts';
+import WhatIsStructuralIntegration from './pages/WhatIsStructuralIntegration';
+import WhatIsMovementEducation from './pages/WhatIsMovementEducation';
 import Credentials from './pages/Credentials';
 import TrainingLineage from './pages/TrainingLineage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -49,6 +51,8 @@ function AppRoutes() {
         <Route path="/approach" element={<Approach />} />
         <Route path="/process" element={<Process />} />
         <Route path="/smart-starts" element={<SmartStarts />} />
+        <Route path="/what-is-structural-integration" element={<WhatIsStructuralIntegration />} />
+        <Route path="/what-is-movement-education" element={<WhatIsMovementEducation />} />
         <Route path="/credentials" element={<Credentials />} />
         <Route path="/training-lineage" element={<TrainingLineage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

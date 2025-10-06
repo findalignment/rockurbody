@@ -1,5 +1,6 @@
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
+import Button from '../components/Button';
 
 function About() {
   return (
@@ -29,31 +30,52 @@ function About() {
                 What Makes This Different
               </h2>
               <div className="space-y-8">
-                <div>
+                <div className="border-l-4 border-sage pl-6">
                   <h3 className="text-xl font-semibold text-neutralDark mb-3">
                     Structural Integration
                   </h3>
-                  <p className="text-lg text-neutralDark/80 leading-relaxed">
+                  <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
                     Hands-on fascial release to address the restrictions that limit your movement. This isn't massage—it's systematic bodywork that reorganizes your structure.
                   </p>
+                  <Button
+                    to="/what-is-structural-integration"
+                    variant="outline"
+                    size="sm"
+                  >
+                    Learn More →
+                  </Button>
                 </div>
                 
-                <div>
+                <div className="border-l-4 border-accent pl-6">
                   <h3 className="text-xl font-semibold text-neutralDark mb-3">
                     Movement Education
                   </h3>
-                  <p className="text-lg text-neutralDark/80 leading-relaxed">
+                  <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
                     Teaching you how to move efficiently. We work on patterns, not just muscles. You'll learn skills that transfer to everything you do.
                   </p>
+                  <Button
+                    to="/what-is-movement-education"
+                    variant="outline"
+                    size="sm"
+                  >
+                    Learn More →
+                  </Button>
                 </div>
                 
-                <div>
+                <div className="border-l-4 border-highlight pl-6">
                   <h3 className="text-xl font-semibold text-neutralDark mb-3">
                     Whole-System Approach
                   </h3>
-                  <p className="text-lg text-neutralDark/80 leading-relaxed">
+                  <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
                     Pain in your knee? The problem might be in your hip. Or your ankle. Or how you breathe. I look at the whole picture, not just where it hurts.
                   </p>
+                  <Button
+                    to="/approach"
+                    variant="outline"
+                    size="sm"
+                  >
+                    Learn More →
+                  </Button>
                 </div>
               </div>
             </div>
