@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Hero from './Hero';
 import HeroContent from './HeroContent';
+import TypingText from './TypingText';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
 
@@ -315,7 +316,11 @@ function LandingPage() {
                           ? 'Next Steps'
                           : 'RockUrBody'}
                       </p>
-                      <p className="whitespace-pre-line">{message.content}</p>
+                      {message.role === 'assistant' && !message.isError && !message.isLimit ? (
+                        <TypingText text={message.content} speed={20} className="whitespace-pre-line" />
+                      ) : (
+                        <p className="whitespace-pre-line">{message.content}</p>
+                      )}
                     </div>
                     
                     {message.showConsultationButton && (
@@ -408,14 +413,6 @@ function LandingPage() {
             )}
             
             <form onSubmit={handleSendMessage} className="p-4">
-              {questionCount < MAX_QUESTIONS && (
-                <div className="mb-2 text-xs text-white/70 text-center">
-                  {questionCount === 0 
-                    ? `You can ask up to ${MAX_QUESTIONS} questions`
-                    : `${MAX_QUESTIONS - questionCount} question${MAX_QUESTIONS - questionCount !== 1 ? 's' : ''} remaining`
-                  }
-                </div>
-              )}
               <div className="flex gap-3">
                 <input
                   type="text"

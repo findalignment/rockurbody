@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import PageTransition from './components/PageTransition';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -29,11 +30,12 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import ForgotPassword from './pages/ForgotPassword';
 
-function App() {
+function AppRoutes() {
+  const location = useLocation();
+  
   return (
-    <AuthProvider>
-      <Router>
-        <Routes>
+    <PageTransition key={location.pathname}>
+      <Routes location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -71,7 +73,16 @@ function App() {
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/integrating-structure-and-movement" element={<IntegratingStructureAndMovement />} />
       </Routes>
-    </Router>
+    </PageTransition>
+  );
+}
+
+function App() {
+  return (
+    <AuthProvider>
+      <Router>
+        <AppRoutes />
+      </Router>
     </AuthProvider>
   );
 }

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fluid Typography System */
+@import './styles/fluidTypography.css';
+
 /* Custom Animations */
 @keyframes ripple {
   to {
@@ -71,6 +74,19 @@
   50% {
     opacity: 0.7;
   }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
 }
 
 @layer utilities {
