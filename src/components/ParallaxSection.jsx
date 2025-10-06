@@ -1,16 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 
-/**
- * ParallaxSection Component
- * Creates a subtle parallax effect on background elements
- * 
- * @param {object} props
- * @param {React.ReactNode} props.children - Content to display
- * @param {string} props.backgroundImage - Background image URL
- * @param {string} props.backgroundColor - Background color (fallback)
- * @param {number} props.speed - Parallax speed (0.1 = slow, 0.5 = fast)
- * @param {string} props.className - Additional CSS classes
- */
 function ParallaxSection({ 
   children, 
   backgroundImage,
@@ -28,17 +17,16 @@ function ParallaxSection({
       const rect = sectionRef.current.getBoundingClientRect();
       const scrolled = window.pageYOffset;
       const elementTop = rect.top + scrolled;
-      const elementHeight = rect.height;
       const windowHeight = window.innerHeight;
 
       // Only apply parallax when element is in viewport
       if (rect.top < windowHeight && rect.bottom > 0) {
-        const parallaxOffset = (scrolled - elementTop + windowHeight) * speed;
+        // Simpler, more dramatic calculation
+        const parallaxOffset = (scrolled - elementTop) * speed;
         setOffset(parallaxOffset);
       }
     };
 
-    // Throttle scroll event for performance
     let ticking = false;
     const scrollListener = () => {
       if (!ticking) {
@@ -50,8 +38,8 @@ function ParallaxSection({
       }
     };
 
-    window.addEventListener('scroll', scrollListener);
-    handleScroll(); // Initial calculation
+    window.addEventListener('scroll', scrollListener, { passive: true });
+    handleScroll();
 
     return () => window.removeEventListener('scroll', scrollListener);
   }, [speed]);
@@ -67,11 +55,13 @@ function ParallaxSection({
         style={{
           backgroundColor,
           backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',  // CHANGED FROM 'contain'
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center top',
+          backgroundPosition: 'center center',  // CHANGED FROM 'center top'
           transform: `translate3d(0, ${offset}px, 0)`,
           willChange: 'transform',
+          // Add scale to prevent gaps during parallax
+          scale: '1.2',  // Slight scale up
         }}
       />
       
