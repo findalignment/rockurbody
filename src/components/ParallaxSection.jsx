@@ -70,8 +70,8 @@ function ParallaxSection({
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center top',
-          transform: `translateY(${offset}px)`,
-          transition: 'transform 0.1s ease-out',
+          transform: `translate3d(0, ${offset}px, 0)`,
+          willChange: 'transform',
         }}
       />
       

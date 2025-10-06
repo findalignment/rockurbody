@@ -20,7 +20,7 @@ function PageHero({
       {/* Parallax Image Only - Full Width */}
       <ParallaxSection
         backgroundImage={imageSrc}
-        speed={0.3}
+        speed={0.6}
         className="relative min-h-[150vh]"
       >
         {/* Optional subtle vignette */}
