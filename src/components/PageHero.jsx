@@ -30,7 +30,7 @@ function PageHero({
         
         {/* Content - sleek modern box positioned lower over the image (50% smaller) */}
         <div className="relative z-10 px-4 max-w-3xl mx-auto w-full">
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-black overflow-hidden py-10 md:py-12 lg:py-14 px-6 md:px-10">
+          <div className="relative bg-white/10 backdrop-blur-md rounded-2xl border border-black py-10 md:py-12 lg:py-14 px-6 md:px-10" style={{ boxShadow: 'none' }}>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold text-white mb-5 md:mb-6 text-center">
               {title}
             </h1>
