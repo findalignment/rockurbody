@@ -17,6 +17,10 @@ function ParallaxBackground({ children, layers = [] }) {
   useEffect(() => {
     if (shouldReduceMotion) return;
 
+    // Disable parallax on mobile/tablet (< 1024px)
+    const isMobile = window.innerWidth < 1024;
+    if (isMobile) return;
+
     let ticking = false;
 
     const handleScroll = () => {

@@ -11,8 +11,17 @@ function ParallaxSection({
   const sectionRef = useRef();
 
   useEffect(() => {
+    // Disable parallax on mobile devices (width < 768px) and tablets (< 1024px)
+    const isMobile = window.innerWidth < 1024;
+    
     const handleScroll = () => {
       if (!sectionRef.current) return;
+
+      // On mobile, disable parallax effect
+      if (isMobile) {
+        setOffset(0);
+        return;
+      }
 
       const rect = sectionRef.current.getBoundingClientRect();
       const scrolled = window.pageYOffset;
