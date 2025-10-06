@@ -10,6 +10,8 @@ import Packages from './pages/Packages';
 import TwelveSeries from './pages/12-Series';
 import HipSeries from './pages/Hip-Series';
 import Approach from './pages/Approach';
+import Process from './pages/Process';
+import SmartStarts from './pages/SmartStarts';
 import Credentials from './pages/Credentials';
 import TrainingLineage from './pages/TrainingLineage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -45,6 +47,8 @@ function AppRoutes() {
         <Route path="/12-series" element={<TwelveSeries />} />
         <Route path="/hip-series" element={<HipSeries />} />
         <Route path="/approach" element={<Approach />} />
+        <Route path="/process" element={<Process />} />
+        <Route path="/smart-starts" element={<SmartStarts />} />
         <Route path="/credentials" element={<Credentials />} />
         <Route path="/training-lineage" element={<TrainingLineage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
