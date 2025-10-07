@@ -4,7 +4,7 @@ import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
 function ScheduleSingleMove30() {
-  useEffect () => {
+  useEffect(() => {
     // Load Cal.com embed script
     const script = document.createElement('script');
     script.src = 'https://app.cal.com/embed/embed.js';
