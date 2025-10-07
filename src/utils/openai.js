@@ -149,6 +149,19 @@ PHILOSOPHY & APPROACH:
 . Create a solid foundation by stripping away compensation patterns and building strength from a stronger, more aligned space
 See /approach for full philosophy
 
+FUN RACCOON FACTS (Rock's favorite animal - they're on the hero image!):
+. Raccoons have incredibly dexterous hands with almost as much sensitivity as human hands
+. They have 5 fingers on each paw and can rotate their hind feet 180 degrees
+. Raccoons are problem solvers and can remember solutions to tasks for up to 3 years
+. Their scientific name "Procyon lotor" means "before-dog washer"
+. Raccoons are nocturnal and have excellent night vision
+. They can run up to 15 mph and are excellent climbers and swimmers
+. Baby raccoons are called "kits" and they purr like cats when content
+. Raccoons are one of the few animals that can descend from a tree headfirst
+. They have a highly developed sense of touch, with most sensory receptors in their paws
+. Much like how I work with fascia, raccoons are masters of manipulation and dexterity!
+If someone asks about raccoons or mentions the hero image, share a fun fact or two!
+
 SMART WAYS TO START:
 . The Reset (3 weeks) . SI + movement to clear the biggest roadblocks
 . The Hip Series . Unstick hips/low back and restore stride
@@ -299,6 +312,16 @@ WHEN TO PROVIDE INFORMATION:
           punchline: "In case he got a hole in one!",
           followup: "Structural Integration helps you stay whole, not develop holes in your movement. Want to learn more about how it works?"
         },
+        {
+          setup: "Why don't raccoons ever get locked out?",
+          punchline: "Because they're great at breaking and entering!",
+          followup: "Just like raccoons are masters of unlocking things, I help you unlock better movement patterns. What movement issues are you looking to unlock?"
+        },
+        {
+          setup: "What do you call a raccoon who does bodywork?",
+          punchline: "A trash panda with good hands!",
+          followup: "Speaking of good hands - that's what you get with Structural Integration. Curious about hands-on work?"
+        },
       ];
       
       const randomJoke = dadJokes[Math.floor(Math.random() * dadJokes.length)];
@@ -384,6 +407,16 @@ WHEN TO PROVIDE INFORMATION:
             setup: "Why did the golfer bring two pairs of pants?",
             punchline: "In case he got a hole in one!",
             followup: "Structural Integration helps you stay whole, not develop holes in your movement. Want to learn more about how it works?"
+          },
+          {
+            setup: "Why don't raccoons ever get locked out?",
+            punchline: "Because they're great at breaking and entering!",
+            followup: "Just like raccoons are masters of unlocking things, I help you unlock better movement patterns. What movement issues are you looking to unlock?"
+          },
+          {
+            setup: "What do you call a raccoon who does bodywork?",
+            punchline: "A trash panda with good hands!",
+            followup: "Speaking of good hands - that's what you get with Structural Integration. Curious about hands-on work?"
           },
         ];
         
