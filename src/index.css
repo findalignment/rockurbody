@@ -1,9 +1,9 @@
+/* Fluid Typography System */
+@import './styles/fluidTypography.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Fluid Typography System */
-@import './styles/fluidTypography.css';
 
 /* Custom Animations */
 @keyframes ripple {
