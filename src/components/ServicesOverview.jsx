@@ -77,7 +77,7 @@ function ServicesOverview() {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-offWhite to-white py-16 md:py-24 px-4">
+    <section className="bg-white py-16 md:py-24 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">

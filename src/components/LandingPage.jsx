@@ -221,7 +221,7 @@ function LandingPage() {
 
   return (
     <Hero>
-      <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[140vh]">
+      <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[85vh] md:pt-[90vh]">
         <HeroContent />
         
         <div className="w-full max-w-4xl mx-auto px-4">
@@ -441,13 +441,13 @@ function LandingPage() {
           </div>
           )}
         </div>
-        
-        {/* Services Overview Section - After Chat */}
-        <div className="relative z-10">
-          <ServicesOverview />
-        </div>
       </div>
     </Hero>
+    
+    {/* Services Overview Section - After Chat */}
+    <div className="relative bg-white">
+      <ServicesOverview />
+    </div>
   );
 }
 
