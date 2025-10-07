@@ -213,23 +213,23 @@ function LandingPage() {
   };
 
   const getPageName = (path) => {
-  const names = {
-    '/about': 'About',
-    '/services': 'Services',
-    '/pricing': 'Pricing',
-    '/contact': 'Contact',
-    '/book': 'Choose a Session Type',
-    '/book/consult': 'Book Free Consultation',
-    '/book/move30': 'Book 30min Movement',
-    '/book/move60': 'Book 60min Movement',
-    '/book/move90': 'Book 90min Movement',
-    '/book/move120': 'Book 2hr Movement',
-    '/book/si60': 'Book 60min Structural Integration',
-    '/book/si90': 'Book 90min Structural Integration',
-    '/book/si120': 'Book 2hr Structural Integration'
+    const names = {
+      '/about': 'About',
+      '/services': 'Services',
+      '/pricing': 'Pricing',
+      '/contact': 'Contact',
+      '/book': 'Choose a Session Type',
+      '/book/consult': 'Book Free Consultation',
+      '/book/move30': 'Book 30min Movement',
+      '/book/move60': 'Book 60min Movement',
+      '/book/move90': 'Book 90min Movement',
+      '/book/move120': 'Book 2hr Movement',
+      '/book/si60': 'Book 60min Structural Integration',
+      '/book/si90': 'Book 90min Structural Integration',
+      '/book/si120': 'Book 2hr Structural Integration'
+    };
+    return names[path] || 'More Info';
   };
-  return names[path] || 'More Info';
-};
 
   return (
     <>
