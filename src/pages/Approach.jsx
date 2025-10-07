@@ -50,7 +50,7 @@ function Approach() {
       <div className="bg-offWhite pt-8 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg text-neutralDark/80 leading-relaxed">
-            My approach combines hands-on <strong>structural integration</strong>, intelligent <strong>movement education</strong>, and personalized <strong>exercise instruction in Santa Cruz</strong>. This isn't about following a generic program—it's about understanding your unique body and addressing what's actually holding you back.
+            My approach combines hands-on <strong>structural integration</strong>, intelligent <strong>movement education</strong>, and personalized <strong>exercise instruction in Santa Cruz</strong>. This isn't about following a generic program. It's about understanding your unique body and addressing what's actually holding you back.
           </p>
         </div>
       </div>
