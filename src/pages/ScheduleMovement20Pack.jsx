@@ -9,10 +9,19 @@ function ScheduleMovement20Pack() {
     const script = document.createElement('script');
     script.src = 'https://app.cal.com/embed/embed.js';
     script.async = true;
+    
+    script.onload = () => {
+      // Initialize Cal.com after script loads
+      if (window.Cal) {
+        window.Cal('init');
+      }
+    };
     document.body.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 
