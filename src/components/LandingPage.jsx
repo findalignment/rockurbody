@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Hero from './Hero';
 import HeroContent from './HeroContent';
 import ServicesOverview from './ServicesOverview';
+import Footer from './Footer';
 import MarkdownText from './MarkdownText';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
@@ -449,6 +450,9 @@ function LandingPage() {
     <div className="relative bg-white">
       <ServicesOverview />
     </div>
+    
+    {/* Footer */}
+    <Footer />
     </>
   );
 }

@@ -28,7 +28,6 @@ function Hero({ children, backgroundImage = '/hero-raccoons.jpg' }) {
           {children}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
