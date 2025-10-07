@@ -224,25 +224,175 @@ WHEN TO PROVIDE INFORMATION:
     if (lowerMessage.includes('joke') || lowerMessage.includes('funny') || 
         lowerMessage.includes('laugh') || lowerMessage.includes('humor')) {
       const dadJokes = [
-        "Why did the scarecrow become a successful bodyworker? Because he was outstanding in his field!",
-        "What do you call a fake noodle? An impasta! Much like fake movement patterns - they just don't hold up under pressure.",
-        "Why don't skeletons fight each other? They don't have the guts! But seriously, building core strength is essential.",
-        "What's the best thing about Switzerland? I don't know, but the flag is a big plus! Speaking of positives, proper alignment is a huge plus for your body.",
-        "Why did the bicycle fall over? It was two-tired! Rest and recovery are important - don't push through fatigue.",
-        "What do you call a bear with no teeth? A gummy bear! Just like fascia needs to stay supple, not stuck.",
-        "Why can't your nose be 12 inches long? Because then it would be a foot! Proper body proportions matter in structural integration.",
-        "What did the ocean say to the beach? Nothing, it just waved! Movement should be fluid and wave-like through your body.",
-        "Why did the coffee file a police report? It got mugged! Don't let tension mug you of good posture.",
-        "What do you call a sleeping bull? A bulldozer! But seriously, sleep is when your body integrates all the work we do.",
-        "Why did the math book look so sad? It had too many problems! Let's solve your movement problems together.",
-        "What's orange and sounds like a parrot? A carrot! And what's important for fascia? Good hydration and nutrition.",
-        "Why don't eggs tell jokes? They'd crack each other up! But tension in your body is no laughing matter.",
-        "What do you call a dinosaur with an extensive vocabulary? A thesaurus! I have an extensive vocabulary of movement patterns to teach you.",
-        "Why did the golfer bring two pairs of pants? In case he got a hole in one! Structural Integration helps you stay whole, not develop holes in your movement.",
+        {
+          setup: "Why did the scarecrow become a successful bodyworker?",
+          punchline: "Because he was outstanding in his field!",
+          followup: "I try to be outstanding in my field too. What brings you here today - looking to improve your movement, work on alignment, or just curious about what I do?"
+        },
+        {
+          setup: "What do you call a fake noodle?",
+          punchline: "An impasta!",
+          followup: "Much like fake movement patterns - they just don't hold up under pressure. Are you dealing with any movement patterns that feel off or uncomfortable?"
+        },
+        {
+          setup: "Why don't skeletons fight each other?",
+          punchline: "They don't have the guts!",
+          followup: "But seriously, building real core strength (the guts!) is essential. Is core stability something you're working on?"
+        },
+        {
+          setup: "What's the best thing about Switzerland?",
+          punchline: "I don't know, but the flag is a big plus!",
+          followup: "Speaking of big pluses - proper alignment is a huge plus for your body. What made you reach out today?"
+        },
+        {
+          setup: "Why did the bicycle fall over?",
+          punchline: "It was two-tired!",
+          followup: "Rest and recovery are so important. Are you feeling run down or dealing with fatigue in your training?"
+        },
+        {
+          setup: "What do you call a bear with no teeth?",
+          punchline: "A gummy bear!",
+          followup: "Just like fascia needs to stay supple, not stuck like gummy. Are you experiencing any areas that feel tight or restricted?"
+        },
+        {
+          setup: "Why can't your nose be 12 inches long?",
+          punchline: "Because then it would be a foot!",
+          followup: "Proper body proportions matter in structural integration. Curious what brings you to my corner of the web today?"
+        },
+        {
+          setup: "What did the ocean say to the beach?",
+          punchline: "Nothing, it just waved!",
+          followup: "Movement should be fluid and wave-like through your body. Are you looking to move more freely and fluidly?"
+        },
+        {
+          setup: "Why did the coffee file a police report?",
+          punchline: "It got mugged!",
+          followup: "Don't let tension mug you of good posture! Is tension or posture something you're struggling with?"
+        },
+        {
+          setup: "What do you call a sleeping bull?",
+          punchline: "A bulldozer!",
+          followup: "Sleep is when your body integrates all the work we do. How's your recovery going these days?"
+        },
+        {
+          setup: "Why did the math book look so sad?",
+          punchline: "It had too many problems!",
+          followup: "Let's solve your movement problems together. What's the main thing you're hoping to work on?"
+        },
+        {
+          setup: "What's orange and sounds like a parrot?",
+          punchline: "A carrot!",
+          followup: "And what's important for fascia? Good hydration and nutrition. But also movement! What are your goals?"
+        },
+        {
+          setup: "Why don't eggs tell jokes?",
+          punchline: "They'd crack each other up!",
+          followup: "But tension in your body is no laughing matter. Are you dealing with any specific aches or tension?"
+        },
+        {
+          setup: "What do you call a dinosaur with an extensive vocabulary?",
+          punchline: "A thesaurus!",
+          followup: "I have an extensive vocabulary of movement patterns to teach you. Interested in learning better movement?"
+        },
+        {
+          setup: "Why did the golfer bring two pairs of pants?",
+          punchline: "In case he got a hole in one!",
+          followup: "Structural Integration helps you stay whole, not develop holes in your movement. Want to learn more about how it works?"
+        },
       ];
       
       const randomJoke = dadJokes[Math.floor(Math.random() * dadJokes.length)];
-      return randomJoke + "\n\n😄 Now, what can I help you with today? Questions about movement, structural integration, or ready to book?";
+      return `${randomJoke.setup}\n\n(Go ahead, take a guess! 😄)`;
+    }
+    
+    // Dad joke punchline handler - if previous message was a joke setup
+    if (conversationHistory.length > 0) {
+      const lastAIMessage = conversationHistory.slice().reverse().find(msg => msg.role === 'assistant');
+      if (lastAIMessage && lastAIMessage.content.includes('(Go ahead, take a guess! 😄)')) {
+        const dadJokes = [
+          {
+            setup: "Why did the scarecrow become a successful bodyworker?",
+            punchline: "Because he was outstanding in his field!",
+            followup: "I try to be outstanding in my field too. What brings you here today - looking to improve your movement, work on alignment, or just curious about what I do?"
+          },
+          {
+            setup: "What do you call a fake noodle?",
+            punchline: "An impasta!",
+            followup: "Much like fake movement patterns - they just don't hold up under pressure. Are you dealing with any movement patterns that feel off or uncomfortable?"
+          },
+          {
+            setup: "Why don't skeletons fight each other?",
+            punchline: "They don't have the guts!",
+            followup: "But seriously, building real core strength (the guts!) is essential. Is core stability something you're working on?"
+          },
+          {
+            setup: "What's the best thing about Switzerland?",
+            punchline: "I don't know, but the flag is a big plus!",
+            followup: "Speaking of big pluses - proper alignment is a huge plus for your body. What made you reach out today?"
+          },
+          {
+            setup: "Why did the bicycle fall over?",
+            punchline: "It was two-tired!",
+            followup: "Rest and recovery are so important. Are you feeling run down or dealing with fatigue in your training?"
+          },
+          {
+            setup: "What do you call a bear with no teeth?",
+            punchline: "A gummy bear!",
+            followup: "Just like fascia needs to stay supple, not stuck like gummy. Are you experiencing any areas that feel tight or restricted?"
+          },
+          {
+            setup: "Why can't your nose be 12 inches long?",
+            punchline: "Because then it would be a foot!",
+            followup: "Proper body proportions matter in structural integration. Curious what brings you to my corner of the web today?"
+          },
+          {
+            setup: "What did the ocean say to the beach?",
+            punchline: "Nothing, it just waved!",
+            followup: "Movement should be fluid and wave-like through your body. Are you looking to move more freely and fluidly?"
+          },
+          {
+            setup: "Why did the coffee file a police report?",
+            punchline: "It got mugged!",
+            followup: "Don't let tension mug you of good posture! Is tension or posture something you're struggling with?"
+          },
+          {
+            setup: "What do you call a sleeping bull?",
+            punchline: "A bulldozer!",
+            followup: "Sleep is when your body integrates all the work we do. How's your recovery going these days?"
+          },
+          {
+            setup: "Why did the math book look so sad?",
+            punchline: "It had too many problems!",
+            followup: "Let's solve your movement problems together. What's the main thing you're hoping to work on?"
+          },
+          {
+            setup: "What's orange and sounds like a parrot?",
+            punchline: "A carrot!",
+            followup: "And what's important for fascia? Good hydration and nutrition. But also movement! What are your goals?"
+          },
+          {
+            setup: "Why don't eggs tell jokes?",
+            punchline: "They'd crack each other up!",
+            followup: "But tension in your body is no laughing matter. Are you dealing with any specific aches or tension?"
+          },
+          {
+            setup: "What do you call a dinosaur with an extensive vocabulary?",
+            punchline: "A thesaurus!",
+            followup: "I have an extensive vocabulary of movement patterns to teach you. Interested in learning better movement?"
+          },
+          {
+            setup: "Why did the golfer bring two pairs of pants?",
+            punchline: "In case he got a hole in one!",
+            followup: "Structural Integration helps you stay whole, not develop holes in your movement. Want to learn more about how it works?"
+          },
+        ];
+        
+        // Find which joke was asked
+        const askedJoke = dadJokes.find(joke => lastAIMessage.content.includes(joke.setup));
+        if (askedJoke) {
+          return `${askedJoke.punchline}\n\n😄 ${askedJoke.followup}`;
+        }
+      }
     }
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
