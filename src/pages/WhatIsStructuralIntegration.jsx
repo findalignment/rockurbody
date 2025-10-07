@@ -152,15 +152,24 @@ function WhatIsStructuralIntegration() {
             Ready to experience it?
           </h3>
           <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
-            Book a free consultation and we'll discuss whether Structural Integration is right for your body and your goals.
+            Book a free consultation to discuss your goals, or explore our structural integration sessions and series.
           </p>
-          <Button
-            href="https://cal.com/rockyourbody/consultation"
-            variant="accent"
-            size="lg"
-          >
-            Book Free Consultation
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              to="/book/structural-integration"
+              variant="primary"
+              size="lg"
+            >
+              View Structural Integration Options
+            </Button>
+            <Button
+              href="https://cal.com/rockyourbody/consultation"
+              variant="outline"
+              size="lg"
+            >
+              Book Free Consultation
+            </Button>
+          </div>
         </div>
       </div>
     </PageLayout>

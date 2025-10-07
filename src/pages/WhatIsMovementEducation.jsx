@@ -186,15 +186,24 @@ function WhatIsMovementEducation() {
             Ready to learn how to move?
           </h3>
           <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
-            Book a free consultation and we'll talk about where you're at and what movement education could look like for you.
+            Book a free consultation to discuss your goals, or explore our movement education options and packages.
           </p>
-          <Button
-            href="https://cal.com/rockyourbody/consultation"
-            variant="accent"
-            size="lg"
-          >
-            Book Free Consultation
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              to="/book/movement-education"
+              variant="primary"
+              size="lg"
+            >
+              View Movement Education Options
+            </Button>
+            <Button
+              href="https://cal.com/rockyourbody/consultation"
+              variant="outline"
+              size="lg"
+            >
+              Book Free Consultation
+            </Button>
+          </div>
         </div>
       </div>
     </PageLayout>
