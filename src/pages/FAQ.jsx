@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
@@ -16,15 +17,15 @@ function FAQ() {
         },
         {
           q: "What should I wear?",
-          a: "Wear comfortable clothing that allows you to move freely. For Structural Integration: athletic shorts and a sports bra/tank top work well (I need to see and access the tissue). For Movement Education: comfortable workout clothes. You'll be moving, not just lying down."
+          a: <>Wear comfortable clothing that allows you to move freely. For <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link>: athletic shorts and a sports bra/tank top work well (I need to see and access the tissue). For <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link>: comfortable workout clothes. You'll be moving, not just lying down.</>
         },
         {
           q: "How often should I come?",
-          a: "It depends on what we're doing. For the 12-Series: sessions are typically spaced 1-2 weeks apart. For ongoing movement work: weekly or biweekly sessions work well. For maintenance after a series: monthly or quarterly tune-ups keep you on track. We'll figure out what makes sense for your body and your schedule."
+          a: <>It depends on what we're doing. For the <Link to="/12-series" className="text-accent hover:underline">12-Series</Link>: sessions are typically spaced 1-2 weeks apart. For ongoing <Link to="/what-is-movement-education" className="text-accent hover:underline">movement work</Link>: weekly or biweekly sessions work well. For maintenance after a series: monthly or quarterly tune-ups keep you on track. We'll figure out what makes sense for your body and your schedule.</>
         },
         {
           q: "Where should I start?",
-          a: "Not sure? Book a free consultation and we'll talk through what makes sense for your goals. Many people start with The Reset (3 SI + 3 Movement sessions) or the Hip Series if hip issues are the main concern. Check out the Smart Starts page for recommendations."
+          a: <>Not sure? Book a <a href="https://cal.com/rockyourbody/consultation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">free consultation</a> and we'll talk through what makes sense for your goals. Many people start with <Link to="/packages" className="text-accent hover:underline">The Reset</Link> (3 SI + 3 Movement sessions) or the <Link to="/hip-series" className="text-accent hover:underline">Hip Series</Link> if hip issues are the main concern. Check out the <Link to="/smart-starts" className="text-accent hover:underline">Smart Starts</Link> page for recommendations.</>
         }
       ]
     },
@@ -33,7 +34,7 @@ function FAQ() {
       questions: [
         {
           q: "Is this massage?",
-          a: "No. Massage focuses on relaxation and releasing muscle tension. Structural Integration reorganizes the connective tissue (fascia) to improve your body's alignment and function. It's systematic, not just 'where it hurts.' The pressure is specific and intentional, and we work with your whole structure, not just tight spots."
+          a: <>No. Massage focuses on relaxation and releasing muscle tension. <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> reorganizes the connective tissue (fascia) to improve your body's alignment and function. It's systematic, not just 'where it hurts.' The pressure is specific and intentional, and we work with your whole structure, not just tight spots.</>
         },
         {
           q: "Does it hurt?",
@@ -41,15 +42,15 @@ function FAQ() {
         },
         {
           q: "What's the 12-Series?",
-          a: "The 12-Series is the complete Anatomy Trains Structural Integration protocol. It's a systematic progression through your entire body over 12 sessions. Sessions 1-4 address superficial layers. Sessions 5-8 work the deep core. Sessions 9-12 integrate everything. It's designed to create lasting change in how your body is organized."
+          a: <>The <Link to="/12-series" className="text-accent hover:underline">12-Series</Link> is the complete Anatomy Trains Structural Integration protocol. It's a systematic progression through your entire body over 12 sessions. Sessions 1-4 address superficial layers. Sessions 5-8 work the deep core. Sessions 9-12 integrate everything. It's designed to create lasting change in how your body is organized.</>
         },
         {
           q: "How is this different from chiropractic or physical therapy?",
-          a: "Chiropractors adjust bones. Physical therapists rehabilitate injuries and strengthen weak areas. Structural Integration works with fascia to change how your whole structure is organized. We're not treating symptoms or injuries. We're reorganizing your body so it works better. These approaches can complement each other."
+          a: <>Chiropractors adjust bones. Physical therapists rehabilitate injuries and strengthen weak areas. <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> works with fascia to change how your whole structure is organized. We're not treating symptoms or injuries. We're reorganizing your body so it works better. These approaches can complement each other.</>
         },
         {
           q: "How long do results last?",
-          a: "Structural Integration creates lasting change in your tissue and alignment. Most people maintain results for years. Your body learns a new organization. That said, if you go back to old habits or don't maintain your structure, patterns can creep back. Movement education and occasional tune-ups help maintain the work."
+          a: <><Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> creates lasting change in your tissue and alignment. Most people maintain results for years. Your body learns a new organization. That said, if you go back to old habits or don't maintain your structure, patterns can creep back. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement education</Link> and occasional tune-ups help maintain the work.</>
         }
       ]
     },
@@ -58,11 +59,11 @@ function FAQ() {
       questions: [
         {
           q: "Is this personal training?",
-          a: "Not in the traditional sense. Personal training focuses on getting stronger, building muscle, or losing weight. Movement Education focuses on how you move. We work slowly and methodically to retrain patterns, find stability, and build movement quality. Strength comes, but it's not the primary focus."
+          a: <>Not in the traditional sense. Personal training focuses on getting stronger, building muscle, or losing weight. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> focuses on how you move. We work slowly and methodically to retrain patterns, find stability, and build movement quality. Strength comes, but it's not the primary focus.</>
         },
         {
           q: "Can I combine this with my workout routine?",
-          a: "Absolutely. In fact, that's the point. Movement Education makes your training more effective and sustainable. You'll move better, lift with better form, and reduce injury risk. Most clients continue their regular workouts while working with me. We just clean up how you're moving."
+          a: <>Absolutely. In fact, that's the point. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> makes your training more effective and sustainable. You'll move better, lift with better form, and reduce injury risk. Most clients continue their regular workouts while working with me. We just clean up how you're moving.</>
         },
         {
           q: "Why do we train barefoot?",
@@ -70,11 +71,11 @@ function FAQ() {
         },
         {
           q: "Do I need to be in shape to start?",
-          a: "No. We meet you where you are. Movement Education isn't about crushing yourself. It's about learning to move well. Whether you're deconditioned, injured, or highly trained, we start with quality movement and build from there."
+          a: <>No. We meet you where you are. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> isn't about crushing yourself. It's about learning to move well. Whether you're deconditioned, injured, or highly trained, we start with quality movement and build from there.</>
         },
         {
           q: "What if I have an injury or chronic pain?",
-          a: "We work around it. Movement Education can help you move better despite limitations, and Structural Integration often helps address the underlying patterns contributing to pain. I'm not treating your injury, but we can work with your body to improve function and reduce compensation patterns."
+          a: <>We work around it. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> can help you move better despite limitations, and <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> often helps address the underlying patterns contributing to pain. I'm not treating your injury, but we can work with your body to improve function and reduce compensation patterns.</>
         }
       ]
     },
@@ -95,11 +96,11 @@ function FAQ() {
         },
         {
           q: "Can I buy a single session or do I need to commit to a series?",
-          a: "Both options are available. You can book a single session to try the work, or commit to a package for better pricing and systematic results. Most people see the best results with a series, but you're not locked in."
+          a: <>Both options are available. You can book a <Link to="/pricing" className="text-accent hover:underline">single session</Link> to try the work, or commit to a <Link to="/packages" className="text-accent hover:underline">package</Link> for better pricing and systematic results. Most people see the best results with a series, but you're not locked in.</>
         },
         {
           q: "How long are sessions?",
-          a: "It depends on what you book. Movement sessions are typically 60 minutes. Structural Integration sessions are 90 minutes (with one 2-hour session in the 12-Series). Single sessions range from 60-120 minutes depending on what you need."
+          a: <>It depends on what you book. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement sessions</Link> are typically 60 minutes. <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> sessions are 90 minutes (with one 2-hour session in the <Link to="/12-series" className="text-accent hover:underline">12-Series</Link>). <Link to="/pricing" className="text-accent hover:underline">Single sessions</Link> range from 60-120 minutes depending on what you need.</>
         }
       ]
     },
@@ -108,7 +109,7 @@ function FAQ() {
       questions: [
         {
           q: "What makes your approach different?",
-          a: "I combine hands-on structural work with intelligent movement education. Most people focus on one or the other. Structure without movement doesn't stick. Movement without structure is building on a faulty foundation. I address both."
+          a: <>I combine hands-on <Link to="/what-is-structural-integration" className="text-accent hover:underline">structural work</Link> with intelligent <Link to="/what-is-movement-education" className="text-accent hover:underline">movement education</Link>. Most people focus on one or the other. Structure without movement doesn't stick. Movement without structure is building on a faulty foundation. I address both. Read more about <Link to="/approach" className="text-accent hover:underline">my approach</Link>.</>
         },
         {
           q: "Do you work with athletes?",
@@ -116,7 +117,7 @@ function FAQ() {
         },
         {
           q: "Is this right for older adults?",
-          a: "Absolutely. Age is just context. Structural Integration and Movement Education help you maintain function, reduce pain, and stay active as you age. We adapt the work to meet your body where it is."
+          a: <>Absolutely. Age is just context. <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> and <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> help you maintain function, reduce pain, and stay active as you age. We adapt the work to meet your body where it is.</>
         },
         {
           q: "What if I'm just dealing with daily aches and stiffness?",
