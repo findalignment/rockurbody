@@ -5,6 +5,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smooth Page Transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure smooth rendering during transitions */
+#root {
+  isolation: isolate;
+}
+
+/* Prevent layout shift during page transitions */
+.page-transition-wrapper {
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Custom Animations */
 @keyframes ripple {
   to {
