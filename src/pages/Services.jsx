@@ -208,9 +208,11 @@ function Services() {
             </div>
           </div>
         </div>
-        
-        {/* Bottom wave divider */}
-        <WaveDivider position="bottom" color="#0f172a" opacity={0.05} height="100px" flip />
+      </div>
+      
+      {/* Bottom wave divider - flows into footer */}
+      <div className="relative -mb-1">
+        <WaveDivider position="bottom" color="#1e293b" opacity={1} height="100px" />
       </div>
     </PageLayout>
   );
