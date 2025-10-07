@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Hero from './Hero';
 import HeroContent from './HeroContent';
+import ServicesOverview from './ServicesOverview';
 import MarkdownText from './MarkdownText';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
@@ -439,6 +440,11 @@ function LandingPage() {
             </form>
           </div>
           )}
+        </div>
+        
+        {/* Services Overview Section - After Chat */}
+        <div className="relative z-10">
+          <ServicesOverview />
         </div>
       </div>
     </Hero>

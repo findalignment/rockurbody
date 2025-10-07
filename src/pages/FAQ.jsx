@@ -59,7 +59,7 @@ function FAQ() {
       questions: [
         {
           q: "Is this personal training?",
-          a: <>Not in the traditional sense. Personal training focuses on getting stronger, building muscle, or losing weight. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> focuses on how you move. We work slowly and methodically to retrain patterns, find stability, and build movement quality. Strength comes, but it's not the primary focus.</>
+          a: <>Yes, but evolved. I started as a personal trainer and kept learning until I developed a thorough practice for people who just want to live better and more comfortably in their body. I teach strength, core stability, mobility, coordination, awareness, balance, and flexibility. Outcomes include strength gains, weight loss, better posture, and pain reduction. But the foundation comes first. We set the foundation through quality movement, then build from there. It's sustainable, consistently challenging, but just challenging enough that you don't feel deterred by your workout. Learn more about <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link>.</>
         },
         {
           q: "Can I combine this with my workout routine?",
@@ -84,7 +84,7 @@ function FAQ() {
       questions: [
         {
           q: "Where are sessions held?",
-          a: "Sessions are held in Santa Cruz, California by appointment only. The exact address will be provided when you book."
+          a: <>Sessions are held at Mavericks Fitness (311 Soquel Ave, Santa Cruz, CA) by appointment only. I can also come to your location if you're in the Santa Cruz area (travel time both ways is billed at the session rate).</>
         },
         {
           q: "Do you take insurance?",

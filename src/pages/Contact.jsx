@@ -19,7 +19,12 @@ function Contact() {
                   Location
                 </h3>
                 <p className="text-neutralDark/80">
-                  Santa Cruz, California
+                  Mavericks Fitness<br />
+                  311 Soquel Ave<br />
+                  Santa Cruz, CA 95062
+                </p>
+                <p className="text-neutralDark/80 mt-3 text-sm">
+                  Mobile sessions available in the Santa Cruz area (travel time billed at session rate)
                 </p>
               </div>
               
