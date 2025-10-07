@@ -220,6 +220,7 @@ function LandingPage() {
 };
 
   return (
+    <>
     <Hero>
       <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[85vh] md:pt-[90vh]">
         <HeroContent />
@@ -448,6 +449,7 @@ function LandingPage() {
     <div className="relative bg-white">
       <ServicesOverview />
     </div>
+    </>
   );
 }
 
