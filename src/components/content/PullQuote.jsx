@@ -66,7 +66,7 @@ function PullQuote({
       {/* Author */}
       {author && (
         <footer className="mt-8 text-base md:text-lg font-body font-normal text-neutralDark/60">
-          — {author}
+          - {author}
         </footer>
       )}
 

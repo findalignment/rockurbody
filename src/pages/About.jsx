@@ -21,7 +21,7 @@ function About() {
                 I help people move the way they were meant to. Not through endless reps or rigid protocols, but by addressing the fascial restrictions and movement patterns that hold you back.
               </p>
               <p className="text-lg text-neutralDark/80 leading-relaxed">
-                Most personal training treats symptoms. I work with the whole system—releasing what's tight, strengthening what's weak, and teaching your body to move with ease again.
+                Most personal training treats symptoms. I work with the whole system: releasing what's tight, strengthening what's weak, and teaching your body to move with ease again.
               </p>
             </div>
             
@@ -35,7 +35,7 @@ function About() {
                     Structural Integration
                   </h3>
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                    Hands-on fascial release to address the restrictions that limit your movement. This isn't massage—it's systematic bodywork that reorganizes your structure.
+                    Hands-on fascial release to address the restrictions that limit your movement. This isn't massage. It's systematic bodywork that reorganizes your structure.
                   </p>
                   <Button
                     to="/what-is-structural-integration"

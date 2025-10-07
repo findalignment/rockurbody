@@ -32,7 +32,7 @@ function Process() {
       number: '01',
       title: 'Assess',
       subtitle: 'Where are you now?',
-      description: 'We begin by understanding your body\'s current story. Not just symptoms, but patterns—how you move, where you hold tension, what your structure is asking for.',
+      description: 'We begin by understanding your body\'s current story. Not just symptoms, but patterns.how you move, where you hold tension, what your structure is asking for.',
       details: [
         'Comprehensive movement assessment',
         'Postural and structural analysis',
@@ -46,9 +46,9 @@ function Process() {
       number: '02',
       title: 'Work',
       subtitle: 'Meeting your body where it is',
-      description: 'Through hands-on structural work and movement education, we address the root patterns—not just the pain. This is where change happens: slowly, intelligently, and with your body\'s full participation.',
+      description: 'Through hands.on structural work and movement education, we address the root patterns.not just the pain. This is where change happens: slowly, intelligently, and with your body\'s full participation.',
       details: [
-        'Hands-on Structural Integration sessions',
+        'Hands.on Structural Integration sessions',
         'Personalized movement training',
         'Progressive, adaptable approach',
         'Building new neuromuscular patterns'
@@ -60,12 +60,12 @@ function Process() {
       number: '03',
       title: 'Reinforce',
       subtitle: 'Making it stick',
-      description: 'Real change isn\'t a one-time fix. We integrate new patterns into your daily life, so your body remembers and maintains what we\'ve built together.',
+      description: 'Real change isn\'t a one.time fix. We integrate new patterns into your daily life, so your body remembers and maintains what we\'ve built together.',
       details: [
         'Movement practices you can do at home',
         'Ongoing support and refinement',
         'Strategies for maintaining progress',
-        'Empowering long-term independence'
+        'Empowering long.term independence'
       ],
       icon: '🔄',
       color: 'highlight'
@@ -75,62 +75,62 @@ function Process() {
   return (
     <PageLayout>
       <PageHero 
-        imageSrc="/process-hero.jpg"
+        imageSrc="/process.hero.jpg"
         title="The Process"
         subtitle="How we work together"
       />
 
-      {/* SEO-optimized intro */}
-      <div className="bg-offWhite pt-8 pb-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-heading text-primary mb-6">
+      {/* SEO.optimized intro */}
+      <div className="bg.offWhite pt.8 pb.16 px.4">
+        <div className="max.w.4xl mx.auto text.center">
+          <h2 className="text.3xl md:text.4xl font.heading text.primary mb.6">
             Movement Education & Structural Integration in Santa Cruz
           </h2>
-          <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            Whether you're seeking <strong>structural integration in Santa Cruz</strong>, <strong>personalized movement education</strong>, or <strong>exercise instruction in Santa Cruz</strong>, my approach follows a clear, time-tested process. This isn't about quick fixes—it's about understanding your body's story and rewriting it together.
+          <p className="text.lg text.neutralDark/80 leading.relaxed mb.8">
+            Whether you're seeking <strong>structural integration in Santa Cruz</strong>, <strong>personalized movement education</strong>, or <strong>exercise instruction in Santa Cruz</strong>, my approach follows a clear, time.tested process. This isn't about quick fixes.it's about understanding your body's story and rewriting it together.
           </p>
         </div>
       </div>
 
       {/* Visual Process Steps */}
-      <div className="bg-white py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+      <div className="bg.white py.20 px.4">
+        <div className="max.w.6xl mx.auto">
           {/* Progress Line */}
-          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-neutralLight transform -translate-x-1/2" />
+          <div className="hidden md:block absolute left.1/2 top.0 bottom.0 w.1 bg.neutralLight transform .translate.x.1/2" />
 
           {steps.map((step, index) => (
             <div
               key={index}
               ref={(el) => (stepsRef.current[index] = el)}
-              className={`relative mb-20 last:mb-0 transition-all duration-700 ${
-                activeStep === index ? 'opacity-100 translate-y-0' : 'opacity-60 translate-y-4'
+              className={`relative mb.20 last:mb.0 transition.all duration.700 ${
+                activeStep === index ? 'opacity.100 translate.y.0' : 'opacity.60 translate.y.4'
               }`}
             >
-              <div className={`grid md:grid-cols-2 gap-12 items-center ${
-                index % 2 === 0 ? '' : 'md:grid-flow-dense'
+              <div className={`grid md:grid.cols.2 gap.12 items.center ${
+                index % 2 === 0 ? '' : 'md:grid.flow.dense'
               }`}>
                 {/* Content Side */}
-                <div className={index % 2 === 0 ? 'md:text-right' : 'md:col-start-2'}>
-                  <div className="inline-block">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className={`text-6xl md:text-7xl font-heading font-bold text-${step.color}/20`}>
+                <div className={index % 2 === 0 ? 'md:text.right' : 'md:col.start.2'}>
+                  <div className="inline.block">
+                    <div className="flex items.center gap.4 mb.4">
+                      <span className={`text.6xl md:text.7xl font.heading font.bold text.${step.color}/20`}>
                         {step.number}
                       </span>
-                      <div className="text-5xl">{step.icon}</div>
+                      <div className="text.5xl">{step.icon}</div>
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-heading text-primary mb-2">
+                    <h3 className="text.3xl md:text.4xl font.heading text.primary mb.2">
                       {step.title}
                     </h3>
-                    <p className="text-xl text-accent font-light italic mb-6">
+                    <p className="text.xl text.accent font.light italic mb.6">
                       {step.subtitle}
                     </p>
-                    <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
+                    <p className="text.lg text.neutralDark/80 leading.relaxed mb.8">
                       {step.description}
                     </p>
-                    <ul className="space-y-3 text-neutralDark/70">
+                    <ul className="space.y.3 text.neutralDark/70">
                       {step.details.map((detail, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <span className="text-accent mt-1">✓</span>
+                        <li key={i} className="flex items.start gap.3">
+                          <span className="text.accent mt.1">✓</span>
                           <span>{detail}</span>
                         </li>
                       ))}
@@ -139,18 +139,18 @@ function Process() {
                 </div>
 
                 {/* Visual Side */}
-                <div className={`${index % 2 === 0 ? 'md:col-start-2' : ''}`}>
+                <div className={`${index % 2 === 0 ? 'md:col.start.2' : ''}`}>
                   <div className={`
-                    relative h-80 rounded-2xl overflow-hidden
-                    bg-gradient-to-br from-${step.color}/10 to-${step.color}/5
-                    border-2 border-${step.color}/20
-                    transform transition-all duration-500
-                    ${activeStep === index ? 'scale-100 shadow-xl' : 'scale-95 shadow-sm'}
+                    relative h.80 rounded.2xl overflow.hidden
+                    bg.gradient.to.br from.${step.color}/10 to.${step.color}/5
+                    border.2 border.${step.color}/20
+                    transform transition.all duration.500
+                    ${activeStep === index ? 'scale.100 shadow.xl' : 'scale.95 shadow.sm'}
                   `}>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center p-8">
-                        <div className="text-8xl mb-4 opacity-50">{step.icon}</div>
-                        <div className={`text-6xl font-heading font-bold text-${step.color}/40`}>
+                    <div className="absolute inset.0 flex items.center justify.center">
+                      <div className="text.center p.8">
+                        <div className="text.8xl mb.4 opacity.50">{step.icon}</div>
+                        <div className={`text.6xl font.heading font.bold text.${step.color}/40`}>
                           {step.number}
                         </div>
                       </div>
@@ -161,9 +161,9 @@ function Process() {
 
               {/* Center Dot */}
               <div className={`
-                hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2
-                w-6 h-6 rounded-full border-4 border-white transition-all duration-500
-                ${activeStep === index ? `bg-${step.color} scale-125 shadow-lg` : 'bg-neutralLight'}
+                hidden md:block absolute left.1/2 top.1/2 transform .translate.x.1/2 .translate.y.1/2
+                w.6 h.6 rounded.full border.4 border.white transition.all duration.500
+                ${activeStep === index ? `bg.${step.color} scale.125 shadow.lg` : 'bg.neutralLight'}
               `} />
             </div>
           ))}
@@ -171,23 +171,23 @@ function Process() {
       </div>
 
       {/* Rhythmic Transition */}
-      <div className="bg-gradient-to-b from-white to-offWhite py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-2xl md:text-3xl font-heading text-primary leading-relaxed">
+      <div className="bg.gradient.to.b from.white to.offWhite py.16 px.4">
+        <div className="max.w.3xl mx.auto text.center">
+          <p className="text.2xl md:text.3xl font.heading text.primary leading.relaxed">
             It's not about perfection.<br />
-            It's about <em className="text-accent">progress</em>.<br />
+            It's about <em className="text.accent">progress</em>.<br />
             One session, one movement, one breath at a time.
           </p>
         </div>
       </div>
 
       {/* CTA Section */}
-      <div className="bg-offWhite py-20 px-4">
-        <div className="max-w-2xl mx-auto text-center">
-          <h3 className="text-3xl font-heading text-primary mb-6">
+      <div className="bg.offWhite py.20 px.4">
+        <div className="max.w.2xl mx.auto text.center">
+          <h3 className="text.3xl font.heading text.primary mb.6">
             Ready to start?
           </h3>
-          <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
+          <p className="text.lg text.neutralDark/80 mb.8 leading.relaxed">
             Book a free consultation to explore how this process can work for you. We'll assess where you are, discuss your goals, and create a path forward that makes sense for your body and your life.
           </p>
           <Button

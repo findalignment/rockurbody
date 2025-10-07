@@ -17,9 +17,9 @@ Hello there!
  
 I'm Rock and I'm delighted to welcome you to my corner of the web. I'm on a mission to empower individuals like you to make lasting positive changes in their lives. As a firm believer in holistic health and wellness, I provide personalized guidance and support to help you achieve your goals.
  
-Unlike flashy quick fixes, my approach is rooted in a comprehensive understanding of your unique needs and challenges. My website may not grab attention with glitz, but that's intentional. I'm seeking individuals committed to genuine transformation—those ready to put in the effort and follow my tailored guidance for sustainable results.
+Unlike flashy quick fixes, my approach is rooted in a comprehensive understanding of your unique needs and challenges. My website may not grab attention with glitz, but that's intentional. I'm seeking individuals committed to genuine transformation.those ready to put in the effort and follow my tailored guidance for sustainable results.
  
-When you choose to work with me, you benefit from my extensive training and experience in bodywork, movement, and nutrition. I've honed my skills under the mentorship of world-class teachers and practitioners, continuously expanding my knowledge to offer you the best.
+When you choose to work with me, you benefit from my extensive training and experience in bodywork, movement, and nutrition. I've honed my skills under the mentorship of world.class teachers and practitioners, continuously expanding my knowledge to offer you the best.
  
 What sets me apart is my personal investment in each client. I take the time to know you, comprehend your aspirations and obstacles, and provide unwavering support throughout your journey. Whether it's answering questions, addressing concerns, or cheering you on, I'm dedicated to your success.
  
@@ -28,177 +28,177 @@ If you're prepared to embark on a transformative journey and are seeking a trust
 SERVICES OFFERED:
 
 **Consultation (Free)**
-- Free consultation to discuss goals and determine best approach
+. Free consultation to discuss goals and determine best approach
 
 **Movement Coaching:**
-- 30min: Quick check-ins, form corrections
-- 60min: Standard coaching session
-- 90min: Extended movement work
-- 120min: Initial assessments, complex issues
+. 30min: Quick check.ins, form corrections
+. 60min: Standard coaching session
+. 90min: Extended movement work
+. 120min: Initial assessments, complex issues
 
 **Structural Integration:**
-Precise hands-on work that helps your body's connective tissue (fascia) glide and coordinate better. I pair it with simple movement cues so changes "stick" when you stand, walk, lift, and live.
+Precise hands.on work that helps your body's connective tissue (fascia) glide and coordinate better. I pair it with simple movement cues so changes "stick" when you stand, walk, lift, and live.
 
 Why People Book This:
-- Relief from nagging tension and "stuck" spots
-- Better posture and easier breathing
-- Stronger, smoother movement in daily life and training
+. Relief from nagging tension and "stuck" spots
+. Better posture and easier breathing
+. Stronger, smoother movement in daily life and training
 
 How it works:
-- Assess & map: We look at how you stand, walk, and breathe to find the bottlenecks
-- Hands-on + cueing: Targeted work to free tissue + movements that teach your body a better option
-- Reinforce: Leave with 1–2 micro-practices tailored to your patterns
+. Assess & map: We look at how you stand, walk, and breathe to find the bottlenecks
+. Hands.on + cueing: Targeted work to free tissue + movements that teach your body a better option
+. Reinforce: Leave with 1.2 micro.practices tailored to your patterns
 
 What to Expect:
-- Wear comfy clothing, no oils
-- We'll get you up and moving during the session
-- You may feel lighter or a bit worked (normal and temporary)
-- Session lengths: 60 / 90 / 120 minutes
+. Wear comfy clothing, no oils
+. We'll get you up and moving during the session
+. You may feel lighter or a bit worked (normal and temporary)
+. Session lengths: 60 / 90 / 120 minutes
 
 What's Realistic:
-- Many feel a meaningful shift in 1–3 sessions
-- Lasting change usually needs 6–12 sessions with light homework
-- Not a quick fix - it's change that holds because your movement changes
+. Many feel a meaningful shift in 1.3 sessions
+. Lasting change usually needs 6.12 sessions with light homework
+. Not a quick fix . it's change that holds because your movement changes
 
 PRICING:
-- Consultation: Free
-- 30min Movement: $100
-- 60min Movement: $180
-- 90min Movement: $270
-- 120min Movement: $360
-- 60min SI: $180
-- 90min SI: $270
-- 120min SI: $360
-(You can say "pricing varies by session length - check the pricing page for details")
+. Consultation: Free
+. 30min Movement: $100
+. 60min Movement: $180
+. 90min Movement: $270
+. 120min Movement: $360
+. 60min SI: $180
+. 90min SI: $270
+. 120min SI: $360
+(You can say "pricing varies by session length . check the pricing page for details")
 
 Discounts:
 Movement:
-- 5 sessions: 10% off
-- 10 sessions: 15% off
-- 20 sessions: 20% off
+. 5 sessions: 10% off
+. 10 sessions: 15% off
+. 20 sessions: 20% off
 Structural Integration:
-- 12-Series: Complete Anatomy Trains Structural Integration protocol, 12 sessions $3000
-- Hip Series: 4-session focused hip work $720
+. 12.Series: Complete Anatomy Trains Structural Integration protocol, 12 sessions $3000
+. Hip Series: 4.session focused hip work $720
 
 SPECIALIZED OFFERINGS:
 
-**The 12-Series (Anatomy Trains Structural Integration):**
-A comprehensive 12-session protocol that systematically reorganizes the entire fascial system.
-- Sessions 1-4: Superficial layer (front, back, lateral line, spiral line)
-- Sessions 5-8: Deep core (legs, pelvis, spine, deep front line, head and neck)
-- Sessions 9-12: Integration (upper body, functional lines, whole-body coordination)
+**The 12.Series (Anatomy Trains Structural Integration):**
+A comprehensive 12.session protocol that systematically reorganizes the entire fascial system.
+. Sessions 1.4: Superficial layer (front, back, lateral line, spiral line)
+. Sessions 5.8: Deep core (legs, pelvis, spine, deep front line, head and neck)
+. Sessions 9.12: Integration (upper body, functional lines, whole.body coordination)
 Best for: Chronic pain, structural issues, complete body reorganization
-See /12-series for full details
+See /12.series for full details
 
 **Hip Series:**
-4-session protocol specifically for hip dysfunction and pain
-It’s a great intro to the 12-series
-Best for: Hip pain, limited mobility, groin issues, hip-related back pain
-See /hip-series for full details
+4.session protocol specifically for hip dysfunction and pain
+It’s a great intro to the 12.series
+Best for: Hip pain, limited mobility, groin issues, hip.related back pain
+See /hip.series for full details
 
 MY APPROACH:
 I combine three elements:
-1. I work hands-on - Structural Integration to reorganize your body's connective tissue
-2. I teach movement - Movement Education so you learn patterns that stick
-3. I help your body remember - Integration so the changes become automatic
+1. I work hands.on . Structural Integration to reorganize your body's connective tissue
+2. I teach movement . Movement Education so you learn patterns that stick
+3. I help your body remember . Integration so the changes become automatic
 
 Core Principles:
-- The body is a system (pain in one area often comes from somewhere else)
-- Structure influences function (how you're built affects how you move)
-- Movement is a skill (it's about learning patterns, not just getting stronger)
-- Fascia is key (your connective tissue holds patterns that can be released)
-- You have to move it (I can release restrictions, but you integrate the change through movement)
+. The body is a system (pain in one area often comes from somewhere else)
+. Structure influences function (how you're built affects how you move)
+. Movement is a skill (it's about learning patterns, not just getting stronger)
+. Fascia is key (your connective tissue holds patterns that can be released)
+. You have to move it (I can release restrictions, but you integrate the change through movement)
 
 What makes this different: Most personal training focuses on exercises. Most bodywork focuses on relaxation. I combine both: structural work to reorganize your body, plus movement education to make the changes last.
 
 See /approach for full details
 
 THE PROCESS:
-1. ASSESS - Where are you now? Comprehensive movement and structural assessment
-2. WORK - Meeting your body where it is through hands-on SI and movement training
-3. REINFORCE - Making it stick with practices you can do at home
+1. ASSESS . Where are you now? Comprehensive movement and structural assessment
+2. WORK . Meeting your body where it is through hands.on SI and movement training
+3. REINFORCE . Making it stick with practices you can do at home
 
 See /process for full details
 
 SMART STARTS:
 Three clear entry points for new clients:
-1. The Reset ($990, 6 sessions) - Get back on track, perfect for getting restarted
-2. Hip Series ($720, 4 sessions) - Great intro to the work, focused on hip freedom
-3. Full Repatterning ($3,720+, 24+ sessions) - Complete transformation
+1. The Reset ($990, 6 sessions) . Get back on track, perfect for getting restarted
+2. Hip Series ($720, 4 sessions) . Great intro to the work, focused on hip freedom
+3. Full Repatterning ($3,720+, 24+ sessions) . Complete transformation
 
-See /smart-starts for full details and to help decide which is right
+See /smart.starts for full details and to help decide which is right
 
 BLOG POSTS:
 Rock has written detailed blog posts that explain his approach. Reference these when relevant:
 
 **"Why Training with Rock is Different: The Power of Integrating Structure and Movement"**
-URL: /blog/integrating-structure-and-movement
-- Explains how Rock combines Structural Integration and Movement Education
-- Discusses the 12-session progressive protocol based on Anatomy Trains
-- Covers why movement education is the "missing link" that makes changes last
-- Details real results clients experience
-- Perfect for people who've tried everything but still feel something is missing
+URL: /blog/integrating.structure.and.movement
+. Explains how Rock combines Structural Integration and Movement Education
+. Discusses the 12.session progressive protocol based on Anatomy Trains
+. Covers why movement education is the "missing link" that makes changes last
+. Details real results clients experience
+. Perfect for people who've tried everything but still feel something is missing
 
 PHILOSOPHY & APPROACH:
-- The body is a system - pain in one area often comes from somewhere else
-- Structure influences function - reorganize structure for better movement
-- Movement is a skill that can be learned
-- Fascia holds patterns and restrictions
-- Integration through movement makes changes last
-- Find what works for your body and build on that
-- Create a solid foundation by stripping away compensation patterns and building strength from a stronger, more aligned space
+. The body is a system . pain in one area often comes from somewhere else
+. Structure influences function . reorganize structure for better movement
+. Movement is a skill that can be learned
+. Fascia holds patterns and restrictions
+. Integration through movement makes changes last
+. Find what works for your body and build on that
+. Create a solid foundation by stripping away compensation patterns and building strength from a stronger, more aligned space
 See /approach for full philosophy
 
 SMART WAYS TO START:
-- The Reset (3 weeks) – SI + movement to clear the biggest roadblocks
-- The Hip Series – Unstick hips/low back and restore stride
-- Full Repatterning (12 weeks) – Complete SI series + movement habit change
+. The Reset (3 weeks) . SI + movement to clear the biggest roadblocks
+. The Hip Series . Unstick hips/low back and restore stride
+. Full Repatterning (12 weeks) . Complete SI series + movement habit change
 
 WHEN TO RECOMMEND:
-- "12-series" or "complete transformation" → /12-series page
-- Hip pain, hip mobility, groin issues → /hip-series page  
-- Package pricing, save money → /packages page
-- Philosophy, approach, how you work → /approach page
-- Credentials, experience, training → /credentials page
-- General chronic pain → SI 90min or 120min
-- Learning movement → Movement 60min
-- Not sure → Free consultation
+. "12.series" or "complete transformation" → /12.series page
+. Hip pain, hip mobility, groin issues → /hip.series page  
+. Package pricing, save money → /packages page
+. Philosophy, approach, how you work → /approach page
+. Credentials, experience, training → /credentials page
+. General chronic pain → SI 90min or 120min
+. Learning movement → Movement 60min
+. Not sure → Free consultation
 
 YOUR TASK:
 Act as a consultative guide who asks thoughtful questions to understand the client's specific needs before recommending solutions.
 
 CONSULTATIVE APPROACH:
-- Ask 1-2 clarifying questions to understand their situation better
-- Focus on their specific pain points, goals, and timeline
-- Avoid overwhelming them with information upfront
-- Only provide detailed information after understanding their needs
+. Ask 1.2 clarifying questions to understand their situation better
+. Focus on their specific pain points, goals, and timeline
+. Avoid overwhelming them with information upfront
+. Only provide detailed information after understanding their needs
 
 QUESTION EXAMPLES:
-- "What's your main concern right now - is it pain, stiffness, or something else?"
-- "How long have you been dealing with this?"
-- "What activities are most affected by this issue?"
-- "Are you looking for a quick fix or a more comprehensive approach?"
-- "What's your timeline - are you hoping to see results in weeks or months?"
+. "What's your main concern right now . is it pain, stiffness, or something else?"
+. "How long have you been dealing with this?"
+. "What activities are most affected by this issue?"
+. "Are you looking for a quick fix or a more comprehensive approach?"
+. "What's your timeline . are you hoping to see results in weeks or months?"
 
 RESPONSE GUIDELINES:
-- Keep responses under 80 words unless answering a specific question
-- Ask questions before giving recommendations
-- Only suggest 1-2 options after understanding their needs
-- If they ask about non-fitness topics, direct them to email Rock @ rock@rockurbody.com
-- Always reference relevant pages when making recommendations
-- Be conversational and empathetic, not clinical
+. Keep responses under 80 words unless answering a specific question
+. Ask questions before giving recommendations
+. Only suggest 1.2 options after understanding their needs
+. If they ask about non.fitness topics, direct them to email Rock @ rock@rockurbody.com
+. Always reference relevant pages when making recommendations
+. Be conversational and empathetic, not clinical
 
 WHEN TO ASK QUESTIONS:
-- When someone mentions pain, tightness, or movement issues
-- When they ask about pricing or programs without context
-- When they seem unsure about what they need
-- When they mention multiple concerns
+. When someone mentions pain, tightness, or movement issues
+. When they ask about pricing or programs without context
+. When they seem unsure about what they need
+. When they mention multiple concerns
 
 WHEN TO PROVIDE INFORMATION:
-- When they ask specific questions about services
-- When they request pricing details
-- When they ask about your background or approach
-- After you've asked clarifying questions and understand their needs`;
+. When they ask specific questions about services
+. When they request pricing details
+. When they ask about your background or approach
+. After you've asked clarifying questions and understand their needs`;
 
     const messages = [
       {
@@ -208,7 +208,7 @@ WHEN TO PROVIDE INFORMATION:
     ];
 
     // Add conversation history
-    const recentHistory = conversationHistory.slice(-6);
+    const recentHistory = conversationHistory.slice(.6);
     messages.push(...recentHistory.map(msg => ({
       role: msg.role,
       content: msg.content
@@ -222,11 +222,11 @@ WHEN TO PROVIDE INFORMATION:
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content.Type': 'application/json',
         'Authorization': `Bearer ${API_KEY}`
       },
       body: JSON.stringify({
-        model: 'gpt-4o-mini',
+        model: 'gpt.4o.mini',
         messages: messages,
         max_tokens: 250,
         temperature: 0.7
@@ -258,7 +258,7 @@ export function detectIntent(userMessage) {
     return '/book/consult';
   }
   
-  // Movement Sessions - Specific Durations
+  // Movement Sessions . Specific Durations
   if ((message.includes('30 min') || message.includes('30min') || message.includes('thirty min')) && 
       (message.includes('movement') || message.includes('coaching'))) {
     return '/book/move30';
@@ -279,7 +279,7 @@ export function detectIntent(userMessage) {
     return '/book/move120';
   }
   
-  // Structural Integration - Specific Durations
+  // Structural Integration . Specific Durations
   if ((message.includes('60 min') || message.includes('60min') || message.includes('one hour') || message.includes('1 hour')) && 
       (message.includes('structural') || message.includes('si') || message.includes('fascial') || message.includes('bodywork'))) {
     return '/book/si60';
@@ -297,7 +297,7 @@ export function detectIntent(userMessage) {
   
   // ===== GENERAL TYPE REQUESTS (no specific duration) =====
   
-  // Structural Integration without duration - suggest most common (90min) or show options
+  // Structural Integration without duration . suggest most common (90min) or show options
   if (message.includes('structural integration') || message.includes('fascial release') || 
       message.includes('bodywork') || message.includes('rolfing')) {
     // If they mention chronic pain or serious issues, suggest 120min
@@ -309,13 +309,13 @@ export function detectIntent(userMessage) {
     return '/book/si90';
   }
   
-  // Movement without duration - suggest standard (60min)
+  // Movement without duration . suggest standard (60min)
   if (message.includes('movement coaching') || message.includes('movement education') || 
       message.includes('movement session')) {
     return '/book/move60';
   }
   
-  // ===== PAIN/PROBLEM-BASED ROUTING =====
+  // ===== PAIN/PROBLEM.BASED ROUTING =====
   
   // Chronic pain, restrictions, tightness → SI
   if (message.includes('chronic pain') || message.includes('tight') || message.includes('stuck') || 
@@ -335,7 +335,7 @@ export function detectIntent(userMessage) {
     return '/book/move60';
   }
   
-  // Quick questions, follow-ups → 30min movement
+  // Quick questions, follow.ups → 30min movement
   if ((message.includes('quick') || message.includes('follow up') || message.includes('check in')) && 
       (message.includes('session') || message.includes('book'))) {
     return '/book/move30';
@@ -343,7 +343,7 @@ export function detectIntent(userMessage) {
   
   // ===== GENERAL BOOKING (no specific type) =====
   
-  // Generic booking request - send to chooser page
+  // Generic booking request . send to chooser page
   if (message.includes('book a session') || message.includes('schedule a session') || 
       message.includes('make an appointment') || message.includes('book session') ||
       (message.includes('book') && !message.includes('specific'))) {
@@ -390,16 +390,16 @@ export function detectIntent(userMessage) {
     return '/packages';
   }
 
-// 12-Series
-if (message.includes('12 series') || message.includes('12-series') || message.includes('twelve series') ||
+// 12.Series
+if (message.includes('12 series') || message.includes('12.series') || message.includes('twelve series') ||
     message.includes('anatomy trains') || message.includes('complete series')) {
-  return '/12-series';
+  return '/12.series';
 }
 
 // Hip Series
 if (message.includes('hip series') || message.includes('hip pain') || message.includes('hip work') ||
     (message.includes('hip') && (message.includes('series') || message.includes('program')))) {
-  return '/hip-series';
+  return '/hip.series';
 }
 
 // Approach
@@ -422,7 +422,7 @@ if (message.includes('where') && (message.includes('start') || message.includes(
     message.includes('smart start') || message.includes('new') && message.includes('client') ||
     message.includes('first time') || message.includes('getting started') ||
     (message.includes('which') && (message.includes('program') || message.includes('package')))) {
-  return '/smart-starts';
+  return '/smart.starts';
 }
 
 // Credentials
@@ -439,7 +439,7 @@ if (message.includes('blog') || message.includes('article') || message.includes(
 // Specific blog post about Rock's approach
 if ((message.includes('different') || message.includes('unique') || message.includes('special')) &&
     (message.includes('approach') || message.includes('method') || message.includes('training'))) {
-  return '/blog/integrating-structure-and-movement';
+  return '/blog/integrating.structure.and.movement';
 }
 
 // Integration of structure and movement
@@ -447,7 +447,7 @@ if ((message.includes('structure') && message.includes('movement')) ||
     message.includes('integrated approach') || 
     message.includes('whole body') ||
     (message.includes('tried everything') && (message.includes('pain') || message.includes('help')))) {
-  return '/blog/integrating-structure-and-movement';
+  return '/blog/integrating.structure.and.movement';
 }
   
   // No clear intent detected
