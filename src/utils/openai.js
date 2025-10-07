@@ -126,7 +126,7 @@ Three clear entry points for new clients:
 2. Hip Series ($720, 4 sessions) . Great intro to the work, focused on hip freedom
 3. Full Repatterning ($3,720+, 24+ sessions) . Complete transformation
 
-See /smart.starts for full details and to help decide which is right
+See /smart-starts for full details and to help decide which is right
 
 BLOG POSTS:
 Rock has written detailed blog posts that explain his approach. Reference these when relevant:
@@ -222,22 +222,33 @@ WHEN TO PROVIDE INFORMATION:
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
-        'Content.Type': 'application/json',
+        'Content-Type': 'application/json',
         'Authorization': `Bearer ${API_KEY}`
       },
       body: JSON.stringify({
-        model: 'gpt.4o.mini',
+        model: 'gpt-4o-mini',
         messages: messages,
         max_tokens: 250,
         temperature: 0.7
       })
     });
 
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}));
+      console.error('OpenAI API Error:', response.status, errorData);
+      throw new Error(`API request failed with status ${response.status}`);
+    }
+
     const data = await response.json();
     
     if (data.error) {
       console.error('OpenAI Error:', data.error);
-      return "I'm having trouble connecting right now. Please try the navigation menu above.";
+      throw new Error(data.error.message || 'Unknown API error');
+    }
+    
+    if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+      console.error('Invalid API response:', data);
+      throw new Error('Invalid response format from API');
     }
     
     return data.choices[0].message.content;
@@ -422,7 +433,7 @@ if (message.includes('where') && (message.includes('start') || message.includes(
     message.includes('smart start') || message.includes('new') && message.includes('client') ||
     message.includes('first time') || message.includes('getting started') ||
     (message.includes('which') && (message.includes('program') || message.includes('package')))) {
-  return '/smart.starts';
+  return '/smart-starts';
 }
 
 // Credentials
