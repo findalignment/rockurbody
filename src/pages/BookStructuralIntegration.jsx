@@ -91,7 +91,7 @@ function BookStructuralIntegration() {
             
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* 12-Series */}
-              <div className="bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl p-8 shadow-sm border-2 border-accent">
+              <div className="bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl p-8 shadow-sm border-2 border-accent flex flex-col">
                 <div className="text-xs bg-accent text-white px-3 py-1 rounded-full inline-block mb-4">RECOMMENDED</div>
                 <h3 className="text-2xl font-heading text-neutralDark mb-2">
                   12-Series
@@ -100,7 +100,7 @@ function BookStructuralIntegration() {
                 <p className="text-neutralDark/80 mb-6">
                   Complete Anatomy Trains Structural Integration protocol. 12 comprehensive sessions for complete structural transformation.
                 </p>
-                <ul className="space-y-2 mb-6 text-sm text-neutralDark/70">
+                <ul className="space-y-2 mb-6 text-sm text-neutralDark/70 flex-grow">
                   <li>✓ Systematic full-body reorganization</li>
                   <li>✓ Sessions 1-4: Superficial layers</li>
                   <li>✓ Sessions 5-8: Deep core work</li>
@@ -118,7 +118,7 @@ function BookStructuralIntegration() {
               </div>
               
               {/* Hip Series */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <h3 className="text-2xl font-heading text-neutralDark mb-2">
                   Hip Series
                 </h3>
@@ -126,7 +126,7 @@ function BookStructuralIntegration() {
                 <p className="text-neutralDark/80 mb-6">
                   4-session focused hip work. Great introduction to structural integration or precursor to the 12-Series.
                 </p>
-                <ul className="space-y-2 mb-6 text-sm text-neutralDark/70">
+                <ul className="space-y-2 mb-6 text-sm text-neutralDark/70 flex-grow">
                   <li>✓ Targeted hip mobility & alignment</li>
                   <li>✓ Address hip pain and restrictions</li>
                   <li>✓ Improve gait and posture</li>
