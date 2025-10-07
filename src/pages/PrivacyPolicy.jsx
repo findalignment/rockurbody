@@ -39,13 +39,38 @@ function PrivacyPolicy() {
               <p className="text-neutralDark/80 leading-relaxed mb-4">
                 We may automatically collect certain information when you visit our website:
               </p>
-              <ul className="list-disc pl-6 text-neutralDark/80 leading-relaxed">
+              <ul className="list-disc pl-6 text-neutralDark/80 leading-relaxed mb-4">
                 <li>IP address and device information</li>
                 <li>Browser type and version</li>
                 <li>Pages visited and time spent on our site</li>
                 <li>Referring website information</li>
                 <li>Cookies and similar tracking technologies</li>
               </ul>
+
+              <h3 className="text-xl font-semibold text-neutralDark mb-3">AI Chat Interaction Data</h3>
+              <p className="text-neutralDark/80 leading-relaxed mb-4">
+                When you interact with our AI-powered chatbot on our website, we collect and log the following information:
+              </p>
+              <ul className="list-disc pl-6 text-neutralDark/80 leading-relaxed mb-4">
+                <li>Questions and messages you submit to the chatbot</li>
+                <li>Timestamp of each interaction</li>
+                <li>Anonymous session identifier (does not personally identify you)</li>
+                <li>Detected intent or topic of your questions</li>
+                <li>Number of questions asked per session</li>
+                <li>General device and browser information</li>
+              </ul>
+              <p className="text-neutralDark/80 leading-relaxed mb-4">
+                <strong>Purpose of Chat Logging:</strong> We use this information solely to:
+              </p>
+              <ul className="list-disc pl-6 text-neutralDark/80 leading-relaxed mb-4">
+                <li>Improve the accuracy and helpfulness of our chatbot responses</li>
+                <li>Identify common questions to add relevant content to our website</li>
+                <li>Better understand what information visitors are seeking</li>
+                <li>Enhance our services based on actual visitor needs and interests</li>
+              </ul>
+              <p className="text-neutralDark/80 leading-relaxed">
+                <strong>What We Don't Collect:</strong> We do not link chat conversations to your personal identity unless you voluntarily provide personal information (like your name or email) within the chat. Chat logs are stored securely and are not shared with third parties except as necessary to provide the logging service (such as our secure form submission provider).
+              </p>
             </section>
 
             <section>
@@ -60,6 +85,8 @@ function PrivacyPolicy() {
                 <li>To communicate with you about our services</li>
                 <li>To send you important updates and information</li>
                 <li>To analyze website usage and improve user experience</li>
+                <li>To improve our AI chatbot and identify common visitor questions</li>
+                <li>To create better website content based on actual visitor needs</li>
                 <li>To comply with legal obligations</li>
               </ul>
             </section>

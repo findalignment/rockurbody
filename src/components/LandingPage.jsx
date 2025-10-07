@@ -5,6 +5,7 @@ import HeroContent from './HeroContent';
 import TypingText from './TypingText';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
+import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
 
 function LandingPage() {
   const [input, setInput] = useState('');
@@ -111,6 +112,15 @@ function LandingPage() {
 
     try {
       const detectedPage = detectIntent(userMessage);
+      
+      // Log the question for analytics and improvement
+      logChatQuestion(userMessage, {
+        sessionId: sessionStorage.getItem('chatUserId'),
+        userId: userId,
+        detectedIntent: detectedPage,
+        questionNumber: newCount,
+      });
+      
       const aiResponse = await sendMessageToAI(userMessage, conversation, detectedPage);
       
       // Reset failure count on success
