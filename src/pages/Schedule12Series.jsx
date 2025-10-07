@@ -74,17 +74,17 @@ function Schedule12Series() {
               />
             </div>
 
-            {/* 3-hour session */}
+            {/* 2-hour session */}
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-accent/30">
               <h2 className="text-2xl md:text-3xl font-heading text-primary mb-4 text-center">
-                Schedule Session 8 (3 hours)
+                Schedule Session 8 (2 hours)
               </h2>
               <p className="text-center text-neutralDark/70 mb-6">
                 This is the deeper integration session in the middle of your series
               </p>
               <div 
                 className="cal-inline" 
-                data-cal-link="rockyourbody/si180"
+                data-cal-link="rockyourbody/si120"
                 data-cal-config='{"layout":"month_view"}'
                 style={{ width: '100%', height: '700px', overflow: 'scroll' }}
               />
