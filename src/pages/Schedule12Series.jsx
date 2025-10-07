@@ -1,23 +1,8 @@
-import { useEffect } from 'react';
 import PageLayout from '../components/PageLayout';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
 function Schedule12Series() {
-  useEffect(() => {
-    // Load Cal.com embed script - it auto-initializes
-    const script = document.createElement('script');
-    script.src = 'https://app.cal.com/embed/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
-
   return (
     <PageLayout>
       <div className="bg-offWhite min-h-screen pt-32 pb-20 px-4">
@@ -68,11 +53,15 @@ function Schedule12Series() {
               <p className="text-center text-neutralDark/70 mb-6">
                 Use this calendar for most of your 12-Series sessions
               </p>
-              <div 
-                className="cal-inline" 
-                data-cal-link="rockyourbody/si90"
-                data-cal-config='{"layout":"month_view"}'
-                style={{ width: '100%', height: '700px', overflow: 'scroll' }}
+              <iframe
+                src="https://cal.com/rockyourbody/si90"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book 90-minute SI sessions"
               />
             </div>
 
@@ -84,11 +73,15 @@ function Schedule12Series() {
               <p className="text-center text-neutralDark/70 mb-6">
                 This is the deeper integration session in the middle of your series
               </p>
-              <div 
-                className="cal-inline" 
-                data-cal-link="rockyourbody/si120"
-                data-cal-config='{"layout":"month_view"}'
-                style={{ width: '100%', height: '700px', overflow: 'scroll' }}
+              <iframe
+                src="https://cal.com/rockyourbody/si120"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book 2-hour SI session 8"
               />
             </div>
           </div>

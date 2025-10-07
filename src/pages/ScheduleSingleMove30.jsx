@@ -1,23 +1,9 @@
-import { useEffect } from 'react';
+
 import PageLayout from '../components/PageLayout';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
 function ScheduleSingleMove30() {
-  useEffect(() => {
-    // Load Cal.com embed script
-    const script = document.createElement('script');
-    script.src = 'https://app.cal.com/embed/embed.js';
-    script.async = true;
-    
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
 
   return (
     <PageLayout>
