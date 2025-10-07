@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Hero from './Hero';
 import HeroContent from './HeroContent';
-import TypingText from './TypingText';
+import MarkdownText from './MarkdownText';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
@@ -322,9 +322,9 @@ function LandingPage() {
                           : 'RockUrBody'}
                       </p>
                       {message.role === 'assistant' && !message.isError && !message.isLimit ? (
-                        <TypingText text={message.content} speed={20} className="whitespace-pre-line" />
+                        <MarkdownText text={message.content} typing={true} speed={20} className="whitespace-pre-line" />
                       ) : (
-                        <p className="whitespace-pre-line">{message.content}</p>
+                        <MarkdownText text={message.content} className="whitespace-pre-line" />
                       )}
                     </div>
                     
