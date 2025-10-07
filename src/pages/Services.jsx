@@ -4,6 +4,7 @@ import WaveDivider from '../components/dividers/WaveDivider';
 import PullQuote from '../components/content/PullQuote';
 import Callout from '../components/content/Callout';
 import ExpandableSection from '../components/content/ExpandableSection';
+import Button from '../components/Button';
 
 function Services() {
   return (
@@ -122,6 +123,16 @@ function Services() {
                   </div>
                 </div>
               </div>
+              
+              {/* Booking Buttons */}
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <Button to="/book-structural-integration" variant="primary" fullWidth>
+                  Book Structural Integration
+                </Button>
+                <Button to="/what-is-structural-integration" variant="outline" fullWidth>
+                  Learn More
+                </Button>
+              </div>
             </div>
             
             {/* Wave divider between sections */}
@@ -171,6 +182,29 @@ function Services() {
                 </div>
               </div>
             </Callout>
+            
+            {/* Booking Buttons */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Button to="/book-movement-education" variant="primary" fullWidth>
+                Book Movement Education
+              </Button>
+              <Button to="/what-is-movement-education" variant="outline" fullWidth>
+                Learn More
+              </Button>
+            </div>
+            </div>
+            
+            {/* Combo Programs CTA */}
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 text-center">
+              <h3 className="text-2xl font-heading text-primary mb-4">
+                Want Both?
+              </h3>
+              <p className="text-lg text-neutralDark/80 mb-6">
+                Most clients see the best results combining structural work and movement education
+              </p>
+              <Button to="/book-combo-programs" variant="accent" size="lg">
+                View Combination Programs
+              </Button>
             </div>
           </div>
         </div>
