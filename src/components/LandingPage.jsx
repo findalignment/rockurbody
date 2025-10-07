@@ -22,7 +22,7 @@ function LandingPage() {
 
   // Quick suggestion buttons
   const suggestionButtons = [
-    { text: "Where should I start?", icon: "🚀", route: "/smart-starts" },
+    { text: "Where should I start?", icon: "🚀" },
     { text: "What's your approach?", icon: "🎯" },
     { text: "Tell me about your packages", icon: "📦" },
     { text: "Book a consultation", icon: "📅" },
@@ -172,13 +172,7 @@ function LandingPage() {
   };
 
   const handleSuggestionClick = (suggestion) => {
-    // If suggestion has a route, navigate directly
-    if (typeof suggestion === 'object' && suggestion.route) {
-      navigate(suggestion.route);
-      return;
-    }
-    
-    // Otherwise, treat as a chat question
+    // Treat all suggestions as chat questions
     const suggestionText = typeof suggestion === 'string' ? suggestion : suggestion.text;
     if (questionCount >= MAX_QUESTIONS) return;
     setInput(suggestionText);
