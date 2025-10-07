@@ -32,10 +32,10 @@ function BookStructuralIntegration() {
             
             <div className="grid md:grid-cols-3 gap-6">
               {/* 60min */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <h3 className="font-semibold text-neutralDark mb-2 text-xl">60 Minutes</h3>
                 <p className="text-3xl font-bold text-accent mb-4">${prices.si60}</p>
-                <p className="text-sm text-neutralDark/70 mb-6">Focused work on 1-2 areas</p>
+                <p className="text-sm text-neutralDark/70 mb-6 flex-grow">Focused work on 1-2 areas</p>
                 <PaymentButton
                   amount={prices.si60 * 100}
                   description="60min SI Session"
@@ -48,11 +48,11 @@ function BookStructuralIntegration() {
               </div>
 
               {/* 90min */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-accent hover:shadow-lg transition-all">
+              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-accent hover:shadow-lg transition-all flex flex-col">
                 <div className="text-xs bg-accent text-white px-3 py-1 rounded-full inline-block mb-2">MOST POPULAR</div>
                 <h3 className="font-semibold text-neutralDark mb-2 text-xl">90 Minutes</h3>
                 <p className="text-3xl font-bold text-accent mb-4">${prices.si90}</p>
-                <p className="text-sm text-neutralDark/70 mb-6">Full body session with integration</p>
+                <p className="text-sm text-neutralDark/70 mb-6 flex-grow">Full body session with integration</p>
                 <PaymentButton
                   amount={prices.si90 * 100}
                   description="90min SI Session"
@@ -65,10 +65,10 @@ function BookStructuralIntegration() {
               </div>
 
               {/* 120min */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <h3 className="font-semibold text-neutralDark mb-2 text-xl">120 Minutes</h3>
                 <p className="text-3xl font-bold text-accent mb-4">${prices.si120}</p>
-                <p className="text-sm text-neutralDark/70 mb-6">Extended work for complex issues</p>
+                <p className="text-sm text-neutralDark/70 mb-6 flex-grow">Extended work for complex issues</p>
                 <PaymentButton
                   amount={prices.si120 * 100}
                   description="120min SI Session"

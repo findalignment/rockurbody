@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import PageTransition from './components/PageTransition';
@@ -56,6 +57,11 @@ import ForgotPassword from './pages/ForgotPassword';
 
 function AppRoutes() {
   const location = useLocation();
+  
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   
   return (
     <PageTransition key={location.pathname}>

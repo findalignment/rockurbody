@@ -37,7 +37,7 @@ function BookMovementEducation() {
             
             <div className="grid md:grid-cols-4 gap-4">
               {/* 30min */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <h3 className="font-semibold text-neutralDark mb-2">30 Minutes</h3>
                 <p className="text-2xl font-bold text-accent mb-3">${prices.move30}</p>
                 <p className="text-sm text-neutralDark/70 mb-4">Quick check-ins, form corrections</p>
@@ -53,7 +53,7 @@ function BookMovementEducation() {
               </div>
 
               {/* 60min */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-accent hover:shadow-lg transition-all">
+              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-accent hover:shadow-lg transition-all flex flex-col">
                 <div className="text-xs bg-accent text-white px-2 py-0.5 rounded-full inline-block mb-2">POPULAR</div>
                 <h3 className="font-semibold text-neutralDark mb-2">60 Minutes</h3>
                 <p className="text-2xl font-bold text-accent mb-3">${prices.move60}</p>
@@ -70,7 +70,7 @@ function BookMovementEducation() {
               </div>
 
               {/* 90min */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <h3 className="font-semibold text-neutralDark mb-2">90 Minutes</h3>
                 <p className="text-2xl font-bold text-accent mb-3">${prices.move90}</p>
                 <p className="text-sm text-neutralDark/70 mb-4">Extended movement work</p>
@@ -86,7 +86,7 @@ function BookMovementEducation() {
               </div>
 
               {/* 120min */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors">
+              <div className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
                 <h3 className="font-semibold text-neutralDark mb-2">120 Minutes</h3>
                 <p className="text-2xl font-bold text-accent mb-3">${prices.move120}</p>
                 <p className="text-sm text-neutralDark/70 mb-4">Initial assessments, complex issues</p>
