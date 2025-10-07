@@ -62,11 +62,11 @@ function ScheduleFullRepatterning() {
                 </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-heading text-primary mb-4 text-center">
-                Schedule 3-Hour SI Session
+                Schedule 2-Hour SI Session
               </h2>
               <p className="text-center text-neutralDark/70 mb-4">Session 8 is the deeper integration session</p>
               <iframe
-                src="https://cal.com/rockyourbody/si180"
+                src="https://cal.com/rockyourbody/si120"
                 style={{
                   width: '100%',
                   height: '800px',

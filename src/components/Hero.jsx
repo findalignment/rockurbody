@@ -15,7 +15,7 @@ function Hero({ children, backgroundImage = '/hero-raccoons.jpg' }) {
               ? `url(${backgroundImage})` 
               : 'linear-gradient(135deg, #1e3a8a 0%, #312e81 50%, #1e293b 100%)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center center', 
+            backgroundPosition: 'center 30%',
             backgroundRepeat: 'no-repeat'
           }}
         >
