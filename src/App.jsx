@@ -33,6 +33,19 @@ import BookComboPrograms from './pages/BookComboPrograms';
 import Schedule12Series from './pages/Schedule12Series';
 import ScheduleHipSeries from './pages/ScheduleHipSeries';
 import ScheduleMovement60 from './pages/ScheduleMovement60';
+import ScheduleMovement5Pack from './pages/ScheduleMovement5Pack';
+import ScheduleMovement10Pack from './pages/ScheduleMovement10Pack';
+import ScheduleMovement20Pack from './pages/ScheduleMovement20Pack';
+import ScheduleSingleMove30 from './pages/ScheduleSingleMove30';
+import ScheduleSingleMove60 from './pages/ScheduleSingleMove60';
+import ScheduleSingleMove90 from './pages/ScheduleSingleMove90';
+import ScheduleSingleMove120 from './pages/ScheduleSingleMove120';
+import ScheduleSingleSI60 from './pages/ScheduleSingleSI60';
+import ScheduleSingleSI90 from './pages/ScheduleSingleSI90';
+import ScheduleSingleSI120 from './pages/ScheduleSingleSI120';
+import ScheduleTheReset from './pages/ScheduleTheReset';
+import ScheduleHipFreedom from './pages/ScheduleHipFreedom';
+import ScheduleFullRepatterning from './pages/ScheduleFullRepatterning';
 import ScheduleCombo from './pages/ScheduleCombo';
 import BlogIndex from './pages/blog/BlogIndex';
 import IntegratingStructureAndMovement from './pages/blog/IntegratingStructureAndMovement';
@@ -83,6 +96,19 @@ function AppRoutes() {
         <Route path="/schedule/12-series" element={<Schedule12Series />} />
         <Route path="/schedule/hip-series" element={<ScheduleHipSeries />} />
         <Route path="/schedule/movement-60" element={<ScheduleMovement60 />} />
+        <Route path="/schedule/movement-5" element={<ScheduleMovement5Pack />} />
+        <Route path="/schedule/movement-10" element={<ScheduleMovement10Pack />} />
+        <Route path="/schedule/movement-20" element={<ScheduleMovement20Pack />} />
+        <Route path="/schedule/single-move-30" element={<ScheduleSingleMove30 />} />
+        <Route path="/schedule/single-move-60" element={<ScheduleSingleMove60 />} />
+        <Route path="/schedule/single-move-90" element={<ScheduleSingleMove90 />} />
+        <Route path="/schedule/single-move-120" element={<ScheduleSingleMove120 />} />
+        <Route path="/schedule/single-si-60" element={<ScheduleSingleSI60 />} />
+        <Route path="/schedule/single-si-90" element={<ScheduleSingleSI90 />} />
+        <Route path="/schedule/single-si-120" element={<ScheduleSingleSI120 />} />
+        <Route path="/schedule/the-reset" element={<ScheduleTheReset />} />
+        <Route path="/schedule/hip-freedom" element={<ScheduleHipFreedom />} />
+        <Route path="/schedule/full-repatterning" element={<ScheduleFullRepatterning />} />
         <Route path="/schedule/combo" element={<ScheduleCombo />} />
         
         {/* Dashboard */}
