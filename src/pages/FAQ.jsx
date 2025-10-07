@@ -42,7 +42,7 @@ function FAQ() {
         },
         {
           q: "What's the 12-Series?",
-          a: <>The <Link to="/12-series" className="text-accent hover:underline">12-Series</Link> is the complete Anatomy Trains Structural Integration protocol. It's a systematic progression through your entire body over 12 sessions. Sessions 1-4 address superficial layers. Sessions 5-8 work the deep core. Sessions 9-12 integrate everything. It's designed to create lasting change in how your body is organized.</>
+          a: <>The <Link to="/12-series" className="text-accent hover:underline">12-Series</Link> is the complete Anatomy Trains Structural Integration protocol. It's a systematic progression through your entire body over 12 sessions. Sessions 1-4: superficial layers (front line, back line, lateral line, spiral line). Sessions 5-8: deep core (up to waist, above waist, back, head and neck). Sessions 9-12: integration and arms (below waist, above waist, arms, wrapping it all together). It's designed to create lasting change in how your body is organized.</>
         },
         {
           q: "How is this different from chiropractic or physical therapy?",

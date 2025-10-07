@@ -32,7 +32,7 @@ function ServicesOverview() {
     },
     {
       title: "The 12-Series",
-      description: "The complete Anatomy Trains Structural Integration protocol. 12 sessions that systematically work through your entire body: superficial layers (1-4), deep core (5-8), and integration (9-12).",
+      description: "The complete Anatomy Trains Structural Integration protocol. Sessions 1-4: superficial layers (front line, back line, lateral line, spiral line). Sessions 5-8: deep core (up to waist, above waist, back, head and neck). Sessions 9-12: integration (below waist, above waist, arms, wrapping it all together).",
       link: "/12-series",
       cta: "Explore 12-Series",
       icon: (
@@ -94,7 +94,7 @@ function ServicesOverview() {
           {sections.map((section, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-accent/30 group"
+              className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-accent/30 group flex flex-col"
             >
               <div className="flex items-start gap-4 mb-4">
                 <div className="text-accent group-hover:scale-110 transition-transform">
@@ -105,13 +105,13 @@ function ServicesOverview() {
                 </h3>
               </div>
               
-              <p className="text-neutralDark/80 leading-relaxed mb-6 text-sm md:text-base">
+              <p className="text-neutralDark/80 leading-relaxed mb-6 text-sm md:text-base flex-grow">
                 {section.description}
               </p>
               
               <Link 
                 to={section.link}
-                className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors group"
+                className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors group mt-auto"
               >
                 <span>{section.cta}</span>
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

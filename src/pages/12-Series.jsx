@@ -25,26 +25,26 @@ function TwelveSeries() {
         <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>The Session Breakdown</h2>
         
         <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '10px' }}>Sessions 1-3: Superficial Layer</h3>
+          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '10px' }}>Sessions 1-4: Superficial Layers</h3>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
-            We start by addressing the superficial front line, back line, and lateral lines. 
+            We start by addressing the superficial front line, superficial back line, lateral line, and spiral line. 
             This creates initial ease and prepares the body for deeper work.
           </p>
         </div>
 
         <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '10px' }}>Sessions 4-7: Deep Core</h3>
+          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '10px' }}>Sessions 5-8: Deep Core</h3>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
-            Deep work on the legs, pelvis, and spine. This is where major structural shifts happen. 
-            We address the deep front line and spiral lines.
+            Deep core work: up to the waist, above the waist, back, and head and neck. 
+            This is where major structural shifts happen as we address the deep layers of your body.
           </p>
         </div>
 
         <div style={{ marginBottom: '30px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '10px' }}>Sessions 8-12: Integration</h3>
+          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '10px' }}>Sessions 9-12: Integration and Arms</h3>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
-            Upper body integration, functional lines, and whole-body coordination. 
-            We refine the work and ensure everything works together as a system.
+            Integration work below the waist, above the waist, arms, and wrapping it all together. 
+            We refine the work and ensure everything works together as a coordinated system.
           </p>
         </div>
       </div>
