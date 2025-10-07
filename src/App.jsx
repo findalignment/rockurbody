@@ -17,6 +17,7 @@ import WhatIsStructuralIntegration from './pages/WhatIsStructuralIntegration';
 import WhatIsMovementEducation from './pages/WhatIsMovementEducation';
 import Credentials from './pages/Credentials';
 import TrainingLineage from './pages/TrainingLineage';
+import FAQ from './pages/FAQ';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import Book from './pages/Book';
@@ -81,6 +82,7 @@ function AppRoutes() {
         <Route path="/what-is-movement-education" element={<WhatIsMovementEducation />} />
         <Route path="/credentials" element={<Credentials />} />
         <Route path="/training-lineage" element={<TrainingLineage />} />
+        <Route path="/faq" element={<FAQ />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         

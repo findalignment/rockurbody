@@ -43,6 +43,9 @@ function Footer() {
               <Link to="/packages" className="block text-white/70 hover:text-white transition">
                 Packages
               </Link>
+              <Link to="/faq" className="block text-white/70 hover:text-white transition">
+                FAQ
+              </Link>
               <Link to="/contact" className="block text-white/70 hover:text-white transition">
                 Contact
               </Link>
