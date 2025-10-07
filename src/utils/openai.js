@@ -219,6 +219,32 @@ WHEN TO PROVIDE INFORMATION:
       content: userMessage
     });
 
+    // Dad joke handler - check if user is asking for a joke
+    const lowerMessage = userMessage.toLowerCase();
+    if (lowerMessage.includes('joke') || lowerMessage.includes('funny') || 
+        lowerMessage.includes('laugh') || lowerMessage.includes('humor')) {
+      const dadJokes = [
+        "Why did the scarecrow become a successful bodyworker? Because he was outstanding in his field!",
+        "What do you call a fake noodle? An impasta! Much like fake movement patterns - they just don't hold up under pressure.",
+        "Why don't skeletons fight each other? They don't have the guts! But seriously, building core strength is essential.",
+        "What's the best thing about Switzerland? I don't know, but the flag is a big plus! Speaking of positives, proper alignment is a huge plus for your body.",
+        "Why did the bicycle fall over? It was two-tired! Rest and recovery are important - don't push through fatigue.",
+        "What do you call a bear with no teeth? A gummy bear! Just like fascia needs to stay supple, not stuck.",
+        "Why can't your nose be 12 inches long? Because then it would be a foot! Proper body proportions matter in structural integration.",
+        "What did the ocean say to the beach? Nothing, it just waved! Movement should be fluid and wave-like through your body.",
+        "Why did the coffee file a police report? It got mugged! Don't let tension mug you of good posture.",
+        "What do you call a sleeping bull? A bulldozer! But seriously, sleep is when your body integrates all the work we do.",
+        "Why did the math book look so sad? It had too many problems! Let's solve your movement problems together.",
+        "What's orange and sounds like a parrot? A carrot! And what's important for fascia? Good hydration and nutrition.",
+        "Why don't eggs tell jokes? They'd crack each other up! But tension in your body is no laughing matter.",
+        "What do you call a dinosaur with an extensive vocabulary? A thesaurus! I have an extensive vocabulary of movement patterns to teach you.",
+        "Why did the golfer bring two pairs of pants? In case he got a hole in one! Structural Integration helps you stay whole, not develop holes in your movement.",
+      ];
+      
+      const randomJoke = dadJokes[Math.floor(Math.random() * dadJokes.length)];
+      return randomJoke + "\n\n😄 Now, what can I help you with today? Questions about movement, structural integration, or ready to book?";
+    }
+
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
