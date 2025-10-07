@@ -5,32 +5,15 @@ import { Link } from 'react-router-dom';
 
 function Schedule12Series() {
   useEffect(() => {
-    // Load Cal.com embed script
+    // Load Cal.com embed script - it auto-initializes
     const script = document.createElement('script');
     script.src = 'https://app.cal.com/embed/embed.js';
     script.async = true;
-    
-    script.onload = () => {
-      // Initialize Cal.com after script loads
-      if (window.Cal) {
-        window.Cal('init');
-      }
-    };
-    
-    script.onload = () => {
-      // Initialize Cal.com after script loads
-      if (window.Cal) {
-        window.Cal('init');
-      }
-    };
-    
     document.body.appendChild(script);
 
     return () => {
       if (document.body.contains(script)) {
-        if (document.body.contains(script)) {
         document.body.removeChild(script);
-      }
       }
     };
   }, []);

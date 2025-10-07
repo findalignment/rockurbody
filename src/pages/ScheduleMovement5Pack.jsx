@@ -10,12 +10,6 @@ function ScheduleMovement5Pack() {
     script.src = 'https://app.cal.com/embed/embed.js';
     script.async = true;
     
-    script.onload = () => {
-      // Initialize Cal.com after script loads
-      if (window.Cal) {
-        window.Cal('init');
-      }
-    };
     document.body.appendChild(script);
 
     return () => {
