@@ -53,12 +53,16 @@ function ScheduleHipSeries() {
             <p className="text-center text-neutralDark/70 mb-6">
               Book all 3 sessions at once or schedule them one at a time
             </p>
-            <div 
-              className="cal-inline" 
-              data-cal-link="rockyourbody/si90"
-              data-cal-config='{"layout":"month_view"}'
-              style={{ width: '100%', height: '700px', overflow: 'scroll' }}
-            />
+            <iframe
+                src="https://cal.com/rockyourbody/si90"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book calendar"
+              />
           </div>
 
           {/* Help section */}

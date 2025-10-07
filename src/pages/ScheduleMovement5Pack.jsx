@@ -53,12 +53,16 @@ function ScheduleMovement5Pack() {
             <p className="text-center text-neutralDark/70 mb-6">
               Book all 5 sessions at once or schedule them one at a time
             </p>
-            <div 
-              className="cal-inline" 
-              data-cal-link="rockyourbody/move60"
-              data-cal-config='{"layout":"month_view"}'
-              style={{ width: '100%', height: '700px', overflow: 'scroll' }}
-            />
+            <iframe
+                src="https://cal.com/rockyourbody/move60"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book calendar"
+              />
           </div>
 
           {/* Help section */}

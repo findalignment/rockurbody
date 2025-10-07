@@ -27,12 +27,16 @@ function ScheduleSingleSI120() {
             <h2 className="text-2xl md:text-3xl font-heading text-primary mb-4 text-center">
               Schedule Your 2-Hour Structural Integration Session
             </h2>
-            <div 
-              className="cal-inline" 
-              data-cal-link="rockyourbody/si120"
-              data-cal-config='{"layout":"month_view"}'
-              style={{ width: '100%', height: '700px', overflow: 'scroll' }}
-            />
+            <iframe
+                src="https://cal.com/rockyourbody/si120"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book calendar"
+              />
           </div>
 
           <div className="mt-12 text-center">

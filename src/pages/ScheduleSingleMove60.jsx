@@ -28,12 +28,16 @@ function ScheduleSingleMove60() {
               Schedule Your 60-Minute Session
             </h2>
             {/* CALENDAR PLACEHOLDER - Replace with actual Cal.com embed link */}
-            <div 
-              className="cal-inline" 
-              data-cal-link="rockyourbody/move60"
-              data-cal-config='{"layout":"month_view"}'
-              style={{ width: '100%', height: '700px', overflow: 'scroll' }}
-            />
+            <iframe
+                src="https://cal.com/rockyourbody/move60"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book calendar"
+              />
           </div>
 
           <div className="mt-12 text-center">

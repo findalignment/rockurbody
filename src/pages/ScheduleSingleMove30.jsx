@@ -50,12 +50,16 @@ function ScheduleSingleMove30() {
               Pick a time that works best for you
             </p>
             {/* CALENDAR PLACEHOLDER - Replace with actual Cal.com embed link */}
-            <div 
-              className="cal-inline" 
-              data-cal-link="rockyourbody/move30"
-              data-cal-config='{"layout":"month_view"}'
-              style={{ width: '100%', height: '700px', overflow: 'scroll' }}
-            />
+            <iframe
+                src="https://cal.com/rockyourbody/move30"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book calendar"
+              />
           </div>
 
           {/* Help section */}

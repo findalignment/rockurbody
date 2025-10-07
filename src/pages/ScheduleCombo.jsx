@@ -70,11 +70,15 @@ function ScheduleCombo() {
               <p className="text-center text-neutralDark/70 mb-6">
                 Use this calendar for your Structural Integration sessions
               </p>
-              <div 
-                className="cal-inline" 
-                data-cal-link="rockyourbody/si90"
-                data-cal-config='{"layout":"month_view"}'
-                style={{ width: '100%', height: '700px', overflow: 'scroll' }}
+              <iframe
+                src="https://cal.com/rockyourbody/si90"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book calendar"
               />
             </div>
 
@@ -91,11 +95,15 @@ function ScheduleCombo() {
               <p className="text-center text-neutralDark/70 mb-6">
                 Use this calendar for your Movement Education sessions
               </p>
-              <div 
-                className="cal-inline" 
-                data-cal-link="rockyourbody/move60"
-                data-cal-config='{"layout":"month_view"}'
-                style={{ width: '100%', height: '700px', overflow: 'scroll' }}
+              <iframe
+                src="https://cal.com/rockyourbody/move60"
+                style={{
+                  width: '100%',
+                  height: '800px',
+                  border: 'none',
+                  borderRadius: '8px'
+                }}
+                title="Book calendar"
               />
             </div>
           </div>
