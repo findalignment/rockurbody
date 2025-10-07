@@ -52,7 +52,7 @@ function ScheduleFullRepatterning() {
               <p className="text-center text-neutralDark/70 mb-4">Use this for all sessions except Session 8</p>
               <div 
                 className="cal-inline" 
-                data-cal-link="rockyourbody/90min"
+                data-cal-link="rockyourbody/si90"
                 data-cal-config='{"layout":"month_view"}'
                 style={{ width: '100%', height: '700px', overflow: 'scroll' }}
               />
@@ -65,12 +65,12 @@ function ScheduleFullRepatterning() {
                 </span>
               </div>
               <h2 className="text-2xl md:text-3xl font-heading text-primary mb-4 text-center">
-                Schedule 2-Hour SI Session
+                Schedule 3-Hour SI Session
               </h2>
               <p className="text-center text-neutralDark/70 mb-4">Session 8 is the deeper integration session</p>
               <div 
                 className="cal-inline" 
-                data-cal-link="rockyourbody/2hr"
+                data-cal-link="rockyourbody/si180"
                 data-cal-config='{"layout":"month_view"}'
                 style={{ width: '100%', height: '700px', overflow: 'scroll' }}
               />
@@ -87,7 +87,7 @@ function ScheduleFullRepatterning() {
               </h2>
               <div 
                 className="cal-inline" 
-                data-cal-link="rockyourbody/60min"
+                data-cal-link="rockyourbody/move60"
                 data-cal-config='{"layout":"month_view"}'
                 style={{ width: '100%', height: '700px', overflow: 'scroll' }}
               />

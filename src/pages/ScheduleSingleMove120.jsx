@@ -36,7 +36,7 @@ function ScheduleSingleMove120() {
             </h2>
             <div 
               className="cal-inline" 
-              data-cal-link="rockyourbody/2hr"
+              data-cal-link="rockyourbody/move120"
               data-cal-config='{"layout":"month_view"}'
               style={{ width: '100%', height: '700px', overflow: 'scroll' }}
             />

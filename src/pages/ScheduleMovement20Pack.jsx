@@ -67,7 +67,7 @@ function ScheduleMovement20Pack() {
             {/* CALENDAR PLACEHOLDER - Replace with actual Cal.com embed link */}
             <div 
               className="cal-inline" 
-              data-cal-link="rockyourbody/60min"
+              data-cal-link="rockyourbody/move60"
               data-cal-config='{"layout":"month_view"}'
               style={{ width: '100%', height: '700px', overflow: 'scroll' }}
             />

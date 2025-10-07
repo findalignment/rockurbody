@@ -51,7 +51,7 @@ function ScheduleHipFreedom() {
               </h2>
               <div 
                 className="cal-inline" 
-                data-cal-link="rockyourbody/90min"
+                data-cal-link="rockyourbody/si90"
                 data-cal-config='{"layout":"month_view"}'
                 style={{ width: '100%', height: '700px', overflow: 'scroll' }}
               />
@@ -68,7 +68,7 @@ function ScheduleHipFreedom() {
               </h2>
               <div 
                 className="cal-inline" 
-                data-cal-link="rockyourbody/60min"
+                data-cal-link="rockyourbody/move60"
                 data-cal-config='{"layout":"month_view"}'
                 style={{ width: '100%', height: '700px', overflow: 'scroll' }}
               />

@@ -63,7 +63,7 @@ function ScheduleSingleMove30() {
             {/* CALENDAR PLACEHOLDER - Replace with actual Cal.com embed link */}
             <div 
               className="cal-inline" 
-              data-cal-link="rockyourbody/30min"
+              data-cal-link="rockyourbody/move30"
               data-cal-config='{"layout":"month_view"}'
               style={{ width: '100%', height: '700px', overflow: 'scroll' }}
             />
