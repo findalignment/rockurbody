@@ -12,7 +12,7 @@ function Services() {
       <PageHero 
         imageSrc="/services-hero.jpg"
         title="Our Services"
-        subtitle="Structural Integration & Movement Education"
+        subtitle="Rock Hudson | Structural Integrator & Movement Educator"
       />
       {/* Add soft wave divider */}
       <div className="relative bg-white">
@@ -184,7 +184,7 @@ function Services() {
             </Callout>
             
             {/* Booking Buttons */}
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-12 flex flex-col sm:flex-row gap-4">
               <Button to="/book/movement-education" variant="primary" fullWidth>
                 Book Movement Education
               </Button>
@@ -195,7 +195,7 @@ function Services() {
             </div>
             
             {/* Combo Programs CTA */}
-            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 text-center">
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 text-center mt-16 mb-16">
               <h3 className="text-2xl font-heading text-primary mb-4">
                 Want Both?
               </h3>

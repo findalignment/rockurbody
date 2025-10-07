@@ -10,9 +10,21 @@ function Footer() {
             <h3 className="text-2xl font-heading font-bold mb-4">
               Rock Your Body
             </h3>
-            <p className="text-white/70">
-              Movement education and structural integration in Santa Cruz, CA
+            <p className="text-white/80 font-semibold mb-3">
+              Rock Hudson
             </p>
+            <div className="text-white/70 text-sm space-y-1">
+              <p>Anatomy Trains Structural Integration</p>
+              <p>Anatomy Trains Teacher in Training</p>
+              <p>NASM Certified Personal Trainer</p>
+              <p>NASM Corrective Exercise Specialist</p>
+              <p>ACE Health Coach</p>
+              <p>ACE Corrective Exercise Specialist</p>
+              <p>MedFit Parkinson's Disease Fitness Specialist</p>
+              <p>MedFit Drug & Alcohol Recovery Fitness Specialist</p>
+              <p>Precision Nutrition Coach Level 2</p>
+              <p>MovNat Level 2</p>
+            </div>
           </div>
           
           {/* Quick Links */}
