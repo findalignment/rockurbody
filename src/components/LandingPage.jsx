@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Hero from './Hero';
 import HeroContent from './HeroContent';
@@ -19,6 +19,7 @@ function LandingPage() {
   const [chatFailed, setChatFailed] = useState(false);
   const [failureCount, setFailureCount] = useState(0);
   const navigate = useNavigate();
+  const messagesEndRef = useRef(null);
 
   const MAX_QUESTIONS = 20;
   const MAX_FAILURES = 2; // Show fallback after 2 consecutive failures
@@ -30,6 +31,16 @@ function LandingPage() {
     { text: "Tell me about your packages", icon: "📦" },
     { text: "Book a consultation", icon: "📅" },
   ];
+
+  // Auto-scroll to bottom of chat
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  // Scroll when conversation updates
+  useEffect(() => {
+    scrollToBottom();
+  }, [conversation]);
 
   // Generate a unique user ID for rate limiting
   useEffect(() => {
@@ -398,6 +409,7 @@ function LandingPage() {
                     </div>
                   </div>
                 )}
+                <div ref={messagesEndRef} />
               </div>
             )}
             
