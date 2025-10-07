@@ -27,6 +27,13 @@ import BookMove120 from './pages/BookMove120';
 import BookSI60 from './pages/BookSI60';
 import BookSI90 from './pages/BookSI90';
 import BookSI120 from './pages/BookSI120';
+import BookStructuralIntegration from './pages/BookStructuralIntegration';
+import BookMovementEducation from './pages/BookMovementEducation';
+import BookComboPrograms from './pages/BookComboPrograms';
+import Schedule12Series from './pages/Schedule12Series';
+import ScheduleHipSeries from './pages/ScheduleHipSeries';
+import ScheduleMovement60 from './pages/ScheduleMovement60';
+import ScheduleCombo from './pages/ScheduleCombo';
 import BlogIndex from './pages/blog/BlogIndex';
 import IntegratingStructureAndMovement from './pages/blog/IntegratingStructureAndMovement';
 import Dashboard from './pages/Dashboard';
@@ -68,6 +75,15 @@ function AppRoutes() {
         <Route path="/book/si60" element={<BookSI60 />} />
         <Route path="/book/si90" element={<BookSI90 />} />
         <Route path="/book/si120" element={<BookSI120 />} />
+        <Route path="/book/structural-integration" element={<BookStructuralIntegration />} />
+        <Route path="/book/movement-education" element={<BookMovementEducation />} />
+        <Route path="/book/combo-programs" element={<BookComboPrograms />} />
+        
+        {/* Scheduling Routes */}
+        <Route path="/schedule/12-series" element={<Schedule12Series />} />
+        <Route path="/schedule/hip-series" element={<ScheduleHipSeries />} />
+        <Route path="/schedule/movement-60" element={<ScheduleMovement60 />} />
+        <Route path="/schedule/combo" element={<ScheduleCombo />} />
         
         {/* Dashboard */}
         <Route path="/dashboard" element={<Dashboard />} />
