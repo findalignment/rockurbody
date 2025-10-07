@@ -17,7 +17,7 @@ function LandingPage() {
   const [failureCount, setFailureCount] = useState(0);
   const navigate = useNavigate();
 
-  const MAX_QUESTIONS = 5;
+  const MAX_QUESTIONS = 20;
   const MAX_FAILURES = 2; // Show fallback after 2 consecutive failures
 
   // Quick suggestion buttons
@@ -118,11 +118,6 @@ function LandingPage() {
       
       // Add question count reminder after 3rd and 4th questions
       let responseContent = aiResponse;
-      if (newCount === 3) {
-        responseContent += '\n\n(You have 2 questions remaining. After that, I\'ll invite you to schedule a free consultation or email me directly.)';
-      } else if (newCount === 4) {
-        responseContent += '\n\n(You have 1 question remaining. After that, I\'ll invite you to schedule a free consultation or email me directly.)';
-      }
       
       const newAIMessage = {
         id: Date.now() + 1,
@@ -132,13 +127,13 @@ function LandingPage() {
       };
       setConversation(prev => [...prev, newAIMessage]);
 
-      // If this was the 5th question, add consultation prompt
+      // If question limit reached, add consultation prompt
       if (newCount === MAX_QUESTIONS) {
         setTimeout(() => {
           const consultationPrompt = {
             id: Date.now() + 2,
             role: 'system',
-            content: `That's ${MAX_QUESTIONS} questions! I hope I've been helpful. To continue our conversation:\n\n• Schedule a free consultation to discuss your specific needs\n• Email me at rock@rockurbody.com\n\nI'd love to help you achieve your movement and alignment goals!`,
+            content: `I hope I've been helpful! If you have more questions, I'd love to continue our conversation:\n\n• Schedule a free consultation to discuss your specific needs\n• Email me at rock@rockyourbody.com\n• Visit the contact page to get in touch\n\nLooking forward to helping you achieve your movement and alignment goals!`,
             isLimit: true,
             showConsultationButton: true
           };
