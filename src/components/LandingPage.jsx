@@ -5,9 +5,11 @@ import HeroContent from './HeroContent';
 import ServicesOverview from './ServicesOverview';
 import Footer from './Footer';
 import MarkdownText from './MarkdownText';
+import ChatbotStatus from './ChatbotStatus';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
+import { handleChatbotRequest, retryChatbotRequest, startHealthMonitoring } from '../utils/chatbotReliability';
 
 function LandingPage() {
   const [input, setInput] = useState('');
@@ -56,6 +58,9 @@ function LandingPage() {
     if (savedCount) {
       setQuestionCount(parseInt(savedCount, 10));
     }
+
+    // Start chatbot health monitoring
+    startHealthMonitoring();
   }, []);
 
   const handleSendMessage = async (e) => {
@@ -134,54 +139,80 @@ function LandingPage() {
         questionNumber: newCount,
       });
       
-      const aiResponse = await sendMessageToAI(userMessage, conversation, detectedPage);
+      // Use reliability system for AI request
+      const result = await retryChatbotRequest(
+        (message, history) => sendMessageToAI(message, history, detectedPage),
+        userMessage,
+        conversation
+      );
       
-      // Reset failure count on success
-      setFailureCount(0);
-      
-      // Add question count reminder after 3rd and 4th questions
-      let responseContent = aiResponse;
-      
-      const newAIMessage = {
-        id: Date.now() + 1,
-        role: 'assistant',
-        content: responseContent,
-        suggestedPage: detectedPage
-      };
-      setConversation(prev => [...prev, newAIMessage]);
+      if (result.success) {
+        // Reset failure count on success
+        setFailureCount(0);
+        setChatFailed(false);
+        
+        const newAIMessage = {
+          id: Date.now() + 1,
+          role: 'assistant',
+          content: result.response,
+          suggestedPage: detectedPage,
+          isFallback: result.isFallback
+        };
+        setConversation(prev => [...prev, newAIMessage]);
 
-      // If question limit reached, add consultation prompt
-      if (newCount === MAX_QUESTIONS) {
-        setTimeout(() => {
-          const consultationPrompt = {
-            id: Date.now() + 2,
-            role: 'system',
-            content: `I hope I've been helpful! If you have more questions, I'd love to continue our conversation:\n\n• Schedule a free consultation to discuss your specific needs\n• Email me at rock@rockyourbody.com\n• Visit the contact page to get in touch\n\nLooking forward to helping you achieve your movement and alignment goals!`,
-            isLimit: true,
-            showConsultationButton: true
+        // If question limit reached, add consultation prompt
+        if (newCount === MAX_QUESTIONS) {
+          setTimeout(() => {
+            const consultationPrompt = {
+              id: Date.now() + 2,
+              role: 'system',
+              content: `I hope I've been helpful! If you have more questions, I'd love to continue our conversation:\n\n• Schedule a free consultation to discuss your specific needs\n• Email me at rock@rockyourbody.com\n• Visit the contact page to get in touch\n\nLooking forward to helping you achieve your movement and alignment goals!`,
+              isLimit: true,
+              showConsultationButton: true
+            };
+            setConversation(prev => [...prev, consultationPrompt]);
+          }, 1000);
+        }
+      } else {
+        // Handle failure
+        const newFailureCount = failureCount + 1;
+        setFailureCount(newFailureCount);
+        
+        if (result.isFallback) {
+          // Use fallback response
+          setChatFailed(true);
+          const fallbackMessage = {
+            id: Date.now() + 1,
+            role: 'assistant',
+            content: result.response,
+            isError: false,
+            isFallback: true
           };
-          setConversation(prev => [...prev, consultationPrompt]);
-        }, 1000);
+          setConversation(prev => [...prev, fallbackMessage]);
+        } else {
+          // Show error message for retryable failures
+          const errorMessage = {
+            id: Date.now() + 1,
+            role: 'system',
+            content: 'Sorry, I\'m having trouble responding right now. Please try again or use the navigation menu above.',
+            isError: true
+          };
+          setConversation(prev => [...prev, errorMessage]);
+        }
       }
     } catch (err) {
-      console.error('AI Error:', err);
+      console.error('Unexpected error:', err);
       
-      // Increment failure count
-      const newFailureCount = failureCount + 1;
-      setFailureCount(newFailureCount);
-      
-      // Show fallback after MAX_FAILURES consecutive failures
-      if (newFailureCount >= MAX_FAILURES) {
-        setChatFailed(true);
-      } else {
-        const errorMessage = {
-          id: Date.now() + 1,
-          role: 'system',
-          content: 'Sorry, I\'m having trouble responding right now. Please try again or use the navigation menu above.',
-          isError: true
-        };
-        setConversation(prev => [...prev, errorMessage]);
-      }
+      // Fallback for unexpected errors
+      const fallbackMessage = {
+        id: Date.now() + 1,
+        role: 'assistant',
+        content: `I'm experiencing technical difficulties right now. Please email me directly at rock@rockurbody.com or visit our Contact page for alternative ways to reach me.`,
+        isError: false,
+        isFallback: true
+      };
+      setConversation(prev => [...prev, fallbackMessage]);
+      setChatFailed(true);
     }
     
     setIsLoading(false);
@@ -313,6 +344,11 @@ function LandingPage() {
             </div>
           ) : (
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 animate-fadeIn">
+              {/* Chat Status Indicator */}
+              <div className="p-4 border-b border-white/20">
+                <ChatbotStatus className="text-white" />
+              </div>
+              
             {conversation.length > 0 && (
               <div className="p-4 max-h-[400px] overflow-y-auto space-y-3 border-b border-white/20">
                 {conversation.map((message) => (
