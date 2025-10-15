@@ -19,14 +19,8 @@ export default defineConfig({
     }
   },
   build: {
-    // Enable tree shaking and minification
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
+    // Use default minification (esbuild)
+    minify: true,
     // Optimize chunk splitting
     rollupOptions: {
       output: {
@@ -43,9 +37,7 @@ export default defineConfig({
               return 'openai';
             }
             // Group other large vendor libraries
-            if (id.includes('node_modules')) {
-              return 'vendor';
-            }
+            return 'vendor';
           }
           
           // Page chunks - split by feature
