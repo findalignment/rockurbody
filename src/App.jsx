@@ -1,60 +1,70 @@
-import { useEffect } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import PageTransition from './components/PageTransition';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Pricing from './pages/Pricing';
-import Contact from './pages/Contact';
-import Packages from './pages/Packages';
-import TwelveSeries from './pages/12-Series';
-import HipSeries from './pages/Hip-Series';
-import Approach from './pages/Approach';
-import Process from './pages/Process';
-import SmartStarts from './pages/SmartStarts';
-import WhatIsStructuralIntegration from './pages/WhatIsStructuralIntegration';
-import WhatIsMovementEducation from './pages/WhatIsMovementEducation';
-import Credentials from './pages/Credentials';
-import TrainingLineage from './pages/TrainingLineage';
-import FAQ from './pages/FAQ';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import RefundPolicy from './pages/RefundPolicy';
-import Book from './pages/Book';
-import BookConsult from './pages/BookConsult';
-import BookMove30 from './pages/BookMove30';
-import BookMove60 from './pages/BookMove60';
-import BookMove90 from './pages/BookMove90';
-import BookMove120 from './pages/BookMove120';
-import BookSI60 from './pages/BookSI60';
-import BookSI90 from './pages/BookSI90';
-import BookSI120 from './pages/BookSI120';
-import BookStructuralIntegration from './pages/BookStructuralIntegration';
-import BookMovementEducation from './pages/BookMovementEducation';
-import BookComboPrograms from './pages/BookComboPrograms';
-import Schedule12Series from './pages/Schedule12Series';
-import ScheduleHipSeries from './pages/ScheduleHipSeries';
-import ScheduleMovement60 from './pages/ScheduleMovement60';
-import ScheduleMovement5Pack from './pages/ScheduleMovement5Pack';
-import ScheduleMovement10Pack from './pages/ScheduleMovement10Pack';
-import ScheduleMovement20Pack from './pages/ScheduleMovement20Pack';
-import ScheduleSingleMove30 from './pages/ScheduleSingleMove30';
-import ScheduleSingleMove60 from './pages/ScheduleSingleMove60';
-import ScheduleSingleMove90 from './pages/ScheduleSingleMove90';
-import ScheduleSingleMove120 from './pages/ScheduleSingleMove120';
-import ScheduleSingleSI60 from './pages/ScheduleSingleSI60';
-import ScheduleSingleSI90 from './pages/ScheduleSingleSI90';
-import ScheduleSingleSI120 from './pages/ScheduleSingleSI120';
-import ScheduleTheReset from './pages/ScheduleTheReset';
-import ScheduleHipFreedom from './pages/ScheduleHipFreedom';
-import ScheduleFullRepatterning from './pages/ScheduleFullRepatterning';
-import ScheduleCombo from './pages/ScheduleCombo';
-import BlogIndex from './pages/blog/BlogIndex';
-import IntegratingStructureAndMovement from './pages/blog/IntegratingStructureAndMovement';
-import Dashboard from './pages/Dashboard';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
-import ForgotPassword from './pages/ForgotPassword';
+import RoutePrefetcher from './components/RoutePrefetcher';
+
+// Lazy load all pages for code splitting
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Services = lazy(() => import('./pages/Services'));
+const Pricing = lazy(() => import('./pages/Pricing'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Packages = lazy(() => import('./pages/Packages'));
+const TwelveSeries = lazy(() => import('./pages/12-Series'));
+const HipSeries = lazy(() => import('./pages/Hip-Series'));
+const Approach = lazy(() => import('./pages/Approach'));
+const Process = lazy(() => import('./pages/Process'));
+const SmartStarts = lazy(() => import('./pages/SmartStarts'));
+const WhatIsStructuralIntegration = lazy(() => import('./pages/WhatIsStructuralIntegration'));
+const WhatIsMovementEducation = lazy(() => import('./pages/WhatIsMovementEducation'));
+const Credentials = lazy(() => import('./pages/Credentials'));
+const TrainingLineage = lazy(() => import('./pages/TrainingLineage'));
+const FAQ = lazy(() => import('./pages/FAQ'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const RefundPolicy = lazy(() => import('./pages/RefundPolicy'));
+const Book = lazy(() => import('./pages/Book'));
+const BookConsult = lazy(() => import('./pages/BookConsult'));
+const BookMove30 = lazy(() => import('./pages/BookMove30'));
+const BookMove60 = lazy(() => import('./pages/BookMove60'));
+const BookMove90 = lazy(() => import('./pages/BookMove90'));
+const BookMove120 = lazy(() => import('./pages/BookMove120'));
+const BookSI60 = lazy(() => import('./pages/BookSI60'));
+const BookSI90 = lazy(() => import('./pages/BookSI90'));
+const BookSI120 = lazy(() => import('./pages/BookSI120'));
+const BookStructuralIntegration = lazy(() => import('./pages/BookStructuralIntegration'));
+const BookMovementEducation = lazy(() => import('./pages/BookMovementEducation'));
+const BookComboPrograms = lazy(() => import('./pages/BookComboPrograms'));
+const Schedule12Series = lazy(() => import('./pages/Schedule12Series'));
+const ScheduleHipSeries = lazy(() => import('./pages/ScheduleHipSeries'));
+const ScheduleMovement60 = lazy(() => import('./pages/ScheduleMovement60'));
+const ScheduleMovement5Pack = lazy(() => import('./pages/ScheduleMovement5Pack'));
+const ScheduleMovement10Pack = lazy(() => import('./pages/ScheduleMovement10Pack'));
+const ScheduleMovement20Pack = lazy(() => import('./pages/ScheduleMovement20Pack'));
+const ScheduleSingleMove30 = lazy(() => import('./pages/ScheduleSingleMove30'));
+const ScheduleSingleMove60 = lazy(() => import('./pages/ScheduleSingleMove60'));
+const ScheduleSingleMove90 = lazy(() => import('./pages/ScheduleSingleMove90'));
+const ScheduleSingleMove120 = lazy(() => import('./pages/ScheduleSingleMove120'));
+const ScheduleSingleSI60 = lazy(() => import('./pages/ScheduleSingleSI60'));
+const ScheduleSingleSI90 = lazy(() => import('./pages/ScheduleSingleSI90'));
+const ScheduleSingleSI120 = lazy(() => import('./pages/ScheduleSingleSI120'));
+const ScheduleTheReset = lazy(() => import('./pages/ScheduleTheReset'));
+const ScheduleHipFreedom = lazy(() => import('./pages/ScheduleHipFreedom'));
+const ScheduleFullRepatterning = lazy(() => import('./pages/ScheduleFullRepatterning'));
+const ScheduleCombo = lazy(() => import('./pages/ScheduleCombo'));
+const BlogIndex = lazy(() => import('./pages/blog/BlogIndex'));
+const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/IntegratingStructureAndMovement'));
+const Dashboard = lazy(() => import('./pages/Dashboard'));
+const Login = lazy(() => import('./pages/Login'));
+const Signup = lazy(() => import('./pages/Signup'));
+const ForgotPassword = lazy(() => import('./pages/ForgotPassword'));
+
+// Loading component for Suspense fallback
+const LoadingSpinner = () => (
+  <div className="min-h-screen flex items-center justify-center bg-neutralDark">
+    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-accent"></div>
+  </div>
+);
 
 function AppRoutes() {
   const location = useLocation();
@@ -66,7 +76,9 @@ function AppRoutes() {
   
   return (
     <PageTransition key={location.pathname}>
-      <Routes location={location}>
+      <RoutePrefetcher />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -130,7 +142,8 @@ function AppRoutes() {
         {/* Blog Routes - Not in navigation menu */}
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/integrating-structure-and-movement" element={<IntegratingStructureAndMovement />} />
-      </Routes>
+        </Routes>
+      </Suspense>
     </PageTransition>
   );
 }
