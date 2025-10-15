@@ -101,11 +101,6 @@ export function AuthProvider({ children }) {
   // Send password reset email
   async function resetPassword(email) {
     try {
-      console.log('🔄 Starting password reset process...');
-      console.log('📧 Email:', email);
-      console.log('🌐 Current origin:', window.location.origin);
-      console.log('🔑 Firebase auth object:', auth);
-      
       // Validate email
       if (!email || !email.includes('@')) {
         throw new Error('Invalid email address');
@@ -117,24 +112,27 @@ export function AuthProvider({ children }) {
         handleCodeInApp: false,
       };
       
-      console.log('⚙️ Action code settings:', actionCodeSettings);
-      
-      // Send the password reset email
-      await sendPasswordResetEmail(auth, email, actionCodeSettings);
-      
-      console.log('✅ Password reset email sent successfully to:', email);
-      return { success: true, message: 'Password reset email sent successfully' };
+      // Retry mechanism for network issues
+      let lastError;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        try {
+          await sendPasswordResetEmail(auth, email, actionCodeSettings);
+          console.log('Password reset email sent successfully to:', email);
+          return;
+        } catch (error) {
+          lastError = error;
+          if (error.code === 'auth/network-request-failed' && attempt < 3) {
+            console.log(`Password reset attempt ${attempt} failed, retrying...`);
+            await new Promise(resolve => setTimeout(resolve, 1000 * attempt)); // Wait 1s, 2s, 3s
+            continue;
+          }
+          throw error;
+        }
+      }
+      throw lastError;
     } catch (error) {
-      console.error('❌ Password reset error:', error);
-      console.error('Error code:', error.code);
-      console.error('Error message:', error.message);
-      console.error('Full error:', error);
-      
-      // Re-throw with enhanced error information
-      const enhancedError = new Error(error.message || 'Failed to send password reset email');
-      enhancedError.code = error.code;
-      enhancedError.originalError = error;
-      throw enhancedError;
+      console.error('Password reset error:', error);
+      throw error;
     }
   }
 

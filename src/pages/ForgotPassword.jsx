@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import { useAuth } from '../contexts/AuthContext';
-import { runFirebaseDiagnostics } from '../utils/firebaseConfigChecker';
 
 function ForgotPassword() {
   const { resetPassword } = useAuth();
@@ -10,21 +9,6 @@ function ForgotPassword() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
-  const [diagnostics, setDiagnostics] = useState(null);
-
-  // Run Firebase diagnostics on component mount
-  useEffect(() => {
-    const runDiagnostics = async () => {
-      try {
-        const results = await runFirebaseDiagnostics();
-        setDiagnostics(results);
-      } catch (error) {
-        console.error('Failed to run Firebase diagnostics:', error);
-      }
-    };
-    
-    runDiagnostics();
-  }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -39,18 +23,11 @@ function ForgotPassword() {
         throw new Error('Please enter a valid email address.');
       }
 
-      console.log('🔄 Attempting to send password reset email to:', email);
-      console.log('🌐 Current domain:', window.location.origin);
-      
       await resetPassword(email);
       setSuccess(true);
       setEmail('');
-      console.log('✅ Password reset email sent successfully to:', email);
     } catch (error) {
-      console.error('❌ Password reset error:', error);
-      console.error('Error code:', error.code);
-      console.error('Error message:', error.message);
-      console.error('Full error object:', error);
+      console.error('Password reset error:', error);
       
       // Enhanced error handling
       if (error.code === 'auth/user-not-found') {
@@ -61,6 +38,8 @@ function ForgotPassword() {
         setError('Please enter an email address.');
       } else if (error.code === 'auth/invalid-action-code') {
         setError('The password reset link has expired or is invalid.');
+      } else if (error.code === 'auth/network-request-failed') {
+        setError('Network connection failed. Please check your internet connection and try again.');
       } else if (error.code === 'auth/unauthorized-continue-uri') {
         setError('Domain not configured. Please contact rock@rockurbody.com for assistance.');
       } else if (error.code === 'auth/invalid-api-key') {
@@ -154,45 +133,6 @@ function ForgotPassword() {
                 Back to Login
               </Link>
             </div>
-
-            {/* Firebase Diagnostics */}
-            {diagnostics && (
-              <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                <p className="text-sm font-semibold text-blue-800 mb-2">
-                  🔍 Firebase Status Check
-                </p>
-                <div className="text-xs text-blue-700 space-y-1">
-                  <div className="flex items-center gap-2">
-                    <span>Config:</span>
-                    <span className={diagnostics.config.isValid ? 'text-green-600' : 'text-red-600'}>
-                      {diagnostics.config.isValid ? '✅ Valid' : '❌ Invalid'}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span>Connection:</span>
-                    <span className={diagnostics.connection.success ? 'text-green-600' : 'text-red-600'}>
-                      {diagnostics.connection.success ? '✅ Connected' : '❌ Failed'}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span>Domain:</span>
-                    <span className={diagnostics.domain.isAuthorized ? 'text-green-600' : 'text-yellow-600'}>
-                      {diagnostics.domain.isAuthorized ? '✅ Authorized' : '⚠️ Check Required'}
-                    </span>
-                  </div>
-                </div>
-                {!diagnostics.config.isValid && (
-                  <p className="text-xs text-red-600 mt-2">
-                    Configuration issue detected. Check environment variables.
-                  </p>
-                )}
-                {!diagnostics.domain.isAuthorized && (
-                  <p className="text-xs text-yellow-600 mt-2">
-                    Domain may need to be added to Firebase authorized domains.
-                  </p>
-                )}
-              </div>
-            )}
 
             {/* Info Notice */}
             <div className="mt-8 p-4 bg-secondary/10 border border-secondary/20 rounded-lg">
