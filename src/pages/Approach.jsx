@@ -180,7 +180,7 @@ function Approach() {
             Book a free consultation and we'll discuss how this way of working can address what's going on in your body.
           </p>
           <Button
-            href="https://cal.com/rockyourbody/consultation"
+            href="/consult"
             variant="accent"
             size="lg"
           >

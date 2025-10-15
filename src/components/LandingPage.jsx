@@ -299,7 +299,7 @@ function LandingPage() {
                 </a>
 
                 <a
-                  href="https://cal.com/rockyourbody/consultation"
+                  href="/consult"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full px-6 py-4 bg-sage text-white rounded-xl font-semibold hover:bg-sage/90 transition-all duration-200 flex items-center justify-center gap-3"
@@ -381,7 +381,7 @@ function LandingPage() {
                     {message.showConsultationButton && (
                       <div className="mt-2 ml-2 flex flex-col sm:flex-row gap-2">
                         <a
-                          href="https://cal.com/rockyourbody/consultation"
+                          href="/consult"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="px-4 py-2 bg-primary text-white text-sm rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center justify-center gap-2"

@@ -191,7 +191,7 @@ function Process() {
             Book a free consultation to explore how this process can work for you. We'll assess where you are, discuss your goals, and create a path forward that makes sense for your body and your life.
           </p>
           <Button
-            href="https://cal.com/rockyourbody/consultation"
+            href="/consult"
             variant="accent"
             size="lg"
           >

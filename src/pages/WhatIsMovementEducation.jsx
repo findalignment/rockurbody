@@ -197,7 +197,7 @@ function WhatIsMovementEducation() {
               View Movement Education Options
             </Button>
             <Button
-              href="https://cal.com/rockyourbody/consultation"
+              href="/consult"
               variant="outline"
               size="lg"
             >

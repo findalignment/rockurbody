@@ -132,7 +132,7 @@ function ServicesOverview() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              href="https://cal.com/rockyourbody/consultation"
+              href="/consult"
               variant="primary"
               size="lg"
             >

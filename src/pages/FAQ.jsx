@@ -25,7 +25,7 @@ function FAQ() {
         },
         {
           q: "Where should I start?",
-          a: <>Not sure? Book a <a href="https://cal.com/rockyourbody/consultation" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">free consultation</a> and we'll talk through what makes sense for your goals. Many people start with <Link to="/packages" className="text-accent hover:underline">The Reset</Link> (3 SI + 3 Movement sessions) or the <Link to="/hip-series" className="text-accent hover:underline">Hip Series</Link> if hip issues are the main concern. Check out the <Link to="/smart-starts" className="text-accent hover:underline">Smart Starts</Link> page for recommendations.</>
+          a: <>Not sure? Book a <Link to="/consult" className="text-accent hover:underline">free consultation</Link> and we'll talk through what makes sense for your goals. Many people start with <Link to="/packages" className="text-accent hover:underline">The Reset</Link> (3 SI + 3 Movement sessions) or the <Link to="/hip-series" className="text-accent hover:underline">Hip Series</Link> if hip issues are the main concern. Check out the <Link to="/smart-starts" className="text-accent hover:underline">Smart Starts</Link> page for recommendations.</>
         }
       ]
     },
@@ -205,7 +205,7 @@ function FAQ() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                href="https://cal.com/rockyourbody/consultation"
+                href="/consult"
                 variant="primary"
                 size="lg"
               >

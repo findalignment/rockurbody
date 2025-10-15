@@ -244,7 +244,7 @@ function SmartStarts() {
             Let's talk. A free consultation helps us figure out together what makes sense for your body, your goals, and your life right now.
           </p>
           <Button
-            href="https://cal.com/rockyourbody/consultation"
+            href="/consult"
             variant="primary"
             size="lg"
           >

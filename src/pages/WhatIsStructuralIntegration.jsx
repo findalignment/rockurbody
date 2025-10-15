@@ -163,7 +163,7 @@ function WhatIsStructuralIntegration() {
               View Structural Integration Options
             </Button>
             <Button
-              href="https://cal.com/rockyourbody/consultation"
+              href="/consult"
               variant="outline"
               size="lg"
             >

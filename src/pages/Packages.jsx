@@ -489,7 +489,7 @@ function Packages() {
                 Book a free consultation to discuss your goals and find the perfect program for you.
               </p>
               <a
-                href="https://cal.com/rockyourbody/consultation"
+                href="/consult"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
