@@ -144,7 +144,7 @@ function IntegratingStructureAndMovement() {
                   Book a free consultation to discuss how this integrated approach can help you achieve your goals.
                 </p>
                 <Link
-                  to="/book/consult"
+                  to="/consult"
                   className="inline-block px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
                 >
                   Book Free Consultation

@@ -475,7 +475,7 @@ export function detectIntent(userMessage) {
   // Consultation
   if (message.includes('consult') || message.includes('free session') || 
       (message.includes('not sure') && message.includes('book'))) {
-    return '/book/consult';
+    return '/consult';
   }
   
   // Movement Sessions . Specific Durations

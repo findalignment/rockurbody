@@ -74,7 +74,7 @@ function TwelveSeries() {
       <div style={{ textAlign: 'center', padding: '40px' }}>
         <h3 style={{ fontSize: '28px', marginBottom: '20px' }}>Ready to start?</h3>
         <a 
-          href="/book/consult" 
+          href="/consult" 
           style={{ 
             display: 'inline-block', 
             padding: '16px 32px', 

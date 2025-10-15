@@ -165,7 +165,7 @@ function TrainingLineage() {
                 Book a consultation to discuss how this comprehensive training background can benefit your specific needs.
               </p>
               <a
-                href="/book/consult"
+                href="/consult"
                 className="inline-block px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
               >
                 Book Free Consultation

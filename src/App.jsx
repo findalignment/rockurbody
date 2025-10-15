@@ -100,7 +100,7 @@ function AppRoutes() {
         
         {/* Booking Routes */}
         <Route path="/book" element={<Book />} />
-        <Route path="/book/consult" element={<BookConsult />} />
+        <Route path="/consult" element={<BookConsult />} />
         <Route path="/book/move30" element={<BookMove30 />} />
         <Route path="/book/move60" element={<BookMove60 />} />
         <Route path="/book/move90" element={<BookMove90 />} />

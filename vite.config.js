@@ -15,36 +15,56 @@ export default defineConfig({
     // Optimize chunk splitting
     rollupOptions: {
       output: {
-        manualChunks: {
+        manualChunks: (id) => {
           // Vendor chunks
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
-          'framer-motion': ['framer-motion'],
-          'openai': ['openai'],
-          // Page chunks
-          'main-pages': [
-            './src/pages/Home',
-            './src/pages/About',
-            './src/pages/Services',
-            './src/pages/Contact'
-          ],
-          'booking-pages': [
-            './src/pages/Book',
-            './src/pages/BookConsult',
-            './src/pages/BookMove30',
-            './src/pages/BookMove60',
-            './src/pages/BookMove90',
-            './src/pages/BookMove120'
-          ],
-          'schedule-pages': [
-            './src/pages/Schedule12Series',
-            './src/pages/ScheduleHipSeries',
-            './src/pages/ScheduleMovement60'
-          ]
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'react-vendor';
+            }
+            if (id.includes('framer-motion')) {
+              return 'framer-motion';
+            }
+            if (id.includes('openai')) {
+              return 'openai';
+            }
+            // Group other large vendor libraries
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          }
+          
+          // Page chunks - split by feature
+          if (id.includes('/src/pages/')) {
+            if (id.includes('Book') || id.includes('Schedule')) {
+              return 'booking-pages';
+            }
+            if (id.includes('Home') || id.includes('About') || id.includes('Services') || id.includes('Contact')) {
+              return 'main-pages';
+            }
+            if (id.includes('12-Series') || id.includes('Hip-Series') || id.includes('Structural') || id.includes('Movement')) {
+              return 'service-pages';
+            }
+            return 'other-pages';
+          }
+          
+          // Component chunks
+          if (id.includes('/src/components/')) {
+            if (id.includes('CrystalClearHomepage') || id.includes('LandingPage') || id.includes('Hero')) {
+              return 'homepage-components';
+            }
+            if (id.includes('Chat') || id.includes('FloatingChat')) {
+              return 'chat-components';
+            }
+            return 'ui-components';
+          }
         },
       },
     },
     // Increase chunk size warning limit
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 800,
+    // Additional optimizations
+    target: 'esnext',
+    sourcemap: false,
   },
   // Optimize dependencies
   optimizeDeps: {

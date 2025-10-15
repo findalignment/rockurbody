@@ -219,7 +219,7 @@ function LandingPage() {
       '/pricing': 'Pricing',
       '/contact': 'Contact',
       '/book': 'Choose a Session Type',
-      '/book/consult': 'Book Free Consultation',
+      '/consult': 'Book Free Consultation',
       '/book/move30': 'Book 30min Movement',
       '/book/move60': 'Book 60min Movement',
       '/book/move90': 'Book 90min Movement',

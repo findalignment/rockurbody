@@ -97,7 +97,7 @@ function CrystalClearHomepage() {
           {/* Primary CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
-              to="/book/consult" 
+              to="/consult" 
               variant="accent" 
               size="xl"
               className="text-lg px-8 py-4 shadow-2xl hover:shadow-accent/25 transition-all duration-300"
@@ -280,7 +280,7 @@ function CrystalClearHomepage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              to="/book/consult" 
+              to="/consult" 
               variant="accent" 
               size="xl"
               className="text-lg px-8 py-4"

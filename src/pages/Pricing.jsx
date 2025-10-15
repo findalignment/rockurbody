@@ -54,7 +54,7 @@ function Pricing() {
                       Initial assessment to understand your needs
                     </p>
                     <AnimatedButton
-                      href="/book/consult"
+                      href="/consult"
                       variant="cta"
                       size="sm"
                       className="w-full"
