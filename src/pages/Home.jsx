@@ -1,7 +1,7 @@
-import CrystalClearHomepage from '../components/CrystalClearHomepage';
+import LandingPage from '../components/LandingPage';
 
 function Home() {
-  return <CrystalClearHomepage />;
+  return <LandingPage />;
 }
 
 export default Home;
