@@ -1,7 +1,12 @@
 /**
- * Chat Security Module
- * Validates user input, prevents injection attacks, moderates offensive content,
- * and protects sensitive information
+ * Enhanced Chat Security Module
+ * Comprehensive security for chat interactions including:
+ * - Input validation and sanitization
+ * - Injection attack prevention
+ * - Content moderation
+ * - Rate limiting
+ * - Sensitive information protection
+ * - Advanced threat detection
  */
 
 // ============================================
@@ -42,6 +47,15 @@ export function validateInput(input) {
       isValid: false,
       sanitized: '',
       error: `Message too long (max ${MAX_LENGTH} characters)`
+    };
+  }
+
+  // Check for suspicious patterns
+  if (containsSuspiciousPatterns(trimmed)) {
+    return {
+      isValid: false,
+      sanitized: '',
+      error: 'Message contains suspicious content'
     };
   }
 
@@ -88,6 +102,56 @@ function hasExcessiveRepetition(text) {
   }
 
   return false;
+}
+
+/**
+ * Check for suspicious patterns in input
+ * @param {string} input
+ * @returns {boolean}
+ */
+function containsSuspiciousPatterns(input) {
+  const suspiciousPatterns = [
+    // SQL Injection patterns
+    /(\b(SELECT|INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|EXEC|UNION|SCRIPT)\b)/i,
+    /(\b(OR|AND)\s+\d+\s*=\s*\d+)/i,
+    /(\b(OR|AND)\s+'.*'\s*=\s*'.*')/i,
+    
+    // XSS patterns
+    /<script[^>]*>.*?<\/script>/gi,
+    /<iframe[^>]*>.*?<\/iframe>/gi,
+    /javascript:/gi,
+    /vbscript:/gi,
+    /on\w+\s*=/gi,
+    /expression\s*\(/gi,
+    /url\s*\(/gi,
+    
+    // Command injection patterns
+    /[;&|`$(){}[\]]/,
+    /\b(cat|ls|pwd|whoami|id|uname|ps|netstat|ifconfig)\b/i,
+    
+    // Path traversal patterns
+    /\.\.\//g,
+    /\.\.\\/g,
+    /%2e%2e%2f/gi,
+    /%2e%2e%5c/gi,
+    
+    // Template injection patterns
+    /\$\{.*\}/,
+    /\{\{.*\}\}/,
+    /<%.*%>/,
+    
+    // LDAP injection patterns
+    /[()=*!&|]/,
+    
+    // NoSQL injection patterns
+    /\$where/i,
+    /\$ne/i,
+    /\$gt/i,
+    /\$lt/i,
+    /\$regex/i
+  ];
+  
+  return suspiciousPatterns.some(pattern => pattern.test(input));
 }
 
 /**

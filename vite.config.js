@@ -3,6 +3,21 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    // Security headers for development
+    headers: {
+      'X-Content-Type-Options': 'nosniff',
+      'X-Frame-Options': 'DENY',
+      'X-XSS-Protection': '1; mode=block',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
+      'Permissions-Policy': 'camera=(), microphone=(), geolocation=()'
+    },
+    // CORS configuration
+    cors: {
+      origin: ['http://localhost:3000', 'http://localhost:5173'],
+      credentials: true
+    }
+  },
   build: {
     // Enable tree shaking and minification
     minify: 'terser',
