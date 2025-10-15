@@ -12,9 +12,10 @@ function Header() {
   const isHomePage = location.pathname === '/';
   
   const navLinks = [
+    { name: 'Learn', path: '/smart-starts' },
+    { name: 'Practice', path: '/packages' },
+    { name: 'Community', path: '/about' },
     { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
-    { name: 'Packages', path: '/packages' },
   ];
   
   // Show different menu items based on auth state
