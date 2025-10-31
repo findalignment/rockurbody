@@ -1,13 +1,11 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { useAuth } from '../contexts/AuthContext';
 import Button from './Button';
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const { currentUser } = useAuth();
   
   const isHomePage = location.pathname === '/';
   
@@ -17,11 +15,6 @@ function Header() {
     { name: 'Packages', path: '/packages' },
     { name: 'Contact', path: '/contact' },
   ];
-  
-  // Show different menu items based on auth state
-  const authLinks = currentUser 
-    ? [{ name: 'My Account', path: '/dashboard' }]
-    : [{ name: 'Sign In', path: '/auth/login' }];
   
   // Handle scroll effect
   useEffect(() => {
@@ -80,24 +73,6 @@ function Header() {
                 }`}></span>
               </Link>
             ))}
-            {authLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`relative font-semibold transition-colors group ${
-                  isHomePage 
-                    ? scrolled
-                      ? 'text-neutralDark hover:text-accent'
-                      : 'text-white hover:text-white/90' 
-                    : 'text-neutralDark hover:text-accent'
-                }`}
-              >
-                {link.name}
-                <span className={`absolute left-0 bottom-0 w-0 h-0.5 transition-all duration-300 ease-out group-hover:w-full ${
-                  isHomePage && !scrolled ? 'bg-white' : 'bg-accent'
-                }`}></span>
-              </Link>
-            ))}
             <Button
               to="/book"
               variant="accent"
@@ -132,16 +107,6 @@ function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 space-y-3 bg-white/95 backdrop-blur-lg rounded-lg p-4 shadow-lg">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block font-semibold text-neutralDark hover:text-accent transition-colors"
-              >
-                {link.name}
-              </Link>
-            ))}
-            {authLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}

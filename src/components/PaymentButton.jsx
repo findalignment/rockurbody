@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
 import stripePromise from '../config/stripe';
 
 function PaymentButton({ 
@@ -14,17 +12,8 @@ function PaymentButton({
   children 
 }) {
   const [loading, setLoading] = useState(false);
-  const { currentUser } = useAuth();
-  const navigate = useNavigate();
 
   const handlePayment = async () => {
-    if (!currentUser) {
-      if (window.confirm('You need to sign in to purchase sessions. Would you like to sign in now?')) {
-        navigate('/auth/login');
-      }
-      return;
-    }
-
     setLoading(true);
     
     try {
@@ -45,7 +34,6 @@ function PaymentButton({
         body: JSON.stringify({
           amount: amount, // Amount in cents
           description: description,
-          userId: currentUser.uid,
           packageType: packageType,
           totalSessions: totalSessions,
           successUrl: successUrl || `${window.location.origin}/payment-success`,
