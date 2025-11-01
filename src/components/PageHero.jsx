@@ -16,7 +16,7 @@ function PageHero({
   return (
     <div className="relative -mt-24 -mx-[100vw] left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
       {/* Hero Image - Full Width */}
-      <div className="relative h-[60vh] md:h-[70vh] overflow-hidden">
+      <div className="relative h-[70vh] md:h-[85vh] overflow-hidden">
         <div
           className="absolute inset-0 w-full h-full"
           style={{
