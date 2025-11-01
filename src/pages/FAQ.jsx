@@ -21,7 +21,7 @@ function FAQ() {
         },
         {
           q: "How often should I come?",
-          a: <>It depends on what we're doing. For the <Link to="/12-series" className="text-accent hover:underline">12-Series</Link>: sessions are typically spaced 1-2 weeks apart. For ongoing <Link to="/what-is-movement-education" className="text-accent hover:underline">movement work</Link>: weekly or biweekly sessions work well. For maintenance after a series: monthly or quarterly tune-ups keep you on track. We'll figure out what makes sense for your body and your schedule.</>
+          a: <>It depends on what we're doing. For the <Link to="/12-series" className="text-accent hover:underline">12-Series</Link>: sessions are typically spaced 1 week apart. For ongoing <Link to="/what-is-movement-education" className="text-accent hover:underline">movement work</Link>: clients typically come 2-3 times per week. For maintenance after a series: monthly or quarterly tune-ups keep you on track. We'll figure out what makes sense for your body and your schedule.</>
         },
         {
           q: "Where should I start?",
@@ -75,7 +75,7 @@ function FAQ() {
         },
         {
           q: "What if I have an injury or chronic pain?",
-          a: <>We work around it. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> can help you move better despite limitations, and <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> often helps address the underlying patterns contributing to pain. I'm not treating your injury, but we can work with your body to improve function and reduce compensation patterns.</>
+          a: <>We work with it. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement Education</Link> can help you move better despite limitations, and <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> often helps address the underlying patterns contributing to pain. I'm not treating your injury, but we can work with your body to improve function and reduce compensation patterns.</>
         }
       ]
     },
@@ -92,7 +92,7 @@ function FAQ() {
         },
         {
           q: "What's your cancellation policy?",
-          a: "Life happens. Please give 24 hours notice if you need to cancel or reschedule. Late cancellations or no-shows may be charged."
+          a: "Life happens. Please give 4 hours notice if you need to cancel or reschedule. Late cancellations or no-shows will be charged a $50 fee."
         },
         {
           q: "Can I buy a single session or do I need to commit to a series?",

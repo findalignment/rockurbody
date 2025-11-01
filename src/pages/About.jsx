@@ -18,10 +18,18 @@ function About() {
               Tired of chasing pain around your body?
               </h2>
               <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
-                I help people move the way they were meant to. Not through endless reps or rigid protocols, but by addressing the fascial restrictions and movement patterns that hold you back.
+                After noticing I spent more time explaining weird joint-clicks and movement quirks than watching Netflix, I decided to build a program where nothing is off-limits and every weird hip hitch gets fixed.
               </p>
+              <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
+                I'm a certified Structural Integration specialist — i.e., I spent years getting really into fascia. But yes, I still make jokes about it.
+              </p>
+              <div className="bg-accent/5 rounded-xl p-6 mb-6">
+                <p className="text-base text-neutralDark/80 leading-relaxed">
+                  <strong className="text-neutralDark">10+ years experience</strong> | Certified Structural Integrator (Anatomy Trains) | NASM Certified Personal Trainer | Functional Movement Specialist | MovNat Level 2 | Plus way too many other certifications to list without boring you
+                </p>
+              </div>
               <p className="text-lg text-neutralDark/80 leading-relaxed">
-                Most personal training treats symptoms. I work with the whole system: releasing what's tight, strengthening what's weak, and teaching your body to move with ease again.
+                I believe fitness isn't just about logging reps — it's about feeling like YOU can move without hesitation, jump without fear, and maybe even surprise yourself. Bonus: I'll crack a dad-joke if it helps loosen a hip.
               </p>
             </div>
             
@@ -35,7 +43,7 @@ function About() {
                     Structural Integration
                   </h3>
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                    Hands-on fascial release to address the restrictions that limit your movement. This isn't massage. It's systematic bodywork that reorganizes your structure.
+                    Hands-on fascial release to address the restrictions that limit your movement. This isn't massage. It's systematic bodywork that reorganizes your structure. You'll feel things shift. You'll move differently. It's kind of wild, honestly.
                   </p>
                   <Button
                     to="/what-is-structural-integration"
@@ -51,7 +59,7 @@ function About() {
                     Movement Education
                   </h3>
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                    Teaching you how to move efficiently. We work on patterns, not just muscles. You'll learn skills that transfer to everything you do.
+                    Teaching you how to move efficiently. We work on patterns, not just muscles. You'll learn skills that transfer to everything you do — from picking up groceries to crushing your next hike.
                   </p>
                   <Button
                     to="/what-is-movement-education"
@@ -78,6 +86,12 @@ function About() {
                   </Button>
                 </div>
               </div>
+            </div>
+
+            <div className="bg-sage/5 rounded-2xl p-10 shadow-sm border-l-4 border-accent">
+              <p className="text-base text-neutralDark/70 italic">
+                <strong className="text-neutralDark not-italic">Fun fact:</strong> I once tested someone's hip mobility by having them climb a ladder sideways. Yes, really. Sometimes the weirdest movements reveal the most useful information about how your body compensates.
+              </p>
             </div>
           </div>
         </div>

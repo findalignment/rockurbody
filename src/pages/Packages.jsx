@@ -105,7 +105,7 @@ function Packages() {
       <div className="pt-16 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
           <p className="text-xl text-neutralDark/80 mb-20 text-center max-w-4xl mx-auto leading-relaxed">
-            The movement and structural integration programs are thoughtfully crafted around real client needs: relieving tension, improving mobility, and supporting lifelong vitality. Each program offers a proven path to freedom in your body, yet every journey is personal. That's why each plan is adaptable to your unique goals and lifestyle. Not sure where to start? Explore your options with a free consultation and let's find the right fit together.
+            These aren't cookie-cutter workout plans. Each program is designed to actually fix what's holding you back — whether that's a chronically tight hip, a stiff shoulder, or just feeling like your body's betraying you. You're not just buying sessions, you're buying freedom from stiff-body days. Not sure where to start? Let's chat. No fluff, no pushy sales — just us figuring out what your body wants to do.
           </p>
 
           {/* Movement Session Packages */}
@@ -135,14 +135,14 @@ function Packages() {
                   <li>✓ Flexible scheduling</li>
                 </ul>
                 
-                <PaymentButton
-                  packageType="Movement 5-Pack"
-                  totalSessions={5}
-                  amount={movementPackages['5 Sessions'].price}
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                <a
+                  href="https://buy.stripe.com/fZu9AT1hR9Bt0l3fnIefC01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                 >
                   Get Started
-                </PaymentButton>
+                </a>
               </div>
 
               {/* 10 Sessions */}
@@ -169,14 +169,14 @@ function Packages() {
                   <li>✓ Best value for progress</li>
                 </ul>
                 
-                <PaymentButton
-                  packageType="Movement 10-Pack"
-                  totalSessions={10}
-                  amount={movementPackages['10 Sessions'].price}
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                <a
+                  href="https://buy.stripe.com/14A6oHbWv00T3xf8ZkefC02"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                 >
                   Get Started
-                </PaymentButton>
+                </a>
               </div>
 
               {/* 20 Sessions */}
@@ -199,14 +199,14 @@ function Packages() {
                   <li>✓ Maximum savings & results</li>
                 </ul>
                 
-                <PaymentButton
-                  packageType="Movement 20-Pack"
-                  totalSessions={20}
-                  amount={movementPackages['20 Sessions'].price}
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                <a
+                  href="https://buy.stripe.com/9B69AT1hR4h9d7P2AWefC03"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                 >
                   Get Started
-                </PaymentButton>
+                </a>
               </div>
             </div>
           </div>
@@ -237,14 +237,14 @@ function Packages() {
                   <li>✓ Perfect precursor to 12-Series</li>
                 </ul>
                 
-                <PaymentButton
-                  packageType="Hip Series"
-                  totalSessions={4}
-                  amount={720}
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                <a
+                  href="https://buy.stripe.com/bJe8wPaSr7tl5FndfAefC05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                 >
                   Get Started
-                </PaymentButton>
+                </a>
               </div>
 
               {/* 12-Series */}
@@ -269,14 +269,14 @@ function Packages() {
                   <li>✓ Life-changing results</li>
                 </ul>
                 
-                <PaymentButton
-                  packageType="12-Series"
-                  totalSessions={12}
-                  amount={3000}
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                <a
+                  href="https://buy.stripe.com/00w7sLbWv4h9ffX4J4efC06"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                 >
                   Get Started
-                </PaymentButton>
+                </a>
               </div>
             </div>
           </div>
@@ -307,15 +307,14 @@ function Packages() {
                   <li>✓ Reset your foundation</li>
                 </ul>
                 
-                <PaymentButton
-                  amount={packageConfigs['The Reset'].price * 100}
-                  description={packageConfigs['The Reset'].name}
-                  packageType={packageConfigs['The Reset'].name}
-                  totalSessions={packageConfigs['The Reset'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                <a
+                  href="https://buy.stripe.com/dRmfZhgcLcNF0l31wSefC04"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                 >
                   Get Started
-                </PaymentButton>
+                </a>
               </div>
             </div>
 
@@ -342,15 +341,14 @@ function Packages() {
                     <li>✓ Restore natural movement</li>
                   </ul>
                   
-                  <PaymentButton
-                    amount={packageConfigs['Hip Freedom - Basic'].price * 100}
-                    description={packageConfigs['Hip Freedom - Basic'].name}
-                    packageType={packageConfigs['Hip Freedom - Basic'].name}
-                    totalSessions={packageConfigs['Hip Freedom - Basic'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                  <a
+                    href="https://buy.stripe.com/dRm6oH1hR6ph3xf1wSefC07"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                   >
                     Get Started
-                  </PaymentButton>
+                  </a>
                 </div>
 
                 {/* Extended Option */}
@@ -372,15 +370,14 @@ function Packages() {
                     <li>✓ Long-lasting results</li>
                   </ul>
                   
-                  <PaymentButton
-                    amount={packageConfigs['Hip Freedom - Extended'].price * 100}
-                    description={packageConfigs['Hip Freedom - Extended'].name}
-                    packageType={packageConfigs['Hip Freedom - Extended'].name}
-                    totalSessions={packageConfigs['Hip Freedom - Extended'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                  <a
+                    href="https://buy.stripe.com/dRmaEXbWv8xpgk11wSefC08"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                   >
                     Get Started
-                  </PaymentButton>
+                  </a>
                 </div>
               </div>
             </div>
@@ -389,7 +386,7 @@ function Packages() {
             <div>
               <h3 className="text-2xl font-heading text-primary mb-8 text-center">Full Repatterning</h3>
               <p className="text-base text-neutralDark/80 mb-8 text-center max-w-2xl mx-auto">
-                Complete transformation of how you move
+                12 weeks of hands-on work + movement training + surprise mobility hacks I only send my VIPs. This is the full reset. <span className="italic">You're not just buying sessions, you're buying freedom from stiff-body days.</span>
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -404,19 +401,19 @@ function Packages() {
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                     <li>✓ 12 SI sessions (60 min)</li>
                     <li>✓ 12 Movement sessions (60 min)</li>
-                    <li>✓ Complete body transformation</li>
-                    <li>✓ Foundation for lasting change</li>
+                    <li>✓ Full body scan & movement reset</li>
+                    <li>✓ Weekly hands-on sessions</li>
+                    <li>✓ Mid-week check-in from me if desired (yes, I answer messages 👍)</li>
                   </ul>
                   
-                  <PaymentButton
-                    amount={packageConfigs['Full Repatterning - Basic'].price * 100}
-                    description={packageConfigs['Full Repatterning - Basic'].name}
-                    packageType={packageConfigs['Full Repatterning - Basic'].name}
-                    totalSessions={packageConfigs['Full Repatterning - Basic'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                  <a
+                    href="https://buy.stripe.com/3cI9ATf8H3d50l32AWefC09"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                   >
                     Get Started
-                  </PaymentButton>
+                  </a>
                 </div>
 
                 {/* Premium */}
@@ -438,15 +435,14 @@ function Packages() {
                     <li>✓ Optimal results & retention</li>
                   </ul>
                   
-                  <PaymentButton
-                    amount={packageConfigs['Full Repatterning - Premium'].price * 100}
-                    description={packageConfigs['Full Repatterning - Premium'].name}
-                    packageType={packageConfigs['Full Repatterning - Premium'].name}
-                    totalSessions={packageConfigs['Full Repatterning - Premium'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                  <a
+                    href="https://buy.stripe.com/6oU4gzgcLcNF4Bja3oefC0a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                   >
                     Get Started
-                  </PaymentButton>
+                  </a>
                 </div>
 
                 {/* Ultimate */}
@@ -467,15 +463,14 @@ function Packages() {
                     <li>✓ Life-changing results</li>
                   </ul>
                   
-                  <PaymentButton
-                    amount={packageConfigs['Full Repatterning - Ultimate'].price * 100}
-                    description={packageConfigs['Full Repatterning - Ultimate'].name}
-                    packageType={packageConfigs['Full Repatterning - Ultimate'].name}
-                    totalSessions={packageConfigs['Full Repatterning - Ultimate'].sessions.reduce((sum, s) => sum + s.count, 0)}
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
+                  <a
+                    href="https://buy.stripe.com/14A4gz7Gf7tlgk1a3oefC0b"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
                   >
                     Get Started
-                  </PaymentButton>
+                  </a>
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ function Book() {
         Book Your Session
       </h1>
       <p style={{ fontSize: '18px', textAlign: 'center', marginBottom: '40px' }}>
-        60-minute movement coaching session
+        Choose from Structural Integration, Movement Education, or Combination Programs
       </p>
       
       <iframe

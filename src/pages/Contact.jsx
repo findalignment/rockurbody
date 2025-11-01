@@ -53,16 +53,16 @@ function Contact() {
               
               <div>
                 <h3 className="text-xl font-semibold text-neutralDark mb-2">
-                  Book a Session
+                  Ready to Do This?
                 </h3>
                 <p className="text-neutralDark/80 mb-4">
-                  Ready to transform how you move?
+                  Let's get your body back in business. Book a free consultation or dive straight into a session — your call.
                 </p>
                 <Button 
                   to="/book"
                   variant="accent"
                 >
-                  Schedule Now
+                  Let's Talk
                 </Button>
               </div>
             </div>

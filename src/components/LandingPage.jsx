@@ -22,6 +22,7 @@ function LandingPage() {
   const [failureCount, setFailureCount] = useState(0);
   const navigate = useNavigate();
   const messagesEndRef = useRef(null);
+  const messagesContainerRef = useRef(null);
 
   const MAX_QUESTIONS = 20;
   const MAX_FAILURES = 2; // Show fallback after 2 consecutive failures
@@ -34,9 +35,12 @@ function LandingPage() {
     { text: "Book a consultation", icon: "📅" },
   ];
 
-  // Auto-scroll to bottom of chat
+  // Auto-scroll within the messages container only (not the whole page)
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (messagesContainerRef.current) {
+      // Scroll the container to the bottom without affecting page scroll
+      messagesContainerRef.current.scrollTop = messagesContainerRef.current.scrollHeight;
+    }
   };
 
   // Scroll when conversation updates
@@ -268,7 +272,7 @@ function LandingPage() {
       <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[85vh] md:pt-[90vh]">
         <HeroContent />
         
-        <div className="w-full max-w-4xl mx-auto px-4">
+        <div className="w-full max-w-4xl mx-auto px-4" id="chatbot-section">
           {/* Fallback UI when chat fails */}
           {chatFailed ? (
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 animate-fadeIn p-8">
@@ -350,7 +354,7 @@ function LandingPage() {
               </div>
               
             {conversation.length > 0 && (
-              <div className="p-4 max-h-[400px] overflow-y-auto space-y-3 border-b border-white/20">
+              <div ref={messagesContainerRef} className="p-4 max-h-[400px] overflow-y-auto space-y-3 border-b border-white/20">
                 {conversation.map((message) => (
                   <div key={message.id} className="animate-fadeIn">
                     <div className={`p-4 rounded-xl ${

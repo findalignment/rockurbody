@@ -4,7 +4,6 @@ import PaymentButton from '../components/PaymentButton';
 import FadeInSection from '../components/FadeInSection';
 import AnimatedCard from '../components/AnimatedCard';
 import AnimatedButton from '../components/AnimatedButton';
-import ParallaxSection from '../components/ParallaxSection';
 
 function Pricing() {
   // Base prices
@@ -32,11 +31,7 @@ function Pricing() {
         title="Pricing"
         subtitle="Transparent, flexible investment in your wellbeing"
       />
-      <ParallaxSection 
-        backgroundColor="#faf8f5"
-        speed={0.2}
-        className="pt-16 pb-16 px-4"
-      >
+      <div className="bg-[#faf8f5] pt-16 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           
           <div className="space-y-12">
@@ -304,7 +299,7 @@ function Pricing() {
             </div>
           </div>
         </div>
-      </ParallaxSection>
+      </div>
     </PageLayout>
   );
 }

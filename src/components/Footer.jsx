@@ -54,18 +54,21 @@ function Footer() {
           
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold mb-4">Get in Touch</h4>
+            <h4 className="font-semibold mb-4">Ready to Do This?</h4>
             <p className="text-white/70 mb-2">
               Santa Cruz, California
             </p>
-            <p className="text-white/70 mb-4">
-              By appointment only
+            <p className="text-white/70 mb-4 leading-relaxed">
+              Book a free 15-minute "get-to-know-your-body" chat with me. No fluff, no pushy sales — just us figuring out what your body wants to do.
+            </p>
+            <p className="text-white/60 text-sm italic mb-4">
+              (I promise I only do one bad pun per session.)
             </p>
             <Link
               to="/book"
               className="inline-block px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
             >
-              Book a Session
+              Let's Talk
             </Link>
           </div>
         </div>
