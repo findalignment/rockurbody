@@ -107,7 +107,7 @@ function MovementScreening() {
                   <li>• Shoulder height and rotation</li>
                   <li>• Spinal curves and alignment</li>
                   <li>• Pelvic position and rotation</li>
-                  <li>• Leg length and alignment</li>
+                  <li>• Leg alignment</li>
                   <li>• Foot position and arches</li>
                 </ul>
               </div>

@@ -59,7 +59,7 @@ function PregnancyPostpartum() {
               <div className="border-l-4 border-primary pl-6">
                 <h3 className="font-semibold text-neutralDark mb-2">Rib & Upper Back Pain</h3>
                 <p className="text-neutralDark/80">
-                  Baby pushing up on your ribs. Breasts getting heavier. Shoulders rounding forward. Upper body tension is real.and we can help.
+                  Baby pushing up on your ribs. Breasts getting heavier. Shoulders rounding forward. Upper body tension is real, and we can help.
                 </p>
               </div>
 

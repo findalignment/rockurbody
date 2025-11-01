@@ -221,12 +221,6 @@ function TMJRelief() {
             </div>
           </div>
 
-          <div className="border-l-4 border-accent pl-6 mb-16">
-            <p className="text-lg text-neutralDark/80 leading-relaxed italic">
-              "I had TMJ pain for 3 years. Dentist gave me a night guard which helped a bit, but the tension was still there. After a few sessions with Rock, my jaw stopped clicking and I can actually chew without pain. He worked on my whole neck and posture, not just my jaw.that made all the difference." . Lisa, 38, Graphic Designer
-            </p>
-          </div>
-
           <div className="flex flex-col sm:flex-row gap-4">
             <Button to="/consult" variant="primary" size="lg" fullWidth>
               Schedule Free Consultation

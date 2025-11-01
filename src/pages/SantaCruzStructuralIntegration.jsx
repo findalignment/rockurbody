@@ -27,7 +27,7 @@ function SantaCruzStructuralIntegration() {
               Santa Cruz is a community that moves.surfers catching dawn patrol, cyclists climbing empire grade, weekend warriors hiking the redwoods. When your body isn't working right, everything gets harder.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed">
-              I'm Rock Hudson, a certified Structural Integrator serving Santa Cruz and the greater Bay Area. For over 20 years, I've helped people get out of pain and back to the activities they love through precise hands-on work and intelligent movement training.
+              I'm Rock Hudson, a certified Structural Integrator serving Santa Cruz and the greater Bay Area. I help people get out of pain and back to the activities they love through precise hands-on work and intelligent movement training.
             </p>
           </div>
 
