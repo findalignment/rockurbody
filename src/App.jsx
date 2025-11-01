@@ -85,6 +85,13 @@ const KneePainTreatment = lazy(() => import('./pages/KneePainTreatment'));
 const MovementScreening = lazy(() => import('./pages/MovementScreening'));
 const PregnancyPostpartum = lazy(() => import('./pages/PregnancyPostpartum'));
 const SportsInjuryPrevention = lazy(() => import('./pages/SportsInjuryPrevention'));
+const PlantarFasciitis = lazy(() => import('./pages/PlantarFasciitis'));
+const MobilityTraining = lazy(() => import('./pages/MobilityTraining'));
+const WhiplashRecovery = lazy(() => import('./pages/WhiplashRecovery'));
+const CrossFitRecovery = lazy(() => import('./pages/CrossFitRecovery'));
+const BreathingCore = lazy(() => import('./pages/BreathingCore'));
+const ScoliosisTreatment = lazy(() => import('./pages/ScoliosisTreatment'));
+const BalanceTraining = lazy(() => import('./pages/BalanceTraining'));
 
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
@@ -151,6 +158,13 @@ function AppRoutes() {
         <Route path="/movement-screening" element={<MovementScreening />} />
         <Route path="/pregnancy-postpartum" element={<PregnancyPostpartum />} />
         <Route path="/sports-injury-prevention" element={<SportsInjuryPrevention />} />
+        <Route path="/plantar-fasciitis" element={<PlantarFasciitis />} />
+        <Route path="/mobility-training" element={<MobilityTraining />} />
+        <Route path="/whiplash-recovery" element={<WhiplashRecovery />} />
+        <Route path="/crossfit-recovery" element={<CrossFitRecovery />} />
+        <Route path="/breathing-and-core" element={<BreathingCore />} />
+        <Route path="/scoliosis-treatment" element={<ScoliosisTreatment />} />
+        <Route path="/balance-training" element={<BalanceTraining />} />
         
         {/* Booking Routes */}
         <Route path="/book" element={<Book />} />
