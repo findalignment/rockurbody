@@ -152,18 +152,18 @@ function WhatIsStructuralIntegration() {
             Ready to experience it?
           </h3>
           <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
-            Book a free consultation to discuss your goals, or explore our structural integration sessions and series.
+            Explore our programs featuring Structural Integration, from targeted series like the Hip Series to comprehensive full-body repatterning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              to="/book/structural-integration"
+              to="/packages"
               variant="primary"
               size="lg"
             >
-              View Structural Integration Options
+              View Programs & Packages
             </Button>
             <Button
-              href="/consult"
+              to="/consult"
               variant="outline"
               size="lg"
             >

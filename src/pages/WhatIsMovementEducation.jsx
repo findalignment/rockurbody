@@ -186,18 +186,18 @@ function WhatIsMovementEducation() {
             Ready to learn how to move?
           </h3>
           <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
-            Book a free consultation to discuss your goals, or explore our movement education options and packages.
+            Explore our movement education packages, from single sessions to comprehensive training programs. Many clients combine movement work with Structural Integration for best results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              to="/book/movement-education"
+              to="/packages"
               variant="primary"
               size="lg"
             >
-              View Movement Education Options
+              View Programs & Packages
             </Button>
             <Button
-              href="/consult"
+              to="/consult"
               variant="outline"
               size="lg"
             >

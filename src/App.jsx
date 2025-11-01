@@ -18,6 +18,7 @@ const Process = lazy(() => import('./pages/Process'));
 const SmartStarts = lazy(() => import('./pages/SmartStarts'));
 const WhatIsStructuralIntegration = lazy(() => import('./pages/WhatIsStructuralIntegration'));
 const WhatIsMovementEducation = lazy(() => import('./pages/WhatIsMovementEducation'));
+const ComboPrograms = lazy(() => import('./pages/ComboPrograms'));
 const Credentials = lazy(() => import('./pages/Credentials'));
 const TrainingLineage = lazy(() => import('./pages/TrainingLineage'));
 const FAQ = lazy(() => import('./pages/FAQ'));
@@ -118,6 +119,7 @@ function AppRoutes() {
         <Route path="/smart-starts" element={<SmartStarts />} />
         <Route path="/what-is-structural-integration" element={<WhatIsStructuralIntegration />} />
         <Route path="/what-is-movement-education" element={<WhatIsMovementEducation />} />
+        <Route path="/combo-programs" element={<ComboPrograms />} />
         <Route path="/credentials" element={<Credentials />} />
         <Route path="/training-lineage" element={<TrainingLineage />} />
         <Route path="/faq" element={<FAQ />} />

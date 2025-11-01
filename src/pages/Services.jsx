@@ -124,13 +124,13 @@ function Services() {
                 </div>
               </div>
               
-              {/* Booking Buttons */}
+              {/* CTA Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button to="/book/structural-integration" variant="primary" fullWidth>
-                  Book Structural Integration
+                <Button to="/what-is-structural-integration" variant="primary" fullWidth>
+                  Learn About Structural Integration
                 </Button>
-                <Button to="/what-is-structural-integration" variant="outline" fullWidth>
-                  Learn More
+                <Button to="/consult" variant="outline" fullWidth>
+                  Book Free Consultation
                 </Button>
               </div>
             </div>
@@ -183,13 +183,13 @@ function Services() {
               </div>
             </Callout>
             
-            {/* Booking Buttons */}
+            {/* CTA Buttons */}
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
-              <Button to="/book/movement-education" variant="primary" fullWidth>
-                Book Movement Education
+              <Button to="/what-is-movement-education" variant="primary" fullWidth>
+                Learn About Movement Education
               </Button>
-              <Button to="/what-is-movement-education" variant="outline" fullWidth>
-                Learn More
+              <Button to="/consult" variant="outline" fullWidth>
+                Book Free Consultation
               </Button>
             </div>
             </div>
@@ -202,8 +202,8 @@ function Services() {
               <p className="text-lg text-neutralDark/80 mb-6">
                 Most clients see the best results combining structural work and movement education
               </p>
-              <Button to="/book/combo-programs" variant="accent" size="lg">
-                View Combination Programs
+              <Button to="/combo-programs" variant="accent" size="lg">
+                Learn About Combination Programs
               </Button>
             </div>
           </div>
