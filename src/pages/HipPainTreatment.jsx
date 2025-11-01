@@ -26,7 +26,7 @@ function HipPainTreatment() {
               Your Hips Affect Everything
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Hip pain isn't just annoying—it changes how you walk, sit, sleep, and move through life. And it rarely stays localized. When your hips don't work right, everything else compensates:
+              Hip pain isn't just annoying.it changes how you walk, sit, sleep, and move through life. And it rarely stays localized. When your hips don't work right, everything else compensates:
             </p>
             <ul className="space-y-3 text-lg text-neutralDark/80">
               <li>• Lower back takes over and gets painful</li>
@@ -177,7 +177,7 @@ function HipPainTreatment() {
               The Hip Series: Targeted 4-Session Program
             </h2>
             <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-              I offer a specialized Hip Series—4 sessions of focused work specifically designed to restore hip function:
+              I offer a specialized Hip Series.4 sessions of focused work specifically designed to restore hip function:
             </p>
             <div className="space-y-3 text-neutralDark/80">
               <div><strong>Session 1:</strong> Release hip flexors, open front body</div>
@@ -186,7 +186,7 @@ function HipPainTreatment() {
               <div><strong>Session 4:</strong> Balance and integrate, restore full range of motion</div>
             </div>
             <p className="text-lg text-neutralDark/80 mt-4 leading-relaxed">
-              <strong>Investment:</strong> $720 (4 sessions) — A great introduction to this work or perfect if hip issues are your primary concern.
+              <strong>Investment:</strong> $720 (4 sessions) . A great introduction to this work or perfect if hip issues are your primary concern.
             </p>
           </div>
 

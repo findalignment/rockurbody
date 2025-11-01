@@ -8,7 +8,7 @@ function HeroContent() {
       
       {/* Subheadline */}
       <p className="text-white/90 text-base md:text-lg lg:text-xl font-light leading-relaxed">
-        Hi — I'm Rock Hudson (yes, that's my real name) — movement geek, structural integration nerd, and your go-to guy for getting your body back in business.
+        Hi, I'm Rock Hudson (yes, that's my real name). Movement geek, structural integration nerd, and your go-to guy for getting your body back in business.
       </p>
       
       {/* Call to Action */}

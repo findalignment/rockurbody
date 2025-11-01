@@ -58,7 +58,7 @@ export const QuoteStatement = ({ quote, author, className = "" }) => (
       </p>
       {author && (
         <cite className="block text-xl md:text-2xl text-gray-600 text-center not-italic font-medium">
-          — {author}
+          - {author}
         </cite>
       )}
     </blockquote>

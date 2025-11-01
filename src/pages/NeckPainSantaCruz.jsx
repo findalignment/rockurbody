@@ -179,7 +179,7 @@ function NeckPainSantaCruz() {
               For Santa Cruz Tech Workers & Desk Professionals
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              You moved to Santa Cruz for the lifestyle, but your desk job is giving you the neck of a 60-year-old. Let's fix that. Most of my neck pain clients see significant improvement within 3-4 sessions. Not "it hurts a little less" — actual "I forgot my neck was an issue" improvement.
+              You moved to Santa Cruz for the lifestyle, but your desk job is giving you the neck of a 60-year-old. Let's fix that. Most of my neck pain clients see significant improvement within 3-4 sessions. Not "it hurts a little less" . actual "I forgot my neck was an issue" improvement.
             </p>
           </div>
 

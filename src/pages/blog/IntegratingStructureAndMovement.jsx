@@ -64,7 +64,7 @@ function IntegratingStructureAndMovement() {
                     Here's where Rock truly differentiates himself: structural integration alone can create profound changes, but without teaching you <em>how to inhabit</em> that new structure, old movement patterns inevitably return.
                   </p>
                   <p className="leading-relaxed">
-                    This is why Rock's sessions aren't just about hands-on work—they're about education. It's not just changing <em>what</em> you feel in your body, it's changing <em>how</em> you perceive it (interoception) and <em>how</em> you move through space (proprioception). Movement education isn't an add-on; it's woven into the process. While structural integration reorganizes your body's architecture, movement education and proprioception allows you how to inhabit that new structure. It changes how you move, breathe, and carry yourself—making the work sustainable rather than reverting to old dysfunction.
+                    This is why Rock's sessions aren't just about hands-on work.they're about education. It's not just changing <em>what</em> you feel in your body, it's changing <em>how</em> you perceive it (interoception) and <em>how</em> you move through space (proprioception). Movement education isn't an add-on; it's woven into the process. While structural integration reorganizes your body's architecture, movement education and proprioception allows you how to inhabit that new structure. It changes how you move, breathe, and carry yourself.making the work sustainable rather than reverting to old dysfunction.
                   </p>
                 </div>
               </section>
@@ -92,7 +92,7 @@ function IntegratingStructureAndMovement() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-accent font-bold text-xl">•</span>
-                    <span><strong>Freedom in Daily Life:</strong> Simple activities—walking, sitting, lifting—become easier and more enjoyable.</span>
+                    <span><strong>Freedom in Daily Life:</strong> Simple activities.walking, sitting, lifting.become easier and more enjoyable.</span>
                   </li>
                 </ul>
               </section>
@@ -128,7 +128,7 @@ function IntegratingStructureAndMovement() {
                   The Bottom Line
                 </h3>
                 <p className="leading-relaxed mb-4">
-                  Most practitioners specialize in either hands-on bodywork <em>or</em> movement training. Rock's unique integration of both creates a synergy that produces results neither modality can achieve alone. You're not just getting temporary relief or learning isolated exercises—you're undergoing a comprehensive transformation in how your body is organized and how you move through the world.
+                  Most practitioners specialize in either hands-on bodywork <em>or</em> movement training. Rock's unique integration of both creates a synergy that produces results neither modality can achieve alone. You're not just getting temporary relief or learning isolated exercises.you're undergoing a comprehensive transformation in how your body is organized and how you move through the world.
                 </p>
                 <p className="leading-relaxed">
                   If you're tired of chasing symptoms and ready to address the root cause of your pain, tension, or movement limitations, Rock's integrated approach offers a path to lasting change.

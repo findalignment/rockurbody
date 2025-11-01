@@ -85,7 +85,7 @@ function PersonalTrainerSantaCruz() {
                   Fundamental Movement Patterns
                 </h3>
                 <p className="text-neutralDark/80 mb-2">
-                  Squat, hinge, push, pull, carry, rotate—the movements you do every day. We make sure you do them well.
+                  Squat, hinge, push, pull, carry, rotate.the movements you do every day. We make sure you do them well.
                 </p>
               </div>
 
@@ -112,7 +112,7 @@ function PersonalTrainerSantaCruz() {
                   Strength for Life
                 </h3>
                 <p className="text-neutralDark/80 mb-2">
-                  Building strength in movement patterns that actually matter—picking things up, reaching overhead, getting up from the floor, carrying groceries.
+                  Building strength in movement patterns that actually matter.picking things up, reaching overhead, getting up from the floor, carrying groceries.
                 </p>
               </div>
 
@@ -188,7 +188,7 @@ function PersonalTrainerSantaCruz() {
                   Ongoing Sessions: Progressive Training
                 </h3>
                 <p className="text-neutralDark/80">
-                  Each session builds on the last. We work on your specific needs—not a cookie-cutter program. You'll learn principles you can apply yourself, making you less dependent on me over time.
+                  Each session builds on the last. We work on your specific needs.not a cookie-cutter program. You'll learn principles you can apply yourself, making you less dependent on me over time.
                 </p>
               </div>
 

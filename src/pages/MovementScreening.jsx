@@ -29,7 +29,7 @@ function MovementScreening() {
               You know something's off. Maybe one side feels tighter. Maybe you compensate without realizing it. Maybe you've been injured and don't move the same way anymore.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              A comprehensive movement assessment reveals what's actually happening in your body—the imbalances you can't see, the compensations you don't know you're making, the restrictions limiting your performance.
+              A comprehensive movement assessment reveals what's actually happening in your body.the imbalances you can't see, the compensations you don't know you're making, the restrictions limiting your performance.
             </p>
             <p className="text-xl text-accent font-semibold">
               Once you understand how you move, we can fix it.
@@ -65,7 +65,7 @@ function MovementScreening() {
                   Compensation Patterns
                 </h3>
                 <p className="text-neutralDark/80">
-                  Your body is smart—when one area doesn't work, another takes over. But compensations create new problems. We find them before they become painful.
+                  Your body is smart.when one area doesn't work, another takes over. But compensations create new problems. We find them before they become painful.
                 </p>
               </div>
 
@@ -259,7 +259,7 @@ function MovementScreening() {
               Assessment + Action
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              The assessment is the first step. Then we create a plan—whether that's a full Structural Integration series, targeted movement training, or a hybrid approach. You'll know exactly what you need and why.
+              The assessment is the first step. Then we create a plan.whether that's a full Structural Integration series, targeted movement training, or a hybrid approach. You'll know exactly what you need and why.
             </p>
           </div>
 

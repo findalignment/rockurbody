@@ -56,7 +56,7 @@ function Contact() {
                   Ready to Do This?
                 </h3>
                 <p className="text-neutralDark/80 mb-4">
-                  Let's get your body back in business. Book a free consultation or dive straight into a session — your call.
+                  Let's get your body back in business. Book a free consultation or dive straight into a session. Your call.
                 </p>
                 <Button 
                   to="/book"

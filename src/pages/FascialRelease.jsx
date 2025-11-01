@@ -15,7 +15,7 @@ function FascialRelease() {
       <PageHero 
         imageSrc="/approach-hero.jpg"
         title="Fascial Release"
-        subtitle="Address pain at its source—the connective tissue"
+        subtitle="Address pain at its source.the connective tissue"
       />
 
       <div className="bg-white py-16 px-6">
@@ -26,10 +26,10 @@ function FascialRelease() {
               What is Fascia? (And Why Should You Care?)
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Fascia is the connective tissue that wraps everything in your body—muscles, organs, bones, nerves. Think of it like a full-body wetsuit made of living tissue.
+              Fascia is the connective tissue that wraps everything in your body.muscles, organs, bones, nerves. Think of it like a full-body wetsuit made of living tissue.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              When fascia is healthy and hydrated, it's slippery and allows smooth movement. But when it gets stuck, restricted, or dense from injury, poor posture, or chronic stress—everything changes.
+              When fascia is healthy and hydrated, it's slippery and allows smooth movement. But when it gets stuck, restricted, or dense from injury, poor posture, or chronic stress.everything changes.
             </p>
             <p className="text-xl text-accent font-semibold">
               Most chronic pain comes from fascial restrictions, not muscle or joint problems.
@@ -144,7 +144,7 @@ function FascialRelease() {
                   Whole-Body Approach
                 </h3>
                 <p className="text-neutralDark/80">
-                  Pain in your knee? We might need to work on your hip, your ankle, or even how you breathe. Fascia connects everything—we address the whole system.
+                  Pain in your knee? We might need to work on your hip, your ankle, or even how you breathe. Fascia connects everything.we address the whole system.
                 </p>
               </div>
 
@@ -204,10 +204,10 @@ function FascialRelease() {
               What to Expect
             </h2>
             <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-              Fascial release work is different from massage. The pressure is slow and sustained—we're working with the fascia, not just the muscles. Some areas might be tender, but it shouldn't be painful.
+              Fascial release work is different from massage. The pressure is slow and sustained.we're working with the fascia, not just the muscles. Some areas might be tender, but it shouldn't be painful.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              You'll feel changes during and after the session. Movement feels different. You stand taller. Things that were tight start to let go. The work is cumulative—each session builds on the last.
+              You'll feel changes during and after the session. Movement feels different. You stand taller. Things that were tight start to let go. The work is cumulative.each session builds on the last.
             </p>
           </div>
 

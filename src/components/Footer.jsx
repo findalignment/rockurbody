@@ -59,7 +59,7 @@ function Footer() {
               Santa Cruz, California
             </p>
             <p className="text-white/70 mb-4 leading-relaxed">
-              Book a free 15-minute "get-to-know-your-body" chat with me. No fluff, no pushy sales — just us figuring out what your body wants to do.
+              Book a free 15-minute "get-to-know-your-body" chat with me. No fluff, no pushy sales, just us figuring out what your body wants to do.
             </p>
             <p className="text-white/60 text-sm italic mb-4">
               (I promise I only do one bad pun per session.)

@@ -5,7 +5,7 @@ function BookConsult() {
         Let's Figure This Out Together
       </h1>
       <p style={{ fontSize: '18px', textAlign: 'center', marginBottom: '40px', color: '#666' }}>
-        Free 15-minute chat to understand your body, your goals, and what's getting in the way. No fluff, no sales pitch — just honest conversation.
+        Free 15-minute chat to understand your body, your goals, and what's getting in the way. No fluff, no sales pitch, just honest conversation.
       </p>
       
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '20px', marginBottom: '40px' }}>

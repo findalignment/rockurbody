@@ -26,7 +26,7 @@ function Climbers() {
               Climbing is Demanding. Your Body Needs Support.
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Whether you're bouldering at The Cave, sport climbing at the Quarry, or projecting routes outdoors—climbing beats up your body. The same issues keep limiting your progression:
+              Whether you're bouldering at The Cave, sport climbing at the Quarry, or projecting routes outdoors.climbing beats up your body. The same issues keep limiting your progression:
             </p>
             <ul className="space-y-3 text-lg text-neutralDark/80">
               <li>• Finger pain and tendon issues</li>
@@ -152,7 +152,7 @@ function Climbers() {
               Climb Better, Not Just Pain-Free
             </h2>
             <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-              When your structure improves and imbalances correct, you don't just hurt less—you climb better:
+              When your structure improves and imbalances correct, you don't just hurt less.you climb better:
             </p>
             <div className="grid md:grid-cols-2 gap-4 text-neutralDark/80">
               <div>✓ Greater reach without strain</div>
@@ -171,7 +171,7 @@ function Climbers() {
               For Santa Cruz Climbers
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Whether you're training at The Cave, climbing at the Quarry, or heading up to Castle Rock—I help Santa Cruz climbers overcome injuries, improve performance, and climb sustainably for decades. Let's make sure your body can keep up with your psych.
+              Whether you're training at The Cave, climbing at the Quarry, or heading up to Castle Rock.I help Santa Cruz climbers overcome injuries, improve performance, and climb sustainably for decades. Let's make sure your body can keep up with your psych.
             </p>
           </div>
 

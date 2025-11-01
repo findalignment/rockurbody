@@ -24,7 +24,7 @@ function RolfingVsMassage() {
           {/* Intro */}
           <div className="mb-16">
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              "Is this like massage?" It's the most common question I get. The short answer: No, but they're both valuable—just for different reasons.
+              "Is this like massage?" It's the most common question I get. The short answer: No, but they're both valuable.just for different reasons.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed">
               Let me break down the real differences so you can choose what's right for your goals.

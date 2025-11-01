@@ -115,7 +115,7 @@ function PostureCorrection() {
               Poor posture isn't just cosmetic. It affects everything:
             </p>
             <ul className="space-y-2 text-lg text-neutralDark/80">
-              <li>• <strong>Chronic pain:</strong> Neck, shoulders, back—your body compensates everywhere</li>
+              <li>• <strong>Chronic pain:</strong> Neck, shoulders, back.your body compensates everywhere</li>
               <li>• <strong>Reduced energy:</strong> Fighting gravity all day is exhausting</li>
               <li>• <strong>Restricted breathing:</strong> Collapsed chest = shallow breaths = less oxygen</li>
               <li>• <strong>Decreased confidence:</strong> Slumped posture signals defeat to yourself and others</li>

@@ -126,7 +126,7 @@ function InjuryRecovery() {
               Perfect for Active Santa Cruz Residents
             </h2>
             <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-              Whether you're a surfer dealing with shoulder issues, a cyclist with IT band problems, a runner with chronic knee pain, or a weekend warrior who went too hard—I help active people recover fully and get back to doing what they love.
+              Whether you're a surfer dealing with shoulder issues, a cyclist with IT band problems, a runner with chronic knee pain, or a weekend warrior who went too hard.I help active people recover fully and get back to doing what they love.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               The goal isn't just to stop hurting. It's to come back stronger, move better, and prevent the injury from happening again.

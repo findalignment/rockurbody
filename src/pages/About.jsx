@@ -21,7 +21,7 @@ function About() {
                 After noticing I spent more time explaining weird joint-clicks and movement quirks than watching Netflix, I decided to build a program where nothing is off-limits and every weird hip hitch gets fixed.
               </p>
               <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
-                I'm a certified Structural Integration specialist — i.e., I spent years getting really into fascia. But yes, I still make jokes about it.
+                I'm a certified Structural Integration specialist. Translation: I spent years getting really into fascia. But yes, I still make jokes about it.
               </p>
               <div className="bg-accent/5 rounded-xl p-6 mb-6">
                 <p className="text-base text-neutralDark/80 leading-relaxed">
@@ -29,7 +29,7 @@ function About() {
                 </p>
               </div>
               <p className="text-lg text-neutralDark/80 leading-relaxed">
-                I believe fitness isn't just about logging reps — it's about feeling like YOU can move without hesitation, jump without fear, and maybe even surprise yourself. Bonus: I'll crack a dad-joke if it helps loosen a hip.
+                I believe fitness isn't just about logging reps. It's about feeling like YOU can move without hesitation, jump without fear, and maybe even surprise yourself. Bonus: I'll crack a dad-joke if it helps loosen a hip.
               </p>
             </div>
             
@@ -59,7 +59,7 @@ function About() {
                     Movement Education
                   </h3>
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                    Teaching you how to move efficiently. We work on patterns, not just muscles. You'll learn skills that transfer to everything you do — from picking up groceries to crushing your next hike.
+                    Teaching you how to move efficiently. We work on patterns, not just muscles. You'll learn skills that transfer to everything you do, from picking up groceries to crushing your next hike.
                   </p>
                   <Button
                     to="/what-is-movement-education"

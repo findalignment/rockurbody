@@ -183,7 +183,7 @@ function SciaticaReliefSantaCruz() {
               If you have a confirmed disc herniation, I'm not going to magically put the disc back in place. But I can reduce the pressure on that area, improve your body's ability to compensate, and help you move in ways that don't aggravate it. Many people with disc issues live completely pain-free once they learn how to manage their structure.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              That said: If you have severe weakness, loss of bowel/bladder control, or progressively worsening symptoms — see a doctor first. I'm good, but I'm not magic.
+              That said: If you have severe weakness, loss of bowel/bladder control, or progressively worsening symptoms . see a doctor first. I'm good, but I'm not magic.
             </p>
           </div>
 

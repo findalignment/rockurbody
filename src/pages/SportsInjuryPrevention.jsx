@@ -29,7 +29,7 @@ function SportsInjuryPrevention() {
               You're active. You train. You push yourself. But are you setting yourself up for injury without realizing it?
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Most injuries aren't random bad luck—they're the result of accumulated imbalances, poor movement patterns, and structural issues that finally reach a breaking point.
+              Most injuries aren't random bad luck.they're the result of accumulated imbalances, poor movement patterns, and structural issues that finally reach a breaking point.
             </p>
             <p className="text-xl text-accent font-semibold">
               What if you could identify and fix those issues BEFORE they become injuries?
@@ -83,7 +83,7 @@ function SportsInjuryPrevention() {
                   Old Injuries & Compensation
                 </h3>
                 <p className="text-neutralDark/80">
-                  You recovered from that ankle sprain 3 years ago—but your body never fully corrected the compensation patterns. Now your knee hurts. Everything's connected.
+                  You recovered from that ankle sprain 3 years ago.but your body never fully corrected the compensation patterns. Now your knee hurts. Everything's connected.
                 </p>
               </div>
 
@@ -252,7 +252,7 @@ function SportsInjuryPrevention() {
               For Santa Cruz Athletes
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Whether you're training for a race, hitting the trails every weekend, or just want to stay active for decades—proactive injury prevention keeps you doing what you love. I help Santa Cruz athletes identify vulnerabilities and build resilient bodies that handle whatever you throw at them.
+              Whether you're training for a race, hitting the trails every weekend, or just want to stay active for decades.proactive injury prevention keeps you doing what you love. I help Santa Cruz athletes identify vulnerabilities and build resilient bodies that handle whatever you throw at them.
             </p>
           </div>
 

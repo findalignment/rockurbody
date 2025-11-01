@@ -109,7 +109,7 @@ function NeckPainRelief() {
                   Nerve Issues / Tingling
                 </h3>
                 <p className="text-neutralDark/80">
-                  Tingling in your hands or arms can come from tight neck muscles compressing nerves. Not all nerve issues require surgery — many respond to releasing fascial restrictions.
+                  Tingling in your hands or arms can come from tight neck muscles compressing nerves. Not all nerve issues require surgery . many respond to releasing fascial restrictions.
                 </p>
               </div>
             </div>
@@ -178,7 +178,7 @@ function NeckPainRelief() {
 
           <div className="border-l-4 border-accent pl-6 mb-16">
             <p className="text-lg text-neutralDark/80 leading-relaxed italic">
-              "I had chronic neck pain and headaches for 5 years. Tried everything. After working with Rock, my headaches are gone and I can actually turn my head to check my blind spot without pain. Life-changing." — Sarah, 42, Software Engineer
+              "I had chronic neck pain and headaches for 5 years. Tried everything. After working with Rock, my headaches are gone and I can actually turn my head to check my blind spot without pain. Life-changing." . Sarah, 42, Software Engineer
             </p>
           </div>
 

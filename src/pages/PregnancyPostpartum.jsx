@@ -29,7 +29,7 @@ function PregnancyPostpartum() {
               Pregnancy changes everything. Your center of gravity shifts. Your pelvis widens. Hormones make your ligaments looser. Your abs stretch. You're growing a human while trying to stay functional.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Then postpartum hits—and nobody tells you how hard recovery actually is. Sleep-deprived, holding a baby constantly, your body feeling nothing like it used to. You're told to "wait 6 weeks" and then... what?
+              Then postpartum hits.and nobody tells you how hard recovery actually is. Sleep-deprived, holding a baby constantly, your body feeling nothing like it used to. You're told to "wait 6 weeks" and then... what?
             </p>
             <p className="text-xl text-accent font-semibold">
               You deserve better support than that.
@@ -59,7 +59,7 @@ function PregnancyPostpartum() {
               <div className="border-l-4 border-primary pl-6">
                 <h3 className="font-semibold text-neutralDark mb-2">Rib & Upper Back Pain</h3>
                 <p className="text-neutralDark/80">
-                  Baby pushing up on your ribs. Breasts getting heavier. Shoulders rounding forward. Upper body tension is real—and we can help.
+                  Baby pushing up on your ribs. Breasts getting heavier. Shoulders rounding forward. Upper body tension is real.and we can help.
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ function PregnancyPostpartum() {
               <div className="border-l-4 border-sage pl-6">
                 <h3 className="font-semibold text-neutralDark mb-2">Diastasis Recti (Ab Separation)</h3>
                 <p className="text-neutralDark/80">
-                  Your abs stretched to make room for baby. Now there's a gap. We rebuild core function from the inside out—not just crunches, but real integration.
+                  Your abs stretched to make room for baby. Now there's a gap. We rebuild core function from the inside out.not just crunches, but real integration.
                 </p>
               </div>
 
@@ -113,7 +113,7 @@ function PregnancyPostpartum() {
               <div className="border-l-4 border-highlight pl-6">
                 <h3 className="font-semibold text-neutralDark mb-2">Neck & Shoulder Pain from Nursing/Carrying</h3>
                 <p className="text-neutralDark/80">
-                  Holding a baby, nursing in awkward positions, carrying car seats—it all creates upper body tension. We release it and teach you better mechanics.
+                  Holding a baby, nursing in awkward positions, carrying car seats.it all creates upper body tension. We release it and teach you better mechanics.
                 </p>
               </div>
 
@@ -176,16 +176,16 @@ function PregnancyPostpartum() {
 
             <div className="space-y-4 text-neutralDark/80">
               <p>
-                <strong className="text-neutralDark">I'm not a prenatal massage therapist or pelvic floor PT</strong> — but I work collaboratively with them. I focus on structural integration and movement education to complement their work.
+                <strong className="text-neutralDark">I'm not a prenatal massage therapist or pelvic floor PT</strong> . but I work collaboratively with them. I focus on structural integration and movement education to complement their work.
               </p>
               <p>
-                <strong className="text-neutralDark">Always have medical clearance</strong> — especially postpartum, make sure your doctor has cleared you for bodywork and exercise before we start.
+                <strong className="text-neutralDark">Always have medical clearance</strong> . especially postpartum, make sure your doctor has cleared you for bodywork and exercise before we start.
               </p>
               <p>
-                <strong className="text-neutralDark">You're not "broken"</strong> — pregnancy and birth are intense physical events. Your body adapted. Now we help it adapt back to strength and function.
+                <strong className="text-neutralDark">You're not "broken"</strong> . pregnancy and birth are intense physical events. Your body adapted. Now we help it adapt back to strength and function.
               </p>
               <p>
-                <strong className="text-neutralDark">Recovery takes time</strong> — you grew a baby for 9 months. Give yourself permission to take time recovering. Rushing back leads to injury.
+                <strong className="text-neutralDark">Recovery takes time</strong> . you grew a baby for 9 months. Give yourself permission to take time recovering. Rushing back leads to injury.
               </p>
             </div>
           </div>
@@ -195,7 +195,7 @@ function PregnancyPostpartum() {
               For Santa Cruz Moms
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Whether you're pregnant and trying to stay active, or postpartum and struggling to recover—I help Santa Cruz moms move comfortably through pregnancy and build back strength after birth. You're doing one of the hardest things humans do. Let's make sure your body can support you through it.
+              Whether you're pregnant and trying to stay active, or postpartum and struggling to recover.I help Santa Cruz moms move comfortably through pregnancy and build back strength after birth. You're doing one of the hardest things humans do. Let's make sure your body can support you through it.
             </p>
           </div>
 

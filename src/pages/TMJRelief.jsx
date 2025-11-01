@@ -56,7 +56,7 @@ function TMJRelief() {
               <div className="border-l-4 border-accent pl-6">
                 <h3 className="font-semibold text-neutralDark mb-2">Neck & Shoulder Tension</h3>
                 <p className="text-neutralDark/80">
-                  Tight neck and shoulder muscles pull on your jaw. The same nerves that supply your jaw also supply your neck—tension in one area creates tension in the other.
+                  Tight neck and shoulder muscles pull on your jaw. The same nerves that supply your jaw also supply your neck.tension in one area creates tension in the other.
                 </p>
               </div>
 
@@ -160,7 +160,7 @@ function TMJRelief() {
                 <ul className="space-y-2 text-neutralDark/80 ml-6">
                   <li>• Release masseter muscles (main chewing muscles)</li>
                   <li>• Address temporalis muscles (temples)</li>
-                  <li>• Work with pterygoid muscles (inside mouth—with gloves)</li>
+                  <li>• Work with pterygoid muscles (inside mouth.with gloves)</li>
                   <li>• Release fascia around TMJ joint</li>
                 </ul>
               </div>
@@ -223,7 +223,7 @@ function TMJRelief() {
 
           <div className="border-l-4 border-accent pl-6 mb-16">
             <p className="text-lg text-neutralDark/80 leading-relaxed italic">
-              "I had TMJ pain for 3 years. Dentist gave me a night guard which helped a bit, but the tension was still there. After a few sessions with Rock, my jaw stopped clicking and I can actually chew without pain. He worked on my whole neck and posture, not just my jaw—that made all the difference." — Lisa, 38, Graphic Designer
+              "I had TMJ pain for 3 years. Dentist gave me a night guard which helped a bit, but the tension was still there. After a few sessions with Rock, my jaw stopped clicking and I can actually chew without pain. He worked on my whole neck and posture, not just my jaw.that made all the difference." . Lisa, 38, Graphic Designer
             </p>
           </div>
 

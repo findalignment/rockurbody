@@ -167,10 +167,10 @@ function ShoulderPainTreatment() {
               Perfect For Active Santa Cruz Residents
             </h2>
             <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-              Whether you're a surfer with shoulder impingement, a climber with rotator cuff issues, or a desk worker who can't reach overhead anymore — I help you get back to full function.
+              Whether you're a surfer with shoulder impingement, a climber with rotator cuff issues, or a desk worker who can't reach overhead anymore . I help you get back to full function.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Most shoulder pain clients see significant improvement within 4-6 sessions. Not just "hurts less" — actual "I forgot I had a shoulder problem" results.
+              Most shoulder pain clients see significant improvement within 4-6 sessions. Not just "hurts less" . actual "I forgot I had a shoulder problem" results.
             </p>
           </div>
 
