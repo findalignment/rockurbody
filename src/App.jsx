@@ -55,6 +55,7 @@ const ScheduleCombo = lazy(() => import('./pages/ScheduleCombo'));
 const BlogIndex = lazy(() => import('./pages/blog/BlogIndex'));
 const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/IntegratingStructureAndMovement'));
 const PhoneReshapingSkeleton = lazy(() => import('./pages/blog/PhoneReshapingSkeleton'));
+const TechChangesPosture = lazy(() => import('./pages/blog/TechChangesPosture'));
 
 // SEO Pages
 const SantaCruzStructuralIntegration = lazy(() => import('./pages/SantaCruzStructuralIntegration'));
@@ -231,6 +232,7 @@ function AppRoutes() {
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/integrating-structure-and-movement" element={<IntegratingStructureAndMovement />} />
         <Route path="/blog/phone-reshaping-skeleton" element={<PhoneReshapingSkeleton />} />
+        <Route path="/blog/tech-changes-posture" element={<TechChangesPosture />} />
         
         {/* Certification Pages - Not in navigation menu */}
         <Route path="/certifications/anatomy-trains-structural-integration" element={<AnatomyTrainsSI />} />

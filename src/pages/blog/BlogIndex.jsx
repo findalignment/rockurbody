@@ -5,6 +5,14 @@ import PageHero from '../../components/PageHero';
 function BlogIndex() {
   const blogPosts = [
     {
+      id: 'tech-changes-posture',
+      title: 'When Tech Changes Our Posture: Understanding the Hidden Cost of Our Digital Lives',
+      subtitle: 'The biomechanics, economics, and solutions for our screen-saturated world',
+      date: 'November 2, 2025',
+      excerpt: "We spend 6+ hours daily on screens. Dive deep into the biomechanics of forward head posture, upper crossed syndrome, the breath connection, and evidence-based interventions that actually work.",
+      path: '/blog/tech-changes-posture'
+    },
+    {
       id: 'phone-reshaping-skeleton',
       title: 'Your Phone is Reshaping Your Skeleton (And We Can Do Better)',
       subtitle: 'How technology is literally changing our bodies and what we can do about it',
