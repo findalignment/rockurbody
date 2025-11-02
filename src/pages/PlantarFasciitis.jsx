@@ -42,7 +42,7 @@ function PlantarFasciitis() {
             </h2>
             
             <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
-              Plantar fasciitis is inflammation of the fascia on the bottom of your foot. But what's causing the inflammation? That's what we need to fix.
+              Plantar fasciitis is inflammation of the fascia on the bottom of your foot. But what's causing the inflammation? That's what we need to address.
             </p>
 
             <div className="space-y-6">
@@ -51,7 +51,7 @@ function PlantarFasciitis() {
                   Tight Calves
                 </h3>
                 <p className="text-neutralDark/80">
-                  When your calves are chronically tight (which they are for most people), they pull on your Achilles tendon. Your Achilles connects to your plantar fascia. Tight calves = constant tension on the bottom of your foot. No amount of arch support fixes that.
+                  When your calves are chronically tight (which they are for most people), they pull on your Achilles tendon. Your Achilles connects to your plantar fascia. Tight calves = constant tension on the bottom of your foot. No amount of arch support resolves that.
                 </p>
               </div>
 
@@ -164,7 +164,7 @@ function PlantarFasciitis() {
                 <strong className="text-neutralDark">Surgery:</strong> Should be a last resort. Most plantar fasciitis is mechanical and responds to conservative treatment when you address the whole system, not just the foot.
               </p>
               <p>
-                <strong className="text-neutralDark">Night splints:</strong> Keep your foot in dorsiflexion overnight to prevent morning pain, but again, they don't fix the underlying issue.
+                <strong className="text-neutralDark">Night splints:</strong> Keep your foot in dorsiflexion overnight to prevent morning pain, but again, they don't resolve the underlying issue.
               </p>
             </div>
           </div>

@@ -221,7 +221,7 @@ function ComboPrograms() {
                   Serious About Results
                 </h4>
                 <p className="text-neutralDark/80">
-                  If you're ready to commit to a process and want comprehensive, lasting change rather than temporary fixes, this is the path.
+                  If you're ready to commit to a process and want comprehensive, lasting change rather than temporary solutions, this is the path.
                 </p>
               </div>
             </div>

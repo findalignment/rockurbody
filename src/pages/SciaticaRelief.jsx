@@ -42,7 +42,7 @@ function SciaticaRelief() {
             </h2>
             
             <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
-              "Sciatica" just means pain along the sciatic nerve. But what's causing the nerve to get irritated? That's what we need to fix.
+              "Sciatica" just means pain along the sciatic nerve. But what's causing the nerve to get irritated? That's what we need to address.
             </p>
 
             <div className="space-y-6">
@@ -60,7 +60,7 @@ function SciaticaRelief() {
                   Hip Imbalances & Rotation
                 </h3>
                 <p className="text-neutralDark/80">
-                  One hip rotated forward. Uneven leg length (often functional, not structural). These imbalances create tension patterns that irritate the nerve. Fix the imbalance, fix the sciatica.
+                  One hip rotated forward. Uneven leg length (often functional, not structural). These imbalances create tension patterns that irritate the nerve. Address the imbalance, resolve the sciatica.
                 </p>
               </div>
 
@@ -194,7 +194,7 @@ function SciaticaRelief() {
                   Results Build Over Time
                 </h3>
                 <p className="text-neutralDark/80">
-                  Each session builds on the last. The goal isn't just to stop the pain.it's to fix the underlying structure so it doesn't come back. That takes commitment.
+                  Each session builds on the last. The goal isn't just to stop the pain.it's to address the underlying structure so it doesn't come back. That takes commitment.
                 </p>
               </div>
             </div>

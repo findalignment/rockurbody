@@ -50,7 +50,7 @@ function ShoulderPainTreatment() {
                   Pain when reaching overhead or out to the side. The space in your shoulder joint is compressed, pinching tendons and bursa. But WHY is it compressed? Usually: rounded shoulders, tight chest, poor scapular control.
                 </p>
                 <p className="text-neutralDark/80 italic text-sm">
-                  Real fix: Open the chest, restore scapular movement, reposition the shoulder
+                  Better approach: Open the chest, restore scapular movement, reposition the shoulder
                 </p>
               </div>
 
@@ -62,7 +62,7 @@ function ShoulderPainTreatment() {
                   Weakness, pain, or "catching" sensation. Your rotator cuff stabilizes the shoulder. When it's not working right, everything else compensates poorly.
                 </p>
                 <p className="text-neutralDark/80 italic text-sm">
-                  Real fix: Release overworked muscles (traps, pecs), retrain stabilizer function
+                  Better approach: Release overworked muscles (traps, pecs), retrain stabilizer function
                 </p>
               </div>
 
@@ -74,7 +74,7 @@ function ShoulderPainTreatment() {
                   Severely limited range of motion, often after injury or immobilization. The shoulder capsule literally gets stuck and restricted.
                 </p>
                 <p className="text-neutralDark/80 italic text-sm">
-                  Real fix: Careful fascial release, progressive movement restoration
+                  Better approach: Careful fascial release, progressive movement restoration
                 </p>
               </div>
 
@@ -86,7 +86,7 @@ function ShoulderPainTreatment() {
                   Shoulders pulled forward from desk work or phone use. This changes how your shoulder joint functions and creates pain over time.
                 </p>
                 <p className="text-neutralDark/80 italic text-sm">
-                  Real fix: Release tight chest and front shoulders, strengthen back, retrain posture
+                  Better approach: Release tight chest and front shoulders, strengthen back, retrain posture
                 </p>
               </div>
 
@@ -98,7 +98,7 @@ function ShoulderPainTreatment() {
                   Your shoulder blade doesn't move properly. Since your arm connects to your shoulder blade, poor scapular movement = shoulder pain.
                 </p>
                 <p className="text-neutralDark/80 italic text-sm">
-                  Real fix: Release restrictions, retrain serratus and lower trap function
+                  Better approach: Release restrictions, retrain serratus and lower trap function
                 </p>
               </div>
             </div>

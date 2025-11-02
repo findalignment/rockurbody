@@ -15,7 +15,7 @@ function AchillesTendonitis() {
       <PageHero 
         imageSrc="/training-hero.jpg"
         title="Achilles Tendonitis Treatment"
-        subtitle="Your Achilles hurts. Let's fix why."
+        subtitle="Your Achilles hurts. Let's address why."
       />
 
       <div className="bg-white py-16 px-6">
@@ -222,13 +222,13 @@ function AchillesTendonitis() {
             
             <div className="space-y-4 text-lg text-neutralDark/80">
               <p>
-                <strong className="text-neutralDark">Complete rest:</strong> Helps acute tendonitis but doesn't fix chronic tendinosis. In fact, complete rest can make tendinosis worse. Tendons need load to heal, just controlled, progressive load.
+                <strong className="text-neutralDark">Complete rest:</strong> Helps acute tendonitis but doesn't resolve chronic tendinosis. In fact, complete rest can make tendinosis worse. Tendons need load to heal, just controlled, progressive load.
               </p>
               <p>
                 <strong className="text-neutralDark">Ice:</strong> May reduce pain temporarily but doesn't address the underlying tendon degeneration. Not harmful, but not a solution.
               </p>
               <p>
-                <strong className="text-neutralDark">Heel lifts:</strong> Can temporarily reduce Achilles strain but don't fix the problem and may create dependence. Use short-term if needed, not long-term.
+                <strong className="text-neutralDark">Heel lifts:</strong> Can temporarily reduce Achilles strain but don't resolve the problem and may create dependence. Use short-term if needed, not long-term.
               </p>
               <p>
                 <strong className="text-neutralDark">Orthotics:</strong> May help if you have significant foot mechanics issues, but address foot strength and mechanics first. Orthotics should support your rehab, not replace it.

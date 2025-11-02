@@ -125,7 +125,7 @@ function ShoulderPainRelief() {
             </div>
 
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Most treatments only address the shoulder itself. That's why the pain keeps returning. We need to fix the whole system.
+              Most treatments only address the shoulder itself. That's why the pain keeps returning. We need to address the whole system.
             </p>
           </div>
 

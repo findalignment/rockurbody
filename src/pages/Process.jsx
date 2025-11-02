@@ -60,7 +60,7 @@ function Process() {
       number: '03',
       title: 'Reinforce',
       subtitle: 'Making it stick',
-      description: 'Real change isn\'t a one.time fix. We integrate new patterns into your daily life, so your body remembers and maintains what we\'ve built together.',
+      description: 'Real change isn\'t a one.time solution. We integrate new patterns into your daily life, so your body remembers and maintains what we\'ve built together.',
       details: [
         'Movement practices you can do at home',
         'Ongoing support and refinement',

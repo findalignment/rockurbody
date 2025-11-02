@@ -32,7 +32,7 @@ function BreathingCore() {
               This doesn't just affect your cardio. It affects your core stability, your posture, your stress levels, your back pain, even your pelvic floor. Your breathing pattern influences almost everything about how your body functions.
             </p>
             <p className="text-xl text-accent font-semibold">
-              Fix your breathing, and you fix a lot of other problems.
+              Improve your breathing, and you improve a lot of other problems.
             </p>
           </div>
 
@@ -136,7 +136,7 @@ function BreathingCore() {
 
             <div className="space-y-4 text-lg text-neutralDark/80">
               <p>
-                <strong className="text-neutralDark">Core Stability:</strong> Your diaphragm creates intra-abdominal pressure (IAP) that stabilizes your spine. No proper diaphragm function = no real core stability. All the planks in the world won't fix this.
+                <strong className="text-neutralDark">Core Stability:</strong> Your diaphragm creates intra-abdominal pressure (IAP) that stabilizes your spine. No proper diaphragm function = no real core stability. All the planks in the world won't resolve this.
               </p>
               <p>
                 <strong className="text-neutralDark">Back Pain:</strong> Poor breathing means poor core stability, which means your back muscles overwork trying to stabilize you. Chronic back tension often starts with breathing dysfunction.

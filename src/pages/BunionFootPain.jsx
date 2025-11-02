@@ -15,7 +15,7 @@ function BunionFootPain() {
       <PageHero 
         imageSrc="/training-hero.jpg"
         title="Bunion & Foot Pain Treatment"
-        subtitle="Your feet are your foundation. Let's fix them."
+        subtitle="Your feet are your foundation. Let's improve them."
       />
 
       <div className="bg-white py-16 px-6">

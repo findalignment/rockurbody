@@ -32,7 +32,7 @@ function MovementScreening() {
               A comprehensive movement assessment reveals what's actually happening in your body.the imbalances you can't see, the compensations you don't know you're making, the restrictions limiting your performance.
             </p>
             <p className="text-xl text-accent font-semibold">
-              Once you understand how you move, we can fix it.
+              Once you understand how you move, we can address it.
             </p>
           </div>
 

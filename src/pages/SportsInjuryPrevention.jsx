@@ -235,7 +235,7 @@ function SportsInjuryPrevention() {
                   <li>• Stay training consistently</li>
                   <li>• Improve performance</li>
                   <li>• Reduce injury risk significantly</li>
-                  <li>• Catch issues early when easy to fix</li>
+                  <li>• Catch issues early when easy to address</li>
                   <li>• Confidence in your body</li>
                   <li>• Longer athletic lifespan</li>
                 </ul>

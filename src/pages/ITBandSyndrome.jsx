@@ -29,7 +29,7 @@ function ITBandSyndrome() {
               It started a few miles into your run. Sharp pain on the outside of your knee. You tried to push through it, but it got worse. Now it hurts every time you run, especially going downhill. Sometimes even walking down stairs triggers it.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              You've been foam rolling your IT band religiously. It's incredibly painful, but you've been told this is how you fix it. Weeks of brutal foam rolling later, the pain is still there. Maybe you've tried rest. The pain goes away, but returns the moment you start running again.
+              You've been foam rolling your IT band religiously. It's incredibly painful, but you've been told this is how you resolve it. Weeks of brutal foam rolling later, the pain is still there. Maybe you've tried rest. The pain goes away, but returns the moment you start running again.
             </p>
             <p className="text-xl text-accent font-semibold">
               Here's the truth: Your IT band isn't the problem. It's the victim. And foam rolling it is mostly pointless.

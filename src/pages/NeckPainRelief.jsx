@@ -15,7 +15,7 @@ function NeckPainRelief() {
       <PageHero 
         imageSrc="/approach-hero.jpg"
         title="Neck Pain Relief"
-        subtitle="Free your neck, fix your posture, lose the headaches"
+        subtitle="Free your neck, improve your posture, lose the headaches"
       />
 
       <div className="bg-white py-16 px-6">

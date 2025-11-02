@@ -32,7 +32,7 @@ function GolfPerformance() {
               Your hips don't rotate fully. Your thoracic spine is stiff. Your shoulders are tight. You can't maintain your spine angle. By the back nine, everything hurts. You know the mechanics of a good swing, but your body physically can't execute it.
             </p>
             <p className="text-xl text-accent font-semibold">
-              No amount of swing coaching fixes physical limitations. You need better mobility and body mechanics.
+              No amount of swing coaching resolves physical limitations. You need better mobility and body mechanics.
             </p>
           </div>
 

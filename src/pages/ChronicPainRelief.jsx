@@ -230,10 +230,10 @@ function ChronicPainRelief() {
               Real Talk: Is This Right for You?
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              This approach works best if you're ready to be an active participant in your healing. If you want someone to "fix" you while you lie there passively, this probably isn't the right fit.
+              This approach works best if you're ready to be an active participant in your healing. If you want someone to "heal" you while you lie there passively, this probably isn't the right fit.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              But if you're tired of temporary fixes and ready to address the root cause of your pain, I can help. We'll work together to understand your body, release what's stuck, and teach you better ways to move.
+              But if you're tired of temporary solutions and ready to address the root cause of your pain, I can help. We'll work together to understand your body, release what's stuck, and teach you better ways to move.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               Book a free consultation and let's talk about whether this work makes sense for your situation.

@@ -121,7 +121,7 @@ function WhatIsMovementEducation() {
             <ul className="space-y-3 text-neutralDark/80">
               <li>✓ You've been training but keep getting injured</li>
               <li>✓ You want to move better, not just move more</li>
-              <li>✓ You're tired of compensating and want to fix the root issue</li>
+              <li>✓ You're tired of compensating and want to address the root issue</li>
               <li>✓ You value quality over quantity</li>
               <li>✓ You're willing to slow down to build something lasting</li>
             </ul>
