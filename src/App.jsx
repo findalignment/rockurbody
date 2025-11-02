@@ -88,10 +88,14 @@ const SportsInjuryPrevention = lazy(() => import('./pages/SportsInjuryPrevention
 const PlantarFasciitis = lazy(() => import('./pages/PlantarFasciitis'));
 const MobilityTraining = lazy(() => import('./pages/MobilityTraining'));
 const WhiplashRecovery = lazy(() => import('./pages/WhiplashRecovery'));
-const CrossFitRecovery = lazy(() => import('./pages/CrossFitRecovery'));
 const BreathingCore = lazy(() => import('./pages/BreathingCore'));
 const ScoliosisTreatment = lazy(() => import('./pages/ScoliosisTreatment'));
 const BalanceTraining = lazy(() => import('./pages/BalanceTraining'));
+const GolfPerformance = lazy(() => import('./pages/GolfPerformance'));
+const FrozenShoulder = lazy(() => import('./pages/FrozenShoulder'));
+const HeadacheMigraineRelief = lazy(() => import('./pages/HeadacheMigraineRelief'));
+const ITBandSyndrome = lazy(() => import('./pages/ITBandSyndrome'));
+const StressAnxietyRelief = lazy(() => import('./pages/StressAnxietyRelief'));
 
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
@@ -161,10 +165,14 @@ function AppRoutes() {
         <Route path="/plantar-fasciitis" element={<PlantarFasciitis />} />
         <Route path="/mobility-training" element={<MobilityTraining />} />
         <Route path="/whiplash-recovery" element={<WhiplashRecovery />} />
-        <Route path="/crossfit-recovery" element={<CrossFitRecovery />} />
         <Route path="/breathing-and-core" element={<BreathingCore />} />
         <Route path="/scoliosis-treatment" element={<ScoliosisTreatment />} />
         <Route path="/balance-training" element={<BalanceTraining />} />
+        <Route path="/golf-performance" element={<GolfPerformance />} />
+        <Route path="/frozen-shoulder" element={<FrozenShoulder />} />
+        <Route path="/headache-migraine-relief" element={<HeadacheMigraineRelief />} />
+        <Route path="/it-band-syndrome" element={<ITBandSyndrome />} />
+        <Route path="/stress-anxiety-relief" element={<StressAnxietyRelief />} />
         
         {/* Booking Routes */}
         <Route path="/book" element={<Book />} />
