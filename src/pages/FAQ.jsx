@@ -100,7 +100,7 @@ function FAQ() {
         },
         {
           q: "How long are sessions?",
-          a: <>It depends on what you book. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement sessions</Link> are typically 60 minutes. <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> sessions are 90 minutes (with one 2-hour session in the <Link to="/12-series" className="text-accent hover:underline">12-Series</Link>). <Link to="/pricing" className="text-accent hover:underline">Single sessions</Link> range from 60-120 minutes depending on what you need.</>
+          a: <>It depends on what you book. <Link to="/what-is-movement-education" className="text-accent hover:underline">Movement sessions</Link> are typically 60 minutes. <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> sessions can be 60 minutes, but I find people get significantly better results from 90-minute sessions. The 90-minute format allows deeper work and better integration. The <Link to="/12-series" className="text-accent hover:underline">12-Series</Link> includes one 2-hour session. <Link to="/pricing" className="text-accent hover:underline">Single sessions</Link> range from 60-120 minutes depending on what you need.</>
         }
       ]
     },

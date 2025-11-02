@@ -104,9 +104,15 @@ function Packages() {
       />
       <div className="pt-16 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <p className="text-xl text-neutralDark/80 mb-20 text-center max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-neutralDark/80 mb-8 text-center max-w-4xl mx-auto leading-relaxed">
             These aren't cookie-cutter workout plans. Each program is designed to actually address what's holding you back, whether that's a chronically tight hip, a stiff shoulder, or just feeling like your body's betraying you. You're not just buying sessions, you're buying freedom from stiff-body days. Not sure where to start? Let's chat. No fluff, no pushy sales, just us figuring out what your body wants to do.
           </p>
+
+          <div className="bg-sage/10 rounded-2xl p-6 mb-20 max-w-4xl mx-auto border-2 border-sage/20">
+            <p className="text-lg text-neutralDark/80 text-center leading-relaxed">
+              <strong className="text-primary">Want something different?</strong> The packages below are what most people choose, but we can create custom combinations to fit your needs. Want longer SI sessions and shorter training sessions? Need a different mix altogether? The sky is the limit. Let's talk about what works for you.
+            </p>
+          </div>
 
           {/* Movement Session Packages */}
           <div className="mb-20">
@@ -429,7 +435,7 @@ function Packages() {
                   </div>
                   
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
-                    <li>✓ 12 SI sessions</li>
+                    <li>✓ 12 SI sessions (90 min)</li>
                     <li>✓ 24 Movement sessions (60 min)</li>
                     <li>✓ Deep integration work</li>
                     <li>✓ Optimal results & retention</li>
@@ -457,7 +463,7 @@ function Packages() {
                   </div>
                   
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
-                    <li>✓ 12 SI sessions</li>
+                    <li>✓ 12 SI sessions (90 min)</li>
                     <li>✓ 36 Movement sessions (60 min)</li>
                     <li>✓ Maximum transformation</li>
                     <li>✓ Life-changing results</li>

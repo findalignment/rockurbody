@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
-import PaymentButton from '../components/PaymentButton';
 import Button from '../components/Button';
 
 function SmartStarts() {
@@ -64,7 +63,7 @@ function SmartStarts() {
       tagline: 'Complete transformation',
       price: 3720,
       sessions: '24 sessions',
-      breakdown: '12 SI + 12 Movement',
+      breakdown: '12 SI (60 min) + 12 Movement (60 min)',
       duration: '60 minutes each',
       totalSessions: 24,
       description: 'This isn\'t a tune-up.it\'s a complete rebuild. For when you\'re ready to fundamentally change how your body works, feels, and moves through life.',
@@ -195,14 +194,18 @@ function SmartStarts() {
                     </div>
                   </div>
 
-                  <PaymentButton
-                    packageType={pkg.name}
-                    totalSessions={pkg.totalSessions}
-                    amount={pkg.price}
-                    className="w-full bg-accent text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent/90 transition-colors border border-black"
+                  <a
+                    href={
+                      pkg.id === 'reset' ? 'https://buy.stripe.com/dRmfZhgcLcNF0l31wSefC04' :
+                      pkg.id === 'hip' ? 'https://buy.stripe.com/bJe8wPaSr7tl5FndfAefC05' :
+                      'https://buy.stripe.com/3cI9ATf8H3d50l32AWefC09'
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-accent text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent/90 transition-colors border border-black inline-block text-center"
                   >
                     Start {pkg.name}
-                  </PaymentButton>
+                  </a>
                 </div>
 
                 {/* Click indicator when collapsed */}
