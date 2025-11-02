@@ -73,7 +73,7 @@ function AnatomyTrainsSI() {
             </div>
 
             <p className="text-neutralDark/80 mt-4 text-sm">
-              (Plus the Arm Lines, Functional Lines, and Deep Front Arm Line)
+              (Plus the Arm Lines and Functional Lines)
             </p>
           </div>
 
@@ -95,10 +95,10 @@ function AnatomyTrainsSI() {
                   Opening and balancing the superficial fascial layers.
                 </p>
                 <ul className="space-y-1 text-neutralDark/80 ml-6 text-sm">
-                  <li>• Session 1: Breath and rib cage</li>
-                  <li>• Session 2: Feet, ankles, and lower legs</li>
-                  <li>• Session 3: Lateral line and side body</li>
-                  <li>• Session 4: Spiral line and rotation</li>
+                  <li>• Session 1: Front line</li>
+                  <li>• Session 2: Back line</li>
+                  <li>• Session 3: Lateral line</li>
+                  <li>• Session 4: Spiral line</li>
                 </ul>
               </div>
 
@@ -110,10 +110,10 @@ function AnatomyTrainsSI() {
                   Working with deeper structures and establishing core support.
                 </p>
                 <ul className="space-y-1 text-neutralDark/80 ml-6 text-sm">
-                  <li>• Session 5: Deep front line, pelvis to diaphragm</li>
-                  <li>• Session 6: Deep back line, sacrum to skull</li>
-                  <li>• Session 7: Head, neck, and jaw</li>
-                  <li>• Session 8: Integration of lower body</li>
+                  <li>• Session 5: Below the waist</li>
+                  <li>• Session 6: Above the waist</li>
+                  <li>• Session 7: Back side of the body</li>
+                  <li>• Session 8: Head and neck</li>
                 </ul>
               </div>
 
@@ -125,9 +125,9 @@ function AnatomyTrainsSI() {
                   Bringing everything together and refining the work.
                 </p>
                 <ul className="space-y-1 text-neutralDark/80 ml-6 text-sm">
-                  <li>• Session 9: Upper body integration</li>
-                  <li>• Session 10: Lower body integration</li>
-                  <li>• Session 11: Arm lines and shoulder girdle</li>
+                  <li>• Session 9: Integration below the waist</li>
+                  <li>• Session 10: Integration above the waist</li>
+                  <li>• Session 11: Arms</li>
                   <li>• Session 12: Full body integration and closure</li>
                 </ul>
               </div>
