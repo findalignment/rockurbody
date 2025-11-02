@@ -211,7 +211,7 @@ function KneePainTreatment() {
               For Santa Cruz Active People
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Whether you're a runner dealing with IT band pain, a hiker with bad knees going downhill, a surfer with knee issues from pop-ups, or just someone who wants to go up stairs without pain.I help Santa Cruz residents fix knee problems by fixing what's actually causing them.
+              Whether you're a runner dealing with IT band pain, a hiker with bad knees going downhill, a surfer with knee issues from pop-ups, or just someone who wants to go up stairs without pain.I help Santa Cruz residents fix knee problems by addressing what's actually causing them.
             </p>
           </div>
 

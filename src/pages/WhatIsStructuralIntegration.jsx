@@ -128,7 +128,7 @@ function WhatIsStructuralIntegration() {
               Many people feel a meaningful shift in 1–3 sessions. But lasting change? That usually needs 6–12 sessions with light homework between.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              This isn't a quick fix. It's change that holds because your movement changes. You're not just getting "worked on".you're learning a better way to inhabit your body.
+              This isn't a quick solution. It's change that holds because your movement changes. You're not just getting "worked on".you're learning a better way to inhabit your body.
             </p>
           </div>
 

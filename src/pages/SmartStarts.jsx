@@ -260,7 +260,7 @@ function SmartStarts() {
             Why Choose Movement Education & Structural Integration in Santa Cruz?
           </h3>
           <p className="text-base text-neutralDark/70 leading-relaxed text-center">
-            Whether you're seeking relief from chronic pain, improved athletic performance, or simply want to feel more at home in your body, these programs combine the best of hands-on <strong>structural integration</strong> and intelligent <strong>movement education</strong>. Located in Santa Cruz, I work with clients throughout the Bay Area who are ready to invest in lasting change.not quick fixes.
+            Whether you're seeking relief from chronic pain, improved athletic performance, or simply want to feel more at home in your body, these programs combine the best of hands-on <strong>structural integration</strong> and intelligent <strong>movement education</strong>. Located in Santa Cruz, I work with clients throughout the Bay Area who are ready to invest in lasting change.not quick solutions.
           </p>
         </div>
       </div>

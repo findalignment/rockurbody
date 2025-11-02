@@ -281,7 +281,7 @@ function AchillesTendonitis() {
               For Santa Cruz Runners and Athletes
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Whether you're trail running in the redwoods, surfing at Pleasure Point, or just want to walk without pain, Achilles tendonitis doesn't have to sideline you permanently. With the right combination of hands-on work, eccentric loading, and addressing contributing factors, most people make full recoveries. Let's fix your Achilles.
+              Whether you're trail running in the redwoods, surfing at Pleasure Point, or just want to walk without pain, Achilles tendonitis doesn't have to sideline you permanently. With the right combination of hands-on work, eccentric loading, and addressing contributing factors, most people make full recoveries. Let's address your Achilles.
             </p>
           </div>
 

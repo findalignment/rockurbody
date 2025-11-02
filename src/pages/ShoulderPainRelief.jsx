@@ -184,7 +184,7 @@ function ShoulderPainRelief() {
               For Santa Cruz Active People
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Whether you're a surfer dealing with paddling pain, a climber with shoulder impingement, or a desk worker with forward shoulder posture . I help Santa Cruz residents get their shoulders back. Let's figure out what's actually causing your pain and fix it for good.
+              Whether you're a surfer dealing with paddling pain, a climber with shoulder impingement, or a desk worker with forward shoulder posture . I help Santa Cruz residents get their shoulders back. Let's figure out what's actually causing your pain and address it properly.
             </p>
           </div>
 

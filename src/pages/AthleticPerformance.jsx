@@ -110,7 +110,7 @@ function AthleticPerformance() {
                   Through movement education:
                 </p>
                 <ul className="space-y-2 text-neutralDark/80 ml-6">
-                  <li>• Identify and fix compensation patterns</li>
+                  <li>• Identify and address compensation patterns</li>
                   <li>• Improve movement efficiency (less energy for same output)</li>
                   <li>• Enhance proprioception and body awareness</li>
                   <li>• Develop better breathing patterns for performance</li>

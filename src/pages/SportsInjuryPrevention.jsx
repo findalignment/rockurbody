@@ -32,7 +32,7 @@ function SportsInjuryPrevention() {
               Most injuries aren't random bad luck.they're the result of accumulated imbalances, poor movement patterns, and structural issues that finally reach a breaking point.
             </p>
             <p className="text-xl text-accent font-semibold">
-              What if you could identify and fix those issues BEFORE they become injuries?
+              What if you could identify and address those issues BEFORE they become injuries?
             </p>
           </div>
 

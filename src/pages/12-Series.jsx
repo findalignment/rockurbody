@@ -66,7 +66,7 @@ function TwelveSeries() {
           </li>
           <li style={{ marginBottom: '15px', paddingLeft: '30px', position: 'relative' }}>
             <span style={{ position: 'absolute', left: 0, fontSize: '20px' }}>✓</span>
-            People committed to long-term change (not a quick fix)
+            People committed to long-term change (not a quick solution)
           </li>
         </ul>
       </div>

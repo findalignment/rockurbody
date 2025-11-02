@@ -87,7 +87,7 @@ function Process() {
             Movement Education & Structural Integration in Santa Cruz
           </h2>
           <p className="text.lg text.neutralDark/80 leading.relaxed mb.8">
-            Whether you're seeking <strong>structural integration in Santa Cruz</strong>, <strong>personalized movement education</strong>, or <strong>exercise instruction in Santa Cruz</strong>, my approach follows a clear, time.tested process. This isn't about quick fixes.it's about understanding your body's story and rewriting it together.
+            Whether you're seeking <strong>structural integration in Santa Cruz</strong>, <strong>personalized movement education</strong>, or <strong>exercise instruction in Santa Cruz</strong>, my approach follows a clear, time.tested process. This isn't about quick solutions.it's about understanding your body's story and rewriting it together.
           </p>
         </div>
       </div>

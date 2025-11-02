@@ -125,7 +125,7 @@ function ShoulderPainTreatment() {
                   <li>• Compensations from an old ankle or hip injury</li>
                 </ul>
                 <p className="text-lg text-neutralDark/80 mt-3">
-                  I find and fix the actual source, not just where it hurts.
+                  I find and address the actual source, not just where it hurts.
                 </p>
               </div>
 

@@ -15,7 +15,7 @@ function RotatorCuffInjury() {
       <PageHero 
         imageSrc="/training-hero.jpg"
         title="Rotator Cuff Injury Treatment"
-        subtitle="Strengthen what's weak, release what's tight, fix what's broken"
+        subtitle="Strengthen what's weak, release what's tight, address what needs work"
       />
 
       <div className="bg-white py-16 px-6">

@@ -100,7 +100,7 @@ function Services() {
                   <ul className="space-y-2 text-neutralDark/80">
                     <li>• Many feel a meaningful shift in 1–3 sessions</li>
                     <li>• Lasting change usually needs 6–12 sessions with light homework</li>
-                    <li>• Not a quick fix. It's change that holds because your movement changes</li>
+                    <li>• Not a quick solution. It's change that holds because your movement changes</li>
                     <li>• I'll tell you if I'm not the right fit and refer out</li>
                   </ul>
                 </ExpandableSection>

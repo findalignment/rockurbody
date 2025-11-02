@@ -285,7 +285,7 @@ function BackPainSantaCruz() {
               <strong>This works best if:</strong> Your back pain is chronic (lasting months or years), you've tried conventional treatments without lasting results, and you're willing to be actively involved in your recovery.
             </p>
             <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-              <strong>This might not be right if:</strong> You want a quick fix without doing any work yourself, your pain is from acute injury (less than 6 weeks old), or you're looking for someone to just "crack your back."
+              <strong>This might not be right if:</strong> You want a quick solution without doing any work yourself, your pain is from acute injury (less than 6 weeks old), or you're looking for someone to just "crack your back."
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               <strong>Not sure?</strong> Book a free consultation. We'll talk about your specific situation and I'll let you know honestly if I think I can help.

@@ -29,7 +29,7 @@ function ThoracicOutletSyndrome() {
               Numbness or tingling in your hand, especially at night or when your arms are overhead. Weakness in your hand. Cold or discolored fingers. Pain in your shoulder, neck, or arm that's hard to pinpoint. Symptoms that come and go based on arm position.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              You've been told it might be carpal tunnel, or maybe something with your neck. You've tried wrist braces, ergonomic keyboards, physical therapy. Nothing fully fixes it. The symptoms are weird, inconsistent, and frustrating.
+              You've been told it might be carpal tunnel, or maybe something with your neck. You've tried wrist braces, ergonomic keyboards, physical therapy. Nothing fully resolves it. The symptoms are weird, inconsistent, and frustrating.
             </p>
             <p className="text-xl text-accent font-semibold">
               If symptoms change with arm position (especially overhead), it might be thoracic outlet syndrome.

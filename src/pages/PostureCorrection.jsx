@@ -9,7 +9,7 @@ function PostureCorrection() {
       <SEO 
         title="Posture Correction Santa Cruz | Fix Forward Head & Rounded Shoulders"
         description="Improve your posture permanently through Structural Integration. Address forward head, rounded shoulders, and postural imbalances in Santa Cruz."
-        keywords="posture correction santa cruz, fix posture, forward head posture, rounded shoulders, structural alignment, body alignment santa cruz"
+        keywords="posture correction santa cruz, improve posture, forward head posture, rounded shoulders, structural alignment, body alignment santa cruz"
       />
       
       <PageHero 
@@ -30,7 +30,7 @@ function PostureCorrection() {
               You've heard it your whole life: "Stand up straight!" "Pull your shoulders back!" But no matter how hard you try, within minutes you're back to your old posture. By the end of the day, you're exhausted from fighting your own body.
             </p>
             <p className="text-xl text-accent font-semibold mb-6">
-              Here's why: You can't fix posture with willpower alone.
+              Here's why: You can't improve posture with willpower alone.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed">
               Your posture is dictated by your fascial structure, muscle balance, and nervous system patterns. To change it permanently, we need to address all three.

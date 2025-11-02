@@ -88,7 +88,7 @@ function InjuryRecovery() {
                   1. Find the Real Problem
                 </h3>
                 <p className="text-neutralDark/80">
-                  Most injuries aren't random bad luck. They're the result of structural imbalances, movement compensation patterns, and accumulated stress. We find and fix those underlying issues.
+                  Most injuries aren't random bad luck. They're the result of structural imbalances, movement compensation patterns, and accumulated stress. We find and address those underlying issues.
                 </p>
               </div>
 
