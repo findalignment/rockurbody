@@ -6,6 +6,8 @@
  * @param {string} title - Page title to display over image
  * @param {string} subtitle - Optional subtitle
  * @param {string} overlayOpacity - Opacity of dark overlay (0-100, default 40)
+ * 
+ * Note: Automatically uses WebP format with JPG fallback for optimal performance
  */
 function PageHero({ 
   imageSrc, 
@@ -13,27 +15,30 @@ function PageHero({
   subtitle,
   overlayOpacity = 40 
 }) {
+  // Convert image path to WebP (e.g., "/about-hero.jpg" -> "/about-hero.webp")
+  const webpSrc = imageSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  
   return (
     <div className="relative -mt-24 -mx-[100vw] left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
       {/* Hero Image - Full Width */}
       <div className="relative h-[70vh] md:h-[95vh] overflow-hidden">
-        <div
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url(${imageSrc})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          {/* Optional subtle vignette */}
-          <div 
-            className="absolute inset-0"
-            style={{
-              background: 'radial-gradient(ellipse at center, transparent 40%, rgba(15, 23, 42, 0.2) 100%)'
-            }}
+        {/* Use picture element for WebP with fallback */}
+        <picture className="absolute inset-0 w-full h-full">
+          <source srcSet={webpSrc} type="image/webp" />
+          <img
+            src={imageSrc}
+            alt={title}
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            loading="lazy"
           />
-        </div>
+        </picture>
+        {/* Optional subtle vignette */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            background: 'radial-gradient(ellipse at center, transparent 40%, rgba(15, 23, 42, 0.2) 100%)'
+          }}
+        />
       </div>
       
       {/* Hero Text Below Image */}
