@@ -1,22 +1,11 @@
 /**
  * Web Vitals Monitoring
  * Tracks Core Web Vitals for performance monitoring
+ * 
+ * NOTE: This implementation uses native browser APIs only.
+ * For more advanced features, install 'web-vitals' package:
+ * npm install web-vitals
  */
-
-// Track Core Web Vitals
-export function reportWebVitals(onPerfEntry) {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    }).catch(() => {
-      // web-vitals not available, silently fail
-    });
-  }
-}
 
 // Simple performance tracking without external dependencies
 export function trackPerformance() {

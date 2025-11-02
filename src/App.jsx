@@ -1,6 +1,5 @@
 import { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { AuthProvider } from './contexts/AuthContext';
 import PageTransition from './components/PageTransition';
 import RoutePrefetcher from './components/RoutePrefetcher';
 
@@ -55,10 +54,6 @@ const ScheduleFullRepatterning = lazy(() => import('./pages/ScheduleFullRepatter
 const ScheduleCombo = lazy(() => import('./pages/ScheduleCombo'));
 const BlogIndex = lazy(() => import('./pages/blog/BlogIndex'));
 const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/IntegratingStructureAndMovement'));
-const Dashboard = lazy(() => import('./pages/Dashboard'));
-const Login = lazy(() => import('./pages/Login'));
-const Signup = lazy(() => import('./pages/Signup'));
-const ForgotPassword = lazy(() => import('./pages/ForgotPassword'));
 
 // SEO Pages
 const SantaCruzStructuralIntegration = lazy(() => import('./pages/SantaCruzStructuralIntegration'));
@@ -231,14 +226,6 @@ function AppRoutes() {
         <Route path="/schedule/full-repatterning" element={<ScheduleFullRepatterning />} />
         <Route path="/schedule/combo" element={<ScheduleCombo />} />
         
-        {/* Dashboard */}
-        <Route path="/dashboard" element={<Dashboard />} />
-        
-        {/* Auth Routes */}
-        <Route path="/auth/login" element={<Login />} />
-        <Route path="/auth/signup" element={<Signup />} />
-        <Route path="/auth/forgot-password" element={<ForgotPassword />} />
-        
         {/* Blog Routes - Not in navigation menu */}
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/integrating-structure-and-movement" element={<IntegratingStructureAndMovement />} />
@@ -262,11 +249,9 @@ function AppRoutes() {
 
 function App() {
   return (
-    <AuthProvider>
-      <Router>
-        <AppRoutes />
-      </Router>
-    </AuthProvider>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 
