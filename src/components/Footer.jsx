@@ -66,6 +66,9 @@ function Footer() {
               <Link to="/faq" className="block text-white/70 hover:text-white transition">
                 FAQ
               </Link>
+              <Link to="/blog" className="block text-white/70 hover:text-white transition">
+                Blog
+              </Link>
               <Link to="/contact" className="block text-white/70 hover:text-white transition">
                 Contact
               </Link>
