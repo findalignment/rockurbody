@@ -103,6 +103,18 @@ const CoreStrengthening = lazy(() => import('./pages/CoreStrengthening'));
 const ThoracicOutletSyndrome = lazy(() => import('./pages/ThoracicOutletSyndrome'));
 const PersonalTrainingPosture = lazy(() => import('./pages/PersonalTrainingPosture'));
 
+// Certification pages
+const AnatomyTrainsSI = lazy(() => import('./pages/certifications/AnatomyTrainsSI'));
+const AnatomyTrainsTeacher = lazy(() => import('./pages/certifications/AnatomyTrainsTeacher'));
+const NASMPersonalTrainer = lazy(() => import('./pages/certifications/NASMPersonalTrainer'));
+const NASMCorrectiveExercise = lazy(() => import('./pages/certifications/NASMCorrectiveExercise'));
+const ACEHealthCoach = lazy(() => import('./pages/certifications/ACEHealthCoach'));
+const ACECorrectiveExercise = lazy(() => import('./pages/certifications/ACECorrectiveExercise'));
+const MedFitParkinsons = lazy(() => import('./pages/certifications/MedFitParkinsons'));
+const MedFitRecovery = lazy(() => import('./pages/certifications/MedFitRecovery'));
+const PrecisionNutrition = lazy(() => import('./pages/certifications/PrecisionNutrition'));
+const MovNat = lazy(() => import('./pages/certifications/MovNat'));
+
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center bg-neutralDark">
@@ -230,6 +242,18 @@ function AppRoutes() {
         {/* Blog Routes - Not in navigation menu */}
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/integrating-structure-and-movement" element={<IntegratingStructureAndMovement />} />
+        
+        {/* Certification Pages - Not in navigation menu */}
+        <Route path="/certifications/anatomy-trains-structural-integration" element={<AnatomyTrainsSI />} />
+        <Route path="/certifications/anatomy-trains-teacher" element={<AnatomyTrainsTeacher />} />
+        <Route path="/certifications/nasm-personal-trainer" element={<NASMPersonalTrainer />} />
+        <Route path="/certifications/nasm-corrective-exercise" element={<NASMCorrectiveExercise />} />
+        <Route path="/certifications/ace-health-coach" element={<ACEHealthCoach />} />
+        <Route path="/certifications/ace-corrective-exercise" element={<ACECorrectiveExercise />} />
+        <Route path="/certifications/medfit-parkinsons" element={<MedFitParkinsons />} />
+        <Route path="/certifications/medfit-recovery" element={<MedFitRecovery />} />
+        <Route path="/certifications/precision-nutrition" element={<PrecisionNutrition />} />
+        <Route path="/certifications/movnat" element={<MovNat />} />
         </Routes>
       </Suspense>
     </PageTransition>

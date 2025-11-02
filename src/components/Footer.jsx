@@ -14,16 +14,36 @@ function Footer() {
               Rock Hudson
             </p>
             <div className="text-white/70 text-sm space-y-1">
-              <p>Anatomy Trains Structural Integration</p>
-              <p>Anatomy Trains Teacher in Training</p>
-              <p>NASM Certified Personal Trainer</p>
-              <p>NASM Corrective Exercise Specialist</p>
-              <p>ACE Health Coach</p>
-              <p>ACE Corrective Exercise Specialist</p>
-              <p>MedFit Parkinson's Disease Fitness Specialist</p>
-              <p>MedFit Drug & Alcohol Recovery Fitness Specialist</p>
-              <p>Precision Nutrition Coach Level 2</p>
-              <p>MovNat Level 2</p>
+              <Link to="/certifications/anatomy-trains-structural-integration" className="block hover:text-white transition">
+                Anatomy Trains Structural Integration
+              </Link>
+              <Link to="/certifications/anatomy-trains-teacher" className="block hover:text-white transition">
+                Anatomy Trains Teacher in Training
+              </Link>
+              <Link to="/certifications/nasm-personal-trainer" className="block hover:text-white transition">
+                NASM Certified Personal Trainer
+              </Link>
+              <Link to="/certifications/nasm-corrective-exercise" className="block hover:text-white transition">
+                NASM Corrective Exercise Specialist
+              </Link>
+              <Link to="/certifications/ace-health-coach" className="block hover:text-white transition">
+                ACE Health Coach
+              </Link>
+              <Link to="/certifications/ace-corrective-exercise" className="block hover:text-white transition">
+                ACE Corrective Exercise Specialist
+              </Link>
+              <Link to="/certifications/medfit-parkinsons" className="block hover:text-white transition">
+                MedFit Parkinson's Disease Fitness Specialist
+              </Link>
+              <Link to="/certifications/medfit-recovery" className="block hover:text-white transition">
+                MedFit Drug & Alcohol Recovery Fitness Specialist
+              </Link>
+              <Link to="/certifications/precision-nutrition" className="block hover:text-white transition">
+                Precision Nutrition Coach Level 2
+              </Link>
+              <Link to="/certifications/movnat" className="block hover:text-white transition">
+                MovNat Level 2
+              </Link>
             </div>
           </div>
           
