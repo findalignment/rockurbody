@@ -20,46 +20,78 @@ export default defineConfig({
   },
   build: {
     // Use default minification (esbuild)
-    minify: true,
+    minify: 'esbuild',
     // Optimize chunk splitting
     rollupOptions: {
       output: {
         manualChunks: (id) => {
           // Vendor chunks
           if (id.includes('node_modules')) {
+            // React ecosystem
             if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
               return 'react-vendor';
             }
+            // Firebase
+            if (id.includes('firebase') || id.includes('@firebase')) {
+              return 'firebase';
+            }
+            // Animations
             if (id.includes('framer-motion')) {
-              return 'framer-motion';
+              return 'animations';
             }
-            if (id.includes('openai')) {
-              return 'openai';
+            // Stripe
+            if (id.includes('stripe')) {
+              return 'stripe';
             }
-            // Group other large vendor libraries
+            // Other large vendors
             return 'vendor';
           }
           
-          // Page chunks - split by feature
+          // SEO pages (separate chunk as they're not often accessed)
+          if (id.includes('/src/pages/') && (
+            id.includes('SantaCruz') || 
+            id.includes('Pain') || 
+            id.includes('Relief') ||
+            id.includes('Treatment') ||
+            id.includes('Surfers') ||
+            id.includes('Climbers') ||
+            id.includes('Cyclists')
+          )) {
+            return 'seo-pages';
+          }
+          
+          // Certification pages
+          if (id.includes('/src/pages/certifications/')) {
+            return 'certification-pages';
+          }
+          
+          // Booking pages
+          if (id.includes('/src/pages/') && (id.includes('Book') || id.includes('Schedule'))) {
+            return 'booking-pages';
+          }
+          
+          // Main pages (frequently accessed)
+          if (id.includes('/src/pages/') && (
+            id.includes('Home') || 
+            id.includes('About') || 
+            id.includes('Services') || 
+            id.includes('Contact') ||
+            id.includes('Packages')
+          )) {
+            return 'main-pages';
+          }
+          
+          // Other pages
           if (id.includes('/src/pages/')) {
-            if (id.includes('Book') || id.includes('Schedule')) {
-              return 'booking-pages';
-            }
-            if (id.includes('Home') || id.includes('About') || id.includes('Services') || id.includes('Contact')) {
-              return 'main-pages';
-            }
-            if (id.includes('12-Series') || id.includes('Hip-Series') || id.includes('Structural') || id.includes('Movement')) {
-              return 'service-pages';
-            }
             return 'other-pages';
           }
           
           // Component chunks
           if (id.includes('/src/components/')) {
-            if (id.includes('CrystalClearHomepage') || id.includes('LandingPage') || id.includes('Hero')) {
+            if (id.includes('LandingPage') || id.includes('Hero')) {
               return 'homepage-components';
             }
-            if (id.includes('Chat') || id.includes('FloatingChat')) {
+            if (id.includes('Chat')) {
               return 'chat-components';
             }
             return 'ui-components';
@@ -72,20 +104,18 @@ export default defineConfig({
     // Additional optimizations
     target: 'esnext',
     sourcemap: false,
+    // CSS code splitting
+    cssCodeSplit: true,
+    // Optimize assets
+    assetsInlineLimit: 4096, // 4KB - inline small assets
   },
   // Optimize dependencies
   optimizeDeps: {
     include: [
       'react',
       'react-dom',
-      'react-router-dom',
-      'framer-motion'
+      'react-router-dom'
     ],
-  },
-  // Enable gzip compression
-  server: {
-    headers: {
-      'Cache-Control': 'public, max-age=31536000',
-    },
+    exclude: ['firebase', 'framer-motion'] // Let these load on demand
   },
 })
