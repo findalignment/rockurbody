@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 /**
  * Simple Markdown Text Parser
  * Converts **bold** text to <strong> tags
+ * Converts [text](url) to clickable links
  * Maintains line breaks and formatting
  */
 function MarkdownText({ text, className = '', typing = false, speed = 20, onComplete }) {
@@ -39,18 +41,65 @@ function MarkdownText({ text, className = '', typing = false, speed = 20, onComp
 
   // Parse markdown to HTML
   const parseMarkdown = (content) => {
-    // Split by ** to find bold sections
-    const parts = content.split(/(\*\*[^*]+\*\*)/g);
+    const elements = [];
+    let lastIndex = 0;
     
-    return parts.map((part, index) => {
-      // Check if this part is wrapped in **
-      if (part.startsWith('**') && part.endsWith('**')) {
-        const boldText = part.slice(2, -2);
-        return <strong key={index} className="font-bold">{boldText}</strong>;
+    // Combined regex to find both links [text](url) and bold **text**
+    const regex = /(\[([^\]]+)\]\(([^)]+)\))|(\*\*([^*]+)\*\*)/g;
+    let match;
+    
+    while ((match = regex.exec(content)) !== null) {
+      // Add text before the match
+      if (match.index > lastIndex) {
+        elements.push(
+          <span key={`text-${lastIndex}`}>
+            {content.substring(lastIndex, match.index)}
+          </span>
+        );
       }
-      // Regular text - preserve line breaks
-      return <span key={index}>{part}</span>;
-    });
+      
+      // Check if it's a link [text](url)
+      if (match[1]) {
+        const linkText = match[2];
+        const url = match[3];
+        elements.push(
+          <Link 
+            key={`link-${match.index}`}
+            to={url}
+            className="text-accent hover:text-accent/80 underline font-medium transition-colors"
+          >
+            {linkText}
+          </Link>
+        );
+      }
+      // Check if it's bold **text**
+      else if (match[4]) {
+        const boldText = match[5];
+        elements.push(
+          <strong key={`bold-${match.index}`} className="font-bold">
+            {boldText}
+          </strong>
+        );
+      }
+      
+      lastIndex = match.index + match[0].length;
+    }
+    
+    // Add remaining text after last match
+    if (lastIndex < content.length) {
+      elements.push(
+        <span key={`text-${lastIndex}`}>
+          {content.substring(lastIndex)}
+        </span>
+      );
+    }
+    
+    // If no matches found, return the whole content
+    if (elements.length === 0) {
+      elements.push(<span key="text-0">{content}</span>);
+    }
+    
+    return elements;
   };
 
   return (

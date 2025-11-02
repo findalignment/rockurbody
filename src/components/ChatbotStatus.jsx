@@ -37,13 +37,13 @@ function ChatbotStatus({ className = '' }) {
   const getStatusColor = () => {
     switch (status.color) {
       case 'green':
-        return 'text-green-600';
+        return 'text-emerald-700 bg-emerald-50 border-emerald-200';
       case 'yellow':
-        return 'text-yellow-600';
+        return 'text-amber-700 bg-amber-50 border-amber-200';
       case 'red':
-        return 'text-red-600';
+        return 'text-rose-700 bg-rose-50 border-rose-200';
       default:
-        return 'text-gray-600';
+        return 'text-gray-700 bg-gray-50 border-gray-200';
     }
   };
 
@@ -51,13 +51,13 @@ function ChatbotStatus({ className = '' }) {
     <div className={`relative ${className}`}>
       {/* Status Indicator */}
       <div 
-        className={`flex items-center gap-2 text-sm cursor-pointer hover:opacity-80 transition-opacity ${getStatusColor()}`}
+        className={`flex items-center gap-2 text-sm cursor-pointer hover:opacity-90 transition-all px-3 py-2 rounded-lg border ${getStatusColor()}`}
         onClick={() => setShowDetails(!showDetails)}
         title="Click for details"
       >
         <span className="text-lg">{getStatusIcon()}</span>
-        <span className="font-medium">Chat Status</span>
-        <span className="text-xs opacity-75">({status.status})</span>
+        <span className="font-semibold">Rock Bot</span>
+        <span className="text-xs font-medium">({status.status})</span>
       </div>
 
       {/* Detailed Status Panel */}
@@ -65,7 +65,7 @@ function ChatbotStatus({ className = '' }) {
         <div className="absolute top-8 right-0 bg-white border border-gray-200 rounded-lg shadow-lg p-4 z-50 min-w-80">
           <div className="space-y-3">
             <div className="flex items-center justify-between">
-              <h3 className="font-semibold text-gray-900">Chatbot Status</h3>
+              <h3 className="font-semibold text-gray-900">Rock Bot Status</h3>
               <button 
                 onClick={() => setShowDetails(false)}
                 className="text-gray-400 hover:text-gray-600"
@@ -121,7 +121,7 @@ function ChatbotStatus({ className = '' }) {
               {status.status === 'offline' && (
                 <div className="pt-2 border-t border-gray-100">
                   <p className="text-xs text-gray-600 mb-2">
-                    While the chatbot is offline, you can:
+                    While Rock Bot is offline, you can:
                   </p>
                   <ul className="text-xs text-gray-600 space-y-1">
                     <li>• Email: rock@rockurbody.com</li>
