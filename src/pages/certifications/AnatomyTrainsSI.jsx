@@ -141,7 +141,7 @@ function AnatomyTrainsSI() {
 
             <div className="space-y-4 text-neutralDark/80">
               <p>
-                <strong className="text-neutralDark">Extensive training:</strong> ATSI certification requires over 500 hours of training, including anatomy, hands-on technique, assessment, and supervised practice. This isn't a weekend certification.
+                <strong className="text-neutralDark">Extensive training:</strong> ATSI certification requires over 640 hours of training, including anatomy, hands-on technique, assessment, and supervised practice. This isn't a weekend certification. With additional anatomy and physiology coursework, I have over 750 hours of education in structural integration and bodywork.
               </p>
               <p>
                 <strong className="text-neutralDark">Deep anatomical knowledge:</strong> Understanding fascia, myofascial connections, biomechanics, and how the body organizes itself in gravity. This knowledge informs every session.
