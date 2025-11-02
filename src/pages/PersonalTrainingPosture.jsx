@@ -15,7 +15,7 @@ function PersonalTrainingPosture() {
       <PageHero 
         imageSrc="/training-hero.jpg"
         title="Personal Training & Posture Improvement"
-        subtitle="Not your typical personal trainer. I fix how you move, then make you stronger."
+        subtitle="Not your typical personal trainer. I improve how you move, then make you stronger."
       />
 
       <div className="bg-white py-16 px-6">
@@ -29,10 +29,10 @@ function PersonalTrainingPosture() {
               You've tried gyms, workout programs, maybe even personal trainers. You work hard, but results plateau. You're strong in the gym but still have pain. Your posture is still terrible. You feel like something fundamental is missing.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Here's what's missing: quality of movement. Most personal training focuses on how much you lift or how many reps you do. But if you're moving poorly, you're just getting really good at moving poorly. Then you wonder why your back hurts, your shoulder clicks, or you can't seem to fix your posture.
+              Here's what's missing: quality of movement. Most personal training focuses on how much you lift or how many reps you do. But if you're moving poorly, you're just getting really good at moving poorly. Then you wonder why your back hurts, your shoulder clicks, or you can't seem to improve your posture.
             </p>
             <p className="text-xl text-accent font-semibold">
-              I'm a personal coach who fixes your movement first, then builds strength on top of proper mechanics.
+              I'm a personal coach who addresses your movement first, then builds strength on top of proper mechanics.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ function PersonalTrainingPosture() {
                   I'm a Structural Integration Specialist + Personal Trainer
                 </h3>
                 <p className="text-neutralDark/80">
-                  Most fitness coaches only know exercise. I combine private training with structural bodywork. I can feel where you're restricted, see how you compensate, and actually fix the underlying issues before we load them with weight. This combination is rare and incredibly effective.
+                  Most fitness coaches only know exercise. I combine private training with structural bodywork. I can feel where you're restricted, see how you compensate, and actually address the underlying issues before we load them with weight. This combination is rare and incredibly effective.
                 </p>
               </div>
 
@@ -56,7 +56,7 @@ function PersonalTrainingPosture() {
                   Movement Quality Over Everything
                 </h3>
                 <p className="text-neutralDark/80">
-                  Before we worry about how much you're squatting, I make sure you can squat properly. Before we add weight to overhead pressing, we fix your shoulder mechanics. Quality first, then quantity. This prevents injury and actually creates better results.
+                  Before we worry about how much you're squatting, I make sure you can squat properly. Before we add weight to overhead pressing, we work on your shoulder mechanics. Quality first, then quantity. This prevents injury and actually creates better results.
                 </p>
               </div>
 
@@ -65,7 +65,7 @@ function PersonalTrainingPosture() {
                   Posture Improvement Is Built Into Everything
                 </h3>
                 <p className="text-neutralDark/80">
-                  Your posture isn't fixed by "standing up straight." It's fixed by addressing why you can't stand up straight (tight chest, weak back, poor breathing, fascial restrictions). Through structural bodywork and proper training, we rebuild your posture from the ground up.
+                  Your posture isn't improved by "standing up straight." It's improved by addressing why you can't stand up straight (tight chest, weak back, poor breathing, fascial restrictions). Through structural bodywork and proper training, we rebuild your posture from the ground up.
                 </p>
               </div>
 
@@ -107,13 +107,13 @@ function PersonalTrainingPosture() {
                   Phase 2: Structural Bodywork
                 </h3>
                 <p className="text-lg text-neutralDark/80 mb-3">
-                  Before we train hard, we fix what's broken:
+                  Before we train hard, we address what's limiting you:
                 </p>
                 <ul className="space-y-2 text-neutralDark/80 ml-6">
                   <li>• Hands-on Structural Integration to release restrictions</li>
                   <li>• Address chronic tightness limiting your movement</li>
                   <li>• Improve joint mobility</li>
-                  <li>• Fix postural issues at their source</li>
+                  <li>• Address postural issues at their source</li>
                   <li>• Create the physical capacity for proper movement</li>
                 </ul>
               </div>
@@ -130,7 +130,7 @@ function PersonalTrainingPosture() {
                   <li>• Breathing mechanics and core stability</li>
                   <li>• Joint-by-joint mobility work</li>
                   <li>• Motor control and body awareness</li>
-                  <li>• Fix your compensations before they become habits</li>
+                  <li>• Address your compensations before they become habits</li>
                 </ul>
               </div>
 
@@ -175,7 +175,7 @@ function PersonalTrainingPosture() {
                   Posture Improvement
                 </h3>
                 <ul className="space-y-2 text-neutralDark/80 text-sm">
-                  <li>• Fix forward head posture</li>
+                  <li>• Correct forward head posture</li>
                   <li>• Correct rounded shoulders</li>
                   <li>• Address anterior pelvic tilt</li>
                   <li>• Improve thoracic extension</li>
@@ -215,7 +215,7 @@ function PersonalTrainingPosture() {
                 </h3>
                 <ul className="space-y-2 text-neutralDark/80 text-sm">
                   <li>• Address chronic back pain</li>
-                  <li>• Fix neck and shoulder tension</li>
+                  <li>• Address neck and shoulder tension</li>
                   <li>• Knee and hip pain management</li>
                   <li>• Work around injuries intelligently</li>
                   <li>• Prevent future injuries through proper mechanics</li>
@@ -262,7 +262,7 @@ function PersonalTrainingPosture() {
               </p>
               <p>
                 <strong className="text-neutralDark">✓ Anyone dealing with chronic pain</strong><br/>
-                Back pain, neck pain, shoulder issues. You want to get stronger but need someone who can work around (and fix) your limitations.
+                Back pain, neck pain, shoulder issues. You want to get stronger but need someone who can work around (and address) your limitations.
               </p>
               <p>
                 <strong className="text-neutralDark">✓ Athletes wanting better movement quality</strong><br/>
@@ -270,7 +270,7 @@ function PersonalTrainingPosture() {
               </p>
               <p>
                 <strong className="text-neutralDark">✓ People serious about posture improvement</strong><br/>
-                You're tired of slouching, rounded shoulders, and forward head posture. You want structural bodywork combined with training to actually fix it.
+                You're tired of slouching, rounded shoulders, and forward head posture. You want structural bodywork combined with training to actually improve it.
               </p>
               <p>
                 <strong className="text-neutralDark">✓ Anyone wanting a smarter approach to fitness</strong><br/>
