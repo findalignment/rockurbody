@@ -4,6 +4,7 @@
  */
 
 import { securityHeaders } from './securityHeaders.js';
+import logger from './logger';
 
 /**
  * Security middleware for Vite dev server
@@ -23,7 +24,7 @@ export function securityMiddleware(req, res, next) {
 
   // Log security events
   if (req.url.includes('..') || req.url.includes('%2e%2e')) {
-    console.warn('🚨 Security Alert: Potential directory traversal attempt:', req.url);
+    logger.warn('🚨 Security Alert: Potential directory traversal attempt:', req.url);
     res.status(403).send('Forbidden: Directory traversal detected');
     return;
   }
@@ -35,7 +36,7 @@ export function securityMiddleware(req, res, next) {
   );
 
   if (hasSuspiciousParams) {
-    console.warn('🚨 Security Alert: Suspicious query parameters detected:', req.query);
+    logger.warn('🚨 Security Alert: Suspicious query parameters detected:', req.query);
     res.status(400).send('Bad Request: Suspicious parameters detected');
     return;
   }
@@ -139,7 +140,7 @@ export function requestLoggingMiddleware(options = {}) {
     const userAgent = req.headers['user-agent'];
 
     // Log request
-    console.log(`📝 ${req.method} ${req.url} - ${ip} - ${userAgent}`);
+    logger.log(`📝 ${req.method} ${req.url} - ${ip} - ${userAgent}`);
 
     // Log response
     res.on('finish', () => {
@@ -147,9 +148,9 @@ export function requestLoggingMiddleware(options = {}) {
       const status = res.statusCode;
       
       if (status >= 400) {
-        console.warn(`⚠️ ${req.method} ${req.url} - ${status} - ${duration}ms`);
+        logger.warn(`⚠️ ${req.method} ${req.url} - ${status} - ${duration}ms`);
       } else {
-        console.log(`✅ ${req.method} ${req.url} - ${status} - ${duration}ms`);
+        logger.log(`✅ ${req.method} ${req.url} - ${status} - ${duration}ms`);
       }
     });
 
@@ -170,7 +171,7 @@ export function errorHandlingMiddleware(options = {}) {
 
   return (err, req, res, next) => {
     if (logErrors) {
-      console.error('🚨 Error:', err);
+      logger.error('🚨 Error:', err);
     }
 
     // Don't expose internal errors in production

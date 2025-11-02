@@ -12,6 +12,7 @@ import {
   sendPasswordResetEmail
 } from 'firebase/auth';
 import { auth } from '../config/firebase';
+import logger from '../utils/logger';
 
 const AuthContext = createContext();
 
@@ -117,12 +118,12 @@ export function AuthProvider({ children }) {
       for (let attempt = 1; attempt <= 3; attempt++) {
         try {
           await sendPasswordResetEmail(auth, email, actionCodeSettings);
-          console.log('Password reset email sent successfully to:', email);
+          logger.log('Password reset email sent successfully to:', email);
           return;
         } catch (error) {
           lastError = error;
           if (error.code === 'auth/network-request-failed' && attempt < 3) {
-            console.log(`Password reset attempt ${attempt} failed, retrying...`);
+            logger.log(`Password reset attempt ${attempt} failed, retrying...`);
             await new Promise(resolve => setTimeout(resolve, 1000 * attempt)); // Wait 1s, 2s, 3s
             continue;
           }
@@ -131,7 +132,7 @@ export function AuthProvider({ children }) {
       }
       throw lastError;
     } catch (error) {
-      console.error('Password reset error:', error);
+      logger.error('Password reset error:', error);
       throw error;
     }
   }

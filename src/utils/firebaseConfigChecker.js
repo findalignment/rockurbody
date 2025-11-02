@@ -1,9 +1,11 @@
 /**
  * Firebase Configuration Checker
  * Validates Firebase configuration and provides debugging information
+ * NOTE: This utility is only for development/debugging purposes
  */
 
 import { auth } from '../config/firebase';
+import logger from './logger';
 
 /**
  * Check Firebase configuration and provide debugging info
@@ -18,8 +20,8 @@ export function checkFirebaseConfig() {
     appId: import.meta.env.VITE_FIREBASE_APP_ID
   };
 
-  console.log('🔍 Firebase Configuration Check:');
-  console.log('================================');
+  logger.log('🔍 Firebase Configuration Check:');
+  logger.log('================================');
   
   // Check each configuration value
   const checks = {
@@ -57,7 +59,7 @@ export function checkFirebaseConfig() {
 
   // Log each check
   Object.entries(checks).forEach(([key, check]) => {
-    console.log(`${check.status} ${key}: ${check.value}`);
+    logger.log(`${check.status} ${key}: ${check.value}`);
   });
 
   // Check for missing required values
@@ -66,7 +68,7 @@ export function checkFirebaseConfig() {
     .map(([key]) => key);
 
   if (missingRequired.length > 0) {
-    console.error('❌ Missing required configuration:', missingRequired);
+    logger.error('❌ Missing required configuration:', missingRequired);
     return {
       isValid: false,
       missing: missingRequired,
@@ -76,23 +78,23 @@ export function checkFirebaseConfig() {
 
   // Check auth domain format
   if (config.authDomain && !config.authDomain.includes('.firebaseapp.com')) {
-    console.warn('⚠️ Auth domain should end with .firebaseapp.com');
+    logger.warn('⚠️ Auth domain should end with .firebaseapp.com');
   }
 
   // Check current domain
   const currentDomain = window.location.hostname;
-  console.log(`🌐 Current domain: ${currentDomain}`);
+  logger.log(`🌐 Current domain: ${currentDomain}`);
   
   // Check if current domain matches auth domain
   if (config.authDomain && !config.authDomain.includes(currentDomain)) {
-    console.warn('⚠️ Current domain may not be authorized in Firebase');
-    console.log('💡 Add these domains to Firebase Console → Authentication → Settings → Authorized domains:');
-    console.log(`   - ${currentDomain}`);
-    console.log(`   - ${window.location.origin}`);
+    logger.warn('⚠️ Current domain may not be authorized in Firebase');
+    logger.log('💡 Add these domains to Firebase Console → Authentication → Settings → Authorized domains:');
+    logger.log(`   - ${currentDomain}`);
+    logger.log(`   - ${window.location.origin}`);
   }
 
-  console.log('================================');
-  console.log('✅ Firebase configuration appears valid');
+  logger.log('================================');
+  logger.log('✅ Firebase configuration appears valid');
   
   return {
     isValid: true,
@@ -106,7 +108,7 @@ export function checkFirebaseConfig() {
  */
 export async function testFirebaseConnection() {
   try {
-    console.log('🔄 Testing Firebase connection...');
+    logger.log('🔄 Testing Firebase connection...');
     
     // Check if auth object is available
     if (!auth) {
@@ -115,18 +117,18 @@ export async function testFirebaseConnection() {
 
     // Try to get current user (this tests the connection)
     const currentUser = auth.currentUser;
-    console.log('👤 Current user:', currentUser ? 'Logged in' : 'Not logged in');
+    logger.log('👤 Current user:', currentUser ? 'Logged in' : 'Not logged in');
     
     // Check auth state
-    console.log('🔐 Auth state:', auth.app ? 'Connected' : 'Not connected');
+    logger.log('🔐 Auth state:', auth.app ? 'Connected' : 'Not connected');
     
-    console.log('✅ Firebase connection test passed');
+    logger.log('✅ Firebase connection test passed');
     return {
       success: true,
       message: 'Firebase connection is working'
     };
   } catch (error) {
-    console.error('❌ Firebase connection test failed:', error);
+    logger.error('❌ Firebase connection test failed:', error);
     return {
       success: false,
       error: error.message,
@@ -142,10 +144,10 @@ export function checkDomainAuthorization() {
   const currentDomain = window.location.hostname;
   const currentOrigin = window.location.origin;
   
-  console.log('🌐 Domain Authorization Check:');
-  console.log('==============================');
-  console.log(`Current domain: ${currentDomain}`);
-  console.log(`Current origin: ${currentOrigin}`);
+  logger.log('🌐 Domain Authorization Check:');
+  logger.log('==============================');
+  logger.log(`Current domain: ${currentDomain}`);
+  logger.log(`Current origin: ${currentOrigin}`);
   
   // Common domains that should be authorized
   const commonDomains = [
@@ -156,9 +158,9 @@ export function checkDomainAuthorization() {
     'rockurbody.vercel.app'
   ];
   
-  console.log('💡 Make sure these domains are authorized in Firebase Console:');
+  logger.log('💡 Make sure these domains are authorized in Firebase Console:');
   commonDomains.forEach(domain => {
-    console.log(`   - ${domain}`);
+    logger.log(`   - ${domain}`);
   });
   
   // Check if current domain is in the list
@@ -167,11 +169,11 @@ export function checkDomainAuthorization() {
   );
   
   if (!isAuthorized) {
-    console.warn('⚠️ Current domain may not be authorized');
-    console.log('🔧 To fix: Go to Firebase Console → Authentication → Settings → Authorized domains');
-    console.log(`   Add: ${currentDomain}`);
+    logger.warn('⚠️ Current domain may not be authorized');
+    logger.log('🔧 To fix: Go to Firebase Console → Authentication → Settings → Authorized domains');
+    logger.log(`   Add: ${currentDomain}`);
   } else {
-    console.log('✅ Current domain appears to be authorized');
+    logger.log('✅ Current domain appears to be authorized');
   }
   
   return {
@@ -186,8 +188,8 @@ export function checkDomainAuthorization() {
  * Run comprehensive Firebase diagnostics
  */
 export async function runFirebaseDiagnostics() {
-  console.log('🔍 Running Firebase Diagnostics...');
-  console.log('===================================');
+  logger.log('🔍 Running Firebase Diagnostics...');
+  logger.log('===================================');
   
   const results = {
     config: checkFirebaseConfig(),
@@ -195,11 +197,11 @@ export async function runFirebaseDiagnostics() {
     domain: checkDomainAuthorization()
   };
   
-  console.log('===================================');
-  console.log('📊 Diagnostic Results:');
-  console.log(`Config Valid: ${results.config.isValid ? '✅' : '❌'}`);
-  console.log(`Connection OK: ${results.connection.success ? '✅' : '❌'}`);
-  console.log(`Domain Authorized: ${results.domain.isAuthorized ? '✅' : '❌'}`);
+  logger.log('===================================');
+  logger.log('📊 Diagnostic Results:');
+  logger.log(`Config Valid: ${results.config.isValid ? '✅' : '❌'}`);
+  logger.log(`Connection OK: ${results.connection.success ? '✅' : '❌'}`);
+  logger.log(`Domain Authorized: ${results.domain.isAuthorized ? '✅' : '❌'}`);
   
   return results;
 }

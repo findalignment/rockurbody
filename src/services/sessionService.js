@@ -1,4 +1,5 @@
 import base from '../config/airtable';
+import logger from '../utils/logger';
 
 // Session tracking service
 export class SessionService {
@@ -24,7 +25,7 @@ export class SessionService {
       
       return record[0].id;
     } catch (error) {
-      console.error('Error creating session package:', error);
+      logger.error('Error creating session package:', error);
       throw error;
     }
   }
@@ -44,7 +45,7 @@ export class SessionService {
         ...record.fields
       }));
     } catch (error) {
-      console.error('Error fetching session packages:', error);
+      logger.error('Error fetching session packages:', error);
       throw error;
     }
   }
@@ -88,7 +89,7 @@ export class SessionService {
 
       return sessionRecord[0].id;
     } catch (error) {
-      console.error('Error using session:', error);
+      logger.error('Error using session:', error);
       throw error;
     }
   }
@@ -108,7 +109,7 @@ export class SessionService {
         ...record.fields
       }));
     } catch (error) {
-      console.error('Error fetching sessions:', error);
+      logger.error('Error fetching sessions:', error);
       throw error;
     }
   }
@@ -235,7 +236,7 @@ export class SessionService {
       const packages = await this.getUserSessionPackages(userId);
       return packages.some(pkg => pkg['Sessions Remaining'] > 0);
     } catch (error) {
-      console.error('Error checking available sessions:', error);
+      logger.error('Error checking available sessions:', error);
       return false;
     }
   }

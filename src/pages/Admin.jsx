@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 // import { useAuth } from '../contexts/AuthContext';
 import PageLayout from '../components/PageLayout';
 // import { SessionService } from '../services/sessionService';
+import logger from '../utils/logger';
 
 function Admin() {
   // const { currentUser } = useAuth();
@@ -20,7 +21,7 @@ function Admin() {
         // For now, we'll show a message that this is for admin use
         setLoading(false);
       } catch (error) {
-        console.error('Error loading packages:', error);
+        logger.error('Error loading packages:', error);
         setLoading(false);
       }
     };
@@ -41,7 +42,7 @@ function Admin() {
       setSessionType('');
       setSelectedPackage(null);
     } catch (error) {
-      console.error('Error marking session as used:', error);
+      logger.error('Error marking session as used:', error);
       alert('Error marking session as used');
     }
   };

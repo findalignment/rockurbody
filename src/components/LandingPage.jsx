@@ -10,6 +10,7 @@ import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
 import { handleChatbotRequest, retryChatbotRequest, startHealthMonitoring } from '../utils/chatbotReliability';
+import logger from '../utils/logger';
 
 function LandingPage() {
   const [input, setInput] = useState('');
@@ -205,7 +206,7 @@ function LandingPage() {
         }
       }
     } catch (err) {
-      console.error('Unexpected error:', err);
+      logger.error('Unexpected error:', err);
       
       // Fallback for unexpected errors
       const fallbackMessage = {

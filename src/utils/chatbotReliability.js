@@ -3,6 +3,8 @@
  * Handles chatbot failures, provides fallbacks, and monitors health
  */
 
+import logger from './logger';
+
 // Chatbot health status
 let chatbotHealth = {
   isHealthy: true,
@@ -69,7 +71,7 @@ export function updateChatbotHealth(success, error = null) {
   }
   
   // Log health status
-  console.log('Chatbot Health:', {
+  logger.log('Chatbot Health:', {
     isHealthy: chatbotHealth.isHealthy,
     consecutiveFailures: chatbotHealth.consecutiveFailures,
     successRate: `${Math.round((chatbotHealth.successfulRequests / chatbotHealth.totalRequests) * 100)}%`,
@@ -138,7 +140,7 @@ export async function handleChatbotRequest(apiCall, userMessage, conversationHis
   try {
     // Check if chatbot is healthy
     if (!chatbotHealth.isHealthy && chatbotHealth.consecutiveFailures >= 3) {
-      console.warn('Chatbot marked as unhealthy, using fallback response');
+      logger.warn('Chatbot marked as unhealthy, using fallback response');
       return {
         success: false,
         isFallback: true,
@@ -161,7 +163,7 @@ export async function handleChatbotRequest(apiCall, userMessage, conversationHis
     };
     
   } catch (error) {
-    console.error('Chatbot request failed:', error);
+    logger.error('Chatbot request failed:', error);
     
     // Update health on failure
     updateChatbotHealth(false, error);
@@ -242,14 +244,14 @@ export function startHealthMonitoring() {
     
     // If chatbot has been down for more than 10 minutes, try to recover
     if (!health.isHealthy && health.uptime > 600000) { // 10 minutes
-      console.log('Attempting chatbot recovery...');
+      logger.log('Attempting chatbot recovery...');
       chatbotHealth.consecutiveFailures = 0;
       chatbotHealth.isHealthy = true;
     }
     
     // Log health status
     if (!health.isHealthy) {
-      console.warn('Chatbot Health Alert:', {
+      logger.warn('Chatbot Health Alert:', {
         status: 'Unhealthy',
         consecutiveFailures: health.consecutiveFailures,
         lastError: health.lastError,

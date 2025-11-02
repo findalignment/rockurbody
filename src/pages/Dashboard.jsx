@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import { useAuth } from '../contexts/AuthContext';
+import logger from '../utils/logger';
 
 function Dashboard() {
   const { currentUser, logout, updateUserProfile, updateUserEmail, updateUserPassword } = useAuth();
@@ -67,7 +68,7 @@ function Dashboard() {
         const data = await response.json();
         setPackages(data.packages);
       } catch (error) {
-        console.error('Error fetching packages:', error);
+        logger.error('Error fetching packages:', error);
         // Don't set error - just show empty state
         setPackages([]);
       } finally {
@@ -96,7 +97,7 @@ function Dashboard() {
         const data = await response.json();
         setUpcomingSessions(data.sessions);
       } catch (error) {
-        console.error('Error fetching upcoming sessions:', error);
+        logger.error('Error fetching upcoming sessions:', error);
         // Don't set error - just show empty state
         setUpcomingSessions([]);
       } finally {
@@ -125,7 +126,7 @@ function Dashboard() {
         const data = await response.json();
         setSessions(data.sessions);
       } catch (error) {
-        console.error('Error fetching sessions:', error);
+        logger.error('Error fetching sessions:', error);
         // Don't set error - just show empty state
         setSessions([]);
       } finally {
@@ -154,7 +155,7 @@ function Dashboard() {
         const data = await response.json();
         setPayments(data.payments);
       } catch (error) {
-        console.error('Error fetching payment history:', error);
+        logger.error('Error fetching payment history:', error);
         // Don't set error - just show empty state
         setPayments([]);
       } finally {
@@ -171,7 +172,7 @@ function Dashboard() {
       await logout();
       navigate('/');
     } catch (error) {
-      console.error('Logout error:', error);
+      logger.error('Logout error:', error);
     }
     setLoading(false);
   }
@@ -219,7 +220,7 @@ function Dashboard() {
       // Clear success message after 5 seconds
       setTimeout(() => setUpdateSuccess(''), 5000);
     } catch (error) {
-      console.error('Profile update error:', error);
+      logger.error('Profile update error:', error);
       let errorMessage = 'Failed to update profile. ';
       
       if (error.code === 'auth/wrong-password') {

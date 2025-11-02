@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import { useAuth } from '../contexts/AuthContext';
+import logger from '../utils/logger';
 
 function ForgotPassword() {
   const { resetPassword } = useAuth();
@@ -27,7 +28,7 @@ function ForgotPassword() {
       setSuccess(true);
       setEmail('');
     } catch (error) {
-      console.error('Password reset error:', error);
+      logger.error('Password reset error:', error);
       
       // Enhanced error handling
       if (error.code === 'auth/user-not-found') {

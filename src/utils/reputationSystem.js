@@ -3,6 +3,8 @@
  * Tracks user behavior over time and implements automated moderation
  */
 
+import logger from './logger';
+
 const STORAGE_KEY = 'user_reputation';
 const BAN_DURATION = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
 

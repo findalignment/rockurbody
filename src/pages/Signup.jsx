@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import PageLayout from '../components/PageLayout';
+import logger from '../utils/logger';
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ function Signup() {
       navigate('/dashboard');
     } catch (error) {
       setError('Failed to create an account. Please try again.');
-      console.error('Signup error:', error);
+      logger.error('Signup error:', error);
     }
 
     setLoading(false);

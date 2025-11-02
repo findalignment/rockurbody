@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import PageLayout from '../components/PageLayout';
+import logger from '../utils/logger';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -27,7 +28,7 @@ function Login() {
       navigate(from, { replace: true });
     } catch (error) {
       setError('Failed to log in. Please check your credentials.');
-      console.error('Login error:', error);
+      logger.error('Login error:', error);
     }
 
     setLoading(false);

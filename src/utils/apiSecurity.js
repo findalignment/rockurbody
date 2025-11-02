@@ -3,6 +3,8 @@
  * Enhanced security for API calls and data handling
  */
 
+import logger from './logger';
+
 // Rate limiting store
 const rateLimitStore = new Map();
 const MAX_REQUESTS_PER_MINUTE = 60;
@@ -289,7 +291,7 @@ export async function secureApiRequest(url, options = {}, identifier = 'anonymou
     
     return response;
   } catch (error) {
-    console.error('API request failed:', error);
+    logger.error('API request failed:', error);
     throw error;
   }
 }

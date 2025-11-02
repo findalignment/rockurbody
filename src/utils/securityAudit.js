@@ -5,6 +5,7 @@
 
 import { validateEnvironmentVariables } from './apiSecurity.js';
 import { securityCheck } from './chatSecurity.js';
+import logger from './logger';
 
 /**
  * Security audit results
@@ -354,7 +355,7 @@ async function checkClientSideSecurity(audit) {
     'low',
     'Client-Side Security',
     'Console logging may expose sensitive information',
-    'Remove or secure console.log statements in production'
+    'Remove or secure logger.log statements in production'
   );
 }
 

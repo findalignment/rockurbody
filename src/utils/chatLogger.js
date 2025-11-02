@@ -1,13 +1,15 @@
 // Simple chat logging utility for analytics and improvement
 // Logs questions to help refine chatbot and identify common questions for website
 
+import logger from './logger';
+
 const LOG_ENDPOINT = import.meta.env.VITE_LOG_ENDPOINT || 'https://formspree.io/f/YOUR_FORM_ID';
 
 export async function logChatQuestion(question, metadata = {}) {
   try {
     // Don't log in development unless explicitly enabled
     if (import.meta.env.DEV && !import.meta.env.VITE_ENABLE_LOGGING) {
-      console.log('[Chat Log]:', question, metadata);
+      logger.log('[Chat Log]:', question, metadata);
       return;
     }
 
@@ -37,17 +39,17 @@ export async function logChatQuestion(question, metadata = {}) {
     });
 
     // Also log to console in production for debugging
-    console.log('[Chat Question Logged]:', question);
+    logger.log('[Chat Question Logged]:', question);
   } catch (error) {
     // Silently fail - don't disrupt user experience if logging fails
-    console.error('[Chat Logging Error]:', error);
+    logger.error('[Chat Logging Error]:', error);
   }
 }
 
 export async function logChatEvent(eventType, eventData = {}) {
   try {
     if (import.meta.env.DEV && !import.meta.env.VITE_ENABLE_LOGGING) {
-      console.log('[Chat Event]:', eventType, eventData);
+      logger.log('[Chat Event]:', eventType, eventData);
       return;
     }
 
@@ -70,9 +72,9 @@ export async function logChatEvent(eventType, eventData = {}) {
       }),
     });
 
-    console.log('[Chat Event Logged]:', eventType);
+    logger.log('[Chat Event Logged]:', eventType);
   } catch (error) {
-    console.error('[Chat Event Logging Error]:', error);
+    logger.error('[Chat Event Logging Error]:', error);
   }
 }
 

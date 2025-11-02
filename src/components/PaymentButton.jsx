@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import stripePromise from '../config/stripe';
+import logger from '../utils/logger';
 
 function PaymentButton({ 
   amount, 
@@ -43,7 +44,7 @@ function PaymentButton({
 
       if (!response.ok) {
         const errorText = await response.text();
-        console.error('Backend error:', errorText);
+        logger.error('Backend error:', errorText);
         alert('Payment system is temporarily unavailable. Please email rock@rockurbody.com to complete your purchase.');
         setLoading(false);
         return;
@@ -52,7 +53,7 @@ function PaymentButton({
       const session = await response.json();
 
       if (!session.id) {
-        console.error('No session ID returned');
+        logger.error('No session ID returned');
         alert('Payment system error. Please contact rock@rockurbody.com to complete your purchase.');
         setLoading(false);
         return;
@@ -64,11 +65,11 @@ function PaymentButton({
       });
 
       if (result.error) {
-        console.error('Stripe error:', result.error);
+        logger.error('Stripe error:', result.error);
         alert(`Payment failed: ${result.error.message}. Please contact rock@rockurbody.com for assistance.`);
       }
     } catch (error) {
-      console.error('Payment error:', error);
+      logger.error('Payment error:', error);
       alert('Payment system is temporarily unavailable. Please email rock@rockurbody.com to complete your purchase.');
     } finally {
       setLoading(false);

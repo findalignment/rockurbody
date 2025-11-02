@@ -4,6 +4,8 @@
  * Note: In production, this should be done server-side
  */
 
+import logger from './logger';
+
 const IP_STORAGE_KEY = 'ip_rate_limits';
 const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
 const MAX_REQUESTS_PER_WINDOW = 10;

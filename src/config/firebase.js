@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import logger from '../utils/logger';
 
 // Firebase configuration from environment variables
 const firebaseConfig = {
@@ -13,7 +14,7 @@ const firebaseConfig = {
 };
 
 // Debug: Log config to console
-console.log('Firebase config loaded:', {
+logger.log('Firebase config loaded:', {
   apiKey: firebaseConfig.apiKey ? `${firebaseConfig.apiKey.substring(0, 10)}...` : 'Missing',
   authDomain: firebaseConfig.authDomain || 'Missing',
   projectId: firebaseConfig.projectId || 'Missing'
@@ -25,7 +26,7 @@ const hasValidConfig = firebaseConfig.apiKey &&
                        firebaseConfig.projectId;
 
 if (!hasValidConfig) {
-  console.warn('Firebase config incomplete - authentication will be disabled');
+  logger.warn('Firebase config incomplete - authentication will be disabled');
 }
 
 // Initialize Firebase
@@ -38,14 +39,14 @@ if (hasValidConfig) {
     app = initializeApp(firebaseConfig);
     auth = getAuth(app);
     db = getFirestore(app);
-    console.log('Firebase initialized successfully');
+    logger.log('Firebase initialized successfully');
   } catch (error) {
-    console.error('Firebase initialization error:', error);
+    logger.error('Firebase initialization error:', error);
     // Don't throw - allow app to load without Firebase
-    console.warn('App will continue without Firebase authentication');
+    logger.warn('App will continue without Firebase authentication');
   }
 } else {
-  console.warn('Skipping Firebase initialization - config missing');
+  logger.warn('Skipping Firebase initialization - config missing');
 }
 
 export { auth, db };
