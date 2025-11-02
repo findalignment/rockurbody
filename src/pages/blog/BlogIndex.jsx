@@ -5,6 +5,14 @@ import PageHero from '../../components/PageHero';
 function BlogIndex() {
   const blogPosts = [
     {
+      id: 'phone-reshaping-skeleton',
+      title: 'Your Phone is Reshaping Your Skeleton (And We Can Do Better)',
+      subtitle: 'How technology is literally changing our bodies and what we can do about it',
+      date: 'November 2, 2025',
+      excerpt: "Technology is literally changing people's bodies. Learn how your fascia adapts to screen time, why text neck is about more than just your neck, and how we can design technology that works with human bodies instead of breaking them.",
+      path: '/blog/phone-reshaping-skeleton'
+    },
+    {
       id: 'integrating-structure-and-movement',
       title: 'Why Training with Rock is Different: The Power of Integrating Structure and Movement',
       subtitle: 'Breaking Free from Pain Patterns Through Whole-Body Transformation',
