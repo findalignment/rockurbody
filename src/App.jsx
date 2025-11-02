@@ -101,6 +101,7 @@ const AchillesTendonitis = lazy(() => import('./pages/AchillesTendonitis'));
 const BunionFootPain = lazy(() => import('./pages/BunionFootPain'));
 const CoreStrengthening = lazy(() => import('./pages/CoreStrengthening'));
 const ThoracicOutletSyndrome = lazy(() => import('./pages/ThoracicOutletSyndrome'));
+const PersonalTrainingPosture = lazy(() => import('./pages/PersonalTrainingPosture'));
 
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
@@ -183,6 +184,7 @@ function AppRoutes() {
         <Route path="/bunion-foot-pain" element={<BunionFootPain />} />
         <Route path="/core-strengthening" element={<CoreStrengthening />} />
         <Route path="/thoracic-outlet-syndrome" element={<ThoracicOutletSyndrome />} />
+        <Route path="/personal-training-posture" element={<PersonalTrainingPosture />} />
         
         {/* Booking Routes */}
         <Route path="/book" element={<Book />} />
