@@ -444,14 +444,21 @@
   <!-- Blog -->
   <url>
     <loc>https://rockurbody.com/blog</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
+    <loc>https://rockurbody.com/blog/phone-reshaping-skeleton</loc>
+    <lastmod>2025-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>https://rockurbody.com/blog/integrating-structure-and-movement</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
