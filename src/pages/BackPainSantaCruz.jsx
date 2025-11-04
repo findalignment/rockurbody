@@ -13,7 +13,7 @@ function BackPainSantaCruz() {
       />
       
       <PageHero 
-        imageSrc="/process-hero.jpg"
+        imageSrc="/back-pain-hero.jpg"
         title="Back Pain Relief in Santa Cruz"
         subtitle="Address the root cause, not just the symptoms"
       />

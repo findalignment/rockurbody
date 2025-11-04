@@ -13,7 +13,7 @@ function NASMPersonalTrainer() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/nasm-cpt-hero.jpg"
         title="NASM Certified Personal Trainer"
         subtitle="Evidence-based training backed by exercise science"
       />

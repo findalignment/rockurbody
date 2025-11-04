@@ -41,7 +41,7 @@ function DailyMobility() {
       </Helmet>
 
       <PageHero 
-        imageSrc="/images/mobility-hero.jpg"
+        imageSrc="/daily-mobility-hero.jpg"
         title="The 5-Minute Mobility Routine"
         subtitle="Movement hygiene for your body"
       />

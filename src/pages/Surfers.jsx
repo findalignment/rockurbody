@@ -13,7 +13,7 @@ function Surfers() {
       />
       
       <PageHero 
-        imageSrc="/hero-background.jpg"
+        imageSrc="/surfers-hero.jpg"
         title="For Surfers"
         subtitle="Stay in the water, surf longer, feel better"
       />

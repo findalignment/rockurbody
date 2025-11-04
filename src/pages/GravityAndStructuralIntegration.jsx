@@ -41,7 +41,7 @@ function GravityAndStructuralIntegration() {
       </Helmet>
 
       <PageHero 
-        imageSrc="/images/si-hero.jpg"
+        imageSrc="/gravity-structural-integration-hero.jpg"
         title="Improving Your Relationship With Gravity"
         subtitle="What if instead of fighting gravity, you could work with it?"
       />

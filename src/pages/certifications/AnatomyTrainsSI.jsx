@@ -13,7 +13,7 @@ function AnatomyTrainsSI() {
       />
       
       <PageHero 
-        imageSrc="/services-hero.jpg"
+        imageSrc="/atsi-certification-hero.jpg"
         title="Anatomy Trains Structural Integration"
         subtitle="The foundation of my structural bodywork practice"
       />

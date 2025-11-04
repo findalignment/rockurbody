@@ -41,7 +41,7 @@ function ExerciseForLife() {
       </Helmet>
 
       <PageHero 
-        imageSrc="/images/movement-hero.jpg"
+        imageSrc="/exercise-for-life-hero.jpg"
         title="Exercise for Life's Challenges"
         subtitle="Because picking up your kid matters more than your bench press PR"
       />

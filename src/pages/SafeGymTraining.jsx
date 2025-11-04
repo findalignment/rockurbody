@@ -41,7 +41,7 @@ function SafeGymTraining() {
       </Helmet>
 
       <PageHero 
-        imageSrc="/images/training-hero.jpg"
+        imageSrc="/safe-gym-training-hero.jpg"
         title="How to Not Get Hurt in the Gym"
         subtitle="Because taking 6 weeks off for an injury is worse than missing a PR"
       />
