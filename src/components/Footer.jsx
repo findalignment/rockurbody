@@ -69,6 +69,18 @@ function Footer() {
               <Link to="/blog" className="block text-white/70 hover:text-white transition">
                 Blog
               </Link>
+              <Link to="/gravity-and-structural-integration" className="block text-white/70 hover:text-white transition">
+                Working With Gravity
+              </Link>
+              <Link to="/exercise-for-life" className="block text-white/70 hover:text-white transition">
+                Exercise for Life
+              </Link>
+              <Link to="/safe-gym-training" className="block text-white/70 hover:text-white transition">
+                Safe Training
+              </Link>
+              <Link to="/5-minute-mobility" className="block text-white/70 hover:text-white transition">
+                Daily Mobility
+              </Link>
               <Link to="/contact" className="block text-white/70 hover:text-white transition">
                 Contact
               </Link>

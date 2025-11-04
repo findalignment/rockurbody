@@ -99,6 +99,10 @@ const BunionFootPain = lazy(() => import('./pages/BunionFootPain'));
 const CoreStrengthening = lazy(() => import('./pages/CoreStrengthening'));
 const ThoracicOutletSyndrome = lazy(() => import('./pages/ThoracicOutletSyndrome'));
 const PersonalTrainingPosture = lazy(() => import('./pages/PersonalTrainingPosture'));
+const GravityAndStructuralIntegration = lazy(() => import('./pages/GravityAndStructuralIntegration'));
+const ExerciseForLife = lazy(() => import('./pages/ExerciseForLife'));
+const SafeGymTraining = lazy(() => import('./pages/SafeGymTraining'));
+const DailyMobility = lazy(() => import('./pages/DailyMobility'));
 
 // Certification pages
 const AnatomyTrainsSI = lazy(() => import('./pages/certifications/AnatomyTrainsSI'));
@@ -194,6 +198,10 @@ function AppRoutes() {
         <Route path="/core-strengthening" element={<CoreStrengthening />} />
         <Route path="/thoracic-outlet-syndrome" element={<ThoracicOutletSyndrome />} />
         <Route path="/personal-training-posture" element={<PersonalTrainingPosture />} />
+        <Route path="/gravity-and-structural-integration" element={<GravityAndStructuralIntegration />} />
+        <Route path="/exercise-for-life" element={<ExerciseForLife />} />
+        <Route path="/safe-gym-training" element={<SafeGymTraining />} />
+        <Route path="/5-minute-mobility" element={<DailyMobility />} />
         
         {/* Booking Routes */}
         <Route path="/book" element={<Book />} />
