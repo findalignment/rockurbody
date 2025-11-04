@@ -34,7 +34,7 @@ function Book() {
               src="https://cal.com/rockyourbody"
               className="w-full rounded-xl"
               style={{
-                height: '800px',
+                height: '1400px',
                 border: 'none'
               }}
               title="Book a session"
