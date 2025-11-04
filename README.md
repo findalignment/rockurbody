@@ -36,13 +36,6 @@ A production-ready, full-featured business website built for Rock Your Body, a S
 - Free consultation booking
 - Session type options (30/60/90/120 min)
 
-### 💳 Stripe Payment Integration
-- Direct checkout links for all packages
-- 8 payment tiers configured
-- Movement packs (5/10/20 sessions)
-- Program packages (Hip Freedom, Full Repatterning, etc.)
-- Success/cancel page handling
-
 ### 🔍 Comprehensive SEO
 - **41 keyword-targeted pages** for Google visibility
 - Santa Cruz local SEO optimization
@@ -50,12 +43,6 @@ A production-ready, full-featured business website built for Rock Your Body, a S
 - Structured data (Schema.org)
 - Meta tags optimized for all pages
 - Problem-specific landing pages (pain relief, injury recovery, etc.)
-
-### 🎓 Certification Showcase
-- **10 certification pages** linked from footer
-- Expert credentials detailed
-- Training history and lineage
-- Educational content about methodologies
 
 ### 🔒 Security & Performance
 - **0 vulnerabilities** (npm audit clean)
