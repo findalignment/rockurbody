@@ -1,82 +1,127 @@
 # Airtable Setup Guide
 
-## Required Tables
+## Finding Your Airtable Credentials
 
-### 1. Session Packages Table
-Create a table called "Session Packages" with these fields:
+### 1. Base ID
 
-| Field Name | Field Type | Description |
-|------------|------------|-------------|
-| User ID | Single line text | Firebase user ID |
-| Package Type | Single line text | e.g., "The Reset", "Hip Series" |
-| Total Sessions | Number | Total sessions in package |
-| Sessions Used | Number | Sessions already used |
-| Sessions Remaining | Number | Sessions left to use |
-| Amount Paid | Currency | Amount paid for package |
-| Purchase Date | Date | When package was purchased |
-| Status | Single select | Active, Completed, Cancelled |
-| Stripe Session ID | Single line text | Stripe checkout session ID (for receipt lookup) |
-| Cal.com Link | URL | Link to book sessions |
+Your Base ID should look like: `appXXXXXXXXXXXXXX` (starts with "app" followed by 14 characters)
 
-**Note:** The Stripe Session ID is used to fetch payment receipts and card details from Stripe.
+**How to find it:**
 
-### 2. Individual Sessions Table
-Create a table called "Individual Sessions" with these fields:
+1. Open your Airtable base in a web browser
+2. Look at the URL, it will look like:
+   ```
+   https://airtable.com/appABC1234567890/tblXYZ987654321/...
+                        ^^^^^^^^^^^^^^^^
+                        This is your Base ID
+   ```
+3. Copy just the part that starts with `app` (17 characters total)
 
-| Field Name | Field Type | Description |
-|------------|------------|-------------|
-| User ID | Single line text | Firebase user ID |
-| Package ID | Single line text | ID of the session package (optional) |
-| Session Date | Date | When session was held (include time) |
-| Session Type | Single line text | e.g., "Movement Education", "Structural Integration" |
-| Duration | Number | Session length in minutes (30, 60, 90, 120) |
-| Status | Single select | Scheduled, Completed, Cancelled |
-| Notes | Long text | Session notes and progress tracking |
-| Cal.com Booking ID | Single line text | Cal.com booking reference |
-| Cal.com Reschedule URL | URL | Link to reschedule the session |
-| Cal.com Cancel URL | URL | Link to cancel the session |
+**Current issue:** Your `.env.local` has `AeB6tFMIhlzY4R?` which:
+- Doesn't start with `app`
+- Has a `?` at the end
+- Is too short
 
-## Environment Variables
+### 2. Personal Access Token (API Key)
 
-Add these to your `.env` file:
+**How to create one:**
+
+1. Go to https://airtable.com/create/tokens
+2. Click "Create new token"
+3. Give it a name like "Rock Your Body Site Images"
+4. Add these scopes:
+   - `data.records:read`
+   - `data.records:write` (optional, for future updates)
+   - `schema.bases:read`
+5. Add access to your specific base:
+   - Click "Add a base"
+   - Select your "Site Images" base
+6. Click "Create token"
+7. Copy the token (it starts with `pat` and is very long)
+
+**Current status:** ✅ Token looks good (`patWGVUY0yiZq3L...`)
+
+### 3. Table Name
+
+The table name in your Airtable base. Default is `Site Images`.
+
+**How to check:**
+1. Open your base
+2. Look at the tabs at the top of your base
+3. One should be named "Site Images" (or whatever you called it)
+
+**Current status:** Using `Site Images`
+
+## Your .env.local File Should Look Like:
 
 ```env
-AIRTABLE_API_KEY=your_airtable_api_key
-AIRTABLE_BASE_ID=your_base_id
+# Airtable Configuration
+AIRTABLE_API_KEY=patWGVUY0yiZq3L1234567890abcdefghijklmnop
+AIRTABLE_BASE_ID=appABC1234567890
+AIRTABLE_TABLE_NAME=Site Images
 ```
 
-## Getting Your Airtable Credentials
+## Quick Fix
 
-1. **API Key**: Go to https://airtable.com/account → Personal access tokens → Create new token
-2. **Base ID**: Go to your base → Help → API documentation → Base ID is in the URL
+**Right now, you need to:**
 
-## Cal.com Integration
+1. Open your `.env.local` file
+2. Find the line with `AIRTABLE_BASE_ID`
+3. Replace `AeB6tFMIhlzY4R?` with your correct Base ID from the Airtable URL
+4. Make sure it starts with `app` and has no `?` at the end
+5. Save the file
+6. Run `npm run download-images` again
 
-Set up these event types in Cal.com (based on your existing setup):
+## Example URL Breakdown
 
-### Session Types (Your Cal.com Setup):
-- `consult` - Free consultations
-- `move30` - 30-minute Movement sessions
-- `move60` - 60-minute Movement sessions
-- `move90` - 90-minute Movement sessions
-- `move120` - 120-minute Movement sessions
-- `si60` - 60-minute Structural Integration sessions
-- `si90` - 90-minute Structural Integration sessions
-- `si120` - 120-minute Structural Integration sessions
+If your Airtable URL is:
+```
+https://airtable.com/appABC1234567890/tblDEF9876543210/viwGHI1122334455?blocks=hide
+```
 
-### Package Breakdown:
-- **The Reset**: 3 move60 + 3 si60 = $990
-- **Hip Freedom - Basic**: 4 si60 + 4 move60 = $1,320
-- **Hip Freedom - Extended**: 4 si60 + 8 move60 = $1,920
-- **Full Repatterning - Basic**: 12 si60 + 12 move60 = $3,720
-- **Full Repatterning - Extended**: 12 si60 + 24 move60 = $5,400
-- **Full Repatterning - Premium**: 12 si120 + 12 move60 = $5,400
-- **Full Repatterning - Ultimate**: 12 si120 + 24 move60 = $7,200
+Then:
+- **Base ID:** `appABC1234567890`
+- **Table ID:** `tblDEF9876543210` (you don't need this)
+- **View ID:** `viwGHI1122334455` (you don't need this)
 
-## Testing the Flow
+Just grab the part that starts with `app`!
 
-1. User purchases a package → Stripe webhook creates record in Airtable
-2. User sees package in dashboard with "Book Session" button
-3. Button links to Cal.com for booking
-4. After session, manually update "Sessions Used" in Airtable
-5. Dashboard automatically updates remaining sessions
+## Testing the Connection
+
+Once you've updated your `.env.local` file, test it with:
+
+```bash
+npm run download-images
+```
+
+You should see:
+```
+✅ Loaded .env.local
+🚀 Starting Airtable image download...
+📦 Base ID: appXXXXXXXXXXXXXX
+📊 Table: Site Images
+📁 Output: /Users/rockhudson/Desktop/rockurbody/public
+
+📥 Fetching records from Airtable...
+✅ Found XX records
+```
+
+## Troubleshooting
+
+### Still getting 404?
+- Double-check the Base ID starts with `app`
+- Make sure your token has access to this specific base
+- Verify the table name matches exactly (case-sensitive)
+
+### Getting 401 Unauthorized?
+- Your token might be expired or invalid
+- Create a new token at https://airtable.com/create/tokens
+- Make sure the token has the right scopes and base access
+
+### Getting 403 Forbidden?
+- Your token doesn't have access to this base
+- Edit your token to add access to this specific base
+
+---
+
+**Need help?** The error messages will guide you through common issues!
