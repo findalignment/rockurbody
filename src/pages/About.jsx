@@ -87,12 +87,6 @@ function About() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-sage/5 rounded-2xl p-10 shadow-sm border-l-4 border-accent">
-              <p className="text-base text-neutralDark/70 italic">
-                <strong className="text-neutralDark not-italic">Fun fact:</strong> I once tested someone's hip mobility by having them climb a ladder sideways. Yes, really. Sometimes the weirdest movements reveal the most useful information about how your body compensates.
-              </p>
-            </div>
           </div>
         </div>
       </div>

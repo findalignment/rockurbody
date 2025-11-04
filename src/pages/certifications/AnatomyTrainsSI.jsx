@@ -26,7 +26,10 @@ function AnatomyTrainsSI() {
               What is Anatomy Trains Structural Integration?
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Anatomy Trains Structural Integration (ATSI) is a hands-on bodywork method that reorganizes the fascia (connective tissue) to improve posture, movement, and overall body function. It's based on the Anatomy Trains myofascial meridians map developed by Tom Myers, which describes how fascia connects throughout the body in continuous lines of tension.
+              Anatomy Trains Structural Integration (ATSI) is a hands-on bodywork method that reorganizes the fascia (connective tissue) to improve posture, movement, and overall body function. It's based on the <a href="https://www.anatomytrains.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Anatomy Trains</a> myofascial meridians map developed by <a href="https://www.anatomytrains.com/about/tom-myers/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Tom Myers</a>, which describes how fascia connects throughout the body in continuous lines of tension.
+            </p>
+            <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
+              Tom Myers is a pioneer in the field of structural integration and myofascial anatomy. His work mapping the myofascial meridians has transformed how we understand and work with the body's fascial system. His book, <a href="https://www.anatomytrains.com/product/anatomy-trains-book/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline"><em>Anatomy Trains: Myofascial Meridians for Manual Therapists and Movement Professionals</em></a>, is considered essential reading in bodywork and movement education.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
               ATSI is not massage. Massage works with muscles for relaxation and circulation. Structural Integration works with fascia to reorganize your body's structure. It's systematic, progressive, and focused on lasting change, not temporary relief.
@@ -42,7 +45,7 @@ function AnatomyTrainsSI() {
             </h2>
             
             <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
-              Tom Myers' Anatomy Trains map describes 12 myofascial meridians (continuous lines of fascia) running through the body:
+              Tom Myers' groundbreaking <a href="https://www.anatomytrains.com/fascia/myofascial-meridians/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Anatomy Trains map</a> describes 12 myofascial meridians (continuous lines of fascia) running through the body. Here are the five primary lines we work with in the first four sessions:
             </p>
 
             <div className="space-y-4">
@@ -221,7 +224,7 @@ function AnatomyTrainsSI() {
             </p>
 
             <ul className="space-y-2 text-neutralDark/80 ml-6">
-              <li>• <strong className="text-neutralDark">Anatomy Trains Teacher in Training:</strong> Assisting and co-teaching courses with Tom Myers himself, deepening my understanding and ability to explain the work.</li>
+              <li>• <strong className="text-neutralDark">Anatomy Trains Teacher in Training:</strong> I've had the privilege of assisting and co-teaching <a href="https://www.anatomytrains.com/courses/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Anatomy Trains courses</a> with Tom Myers himself, deepening my understanding and ability to explain the work.</li>
               <li>• <strong className="text-neutralDark">Combining with movement education:</strong> Structural work creates capacity. Movement education teaches you how to use that capacity. The combination is more powerful than either alone.</li>
               <li>• <strong className="text-neutralDark">Adapting to individual needs:</strong> Not everyone needs the full 12-Series. I can adapt the work to your specific goals and limitations.</li>
             </ul>
@@ -231,8 +234,11 @@ function AnatomyTrainsSI() {
             <h2 className="text-2xl font-heading text-primary mb-4">
               The ATSI Difference
             </h2>
-            <p className="text-lg text-neutralDark/80 leading-relaxed">
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
               Anatomy Trains Structural Integration is one of the most thorough and anatomically-informed approaches to Structural Integration available. The certification ensures I have the knowledge, skills, and systematic approach to create real, lasting change in your body's structure and function.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed">
+              Learn more about the Anatomy Trains approach and Tom Myers' work at <a href="https://www.anatomytrains.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-semibold">AnatomyTrains.com</a>.
             </p>
           </div>
 
