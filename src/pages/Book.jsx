@@ -3,7 +3,7 @@ import PageLayout from '../components/PageLayout';
 function Book() {
   return (
     <PageLayout>
-      <div className="bg-white py-16 px-6">
+      <div className="bg-white pt-32 pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-5xl font-heading text-primary mb-6 text-center">
             Book Your Session

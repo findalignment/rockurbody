@@ -87,12 +87,14 @@ function Footer() {
             <p className="text-white/60 text-sm italic mb-4">
               (I promise I only do one bad pun per session.)
             </p>
-            <Link
-              to="/book"
+            <a
+              href="https://cal.com/rockyourbody/15min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition"
             >
               Let's Talk
-            </Link>
+            </a>
           </div>
         </div>
         
