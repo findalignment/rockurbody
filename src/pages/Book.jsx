@@ -1,6 +1,35 @@
+import { useEffect } from 'react';
 import PageLayout from '../components/PageLayout';
 
 function Book() {
+  useEffect(() => {
+    // Listen for messages from Cal.com iframe
+    const handleMessage = (event) => {
+      // Check if message is from Cal.com and indicates a booking was completed
+      if (event.origin === 'https://cal.com' && event.data) {
+        try {
+          const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+          
+          // Cal.com sends different event types - listen for booking completion
+          if (data.type === 'booking:success' || data.event === 'booking:success') {
+            // Wait a moment for the confirmation to show, then reload
+            setTimeout(() => {
+              window.location.reload();
+            }, 2000);
+          }
+        } catch (e) {
+          // Ignore parsing errors for non-JSON messages
+        }
+      }
+    };
+
+    window.addEventListener('message', handleMessage);
+    
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, []);
+
   return (
     <PageLayout>
       <div className="bg-white pt-32 pb-16 px-6">
