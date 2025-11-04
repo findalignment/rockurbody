@@ -21,14 +21,14 @@ function PageHero({
   return (
     <div className="relative -mt-24 -mx-[100vw] left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
       {/* Hero Image - Full Width */}
-      <div className="relative h-[70vh] md:h-[95vh] overflow-hidden">
+      <div className="relative h-[75vh] md:h-[85vh] overflow-hidden">
         {/* Use picture element for WebP with fallback */}
         <picture className="absolute inset-0 w-full h-full">
           <source srcSet={webpSrc} type="image/webp" />
           <img
             src={imageSrc}
             alt={title}
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="absolute inset-0 w-full h-full object-cover object-top"
             loading="lazy"
           />
         </picture>
