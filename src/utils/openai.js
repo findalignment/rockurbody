@@ -1,3 +1,5 @@
+import logger from './logger';
+
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
 export async function sendMessageToAI(userMessage, conversationHistory = [], suggestedPage = null) {
@@ -554,25 +556,25 @@ You: "Probably, but let's make sure. What's been going on? How long? What have y
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      console.error('OpenAI API Error:', response.status, errorData);
+      logger.error('OpenAI API Error:', response.status, errorData);
       throw new Error(`API request failed with status ${response.status}`);
     }
 
     const data = await response.json();
     
     if (data.error) {
-      console.error('OpenAI Error:', data.error);
+      logger.error('OpenAI Error:', data.error);
       throw new Error(data.error.message || 'Unknown API error');
     }
     
     if (!data.choices || !data.choices[0] || !data.choices[0].message) {
-      console.error('Invalid API response:', data);
+      logger.error('Invalid API response:', data);
       throw new Error('Invalid response format from API');
     }
     
     return data.choices[0].message.content;
   } catch (error) {
-    console.error('OpenAI API Error:', error);
+    logger.error('OpenAI API Error:', error);
     return "I'm having trouble connecting right now. Please try the navigation menu above.";
   }
 }
