@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import PageHero from './PageHero';
-import Button from './Button';
 
 /**
  * Reusable template for location-based SEO pages
@@ -224,26 +224,14 @@ function LocationPageTemplate({
           <div className="bg-primary text-white p-10 md:p-12 rounded-2xl text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Move Better?</h2>
             <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
-              Let's get your body back in business. Book a session in {city} today.
+              Let's get your body back in business. Book a consultation in {city} today.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto mb-6">
-              <Button 
-                to="/consult"
-                variant="secondary"
-                size="large"
-                className="w-full sm:w-auto"
-              >
-                Free Consultation
-              </Button>
-              <Button 
-                to="/book"
-                variant="accent"
-                size="large"
-                className="w-full sm:w-auto"
-              >
-                Book a Session
-              </Button>
-            </div>
+            <Link
+              to="/consult"
+              className="inline-block px-8 py-4 bg-accent text-white rounded-lg font-semibold text-lg hover:bg-accent/90 transition-colors shadow-lg"
+            >
+              Free Consultation
+            </Link>
             <p className="mt-6 text-base text-white/70">
               Round-trip drive time billed at standard hourly rate • No upcharge for mobile service
             </p>
