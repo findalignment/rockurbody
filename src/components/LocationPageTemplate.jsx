@@ -102,10 +102,10 @@ function LocationPageTemplate({
                   Hi, I'm Rock Hudson. I specialize in helping people in {city} move better, feel better, and get lasting results through a unique combination of structural integration (like Rolfing) and intelligent movement education.
                 </p>
                 <p className="text-lg md:text-xl text-neutralDark/80 leading-relaxed mb-6">
-                  Unlike typical personal trainers who just count reps, I look at <em>why</em> your body moves the way it does. Through hands-on bodywork and personalized movement coaching, I help you address the root causes of pain, stiffness, and limitation—not just treat symptoms.
+                  Unlike typical personal trainers who just count reps, I look at <em>why</em> your body moves the way it does. Through hands-on bodywork and personalized movement coaching, I help you address the root causes of pain, stiffness, and limitation, not just treat symptoms.
                 </p>
                 <p className="text-base md:text-lg text-neutralDark/70 leading-relaxed">
-                  Movement is your foundation. When that foundation is compromised—whether by old injuries, compensation patterns, or simply years of repetitive stress—everything becomes harder. My approach addresses both structure (how your tissues are organized) and function (how you actually move). That's why the changes hold.
+                  Movement is your foundation. When that foundation is compromised by old injuries, compensation patterns, or simply years of repetitive stress, everything becomes harder. My approach addresses both structure (how your tissues are organized) and function (how you actually move). That's why the changes hold.
                 </p>
               </div>
             </div>
@@ -116,7 +116,7 @@ function LocationPageTemplate({
             <h3 className="text-2xl md:text-3xl font-bold text-neutralDark mb-6">Why {city} Clients Choose Mobile Sessions</h3>
             <div className="prose prose-lg max-w-none text-neutralDark/80">
               <p className="leading-relaxed mb-4">
-                Training in your own space eliminates the barrier of commuting to yet another appointment. For busy professionals in {city}, this matters. You're not fighting traffic or rearranging your schedule around gym hours. Sessions happen in your home, your garage gym, or even at a local park—wherever you're most comfortable and focused.
+                Training in your own space eliminates the barrier of commuting to yet another appointment. For busy professionals in {city}, this matters. You're not fighting traffic or rearranging your schedule around gym hours. Sessions happen in your home, your garage gym, or even at a local park, wherever you're most comfortable and focused.
               </p>
               <p className="leading-relaxed mb-4">
                 The work itself doesn't change. Whether we're in my Santa Cruz studio or at your location in {city}, you get the same thorough assessment, the same hands-on structural integration, the same personalized movement education. I bring a professional massage table for bodywork sessions and all necessary equipment for movement training. The quality and attention to detail remain consistent.
@@ -195,78 +195,6 @@ function LocationPageTemplate({
             </div>
           )}
 
-          {/* Drive Time & Cost Calculator */}
-          <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-neutralDark mb-8">Drive Time & Session Cost from Santa Cruz</h2>
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              {/* Map */}
-              <div className="rounded-xl overflow-hidden shadow-lg border border-neutralLight">
-                <iframe
-                  src={`https://www.google.com/maps/embed/v1/directions?key=YOUR_API_KEY&origin=311+Soquel+Ave+Santa+Cruz+CA+95062&destination=${encodeURIComponent(city + ', CA')}&mode=driving`}
-                  width="100%"
-                  height="400"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={`Driving directions from Santa Cruz to ${city}`}
-                />
-              </div>
-
-              {/* Calculator */}
-              <div className="bg-sage/10 p-8 rounded-xl">
-                <h3 className="text-xl font-bold text-neutralDark mb-4">Estimate Your Session Cost</h3>
-                <div className="space-y-4 mb-6">
-                  <div className="bg-white p-4 rounded-lg">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-neutralDark/70">Drive Time (round-trip):</span>
-                      <span className="font-bold text-primary">{driveTime === '45 minutes' ? '1.5 hours' : driveTime.includes('hour') ? driveTime.replace('minutes', 'min').replace(' ', '') : `${parseInt(driveTime) * 2} minutes`}</span>
-                    </div>
-                    <p className="text-sm text-neutralDark/60 italic">
-                      *Actual time varies with traffic and roadwork
-                    </p>
-                  </div>
-
-                  <div className="bg-white p-4 rounded-lg">
-                    <div className="text-neutralDark/70 mb-2">Example: 90-Minute SI Session</div>
-                    <div className="space-y-1 text-sm">
-                      <div className="flex justify-between">
-                        <span>Session (90 min @ $180/hr):</span>
-                        <span className="font-semibold">$270</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span>Drive time ({driveTime.includes('hour') ? driveTime.split(' ')[0] + ' hr' : Math.round(parseInt(driveTime) * 2 / 60 * 10) / 10 + ' hr'} @ $180/hr):</span>
-                        <span className="font-semibold">${driveTime.includes('hour') ? Math.round(parseFloat(driveTime) * 180) : Math.round(parseInt(driveTime) * 2 / 60 * 180)}</span>
-                      </div>
-                      <div className="border-t border-neutralLight pt-2 flex justify-between text-base">
-                        <span className="font-bold">Total Investment:</span>
-                        <span className="font-bold text-primary">${270 + (driveTime.includes('hour') ? Math.round(parseFloat(driveTime) * 180) : Math.round(parseInt(driveTime) * 2 / 60 * 180))}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="text-sm text-neutralDark/70 leading-relaxed">
-                  <p className="mb-2"><strong>Note:</strong> All session types billed at $180/hour for active work time. Drive time charged at the same rate for round-trip travel.</p>
-                  <p>Package discounts available for committed series (12-Series, movement packages, etc.)</p>
-                </div>
-
-                <a
-                  href={`https://www.google.com/maps/dir/311+Soquel+Ave,+Santa+Cruz,+CA+95062/${encodeURIComponent(city + ', CA')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                  </svg>
-                  <span>Get Directions in Google Maps</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
           {/* What to Expect */}
           <div className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-neutralDark mb-8">What to Expect</h2>
@@ -274,19 +202,19 @@ function LocationPageTemplate({
               <div className="border-l-4 border-accent pl-6">
                 <h4 className="text-xl md:text-2xl font-bold text-neutralDark mb-3">Initial Assessment</h4>
                 <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">
-                  We start with a thorough movement assessment and conversation about your goals, history, and what's getting in the way. I'll explain what I see and recommend a specific plan—not a generic program.
+                  We start with a thorough movement assessment and conversation about your goals, history, and what's getting in the way. I'll explain what I see and recommend a specific plan, not a generic program.
                 </p>
               </div>
               <div className="border-l-4 border-primary pl-6">
                 <h4 className="text-xl md:text-2xl font-bold text-neutralDark mb-3">Tailored Sessions</h4>
                 <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">
-                  Each session combines hands-on structural work with movement education specific to your patterns. I bring everything needed—massage table for bodywork, equipment for movement training. Sessions in {city} are conducted with the same attention to detail as those in my studio.
+                  Each session combines hands-on structural work with movement education specific to your patterns. I bring everything needed: massage table for bodywork, equipment for movement training. Sessions in {city} are conducted with the same attention to detail as those in my studio.
                 </p>
               </div>
               <div className="border-l-4 border-sage pl-6">
                 <h4 className="text-xl md:text-2xl font-bold text-neutralDark mb-3">Measurable Progress</h4>
                 <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">
-                  Most clients feel meaningful changes within 3-6 sessions. Lasting transformation typically requires 8-12 sessions with consistent practice. This isn't quick-fix work—it's change that holds because your movement patterns actually shift.
+                  Most clients feel meaningful changes within 3-6 sessions. Lasting transformation typically requires 8-12 sessions with consistent practice. This isn't quick-fix work. It's change that holds because your movement patterns actually shift.
                 </p>
               </div>
             </div>
