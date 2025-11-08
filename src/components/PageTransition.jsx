@@ -4,22 +4,25 @@ import { useLocation } from 'react-router-dom';
 const pageVariants = {
   initial: {
     opacity: 0,
-    scale: 0.98,
+    y: 8,
+    scale: 0.99,
   },
   in: {
     opacity: 1,
+    y: 0,
     scale: 1,
   },
   out: {
     opacity: 0,
-    scale: 1.02,
+    y: -8,
+    scale: 0.99,
   }
 };
 
 const pageTransition = {
   type: 'tween',
-  ease: [0.22, 1, 0.36, 1], // Custom cubic-bezier for smooth, elegant motion
-  duration: 0.5
+  ease: [0.32, 0.72, 0, 1], // Apple-like cubic-bezier for smooth, elegant motion
+  duration: 0.6
 };
 
 // Reduced motion variant

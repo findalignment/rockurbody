@@ -25,6 +25,20 @@ body {
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transform: translate3d(0, 0, 0);
+  /* Enable GPU acceleration for smoother animations */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Optimize all animated elements */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth transitions for interactive elements */
+a, button {
+  transition: all 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 /* Custom Animations */
