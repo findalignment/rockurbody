@@ -92,7 +92,7 @@ function LocationPageTemplate({
             <div className="flex flex-col md:flex-row gap-8 items-start">
               <div className="md:w-1/3 flex-shrink-0">
                 <img 
-                  src="/rock.jpg" 
+                  src="/rock.png" 
                   alt="Rock Hudson, certified structural integrator and movement specialist in Santa Cruz" 
                   className="w-full rounded-xl shadow-lg"
                 />

@@ -17,7 +17,7 @@ Enhanced all 37 location pages with improved SEO, professional photo, interactiv
 - Descriptive alt text: "Rock Hudson, certified structural integrator and movement specialist in Santa Cruz"
 - Responsive layout: full-width on mobile, 1/3 width on desktop
 
-**Action Required:** Make sure `/public/rock.jpg` exists. If not, add your professional headshot photo with that filename.
+**Status:** ✅ Photo added as `/public/rock.png`
 
 ---
 
@@ -161,13 +161,11 @@ All hero images should be compressed to **< 300 KB** each:
 
 ## Immediate Next Steps
 
-### 1. Add Your Photo ⚠️ REQUIRED
-```bash
-# Add your professional headshot as:
-/public/rock.jpg
-```
-Recommended specs:
-- Format: JPG
+### 1. ✅ Photo Added
+Your photo is already in place at `/public/rock.png`
+
+If you want to update it:
+- Format: PNG or JPG
 - Size: 800×1000px (portrait orientation)
 - File size: < 200 KB
 - Professional, approachable look
@@ -261,7 +259,7 @@ All images now use `<picture>` element with WebP + JPG fallback:
 ## Questions?
 
 - **Maps not showing?** → Check `GOOGLE_MAPS_SETUP.md`
-- **Photo not loading?** → Ensure `/public/rock.jpg` exists
+- **Photo not loading?** → Check `/public/rock.png` exists and is optimized
 - **Images too slow?** → Follow `IMAGE_OPTIMIZATION_GUIDE.md`
 - **Calculator showing wrong cost?** → Check individual location page's `driveTime` prop
 
