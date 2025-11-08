@@ -33,25 +33,6 @@ function ProgramPageTemplate({
       <div className="pt-20 pb-24 px-4 md:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
 
-          {/* Quick Overview Box */}
-          <div className="bg-primary text-white p-8 md:p-10 rounded-2xl text-center mb-16">
-            {recommended && (
-              <div className="inline-block bg-accent px-4 py-2 rounded-full text-sm font-bold mb-4">
-                RECOMMENDED
-              </div>
-            )}
-            <div className="text-5xl md:text-6xl font-bold mb-4">${price.toLocaleString()}</div>
-            <p className="text-xl md:text-2xl text-white/90 mb-8">{tagline}</p>
-            <a
-              href={stripeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-accent text-white rounded-lg font-semibold text-lg hover:bg-accent/90 transition-colors shadow-lg"
-            >
-              Purchase Program
-            </a>
-          </div>
-
           {/* What You Get - Simple List */}
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">What You Get</h2>
@@ -106,12 +87,19 @@ function ProgramPageTemplate({
             </div>
           </div>
 
-          {/* CTA Footer */}
+          {/* CTA Footer with Pricing */}
           <div className="bg-primary text-white p-10 md:p-12 rounded-2xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start?</h2>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
+            {recommended && (
+              <div className="inline-block bg-accent px-4 py-2 rounded-full text-sm font-bold mb-4">
+                RECOMMENDED
+              </div>
+            )}
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start?</h2>
+            <p className="text-xl md:text-2xl mb-6 text-white/90 leading-relaxed">
               Let's get your body back in business.
             </p>
+            <div className="text-5xl md:text-6xl font-bold mb-2">${price.toLocaleString()}</div>
+            <p className="text-lg md:text-xl text-white/80 mb-8">{tagline}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={stripeLink}
