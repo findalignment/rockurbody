@@ -322,7 +322,10 @@ function Packages() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 {/* Basic Option */}
-                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                <Link 
+                  to="/programs/hip-freedom-basic"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                >
                   <div className="text-center mb-6">
                     <h4 className="text-2xl font-heading text-primary mb-2">Basic</h4>
                     <div className="text-4xl font-bold text-accent mb-2">$1,320</div>
@@ -336,18 +339,16 @@ function Packages() {
                     <li>✓ Restore natural movement</li>
                   </ul>
                   
-                  <a
-                    href="https://buy.stripe.com/dRm6oH1hR6ph3xf1wSefC07"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                  >
-                    Get Started
-                  </a>
-                </div>
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                    Learn More
+                  </div>
+                </Link>
 
                 {/* Extended Option */}
-                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
+                <Link 
+                  to="/programs/hip-freedom-extended"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+                >
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                     POPULAR
                   </div>
@@ -365,15 +366,10 @@ function Packages() {
                     <li>✓ Long-lasting results</li>
                   </ul>
                   
-                  <a
-                    href="https://buy.stripe.com/dRmaEXbWv8xpgk11wSefC08"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                  >
-                    Get Started
-                  </a>
-                </div>
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                    Learn More
+                  </div>
+                </Link>
               </div>
             </div>
 
@@ -386,7 +382,10 @@ function Packages() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Basic */}
-                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                <Link 
+                  to="/programs/full-repatterning-basic"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                >
                   <div className="text-center mb-6">
                     <h4 className="text-2xl font-heading text-primary mb-2">Basic</h4>
                     <div className="text-4xl font-bold text-accent mb-2">$3,720</div>
@@ -401,18 +400,16 @@ function Packages() {
                     <li>✓ Mid-week check-in from me if desired (yes, I answer messages 👍)</li>
                   </ul>
                   
-                  <a
-                    href="https://buy.stripe.com/3cI9ATf8H3d50l32AWefC09"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                  >
-                    Get Started
-                  </a>
-                </div>
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                    Learn More
+                  </div>
+                </Link>
 
                 {/* Premium */}
-                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
+                <Link 
+                  to="/programs/full-repatterning-premium"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+                >
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                     MOST POPULAR
                   </div>
@@ -430,18 +427,16 @@ function Packages() {
                     <li>✓ Optimal results & retention</li>
                   </ul>
                   
-                  <a
-                    href="https://buy.stripe.com/6oU4gzgcLcNF4Bja3oefC0a"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                  >
-                    Get Started
-                  </a>
-                </div>
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                    Learn More
+                  </div>
+                </Link>
 
                 {/* Ultimate */}
-                <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+                <Link 
+                  to="/programs/full-repatterning-ultimate"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                >
                   <div className="text-center mb-6">
                     <div className="inline-block bg-highlight/10 text-highlight px-4 py-2 rounded-full text-sm font-semibold mb-4">
                       Maximum Support
@@ -458,15 +453,10 @@ function Packages() {
                     <li>✓ Life-changing results</li>
                   </ul>
                   
-                  <a
-                    href="https://buy.stripe.com/14A4gz7Gf7tlgk1a3oefC0b"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                  >
-                    Get Started
-                  </a>
-                </div>
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                    Learn More
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
