@@ -17,14 +17,16 @@ export const getOrganizationSchema = () => ({
   email: 'rock@rockyourbody.com', // Add your email
   address: {
     '@type': 'PostalAddress',
+    streetAddress: '311 Soquel Ave',
     addressLocality: 'Santa Cruz',
     addressRegion: 'CA',
+    postalCode: '95062',
     addressCountry: 'US',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: '36.927', // Update with actual coordinates
-    longitude: '-122.023',
+    latitude: '36.9735',
+    longitude: '-122.0285',
   },
   priceRange: '$$',
   openingHoursSpecification: [
@@ -57,8 +59,10 @@ export const getPersonSchema = () => ({
   },
   address: {
     '@type': 'PostalAddress',
+    streetAddress: '311 Soquel Ave',
     addressLocality: 'Santa Cruz',
     addressRegion: 'CA',
+    postalCode: '95062',
     addressCountry: 'US',
   },
   alumniOf: [
@@ -223,11 +227,11 @@ export const getBreadcrumbSchema = (breadcrumbs) => ({
 // Local Business Schema (comprehensive)
 export const getLocalBusinessSchema = () => ({
   '@context': 'https://schema.org',
-  '@type': ['HealthAndBeautyBusiness', 'LocalBusiness'],
+  '@type': ['HealthAndBeautyBusiness', 'LocalBusiness', 'FitnessCenter', 'MedicalBusiness'],
   '@id': 'https://rockyourbody.com/#organization',
   name: 'Rock Your Body',
   alternateName: 'Rock Your Body Movement & Alignment',
-  description: 'Expert movement education and structural integration in Santa Cruz, CA. Specializing in pain relief, posture correction, and performance enhancement.',
+  description: 'Mobile personal training and structural integration serving Santa Cruz, Monterey, and San Francisco Bay Area. Expert movement education, bodywork, and corrective exercise in your home or location of choice.',
   url: 'https://rockyourbody.com',
   logo: {
     '@type': 'ImageObject',
@@ -245,21 +249,22 @@ export const getLocalBusinessSchema = () => ({
   email: 'rock@rockyourbody.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '', // Add your street address
+    streetAddress: '311 Soquel Ave',
     addressLocality: 'Santa Cruz',
     addressRegion: 'CA',
-    postalCode: '95060',
+    postalCode: '95062',
     addressCountry: 'US',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 36.9741,
-    longitude: -122.0308,
+    latitude: 36.9735,
+    longitude: -122.0285,
   },
   areaServed: [
     {
       '@type': 'City',
       name: 'Santa Cruz',
+      '@id': 'https://www.wikidata.org/wiki/Q491861',
     },
     {
       '@type': 'City',
@@ -269,7 +274,44 @@ export const getLocalBusinessSchema = () => ({
       '@type': 'City',
       name: 'Aptos',
     },
+    {
+      '@type': 'City',
+      name: 'Watsonville',
+    },
+    {
+      '@type': 'City',
+      name: 'Scotts Valley',
+    },
+    {
+      '@type': 'City',
+      name: 'Monterey',
+    },
+    {
+      '@type': 'City',
+      name: 'Carmel',
+    },
+    {
+      '@type': 'City',
+      name: 'San Jose',
+    },
+    {
+      '@type': 'City',
+      name: 'Los Gatos',
+    },
+    {
+      '@type': 'City',
+      name: 'San Francisco',
+    },
   ],
+  serviceArea: {
+    '@type': 'GeoCircle',
+    geoMidpoint: {
+      '@type': 'GeoCoordinates',
+      latitude: 36.9735,
+      longitude: -122.0285,
+    },
+    geoRadius: '100000',
+  },
   priceRange: '$$',
   paymentAccepted: 'Cash, Credit Card, Debit Card',
   openingHoursSpecification: [
@@ -294,7 +336,7 @@ export const getLocalBusinessSchema = () => ({
         itemOffered: {
           '@type': 'Service',
           name: 'Structural Integration',
-          description: 'Hands-on fascia work combined with movement education',
+          description: 'Hands-on fascia work combined with movement education - Available at studio or mobile',
         },
       },
       {
@@ -302,9 +344,29 @@ export const getLocalBusinessSchema = () => ({
         itemOffered: {
           '@type': 'Service',
           name: 'Movement Education',
-          description: 'Personalized movement coaching and training',
+          description: 'Personalized movement coaching and training - Mobile service available throughout Bay Area',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Mobile Personal Training',
+          description: 'One-on-one training at your home or preferred location throughout Santa Cruz, Monterey, and Bay Area',
         },
       },
     ],
   },
+  additionalProperty: [
+    {
+      '@type': 'PropertyValue',
+      name: 'Mobile Service',
+      value: 'Yes',
+    },
+    {
+      '@type': 'PropertyValue',
+      name: 'Service Radius',
+      value: '1.5 hours from Santa Cruz',
+    },
+  ],
 });

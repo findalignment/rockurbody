@@ -1,14 +1,33 @@
+import { Helmet } from 'react-helmet-async';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import { getPersonSchema } from '../utils/structuredData';
 
 function About() {
   return (
     <PageLayout>
+      <Helmet>
+        <title>About Rock Hudson | Certified Structural Integrator & Movement Specialist Santa Cruz</title>
+        <meta name="description" content="Meet Rock Hudson, certified Anatomy Trains Structural Integrator and NASM personal trainer serving Santa Cruz and the Bay Area. 10+ years helping people move better through fascia work and functional movement coaching." />
+        <meta name="keywords" content="Rock Hudson, structural integrator Santa Cruz, certified Rolfing practitioner, NASM personal trainer, movement specialist, Anatomy Trains, fascia specialist, bodywork expert Santa Cruz, functional movement coach" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="About Rock Hudson | Structural Integration Expert" />
+        <meta property="og:description" content="10+ years helping people move better through structural integration and movement education in Santa Cruz." />
+        <meta property="og:type" content="profile" />
+        <link rel="canonical" href="https://rockyourbody.com/about" />
+        
+        {/* Schema.org */}
+        <script type="application/ld+json">
+          {JSON.stringify(getPersonSchema())}
+        </script>
+      </Helmet>
+
       <PageHero 
         imageSrc="/about-hero.jpg"
-        title="About"
-        subtitle="Helping you move better, feel better, and live better"
+        title="About Rock Your Body | Santa Cruz"
+        subtitle="Rock Hudson, Structural Integrator & Movement Specialist"
       />
       <div className="pt-16 pb-24 px-6">
         <div className="max-w-4xl mx-auto">

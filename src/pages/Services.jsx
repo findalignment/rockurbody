@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import WaveDivider from '../components/dividers/WaveDivider';
@@ -5,14 +6,32 @@ import PullQuote from '../components/content/PullQuote';
 import Callout from '../components/content/Callout';
 import ExpandableSection from '../components/content/ExpandableSection';
 import Button from '../components/Button';
+import { getLocalBusinessSchema } from '../utils/structuredData';
 
 function Services() {
   return (
     <PageLayout>
+      <Helmet>
+        <title>Structural Integration & Movement Education Services | Rock Your Body Santa Cruz</title>
+        <meta name="description" content="Rock Your Body offers structural integration (Rolfing-style bodywork) and functional movement coaching in Santa Cruz. Mobile service available throughout Bay Area. Expert fascia work, posture correction, and personalized training." />
+        <meta name="keywords" content="structural integration Santa Cruz, Rolfing Santa Cruz, movement education, functional movement coaching, mobile personal training, fascia therapy, posture correction, bodywork Santa Cruz, corrective exercise, movement specialist" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Structural Integration & Movement Education | Rock Your Body" />
+        <meta property="og:description" content="Expert structural integration and movement coaching in Santa Cruz. Mobile service available throughout the Bay Area." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://rockyourbody.com/services" />
+        
+        {/* Schema.org */}
+        <script type="application/ld+json">
+          {JSON.stringify(getLocalBusinessSchema())}
+        </script>
+      </Helmet>
+
       <PageHero 
         imageSrc="/services-hero.jpg"
-        title="Our Services"
-        subtitle="Rock Hudson | Structural Integrator & Movement Educator"
+        title="Rock Your Body Services | Santa Cruz"
+        subtitle="Structural Integration & Movement Education • Mobile Training Available"
       />
       {/* Add soft wave divider */}
       <div className="relative bg-white">

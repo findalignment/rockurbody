@@ -11,7 +11,9 @@ function ServicesOverview() {
     {
       title: "Structural Integration",
       description: "Hands-on bodywork that reorganizes your connective tissue (fascia) for better alignment, easier movement, and lasting change. The 12-Series is a systematic progression through your entire body.",
+      pricing: "From $180/session • 60-120 minutes",
       link: "/what-is-structural-integration",
+      bookLink: "/book/structural-integration",
       cta: "Learn About SI",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -22,7 +24,9 @@ function ServicesOverview() {
     {
       title: "Movement Education",
       description: "Intelligent training that teaches strength, core stability, mobility, coordination, awareness, balance, and flexibility. Foundation first, then build. Sustainable challenge without deterring you from your workout.",
+      pricing: "From $90/session • 30-120 minutes",
       link: "/what-is-movement-education",
+      bookLink: "/book/movement-education",
       cta: "Learn About Movement",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -105,19 +109,40 @@ function ServicesOverview() {
                 </h3>
               </div>
               
-              <p className="text-neutralDark/80 leading-relaxed mb-6 text-sm md:text-base flex-grow">
+              <p className="text-neutralDark/80 leading-relaxed mb-4 text-sm md:text-base flex-grow">
                 {section.description}
               </p>
               
-              <Link 
-                to={section.link}
-                className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors group mt-auto"
-              >
-                <span>{section.cta}</span>
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
+              {section.pricing && (
+                <div className="mb-4 pb-4 border-b border-neutralLight">
+                  <p className="text-sm font-semibold text-primary">
+                    {section.pricing}
+                  </p>
+                </div>
+              )}
+              
+              <div className="flex flex-col sm:flex-row gap-2 mt-auto">
+                <Link 
+                  to={section.link}
+                  className="inline-flex items-center justify-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors group text-sm"
+                >
+                  <span>{section.cta}</span>
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                {section.bookLink && (
+                  <Link 
+                    to={section.bookLink}
+                    className="inline-flex items-center justify-center gap-1 px-3 py-1.5 bg-accent text-white rounded-lg font-semibold hover:bg-accent/90 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    <span>Book</span>
+                  </Link>
+                )}
+              </div>
             </div>
           ))}
         </div>

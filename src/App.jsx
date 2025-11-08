@@ -116,6 +116,44 @@ const MedFitRecovery = lazy(() => import('./pages/certifications/MedFitRecovery'
 const PrecisionNutrition = lazy(() => import('./pages/certifications/PrecisionNutrition'));
 const MovNat = lazy(() => import('./pages/certifications/MovNat'));
 
+// Location pages - Mobile training service areas
+const Capitola = lazy(() => import('./pages/locations/Capitola'));
+const Aptos = lazy(() => import('./pages/locations/Aptos'));
+const Watsonville = lazy(() => import('./pages/locations/Watsonville'));
+const ScottsValley = lazy(() => import('./pages/locations/ScottsValley'));
+const Soquel = lazy(() => import('./pages/locations/Soquel'));
+const LiveOak = lazy(() => import('./pages/locations/LiveOak'));
+const Felton = lazy(() => import('./pages/locations/Felton'));
+const BoulderCreek = lazy(() => import('./pages/locations/BoulderCreek'));
+const Monterey = lazy(() => import('./pages/locations/Monterey'));
+const Carmel = lazy(() => import('./pages/locations/Carmel'));
+const PacificGrove = lazy(() => import('./pages/locations/PacificGrove'));
+const Seaside = lazy(() => import('./pages/locations/Seaside'));
+const Marina = lazy(() => import('./pages/locations/Marina'));
+const Salinas = lazy(() => import('./pages/locations/Salinas'));
+const CarmelValley = lazy(() => import('./pages/locations/CarmelValley'));
+const SanJose = lazy(() => import('./pages/locations/SanJose'));
+const LosGatos = lazy(() => import('./pages/locations/LosGatos'));
+const Saratoga = lazy(() => import('./pages/locations/Saratoga'));
+const Campbell = lazy(() => import('./pages/locations/Campbell'));
+const LosAltos = lazy(() => import('./pages/locations/LosAltos'));
+const MountainView = lazy(() => import('./pages/locations/MountainView'));
+const PaloAlto = lazy(() => import('./pages/locations/PaloAlto'));
+const Sunnyvale = lazy(() => import('./pages/locations/Sunnyvale'));
+const SantaClara = lazy(() => import('./pages/locations/SantaClara'));
+const Cupertino = lazy(() => import('./pages/locations/Cupertino'));
+const Milpitas = lazy(() => import('./pages/locations/Milpitas'));
+const MorganHill = lazy(() => import('./pages/locations/MorganHill'));
+const RedwoodCity = lazy(() => import('./pages/locations/RedwoodCity'));
+const SanMateo = lazy(() => import('./pages/locations/SanMateo'));
+const Burlingame = lazy(() => import('./pages/locations/Burlingame'));
+const SanCarlos = lazy(() => import('./pages/locations/SanCarlos'));
+const Belmont = lazy(() => import('./pages/locations/Belmont'));
+const FosterCity = lazy(() => import('./pages/locations/FosterCity'));
+const HalfMoonBay = lazy(() => import('./pages/locations/HalfMoonBay'));
+const Pacifica = lazy(() => import('./pages/locations/Pacifica'));
+const SanFrancisco = lazy(() => import('./pages/locations/SanFrancisco'));
+
 // Loading component for Suspense fallback
 const LoadingSpinner = () => (
   <div className="min-h-screen flex items-center justify-center bg-neutralDark">
@@ -253,6 +291,53 @@ function AppRoutes() {
         <Route path="/certifications/medfit-recovery" element={<MedFitRecovery />} />
         <Route path="/certifications/precision-nutrition" element={<PrecisionNutrition />} />
         <Route path="/certifications/movnat" element={<MovNat />} />
+        
+        {/* Location Pages - Mobile Training Service Areas */}
+        {/* Santa Cruz County */}
+        <Route path="/capitola-personal-training" element={<Capitola />} />
+        <Route path="/aptos-personal-training" element={<Aptos />} />
+        <Route path="/watsonville-personal-training" element={<Watsonville />} />
+        <Route path="/scotts-valley-personal-training" element={<ScottsValley />} />
+        <Route path="/soquel-personal-training" element={<Soquel />} />
+        <Route path="/live-oak-personal-training" element={<LiveOak />} />
+        <Route path="/felton-personal-training" element={<Felton />} />
+        <Route path="/boulder-creek-personal-training" element={<BoulderCreek />} />
+        
+        {/* Monterey County */}
+        <Route path="/monterey-personal-training" element={<Monterey />} />
+        <Route path="/carmel-personal-training" element={<Carmel />} />
+        <Route path="/pacific-grove-personal-training" element={<PacificGrove />} />
+        <Route path="/seaside-personal-training" element={<Seaside />} />
+        <Route path="/marina-personal-training" element={<Marina />} />
+        <Route path="/salinas-personal-training" element={<Salinas />} />
+        <Route path="/carmel-valley-personal-training" element={<CarmelValley />} />
+        
+        {/* Santa Clara County */}
+        <Route path="/san-jose-personal-training" element={<SanJose />} />
+        <Route path="/los-gatos-personal-training" element={<LosGatos />} />
+        <Route path="/saratoga-personal-training" element={<Saratoga />} />
+        <Route path="/campbell-personal-training" element={<Campbell />} />
+        <Route path="/los-altos-personal-training" element={<LosAltos />} />
+        <Route path="/mountain-view-personal-training" element={<MountainView />} />
+        <Route path="/palo-alto-personal-training" element={<PaloAlto />} />
+        <Route path="/sunnyvale-personal-training" element={<Sunnyvale />} />
+        <Route path="/santa-clara-personal-training" element={<SantaClara />} />
+        <Route path="/cupertino-personal-training" element={<Cupertino />} />
+        <Route path="/milpitas-personal-training" element={<Milpitas />} />
+        <Route path="/morgan-hill-personal-training" element={<MorganHill />} />
+        
+        {/* San Mateo County */}
+        <Route path="/redwood-city-personal-training" element={<RedwoodCity />} />
+        <Route path="/san-mateo-personal-training" element={<SanMateo />} />
+        <Route path="/burlingame-personal-training" element={<Burlingame />} />
+        <Route path="/san-carlos-personal-training" element={<SanCarlos />} />
+        <Route path="/belmont-personal-training" element={<Belmont />} />
+        <Route path="/foster-city-personal-training" element={<FosterCity />} />
+        <Route path="/half-moon-bay-personal-training" element={<HalfMoonBay />} />
+        <Route path="/pacifica-personal-training" element={<Pacifica />} />
+        
+        {/* San Francisco */}
+        <Route path="/san-francisco-personal-training" element={<SanFrancisco />} />
         </Routes>
       </Suspense>
     </PageTransition>

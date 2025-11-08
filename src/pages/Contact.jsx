@@ -19,13 +19,19 @@ function Contact() {
                   Location
                 </h3>
                 <p className="text-neutralDark/80">
+                  <strong>Studio Location:</strong><br />
                   Mavericks Fitness<br />
                   311 Soquel Ave<br />
                   Santa Cruz, CA 95062
                 </p>
-                <p className="text-neutralDark/80 mt-3 text-sm">
-                  Mobile sessions available in the Santa Cruz area (travel time billed at session rate)
-                </p>
+                <div className="mt-4 p-4 bg-accent/10 rounded-lg border-l-4 border-accent">
+                  <p className="text-neutralDark/90 font-semibold mb-2">
+                    🚗 Mobile Training Available
+                  </p>
+                  <p className="text-neutralDark/80 text-sm">
+                    I come to you! Serving clients throughout Santa Cruz County, Monterey County, Santa Clara County, and the greater San Francisco Bay Area (up to 1.5 hours from Santa Cruz). Travel time billed at session rate.
+                  </p>
+                </div>
               </div>
               
               <div>
