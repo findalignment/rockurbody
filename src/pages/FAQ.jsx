@@ -84,7 +84,11 @@ function FAQ() {
       questions: [
         {
           q: "Where are sessions held?",
-          a: <>Sessions are held at Mavericks Fitness (311 Soquel Ave, Santa Cruz, CA) by appointment only. I can also come to your location if you're in the Santa Cruz area (travel time both ways is billed at the session rate).</>
+          a: "Sessions are held at Mavericks Fitness (311 Soquel Ave, Santa Cruz, CA) by appointment only."
+        },
+        {
+          q: "Do you offer mobile training or in-home sessions?",
+          a: <>Very selectively. I take a limited number of mobile clients based on fit, location, and availability. This requires a <Link to="/consult" className="text-accent hover:underline">consultation first</Link> to ensure we're a good match. Currently, I'm only looking for 1 mobile client until mid-January. If you're interested, book a consultation and we can discuss if it makes sense. Round-trip drive time is billed at the standard hourly rate.</>
         },
         {
           q: "Do you take insurance?",
