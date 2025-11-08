@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
@@ -123,7 +124,10 @@ function Packages() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* 5 Sessions */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+              <Link 
+                to="/programs/movement-5-sessions"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+              >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Save {movementPackages['5 Sessions'].discount}
@@ -141,18 +145,16 @@ function Packages() {
                   <li>✓ Flexible scheduling</li>
                 </ul>
                 
-                <a
-                  href="https://buy.stripe.com/fZu9AT1hR9Bt0l3fnIefC01"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                >
-                  Get Started
-                </a>
-              </div>
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                  Learn More
+                </div>
+              </Link>
 
               {/* 10 Sessions */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
+              <Link 
+                to="/programs/movement-10-sessions"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+              >
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                   POPULAR
                 </div>
@@ -175,18 +177,16 @@ function Packages() {
                   <li>✓ Best value for progress</li>
                 </ul>
                 
-                <a
-                  href="https://buy.stripe.com/14A6oHbWv00T3xf8ZkefC02"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                >
-                  Get Started
-                </a>
-              </div>
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                  Learn More
+                </div>
+              </Link>
 
               {/* 20 Sessions */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+              <Link 
+                to="/programs/movement-20-sessions"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+              >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-highlight/10 text-highlight px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Save {movementPackages['20 Sessions'].discount}
@@ -205,15 +205,10 @@ function Packages() {
                   <li>✓ Maximum savings & results</li>
                 </ul>
                 
-                <a
-                  href="https://buy.stripe.com/9B69AT1hR4h9d7P2AWefC03"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                >
-                  Get Started
-                </a>
-              </div>
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                  Learn More
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -226,7 +221,10 @@ function Packages() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Hip Series */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+              <Link 
+                to="/programs/hip-series"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+              >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Great Introduction
@@ -243,18 +241,16 @@ function Packages() {
                   <li>✓ Perfect precursor to 12-Series</li>
                 </ul>
                 
-                <a
-                  href="https://buy.stripe.com/bJe8wPaSr7tl5FndfAefC05"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                >
-                  Get Started
-                </a>
-              </div>
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                  Learn More
+                </div>
+              </Link>
 
               {/* 12-Series */}
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative transform hover:scale-105 transition-transform flex flex-col">
+              <Link 
+                to="/programs/12-series"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+              >
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                   MOST POPULAR
                 </div>
@@ -275,15 +271,10 @@ function Packages() {
                   <li>✓ Life-changing results</li>
                 </ul>
                 
-                <a
-                  href="https://buy.stripe.com/00w7sLbWv4h9ffX4J4efC06"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                >
-                  Get Started
-                </a>
-              </div>
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                  Learn More
+                </div>
+              </Link>
             </div>
           </div>
 
@@ -296,7 +287,10 @@ function Packages() {
 
             {/* The Reset - Single Card */}
             <div className="max-w-md mx-auto mb-16">
-              <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent transition-colors flex flex-col">
+              <Link 
+                to="/programs/the-reset"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+              >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Quick Reset
@@ -313,15 +307,10 @@ function Packages() {
                   <li>✓ Reset your foundation</li>
                 </ul>
                 
-                <a
-                  href="https://buy.stripe.com/dRmfZhgcLcNF0l31wSefC04"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black inline-block text-center"
-                >
-                  Get Started
-                </a>
-              </div>
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
+                  Learn More
+                </div>
+              </Link>
             </div>
 
             {/* Hip Freedom Options */}

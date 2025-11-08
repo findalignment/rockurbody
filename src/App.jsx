@@ -12,6 +12,19 @@ const Contact = lazy(() => import('./pages/Contact'));
 const Packages = lazy(() => import('./pages/Packages'));
 const TwelveSeries = lazy(() => import('./pages/12-Series'));
 const HipSeries = lazy(() => import('./pages/Hip-Series'));
+
+// Program Detail Pages
+const ProgramTwelveSeries = lazy(() => import('./pages/programs/TwelveSeries'));
+const ProgramTheReset = lazy(() => import('./pages/programs/TheReset'));
+const ProgramHipSeries = lazy(() => import('./pages/programs/HipSeries'));
+const ProgramMovement5 = lazy(() => import('./pages/programs/Movement5Sessions'));
+const ProgramMovement10 = lazy(() => import('./pages/programs/Movement10Sessions'));
+const ProgramMovement20 = lazy(() => import('./pages/programs/Movement20Sessions'));
+const ProgramHipFreedomBasic = lazy(() => import('./pages/programs/HipFreedomBasic'));
+const ProgramHipFreedomExtended = lazy(() => import('./pages/programs/HipFreedomExtended'));
+const ProgramFullRepatterningBasic = lazy(() => import('./pages/programs/FullRepatterningBasic'));
+const ProgramFullRepatterningPremium = lazy(() => import('./pages/programs/FullRepatterningPremium'));
+const ProgramFullRepatterningUltimate = lazy(() => import('./pages/programs/FullRepatterningUltimate'));
 const Approach = lazy(() => import('./pages/Approach'));
 const Process = lazy(() => import('./pages/Process'));
 const SmartStarts = lazy(() => import('./pages/SmartStarts'));
@@ -182,6 +195,19 @@ function AppRoutes() {
         <Route path="/packages" element={<Packages />} />
         <Route path="/12-series" element={<TwelveSeries />} />
         <Route path="/hip-series" element={<HipSeries />} />
+        
+        {/* Program Detail Pages */}
+        <Route path="/programs/12-series" element={<ProgramTwelveSeries />} />
+        <Route path="/programs/the-reset" element={<ProgramTheReset />} />
+        <Route path="/programs/hip-series" element={<ProgramHipSeries />} />
+        <Route path="/programs/movement-5-sessions" element={<ProgramMovement5 />} />
+        <Route path="/programs/movement-10-sessions" element={<ProgramMovement10 />} />
+        <Route path="/programs/movement-20-sessions" element={<ProgramMovement20 />} />
+        <Route path="/programs/hip-freedom-basic" element={<ProgramHipFreedomBasic />} />
+        <Route path="/programs/hip-freedom-extended" element={<ProgramHipFreedomExtended />} />
+        <Route path="/programs/full-repatterning-basic" element={<ProgramFullRepatterningBasic />} />
+        <Route path="/programs/full-repatterning-premium" element={<ProgramFullRepatterningPremium />} />
+        <Route path="/programs/full-repatterning-ultimate" element={<ProgramFullRepatterningUltimate />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/process" element={<Process />} />
         <Route path="/smart-starts" element={<SmartStarts />} />
