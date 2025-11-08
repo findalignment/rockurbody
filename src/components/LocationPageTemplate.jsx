@@ -74,10 +74,13 @@ function LocationPageTemplate({
               </svg>
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-neutralDark mb-3">
-                  I Come to You in {city}
+                  Mobile Service in {city}
                 </h2>
-                <p className="text-lg md:text-xl text-neutralDark/80 leading-relaxed">
-                  Professional mobile personal training, structural integration, and movement education at your home, park, or preferred location. Approximately {driveTime} from my Santa Cruz base.
+                <p className="text-lg md:text-xl text-neutralDark/80 leading-relaxed mb-4">
+                  Professional structural integration and movement education at your home, gym, or preferred location. Approximately {driveTime} from my Santa Cruz base (depending on traffic and never-ending roadwork).
+                </p>
+                <p className="text-base text-neutralDark/70 italic">
+                  No upcharge for in-home services. I ask that you pay my standard hourly rate for round-trip drive time.
                 </p>
               </div>
             </div>
@@ -162,36 +165,27 @@ function LocationPageTemplate({
             </div>
           )}
 
-          {/* How It Works */}
+          {/* What to Expect */}
           <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-neutralDark mb-8">How Mobile Training Works</h2>
-            <div className="space-y-6">
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  1
-                </div>
-                <div>
-                  <h4 className="text-lg md:text-xl font-bold text-neutralDark mb-2">Book Your Session</h4>
-                  <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">Schedule a free consultation or dive straight into a session. Your choice.</p>
-                </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-neutralDark mb-8">What to Expect</h2>
+            <div className="space-y-8">
+              <div className="border-l-4 border-accent pl-6">
+                <h4 className="text-xl md:text-2xl font-bold text-neutralDark mb-3">Initial Assessment</h4>
+                <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">
+                  We start with a thorough movement assessment and conversation about your goals, history, and what's getting in the way. I'll explain what I see and recommend a specific plan—not a generic program.
+                </p>
               </div>
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  2
-                </div>
-                <div>
-                  <h4 className="text-lg md:text-xl font-bold text-neutralDark mb-2">I Come to You</h4>
-                  <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">I bring all necessary equipment to your home, park, or preferred location in {city}.</p>
-                </div>
+              <div className="border-l-4 border-primary pl-6">
+                <h4 className="text-xl md:text-2xl font-bold text-neutralDark mb-3">Tailored Sessions</h4>
+                <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">
+                  Each session combines hands-on structural work with movement education specific to your patterns. I bring everything needed—massage table for bodywork, equipment for movement training. Sessions in {city} are conducted with the same attention to detail as those in my studio.
+                </p>
               </div>
-              <div className="flex gap-6 items-start">
-                <div className="flex-shrink-0 w-10 h-10 md:w-12 md:h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-lg">
-                  3
-                </div>
-                <div>
-                  <h4 className="text-lg md:text-xl font-bold text-neutralDark mb-2">Get Results</h4>
-                  <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">Move better, feel better, live better. Simple as that.</p>
-                </div>
+              <div className="border-l-4 border-sage pl-6">
+                <h4 className="text-xl md:text-2xl font-bold text-neutralDark mb-3">Measurable Progress</h4>
+                <p className="text-base md:text-lg text-neutralDark/80 leading-relaxed">
+                  Most clients feel meaningful changes within 3-6 sessions. Lasting transformation typically requires 8-12 sessions with consistent practice. This isn't quick-fix work—it's change that holds because your movement patterns actually shift.
+                </p>
               </div>
             </div>
           </div>
@@ -202,11 +196,12 @@ function LocationPageTemplate({
             <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
               Let's get your body back in business. Book a session in {city} today.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-xl mx-auto mb-6">
               <Button 
                 to="/consult"
                 variant="secondary"
                 size="large"
+                className="w-full sm:w-auto"
               >
                 Free Consultation
               </Button>
@@ -214,12 +209,13 @@ function LocationPageTemplate({
                 to="/book"
                 variant="accent"
                 size="large"
+                className="w-full sm:w-auto"
               >
                 Book a Session
               </Button>
             </div>
             <p className="mt-6 text-base text-white/70">
-              Travel time from Santa Cruz billed at session rate
+              Round-trip drive time billed at standard hourly rate • No upcharge for mobile service
             </p>
           </div>
 
