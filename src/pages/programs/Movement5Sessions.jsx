@@ -11,7 +11,7 @@ function Movement5Sessions() {
 
   const accordionSections = [
     {
-      title: 'What You'll Learn',
+      title: "What You'll Learn",
       content: (
         <>
           <p className="mb-4">
