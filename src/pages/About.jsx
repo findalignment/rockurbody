@@ -26,7 +26,7 @@ function About() {
 
       <PageHero 
         imageSrc="/about-hero.jpg"
-        title="About Rock Your Body | Santa Cruz"
+        title="About Rock Your Body"
         subtitle="Rock Hudson, Structural Integrator & Movement Specialist"
       />
       <div className="pt-16 pb-24 px-6">
