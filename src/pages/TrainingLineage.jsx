@@ -17,7 +17,12 @@ function TrainingLineage() {
 
           <div className="space-y-8">
             {/* Tom Myers */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
+            <a 
+              href="https://www.anatomytrains.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block bg-white rounded-2xl p-8 shadow-sm border-2 border-black hover:border-accent hover:shadow-lg transition-all cursor-pointer"
+            >
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
@@ -42,12 +47,23 @@ function TrainingLineage() {
                       <li>• Taught Anatomy Trains lines in the first course of ATSI under Tom's guidance</li>
                     </ul>
                   </div>
+                  <div className="mt-4 text-accent font-semibold flex items-center gap-2">
+                    Visit anatomytrains.com
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Sharon Wheeler */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
+            <a 
+              href="https://www.sharonwheeler.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block bg-white rounded-2xl p-8 shadow-sm border-2 border-black hover:border-accent hover:shadow-lg transition-all cursor-pointer"
+            >
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
@@ -73,12 +89,23 @@ function TrainingLineage() {
                       <li>• Worked on veterans with amputations as part of Sharon's team</li>
                     </ul>
                   </div>
+                  <div className="mt-4 text-accent font-semibold flex items-center gap-2">
+                    Visit sharonwheeler.com
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Til Luchau */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
+            <a 
+              href="https://www.advanced-trainings.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block bg-white rounded-2xl p-8 shadow-sm border-2 border-black hover:border-accent hover:shadow-lg transition-all cursor-pointer"
+            >
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
@@ -103,12 +130,23 @@ function TrainingLineage() {
                       <li>• Numerous online courses through Advanced Trainings</li>
                     </ul>
                   </div>
+                  <div className="mt-4 text-accent font-semibold flex items-center gap-2">
+                    Visit advanced-trainings.com
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Wojtek Cackowski */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm border-2 border-black">
+            <a 
+              href="https://www.zoga-movement.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block bg-white rounded-2xl p-8 shadow-sm border-2 border-black hover:border-accent hover:shadow-lg transition-all cursor-pointer"
+            >
               <div className="flex flex-col md:flex-row gap-6 md:items-center">
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
@@ -134,9 +172,15 @@ function TrainingLineage() {
                       <li>• Focus on maximum effectiveness in treatment</li>
                     </ul>
                   </div>
+                  <div className="mt-4 text-accent font-semibold flex items-center gap-2">
+                    Visit zoga-movement.com
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Philosophy Section */}
             <div className="bg-gradient-to-br from-accent/10 to-accent/5 border border-accent/20 rounded-2xl p-8">
