@@ -30,7 +30,7 @@ function Services() {
 
       <PageHero 
         imageSrc="/services-hero.jpg"
-        title="Rock Your Body Services | Santa Cruz"
+        title="Rock Your Body Services"
         subtitle="Structural Integration & Movement Education"
       />
       {/* Add soft wave divider */}
