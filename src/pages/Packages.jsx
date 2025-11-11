@@ -126,34 +126,33 @@ function Packages() {
               {/* 5 Sessions */}
               <Link 
                 to="/programs/movement-5-sessions"
-                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer group"
               >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    Save {movementPackages['5 Sessions'].discount}
+                    Quick Start
                   </div>
-                  <h3 className="text-2xl font-heading text-primary mb-2">5 Sessions</h3>
-                  <div className="text-4xl font-bold text-accent mb-2">${movementPackages['5 Sessions'].price}</div>
-                  <p className="text-sm text-neutralDark/60 line-through mb-1">$900</p>
-                  <p className="text-lg text-neutralDark/80">${movementPackages['5 Sessions'].pricePerSession}/session</p>
+                  <h3 className="text-2xl font-heading text-primary mb-4">5 Sessions</h3>
+                  <p className="text-neutralDark/80 mb-4">Perfect for testing the waters and addressing specific movement issues.</p>
                 </div>
                 
                 <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                   <li>✓ Five 60-minute sessions</li>
-                  <li>✓ Save ${movementPackages['5 Sessions'].savings}</li>
-                  <li>✓ Personalized movement training</li>
+                  <li>✓ Learn foundational movement patterns</li>
+                  <li>✓ Address specific issues</li>
                   <li>✓ Flexible scheduling</li>
+                  <li>✓ Save 10% vs single sessions</li>
                 </ul>
                 
-                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                  Learn More
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                  Learn More & Pricing →
                 </div>
               </Link>
 
               {/* 10 Sessions */}
               <Link 
                 to="/programs/movement-10-sessions"
-                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer group"
               >
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                   POPULAR
@@ -161,52 +160,48 @@ function Packages() {
                 
                 <div className="text-center mb-6 mt-2">
                   <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    Save {movementPackages['10 Sessions'].discount}
+                    Best Value
                   </div>
-                  <h3 className="text-2xl font-heading text-primary mb-2">10 Sessions</h3>
-                  <div className="text-4xl font-bold text-accent mb-2">${movementPackages['10 Sessions'].price}</div>
-                  <p className="text-sm text-neutralDark/60 line-through mb-1">$1,800</p>
-                  <p className="text-lg text-neutralDark/80">${movementPackages['10 Sessions'].pricePerSession}/session</p>
+                  <h3 className="text-2xl font-heading text-primary mb-4">10 Sessions</h3>
+                  <p className="text-neutralDark/80 mb-4">The sweet spot for building lasting change and seeing real progress in how you move.</p>
                 </div>
                 
                 <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                   <li>✓ Ten 60-minute sessions</li>
-                  <li>✓ Save ${movementPackages['10 Sessions'].savings}</li>
-                  <li>✓ Personalized movement training</li>
+                  <li>✓ Enough time for real transformation</li>
+                  <li>✓ Develop sustainable movement habits</li>
                   <li>✓ Flexible scheduling</li>
-                  <li>✓ Best value for progress</li>
+                  <li>✓ Save 15% vs single sessions</li>
                 </ul>
                 
-                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                  Learn More
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                  Learn More & Pricing →
                 </div>
               </Link>
 
               {/* 20 Sessions */}
               <Link 
                 to="/programs/movement-20-sessions"
-                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer group"
               >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-highlight/10 text-highlight px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                    Save {movementPackages['20 Sessions'].discount}
+                    Maximum Results
                   </div>
-                  <h3 className="text-2xl font-heading text-primary mb-2">20 Sessions</h3>
-                  <div className="text-4xl font-bold text-accent mb-2">${movementPackages['20 Sessions'].price}</div>
-                  <p className="text-sm text-neutralDark/60 line-through mb-1">$3,600</p>
-                  <p className="text-lg text-neutralDark/80">${movementPackages['20 Sessions'].pricePerSession}/session</p>
+                  <h3 className="text-2xl font-heading text-primary mb-4">20 Sessions</h3>
+                  <p className="text-neutralDark/80 mb-4">Deep dive into movement mastery with maximum support and biggest savings.</p>
                 </div>
                 
                 <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                   <li>✓ Twenty 60-minute sessions</li>
-                  <li>✓ Save ${movementPackages['20 Sessions'].savings}</li>
-                  <li>✓ Personalized movement training</li>
+                  <li>✓ Complete movement transformation</li>
+                  <li>✓ Master complex patterns</li>
                   <li>✓ Flexible scheduling</li>
-                  <li>✓ Maximum savings & results</li>
+                  <li>✓ Save 20% vs single sessions</li>
                 </ul>
                 
-                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                  Learn More
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                  Learn More & Pricing →
                 </div>
               </Link>
             </div>
@@ -223,33 +218,33 @@ function Packages() {
               {/* Hip Series */}
               <Link 
                 to="/programs/hip-series"
-                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer group"
               >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Great Introduction
                   </div>
-                  <h3 className="text-2xl font-heading text-primary mb-2">Hip Series</h3>
-                  <div className="text-4xl font-bold text-accent mb-2">$720</div>
-                  <p className="text-lg text-neutralDark/80">4 targeted sessions</p>
+                  <h3 className="text-2xl font-heading text-primary mb-4">Hip Series</h3>
+                  <p className="text-neutralDark/80 mb-4">Four sessions focused on freeing your hips and lower body. Experience what SI can do.</p>
                 </div>
                 
                 <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
-                  <li>✓ 4-session focused hip work</li>
-                  <li>✓ Targeted hip mobility & alignment</li>
-                  <li>✓ Great intro to the work</li>
+                  <li>✓ 4 targeted SI sessions</li>
+                  <li>✓ Focus on hip mobility & alignment</li>
+                  <li>✓ Great introduction to the work</li>
                   <li>✓ Perfect precursor to 12-Series</li>
+                  <li>✓ See real results fast</li>
                 </ul>
                 
-                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                  Learn More
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                  Learn More & Pricing →
                 </div>
               </Link>
 
               {/* 12-Series */}
               <Link 
                 to="/programs/12-series"
-                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer group"
               >
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                   MOST POPULAR
@@ -259,20 +254,20 @@ function Packages() {
                   <div className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Complete Protocol
                   </div>
-                  <h3 className="text-2xl font-heading text-primary mb-2">12-Series</h3>
-                  <div className="text-4xl font-bold text-accent mb-2">$3,000</div>
-                  <p className="text-lg text-neutralDark/80">12 comprehensive sessions</p>
+                  <h3 className="text-2xl font-heading text-primary mb-4">12-Series</h3>
+                  <p className="text-neutralDark/80 mb-4">The complete Anatomy Trains Structural Integration protocol. Full-body transformation.</p>
                 </div>
                 
                 <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
+                  <li>✓ 12 comprehensive SI sessions</li>
                   <li>✓ Complete Anatomy Trains protocol</li>
                   <li>✓ Full structural transformation</li>
                   <li>✓ Proven systematic approach</li>
                   <li>✓ Life-changing results</li>
                 </ul>
                 
-                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                  Learn More
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                  Learn More & Pricing →
                 </div>
               </Link>
             </div>
@@ -289,26 +284,26 @@ function Packages() {
             <div className="max-w-md mx-auto mb-16">
               <Link 
                 to="/programs/the-reset"
-                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer group"
               >
                 <div className="text-center mb-6">
                   <div className="inline-block bg-sage/10 text-sage px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     Quick Reset
                   </div>
-                  <h3 className="text-2xl font-heading text-primary mb-2">The Reset</h3>
-                  <div className="text-4xl font-bold text-accent mb-2">$990</div>
-                  <p className="text-lg text-neutralDark/80">6 sessions total</p>
+                  <h3 className="text-2xl font-heading text-primary mb-4">The Reset</h3>
+                  <p className="text-neutralDark/80 mb-4">Six sessions combining SI and movement work. Perfect for getting back on track.</p>
                 </div>
                 
                 <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                   <li>✓ 3 SI sessions (60 min)</li>
                   <li>✓ 3 Movement sessions (60 min)</li>
-                  <li>✓ Perfect for getting back on track</li>
-                  <li>✓ Reset your foundation</li>
+                  <li>✓ Reset your foundation quickly</li>
+                  <li>✓ Address specific issues</li>
+                  <li>✓ Return to feeling good</li>
                 </ul>
                 
-                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                  Learn More
+                <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                  Learn More & Pricing →
                 </div>
               </Link>
             </div>
@@ -324,50 +319,50 @@ function Packages() {
                 {/* Basic Option */}
                 <Link 
                   to="/programs/hip-freedom-basic"
-                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer group"
                 >
                   <div className="text-center mb-6">
-                    <h4 className="text-2xl font-heading text-primary mb-2">Basic</h4>
-                    <div className="text-4xl font-bold text-accent mb-2">$1,320</div>
-                    <p className="text-lg text-neutralDark/80">8 sessions total</p>
+                    <h4 className="text-2xl font-heading text-primary mb-4">Hip Freedom - Basic</h4>
+                    <p className="text-neutralDark/80 mb-4">Eight sessions targeting hip mobility and structural alignment.</p>
                   </div>
                   
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                     <li>✓ 4 SI sessions (60 min)</li>
                     <li>✓ 4 Movement sessions (60 min)</li>
-                    <li>✓ Targeted hip work</li>
+                    <li>✓ Focused hip transformation</li>
                     <li>✓ Restore natural movement</li>
+                    <li>✓ Reduce pain, increase range</li>
                   </ul>
                   
-                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                    Learn More
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                    Learn More & Pricing →
                   </div>
                 </Link>
 
                 {/* Extended Option */}
                 <Link 
                   to="/programs/hip-freedom-extended"
-                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer group"
                 >
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                     POPULAR
                   </div>
                   
                   <div className="text-center mb-6 mt-2">
-                    <h4 className="text-2xl font-heading text-primary mb-2">Extended</h4>
-                    <div className="text-4xl font-bold text-accent mb-2">$1,920</div>
-                    <p className="text-lg text-neutralDark/80">12 sessions total</p>
+                    <h4 className="text-2xl font-heading text-primary mb-4">Hip Freedom - Extended</h4>
+                    <p className="text-neutralDark/80 mb-4">Twelve sessions for comprehensive hip work with more movement integration.</p>
                   </div>
                   
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
                     <li>✓ 6 SI sessions (60 min)</li>
                     <li>✓ 6 Movement sessions (60 min)</li>
-                    <li>✓ Comprehensive hip transformation</li>
+                    <li>✓ Deeper hip transformation</li>
                     <li>✓ Long-lasting results</li>
+                    <li>✓ More time to integrate</li>
                   </ul>
                   
-                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                    Learn More
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                    Learn More & Pricing →
                   </div>
                 </Link>
               </div>
@@ -384,12 +379,11 @@ function Packages() {
                 {/* Basic */}
                 <Link 
                   to="/programs/full-repatterning-basic"
-                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer group"
                 >
                   <div className="text-center mb-6">
-                    <h4 className="text-2xl font-heading text-primary mb-2">Basic</h4>
-                    <div className="text-4xl font-bold text-accent mb-2">$3,720</div>
-                    <p className="text-lg text-neutralDark/80">24 sessions total</p>
+                    <h4 className="text-2xl font-heading text-primary mb-4">Full Repatterning - Basic</h4>
+                    <p className="text-neutralDark/80 mb-4">Complete structural transformation with equal SI and movement sessions.</p>
                   </div>
                   
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
@@ -397,27 +391,26 @@ function Packages() {
                     <li>✓ 12 Movement sessions (60 min)</li>
                     <li>✓ Full body scan & movement reset</li>
                     <li>✓ Weekly hands-on sessions</li>
-                    <li>✓ Mid-week check-in from me if desired (yes, I answer messages 👍)</li>
+                    <li>✓ Ongoing support via messaging</li>
                   </ul>
                   
-                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                    Learn More
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                    Learn More & Pricing →
                   </div>
                 </Link>
 
                 {/* Premium */}
                 <Link 
                   to="/programs/full-repatterning-premium"
-                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-accent relative hover:shadow-xl transition-all flex flex-col cursor-pointer group"
                 >
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent text-white px-6 py-1 rounded-full text-sm font-bold">
                     MOST POPULAR
                   </div>
                   
                   <div className="text-center mb-6 mt-2">
-                    <h4 className="text-2xl font-heading text-primary mb-2">Premium</h4>
-                    <div className="text-4xl font-bold text-accent mb-2">$5,400</div>
-                    <p className="text-lg text-neutralDark/80">36 sessions total</p>
+                    <h4 className="text-2xl font-heading text-primary mb-4">Full Repatterning - Premium</h4>
+                    <p className="text-neutralDark/80 mb-4">Longer SI sessions with double the movement work for deeper integration.</p>
                   </div>
                   
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
@@ -425,25 +418,25 @@ function Packages() {
                     <li>✓ 24 Movement sessions (60 min)</li>
                     <li>✓ Deep integration work</li>
                     <li>✓ Optimal results & retention</li>
+                    <li>✓ Most comprehensive program</li>
                   </ul>
                   
-                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                    Learn More
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                    Learn More & Pricing →
                   </div>
                 </Link>
 
                 {/* Ultimate */}
                 <Link 
                   to="/programs/full-repatterning-ultimate"
-                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer"
+                  className="bg-white rounded-2xl p-8 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all flex flex-col cursor-pointer group"
                 >
                   <div className="text-center mb-6">
                     <div className="inline-block bg-highlight/10 text-highlight px-4 py-2 rounded-full text-sm font-semibold mb-4">
                       Maximum Support
                     </div>
-                    <h4 className="text-2xl font-heading text-primary mb-2">Ultimate</h4>
-                    <div className="text-4xl font-bold text-accent mb-2">$7,200</div>
-                    <p className="text-lg text-neutralDark/80">48 sessions total</p>
+                    <h4 className="text-2xl font-heading text-primary mb-4">Full Repatterning - Ultimate</h4>
+                    <p className="text-neutralDark/80 mb-4">Maximum transformation with extensive movement work for lasting results.</p>
                   </div>
                   
                   <ul className="space-y-3 mb-8 text-sm text-neutralDark/80 flex-grow">
@@ -451,10 +444,11 @@ function Packages() {
                     <li>✓ 36 Movement sessions (60 min)</li>
                     <li>✓ Maximum transformation</li>
                     <li>✓ Life-changing results</li>
+                    <li>✓ Ultimate support & coaching</li>
                   </ul>
                   
-                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center">
-                    Learn More
+                  <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
+                    Learn More & Pricing →
                   </div>
                 </Link>
               </div>

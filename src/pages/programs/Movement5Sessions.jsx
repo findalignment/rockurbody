@@ -63,6 +63,28 @@ function Movement5Sessions() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: '10 Movement Sessions',
+      price: 1530,
+      description: 'Best value for real transformation. Save 15%.',
+      link: '/programs/movement-10-sessions',
+      badge: 'POPULAR'
+    },
+    {
+      name: 'The Reset',
+      price: 990,
+      description: '3 SI + 3 Movement sessions. Quick reset.',
+      link: '/programs/the-reset'
+    },
+    {
+      name: '20 Movement Sessions',
+      price: 2880,
+      description: 'Maximum support. Save 20%.',
+      link: '/programs/movement-20-sessions'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="5 Movement Sessions"
@@ -71,6 +93,7 @@ function Movement5Sessions() {
       whatYouGet={whatYouGet}
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/fZu9AT1hR9Bt0l3fnIefC01"
+      similarPrograms={similarPrograms}
     />
   );
 }

@@ -17,7 +17,8 @@ function ProgramPageTemplate({
   whatYouGet = [],
   accordionSections = [],
   stripeLink,
-  recommended = false
+  recommended = false,
+  similarPrograms = []
 }) {
   const [openIndex, setOpenIndex] = useState(0); // First section open by default
 
@@ -107,7 +108,7 @@ function ProgramPageTemplate({
           </div>
 
           {/* CTA Footer with Pricing */}
-          <div className="bg-primary text-white p-10 md:p-12 rounded-2xl text-center">
+          <div className="bg-primary text-white p-10 md:p-12 rounded-2xl text-center mb-20">
             {recommended && (
               <div className="inline-block bg-accent px-4 py-2 rounded-full text-sm font-bold mb-4">
                 RECOMMENDED
@@ -136,6 +137,45 @@ function ProgramPageTemplate({
               </Link>
             </div>
           </div>
+
+          {/* Similar Programs */}
+          {similarPrograms && similarPrograms.length > 0 && (
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-8 text-center">
+                Similar Options
+              </h2>
+              <p className="text-lg text-neutralDark/80 mb-10 text-center max-w-2xl mx-auto">
+                Not sure this is the right fit? Check out these similar programs.
+              </p>
+              <div className={`grid grid-cols-1 ${similarPrograms.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : 'md:grid-cols-3'} gap-6`}>
+                {similarPrograms.map((program, index) => (
+                  <Link
+                    key={index}
+                    to={program.link}
+                    className="bg-white rounded-xl p-6 shadow-sm border-2 border-neutralLight hover:border-accent hover:shadow-lg transition-all group"
+                  >
+                    {program.badge && (
+                      <div className="inline-block bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                        {program.badge}
+                      </div>
+                    )}
+                    <h3 className="text-xl font-heading font-bold text-primary mb-2 group-hover:text-accent transition-colors">
+                      {program.name}
+                    </h3>
+                    <div className="text-3xl font-bold text-accent mb-2">
+                      ${program.price.toLocaleString()}
+                    </div>
+                    <p className="text-sm text-neutralDark/70 mb-4">
+                      {program.description}
+                    </p>
+                    <div className="text-primary font-semibold text-sm group-hover:text-accent transition-colors">
+                      Learn More →
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
         </div>
       </div>
