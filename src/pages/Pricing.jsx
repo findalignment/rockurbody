@@ -327,7 +327,7 @@ function Pricing() {
                   to={program.link}
                   className="block w-full text-center px-4 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-accent transition-colors"
                 >
-                  Learn More & Book
+                  Learn More
                 </Link>
               </div>
             ))}
