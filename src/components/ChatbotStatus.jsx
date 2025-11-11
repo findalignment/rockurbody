@@ -69,6 +69,7 @@ function ChatbotStatus({ className = '' }) {
               <button 
                 onClick={() => setShowDetails(false)}
                 className="text-gray-400 hover:text-gray-600"
+                aria-label="Close status details"
               >
                 ✕
               </button>
