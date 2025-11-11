@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function CyclistsRunners() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'For Cyclists & Runners', url: '/cyclists-runners' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Bodywork for Cyclists & Runners | Santa Cruz Performance Therapy"
         description="Overcome IT band issues, improve performance, and prevent injuries. Structural Integration for cyclists and runners in Santa Cruz."
         keywords="cyclist bodywork santa cruz, runner therapy, IT band treatment, cycling injuries, running injuries santa cruz, sports performance"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function CyclistsRunners() {
         subtitle="Go longer, perform better, stay injury-free"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

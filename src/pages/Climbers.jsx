@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function Climbers() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'For Climbers', url: '/climbers' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Bodywork for Climbers | Santa Cruz Boulder & Sport Climbing"
         description="Overcome finger pain, shoulder issues, and elbow tendonitis. Structural Integration for rock climbers in Santa Cruz."
         keywords="climber bodywork santa cruz, climbing injuries, finger pain, climbers elbow, shoulder pain climbing, boulder therapy"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function Climbers() {
         subtitle="Climb stronger, recover faster, prevent injuries"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

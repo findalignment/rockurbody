@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function WhiplashRecovery() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Whiplash Recovery', url: '/whiplash-recovery' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Whiplash Recovery Santa Cruz | Car Accident Injury Treatment"
         description="Comprehensive whiplash and car accident injury recovery. Address chronic neck pain, stiffness, and whole-body compensation patterns in Santa Cruz."
         keywords="whiplash treatment santa cruz, car accident injury, neck pain after accident, whiplash recovery, auto accident recovery"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function WhiplashRecovery() {
         subtitle="Healing from car accident injuries takes more than time"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

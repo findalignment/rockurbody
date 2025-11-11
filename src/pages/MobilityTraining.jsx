@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function MobilityTraining() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Mobility Training', url: '/mobility-training' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Mobility Training Santa Cruz | Flexibility & Movement Quality"
         description="Improve mobility, flexibility, and movement quality through intelligent training. Not just stretching, real functional mobility in Santa Cruz."
         keywords="mobility training santa cruz, flexibility training, movement quality, functional mobility, mobility coach"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function MobilityTraining() {
         subtitle="Real flexibility that translates to how you move"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

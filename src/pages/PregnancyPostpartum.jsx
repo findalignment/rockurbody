@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function PregnancyPostpartum() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Pregnancy & Postpartum', url: '/pregnancy-postpartum' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Pregnancy & Postpartum Bodywork Santa Cruz | Prenatal Movement"
         description="Specialized bodywork and movement training for pregnancy and postpartum recovery in Santa Cruz. Relieve pain, prepare for birth, recover stronger."
         keywords="pregnancy bodywork santa cruz, postpartum recovery, prenatal massage, diastasis recti, pelvic floor, pregnancy back pain"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function PregnancyPostpartum() {
         subtitle="Move comfortably through pregnancy. Recover fully postpartum."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function CoreStrengthening() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Core Strengthening', url: '/core-strengthening' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Core Strengthening Santa Cruz | Functional Core Stability Training"
         description="Build real core strength and stability through functional training. Address back pain, improve performance, and develop a strong foundation in Santa Cruz."
         keywords="core strengthening santa cruz, core stability, core training, abs workout, lower back pain, functional core, core exercises"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function CoreStrengthening() {
         subtitle="Forget crunches. Build a core that actually works."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

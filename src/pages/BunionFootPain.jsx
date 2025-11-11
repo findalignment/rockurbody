@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function BunionFootPain() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Bunion & Foot Pain', url: '/bunion-foot-pain' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Bunion and Foot Pain Treatment Santa Cruz | Foot Alignment"
         description="Natural bunion and foot pain treatment through Structural Integration. Address foot alignment, big toe pain, and chronic foot issues in Santa Cruz."
         keywords="bunion treatment santa cruz, foot pain, big toe pain, foot alignment, hallux valgus, natural bunion treatment"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function BunionFootPain() {
         subtitle="Your feet are your foundation. Let's improve them."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

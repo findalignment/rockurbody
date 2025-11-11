@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function ActiveAging() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Active Aging', url: '/active-aging' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Active Aging Santa Cruz | Stay Strong, Mobile, & Independent"
         description="Movement therapy and bodywork for active seniors in Santa Cruz. Maintain mobility, reduce pain, and stay doing what you love at any age."
         keywords="active aging santa cruz, senior fitness, mobility for seniors, elderly bodywork, senior movement training, aging well santa cruz"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function ActiveAging() {
         subtitle="Stay strong, mobile, and independent at any age"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

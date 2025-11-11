@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function ScoliosisTreatment() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Scoliosis Treatment', url: '/scoliosis-treatment' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Scoliosis Treatment Santa Cruz | Structural Integration for Curves"
         description="Non-surgical scoliosis treatment through Structural Integration and movement training. Reduce pain, improve alignment, and enhance function in Santa Cruz."
         keywords="scoliosis treatment santa cruz, scoliosis pain relief, structural scoliosis, functional scoliosis, spinal curves, scoliosis exercises"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function ScoliosisTreatment() {
         subtitle="Working with your body, not against it"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

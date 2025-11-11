@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function DeskWorkerWellness() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Desk Worker Wellness', url: '/desk-worker-wellness' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Desk Worker Wellness Santa Cruz | Fix Tech Neck & Back Pain"
         description="Relief from desk job pain: tech neck, rounded shoulders, lower back issues. Structural Integration for remote workers and office professionals."
         keywords="desk job pain, tech neck, computer posture, office worker pain santa cruz, work from home pain, ergonomic therapy"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function DeskWorkerWellness() {
         subtitle="Undo the damage of sitting all day"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

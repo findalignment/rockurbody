@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function MovementScreening() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Movement Assessment', url: '/movement-screening' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Movement Assessment Santa Cruz | Functional Movement Screening"
         description="Comprehensive movement assessment to identify imbalances, restrictions, and injury risk. Functional movement screening in Santa Cruz."
         keywords="movement assessment santa cruz, functional movement screening, movement analysis, injury prevention, biomechanics assessment"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function MovementScreening() {
         subtitle="Understand how you move. Fix what's not working."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

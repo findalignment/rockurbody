@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function SportsInjuryPrevention() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Sports Injury Prevention', url: '/sports-injury-prevention' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Sports Injury Prevention Santa Cruz | Stay Healthy, Stay Active"
         description="Prevent sports injuries through movement assessment and structural balance. Proactive injury prevention for athletes in Santa Cruz."
         keywords="injury prevention santa cruz, sports injury prevention, athletic screening, injury risk assessment, prehab"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function SportsInjuryPrevention() {
         subtitle="Don't wait until you're hurt. Prevent injuries before they happen."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

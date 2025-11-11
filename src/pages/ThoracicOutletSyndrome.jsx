@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function ThoracicOutletSyndrome() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Thoracic Outlet Syndrome', url: '/thoracic-outlet-syndrome' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Thoracic Outlet Syndrome Treatment Santa Cruz | TOS Relief"
         description="Comprehensive thoracic outlet syndrome (TOS) treatment. Address numbness, tingling, and nerve compression through Structural Integration in Santa Cruz."
         keywords="thoracic outlet syndrome santa cruz, TOS treatment, arm numbness, nerve compression, shoulder nerve pain, scalene muscles"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function ThoracicOutletSyndrome() {
         subtitle="Numbness, tingling, weird symptoms. Let's decompress."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

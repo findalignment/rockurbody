@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function BreathingCore() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Breathing & Core Training', url: '/breathing-core' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Breathing & Core Training Santa Cruz | Diaphragm Function"
         description="Improve breathing mechanics, core stability, and diaphragm function. Address breathing pattern dysfunction and build real core strength in Santa Cruz."
         keywords="breathing training santa cruz, core stability, diaphragm function, breathing dysfunction, core strength, proper breathing"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function BreathingCore() {
         subtitle="Your diaphragm is your most important core muscle"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">
