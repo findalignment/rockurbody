@@ -64,6 +64,28 @@ function HipFreedomBasic() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: 'Hip Freedom - Extended',
+      price: 1920,
+      description: '6 SI + 6 Movement. More comprehensive.',
+      link: '/programs/hip-freedom-extended',
+      badge: 'POPULAR'
+    },
+    {
+      name: 'The Reset',
+      price: 990,
+      description: '3 SI + 3 Movement. Shorter option.',
+      link: '/programs/the-reset'
+    },
+    {
+      name: 'Hip Series',
+      price: 720,
+      description: '4 SI sessions only. Structural focus.',
+      link: '/programs/hip-series'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="Hip Freedom Basic"
@@ -72,6 +94,7 @@ function HipFreedomBasic() {
       whatYouGet={whatYouGet}
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/dRm6oH1hR6ph3xf1wSefC07"
+      similarPrograms={similarPrograms}
     />
   );
 }

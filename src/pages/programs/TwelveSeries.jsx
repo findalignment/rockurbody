@@ -121,6 +121,28 @@ function TwelveSeries() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: 'Hip Series',
+      price: 720,
+      description: '4 sessions. Great intro to SI work.',
+      link: '/programs/hip-series'
+    },
+    {
+      name: 'Full Repatterning - Premium',
+      price: 5400,
+      description: '12 SI (90min) + 24 Movement. With movement training.',
+      link: '/programs/full-repatterning-premium',
+      badge: 'POPULAR'
+    },
+    {
+      name: 'Full Repatterning - Ultimate',
+      price: 7200,
+      description: '12 SI (90min) + 36 Movement. Maximum support.',
+      link: '/programs/full-repatterning-ultimate'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="12-Series"
@@ -130,6 +152,7 @@ function TwelveSeries() {
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/00w7sLbWv4h9ffX4J4efC06"
       recommended={true}
+      similarPrograms={similarPrograms}
     />
   );
 }

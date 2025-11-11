@@ -129,6 +129,27 @@ function FullRepatterningPremium() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: 'Full Repatterning - Basic',
+      price: 3720,
+      description: '12 SI (60min) + 12 Movement. More affordable.',
+      link: '/programs/full-repatterning-basic'
+    },
+    {
+      name: 'Full Repatterning - Ultimate',
+      price: 7200,
+      description: '12 SI (90min) + 36 Movement. Maximum support.',
+      link: '/programs/full-repatterning-ultimate'
+    },
+    {
+      name: '12-Series',
+      price: 3000,
+      description: '12 SI sessions only. Structural focus.',
+      link: '/programs/12-series'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="Full Repatterning Premium"
@@ -138,6 +159,7 @@ function FullRepatterningPremium() {
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/6oU4gzgcLcNF4Bja3oefC0a"
       recommended={true}
+      similarPrograms={similarPrograms}
     />
   );
 }

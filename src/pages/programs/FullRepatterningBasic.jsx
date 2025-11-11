@@ -88,6 +88,28 @@ function FullRepatterningBasic() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: 'Full Repatterning - Premium',
+      price: 5400,
+      description: '12 SI (90min) + 24 Movement. Deeper work.',
+      link: '/programs/full-repatterning-premium',
+      badge: 'POPULAR'
+    },
+    {
+      name: 'Hip Freedom - Extended',
+      price: 1920,
+      description: '6 SI + 6 Movement. More affordable.',
+      link: '/programs/hip-freedom-extended'
+    },
+    {
+      name: '12-Series',
+      price: 3000,
+      description: '12 SI only. Structural focus.',
+      link: '/programs/12-series'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="Full Repatterning Basic"
@@ -96,6 +118,7 @@ function FullRepatterningBasic() {
       whatYouGet={whatYouGet}
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/3cI9ATf8H3d50l32AWefC09"
+      similarPrograms={similarPrograms}
     />
   );
 }

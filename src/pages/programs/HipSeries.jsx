@@ -103,6 +103,28 @@ function HipSeries() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: 'Hip Freedom - Basic',
+      price: 1320,
+      description: '4 SI + 4 Movement. More comprehensive hip work.',
+      link: '/programs/hip-freedom-basic',
+      badge: 'COMPREHENSIVE'
+    },
+    {
+      name: '12-Series',
+      price: 3000,
+      description: 'Complete Anatomy Trains protocol. Full body.',
+      link: '/programs/12-series'
+    },
+    {
+      name: 'Hip Freedom - Extended',
+      price: 1920,
+      description: '6 SI + 6 Movement. Maximum hip transformation.',
+      link: '/programs/hip-freedom-extended'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="Hip Series"
@@ -111,6 +133,7 @@ function HipSeries() {
       whatYouGet={whatYouGet}
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/bJe8wPaSr7tl5FndfAefC05"
+      similarPrograms={similarPrograms}
     />
   );
 }

@@ -97,6 +97,27 @@ function Movement10Sessions() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: '5 Movement Sessions',
+      price: 810,
+      description: 'Shorter intro package. Save 10%.',
+      link: '/programs/movement-5-sessions'
+    },
+    {
+      name: '20 Movement Sessions',
+      price: 2880,
+      description: 'Maximum commitment. Save 20%.',
+      link: '/programs/movement-20-sessions'
+    },
+    {
+      name: 'The Reset',
+      price: 990,
+      description: '3 SI + 3 Movement. Quick comprehensive reset.',
+      link: '/programs/the-reset'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="10 Movement Sessions"
@@ -106,6 +127,7 @@ function Movement10Sessions() {
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/14A6oHbWv00T3xf8ZkefC02"
       recommended={true}
+      similarPrograms={similarPrograms}
     />
   );
 }

@@ -64,6 +64,27 @@ function HipFreedomExtended() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: 'Hip Freedom - Basic',
+      price: 1320,
+      description: '4 SI + 4 Movement. More affordable option.',
+      link: '/programs/hip-freedom-basic'
+    },
+    {
+      name: 'Full Repatterning - Basic',
+      price: 3720,
+      description: '12 SI + 12 Movement. Full body transformation.',
+      link: '/programs/full-repatterning-basic'
+    },
+    {
+      name: '12-Series',
+      price: 3000,
+      description: '12 SI sessions. Complete structural protocol.',
+      link: '/programs/12-series'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="Hip Freedom Extended"
@@ -73,6 +94,7 @@ function HipFreedomExtended() {
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/dRmaEXbWv8xpgk11wSefC08"
       recommended={true}
+      similarPrograms={similarPrograms}
     />
   );
 }

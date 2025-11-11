@@ -102,6 +102,28 @@ function TheReset() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: '5 Movement Sessions',
+      price: 810,
+      description: 'Movement only. Great starter package.',
+      link: '/programs/movement-5-sessions'
+    },
+    {
+      name: 'Hip Freedom - Basic',
+      price: 1320,
+      description: '4 SI + 4 Movement. More comprehensive.',
+      link: '/programs/hip-freedom-basic',
+      badge: 'MORE SESSIONS'
+    },
+    {
+      name: 'Hip Series',
+      price: 720,
+      description: '4 SI sessions. Focused structural work.',
+      link: '/programs/hip-series'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="The Reset"
@@ -110,6 +132,7 @@ function TheReset() {
       whatYouGet={whatYouGet}
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/dRmfZhgcLcNF0l31wSefC04"
+      similarPrograms={similarPrograms}
     />
   );
 }

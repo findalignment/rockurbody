@@ -64,6 +64,28 @@ function Movement20Sessions() {
     }
   ];
 
+  const similarPrograms = [
+    {
+      name: '10 Movement Sessions',
+      price: 1530,
+      description: 'Best value package. Save 15%.',
+      link: '/programs/movement-10-sessions',
+      badge: 'POPULAR'
+    },
+    {
+      name: 'Full Repatterning - Basic',
+      price: 3720,
+      description: '12 SI + 12 Movement. Complete transformation.',
+      link: '/programs/full-repatterning-basic'
+    },
+    {
+      name: 'Full Repatterning - Premium',
+      price: 5400,
+      description: '12 SI (90min) + 24 Movement. Ultimate program.',
+      link: '/programs/full-repatterning-premium'
+    }
+  ];
+
   return (
     <ProgramPageTemplate
       programName="20 Movement Sessions"
@@ -72,6 +94,7 @@ function Movement20Sessions() {
       whatYouGet={whatYouGet}
       accordionSections={accordionSections}
       stripeLink="https://buy.stripe.com/9B69AT1hR4h9d7P2AWefC03"
+      similarPrograms={similarPrograms}
     />
   );
 }
