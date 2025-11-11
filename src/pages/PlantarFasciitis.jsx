@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function PlantarFasciitis() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Plantar Fasciitis', url: '/plantar-fasciitis' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Plantar Fasciitis Treatment Santa Cruz | Heel Pain Relief"
         description="Lasting relief from plantar fasciitis and heel pain. Address the root causes through Structural Integration and movement training in Santa Cruz."
         keywords="plantar fasciitis santa cruz, heel pain, foot pain relief, plantar fasciitis treatment, chronic heel pain"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function PlantarFasciitis() {
         subtitle="Fix heel pain by addressing what's actually causing it"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

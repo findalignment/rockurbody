@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function ITBandSyndrome() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'IT Band Syndrome', url: '/it-band-syndrome' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="IT Band Syndrome Treatment Santa Cruz | ITBS Relief for Runners"
         description="Effective IT band syndrome treatment for runners and cyclists. Address the real causes of IT band pain through fascial work and movement training in Santa Cruz."
         keywords="IT band syndrome santa cruz, ITBS treatment, IT band pain, runner's knee, lateral knee pain, IT band syndrome runners"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function ITBandSyndrome() {
         subtitle="Stop foam rolling your IT band. It's not the problem."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function HeadacheMigraineRelief() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Headache & Migraine Relief', url: '/headache-migraine-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Headache and Migraine Relief Santa Cruz | Tension Headache Treatment"
         description="Natural headache and migraine relief through Structural Integration and bodywork. Address cervicogenic headaches, tension headaches, and chronic head pain in Santa Cruz."
         keywords="headache relief santa cruz, migraine treatment, tension headache, cervicogenic headache, chronic headaches, natural headache relief"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function HeadacheMigraineRelief() {
         subtitle="Most headaches start in your neck and shoulders, not your head"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

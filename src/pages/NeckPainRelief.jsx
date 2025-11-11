@@ -2,14 +2,24 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function NeckPainRelief() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Neck Pain Relief', url: '/neck-pain-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Neck Pain Relief Santa Cruz | Fix Tech Neck & Tension Headaches"
         description="Relief from chronic neck pain, tech neck, and tension headaches. Structural Integration addresses root causes in Santa Cruz."
         keywords="neck pain santa cruz, tech neck, tension headaches, stiff neck, forward head posture, cervical pain"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +28,9 @@ function NeckPainRelief() {
         subtitle="Free your neck, improve your posture, lose the headaches"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

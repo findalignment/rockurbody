@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function StressAnxietyRelief() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Stress & Anxiety Relief', url: '/stress-anxiety-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Stress and Anxiety Relief Santa Cruz | Bodywork for Mental Health"
         description="Natural stress and anxiety relief through Structural Integration and bodywork. Address the physical manifestations of chronic stress and improve nervous system regulation in Santa Cruz."
         keywords="stress relief santa cruz, anxiety treatment, bodywork for anxiety, natural stress relief, nervous system regulation, somatic therapy"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function StressAnxietyRelief() {
         subtitle="Your body holds your stress. Let's release it."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

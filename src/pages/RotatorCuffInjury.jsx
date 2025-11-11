@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function RotatorCuffInjury() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Rotator Cuff Injury', url: '/rotator-cuff-injury' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Rotator Cuff Injury Treatment Santa Cruz | Shoulder Rehabilitation"
         description="Comprehensive rotator cuff injury treatment and rehabilitation. Address tears, impingement, and chronic shoulder issues through Structural Integration and movement training in Santa Cruz."
         keywords="rotator cuff injury santa cruz, rotator cuff tear, shoulder impingement, rotator cuff rehabilitation, shoulder injury treatment"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function RotatorCuffInjury() {
         subtitle="Strengthen what's weak, release what's tight, address what needs work"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function SciaticaRelief() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Sciatica Relief', url: '/sciatica-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Sciatica Relief Santa Cruz | Fix Radiating Leg Pain & Numbness"
         description="Lasting relief from sciatica pain, numbness, and tingling. Address the root causes through Structural Integration in Santa Cruz."
         keywords="sciatica relief santa cruz, sciatic nerve pain, leg pain, radiating pain, numbness in leg, piriformis syndrome"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function SciaticaRelief() {
         subtitle="Stop the radiating pain. Fix what's causing it."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

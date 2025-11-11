@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function FrozenShoulder() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Frozen Shoulder', url: '/frozen-shoulder' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Frozen Shoulder Treatment Santa Cruz | Adhesive Capsulitis Relief"
         description="Comprehensive frozen shoulder (adhesive capsulitis) treatment through manual therapy and movement training. Restore shoulder mobility in Santa Cruz."
         keywords="frozen shoulder santa cruz, adhesive capsulitis, frozen shoulder treatment, shoulder mobility, shoulder pain relief"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function FrozenShoulder() {
         subtitle="Getting your shoulder unstuck takes patience and the right approach"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

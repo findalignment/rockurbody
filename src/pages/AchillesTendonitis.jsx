@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function AchillesTendonitis() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Achilles Tendonitis', url: '/achilles-tendonitis' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Achilles Tendonitis Treatment Santa Cruz | Heel Pain Relief"
         description="Effective Achilles tendonitis treatment for runners and athletes. Address chronic Achilles pain through Structural Integration and movement training in Santa Cruz."
         keywords="achilles tendonitis santa cruz, achilles tendinitis, achilles pain, achilles injury, heel pain treatment, achilles tendinosis"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function AchillesTendonitis() {
         subtitle="Your Achilles hurts. Let's address why."
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

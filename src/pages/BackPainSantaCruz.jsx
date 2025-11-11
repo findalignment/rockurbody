@@ -2,14 +2,24 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function BackPainSantaCruz() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Back Pain Relief', url: '/back-pain-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Back Pain Relief Santa Cruz | Chronic Lower Back Pain Treatment"
         description="Find lasting relief from chronic back pain in Santa Cruz. Structural Integration addresses root causes of lower back pain, sciatica, and spinal issues."
         keywords="back pain santa cruz, lower back pain relief, sciatica treatment santa cruz, chronic back pain, spine alignment santa cruz"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +28,9 @@ function BackPainSantaCruz() {
         subtitle="Address the root cause, not just the symptoms"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           {/* Intro */}
@@ -303,6 +315,41 @@ function BackPainSantaCruz() {
             <Button to="/consult" variant="primary" size="lg">
               Book Free Consultation
             </Button>
+          </div>
+
+          {/* Related Services */}
+          <div className="mt-16 border-t-2 border-neutralLight pt-12">
+            <h3 className="text-2xl font-bold text-neutralDark mb-6">Related Services</h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              <Link to="/sciatica-relief" className="p-4 bg-white rounded-lg border-2 border-neutralLight hover:border-accent transition-colors">
+                <h4 className="font-bold text-primary mb-2">Sciatica Relief</h4>
+                <p className="text-sm text-neutralDark/70">Radiating leg pain and nerve issues</p>
+              </Link>
+              <Link to="/hip-pain-treatment" className="p-4 bg-white rounded-lg border-2 border-neutralLight hover:border-accent transition-colors">
+                <h4 className="font-bold text-primary mb-2">Hip Pain Treatment</h4>
+                <p className="text-sm text-neutralDark/70">Hip mobility and pain relief</p>
+              </Link>
+              <Link to="/posture-correction" className="p-4 bg-white rounded-lg border-2 border-neutralLight hover:border-accent transition-colors">
+                <h4 className="font-bold text-primary mb-2">Posture Correction</h4>
+                <p className="text-sm text-neutralDark/70">Fix desk posture and alignment</p>
+              </Link>
+            </div>
+          </div>
+
+          {/* Available in Your Area */}
+          <div className="mt-12 bg-neutralLight/50 p-8 rounded-xl">
+            <h3 className="text-xl font-bold text-neutralDark mb-4">Available in Your Area</h3>
+            <p className="text-neutralDark/80 mb-4">Mobile back pain treatment throughout the Bay Area:</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              <Link to="/santa-cruz-personal-training" className="text-accent hover:underline">Santa Cruz</Link>
+              <Link to="/capitola-personal-training" className="text-accent hover:underline">Capitola</Link>
+              <Link to="/aptos-personal-training" className="text-accent hover:underline">Aptos</Link>
+              <Link to="/monterey-personal-training" className="text-accent hover:underline">Monterey</Link>
+              <Link to="/carmel-personal-training" className="text-accent hover:underline">Carmel</Link>
+              <Link to="/san-jose-personal-training" className="text-accent hover:underline">San Jose</Link>
+              <Link to="/palo-alto-personal-training" className="text-accent hover:underline">Palo Alto</Link>
+              <Link to="/services" className="text-accent hover:underline font-semibold">View All →</Link>
+            </div>
           </div>
 
         </div>

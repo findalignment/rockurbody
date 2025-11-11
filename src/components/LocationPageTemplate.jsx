@@ -2,6 +2,8 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import PageHero from './PageHero';
+import Breadcrumbs from './Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 /**
  * Reusable template for location-based SEO pages
@@ -16,6 +18,15 @@ function LocationPageTemplate({
 }) {
   const pageTitle = `Rock Your Body | Structural Integration & Functional Fitness in ${city}, CA`;
   const metaDescription = `Private movement education and structural integration serving ${city}, CA. Personalized training that restores alignment, strength, and balance. Mobile service from Santa Cruz.`;
+
+  // Breadcrumb data for navigation and SEO
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Service Areas', url: '/services' },
+    { name: city, url: `/${city.toLowerCase().replace(/\s+/g, '-')}-personal-training` }
+  ];
+
+  const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
 
   return (
     <PageLayout>
@@ -54,6 +65,11 @@ function LocationPageTemplate({
             "url": `https://rockyourbody.com/${city.toLowerCase().replace(/\s+/g, '-')}-personal-training`
           })}
         </script>
+
+        {/* Breadcrumb Schema for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       </Helmet>
 
       <PageHero 
@@ -61,6 +77,9 @@ function LocationPageTemplate({
         title={`Personal Training in ${city}`}
         subtitle={`Mobile Movement Education & Structural Integration • ${county}`}
       />
+
+      {/* Breadcrumb Navigation */}
+      <Breadcrumbs items={breadcrumbs} />
 
       <div className="pt-20 pb-24 px-4 md:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
@@ -173,7 +192,7 @@ function LocationPageTemplate({
             </div>
           </div>
 
-          {/* Nearby Areas */}
+          {/* Nearby Areas - Now with clickable links for internal linking */}
           {nearbyAreas.length > 0 && (
             <div className="mb-16">
               <h3 className="text-2xl md:text-3xl font-bold text-neutralDark mb-6">
@@ -184,12 +203,13 @@ function LocationPageTemplate({
               </p>
               <div className="flex flex-wrap gap-3">
                 {nearbyAreas.map((area, index) => (
-                  <span 
+                  <Link 
                     key={index}
-                    className="px-4 py-2 bg-neutralLight text-neutralDark rounded-full text-base"
+                    to={`/${area.toLowerCase().replace(/\s+/g, '-')}-personal-training`}
+                    className="px-4 py-2 bg-neutralLight text-neutralDark rounded-full text-base hover:bg-accent hover:text-white transition-colors duration-200"
                   >
                     {area}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </div>

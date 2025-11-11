@@ -6,6 +6,7 @@
  * @param {string} title - Page title to display over image
  * @param {string} subtitle - Optional subtitle
  * @param {string} overlayOpacity - Opacity of dark overlay (0-100, default 40)
+ * @param {boolean} priority - If true, loads image eagerly (for above-fold images)
  * 
  * Note: Automatically uses WebP format with JPG fallback for optimal performance
  */
@@ -13,7 +14,8 @@ function PageHero({
   imageSrc, 
   title, 
   subtitle,
-  overlayOpacity = 40 
+  overlayOpacity = 40,
+  priority = false
 }) {
   // Convert image path to WebP (e.g., "/about-hero.jpg" -> "/about-hero.webp")
   const webpSrc = imageSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
@@ -29,7 +31,8 @@ function PageHero({
             src={imageSrc}
             alt={title}
             className="absolute inset-0 w-full h-full object-cover object-top"
-            loading="lazy"
+            loading={priority ? 'eager' : 'lazy'}
+            fetchpriority={priority ? 'high' : 'auto'}
           />
         </picture>
         {/* Optional subtle vignette */}

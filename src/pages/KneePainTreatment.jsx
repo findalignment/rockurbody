@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function KneePainTreatment() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Knee Pain Treatment', url: '/knee-pain-treatment' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Knee Pain Treatment Santa Cruz | Runner's Knee & Joint Pain Relief"
         description="Fix knee pain, runner's knee, and tracking issues. Structural Integration addresses the root causes of knee problems in Santa Cruz."
         keywords="knee pain santa cruz, runners knee, knee pain relief, patellofemoral pain, knee injury, IT band knee pain"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function KneePainTreatment() {
         subtitle="Fix knee pain by addressing what's above and below it"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

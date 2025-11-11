@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function TMJRelief() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'TMJ Relief', url: '/tmj-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="TMJ Pain Relief Santa Cruz | Jaw Pain & Tension Treatment"
         description="Relief from TMJ pain, jaw tension, and clicking. Structural Integration addresses the root causes of jaw dysfunction in Santa Cruz."
         keywords="TMJ pain santa cruz, jaw pain, TMJ relief, jaw tension, bruxism, jaw clicking, temporomandibular joint"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function TMJRelief() {
         subtitle="Fix jaw pain, reduce tension, stop the clicking"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

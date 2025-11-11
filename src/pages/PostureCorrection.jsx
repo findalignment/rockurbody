@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function PostureCorrection() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Posture Correction', url: '/posture-correction' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Posture Correction Santa Cruz | Fix Forward Head & Rounded Shoulders"
         description="Improve your posture permanently through Structural Integration. Address forward head, rounded shoulders, and postural imbalances in Santa Cruz."
         keywords="posture correction santa cruz, improve posture, forward head posture, rounded shoulders, structural alignment, body alignment santa cruz"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function PostureCorrection() {
         subtitle="Stand taller, move better, feel confident"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           {/* Intro */}

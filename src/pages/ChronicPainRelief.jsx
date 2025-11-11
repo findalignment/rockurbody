@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function ChronicPainRelief() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Chronic Pain Relief', url: '/chronic-pain-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Chronic Pain Relief Santa Cruz | Structural Integration & Movement Therapy"
         description="Find lasting relief from chronic back pain, neck pain, hip issues, and more. Structural Integration + Movement Education addresses root causes, not just symptoms."
         keywords="chronic pain relief santa cruz, back pain santa cruz, neck pain relief, hip pain treatment, fascia therapy, structural integration pain"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function ChronicPainRelief() {
         subtitle="Address the root cause, not just symptoms"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           {/* Intro */}

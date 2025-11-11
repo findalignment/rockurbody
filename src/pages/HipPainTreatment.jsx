@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function HipPainTreatment() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Hip Pain Treatment', url: '/hip-pain-treatment' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Hip Pain Treatment Santa Cruz | Fix Tight Hips & Hip Impingement"
         description="Lasting relief from hip pain, tightness, and mobility issues. Structural Integration addresses root causes of hip problems in Santa Cruz."
         keywords="hip pain santa cruz, tight hips, hip impingement, hip flexibility, hip pain relief, hip mobility"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function HipPainTreatment() {
         subtitle="Restore hip mobility, eliminate pain, move freely"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">

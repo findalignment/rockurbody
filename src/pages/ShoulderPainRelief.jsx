@@ -2,14 +2,23 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function ShoulderPainRelief() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+    { name: 'Shoulder Pain Relief', url: '/shoulder-pain-relief' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Shoulder Pain Relief Santa Cruz | Fix Rotator Cuff & Impingement"
         description="Lasting relief from shoulder pain, frozen shoulder, and rotator cuff issues. Structural Integration addresses the root causes in Santa Cruz."
         keywords="shoulder pain santa cruz, rotator cuff pain, frozen shoulder, shoulder impingement, shoulder mobility"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -18,7 +27,9 @@ function ShoulderPainRelief() {
         subtitle="Get your shoulder moving freely again"
       />
 
-      <div className="bg-white py-16 px-6">
+      <Breadcrumbs items={breadcrumbs} />
+
+      <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">
           
           <div className="mb-16">
