@@ -70,6 +70,14 @@ const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/Integrat
 const PhoneReshapingSkeleton = lazy(() => import('./pages/blog/PhoneReshapingSkeleton'));
 const TechChangesPosture = lazy(() => import('./pages/blog/TechChangesPosture'));
 
+// Hub Pages (Pillar Pages)
+const PainReliefHub = lazy(() => import('./pages/PainReliefHub'));
+const MovementTrainingHub = lazy(() => import('./pages/MovementTrainingHub'));
+const StructuralIntegrationHub = lazy(() => import('./pages/StructuralIntegrationHub'));
+const SportsPerformanceHub = lazy(() => import('./pages/SportsPerformanceHub'));
+const InjuryRecoveryHub = lazy(() => import('./pages/InjuryRecoveryHub'));
+const WellnessHub = lazy(() => import('./pages/WellnessHub'));
+
 // SEO Pages
 const SantaCruzStructuralIntegration = lazy(() => import('./pages/SantaCruzStructuralIntegration'));
 const ChronicPainRelief = lazy(() => import('./pages/ChronicPainRelief'));
@@ -196,6 +204,14 @@ function AppRoutes() {
         <Route path="/12-series" element={<TwelveSeries />} />
         <Route path="/hip-series" element={<HipSeries />} />
         
+        {/* Hub Pages (Pillar Pages) */}
+        <Route path="/pain-relief" element={<PainReliefHub />} />
+        <Route path="/movement-training" element={<MovementTrainingHub />} />
+        <Route path="/structural-integration" element={<StructuralIntegrationHub />} />
+        <Route path="/sports-performance" element={<SportsPerformanceHub />} />
+        <Route path="/injury-recovery" element={<InjuryRecoveryHub />} />
+        <Route path="/wellness" element={<WellnessHub />} />
+        
         {/* Program Detail Pages */}
         <Route path="/programs/12-series" element={<ProgramTwelveSeries />} />
         <Route path="/programs/the-reset" element={<ProgramTheReset />} />
@@ -227,7 +243,7 @@ function AppRoutes() {
         <Route path="/surfers" element={<Surfers />} />
         <Route path="/back-pain-santa-cruz" element={<BackPainSantaCruz />} />
         <Route path="/posture-correction" element={<PostureCorrection />} />
-        <Route path="/injury-recovery" element={<InjuryRecovery />} />
+        <Route path="/services/injury-recovery" element={<InjuryRecovery />} />
         <Route path="/cyclists-and-runners" element={<CyclistsRunners />} />
         <Route path="/desk-worker-wellness" element={<DeskWorkerWellness />} />
         <Route path="/active-aging" element={<ActiveAging />} />
