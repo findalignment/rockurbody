@@ -66,6 +66,49 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Hub Pages (Pillar Content) -->
+  <url>
+    <loc>https://rockurbody.com/pain-relief</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/movement-training</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/structural-integration</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/sports-performance</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/injury-recovery</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/wellness</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
   <!-- About Pages -->
   <url>
     <loc>https://rockurbody.com/approach</loc>
@@ -161,7 +204,7 @@
   </url>
   
   <url>
-    <loc>https://rockurbody.com/injury-recovery</loc>
+    <loc>https://rockurbody.com/services/injury-recovery</loc>
     <lastmod>2025-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
