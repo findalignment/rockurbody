@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function NeckPainRelief() {
@@ -13,13 +15,40 @@ function NeckPainRelief() {
     { name: 'Neck Pain Relief', url: '/neck-pain-relief' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix neck pain and tech neck?",
+      answer: "Many clients notice immediate improvements in neck mobility and reduced tension after their first session. However, fixing tech neck and chronic neck pain typically requires 4-8 sessions as we systematically address forward head posture, release fascial restrictions, and retrain movement patterns. The structural changes we create need time to integrate, and you'll need to practice new movement patterns. Most people see significant improvement within 6-10 sessions."
+    },
+    {
+      question: "Will this help with tension headaches and migraines?",
+      answer: "Yes. Many tension headaches and some migraines are caused by neck tension, forward head posture, and fascial restrictions pulling on the skull. By releasing these restrictions and improving neck alignment, we often eliminate or significantly reduce headache frequency. Clients frequently report that their headaches disappear as their neck tension resolves. We work with the structural and fascial contributors to headaches."
+    },
+    {
+      question: "Can I still work at my computer while doing this work?",
+      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your neck. The goal isn't to stop you from working—it's to help you work in ways that don't create neck problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to move your head and neck in ways that don't strain them. Many clients find they can work longer without pain."
+    },
+    {
+      question: "What if I've already tried chiropractic adjustments for my neck?",
+      answer: "Our approach is different. Chiropractic adjusts bones, but neck pain often involves fascial restrictions, muscle imbalances, and movement patterns that adjustments alone don't address. Structural Integration works with the connective tissue system to release restrictions throughout your neck, shoulders, and upper back. We also teach you movement patterns to maintain the improvements. Many clients come to us after chiropractic provided temporary relief but didn't solve the underlying problem."
+    },
+    {
+      question: "Is this safe if I have a history of neck injuries or whiplash?",
+      answer: "Yes, we work carefully with clients who have neck injury histories. We'll discuss your medical history during your consultation and work within any necessary limitations. Structural Integration can be particularly effective for addressing scar tissue, fascial restrictions, and compensation patterns from old injuries. We're experienced working with post-whiplash clients and will respect any medical restrictions while helping your neck heal."
+    },
+    {
+      question: "How many sessions will I need for neck pain relief?",
+      answer: "This depends on how long you've had neck pain, how severe your forward head posture is, and how quickly your body responds. Many people find significant relief within 6-10 sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation and create a plan tailored to your situation."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Neck Pain Relief Santa Cruz | Fix Tech Neck & Tension Headaches"
         description="Relief from chronic neck pain, tech neck, and tension headaches. Structural Integration addresses root causes in Santa Cruz."
         keywords="neck pain santa cruz, tech neck, tension headaches, stiff neck, forward head posture, cervical pain"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -202,6 +231,15 @@ function NeckPainRelief() {
               View Programs
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Neck Pain Relief"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="neck pain relief" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
+import AvailableLocations from '../components/AvailableLocations';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
@@ -235,6 +236,9 @@ function PersonalTrainerSantaCruz() {
               View Training Packages
             </Button>
           </div>
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="personal training" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

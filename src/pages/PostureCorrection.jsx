@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function PostureCorrection() {
@@ -13,13 +15,40 @@ function PostureCorrection() {
     { name: 'Posture Correction', url: '/posture-correction' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix poor posture?",
+      answer: "Many clients notice immediate improvements in how they feel after their first session, but lasting posture correction typically requires 6-12 sessions as we systematically address fascial restrictions, muscle imbalances, and retrain movement patterns. The structural changes we create need time to integrate, and you'll need to practice new movement patterns. Most people see significant improvement within 8-12 sessions."
+    },
+    {
+      question: "Will I have to constantly think about my posture?",
+      answer: "No. The goal is to make good posture feel natural, not to require constant effort. Through Structural Integration, we reorganize your structure so that better alignment feels comfortable and natural. Movement Education teaches you patterns that support good posture without thinking about it. Over time, good posture becomes your default because your structure supports it."
+    },
+    {
+      question: "Can I still work at my desk while doing this work?",
+      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your posture. The goal isn't to stop you from working—it's to help you work in ways that don't create postural problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to sit and move in ways that support your structure. Many clients find they can work longer without pain."
+    },
+    {
+      question: "What if I've tried posture exercises and they didn't work?",
+      answer: "Posture exercises often fail because they don't address the underlying structural restrictions. If your fascia is locked up and pulling you into poor alignment, exercises alone won't fix it. Structural Integration releases these restrictions first, then Movement Education teaches you patterns that maintain the improvements. This combination addresses both structure and function, which is why it works when exercises alone haven't."
+    },
+    {
+      question: "How many sessions will I need for posture correction?",
+      answer: "This depends on how severe your postural issues are and how long you've had them. Many people find significant improvement within 8-12 sessions. We typically recommend starting with a series (like The Reset or 12-Series) to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+    },
+    {
+      question: "Is this safe if I have scoliosis or other structural issues?",
+      answer: "Yes. We work carefully with clients who have structural issues like scoliosis. Structural Integration can help improve alignment and function even with these conditions. We'll discuss your medical history during your consultation and work within any necessary limitations. While we can't eliminate scoliosis, we can often significantly improve function and reduce associated pain."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Posture Correction Santa Cruz | Fix Forward Head & Rounded Shoulders"
         description="Improve your posture permanently through Structural Integration. Address forward head, rounded shoulders, and postural imbalances in Santa Cruz."
         keywords="posture correction santa cruz, improve posture, forward head posture, rounded shoulders, structural alignment, body alignment santa cruz"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -289,6 +318,15 @@ function PostureCorrection() {
               </Link>
             </div>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Posture Correction"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="posture correction" />
 
         </div>
       </div>

@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function ShoulderPainRelief() {
@@ -13,13 +15,40 @@ function ShoulderPainRelief() {
     { name: 'Shoulder Pain Relief', url: '/shoulder-pain-relief' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix shoulder pain?",
+      answer: "Many clients notice immediate improvements in shoulder mobility and reduced pain after their first session. However, lasting shoulder pain relief typically requires 6-10 sessions as we systematically address fascial restrictions, muscle imbalances, and movement patterns. Complex issues like frozen shoulder or rotator cuff injuries may take longer. Most people see significant improvement within 8-12 sessions."
+    },
+    {
+      question: "Will this help with frozen shoulder or rotator cuff injuries?",
+      answer: "Yes. Structural Integration can help with both frozen shoulder and rotator cuff issues by releasing fascial restrictions, improving shoulder blade mobility, and restoring proper movement patterns. We work carefully with these conditions, respecting any medical limitations while helping your shoulder heal. Many clients find our approach complements physical therapy and accelerates recovery."
+    },
+    {
+      question: "Can I still surf/climb/exercise while doing this work?",
+      answer: "Generally yes, but we'll discuss modifications based on your specific situation. The goal is to help you return to your activities pain-free, not to stop you from doing what you love. We may recommend temporary modifications to certain movements while we're addressing foundational issues, but most clients can continue their activities with some adjustments. In fact, applying what you learn in sessions to your activities accelerates your progress."
+    },
+    {
+      question: "What if I've already tried physical therapy for my shoulder?",
+      answer: "Our approach complements physical therapy by addressing the fascial and structural components that PT may not address. Physical therapy typically focuses on strengthening and range of motion exercises. Structural Integration works with the connective tissue system to release restrictions throughout your shoulder, neck, and upper back. We also address whole-body patterns that contribute to shoulder issues. Many clients come to us after PT helped but didn't fully resolve their pain."
+    },
+    {
+      question: "Is this safe if I have a history of shoulder injuries or surgeries?",
+      answer: "Yes, we work carefully with clients who have shoulder injury or surgery histories. We'll discuss your medical history during your consultation and work within any necessary limitations. Structural Integration can be particularly effective for addressing scar tissue, compensation patterns, and restrictions from old injuries. We're experienced working with post-surgical clients and will respect any medical restrictions while helping your shoulder heal."
+    },
+    {
+      question: "How many sessions will I need for shoulder pain relief?",
+      answer: "This depends on your specific condition—whether it's impingement, frozen shoulder, rotator cuff issues, or general shoulder pain. Many people find significant relief within 6-12 sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation and create a plan tailored to your situation."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Shoulder Pain Relief Santa Cruz | Fix Rotator Cuff & Impingement"
         description="Lasting relief from shoulder pain, frozen shoulder, and rotator cuff issues. Structural Integration addresses the root causes in Santa Cruz."
         keywords="shoulder pain santa cruz, rotator cuff pain, frozen shoulder, shoulder impingement, shoulder mobility"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -208,6 +237,15 @@ function ShoulderPainRelief() {
               View Programs
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Shoulder Pain Relief"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="shoulder pain relief" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

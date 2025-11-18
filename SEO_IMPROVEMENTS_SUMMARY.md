@@ -310,23 +310,10 @@ San Francisco
 
 ## 📞 Post-Launch Actions
 
-### Week 1:
-- Submit sitemap to Google Search Console
-- Update Google Business Profile
-- Verify all booking links work
-- Test mobile experience
-
-### Week 2-4:
-- Monitor Google Analytics for organic traffic
-- Check Google Search Console for indexing status
-- Review any crawl errors
-- Monitor page speed scores
-
 ### Month 2-3:
 - Track keyword rankings
 - Analyze which location pages are performing best
 - Add more content to low-performing pages
-- Consider adding FAQ schema
 
 ### Ongoing:
 - Monthly keyword rank tracking

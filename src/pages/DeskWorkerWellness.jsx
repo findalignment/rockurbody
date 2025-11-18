@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function DeskWorkerWellness() {
@@ -13,13 +15,40 @@ function DeskWorkerWellness() {
     { name: 'Desk Worker Wellness', url: '/desk-worker-wellness' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix desk-related pain?",
+      answer: "Many desk workers notice immediate improvements in comfort after their first session, but lasting relief from desk-related pain typically requires 6-10 sessions as we systematically address forward head posture, rounded shoulders, and fascial restrictions. Most people see significant improvement within 8-12 sessions. The key is addressing both structure and teaching you better movement patterns for desk work."
+    },
+    {
+      question: "Will I have to change my workstation setup?",
+      answer: "We'll help you optimize your workstation setup, but the real solution is improving your structure and movement patterns. Even with perfect ergonomics, if your fascia is locked up and pulling you into poor alignment, you'll still have problems. We address the underlying structural issues first, then help you set up your workspace to support good alignment. Many clients find they can work longer without pain."
+    },
+    {
+      question: "Can I still work at my desk while doing this work?",
+      answer: "Yes. The goal is to help you work better, not to stop you from working. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to sit and move in ways that support your structure. Many clients find they can work longer without pain and feel better at the end of the day."
+    },
+    {
+      question: "What if I've tried ergonomic adjustments and they didn't help?",
+      answer: "Ergonomic adjustments often fail because they don't address the underlying structural restrictions. If your fascia is locked up and pulling you into poor alignment, better ergonomics alone won't fix it. Structural Integration releases these restrictions first, then Movement Education teaches you patterns that maintain the improvements. This combination addresses both structure and function, which is why it works when ergonomics alone haven't."
+    },
+    {
+      question: "How many sessions will I need for desk worker wellness?",
+      answer: "This depends on how severe your postural issues are and how long you've had them. Many desk workers find significant improvement within 8-12 sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+    },
+    {
+      question: "Will this help with headaches and eye strain from computer work?",
+      answer: "Yes. Many headaches and eye strain issues are related to forward head posture and neck tension from desk work. By improving your posture and releasing neck restrictions, we often eliminate or significantly reduce these symptoms. Clients frequently report that their headaches disappear as their neck tension resolves. We work with the structural contributors to these issues."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Desk Worker Wellness Santa Cruz | Fix Tech Neck & Back Pain"
         description="Relief from desk job pain: tech neck, rounded shoulders, lower back issues. Structural Integration for remote workers and office professionals."
         keywords="desk job pain, tech neck, computer posture, office worker pain santa cruz, work from home pain, ergonomic therapy"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -145,6 +174,15 @@ function DeskWorkerWellness() {
               View Programs
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Desk Worker Wellness"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="desk worker wellness" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

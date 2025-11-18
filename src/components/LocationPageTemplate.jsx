@@ -192,6 +192,81 @@ function LocationPageTemplate({
             </div>
           </div>
 
+          {/* Related Services - Internal linking for SEO */}
+          <div className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold text-neutralDark mb-6">
+              Related Services Available in {city}
+            </h2>
+            <p className="text-base md:text-lg text-neutralDark/80 mb-6 leading-relaxed">
+              Whether you're dealing with specific pain, recovering from an injury, or looking to improve your performance, I offer specialized services tailored to your needs:
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Link 
+                to="/back-pain-santa-cruz" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Back Pain Relief</h3>
+                <p className="text-sm text-neutralDark/70">Targeted treatment for chronic back pain</p>
+              </Link>
+              <Link 
+                to="/neck-pain-relief" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Neck Pain Relief</h3>
+                <p className="text-sm text-neutralDark/70">Address tension and alignment issues</p>
+              </Link>
+              <Link 
+                to="/hip-pain-treatment" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Hip Pain Treatment</h3>
+                <p className="text-sm text-neutralDark/70">Restore hip mobility and function</p>
+              </Link>
+              <Link 
+                to="/shoulder-pain-relief" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Shoulder Pain Relief</h3>
+                <p className="text-sm text-neutralDark/70">Rotator cuff and shoulder issues</p>
+              </Link>
+              <Link 
+                to="/knee-pain-treatment" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Knee Pain Treatment</h3>
+                <p className="text-sm text-neutralDark/70">Improve knee function and reduce pain</p>
+              </Link>
+              <Link 
+                to="/posture-correction" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Posture Correction</h3>
+                <p className="text-sm text-neutralDark/70">Fix alignment and movement patterns</p>
+              </Link>
+              <Link 
+                to="/services/injury-recovery" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Injury Recovery</h3>
+                <p className="text-sm text-neutralDark/70">Comprehensive rehabilitation approach</p>
+              </Link>
+              <Link 
+                to="/athletic-performance" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Athletic Performance</h3>
+                <p className="text-sm text-neutralDark/70">Enhance athletic performance</p>
+              </Link>
+              <Link 
+                to="/chronic-pain-relief" 
+                className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="font-semibold text-neutralDark mb-2">Chronic Pain Relief</h3>
+                <p className="text-sm text-neutralDark/70">Long-term pain management solutions</p>
+              </Link>
+            </div>
+          </div>
+
           {/* Nearby Areas - Now with clickable links for internal linking */}
           {nearbyAreas.length > 0 && (
             <div className="mb-16">

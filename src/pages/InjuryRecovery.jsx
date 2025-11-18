@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function InjuryRecovery() {
@@ -13,13 +15,40 @@ function InjuryRecovery() {
     { name: 'Injury Recovery', url: '/injury-recovery' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does injury recovery take?",
+      answer: "Recovery time depends on the type and severity of your injury, how long ago it occurred, and how quickly your body responds. Many clients notice improvements within 4-6 sessions, but full recovery from significant injuries typically requires 8-16 sessions. We work systematically to address not just the injured area but also compensation patterns that developed. Most people see meaningful progress throughout the process."
+    },
+    {
+      question: "Can I do this work while still in physical therapy?",
+      answer: "Absolutely. Our work complements physical therapy beautifully. PT typically focuses on strengthening and range of motion exercises. Structural Integration addresses the fascial and structural components that PT may not address. Many physical therapists refer patients to us specifically for the structural work that enhances their treatment. We're happy to coordinate with your PT and work within any necessary limitations."
+    },
+    {
+      question: "Will this help with scar tissue from surgery or old injuries?",
+      answer: "Yes. Structural Integration is particularly effective for working with scar tissue. We release fascial restrictions around scars, improve tissue mobility, and help your body reorganize around better patterns. Even scars from years ago can be improved. We work carefully and respectfully with surgical sites and will coordinate with your healthcare providers as needed."
+    },
+    {
+      question: "What if my injury is recent (less than 6 weeks old)?",
+      answer: "For acute injuries (less than 6 weeks old), we typically wait until the initial healing phase is complete before doing deep structural work. However, we can still help with gentle movement education and support your recovery process. We'll discuss your specific situation during your consultation and create a plan that's appropriate for your stage of healing."
+    },
+    {
+      question: "How many sessions will I need for injury recovery?",
+      answer: "This depends on your specific injury—its type, severity, and how long ago it occurred. Many people find significant improvement within 8-12 sessions. More complex or older injuries may require more sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+    },
+    {
+      question: "Is this safe if I'm still recovering from surgery?",
+      answer: "Yes, but we'll work carefully and respect any medical limitations. We'll discuss your surgical history during your consultation and coordinate with your healthcare providers as needed. We're experienced working with post-surgical clients and understand the healing process. We'll create a plan that supports your recovery while respecting any necessary restrictions."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Sports Injury Recovery Santa Cruz | Return to Activity Faster"
         description="Speed your recovery from sports injuries with Structural Integration and movement therapy. Address root causes and prevent re-injury."
         keywords="sports injury recovery santa cruz, injury rehabilitation, return to sport, injury prevention, movement therapy santa cruz"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -153,6 +182,15 @@ function InjuryRecovery() {
               View Programs
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Injury Recovery"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="injury recovery" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

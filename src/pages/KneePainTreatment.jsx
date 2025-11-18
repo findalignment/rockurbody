@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function KneePainTreatment() {
@@ -13,13 +15,40 @@ function KneePainTreatment() {
     { name: 'Knee Pain Treatment', url: '/knee-pain-treatment' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix knee pain?",
+      answer: "Many clients notice immediate improvements in knee comfort and function after their first session, but lasting knee pain relief typically requires 4-8 sessions as we systematically address the underlying causes—often hip and ankle issues, movement patterns, or structural imbalances. Most people see significant improvement within 6-10 sessions. Since knee pain is often caused by problems elsewhere, we address the whole system."
+    },
+    {
+      question: "Will this help with runner's knee or patellar tracking issues?",
+      answer: "Yes. Runner's knee and patellar tracking issues are often caused by hip weakness, tight IT bands, or movement patterns that create excessive stress on the knee. Structural Integration addresses these root causes by releasing fascial restrictions, improving hip function, and teaching better movement patterns. Many runners find their knee pain resolves once we fix the underlying hip and movement issues."
+    },
+    {
+      question: "Can I still run/exercise while doing this work?",
+      answer: "Generally yes, but we'll discuss modifications based on your specific situation. The goal is to help you return to your activities pain-free. We may recommend temporary modifications to certain activities while we're addressing foundational issues, but most clients can continue their activities with some adjustments. In fact, applying what you learn in sessions to your running or exercise accelerates your progress."
+    },
+    {
+      question: "What if my knee pain is from arthritis or an old injury?",
+      answer: "Structural Integration can help even with arthritis or old injuries. We work carefully to release fascial restrictions, improve alignment to reduce stress on the knee joint, and teach movement patterns that support your knee. While we can't reverse arthritis, we can significantly improve function and reduce pain. We're experienced working with post-injury clients and will respect any medical limitations."
+    },
+    {
+      question: "How many sessions will I need for knee pain relief?",
+      answer: "This depends on your specific situation—whether it's runner's knee, tracking issues, or general knee pain. Many people find significant relief within 6-10 sessions. Since knee pain often relates to hip and ankle function, we may recommend addressing those areas as well. We'll discuss your specific needs during your initial consultation and create a plan tailored to your situation."
+    },
+    {
+      question: "Is this safe if I've had knee surgery?",
+      answer: "Yes, we work carefully with clients who have knee surgery histories. We'll discuss your medical history during your consultation and work within any necessary limitations. Structural Integration can be particularly effective for addressing scar tissue, compensation patterns, and restrictions from surgery. We're experienced working with post-surgical clients and will respect any medical restrictions while helping your knee function improve."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Knee Pain Treatment Santa Cruz | Runner's Knee & Joint Pain Relief"
         description="Fix knee pain, runner's knee, and tracking issues. Structural Integration addresses the root causes of knee problems in Santa Cruz."
         keywords="knee pain santa cruz, runners knee, knee pain relief, patellofemoral pain, knee injury, IT band knee pain"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -266,6 +295,15 @@ function KneePainTreatment() {
               </Link>
             </div>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Knee Pain Treatment"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="knee pain treatment" />
 
         </div>
       </div>

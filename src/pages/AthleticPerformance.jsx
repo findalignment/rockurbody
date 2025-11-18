@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function AthleticPerformance() {
@@ -13,13 +15,40 @@ function AthleticPerformance() {
     { name: 'Athletic Performance', url: '/athletic-performance' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to see performance improvements?",
+      answer: "Many athletes notice immediate improvements in movement quality and reduced restrictions after their first session, but lasting performance gains typically develop over 6-12 sessions as we systematically address structural limitations and movement patterns. The improvements build over time as your body integrates the changes. Most athletes see significant performance improvements within 8-12 sessions."
+    },
+    {
+      question: "Will this help prevent injuries?",
+      answer: "Yes. Better structure and movement quality significantly reduce injury risk. When your body is properly aligned and moves efficiently, there's less stress on vulnerable tissues. We address compensation patterns and movement limitations that often lead to injuries. Many athletes find they stay healthier and perform better after doing this work."
+    },
+    {
+      question: "Can I continue my regular training while doing this work?",
+      answer: "Absolutely. The goal is to enhance your training, not interrupt it. We'll discuss your training schedule and may recommend some modifications during the initial phase, but most athletes can continue their regular training. In fact, applying what you learn in sessions to your training accelerates your progress. We'll help you integrate the improvements into your sport-specific movements."
+    },
+    {
+      question: "What if I'm already working with a coach or trainer?",
+      answer: "Our work complements coaching and training beautifully. Coaches focus on technique and conditioning. We address the structural and movement quality foundations that support better performance. Many coaches refer athletes to us specifically for the structural work that enhances their training. We're happy to coordinate with your coach and work within your training schedule."
+    },
+    {
+      question: "How many sessions will I need for performance improvement?",
+      answer: "This depends on your specific goals, current movement quality, and how quickly your body responds. Many athletes find significant improvements within 8-12 sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation and create a plan tailored to your sport and goals."
+    },
+    {
+      question: "Is this right for all sports?",
+      answer: "Yes. Better structure and movement quality benefit all sports. Whether you're a runner, surfer, climber, golfer, or play team sports, improved alignment, mobility, and movement patterns enhance performance. We adapt the work to your specific sport and movement demands. Many athletes across different sports find this work transformative for their performance."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Athletic Performance Training Santa Cruz | Optimize Movement"
         description="Improve athletic performance through better movement patterns and structural balance. For serious athletes in Santa Cruz."
         keywords="athletic performance santa cruz, sports performance, movement optimization, functional training, athletic bodywork"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -230,6 +259,15 @@ function AthleticPerformance() {
               View Training Programs
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Athletic Performance Training"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="athletic performance training" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

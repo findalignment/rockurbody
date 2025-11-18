@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function HeadacheMigraineRelief() {
@@ -13,13 +15,40 @@ function HeadacheMigraineRelief() {
     { name: 'Headache & Migraine Relief', url: '/headache-migraine-relief' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix headaches and migraines?",
+      answer: "Many clients notice immediate improvements in headache frequency and intensity after their first session, but lasting relief typically requires 6-10 sessions as we systematically address the underlying causes—often neck tension, forward head posture, and fascial restrictions. Most people see significant improvement within 8-12 sessions. The key is addressing the structural contributors to headaches."
+    },
+    {
+      question: "Will this help with migraines or just tension headaches?",
+      answer: "Structural Integration can help with both tension headaches and some migraines. Many migraines have structural and fascial contributors—neck tension, forward head posture, and restrictions pulling on the skull. By releasing these restrictions and improving alignment, we often eliminate or significantly reduce migraine frequency. Clients frequently report that their migraines become less frequent and less severe."
+    },
+    {
+      question: "What if my headaches are from stress or other causes?",
+      answer: "Even stress-related headaches often have structural components. When you're stressed, you tend to hold tension in your neck and shoulders, which can trigger headaches. By releasing these restrictions and improving your structure, we reduce the physical component of stress-related headaches. We also work with the nervous system to help regulate stress responses."
+    },
+    {
+      question: "Can I continue my regular activities while doing this work?",
+      answer: "Yes. The goal is to help you live without headaches, not to stop you from living your life. We'll discuss your specific triggers and may recommend some modifications during the initial phase, but most clients can continue their normal routines. In fact, applying what you learn in sessions to your daily activities accelerates your progress."
+    },
+    {
+      question: "How many sessions will I need for headache relief?",
+      answer: "This depends on how long you've had headaches, how frequent they are, and how quickly your body responds. Many people find significant relief within 6-10 sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+    },
+    {
+      question: "Is this safe if I'm taking medication for headaches?",
+      answer: "Yes. Our work is safe to do while taking headache medications. In fact, as your headaches improve through structural work, many clients find they need less medication over time. We'll discuss your medical situation during your consultation and work within any necessary limitations. We're experienced working with clients managing chronic headaches."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Headache and Migraine Relief Santa Cruz | Tension Headache Treatment"
         description="Natural headache and migraine relief through Structural Integration and bodywork. Address cervicogenic headaches, tension headaches, and chronic head pain in Santa Cruz."
         keywords="headache relief santa cruz, migraine treatment, tension headache, cervicogenic headache, chronic headaches, natural headache relief"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -299,6 +328,15 @@ function HeadacheMigraineRelief() {
               View Treatment Programs
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Headache & Migraine Relief"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="headache and migraine relief" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

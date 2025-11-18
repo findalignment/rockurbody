@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function HipPainTreatment() {
@@ -13,13 +15,40 @@ function HipPainTreatment() {
     { name: 'Hip Pain Treatment', url: '/hip-pain-treatment' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix hip pain?",
+      answer: "Many clients notice immediate improvements in hip mobility and reduced pain after their first session. However, lasting hip pain relief typically requires 4-8 sessions as we systematically address fascial restrictions, hip flexor tightness, and movement patterns. The Hip Series (4 sessions) is specifically designed to address hip issues. Most people see significant improvement within 6-10 sessions."
+    },
+    {
+      question: "Will this help with hip impingement or tight hips?",
+      answer: "Yes. Structural Integration is particularly effective for hip impingement and tight hips. We release fascial restrictions, improve hip capsule mobility, and restore proper hip function. The work addresses the structural and fascial components that contribute to impingement and tightness. Many clients find their hip mobility improves dramatically and impingement symptoms resolve as we restore proper hip mechanics."
+    },
+    {
+      question: "Can I still exercise and be active while doing this work?",
+      answer: "Generally yes, but we'll discuss modifications based on your specific situation. The goal is to help you move better, not to stop you from being active. We may recommend temporary modifications to certain movements while we're addressing foundational issues, but most clients can continue their activities with some adjustments. In fact, applying what you learn in sessions to your activities accelerates your progress."
+    },
+    {
+      question: "What if my hip pain is related to lower back or knee pain?",
+      answer: "Hip issues often contribute to both lower back and knee pain. When your hips don't work properly, your back and knees compensate, leading to pain in those areas. By fixing your hip function, we often resolve back and knee pain as well. Our whole-body approach addresses these interconnected patterns. Many clients find that as their hips improve, their back and knee pain disappears."
+    },
+    {
+      question: "Is this safe if I have a history of hip injuries or hip replacement?",
+      answer: "Yes, we work carefully with clients who have hip injury or surgery histories. We'll discuss your medical history during your consultation and work within any necessary limitations. Structural Integration can be particularly effective for addressing scar tissue, compensation patterns, and restrictions from old injuries. We're experienced working with post-surgical clients and will respect any medical restrictions while helping your hip function improve."
+    },
+    {
+      question: "How many sessions will I need for hip pain relief?",
+      answer: "This depends on your specific situation—whether it's impingement, tightness, or general hip pain. The Hip Series (4 sessions) is specifically designed for hip issues and provides a great foundation. Many people find significant relief within 4-8 sessions. We'll discuss your specific needs during your initial consultation and recommend the best approach for your situation."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Hip Pain Treatment Santa Cruz | Fix Tight Hips & Hip Impingement"
         description="Lasting relief from hip pain, tightness, and mobility issues. Structural Integration addresses root causes of hip problems in Santa Cruz."
         keywords="hip pain santa cruz, tight hips, hip impingement, hip flexibility, hip pain relief, hip mobility"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -226,6 +255,15 @@ function HipPainTreatment() {
               Learn About Hip Series
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Hip Pain Treatment"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="hip pain treatment" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

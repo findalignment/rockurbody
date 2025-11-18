@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function ChronicPainRelief() {
@@ -13,13 +15,40 @@ function ChronicPainRelief() {
     { name: 'Chronic Pain Relief', url: '/chronic-pain-relief' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to see results for chronic pain?",
+      answer: "Many clients notice immediate improvements in comfort and ease after their first session, but lasting chronic pain relief typically develops over a series of sessions as we systematically address the underlying structural patterns. Most people experience significant pain reduction within 6-12 sessions. Chronic pain that's been present for years may take longer to fully resolve, but you should see meaningful progress throughout the process."
+    },
+    {
+      question: "Will this work if I've already tried multiple treatments?",
+      answer: "Yes. Our approach is fundamentally different from most treatments. We work with the fascial system to reorganize your entire structure, addressing root causes rather than symptoms. Many clients come to us after physical therapy, chiropractic, massage, and other treatments provided temporary relief but didn't solve the underlying problem. Our whole-body, systematic approach often succeeds where isolated treatments haven't."
+    },
+    {
+      question: "Can I continue other treatments while doing this work?",
+      answer: "Absolutely. Our work complements medical care, physical therapy, and other treatments. Many healthcare providers refer patients to us specifically for the structural and fascial work that enhances their treatment. We're happy to coordinate with your medical team and work within any necessary limitations. The key is that we're addressing different aspects of your pain—structure and movement patterns—that other treatments may not address."
+    },
+    {
+      question: "What if my pain is from an old injury or medical condition?",
+      answer: "Old injuries and medical conditions often create lasting fascial restrictions and compensation patterns that contribute to ongoing pain. Structural Integration can be particularly effective for addressing these issues. We work with scar tissue, release restrictions from old injuries, and help your body reorganize around better patterns. We'll work carefully around any medical limitations and coordinate with your healthcare providers as needed."
+    },
+    {
+      question: "How many sessions will I need for chronic pain relief?",
+      answer: "This depends on your specific situation—how long you've had pain, how complex your structural patterns are, and how quickly your body responds. Many people find significant relief within 8-12 sessions, though some complex cases may require more. We typically recommend starting with a series (like The Reset or 12-Series) to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+    },
+    {
+      question: "Is this safe if I'm taking pain medications?",
+      answer: "Yes. Our work is safe to do while taking pain medications. In fact, as your pain improves through structural work, many clients find they need less medication over time. We'll discuss your medical situation during your consultation and work within any necessary limitations. We're experienced working with clients managing chronic pain and will create a plan that supports your healing process."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Chronic Pain Relief Santa Cruz | Structural Integration & Movement Therapy"
         description="Find lasting relief from chronic back pain, neck pain, hip issues, and more. Structural Integration + Movement Education addresses root causes, not just symptoms."
         keywords="chronic pain relief santa cruz, back pain santa cruz, neck pain relief, hip pain treatment, fascia therapy, structural integration pain"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -264,6 +293,15 @@ function ChronicPainRelief() {
               Book Free Consultation
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Chronic Pain Relief"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="chronic pain relief" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

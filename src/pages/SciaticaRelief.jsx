@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function SciaticaRelief() {
@@ -13,13 +15,40 @@ function SciaticaRelief() {
     { name: 'Sciatica Relief', url: '/sciatica-relief' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to fix sciatica?",
+      answer: "Many clients notice immediate relief from sciatic pain after their first session, but lasting sciatica relief typically requires 4-8 sessions as we systematically address the underlying causes—often tight hip muscles, fascial restrictions, or structural imbalances. Most people see significant improvement within 6-10 sessions. The key is addressing the root cause, not just the symptoms."
+    },
+    {
+      question: "Will this help if I have a herniated disc causing my sciatica?",
+      answer: "Yes. Even when sciatica is caused by a herniated disc, Structural Integration can help by releasing fascial restrictions that may be contributing to compression, improving alignment to reduce stress on the affected area, and teaching movement patterns that support your back. We work carefully within any medical limitations and coordinate with your healthcare providers. Many clients find significant relief even with disc issues."
+    },
+    {
+      question: "Can I continue my normal activities while doing this work?",
+      answer: "We'll discuss modifications based on your specific situation. The goal is to help you move better, not to stop you from living your life. We may recommend temporary modifications to certain activities that aggravate your sciatica while we're addressing foundational issues. Most clients can continue their normal routines with some adjustments. Applying what you learn in sessions to your daily activities accelerates your progress."
+    },
+    {
+      question: "What if my sciatica is from piriformis syndrome?",
+      answer: "Piriformis syndrome is one of the most common causes of sciatica, and Structural Integration is particularly effective for it. We release the tight piriformis muscle and surrounding fascial restrictions that compress the sciatic nerve. The work addresses both the muscle tightness and the structural patterns that contribute to it. Many clients find their sciatica resolves completely once we release the piriformis."
+    },
+    {
+      question: "How many sessions will I need for sciatica relief?",
+      answer: "This depends on how long you've had sciatica, what's causing it, and how quickly your body responds. Many people find significant relief within 4-8 sessions. If your sciatica is related to hip issues, the Hip Series (4 sessions) can be particularly effective. We'll discuss your specific needs during your initial consultation and recommend the best approach for your situation."
+    },
+    {
+      question: "Is this safe if I have numbness or tingling in my leg?",
+      answer: "Yes. Numbness and tingling are common sciatica symptoms, and our work can help address the underlying causes. We'll discuss your symptoms during your consultation and work carefully. As we release restrictions and improve alignment, many clients find their numbness and tingling decrease or disappear. However, if you have severe or progressive neurological symptoms, we'll coordinate with your healthcare providers."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Sciatica Relief Santa Cruz | Fix Radiating Leg Pain & Numbness"
         description="Lasting relief from sciatica pain, numbness, and tingling. Address the root causes through Structural Integration in Santa Cruz."
         keywords="sciatica relief santa cruz, sciatic nerve pain, leg pain, radiating pain, numbness in leg, piriformis syndrome"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -242,6 +271,15 @@ function SciaticaRelief() {
               View Programs
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Sciatica Relief"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="sciatica relief" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

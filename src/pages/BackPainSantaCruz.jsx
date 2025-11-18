@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function BackPainSantaCruz() {
@@ -13,13 +15,40 @@ function BackPainSantaCruz() {
     { name: 'Back Pain Relief', url: '/back-pain-relief' }
   ];
 
+  const faqs = [
+    {
+      question: "How long does it take to see results for back pain?",
+      answer: "Many clients notice immediate relief after their first session, but lasting back pain relief typically develops over 4-6 sessions as we systematically address the underlying structural patterns. Chronic back pain that's been present for years may take longer to fully resolve, but you should see meaningful progress throughout the process. Most people experience significant pain reduction within 6-12 sessions."
+    },
+    {
+      question: "Will this work if I've already tried chiropractic, massage, or physical therapy?",
+      answer: "Yes. Our approach addresses the root causes of back pain—fascial restrictions, hip mobility issues, and movement patterns—rather than just symptoms. Many clients come to us after other treatments provided temporary relief but didn't solve the underlying problem. Structural Integration works with your entire structure systematically, which often succeeds where isolated treatments haven't."
+    },
+    {
+      question: "What if my back pain is from a herniated disc or other structural issue?",
+      answer: "Structural Integration can help even with diagnosed structural issues like herniated discs, bulging discs, or stenosis. We work carefully to release fascial restrictions that may be contributing to compression, improve alignment to reduce stress on affected areas, and teach movement patterns that support your back. We'll work within any medical limitations and coordinate with your healthcare providers as needed."
+    },
+    {
+      question: "Can I continue my regular activities while doing this work?",
+      answer: "Generally yes, but we'll discuss modifications based on your specific situation. The goal is to help you move better, not to stop you from living your life. We may recommend temporary modifications to certain activities while we're addressing foundational issues, but most clients can continue their normal routines. In fact, applying what you learn in sessions to your daily activities accelerates your progress."
+    },
+    {
+      question: "How many sessions will I need for back pain relief?",
+      answer: "This depends on how long you've had back pain, how complex your structural patterns are, and how quickly your body responds. Many people find significant relief within 6-12 sessions. We typically recommend starting with a series (like The Reset or Hip Series) to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+    },
+    {
+      question: "Is this safe if I have a history of back injuries or surgeries?",
+      answer: "Yes, we work carefully with clients who have back injury or surgery histories. We'll discuss your medical history during your consultation and work within any necessary limitations. Structural Integration can be particularly effective for addressing scar tissue, compensation patterns, and restrictions from old injuries. We're experienced working with post-surgical clients and will respect any medical restrictions."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Back Pain Relief Santa Cruz | Chronic Lower Back Pain Treatment"
         description="Find lasting relief from chronic back pain in Santa Cruz. Structural Integration addresses root causes of lower back pain, sciatica, and spinal issues."
         keywords="back pain santa cruz, lower back pain relief, sciatica treatment santa cruz, chronic back pain, spine alignment santa cruz"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -304,6 +333,12 @@ function BackPainSantaCruz() {
             </p>
           </div>
 
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Back Pain Relief"
+          />
+
           {/* Final CTA */}
           <div className="bg-gradient-to-br from-sage/10 to-primary/10 rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-heading text-primary mb-4">
@@ -337,20 +372,7 @@ function BackPainSantaCruz() {
           </div>
 
           {/* Available in Your Area */}
-          <div className="mt-12 bg-neutralLight/50 p-8 rounded-xl">
-            <h3 className="text-xl font-bold text-neutralDark mb-4">Available in Your Area</h3>
-            <p className="text-neutralDark/80 mb-4">Mobile back pain treatment throughout the Bay Area:</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              <Link to="/santa-cruz-personal-training" className="text-accent hover:underline">Santa Cruz</Link>
-              <Link to="/capitola-personal-training" className="text-accent hover:underline">Capitola</Link>
-              <Link to="/aptos-personal-training" className="text-accent hover:underline">Aptos</Link>
-              <Link to="/monterey-personal-training" className="text-accent hover:underline">Monterey</Link>
-              <Link to="/carmel-personal-training" className="text-accent hover:underline">Carmel</Link>
-              <Link to="/san-jose-personal-training" className="text-accent hover:underline">San Jose</Link>
-              <Link to="/palo-alto-personal-training" className="text-accent hover:underline">Palo Alto</Link>
-              <Link to="/services" className="text-accent hover:underline font-semibold">View All →</Link>
-            </div>
-          </div>
+          <AvailableLocations serviceName="back pain treatment" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">

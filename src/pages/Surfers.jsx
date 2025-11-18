@@ -3,7 +3,9 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import AvailableLocations from '../components/AvailableLocations';
+import FAQSection from '../components/FAQSection';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
 function Surfers() {
@@ -13,13 +15,40 @@ function Surfers() {
     { name: 'For Surfers', url: '/surfers' }
   ];
 
+  const faqs = [
+    {
+      question: "How can Structural Integration help my surfing?",
+      answer: "Better structure and movement quality directly improve your surfing. We address the specific demands of surfing—shoulder mobility for paddling, hip flexibility for pop-ups, core strength for balance, and rotational capacity for turns. By releasing fascial restrictions and improving movement patterns, you'll paddle more efficiently, pop up easier, and move more fluidly on the board. Many surfers find they surf longer sessions with less fatigue."
+    },
+    {
+      question: "Will this help with shoulder pain from paddling?",
+      answer: "Yes. Paddling creates specific demands on your shoulders, and Structural Integration is particularly effective for addressing paddling-related shoulder pain. We release fascial restrictions in your shoulders, improve shoulder blade mobility, and address whole-body patterns that contribute to shoulder stress. Many surfers find their shoulder pain resolves and their paddling becomes more efficient."
+    },
+    {
+      question: "Can I still surf while doing this work?",
+      answer: "Absolutely. The goal is to enhance your surfing, not interrupt it. We'll discuss your surfing schedule and may recommend some modifications during the initial phase, but most surfers can continue surfing. In fact, applying what you learn in sessions to your surfing accelerates your progress. We'll help you integrate the improvements into your paddling, pop-ups, and turns."
+    },
+    {
+      question: "How many sessions will I need to see improvements in my surfing?",
+      answer: "Many surfers notice improvements in movement quality and reduced restrictions after their first session, but lasting improvements typically develop over 6-12 sessions. The improvements build over time as your body integrates the changes. Most surfers see significant performance improvements within 8-12 sessions. We'll discuss your specific needs during your initial consultation."
+    },
+    {
+      question: "Will this help prevent surfing injuries?",
+      answer: "Yes. Better structure and movement quality significantly reduce injury risk. When your body is properly aligned and moves efficiently, there's less stress on vulnerable tissues. We address compensation patterns and movement limitations that often lead to surfing injuries. Many surfers find they stay healthier and surf better after doing this work."
+    },
+    {
+      question: "Is this right for surfers of all levels?",
+      answer: "Yes. Whether you're a beginner learning to pop up or an advanced surfer looking to improve performance, better structure and movement quality benefit all surfers. We adapt the work to your specific level and goals. Many surfers across all skill levels find this work transformative for their surfing."
+    }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Bodywork for Surfers | Santa Cruz Structural Integration"
         description="Stay in the water longer. Structural Integration and movement training for surfers dealing with shoulder pain, back issues, and mobility restrictions."
         keywords="surfers bodywork santa cruz, surfing injury prevention, shoulder pain surfing, surf fitness santa cruz, rolfing for surfers"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       
       <PageHero 
@@ -313,6 +342,15 @@ function Surfers() {
               Book Free Consultation
             </Button>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection 
+            faqs={faqs} 
+            title="Frequently Asked Questions About Bodywork for Surfers"
+          />
+
+          {/* Available in Your Area */}
+          <AvailableLocations serviceName="surf performance training" />
 
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">
