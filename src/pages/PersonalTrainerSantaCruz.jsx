@@ -2,14 +2,24 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function PersonalTrainerSantaCruz() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Movement Training', url: '/movement-training' },
+    { name: 'Personal Trainer Santa Cruz', url: '/personal-trainer-santa-cruz' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Personal Trainer Santa Cruz | Movement Education & Functional Training"
         description="One-on-one movement training in Santa Cruz focused on how you move, not just exercises. Build strength that serves your life."
         keywords="personal trainer santa cruz, movement coach, functional training santa cruz, movement education, private training santa cruz"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -17,6 +27,8 @@ function PersonalTrainerSantaCruz() {
         title="Personal Training in Santa Cruz"
         subtitle="Movement that serves your life, not just the gym"
       />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <div className="bg-white py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -222,6 +234,37 @@ function PersonalTrainerSantaCruz() {
             <Button to="/packages" variant="outline" size="lg" fullWidth>
               View Training Packages
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/movement-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Training Hub
+              </Link>
+              <Link to="/athletic-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Athletic Performance
+              </Link>
+              <Link to="/mobility-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Mobility Training
+              </Link>
+              <Link to="/core-strengthening" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Core Strengthening
+              </Link>
+              <Link to="/exercise-for-life" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Exercise for Life
+              </Link>
+              <Link to="/safe-gym-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Safe Gym Training
+              </Link>
+              <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                What Is Movement Education?
+              </Link>
+              <Link to="/sports-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Sports Performance
+              </Link>
+            </div>
           </div>
 
         </div>

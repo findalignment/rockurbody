@@ -301,8 +301,8 @@ San Francisco
 - [x] Sitemap updated with all new pages
 - [x] H1 tags include brand and keywords
 - [x] 300-500 words of content on key pages
-- [ ] Submit updated sitemap to Google Search Console (manual step)
-- [ ] Update Google Business Profile address (manual step)
+- [x] Submit updated sitemap to Google Search Console (manual step)
+- [x] Update Google Business Profile address (manual step)
 - [ ] Test all booking links (manual QA)
 - [ ] Verify mobile responsiveness (manual QA)
 

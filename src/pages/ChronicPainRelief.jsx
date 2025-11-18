@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function ChronicPainRelief() {
   const breadcrumbs = [
@@ -262,6 +263,40 @@ function ChronicPainRelief() {
             <Button to="/consult" variant="primary" size="lg">
               Book Free Consultation
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Pain Relief Hub
+              </Link>
+              <Link to="/back-pain-santa-cruz" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Back Pain Relief
+              </Link>
+              <Link to="/neck-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Neck Pain Relief
+              </Link>
+              <Link to="/hip-pain-treatment" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Hip Pain Treatment
+              </Link>
+              <Link to="/shoulder-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Shoulder Pain Relief
+              </Link>
+              <Link to="/knee-pain-treatment" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Knee Pain Treatment
+              </Link>
+              <Link to="/sciatica-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Sciatica Relief
+              </Link>
+              <Link to="/fascial-release" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Fascial Release
+              </Link>
+              <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration
+              </Link>
+            </div>
           </div>
 
         </div>

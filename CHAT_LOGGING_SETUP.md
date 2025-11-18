@@ -81,13 +81,100 @@ Free and unlimited logging to a Google Sheet.
 Airtable offers a nice interface for viewing and analyzing logs.
 
 1. **Create an Airtable base** called "Chat Logs"
-2. **Add fields**: `Timestamp`, `Question`, `SessionID`, `DetectedIntent`, `QuestionNumber`, `UserAgent`, `Page`
-3. **Get your API key**: Account → API → Generate API key
-4. **Create a webhook or use their API** to receive logs
-5. **Add to your `.env` file**:
+2. **Add fields**: `Timestamp` (Date), `Question` (Single line text), `SessionID` (Single line text), `DetectedIntent` (Single line text), `QuestionNumber` (Number), `UserAgent` (Long text), `Page` (Single line text), `Referrer` (Single line text), `UserId` (Single line text)
+3. **Get your API credentials**:
+   - Go to https://airtable.com/api
+   - Select your "Chat Logs" base
+   - Copy your **Base ID** (starts with `app...`)
+   - Go to Account → Developer Hub → Personal access tokens → Create new token
+   - Name it "Chat Logs" and give it `data.records:write` scope for your base
+   - Copy the token (starts with `pat...`)
+   - **Note your Table name** (usually "Table 1" or rename it to "Chat Logs")
+4. **Create a Vercel serverless function** (bridge between frontend and Airtable):
+   - Create a new file: `api/log-chat.js` (or `api/log-chat.ts` if using TypeScript)
+   - This function will receive logs from your frontend and securely send them to Airtable
+   - See the code template below
+5. **Add environment variables to Vercel**:
+   - Go to Vercel Dashboard → Your Project → Settings → Environment Variables
+   - Add:
+     - `AIRTABLE_API_KEY` = Your personal access token (pat...)
+     - `AIRTABLE_BASE_ID` = Your base ID (app...)
+     - `AIRTABLE_TABLE_NAME` = Your table name (e.g., "Chat Logs")
+   - Also add to your local `.env` file for testing:
+     ```
+     AIRTABLE_API_KEY=pat...
+     AIRTABLE_BASE_ID=app...
+     AIRTABLE_TABLE_NAME=Chat Logs
+     ```
+6. **Update your `.env` file** with the serverless function URL:
    ```
-   VITE_LOG_ENDPOINT=YOUR_AIRTABLE_WEBHOOK_URL
+   VITE_LOG_ENDPOINT=https://yourdomain.com/api/log-chat
    ```
+   (Or use `http://localhost:5173/api/log-chat` for local development)
+
+**Serverless Function Code** (`api/log-chat.js`):
+```javascript
+export default async function handler(req, res) {
+  // Only allow POST requests
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  try {
+    const { subject, message } = req.body;
+    
+    // Parse the message to extract question and metadata
+    const questionMatch = message.match(/Question: (.+?)\n\n/);
+    const metadataMatch = message.match(/Metadata: (.+)$/s);
+    
+    if (!questionMatch || !metadataMatch) {
+      return res.status(400).json({ error: 'Invalid message format' });
+    }
+
+    const question = questionMatch[1];
+    const metadata = JSON.parse(metadataMatch[1]);
+
+    // Prepare Airtable record
+    const airtableRecord = {
+      fields: {
+        'Timestamp': metadata.timestamp,
+        'Question': question,
+        'SessionID': metadata.sessionId || 'unknown',
+        'UserId': metadata.userId || 'anonymous',
+        'DetectedIntent': metadata.detectedIntent || '',
+        'QuestionNumber': metadata.questionNumber || null,
+        'UserAgent': metadata.userAgent || '',
+        'Page': metadata.page || '',
+        'Referrer': metadata.referrer || 'direct',
+      }
+    };
+
+    // Send to Airtable
+    const airtableResponse = await fetch(
+      `https://api.airtable.com/v0/${process.env.AIRTABLE_BASE_ID}/${encodeURIComponent(process.env.AIRTABLE_TABLE_NAME)}`,
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${process.env.AIRTABLE_API_KEY}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(airtableRecord),
+      }
+    );
+
+    if (!airtableResponse.ok) {
+      const error = await airtableResponse.text();
+      console.error('Airtable error:', error);
+      return res.status(500).json({ error: 'Failed to log to Airtable' });
+    }
+
+    return res.status(200).json({ success: true });
+  } catch (error) {
+    console.error('Logging error:', error);
+    return res.status(500).json({ error: error.message });
+  }
+}
+```
 
 ### Option 4: Custom Backend
 

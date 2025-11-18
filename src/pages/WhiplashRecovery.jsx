@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function WhiplashRecovery() {
   const breadcrumbs = [
@@ -234,6 +235,37 @@ function WhiplashRecovery() {
             <Button to="/packages" variant="outline" size="lg" fullWidth>
               View Recovery Programs
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/injury-recovery" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Injury Recovery Hub
+              </Link>
+              <Link to="/neck-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Neck Pain Relief
+              </Link>
+              <Link to="/headache-migraine-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Headache & Migraine Relief
+              </Link>
+              <Link to="/back-pain-santa-cruz" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Back Pain Relief
+              </Link>
+              <Link to="/chronic-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Chronic Pain Relief
+              </Link>
+              <Link to="/posture-correction" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Posture Correction
+              </Link>
+              <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration
+              </Link>
+              <Link to="/fascial-release" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Fascial Release
+              </Link>
+            </div>
           </div>
 
         </div>

@@ -1,15 +1,33 @@
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
+import SEO from '../components/SEO';
+import { Link } from 'react-router-dom';
 
 function WhatIsMovementEducation() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Movement Training', url: '/movement-training' },
+    { name: 'What Is Movement Education?', url: '/what-is-movement-education' }
+  ];
+
   return (
     <PageLayout>
+      <SEO 
+        title="What is Movement Education? | Santa Cruz Movement Training"
+        description="Learn what Movement Education is and how it differs from personal training. Intelligent movement training focused on how you move, not just exercises."
+        keywords="what is movement education, movement training santa cruz, movement coach, functional training, movement intelligence"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
+      />
       <PageHero 
         imageSrc="/services-hero.jpg"
         title="What is Movement Education?"
         subtitle="Learning to move the way your body was designed to"
       />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       {/* SEO-optimized intro */}
       <div className="bg-offWhite pt-8 pb-16 px-4">
@@ -203,6 +221,37 @@ function WhatIsMovementEducation() {
             >
               Book Free Consultation
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/movement-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Training Hub
+              </Link>
+              <Link to="/personal-trainer-santa-cruz" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Personal Trainer Santa Cruz
+              </Link>
+              <Link to="/mobility-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Mobility Training
+              </Link>
+              <Link to="/athletic-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Athletic Performance
+              </Link>
+              <Link to="/core-strengthening" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Core Strengthening
+              </Link>
+              <Link to="/exercise-for-life" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Exercise for Life
+              </Link>
+              <Link to="/safe-gym-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Safe Gym Training
+              </Link>
+              <Link to="/sports-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Sports Performance
+              </Link>
+            </div>
           </div>
         </div>
       </div>

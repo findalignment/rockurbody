@@ -1,14 +1,44 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 
 function InjuryRecoveryHub() {
+  const [openFAQ, setOpenFAQ] = useState(null);
+  
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Injury Recovery', url: '/injury-recovery' }
+  ];
+
+  const faqs = [
+    {
+      question: "How is your injury recovery approach different from physical therapy?",
+      answer: "Physical therapy typically focuses on strengthening and rehabilitating the injured area. Our approach addresses the entire structural and movement context that contributed to the injury. We work with fascia throughout your body to release restrictions and improve alignment, not just strengthen specific muscles. We also teach movement patterns that support healing rather than perpetuating problems. Many clients find our work complements physical therapy, addressing aspects that PT doesn't cover."
+    },
+    {
+      question: "Can you help with injuries from car accidents or whiplash?",
+      answer: "Yes. Whiplash and car accident injuries often involve fascial restrictions and compensation patterns throughout the body, not just at the injury site. Structural Integration is particularly effective for these injuries because we address the whole-body patterns that develop after trauma. We work carefully around acute injuries, respecting healing timelines, then progressively restore function as you heal. Many clients recover more completely when structural work is part of their recovery."
+    },
+    {
+      question: "How long does injury recovery take?",
+      answer: "Recovery time depends on the injury, how long you've had it, and how quickly your body responds. Many people see significant improvement within 6-12 sessions, though complex or long-standing injuries may take longer. We work progressively, respecting your body's healing process and never pushing beyond what's safe. The goal is complete recovery, not just symptom management, which may take time but produces better long-term results."
+    },
+    {
+      question: "Will this work if I've already had surgery for my injury?",
+      answer: "Yes. Post-surgical recovery often involves scar tissue, fascial restrictions, and compensation patterns that can limit function and create ongoing problems. Structural Integration works with scar tissue and releases restrictions throughout your body. We respect surgical sites and work carefully around them, addressing the broader patterns that affect your recovery. Many clients find structural work helps them recover more fully from surgery than they would with rehabilitation alone."
+    },
+    {
+      question: "Can I do this work while still seeing my doctor or physical therapist?",
+      answer: "Absolutely. Our work complements medical care and physical therapy. Many healthcare providers refer patients to us specifically for the structural and fascial work that enhances their treatment. We're happy to coordinate with your medical team and work within any necessary limitations. The key is that we're addressing different aspects of recovery—structure and movement patterns—that other treatments may not address."
+    },
+    {
+      question: "What if my injury is preventing me from being active?",
+      answer: "That's exactly what we address. Our work helps restore function so you can return to activity safely. We don't just manage symptoms—we address the structural and movement patterns that limit your activity. As you recover, we progressively restore movement capacity and teach you how to move in ways that support healing. Many clients find they can return to activities they thought were lost, often moving better than before their injury."
+    }
   ];
 
   const injuryServices = [
@@ -74,13 +104,18 @@ function InjuryRecoveryHub() {
     }
   ];
 
+  const structuredData = [
+    getBreadcrumbSchema(breadcrumbs),
+    getFAQSchema(faqs)
+  ];
+
   return (
     <PageLayout>
       <SEO
         title="Injury Recovery Santa Cruz | Post-Injury Rehabilitation"
         description="Expert injury recovery in Santa Cruz. Structural Integration and Movement Education for rotator cuff, frozen shoulder, IT band, Achilles, whiplash, and more. Return stronger than before."
         keywords="injury recovery, rehabilitation, rotator cuff injury, frozen shoulder, IT band syndrome, Achilles tendonitis, whiplash recovery, sports injury, Santa Cruz rehab"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={structuredData}
       />
 
       <PageHero
@@ -155,13 +190,42 @@ function InjuryRecoveryHub() {
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              The Role of Fascia in Injury Recovery
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Injuries don't just affect the injured tissue—they create fascial restrictions and compensation patterns throughout your body. When you injure your shoulder, your body compensates by using your neck, back, and ribs differently. When you injure your knee, your hip, pelvis, and foot adapt. These compensations can persist long after the original injury heals, creating ongoing problems.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Structural Integration addresses these fascial restrictions and compensation patterns. We release scar tissue, improve fascial mobility around injured areas, and restore balanced function throughout your body. This comprehensive approach supports complete recovery, not just healing of the injured tissue. Many clients discover that addressing these broader patterns resolves problems they thought were permanent.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Fascial work also supports the healing process itself. Improved circulation, reduced tension, and better alignment create conditions that support tissue healing. We work carefully around acute injuries, respecting healing timelines, then progressively address restrictions as you heal. This approach often accelerates recovery and produces better outcomes than isolated injury-site treatment.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              Preventing Re-Injury
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              True recovery means not just healing from your injury, but preventing it from happening again. This requires addressing why you got injured in the first place. Was it a structural imbalance? A movement compensation? An accumulated pattern that finally broke down? We investigate these factors and address them systematically.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Through Structural Integration, we release the restrictions and imbalances that created excessive stress on the injured area. Through Movement Education, we teach you movement patterns that support healthy function rather than creating problems. Together, these create resilience—not just the ability to withstand stress, but the capacity to move in ways that prevent future injuries.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Many clients find they move better after recovery than they did before their injury. The injury forced attention to patterns that needed addressing anyway. By addressing these comprehensively, we don't just restore function—we optimize it. You return to activity not just healed, but improved.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
               Working with Your Medical Team
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Our injury recovery work complements medical care, physical therapy, and other treatments you may be receiving. We're happy to communicate with your healthcare providers and coordinate our approach with your overall treatment plan. Many physicians, surgeons, and physical therapists refer patients to us specifically for the structural and fascial work that enhances their treatment.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              We respect appropriate healing timelines and never push your body beyond what's safe. If you're in acute injury stages or post-surgical recovery, we'll work conservatively and progressively. Our goal is supporting your body's healing process, not forcing change before you're ready.
+              We respect appropriate healing timelines and never push your body beyond what's safe. If you're in acute injury stages or post-surgical recovery, we'll work conservatively and progressively. Our goal is supporting your body's healing process, not forcing change before you're ready. We'll adapt our approach to your specific situation and recovery stage.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              The combination of medical care, physical therapy, and structural work often produces the best outcomes. Each addresses different aspects of recovery: medical care manages the injury itself, physical therapy strengthens and rehabilitates, and structural work addresses the broader patterns that affect recovery and function. Together, they support complete healing.
             </p>
           </div>
 
@@ -191,6 +255,45 @@ function InjuryRecoveryHub() {
                   </div>
                 </Link>
               ))}
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
+              Frequently Asked Questions About Injury Recovery
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = openFAQ === index;
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-xl overflow-hidden border-2 border-neutralLight hover:border-accent/30 transition-colors"
+                  >
+                    <button
+                      onClick={() => setOpenFAQ(isOpen ? null : index)}
+                      className="w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    >
+                      <h3 className="text-xl font-semibold text-primary pr-8">
+                        {faq.question}
+                      </h3>
+                      <span className={`text-accent text-2xl font-bold transition-transform flex-shrink-0 ${isOpen ? 'rotate-45' : ''}`}>
+                        +
+                      </span>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        isOpen ? 'max-h-96' : 'max-h-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6 text-lg text-neutralDark/80 leading-relaxed">
+                        {faq.answer}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

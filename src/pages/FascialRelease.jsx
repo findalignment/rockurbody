@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function FascialRelease() {
   const breadcrumbs = [
@@ -229,6 +230,37 @@ function FascialRelease() {
             <Button to="/what-is-structural-integration" variant="outline" size="lg" fullWidth>
               Learn More
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration Hub
+              </Link>
+              <Link to="/santa-cruz-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Santa Cruz SI
+              </Link>
+              <Link to="/chronic-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Chronic Pain Relief
+              </Link>
+              <Link to="/mobility-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Mobility Training
+              </Link>
+              <Link to="/posture-correction" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Posture Correction
+              </Link>
+              <Link to="/rolfing-vs-massage" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Rolfing vs Massage
+              </Link>
+              <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                What Is SI?
+              </Link>
+              <Link to="/gravity-and-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Gravity & SI
+              </Link>
+            </div>
           </div>
 
         </div>

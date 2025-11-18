@@ -1,14 +1,44 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 
 function MovementTrainingHub() {
+  const [openFAQ, setOpenFAQ] = useState(null);
+  
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Movement Training', url: '/movement-training' }
+  ];
+
+  const faqs = [
+    {
+      question: "How is Movement Education different from personal training?",
+      answer: "Traditional personal training focuses on exercises, reps, and sets—building strength and fitness through repetition. Movement Education focuses on how you move, not just what exercises you do. We teach movement quality, efficiency, and awareness. You'll learn to sense what your body is doing, understand movement principles, and develop skills that transfer to everything you do. It's education, not just exercise—you gain understanding and tools you can use for life."
+    },
+    {
+      question: "Do I need to be in shape to start Movement Training?",
+      answer: "Not at all. Movement Education meets you where you are, whether you're deconditioned, injured, or highly trained. We start with fundamental movement patterns and build from there. In fact, if you're dealing with pain or limitations, addressing movement quality first often resolves those issues before you need to build more strength or fitness. The work adapts to your current capacity and progresses at your pace."
+    },
+    {
+      question: "Can I combine Movement Education with my regular workouts?",
+      answer: "Absolutely. In fact, that's ideal. Movement Education makes your existing training more effective and safer. You'll move with better form, reduce injury risk, and get more benefit from your workouts. Many clients continue their regular gym routines, sports, or activities while working with us. We just improve how you're moving, which enhances everything else you do."
+    },
+    {
+      question: "Why do you train barefoot?",
+      answer: "Your feet are your foundation. Shoes mask problems and prevent your feet from doing their job properly. Training barefoot lets you feel the ground, activate stabilizing muscles, and build real stability from the ground up. It's not about being trendy—it's about developing foot function that supports everything else. You'll develop better balance, proprioception, and movement quality. Many clients find their foot pain, knee issues, or back problems improve once their feet start working properly."
+    },
+    {
+      question: "How often should I do Movement Training sessions?",
+      answer: "Frequency depends on your goals and situation. Many clients come 2-3 times per week initially to establish new patterns, then reduce to weekly or bi-weekly as they develop independence. Some people do intensive periods of regular sessions, then maintain with periodic tune-ups. We'll discuss what makes sense for your schedule, goals, and budget. The key is consistency—regular practice helps new patterns stick."
+    },
+    {
+      question: "Will I get exercises to do at home?",
+      answer: "Yes. Each session includes practices you can do independently. These aren't generic exercises—they're specific movements tailored to what your body needs. You'll learn why you're doing them and how to progress them. The goal is building independence, not dependency. Most clients find the home practices become part of their daily routine because they feel good and make a noticeable difference."
+    }
   ];
 
   const movementServices = [
@@ -79,13 +109,18 @@ function MovementTrainingHub() {
     }
   ];
 
+  const structuredData = [
+    getBreadcrumbSchema(breadcrumbs),
+    getFAQSchema(faqs)
+  ];
+
   return (
     <PageLayout>
       <SEO
         title="Movement Training Santa Cruz | Mobility, Balance & Functional Fitness"
         description="Expert movement training in Santa Cruz. Improve mobility, balance, core strength, posture, and athletic performance through personalized movement education and coaching."
         keywords="movement training, mobility training, balance training, core strengthening, functional fitness, movement education, Santa Cruz personal training"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={structuredData}
       />
 
       <PageHero
@@ -154,6 +189,45 @@ function MovementTrainingHub() {
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              The Role of Awareness in Movement
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Awareness is the foundation of all movement improvement. You can't change what you can't feel. Most people move through life with minimal body awareness—they don't notice their patterns until pain or limitation forces attention. Movement Education develops refined proprioception and interoception—the ability to sense your body's position, movement, and internal state.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              As your awareness develops, you begin noticing things you never felt before: how you're holding tension, where you're compensating, how your breathing affects your movement, where you're stable and where you're not. This awareness becomes your guide for making better movement choices throughout your day. You start catching yourself before patterns become problems.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              This isn't about constant self-monitoring or perfectionism—it's about developing a relationship with your body where you can sense what's happening and respond appropriately. Many clients describe feeling more "at home" in their bodies, more connected, more present. This embodied awareness is a skill that serves you for life.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              Building Movement Capacity Safely
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Safety is paramount in Movement Education. We never push beyond what your body is ready for. Instead, we create conditions where your nervous system can safely explore new movement possibilities. This might mean starting with simpler patterns, using props for support, or working in positions that reduce load while you develop capacity.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              We respect injuries, limitations, and your body's signals. If something doesn't feel right, we adjust. The goal isn't to force your body into positions—it's to help your body discover better options naturally. This patient, respectful approach builds trust between you and your body, which is essential for lasting change.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Many people come to us after injuring themselves trying to push through limitations or force their bodies into positions they weren't ready for. Our approach is different: we build capacity progressively, ensuring each step is solid before moving to the next. This might feel slower initially, but it produces better, safer, more lasting results.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              Integration with Structural Work
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Movement Education works powerfully on its own, but it's even more effective when combined with Structural Integration. Here's why: Structural Integration releases fascial restrictions and improves alignment, creating space for better movement. Movement Education teaches you how to use that space effectively and maintain those improvements.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Without movement education, structural changes can fade as old movement patterns pull your body back into familiar shapes. Without structural work, movement education can feel like trying to build on a shaky foundation. Together, they create lasting transformation: better structure supports better movement, and better movement maintains better structure.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Many clients do both simultaneously—structural sessions to optimize alignment, movement sessions to develop new patterns. Others alternate between periods focused on structure and periods focused on movement. We'll discuss what combination makes sense for your goals and situation.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
               Who Movement Training Helps
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
@@ -163,7 +237,7 @@ function MovementTrainingHub() {
               If you're dealing with chronic pain, movement training often provides the missing piece—teaching you how to move in ways that support healing rather than perpetuating problems. If you're already active but feeling limited, it can unlock new levels of capability. If you've never considered yourself "athletic," it can help you discover what your body can really do.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              The common thread? A genuine interest in moving better. If you're curious about your body, willing to explore, and ready to invest in long-term improvement rather than quick fixes, this work is for you.
+              The common thread? A genuine interest in moving better. If you're curious about your body, willing to explore, and ready to invest in long-term improvement rather than quick fixes, this work is for you. Movement Education isn't about becoming a movement expert—it's about developing practical skills that make your daily life easier and more enjoyable.
             </p>
           </div>
 
@@ -193,6 +267,45 @@ function MovementTrainingHub() {
                   </div>
                 </Link>
               ))}
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
+              Frequently Asked Questions About Movement Training
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = openFAQ === index;
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-xl overflow-hidden border-2 border-neutralLight hover:border-accent/30 transition-colors"
+                  >
+                    <button
+                      onClick={() => setOpenFAQ(isOpen ? null : index)}
+                      className="w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    >
+                      <h3 className="text-xl font-semibold text-primary pr-8">
+                        {faq.question}
+                      </h3>
+                      <span className={`text-accent text-2xl font-bold transition-transform flex-shrink-0 ${isOpen ? 'rotate-45' : ''}`}>
+                        +
+                      </span>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        isOpen ? 'max-h-96' : 'max-h-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6 text-lg text-neutralDark/80 leading-relaxed">
+                        {faq.answer}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

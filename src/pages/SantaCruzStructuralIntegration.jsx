@@ -2,14 +2,24 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function SantaCruzStructuralIntegration() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Structural Integration', url: '/structural-integration' },
+    { name: 'Santa Cruz Structural Integration', url: '/santa-cruz-structural-integration' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Structural Integration Santa Cruz | Rolfing & Bodywork | Rock Hudson"
         description="Expert Structural Integration and Rolfing in Santa Cruz, CA. Relieve chronic pain, improve posture, and move better. Certified practitioner with 20+ years experience."
         keywords="structural integration santa cruz, rolfing santa cruz, bodywork santa cruz, fascia work santa cruz, posture correction, chronic pain relief"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -17,6 +27,8 @@ function SantaCruzStructuralIntegration() {
         title="Structural Integration in Santa Cruz"
         subtitle="Expert bodywork that helps you move, feel, and live better"
       />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <div className="bg-white py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -214,6 +226,37 @@ function SantaCruzStructuralIntegration() {
             <Button to="/consult" variant="primary" size="lg">
               Book Your Free Consultation
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration
+              </Link>
+              <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                What Is Structural Integration?
+              </Link>
+              <Link to="/rolfing-vs-massage" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Rolfing vs Massage
+              </Link>
+              <Link to="/structural-integration-vs-chiropractic" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                SI vs Chiropractic
+              </Link>
+              <Link to="/fascial-release" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Fascial Release
+              </Link>
+              <Link to="/chronic-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Chronic Pain Relief
+              </Link>
+              <Link to="/posture-correction" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Posture Correction
+              </Link>
+              <Link to="/gravity-and-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Gravity & SI
+              </Link>
+            </div>
           </div>
 
         </div>

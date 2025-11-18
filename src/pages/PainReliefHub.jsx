@@ -1,14 +1,44 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 
 function PainReliefHub() {
+  const [openFAQ, setOpenFAQ] = useState(null);
+  
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Pain Relief', url: '/pain-relief' }
+  ];
+
+  const faqs = [
+    {
+      question: "How long does it take to see results from pain relief work?",
+      answer: "Many clients notice immediate improvements in comfort and ease after their first session, but lasting pain relief typically develops over a series of sessions as we systematically address the underlying structural patterns. Most people experience significant pain reduction within 4-6 sessions, with continued improvement as the work progresses. Chronic pain that's been present for years may take longer to fully resolve, but you should see meaningful progress throughout the process."
+    },
+    {
+      question: "Will this work if I've already tried physical therapy, chiropractic, or massage?",
+      answer: "Yes. Our approach is fundamentally different from these modalities. Physical therapy typically focuses on strengthening and rehabilitating injured areas. Chiropractic adjusts bones. Massage relaxes muscles. Structural Integration works with the fascial system to reorganize your entire structure, addressing the root causes of pain rather than symptoms. Many clients come to us after other treatments provided temporary relief but didn't solve the underlying problem. Our whole-body, systematic approach often succeeds where isolated treatments haven't."
+    },
+    {
+      question: "Does Structural Integration hurt?",
+      answer: "The work involves pressure and sensation as we release restricted tissue, but it shouldn't be painful. We work at your edge—the boundary between comfort and discomfort—inviting change without forcing it. You're always in control and can ask us to adjust pressure or approach. The sensation is often described as intense stretching, melting, or releasing rather than pain. Many clients find the work deeply satisfying as they feel restrictions letting go."
+    },
+    {
+      question: "What if my pain is from an old injury or surgery?",
+      answer: "Old injuries and surgeries often create lasting fascial restrictions and compensation patterns that contribute to ongoing pain. Structural Integration is particularly effective for addressing these issues. We work with scar tissue, release restrictions from old injuries, and help your body reorganize around better patterns. Even injuries from years ago can be improved through systematic structural work. We'll work carefully around surgical sites and respect any medical limitations."
+    },
+    {
+      question: "Can I continue other treatments while doing this work?",
+      answer: "Absolutely. Our work complements medical care, physical therapy, and other treatments. Many healthcare providers refer patients to us specifically for the structural and fascial work that enhances their treatment. We're happy to coordinate with your medical team and work within any necessary limitations. The key is that we're addressing different aspects of your pain—structure and movement patterns—that other treatments may not address."
+    },
+    {
+      question: "How many sessions will I need for pain relief?",
+      answer: "This depends on your specific situation—how long you've had pain, how complex your structural patterns are, and how quickly your body responds. Many people find significant relief within 6-12 sessions, though some complex cases may require more. We typically recommend starting with a series (like The Reset or Hip Series) to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+    }
   ];
 
   const painConditions = [
@@ -74,13 +104,19 @@ function PainReliefHub() {
     }
   ];
 
+  // Combine breadcrumb and FAQ schemas
+  const structuredData = [
+    getBreadcrumbSchema(breadcrumbs),
+    getFAQSchema(faqs)
+  ];
+
   return (
     <PageLayout>
       <SEO
         title="Pain Relief Santa Cruz | Chronic Pain Treatment & Solutions"
         description="Comprehensive pain relief solutions in Santa Cruz. Structural Integration and Movement Education for back pain, neck pain, shoulder pain, sciatica, and more. Get to the root cause."
         keywords="pain relief, chronic pain treatment, back pain relief, neck pain treatment, shoulder pain, sciatica relief, Santa Cruz pain management"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={structuredData}
       />
 
       <PageHero
@@ -143,6 +179,45 @@ function PainReliefHub() {
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              Understanding Pain Patterns
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Pain patterns follow predictable rules. When one area of your body isn't functioning optimally, other areas compensate. Over time, these compensations create their own problems. Your tight hip forces your lower back to work harder, leading to back pain. Your forward head posture from desk work creates neck tension and headaches. Your collapsed arch affects your entire kinetic chain, contributing to knee, hip, and back issues.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Understanding these patterns is crucial for effective pain relief. We don't just work where you feel pain—we investigate the entire structural and movement context. By addressing the root causes throughout your body, we eliminate the patterns that create pain, not just manage symptoms at the site of discomfort.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              This systemic approach is why our work produces lasting results. When we release the fascial restrictions in your hip, your back pain decreases because your back no longer has to compensate. When we improve your foot mechanics, your knee pain resolves because forces transfer properly. When we address your ribcage restrictions, your shoulder pain disappears because your shoulder can move naturally again.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              The Science Behind Structural Pain Relief
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Fascia—the connective tissue network throughout your body—plays a crucial role in pain. When fascia becomes restricted, dehydrated, or dense, it creates tension, limits movement, and pulls structures out of alignment. These restrictions can compress nerves, create abnormal joint loading, and force muscles to work inefficiently, all contributing to pain.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Structural Integration works directly with fascia to restore its natural properties: mobility, hydration, and resilience. Through specific manual techniques, we release restrictions, improve fascial glide, and reorganize your structure around better alignment. This isn't just temporary relief—it's structural change that persists because your tissue itself has changed.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Research shows that fascial restrictions can persist long after injuries heal, creating ongoing pain and dysfunction. By addressing these restrictions systematically, we help your body return to optimal function. The nervous system also plays a role—chronic pain often involves sensitized nerves. Our work helps regulate the nervous system, reducing pain sensitivity and restoring normal sensation.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              Movement Patterns and Pain
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              How you move matters enormously for pain. Dysfunctional movement patterns create excessive stress on vulnerable tissues, leading to pain and injury. Even if we release structural restrictions, if you continue moving in ways that create problems, pain will return. This is why Movement Education is essential for lasting pain relief.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              We teach you to recognize and change movement patterns that contribute to your pain. You'll learn to move in ways that support your structure rather than undermining it. This might involve changing how you sit, stand, walk, lift, or perform daily activities. These changes ensure that the structural improvements we create persist and continue to support pain-free function.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Many clients discover that simple changes in how they move eliminate pain that seemed mysterious or persistent. When you learn to engage your core properly, your back pain disappears. When you improve your breathing mechanics, your neck tension releases. When you restore hip function, your knee pain resolves. Movement education gives you tools to maintain your improvements independently.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
               Who This Helps
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
@@ -150,6 +225,9 @@ function PainReliefHub() {
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               We work with active individuals who want to stay moving, older adults looking to maintain independence, desk workers battling postural pain, athletes recovering from injury, and anyone who simply wants to feel better in their body. Whatever your pain story, we can help you write a better ending.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              People dealing with pain from old injuries, surgeries, repetitive strain, postural issues, or unknown causes all benefit from our structural approach. We don't need a specific diagnosis to help—we work with your body's structure and movement patterns, regardless of what medical labels have been applied. If you're experiencing pain and ready to address its root causes, we can help.
             </p>
           </div>
 
@@ -179,6 +257,45 @@ function PainReliefHub() {
                   </div>
                 </Link>
               ))}
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
+              Frequently Asked Questions About Pain Relief
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = openFAQ === index;
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-xl overflow-hidden border-2 border-neutralLight hover:border-accent/30 transition-colors"
+                  >
+                    <button
+                      onClick={() => setOpenFAQ(isOpen ? null : index)}
+                      className="w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    >
+                      <h3 className="text-xl font-semibold text-primary pr-8">
+                        {faq.question}
+                      </h3>
+                      <span className={`text-accent text-2xl font-bold transition-transform flex-shrink-0 ${isOpen ? 'rotate-45' : ''}`}>
+                        +
+                      </span>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        isOpen ? 'max-h-96' : 'max-h-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6 text-lg text-neutralDark/80 leading-relaxed">
+                        {faq.answer}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

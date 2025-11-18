@@ -2,8 +2,16 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function GravityAndStructuralIntegration() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Structural Integration', url: '/structural-integration' },
+    { name: 'Gravity & SI', url: '/gravity-and-structural-integration' }
+  ];
+
   return (
     <PageLayout>
       <Helmet>
@@ -45,6 +53,8 @@ function GravityAndStructuralIntegration() {
         title="Improving Your Relationship With Gravity"
         subtitle="What if instead of fighting gravity, you could work with it?"
       />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <div className="bg-white py-20 px-6">
         <div className="max-w-4xl mx-auto">
@@ -194,6 +204,37 @@ function GravityAndStructuralIntegration() {
             >
               Schedule a Free Consultation
             </Link>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration Hub
+              </Link>
+              <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                What Is SI?
+              </Link>
+              <Link to="/santa-cruz-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Santa Cruz SI
+              </Link>
+              <Link to="/posture-correction" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Posture Correction
+              </Link>
+              <Link to="/fascial-release" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Fascial Release
+              </Link>
+              <Link to="/chronic-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Chronic Pain Relief
+              </Link>
+              <Link to="/movement-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Training
+              </Link>
+              <Link to="/back-pain-santa-cruz" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Back Pain Relief
+              </Link>
+            </div>
           </div>
 
         </div>

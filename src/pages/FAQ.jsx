@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
+import { getFAQSchema } from '../utils/structuredData';
 
 function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -136,8 +138,22 @@ function FAQ() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // Flatten FAQs for schema
+  const flattenedFAQs = faqs.flatMap(category => 
+    category.questions.map(faq => ({
+      question: faq.q,
+      answer: typeof faq.a === 'string' ? faq.a : faq.a.toString().replace(/<[^>]*>/g, '')
+    }))
+  );
+
   return (
     <PageLayout>
+      <SEO
+        title="Frequently Asked Questions | Rock Your Body"
+        description="Common questions about Structural Integration, Movement Education, sessions, pricing, and more. Get answers before you start your journey."
+        keywords="FAQ, frequently asked questions, structural integration questions, movement education questions, Santa Cruz bodywork"
+        structuredData={getFAQSchema(flattenedFAQs)}
+      />
       <PageHero 
         imageSrc="/services-hero.jpg"
         title="Frequently Asked Questions"

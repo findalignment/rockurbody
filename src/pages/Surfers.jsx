@@ -2,14 +2,24 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function Surfers() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Sports Performance', url: '/sports-performance' },
+    { name: 'For Surfers', url: '/surfers' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Bodywork for Surfers | Santa Cruz Structural Integration"
         description="Stay in the water longer. Structural Integration and movement training for surfers dealing with shoulder pain, back issues, and mobility restrictions."
         keywords="surfers bodywork santa cruz, surfing injury prevention, shoulder pain surfing, surf fitness santa cruz, rolfing for surfers"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -17,6 +27,8 @@ function Surfers() {
         title="For Surfers"
         subtitle="Stay in the water, surf longer, feel better"
       />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <div className="bg-white py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -300,6 +312,37 @@ function Surfers() {
             <Button to="/consult" variant="primary" size="lg">
               Book Free Consultation
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/shoulder-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Shoulder Pain Relief
+              </Link>
+              <Link to="/rotator-cuff-injury" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Rotator Cuff Injury
+              </Link>
+              <Link to="/back-pain-santa-cruz" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Back Pain Relief
+              </Link>
+              <Link to="/neck-pain-relief" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Neck Pain Relief
+              </Link>
+              <Link to="/it-band-syndrome" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                IT Band Syndrome
+              </Link>
+              <Link to="/sports-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Sports Performance
+              </Link>
+              <Link to="/athletic-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Athletic Performance
+              </Link>
+              <Link to="/sports-injury-prevention" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Injury Prevention
+              </Link>
+            </div>
           </div>
 
         </div>

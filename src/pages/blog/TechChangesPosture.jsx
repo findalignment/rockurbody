@@ -25,11 +25,11 @@ function TechChangesPosture() {
             We spend an average of 6 hours and 40 minutes per day looking at screens. That's over 40% of our waking hours with our eyes fixed on devices, our heads tilted forward, and our bodies locked in positions that would make our ancestors marvel (and worry).
           </p>
 
-          <p>
+          <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
             As someone who has spent years studying human anatomy and movement, particularly through the lens of <Link to="/certifications/anatomy-trains-structural-integration" className="text-accent hover:underline">Anatomy Trains</Link> and hands-on bodywork, I've witnessed firsthand how technology is quietly reshaping our bodies.
           </p>
 
-          <p>
+          <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
             This isn't about demonizing technology. It's about understanding what happens when we ignore the conversation between our bodies and the tools we use. Whether you're a software developer hunched over code, a designer crafting the next breakthrough interface, or simply someone scrolling through social media, your posture is changing. And those changes ripple through your entire system in ways you might not expect.
           </p>
 
@@ -37,11 +37,11 @@ function TechChangesPosture() {
             The Biomechanics of Tech Posture: More Than Just a Sore Neck
           </h2>
 
-          <p>
+          <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
             When you look down at your phone or lean toward your laptop, something dramatic happens to your spine. Your head, which weighs about 10-12 pounds in neutral alignment, can exert forces of up to 60 pounds on your cervical spine when tilted forward at 60 degrees. This isn't a subtle shift. It's the equivalent of carrying an 8-year-old child on your neck for hours each day.
           </p>
 
-          <p>
+          <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
             This phenomenon, clinically termed "forward head posture" (FHP), triggers a cascade of compensations throughout your body. Research using surface topography has demonstrated that smartphone use leads to significant increases in thoracic kyphosis (upper back rounding), trunk inclination, and even lumbar lordosis. Your spine doesn't just bend in one place. The entire structure adapts to accommodate your tech habits.
           </p>
 

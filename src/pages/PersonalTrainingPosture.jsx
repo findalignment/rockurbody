@@ -2,14 +2,24 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
+import Breadcrumbs from '../components/Breadcrumbs';
+import { getBreadcrumbSchema } from '../utils/structuredData';
+import { Link } from 'react-router-dom';
 
 function PersonalTrainingPosture() {
+  const breadcrumbs = [
+    { name: 'Home', url: '/' },
+    { name: 'Movement Training', url: '/movement-training' },
+    { name: 'Personal Training & Posture', url: '/personal-training-posture' }
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Personal Training & Posture Improvement Santa Cruz | Fitness Coach"
         description="Personal training combined with structural bodywork. Private coaching focused on movement quality, posture improvement, and lasting results in Santa Cruz."
         keywords="personal training santa cruz, fitness coach, personal coach, private training, structural bodywork, posture improvement, movement coach, one on one training"
+        structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
       <PageHero 
@@ -17,6 +27,8 @@ function PersonalTrainingPosture() {
         title="Personal Training & Posture Improvement"
         subtitle="Not your typical personal trainer. I improve how you move, then make you stronger."
       />
+
+      <Breadcrumbs items={breadcrumbs} />
 
       <div className="bg-white py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -371,6 +383,37 @@ function PersonalTrainingPosture() {
             <Button to="/packages" variant="outline" size="lg" fullWidth>
               View Training Programs
             </Button>
+          </div>
+
+          {/* Related Pages */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3">
+              <Link to="/movement-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Training Hub
+              </Link>
+              <Link to="/personal-trainer-santa-cruz" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Personal Trainer Santa Cruz
+              </Link>
+              <Link to="/posture-correction" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Posture Correction
+              </Link>
+              <Link to="/core-strengthening" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Core Strengthening
+              </Link>
+              <Link to="/mobility-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Mobility Training
+              </Link>
+              <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration
+              </Link>
+              <Link to="/desk-worker-wellness" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Desk Worker Wellness
+              </Link>
+              <Link to="/athletic-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Athletic Performance
+              </Link>
+            </div>
           </div>
 
         </div>

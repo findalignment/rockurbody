@@ -1,14 +1,44 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import { getBreadcrumbSchema } from '../utils/structuredData';
+import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 
 function SportsPerformanceHub() {
+  const [openFAQ, setOpenFAQ] = useState(null);
+  
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Sports Performance', url: '/sports-performance' }
+  ];
+
+  const faqs = [
+    {
+      question: "How can Structural Integration improve my athletic performance?",
+      answer: "Structural Integration optimizes your body's alignment and fascial system, which directly impacts performance. When your structure is properly aligned, forces transfer efficiently through your body, reducing energy waste. You'll generate more power with less effort, move more fluidly, and reduce injury risk. Many athletes report feeling 'faster,' 'lighter,' or 'more connected' after structural work. The improvements persist because your structure itself has changed, not just temporary performance enhancement."
+    },
+    {
+      question: "Will this interfere with my current training program?",
+      answer: "No, our work complements your training. Structural Integration sessions are typically spaced weekly, so they don't disrupt your training schedule. Movement Education can be integrated into your existing routine or done on recovery days. Many athletes find that structural and movement work enhances their training—they move better, recover faster, and perform better. We'll work around your competition schedule and training cycles."
+    },
+    {
+      question: "How long before I see performance improvements?",
+      answer: "Many athletes notice immediate improvements in movement quality and ease after their first session. Performance improvements typically develop over a series of sessions as we systematically address structural limitations. Most athletes see meaningful performance gains within 4-8 sessions, with continued improvement as the work progresses. The timeline depends on your sport, current structure, and training demands."
+    },
+    {
+      question: "Do you work with competitive athletes?",
+      answer: "Yes. I work with athletes at all levels—from weekend warriors to competitive amateurs to professionals. The principles of good structure and movement quality apply universally, though we tailor the application to your specific sport and goals. Many competitive athletes use structural work during off-seasons for comprehensive improvement, and during seasons for maintenance and injury prevention."
+    },
+    {
+      question: "Can this help prevent sports injuries?",
+      answer: "Absolutely. Most sports injuries aren't random—they're predictable outcomes of structural imbalances and movement compensations. By addressing these patterns proactively, we reduce injury risk significantly. Structural Integration releases restrictions that create excessive stress on vulnerable tissues. Movement Education teaches movement patterns that support healthy function rather than creating problems. Many athletes use this work preventively to stay healthy throughout their careers."
+    },
+    {
+      question: "What if I'm already dealing with a sports injury?",
+      answer: "Our work can help with injury recovery by addressing the structural and movement patterns that contributed to the injury. We work carefully around acute injuries, respecting healing timelines and medical limitations. As you heal, we progressively restore function and address the underlying patterns that set you up for injury. Many athletes recover faster and return stronger when structural and movement work is part of their rehabilitation."
+    }
   ];
 
   const performanceServices = [
@@ -74,13 +104,18 @@ function SportsPerformanceHub() {
     }
   ];
 
+  const structuredData = [
+    getBreadcrumbSchema(breadcrumbs),
+    getFAQSchema(faqs)
+  ];
+
   return (
     <PageLayout>
       <SEO
         title="Sports Performance Training Santa Cruz | Athletic Enhancement"
         description="Elite sports performance training in Santa Cruz. Improve biomechanics, prevent injuries, and enhance athletic performance for golf, climbing, cycling, running, surfing, and more."
         keywords="sports performance, athletic training, golf performance, climbing training, cycling coaching, running biomechanics, injury prevention, Santa Cruz sports training"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={structuredData}
       />
 
       <PageHero
@@ -162,6 +197,32 @@ function SportsPerformanceHub() {
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              The Performance Edge: Efficiency and Power
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Athletic performance isn't just about strength, speed, or skill—it's about efficiency. When your body is properly aligned and moving optimally, every ounce of strength and conditioning you've built gets used effectively. You generate more power with less effort. You move faster because you're not fighting your own structure. You maintain performance longer because you're not wasting energy on compensations.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Structural Integration creates this efficiency by optimizing your body's alignment and releasing restrictions that limit power transfer. Movement Education refines your technique to eliminate wasteful compensations. Together, they create a performance edge that comes from moving better, not just training harder. Many athletes discover they can perform at higher levels with less training volume once their movement quality improves.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              This efficiency also supports recovery. When your body moves efficiently, it creates less stress and fatigue. You recover faster between training sessions and competitions. You maintain performance throughout long events. You reduce the wear and tear that accumulates over athletic careers. Better structure and movement quality don't just improve performance—they extend your athletic lifespan.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
+              Sport-Specific Applications
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              While the principles of good structure and movement are universal, each sport has unique demands and common injury patterns. Golfers need rotational power through an organized core and mobile thoracic spine. Climbers need shoulder stability, hip mobility, and full-body tension control. Cyclists need efficient pedaling mechanics and balanced hip function. Runners need optimal gait patterns and shock absorption. Surfers need rotational power, paddle efficiency, and balance.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              We tailor our work to your sport's specific requirements while maintaining the whole-body perspective. A golfer's swing limitations might require addressing hip restrictions, ribcage mobility, and core organization. A climber's shoulder issues might stem from ribcage restrictions and hip limitations. A runner's knee pain might require foot and hip work. We treat you as a complete athlete, addressing sport-specific needs within the context of your entire structure.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              This sport-specific focus ensures improvements transfer directly to your performance. You'll feel changes in how you move in your sport, not just in isolated exercises. Your swing becomes more powerful. Your climbing feels more efficient. Your running becomes smoother. Your surfing improves. The work translates because we address the structural and movement patterns that actually matter for your sport.
+            </p>
+
+            <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
               Who This Helps
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
@@ -169,6 +230,9 @@ function SportsPerformanceHub() {
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               We work with golfers wanting more power and consistency, climbers dealing with shoulder or finger issues, cyclists and runners optimizing biomechanics, surfers improving paddle strength and wave performance, and athletes from every sport imaginable. The principles of good structure and movement quality are universal, even as we tailor the application to your specific needs.
+            </p>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Whether you're trying to break through a performance plateau, prevent recurring injuries, recover from an injury stronger than before, or simply optimize your movement for better performance, our work can help. The common thread is a commitment to improvement and a willingness to address the structural and movement foundations that support athletic performance.
             </p>
           </div>
 
@@ -198,6 +262,45 @@ function SportsPerformanceHub() {
                   </div>
                 </Link>
               ))}
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
+              Frequently Asked Questions About Sports Performance
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((faq, index) => {
+                const isOpen = openFAQ === index;
+                return (
+                  <div
+                    key={index}
+                    className="bg-white rounded-xl overflow-hidden border-2 border-neutralLight hover:border-accent/30 transition-colors"
+                  >
+                    <button
+                      onClick={() => setOpenFAQ(isOpen ? null : index)}
+                      className="w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    >
+                      <h3 className="text-xl font-semibold text-primary pr-8">
+                        {faq.question}
+                      </h3>
+                      <span className={`text-accent text-2xl font-bold transition-transform flex-shrink-0 ${isOpen ? 'rotate-45' : ''}`}>
+                        +
+                      </span>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        isOpen ? 'max-h-96' : 'max-h-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6 text-lg text-neutralDark/80 leading-relaxed">
+                        {faq.answer}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

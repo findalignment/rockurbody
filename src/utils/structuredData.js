@@ -220,7 +220,7 @@ export const getBreadcrumbSchema = (breadcrumbs) => ({
     '@type': 'ListItem',
     position: index + 1,
     name: crumb.name,
-    item: `https://rockyourbody.com${crumb.path}`,
+    item: `https://rockyourbody.com${crumb.url || crumb.path}`,
   })),
 });
 
