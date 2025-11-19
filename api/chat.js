@@ -56,9 +56,9 @@ const bookingFunctions = [
   }
 ];
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY
-});
+// Initialize OpenAI client
+const apiKey = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY;
+const openai = apiKey ? new OpenAI({ apiKey }) : null;
 
 export default async function handler(req, res) {
   // Set CORS headers
@@ -75,7 +75,7 @@ export default async function handler(req, res) {
   }
 
   // Check for required environment variables
-  if (!openai.apiKey) {
+  if (!openai || !apiKey) {
     console.error('Missing OPENAI_API_KEY environment variable');
     console.error('Available env vars:', Object.keys(process.env).filter(k => k.includes('OPENAI')));
     return res.status(500).json({ 
