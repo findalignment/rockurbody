@@ -5,10 +5,11 @@
 
 import OpenAI from 'openai';
 import { bookingFunctions } from './openai-functions.js';
-import { checkAvailability, bookAppointment } from '../utils/booking.js';
+import { checkAvailability, bookAppointment } from '../../api/booking.js';
 
+// Use process.env for server-side (Vercel), fallback to import.meta.env for client-side
 const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_API_KEY
+  apiKey: process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY || import.meta.env?.VITE_OPENAI_API_KEY
 });
 
 /**
