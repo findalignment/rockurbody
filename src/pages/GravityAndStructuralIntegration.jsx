@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Breadcrumbs from '../components/Breadcrumbs';
-import AvailableLocations from '../components/AvailableLocations';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function GravityAndStructuralIntegration() {
@@ -206,10 +205,6 @@ function GravityAndStructuralIntegration() {
               Schedule a Free Consultation
             </Link>
           </div>
-
-          {/* Available in Your Area */}
-          <AvailableLocations serviceName="structural integration" />
-
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">
             <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
@@ -248,4 +243,3 @@ function GravityAndStructuralIntegration() {
 }
 
 export default GravityAndStructuralIntegration;
-

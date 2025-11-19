@@ -327,4 +327,3 @@ function WellnessHub() {
 }
 
 export default WellnessHub;
-

@@ -3,7 +3,6 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import AvailableLocations from '../components/AvailableLocations';
 import FAQSection from '../components/FAQSection';
 import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
@@ -324,10 +323,6 @@ function PostureCorrection() {
             faqs={faqs} 
             title="Frequently Asked Questions About Posture Correction"
           />
-
-          {/* Available in Your Area */}
-          <AvailableLocations serviceName="posture correction" />
-
         </div>
       </div>
     </PageLayout>
@@ -335,4 +330,3 @@ function PostureCorrection() {
 }
 
 export default PostureCorrection;
-

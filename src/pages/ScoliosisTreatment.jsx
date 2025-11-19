@@ -3,7 +3,6 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import AvailableLocations from '../components/AvailableLocations';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
@@ -264,10 +263,6 @@ function ScoliosisTreatment() {
               View Programs
             </Button>
           </div>
-
-          {/* Available in Your Area */}
-          <AvailableLocations serviceName="scoliosis treatment" />
-
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">
             <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
@@ -306,4 +301,3 @@ function ScoliosisTreatment() {
 }
 
 export default ScoliosisTreatment;
-

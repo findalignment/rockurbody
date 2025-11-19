@@ -83,4 +83,3 @@ function ScheduleSingleMove30() {
 }
 
 export default ScheduleSingleMove30;
-

@@ -214,4 +214,3 @@ function SciaticaReliefSantaCruz() {
 }
 
 export default SciaticaReliefSantaCruz;
-

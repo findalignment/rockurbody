@@ -196,4 +196,3 @@ function BookMovementEducation() {
 }
 
 export default BookMovementEducation;
-

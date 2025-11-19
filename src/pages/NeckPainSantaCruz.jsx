@@ -210,4 +210,3 @@ function NeckPainSantaCruz() {
 }
 
 export default NeckPainSantaCruz;
-

@@ -3,7 +3,6 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import AvailableLocations from '../components/AvailableLocations';
 import FAQSection from '../components/FAQSection';
 import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
@@ -277,10 +276,6 @@ function SciaticaRelief() {
             faqs={faqs} 
             title="Frequently Asked Questions About Sciatica Relief"
           />
-
-          {/* Available in Your Area */}
-          <AvailableLocations serviceName="sciatica relief" />
-
           {/* Related Pages */}
           <div className="mt-12 pt-8 border-t border-neutralDark/20">
             <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
@@ -319,4 +314,3 @@ function SciaticaRelief() {
 }
 
 export default SciaticaRelief;
-

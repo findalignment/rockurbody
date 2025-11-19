@@ -86,4 +86,3 @@ function ScheduleMovement60() {
 }
 
 export default ScheduleMovement60;
-

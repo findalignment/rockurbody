@@ -317,4 +317,3 @@ function StructuralIntegrationHub() {
 }
 
 export default StructuralIntegrationHub;
-

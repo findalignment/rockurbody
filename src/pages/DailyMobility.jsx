@@ -270,4 +270,3 @@ function DailyMobility() {
 }
 
 export default DailyMobility;
-

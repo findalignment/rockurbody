@@ -256,4 +256,3 @@ function SafeGymTraining() {
 }
 
 export default SafeGymTraining;
-

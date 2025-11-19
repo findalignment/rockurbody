@@ -162,4 +162,3 @@ function BookStructuralIntegration() {
 }
 
 export default BookStructuralIntegration;
-

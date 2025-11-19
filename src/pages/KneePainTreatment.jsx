@@ -3,7 +3,6 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import Breadcrumbs from '../components/Breadcrumbs';
-import AvailableLocations from '../components/AvailableLocations';
 import FAQSection from '../components/FAQSection';
 import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
@@ -301,10 +300,6 @@ function KneePainTreatment() {
             faqs={faqs} 
             title="Frequently Asked Questions About Knee Pain Treatment"
           />
-
-          {/* Available in Your Area */}
-          <AvailableLocations serviceName="knee pain treatment" />
-
         </div>
       </div>
     </PageLayout>
@@ -312,4 +307,3 @@ function KneePainTreatment() {
 }
 
 export default KneePainTreatment;
-

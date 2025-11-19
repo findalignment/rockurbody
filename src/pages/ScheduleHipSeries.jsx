@@ -86,4 +86,3 @@ function ScheduleHipSeries() {
 }
 
 export default ScheduleHipSeries;
-

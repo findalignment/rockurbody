@@ -231,4 +231,3 @@ function ExerciseForLife() {
 }
 
 export default ExerciseForLife;
-

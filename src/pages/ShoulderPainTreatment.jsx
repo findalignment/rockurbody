@@ -201,4 +201,3 @@ function ShoulderPainTreatment() {
 }
 
 export default ShoulderPainTreatment;
-
