@@ -45,7 +45,7 @@ function PageHero({
       </div>
       
       {/* Hero Text Below Image */}
-      <div className="bg-white py-6 md:py-8 px-6">
+      <div className="bg-white pt-12 pb-6 md:pt-20 md:pb-8 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
             {title}
