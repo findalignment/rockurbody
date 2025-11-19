@@ -172,12 +172,30 @@ function LandingPage() {
               throw new Error(errorMessage);
             }
 
-            const data = await response.json();
+            let data;
+            try {
+              data = await response.json();
+            } catch (jsonError) {
+              logger.error('Failed to parse JSON response:', jsonError);
+              const text = await response.text().catch(() => 'Unknown error');
+              throw new Error(`Invalid response format: ${text.substring(0, 100)}`);
+            }
+            
             logger.info('Chat API success:', data);
+            
+            // Validate response structure
+            if (!data || typeof data !== 'object') {
+              throw new Error('Invalid response format from API');
+            }
+            
             return data.message || "I'm having trouble processing that. Could you try rephrasing?";
           } catch (error) {
             logger.error('Chat API error:', error);
             console.error('Chat API error details:', error);
+            // Re-throw with a user-friendly message if it's a network error
+            if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+              throw new Error('Network error: Unable to connect to the server. Please check your connection.');
+            }
             throw error;
           }
         },
