@@ -181,12 +181,21 @@ Be helpful, direct, and conversational. Help people understand if this work is r
       });
 
       // Get final response from OpenAI with function results
-      const secondResponse = await openai.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: messages,
-        max_tokens: 250,
-        temperature: 0.7
-      });
+      let secondResponse;
+      try {
+        secondResponse = await openai.chat.completions.create({
+          model: "gpt-4o-mini",
+          messages: messages,
+          max_tokens: 250,
+          temperature: 0.7
+        });
+      } catch (openaiError) {
+        console.error('OpenAI second API call failed:', openaiError);
+        return res.status(500).json({ 
+          error: openaiError.message || 'Failed to communicate with OpenAI',
+          message: "I'm sorry, I'm having trouble processing the response. Please try again."
+        });
+      }
 
       // Validate second response structure
       if (!secondResponse || !secondResponse.choices || !secondResponse.choices[0] || !secondResponse.choices[0].message) {
