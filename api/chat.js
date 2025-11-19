@@ -57,7 +57,15 @@ const bookingFunctions = [
 ];
 
 // Initialize OpenAI client
+// Note: Vercel serverless functions don't expose VITE_ prefixed vars at runtime
+// Use OPENAI_API_KEY (without VITE_ prefix) in Vercel environment variables
 const apiKey = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY;
+
+if (!apiKey) {
+  console.error('No OpenAI API key found in environment variables');
+  console.error('Available env vars with OPENAI:', Object.keys(process.env).filter(k => k.toUpperCase().includes('OPENAI')));
+}
+
 const openai = apiKey ? new OpenAI({ apiKey }) : null;
 
 export default async function handler(req, res) {
@@ -77,10 +85,12 @@ export default async function handler(req, res) {
   // Check for required environment variables
   if (!openai || !apiKey) {
     console.error('Missing OPENAI_API_KEY environment variable');
-    console.error('Available env vars:', Object.keys(process.env).filter(k => k.includes('OPENAI')));
+    console.error('Available env vars:', Object.keys(process.env).filter(k => k.toUpperCase().includes('OPENAI')));
+    console.error('NOTE: Vercel serverless functions require OPENAI_API_KEY (without VITE_ prefix)');
     return res.status(500).json({ 
       error: 'Server configuration error: Missing OPENAI_API_KEY',
-      message: "I'm sorry, the chatbot service is not properly configured. Please contact support."
+      message: "I'm sorry, the chatbot service is not properly configured. The OpenAI API key is missing. Please set OPENAI_API_KEY (without VITE_ prefix) in Vercel environment variables.",
+      hint: 'Vercel serverless functions do not expose VITE_ prefixed variables at runtime. Use OPENAI_API_KEY instead.'
     });
   }
 
