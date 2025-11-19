@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
-import Breadcrumbs from '../components/Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function GravityAndStructuralIntegration() {
@@ -54,7 +53,6 @@ function GravityAndStructuralIntegration() {
         subtitle="What if instead of fighting gravity, you could work with it?"
       />
 
-      <Breadcrumbs items={breadcrumbs} />
 
       <div className="bg-white py-20 px-6">
         <div className="max-w-4xl mx-auto">

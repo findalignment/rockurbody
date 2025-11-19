@@ -1,7 +1,6 @@
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
-import Breadcrumbs from '../components/Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
@@ -27,7 +26,6 @@ function WhatIsStructuralIntegration() {
         subtitle="Understanding the foundation of lasting change"
       />
 
-      <Breadcrumbs items={breadcrumbs} />
 
       {/* SEO-optimized intro */}
       <div className="bg-offWhite pt-8 pb-16 px-4">

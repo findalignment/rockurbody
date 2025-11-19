@@ -2,7 +2,6 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
-import Breadcrumbs from '../components/Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 
 function SciaticaReliefSantaCruz() {
@@ -27,7 +26,6 @@ function SciaticaReliefSantaCruz() {
         subtitle="Stop the shooting pain down your leg"
       />
 
-      <Breadcrumbs items={breadcrumbs} />
 
       <div className="bg-white py-12 px-6">
         <div className="max-w-4xl mx-auto">

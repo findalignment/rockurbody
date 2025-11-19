@@ -2,7 +2,6 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import PageHero from './PageHero';
-import Breadcrumbs from './Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 
 /**
@@ -78,8 +77,6 @@ function LocationPageTemplate({
         subtitle={`Mobile Movement Education & Structural Integration • ${county}`}
       />
 
-      {/* Breadcrumb Navigation */}
-      <Breadcrumbs items={breadcrumbs} />
 
       <div className="pt-20 pb-24 px-4 md:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">

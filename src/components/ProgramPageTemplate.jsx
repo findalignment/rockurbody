@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageLayout from './PageLayout';
 import PageHero from './PageHero';
-import Breadcrumbs from './Breadcrumbs';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 import { Helmet } from 'react-helmet-async';
 
@@ -48,7 +47,6 @@ function ProgramPageTemplate({
         subtitle={tagline}
       />
 
-      <Breadcrumbs items={breadcrumbs} />
 
       <div className="pt-8 pb-24 px-4 md:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

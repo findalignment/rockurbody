@@ -3,7 +3,6 @@ import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
-import Breadcrumbs from '../components/Breadcrumbs';
 import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 
 function WellnessHub() {
@@ -124,7 +123,6 @@ function WellnessHub() {
         subtitle="Invest in lifelong vitality and resilience"
       />
 
-      <Breadcrumbs items={breadcrumbs} />
 
       <div className="py-16 px-4 md:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
