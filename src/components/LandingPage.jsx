@@ -144,9 +144,33 @@ function LandingPage() {
         questionNumber: newCount,
       });
       
-      // Use reliability system for AI request
+      // Use reliability system for AI request via API endpoint
       const result = await retryChatbotRequest(
-        (message, history) => sendMessageToAI(message, history, detectedPage),
+        async (message, history) => {
+          try {
+            const response = await fetch('/api/chat', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                message: message,
+                history: history.map(msg => ({
+                  role: msg.role,
+                  content: msg.content
+                }))
+              })
+            });
+
+            if (!response.ok) {
+              throw new Error(`API error: ${response.status}`);
+            }
+
+            const data = await response.json();
+            return data.message || "I'm having trouble processing that. Could you try rephrasing?";
+          } catch (error) {
+            logger.error('Chat API error:', error);
+            throw error;
+          }
+        },
         userMessage,
         conversation
       );
