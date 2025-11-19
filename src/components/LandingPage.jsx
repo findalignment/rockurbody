@@ -161,13 +161,23 @@ function LandingPage() {
             });
 
             if (!response.ok) {
-              throw new Error(`API error: ${response.status}`);
+              let errorData;
+              try {
+                errorData = await response.json();
+              } catch (e) {
+                errorData = { error: `HTTP ${response.status}: ${response.statusText}` };
+              }
+              logger.error('Chat API error response:', response.status, errorData);
+              const errorMessage = errorData.error || errorData.message || `API error: ${response.status}`;
+              throw new Error(errorMessage);
             }
 
             const data = await response.json();
+            logger.info('Chat API success:', data);
             return data.message || "I'm having trouble processing that. Could you try rephrasing?";
           } catch (error) {
             logger.error('Chat API error:', error);
+            console.error('Chat API error details:', error);
             throw error;
           }
         },

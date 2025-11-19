@@ -186,9 +186,11 @@ Be helpful, direct, and conversational. Help people understand if this work is r
 
   } catch (error) {
     console.error('Chat API error:', error);
+    console.error('Error stack:', error.stack);
     return res.status(500).json({ 
       error: error.message || 'An error occurred while processing your message',
-      message: "I'm sorry, I encountered an error. Please try again."
+      message: "I'm sorry, I encountered an error. Please try again.",
+      details: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }
