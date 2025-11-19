@@ -1,4 +1,6 @@
 import logger from './logger';
+import { bookingFunctions, executeFunction } from '../lib/openai-functions.js';
+import { runConversation } from '../lib/chatbot.js';
 
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
@@ -13,6 +15,19 @@ export async function sendMessageToAI(userMessage, conversationHistory = [], sug
     }
     
     systemPrompt += `
+
+BOOKING FUNCTIONALITY:
+You have access to two functions that allow you to check availability and book appointments:
+1. check_availability - Use this when users ask about available times or want to see open slots. You'll need start_time and end_time in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ). Use Pacific Time (America/Los_Angeles) - convert user's requested times accordingly.
+2. book_appointment - Use this ONLY after you have confirmed the user's name, email, and desired time slot. Never book without explicit confirmation.
+
+When users ask about booking or availability:
+- First, ask clarifying questions if needed (what type of session, preferred dates/times)
+- If they mention a date/time, convert it to ISO 8601 format in Pacific Time before calling check_availability
+- Use check_availability to show them available slots
+- Only use book_appointment after they've confirmed their details and chosen a time slot
+- Always confirm the booking details before executing the function
+- When showing available slots, present them in a clear, readable format
 
 ABOUT ROCK:
 Hello there!
@@ -540,18 +555,23 @@ You: "Probably, but let's make sure. What's been going on? How long? What have y
       }
     }
 
+    // Prepare the request body with function calling support
+    const requestBody = {
+      model: 'gpt-4o-mini',
+      messages: messages,
+      max_tokens: 250,
+      temperature: 0.7,
+      functions: bookingFunctions,
+      function_call: 'auto' // Let the model decide when to call functions
+    };
+
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${API_KEY}`
       },
-      body: JSON.stringify({
-        model: 'gpt-4o-mini',
-        messages: messages,
-        max_tokens: 250,
-        temperature: 0.7
-      })
+      body: JSON.stringify(requestBody)
     });
 
     if (!response.ok) {
@@ -571,10 +591,126 @@ You: "Probably, but let's make sure. What's been going on? How long? What have y
       logger.error('Invalid API response:', data);
       throw new Error('Invalid response format from API');
     }
+
+    const message = data.choices[0].message;
+
+    // Check if the model wants to call a function
+    if (message.function_call) {
+      const functionName = message.function_call.name;
+      let functionArgs;
+      
+      try {
+        functionArgs = JSON.parse(message.function_call.arguments);
+      } catch (parseError) {
+        logger.error('Failed to parse function arguments:', parseError);
+        return "I'm having trouble processing that request. Could you try rephrasing?";
+      }
+
+      // Execute the function
+      logger.info(`Executing function: ${functionName}`, functionArgs);
+      const functionResult = await executeFunction(functionName, functionArgs);
+
+      // Add the function call and result to the conversation
+      messages.push({
+        role: 'assistant',
+        content: null,
+        function_call: message.function_call
+      });
+
+      messages.push({
+        role: 'function',
+        name: functionName,
+        content: JSON.stringify(functionResult)
+      });
+
+      // Make a second API call with the function result
+      const secondResponse = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${API_KEY}`
+        },
+        body: JSON.stringify({
+          model: 'gpt-4o-mini',
+          messages: messages,
+          max_tokens: 250,
+          temperature: 0.7
+        })
+      });
+
+      if (!secondResponse.ok) {
+        const errorData = await secondResponse.json().catch(() => ({}));
+        logger.error('OpenAI API Error (second call):', secondResponse.status, errorData);
+        // Return a user-friendly message based on function result
+        if (functionResult.success) {
+          return functionResult.message || 'The request was processed successfully.';
+        } else {
+          return functionResult.error || "I encountered an issue processing that request. Please try again or contact me directly.";
+        }
+      }
+
+      const secondData = await secondResponse.json();
+      
+      if (secondData.error) {
+        logger.error('OpenAI Error (second call):', secondData.error);
+        // Return function result message if available
+        if (functionResult.success) {
+          return functionResult.message || 'The request was processed successfully.';
+        }
+        return functionResult.error || "I encountered an issue. Please try again.";
+      }
+      
+      if (!secondData.choices || !secondData.choices[0] || !secondData.choices[0].message) {
+        logger.error('Invalid API response (second call):', secondData);
+        // Return function result message if available
+        if (functionResult.success) {
+          return functionResult.message || 'The request was processed successfully.';
+        }
+        return functionResult.error || "I encountered an issue. Please try again.";
+      }
+
+      return secondData.choices[0].message.content;
+    }
     
-    return data.choices[0].message.content;
+    // No function call, return the regular message content
+    return message.content;
   } catch (error) {
     logger.error('OpenAI API Error:', error);
+    return "I'm having trouble connecting right now. Please try the navigation menu above.";
+  }
+}
+
+/**
+ * Alternative chatbot handler using OpenAI SDK with function calling
+ * This uses the new runConversation function with the full system prompt
+ * @param {string} userMessage - User's message
+ * @param {Array} conversationHistory - Previous conversation messages
+ * @param {string} suggestedPage - Suggested page route (optional)
+ * @returns {Promise<string>} - AI response message
+ */
+export async function sendMessageToAIWithFunctions(userMessage, conversationHistory = [], suggestedPage = null) {
+  try {
+    // Build the full system prompt (same as sendMessageToAI)
+    let systemPrompt = `You are a helpful assistant for Rock Your Body, a movement education and structural integration practice in Santa Cruz, California run by Rock Hudson.`;
+    
+    if (suggestedPage) {
+      systemPrompt += `\n\nIMPORTANT: Based on the user's message, the ${suggestedPage} page is likely relevant. However, ask clarifying questions first to understand their specific needs before recommending this page. Only suggest the page after you understand their situation better.`;
+    }
+    
+    // Convert conversation history format for runConversation
+    const formattedHistory = conversationHistory
+      .filter(msg => msg.role === 'user' || msg.role === 'assistant')
+      .map(msg => ({
+        role: msg.role,
+        content: msg.content
+      }));
+
+    // Use runConversation with the custom system prompt
+    const result = await runConversation(userMessage, formattedHistory, systemPrompt);
+    
+    return result.message || "I'm having trouble processing that. Could you try rephrasing?";
+  } catch (error) {
+    logger.error('Chatbot with functions error:', error);
     return "I'm having trouble connecting right now. Please try the navigation menu above.";
   }
 }
