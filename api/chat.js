@@ -106,14 +106,32 @@ Be helpful, direct, and conversational. Help people understand if this work is r
     ];
 
     // Initial call to OpenAI with function definitions
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: messages,
-      functions: bookingFunctions,
-      function_call: "auto",
-      max_tokens: 250,
-      temperature: 0.7
-    });
+    let response;
+    try {
+      response = await openai.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: messages,
+        functions: bookingFunctions,
+        function_call: "auto",
+        max_tokens: 250,
+        temperature: 0.7
+      });
+    } catch (openaiError) {
+      console.error('OpenAI API call failed:', openaiError);
+      return res.status(500).json({ 
+        error: openaiError.message || 'Failed to communicate with OpenAI',
+        message: "I'm sorry, I'm having trouble connecting to the AI service. Please try again."
+      });
+    }
+
+    // Validate response structure
+    if (!response || !response.choices || !response.choices[0] || !response.choices[0].message) {
+      console.error('Invalid OpenAI response structure:', response);
+      return res.status(500).json({ 
+        error: 'Invalid response from OpenAI API',
+        message: "I'm sorry, I received an unexpected response. Please try again."
+      });
+    }
 
     const responseMessage = response.choices[0].message;
 
@@ -169,6 +187,15 @@ Be helpful, direct, and conversational. Help people understand if this work is r
         max_tokens: 250,
         temperature: 0.7
       });
+
+      // Validate second response structure
+      if (!secondResponse || !secondResponse.choices || !secondResponse.choices[0] || !secondResponse.choices[0].message) {
+        console.error('Invalid OpenAI second response structure:', secondResponse);
+        return res.status(500).json({ 
+          error: 'Invalid response from OpenAI API',
+          message: "I'm sorry, I received an unexpected response. Please try again."
+        });
+      }
 
       return res.status(200).json({
         message: secondResponse.choices[0].message.content,
