@@ -1,6 +1,5 @@
 import logger from './logger';
 import { bookingFunctions, executeFunction } from '../lib/openai-functions.js';
-import { runConversation } from '../lib/chatbot.js';
 
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 
@@ -682,33 +681,32 @@ You: "Probably, but let's make sure. What's been going on? How long? What have y
 
 /**
  * Alternative chatbot handler using OpenAI SDK with function calling
- * This uses the new runConversation function with the full system prompt
+ * NOTE: This function requires server-side execution. Use the /api/chat endpoint instead.
+ * This function is kept for reference but should not be used directly in the browser.
  * @param {string} userMessage - User's message
  * @param {Array} conversationHistory - Previous conversation messages
  * @param {string} suggestedPage - Suggested page route (optional)
  * @returns {Promise<string>} - AI response message
  */
 export async function sendMessageToAIWithFunctions(userMessage, conversationHistory = [], suggestedPage = null) {
+  // This function requires server-side execution via /api/chat endpoint
+  // Keeping for reference but redirecting to use the API endpoint
   try {
-    // Build the full system prompt (same as sendMessageToAI)
-    let systemPrompt = `You are a helpful assistant for Rock Your Body, a movement education and structural integration practice in Santa Cruz, California run by Rock Hudson.`;
-    
-    if (suggestedPage) {
-      systemPrompt += `\n\nIMPORTANT: Based on the user's message, the ${suggestedPage} page is likely relevant. However, ask clarifying questions first to understand their specific needs before recommending this page. Only suggest the page after you understand their situation better.`;
-    }
-    
-    // Convert conversation history format for runConversation
-    const formattedHistory = conversationHistory
-      .filter(msg => msg.role === 'user' || msg.role === 'assistant')
-      .map(msg => ({
-        role: msg.role,
-        content: msg.content
-      }));
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: userMessage,
+        history: conversationHistory
+      })
+    });
 
-    // Use runConversation with the custom system prompt
-    const result = await runConversation(userMessage, formattedHistory, systemPrompt);
-    
-    return result.message || "I'm having trouble processing that. Could you try rephrasing?";
+    if (!response.ok) {
+      throw new Error(`API error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data.message || "I'm having trouble processing that. Could you try rephrasing?";
   } catch (error) {
     logger.error('Chatbot with functions error:', error);
     return "I'm having trouble connecting right now. Please try the navigation menu above.";
