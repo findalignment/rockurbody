@@ -13,7 +13,6 @@ function ServicesOverview() {
       description: "Hands-on bodywork that reorganizes your connective tissue (fascia) for better alignment, easier movement, and lasting change. The 12-Series is a systematic progression through your entire body.",
       pricing: "From $180/session • 60-120 minutes",
       link: "/what-is-structural-integration",
-      bookLink: "/book/structural-integration",
       cta: "Learn About SI",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -26,7 +25,6 @@ function ServicesOverview() {
       description: "Intelligent training that teaches strength, core stability, mobility, coordination, awareness, balance, and flexibility. Foundation first, then build. Sustainable challenge without deterring you from your workout.",
       pricing: "From $90/session • 30-120 minutes",
       link: "/what-is-movement-education",
-      bookLink: "/book/movement-education",
       cta: "Learn About Movement",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
