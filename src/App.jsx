@@ -308,6 +308,7 @@ function AppRoutes() {
         <Route path="/surfers" element={<Surfers />} />
         <Route path="/back-pain-santa-cruz" element={<BackPainSantaCruz />} />
         <Route path="/posture-correction" element={<PostureCorrection />} />
+        <Route path="/body-alignment" element={<BodyAlignment />} />
         <Route path="/services/injury-recovery" element={<InjuryRecovery />} />
         <Route path="/cyclists-and-runners" element={<CyclistsRunners />} />
         <Route path="/desk-worker-wellness" element={<DeskWorkerWellness />} />
