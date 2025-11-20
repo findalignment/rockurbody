@@ -69,41 +69,42 @@ if (!apiKey) {
 const openai = apiKey ? new OpenAI({ apiKey }) : null;
 
 export default async function handler(req, res) {
-  console.log('[API/CHAT] Request received:', {
-    method: req.method,
-    url: req.url,
-    hasBody: !!req.body,
-    timestamp: new Date().toISOString()
-  });
-
-  // Set CORS headers
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
-  if (req.method === 'OPTIONS') {
-    console.log('[API/CHAT] OPTIONS request, returning 200');
-    return res.status(200).end();
-  }
-
-  if (req.method !== 'POST') {
-    console.log('[API/CHAT] Invalid method:', req.method);
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
-  // Check for required environment variables
-  if (!openai || !apiKey) {
-    console.error('Missing OPENAI_API_KEY environment variable');
-    console.error('Available env vars:', Object.keys(process.env).filter(k => k.toUpperCase().includes('OPENAI')));
-    console.error('NOTE: Vercel serverless functions require OPENAI_API_KEY (without VITE_ prefix)');
-    return res.status(500).json({ 
-      error: 'Server configuration error: Missing OPENAI_API_KEY',
-      message: "I'm sorry, the chatbot service is not properly configured. The OpenAI API key is missing. Please set OPENAI_API_KEY (without VITE_ prefix) in Vercel environment variables.",
-      hint: 'Vercel serverless functions do not expose VITE_ prefixed variables at runtime. Use OPENAI_API_KEY instead.'
-    });
-  }
-
   try {
+    console.log('[API/CHAT] Request received:', {
+      method: req.method,
+      url: req.url,
+      hasBody: !!req.body,
+      timestamp: new Date().toISOString()
+    });
+
+    // Set CORS headers
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+    if (req.method === 'OPTIONS') {
+      console.log('[API/CHAT] OPTIONS request, returning 200');
+      return res.status(200).end();
+    }
+
+    if (req.method !== 'POST') {
+      console.log('[API/CHAT] Invalid method:', req.method);
+      return res.status(405).json({ error: 'Method not allowed' });
+    }
+
+    // Check for required environment variables
+    if (!openai || !apiKey) {
+      console.error('Missing OPENAI_API_KEY environment variable');
+      console.error('Available env vars:', Object.keys(process.env).filter(k => k.toUpperCase().includes('OPENAI')));
+      console.error('NOTE: Vercel serverless functions require OPENAI_API_KEY (without VITE_ prefix)');
+      return res.status(500).json({ 
+        error: 'Server configuration error: Missing OPENAI_API_KEY',
+        message: "I'm sorry, the chatbot service is not properly configured. The OpenAI API key is missing. Please set OPENAI_API_KEY (without VITE_ prefix) in Vercel environment variables.",
+        hint: 'Vercel serverless functions do not expose VITE_ prefixed variables at runtime. Use OPENAI_API_KEY instead.'
+      });
+    }
+
+    try {
     // Parse request body if it's a string (Vercel sometimes sends string bodies)
     let body = req.body;
     if (typeof body === 'string') {
@@ -291,6 +292,21 @@ Be helpful, direct, and conversational. Help people understand if this work is r
         stack: error.stack,
         name: error.name,
         message: error.message
+      } : undefined
+    });
+  } catch (outerError) {
+    // Catch any errors that occur outside the main try block (e.g., import errors, module loading)
+    console.error('Outer error in chat handler:', outerError);
+    console.error('Outer error stack:', outerError?.stack);
+    console.error('Outer error name:', outerError?.name);
+    
+    return res.status(500).json({
+      error: outerError?.message || 'Server error',
+      message: "I'm sorry, the chatbot service encountered an unexpected error. Please try again later.",
+      details: process.env.NODE_ENV === 'development' ? {
+        message: outerError?.message,
+        stack: outerError?.stack,
+        name: outerError?.name
       } : undefined
     });
   }
