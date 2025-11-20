@@ -25,8 +25,15 @@ export default defineConfig({
   build: {
     // Use default minification (esbuild)
     minify: 'esbuild',
-    // Optimize chunk splitting
+    // Exclude API directory from build (Vercel handles these as serverless functions)
     rollupOptions: {
+      external: (id) => {
+        // Don't bundle API files - Vercel handles them as serverless functions
+        if (id.includes('/api/') || id.startsWith('./api/')) {
+          return false; // Actually, we want to include them, just not bundle them
+        }
+        return false;
+      },
       output: {
         manualChunks: (id) => {
           // Vendor chunks
