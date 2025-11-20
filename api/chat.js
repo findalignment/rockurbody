@@ -69,16 +69,25 @@ if (!apiKey) {
 const openai = apiKey ? new OpenAI({ apiKey }) : null;
 
 export default async function handler(req, res) {
+  console.log('[API/CHAT] Request received:', {
+    method: req.method,
+    url: req.url,
+    hasBody: !!req.body,
+    timestamp: new Date().toISOString()
+  });
+
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') {
+    console.log('[API/CHAT] OPTIONS request, returning 200');
     return res.status(200).end();
   }
 
   if (req.method !== 'POST') {
+    console.log('[API/CHAT] Invalid method:', req.method);
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
@@ -95,7 +104,18 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, history = [] } = req.body;
+    // Parse request body if it's a string (Vercel sometimes sends string bodies)
+    let body = req.body;
+    if (typeof body === 'string') {
+      try {
+        body = JSON.parse(body);
+      } catch (e) {
+        console.error('Failed to parse request body:', e);
+        return res.status(400).json({ error: 'Invalid request body format' });
+      }
+    }
+
+    const { message, history = [] } = body;
 
     if (!message || !message.trim()) {
       return res.status(400).json({ error: 'Message is required' });
@@ -129,6 +149,7 @@ Be helpful, direct, and conversational. Help people understand if this work is r
     ];
 
     // Initial call to OpenAI with function definitions
+    // Using functions format (more widely supported than tools)
     let response;
     try {
       response = await openai.chat.completions.create({
@@ -141,9 +162,22 @@ Be helpful, direct, and conversational. Help people understand if this work is r
       });
     } catch (openaiError) {
       console.error('OpenAI API call failed:', openaiError);
+      console.error('Error details:', {
+        message: openaiError.message,
+        status: openaiError.status,
+        code: openaiError.code,
+        type: openaiError.type,
+        stack: openaiError.stack
+      });
+      
       return res.status(500).json({ 
         error: openaiError.message || 'Failed to communicate with OpenAI',
-        message: "I'm sorry, I'm having trouble connecting to the AI service. Please try again."
+        message: "I'm sorry, I'm having trouble connecting to the AI service. Please try again.",
+        details: process.env.NODE_ENV === 'development' ? {
+          message: openaiError.message,
+          status: openaiError.status,
+          code: openaiError.code
+        } : undefined
       });
     }
 
@@ -246,10 +280,18 @@ Be helpful, direct, and conversational. Help people understand if this work is r
   } catch (error) {
     console.error('Chat API error:', error);
     console.error('Error stack:', error.stack);
+    console.error('Error name:', error.name);
+    console.error('Error message:', error.message);
+    
+    // Return a user-friendly error message
     return res.status(500).json({ 
       error: error.message || 'An error occurred while processing your message',
       message: "I'm sorry, I encountered an error. Please try again.",
-      details: process.env.NODE_ENV === 'development' ? error.stack : undefined
+      details: process.env.NODE_ENV === 'development' ? {
+        stack: error.stack,
+        name: error.name,
+        message: error.message
+      } : undefined
     });
   }
 }
