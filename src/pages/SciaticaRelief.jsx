@@ -16,7 +16,7 @@ function SciaticaRelief() {
   const faqs = [
     {
       question: "How long does it take to fix sciatica?",
-      answer: "Many clients notice immediate relief from sciatic pain after their first session, but lasting sciatica relief typically requires 4-8 sessions as we systematically address the underlying causes—often tight hip muscles, fascial restrictions, or structural imbalances. Most people see significant improvement within 6-10 sessions. The key is addressing the root cause, not just the symptoms."
+      answer: "Many clients notice immediate relief from sciatic pain after their first session, but lasting sciatica relief typically requires 4-8 sessions as we systematically address the underlying causes-often tight hip muscles, fascial restrictions, or structural imbalances. Most people see significant improvement within 6-10 sessions. The key is addressing the root cause, not just the symptoms."
     },
     {
       question: "Will this help if I have a herniated disc causing my sciatica?",

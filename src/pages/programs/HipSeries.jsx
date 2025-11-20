@@ -31,7 +31,7 @@ function HipSeries() {
       content: (
         <>
           <p className="mb-4">
-            Hip issues rarely start in the hip. They're usually compensation patterns from other areas—tight hamstrings, restricted thoracic spine, ankle limitations, or poor foot mechanics.
+            Hip issues rarely start in the hip. They're usually compensation patterns from other areas-tight hamstrings, restricted thoracic spine, ankle limitations, or poor foot mechanics.
           </p>
           <p className="mb-4">
             Sitting all day shortens hip flexors and weakens glutes. Old ankle sprains create compensation patterns that affect hip alignment. Desk posture collapses the front body and restricts hip extension.
@@ -58,7 +58,7 @@ function HipSeries() {
             <li>Dealing with hip impingement, bursitis, or similar issues</li>
           </ul>
           <p>
-            It's also great for athletes who need better hip mobility for performance—runners, cyclists, weightlifters, yoga practitioners, martial artists, etc.
+            It's also great for athletes who need better hip mobility for performance-runners, cyclists, weightlifters, yoga practitioners, martial artists, etc.
           </p>
         </>
       )
@@ -71,10 +71,10 @@ function HipSeries() {
             <strong>Session 1:</strong> We assess your hip function and begin working the lateral hip and IT band. You'll feel immediate changes in how your hip moves.
           </p>
           <p className="mb-4">
-            <strong>Session 2:</strong> We address the front of the hip—hip flexors, psoas, and deep front line. This often feels like a revelation for people who sit all day.
+            <strong>Session 2:</strong> We address the front of the hip-hip flexors, psoas, and deep front line. This often feels like a revelation for people who sit all day.
           </p>
           <p className="mb-4">
-            <strong>Session 3:</strong> We work the back of the hip—glutes, deep rotators, and hamstrings. This session improves hip extension and reduces compensation patterns.
+            <strong>Session 3:</strong> We work the back of the hip-glutes, deep rotators, and hamstrings. This session improves hip extension and reduces compensation patterns.
           </p>
           <p className="mb-4">
             <strong>Session 4:</strong> Integration. We tie everything together and ensure your hips are functioning as a coordinated system.

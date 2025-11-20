@@ -34,7 +34,7 @@ function WhatIsMovementEducation() {
             Movement Education in Santa Cruz
           </h2>
           <p className="text-lg md:text-xl text-neutralDark/90 leading-relaxed mb-8">
-            <strong>Movement Education</strong> isn't personal training. It's not about exercises, reps, or crushing yourself. It's about learning to move with intelligence, efficiency, and awareness—so you can restore natural movement, reduce pain, and improve performance in everything you do.
+            <strong>Movement Education</strong> isn't personal training. It's not about exercises, reps, or crushing yourself. It's about learning to move with intelligence, efficiency, and awareness-so you can restore natural movement, reduce pain, and improve performance in everything you do.
           </p>
           
           {/* CTA Above Fold */}

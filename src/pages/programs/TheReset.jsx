@@ -31,10 +31,10 @@ function TheReset() {
       content: (
         <>
           <p className="mb-4">
-            <strong>3 SI Sessions:</strong> We work with your fascia to release restrictions, improve alignment, and restore natural movement patterns. These sessions target the areas causing the most trouble—whether that's tight hips, restricted shoulders, or compensations from old injuries.
+            <strong>3 SI Sessions:</strong> We work with your fascia to release restrictions, improve alignment, and restore natural movement patterns. These sessions target the areas causing the most trouble-whether that's tight hips, restricted shoulders, or compensations from old injuries.
           </p>
           <p className="mb-4">
-            <strong>3 Movement Sessions:</strong> We teach you how to move better. Not generic exercises—specific movement patterns based on how your body actually moves. You'll learn core stability, mobility, and quality movement that supports the structural work.
+            <strong>3 Movement Sessions:</strong> We teach you how to move better. Not generic exercises-specific movement patterns based on how your body actually moves. You'll learn core stability, mobility, and quality movement that supports the structural work.
           </p>
           <p>
             Sessions alternate between SI and Movement. This gives your body time to integrate the structural changes while reinforcing them with better movement.
@@ -70,10 +70,10 @@ function TheReset() {
             <strong>Timeline:</strong> 6 sessions over 3-6 weeks, depending on your schedule. Sessions alternate between SI and Movement to maximize integration.
           </p>
           <p className="mb-4">
-            <strong>SI Sessions:</strong> 60 minutes of hands-on bodywork. We work with your fascia to release restrictions and improve alignment. You'll feel immediate changes—looser, more mobile, better aligned.
+            <strong>SI Sessions:</strong> 60 minutes of hands-on bodywork. We work with your fascia to release restrictions and improve alignment. You'll feel immediate changes-looser, more mobile, better aligned.
           </p>
           <p className="mb-4">
-            <strong>Movement Sessions:</strong> 60 minutes of personalized training. We assess how you move, identify compensation patterns, and teach you better movement quality. This isn't about crushing yourself—it's about learning to move well.
+            <strong>Movement Sessions:</strong> 60 minutes of personalized training. We assess how you move, identify compensation patterns, and teach you better movement quality. This isn't about crushing yourself-it's about learning to move well.
           </p>
           <p>
             <strong>Results:</strong> Most people feel significantly better after The Reset. You'll move more easily, feel less stiff, and have tools to maintain the work. If you need more, we can transition into a longer program.

@@ -53,7 +53,7 @@ function Movement5Sessions() {
             After 5 sessions, you have options. Some people continue with another 5 or 10-session package. Others transition into a comprehensive program like The Reset or Full Repatterning.
           </p>
           <p className="mb-4">
-            Or maybe 5 sessions is all you need right now. There's no pressure to continue—we'll reassess at the end and figure out what makes sense for your body and goals.
+            Or maybe 5 sessions is all you need right now. There's no pressure to continue-we'll reassess at the end and figure out what makes sense for your body and goals.
           </p>
           <p>
             The work meets you where you are and goes as far as you want to take it.

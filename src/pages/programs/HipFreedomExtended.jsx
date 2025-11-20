@@ -31,7 +31,7 @@ function HipFreedomExtended() {
       content: (
         <>
           <p className="mb-4">
-            <strong>6 SI Sessions:</strong> We have time to work everything related to hip function—not just the hip itself. Hip flexors, glutes, deep rotators, IT band, hamstrings, adductors, plus related areas like the lower back, pelvis, and even feet (which affect hip mechanics).
+            <strong>6 SI Sessions:</strong> We have time to work everything related to hip function-not just the hip itself. Hip flexors, glutes, deep rotators, IT band, hamstrings, adductors, plus related areas like the lower back, pelvis, and even feet (which affect hip mechanics).
           </p>
           <p className="mb-4">
             <strong>6 Movement Sessions:</strong> With double the movement work, we can progress from basics to advanced patterns. Foundational hip mobility. Squat and hinge patterns. Single-leg stability. Rotational control. Functional strength. Real-world application.
@@ -57,7 +57,7 @@ function HipFreedomExtended() {
             <li>Want more time to learn and practice new patterns</li>
           </ul>
           <p>
-            This is the most popular Hip Freedom option because it offers the right balance—enough SI to create real change, enough movement work to make it last.
+            This is the most popular Hip Freedom option because it offers the right balance-enough SI to create real change, enough movement work to make it last.
           </p>
         </>
       )

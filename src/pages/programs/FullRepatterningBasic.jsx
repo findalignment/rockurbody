@@ -42,7 +42,7 @@ function FullRepatterningBasic() {
             <strong>The Schedule:</strong> Typically one SI session per week, with one movement session between. This gives your body time to integrate structural changes while reinforcing them with better movement.
           </p>
           <p>
-            <strong>Support:</strong> You get mid-week check-ins if desired. I answer messages. This isn't transactional—it's a partnership.
+            <strong>Support:</strong> You get mid-week check-ins if desired. I answer messages. This isn't transactional-it's a partnership.
           </p>
         </>
       )

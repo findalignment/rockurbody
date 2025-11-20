@@ -16,7 +16,7 @@ function TMJRelief() {
   const faqs = [
     {
       question: "How long does it take to fix TMJ pain?",
-      answer: "Many clients notice immediate improvements in jaw comfort and reduced tension after their first session, but lasting TMJ relief typically requires 6-10 sessions as we systematically address the underlying causes—often neck tension, fascial restrictions, and structural imbalances. Most people see significant improvement within 8-12 sessions. The key is addressing the whole-body patterns that contribute to TMJ issues."
+      answer: "Many clients notice immediate improvements in jaw comfort and reduced tension after their first session, but lasting TMJ relief typically requires 6-10 sessions as we systematically address the underlying causes-often neck tension, fascial restrictions, and structural imbalances. Most people see significant improvement within 8-12 sessions. The key is addressing the whole-body patterns that contribute to TMJ issues."
     },
     {
       question: "Will this help with jaw clicking and popping?",

@@ -106,7 +106,7 @@ function BodyAlignment() {
                 transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(-5px) rotate(-0.2deg)',
               }}
             >
-              But here's the thing: your body doesn't work like a webpage. And that's exactly why fixing alignment is so much more complex—and why it requires looking at your entire body, not just the part that hurts.
+              But here's the thing: your body doesn't work like a webpage. And that's exactly why fixing alignment is so much more complex-and why it requires looking at your entire body, not just the part that hurts.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ function BodyAlignment() {
                 transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(8px) rotate(0.4deg)',
               }}
             >
-              This is why you can't just "fix" your shoulder pain by working on your shoulder. Or your back pain by working on your back. The problem isn't where it hurts—it's how your entire body has organized itself around that restriction.
+              This is why you can't just "fix" your shoulder pain by working on your shoulder. Or your back pain by working on your back. The problem isn't where it hurts-it's how your entire body has organized itself around that restriction.
             </p>
           </div>
 
@@ -172,7 +172,7 @@ function BodyAlignment() {
                 transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(7px) rotate(0.3deg)',
               }}
             >
-              Your body is wrapped in a three-dimensional web of connective tissue called fascia. Think of it like a sweater—when you pull on one thread, the entire garment shifts. When one part of your fascia gets tight or restricted, it pulls on everything else.
+              Your body is wrapped in a three-dimensional web of connective tissue called fascia. Think of it like a sweater-when you pull on one thread, the entire garment shifts. When one part of your fascia gets tight or restricted, it pulls on everything else.
             </p>
             <p 
               className="text-lg text-neutralDark/80 leading-relaxed mb-4 transition-all duration-1000"
@@ -221,7 +221,7 @@ function BodyAlignment() {
                 transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(-7px) rotate(-0.3deg)',
               }}
             >
-              We start with the foundation—your feet, your legs, your pelvis. Then we work up through your core, your spine, your shoulders, your neck. Each session builds on the last. Each release creates space for the next release. We're not chasing symptoms—we're reorganizing your entire structure.
+              We start with the foundation-your feet, your legs, your pelvis. Then we work up through your core, your spine, your shoulders, your neck. Each session builds on the last. Each release creates space for the next release. We're not chasing symptoms-we're reorganizing your entire structure.
             </p>
             <p 
               className="text-lg text-neutralDark/80 leading-relaxed transition-all duration-1000"
@@ -287,7 +287,7 @@ function BodyAlignment() {
                 Imagine if there was a similar button for your body. One click, and your shoulders level. Your hips align. Your head sits where it should. The tension releases. Everything finds its natural place.
               </p>
               <p className="leading-relaxed text-lg text-neutralDark/80 font-medium">
-                There isn't a magic button. But there is Structural Integration—a systematic approach that understands how your body actually works. That recognizes when one part moves, everything else responds. That addresses the whole, not just the parts. That creates lasting alignment by working with your body's interconnected nature, not against it.
+                There isn't a magic button. But there is Structural Integration-a systematic approach that understands how your body actually works. That recognizes when one part moves, everything else responds. That addresses the whole, not just the parts. That creates lasting alignment by working with your body's interconnected nature, not against it.
               </p>
             </div>
           )}

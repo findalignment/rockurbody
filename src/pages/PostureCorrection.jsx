@@ -24,7 +24,7 @@ function PostureCorrection() {
     },
     {
       question: "Can I still work at my desk while doing this work?",
-      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your posture. The goal isn't to stop you from working—it's to help you work in ways that don't create postural problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to sit and move in ways that support your structure. Many clients find they can work longer without pain."
+      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your posture. The goal isn't to stop you from working-it's to help you work in ways that don't create postural problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to sit and move in ways that support your structure. Many clients find they can work longer without pain."
     },
     {
       question: "What if I've tried posture exercises and they didn't work?",

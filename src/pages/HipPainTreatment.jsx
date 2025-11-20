@@ -36,7 +36,7 @@ function HipPainTreatment() {
     },
     {
       question: "How many sessions will I need for hip pain relief?",
-      answer: "This depends on your specific situation—whether it's impingement, tightness, or general hip pain. The Hip Series (4 sessions) is specifically designed for hip issues and provides a great foundation. Many people find significant relief within 4-8 sessions. We'll discuss your specific needs during your initial consultation and recommend the best approach for your situation."
+      answer: "This depends on your specific situation-whether it's impingement, tightness, or general hip pain. The Hip Series (4 sessions) is specifically designed for hip issues and provides a great foundation. Many people find significant relief within 4-8 sessions. We'll discuss your specific needs during your initial consultation and recommend the best approach for your situation."
     }
   ];
 

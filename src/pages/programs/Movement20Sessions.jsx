@@ -15,7 +15,7 @@ function Movement20Sessions() {
       content: (
         <>
           <p className="mb-4">
-            20 sessions gives you serious time to transform how you move. This isn't just learning the basics—it's building a completely new movement foundation and making real, lasting progress.
+            20 sessions gives you serious time to transform how you move. This isn't just learning the basics-it's building a completely new movement foundation and making real, lasting progress.
           </p>
           <p className="mb-4">
             With 20 sessions, we can work systematically through your body's patterns, address multiple areas, and progress from foundations to advanced work. You'll see changes not just in how you train, but in how you move through daily life.
@@ -34,10 +34,10 @@ function Movement20Sessions() {
             Over 20 sessions, we have time to address everything. Core stability. Hip mobility. Shoulder function. Squat patterns. Single-leg stability. Rotational movement. Coordination. Balance. Strength. Flexibility.
           </p>
           <p className="mb-4">
-            We start with foundations—how does your body move right now? What needs attention first? Then we build systematically. As your movement quality improves, we progress to more challenging patterns.
+            We start with foundations-how does your body move right now? What needs attention first? Then we build systematically. As your movement quality improves, we progress to more challenging patterns.
           </p>
           <p>
-            By session 20, you'll move dramatically better than session 1. Your body will feel different—stronger, more capable, less restricted.
+            By session 20, you'll move dramatically better than session 1. Your body will feel different-stronger, more capable, less restricted.
           </p>
         </>
       )

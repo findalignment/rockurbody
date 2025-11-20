@@ -32,7 +32,7 @@ function InjuryRecovery() {
     },
     {
       question: "How many sessions will I need for injury recovery?",
-      answer: "This depends on your specific injury—its type, severity, and how long ago it occurred. Many people find significant improvement within 8-12 sessions. More complex or older injuries may require more sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+      answer: "This depends on your specific injury-its type, severity, and how long ago it occurred. Many people find significant improvement within 8-12 sessions. More complex or older injuries may require more sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
     },
     {
       question: "Is this safe if I'm still recovering from surgery?",

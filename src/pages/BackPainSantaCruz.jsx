@@ -20,7 +20,7 @@ function BackPainSantaCruz() {
     },
     {
       question: "Will this work if I've already tried chiropractic, massage, or physical therapy?",
-      answer: "Yes. Our approach addresses the root causes of back pain—fascial restrictions, hip mobility issues, and movement patterns—rather than just symptoms. Many clients come to us after other treatments provided temporary relief but didn't solve the underlying problem. Structural Integration works with your entire structure systematically, which often succeeds where isolated treatments haven't."
+      answer: "Yes. Our approach addresses the root causes of back pain-fascial restrictions, hip mobility issues, and movement patterns-rather than just symptoms. Many clients come to us after other treatments provided temporary relief but didn't solve the underlying problem. Structural Integration works with your entire structure systematically, which often succeeds where isolated treatments haven't."
     },
     {
       question: "What if my back pain is from a herniated disc or other structural issue?",

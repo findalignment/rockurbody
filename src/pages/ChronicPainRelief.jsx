@@ -24,7 +24,7 @@ function ChronicPainRelief() {
     },
     {
       question: "Can I continue other treatments while doing this work?",
-      answer: "Absolutely. Our work complements medical care, physical therapy, and other treatments. Many healthcare providers refer patients to us specifically for the structural and fascial work that enhances their treatment. We're happy to coordinate with your medical team and work within any necessary limitations. The key is that we're addressing different aspects of your pain—structure and movement patterns—that other treatments may not address."
+      answer: "Absolutely. Our work complements medical care, physical therapy, and other treatments. Many healthcare providers refer patients to us specifically for the structural and fascial work that enhances their treatment. We're happy to coordinate with your medical team and work within any necessary limitations. The key is that we're addressing different aspects of your pain-structure and movement patterns-that other treatments may not address."
     },
     {
       question: "What if my pain is from an old injury or medical condition?",
@@ -32,7 +32,7 @@ function ChronicPainRelief() {
     },
     {
       question: "How many sessions will I need for chronic pain relief?",
-      answer: "This depends on your specific situation—how long you've had pain, how complex your structural patterns are, and how quickly your body responds. Many people find significant relief within 8-12 sessions, though some complex cases may require more. We typically recommend starting with a series (like The Reset or 12-Series) to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
+      answer: "This depends on your specific situation-how long you've had pain, how complex your structural patterns are, and how quickly your body responds. Many people find significant relief within 8-12 sessions, though some complex cases may require more. We typically recommend starting with a series (like The Reset or 12-Series) to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation."
     },
     {
       question: "Is this safe if I'm taking pain medications?",

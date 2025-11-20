@@ -114,7 +114,7 @@ function TwelveSeries() {
             This is the program most practitioners recommend for lasting, whole-body transformation. It's an investment in how you move for the rest of your life.
           </p>
           <p>
-            If you're ready to change how your body works—not just treat symptoms—this is the program.
+            If you're ready to change how your body works-not just treat symptoms-this is the program.
           </p>
         </>
       )

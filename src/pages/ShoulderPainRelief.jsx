@@ -36,7 +36,7 @@ function ShoulderPainRelief() {
     },
     {
       question: "How many sessions will I need for shoulder pain relief?",
-      answer: "This depends on your specific condition—whether it's impingement, frozen shoulder, rotator cuff issues, or general shoulder pain. Many people find significant relief within 6-12 sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation and create a plan tailored to your situation."
+      answer: "This depends on your specific condition-whether it's impingement, frozen shoulder, rotator cuff issues, or general shoulder pain. Many people find significant relief within 6-12 sessions. We typically recommend starting with a series to address foundational issues, then continuing with additional sessions as needed. We'll discuss your specific needs during your initial consultation and create a plan tailored to your situation."
     }
   ];
 

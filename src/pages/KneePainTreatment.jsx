@@ -16,7 +16,7 @@ function KneePainTreatment() {
   const faqs = [
     {
       question: "How long does it take to fix knee pain?",
-      answer: "Many clients notice immediate improvements in knee comfort and function after their first session, but lasting knee pain relief typically requires 4-8 sessions as we systematically address the underlying causes—often hip and ankle issues, movement patterns, or structural imbalances. Most people see significant improvement within 6-10 sessions. Since knee pain is often caused by problems elsewhere, we address the whole system."
+      answer: "Many clients notice immediate improvements in knee comfort and function after their first session, but lasting knee pain relief typically requires 4-8 sessions as we systematically address the underlying causes-often hip and ankle issues, movement patterns, or structural imbalances. Most people see significant improvement within 6-10 sessions. Since knee pain is often caused by problems elsewhere, we address the whole system."
     },
     {
       question: "Will this help with runner's knee or patellar tracking issues?",
@@ -32,7 +32,7 @@ function KneePainTreatment() {
     },
     {
       question: "How many sessions will I need for knee pain relief?",
-      answer: "This depends on your specific situation—whether it's runner's knee, tracking issues, or general knee pain. Many people find significant relief within 6-10 sessions. Since knee pain often relates to hip and ankle function, we may recommend addressing those areas as well. We'll discuss your specific needs during your initial consultation and create a plan tailored to your situation."
+      answer: "This depends on your specific situation-whether it's runner's knee, tracking issues, or general knee pain. Many people find significant relief within 6-10 sessions. Since knee pain often relates to hip and ankle function, we may recommend addressing those areas as well. We'll discuss your specific needs during your initial consultation and create a plan tailored to your situation."
     },
     {
       question: "Is this safe if I've had knee surgery?",

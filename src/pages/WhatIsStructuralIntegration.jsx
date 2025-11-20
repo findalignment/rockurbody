@@ -59,7 +59,7 @@ function WhatIsStructuralIntegration() {
               transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(4px) rotate(0.2deg)',
             }}
           >
-            <strong>Structural Integration</strong> is hands-on bodywork that helps restore your natural movement, reduce pain, and improve performance. Think of your body like a three-dimensional web—when one part gets tight or restricted, it pulls on everything else. This work releases those restrictions so your whole body can function better.
+            <strong>Structural Integration</strong> is hands-on bodywork that helps restore your natural movement, reduce pain, and improve performance. Think of your body like a three-dimensional web-when one part gets tight or restricted, it pulls on everything else. This work releases those restrictions so your whole body can function better.
           </p>
           
           {/* CTA Above Fold */}
@@ -106,7 +106,7 @@ function WhatIsStructuralIntegration() {
                 transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(3px) rotate(0.1deg)',
               }}
             >
-              Your body is wrapped in a web of connective tissue (think of it like a three-dimensional sweater). When one part gets tight or restricted—from injury, stress, or just how you've been moving—it pulls on everything else. Over time, these compensations stack up, and you end up with pain, stiffness, or movement limitations that won't budge with stretching or strength training alone.
+              Your body is wrapped in a web of connective tissue (think of it like a three-dimensional sweater). When one part gets tight or restricted-from injury, stress, or just how you've been moving-it pulls on everything else. Over time, these compensations stack up, and you end up with pain, stiffness, or movement limitations that won't budge with stretching or strength training alone.
             </p>
             <p 
               className="text-lg text-neutralDark/80 leading-relaxed mb-4 transition-all duration-1000"
@@ -138,7 +138,7 @@ function WhatIsStructuralIntegration() {
                 <span className="text-2xl">💪</span>
                 <div>
                   <strong className="text-neutralDark">Restore Natural Movement</strong>
-                  <p className="text-neutralDark/70 mt-1">Release tight spots and restrictions so your body moves the way it was designed to. That shoulder that never quite loosens up, the hip that's always tight—these aren't just muscle problems. They're often restrictions in your connective tissue that need hands-on work.</p>
+                  <p className="text-neutralDark/70 mt-1">Release tight spots and restrictions so your body moves the way it was designed to. That shoulder that never quite loosens up, the hip that's always tight-these aren't just muscle problems. They're often restrictions in your connective tissue that need hands-on work.</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

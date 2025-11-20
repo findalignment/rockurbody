@@ -307,7 +307,7 @@ function DiscomfortBecomesNormal() {
                   Ready to Feel the Difference?
                 </h3>
                 <p className="text-neutralDark/80 mb-6">
-                  Book a free consultation to discover what restrictions your body has learned to live with—and what it feels like to let them go.
+                  Book a free consultation to discover what restrictions your body has learned to live with-and what it feels like to let them go.
                 </p>
                 <Link
                   to="/consult"

@@ -16,7 +16,7 @@ function Surfers() {
   const faqs = [
     {
       question: "How can Structural Integration help my surfing?",
-      answer: "Better structure and movement quality directly improve your surfing. We address the specific demands of surfing—shoulder mobility for paddling, hip flexibility for pop-ups, core strength for balance, and rotational capacity for turns. By releasing fascial restrictions and improving movement patterns, you'll paddle more efficiently, pop up easier, and move more fluidly on the board. Many surfers find they surf longer sessions with less fatigue."
+      answer: "Better structure and movement quality directly improve your surfing. We address the specific demands of surfing-shoulder mobility for paddling, hip flexibility for pop-ups, core strength for balance, and rotational capacity for turns. By releasing fascial restrictions and improving movement patterns, you'll paddle more efficiently, pop up easier, and move more fluidly on the board. Many surfers find they surf longer sessions with less fatigue."
     },
     {
       question: "Will this help with shoulder pain from paddling?",

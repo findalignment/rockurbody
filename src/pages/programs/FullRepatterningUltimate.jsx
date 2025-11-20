@@ -37,7 +37,7 @@ function FullRepatterningUltimate() {
             <strong>12 SI Sessions (90 min each):</strong> Extended sessions allow us to go deeper, work more areas, and ensure better integration. We work through the complete Anatomy Trains protocol systematically over 12 weeks.
           </p>
           <p className="mb-4">
-            <strong>36 Movement Sessions (60 min each):</strong> Three times the movement work of the Basic program. This means more practice time, more progression, more skill development. We can address every aspect of movement—strength, mobility, stability, coordination, functional patterns.
+            <strong>36 Movement Sessions (60 min each):</strong> Three times the movement work of the Basic program. This means more practice time, more progression, more skill development. We can address every aspect of movement-strength, mobility, stability, coordination, functional patterns.
           </p>
           <p className="mb-4">
             <strong>The Schedule:</strong> Typically one 90-minute SI session per week, plus 2-3 movement sessions per week. This creates consistent, frequent practice that accelerates progress and ensures changes stick.
@@ -64,7 +64,7 @@ function FullRepatterningUltimate() {
             <li>Are serious about creating lasting, dramatic change</li>
           </ul>
           <p>
-            This program requires real commitment—not just financially, but in terms of time and effort. If you're ready for that level of investment, Ultimate delivers unmatched results.
+            This program requires real commitment-not just financially, but in terms of time and effort. If you're ready for that level of investment, Ultimate delivers unmatched results.
           </p>
         </>
       )
@@ -74,10 +74,10 @@ function FullRepatterningUltimate() {
       content: (
         <>
           <p className="mb-4">
-            More practice time = better results. It's that simple. The Ultimate program gives you 48 total sessions—more than double the Basic program. This means more opportunities to learn, practice, refine, and progress.
+            More practice time = better results. It's that simple. The Ultimate program gives you 48 total sessions-more than double the Basic program. This means more opportunities to learn, practice, refine, and progress.
           </p>
           <p className="mb-4">
-            With 36 movement sessions, we can work on everything. Not just the basics—advanced patterns, sport-specific skills, complex coordination, high-level strength work. By the end, you're moving at a completely different level.
+            With 36 movement sessions, we can work on everything. Not just the basics-advanced patterns, sport-specific skills, complex coordination, high-level strength work. By the end, you're moving at a completely different level.
           </p>
           <p className="mb-4">
             The 90-minute SI sessions (vs. 60-minute in Basic) allow deeper work and better integration. Combined with extensive movement practice, this creates transformation that most people don't think is possible.

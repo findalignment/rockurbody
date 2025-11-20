@@ -20,7 +20,7 @@ function SportsPerformanceHub() {
     },
     {
       question: "Will this interfere with my current training program?",
-      answer: "No, our work complements your training. Structural Integration sessions are typically spaced weekly, so they don't disrupt your training schedule. Movement Education can be integrated into your existing routine or done on recovery days. Many athletes find that structural and movement work enhances their training—they move better, recover faster, and perform better. We'll work around your competition schedule and training cycles."
+      answer: "No, our work complements your training. Structural Integration sessions are typically spaced weekly, so they don't disrupt your training schedule. Movement Education can be integrated into your existing routine or done on recovery days. Many athletes find that structural and movement work enhances their training-they move better, recover faster, and perform better. We'll work around your competition schedule and training cycles."
     },
     {
       question: "How long before I see performance improvements?",
@@ -28,11 +28,11 @@ function SportsPerformanceHub() {
     },
     {
       question: "Do you work with competitive athletes?",
-      answer: "Yes. I work with athletes at all levels—from weekend warriors to competitive amateurs to professionals. The principles of good structure and movement quality apply universally, though we tailor the application to your specific sport and goals. Many competitive athletes use structural work during off-seasons for comprehensive improvement, and during seasons for maintenance and injury prevention."
+      answer: "Yes. I work with athletes at all levels-from weekend warriors to competitive amateurs to professionals. The principles of good structure and movement quality apply universally, though we tailor the application to your specific sport and goals. Many competitive athletes use structural work during off-seasons for comprehensive improvement, and during seasons for maintenance and injury prevention."
     },
     {
       question: "Can this help prevent sports injuries?",
-      answer: "Absolutely. Most sports injuries aren't random—they're predictable outcomes of structural imbalances and movement compensations. By addressing these patterns proactively, we reduce injury risk significantly. Structural Integration releases restrictions that create excessive stress on vulnerable tissues. Movement Education teaches movement patterns that support healthy function rather than creating problems. Many athletes use this work preventively to stay healthy throughout their careers."
+      answer: "Absolutely. Most sports injuries aren't random-they're predictable outcomes of structural imbalances and movement compensations. By addressing these patterns proactively, we reduce injury risk significantly. Structural Integration releases restrictions that create excessive stress on vulnerable tissues. Movement Education teaches movement patterns that support healthy function rather than creating problems. Many athletes use this work preventively to stay healthy throughout their careers."
     },
     {
       question: "What if I'm already dealing with a sports injury?",
@@ -133,7 +133,7 @@ function SportsPerformanceHub() {
               Unlock Your Athletic Potential
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Every athlete knows the frustration of hitting a plateau or the setback of recurring injuries. You train hard, yet improvements seem elusive. You work on strength and conditioning, yet something still feels off. The missing piece isn't more hours in the gym—it's addressing the structural and movement inefficiencies that limit your performance and resilience.
+              Every athlete knows the frustration of hitting a plateau or the setback of recurring injuries. You train hard, yet improvements seem elusive. You work on strength and conditioning, yet something still feels off. The missing piece isn't more hours in the gym-it's addressing the structural and movement inefficiencies that limit your performance and resilience.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               At Rock Your Body, we approach athletic performance from a different angle. Rather than piling more training on top of dysfunctional patterns, we optimize your body's structure and movement quality first. When your body is properly aligned and moving efficiently, every ounce of strength and conditioning you build gets used effectively. You perform better with less effort and injury risk.
@@ -146,13 +146,13 @@ function SportsPerformanceHub() {
               Why Structure Matters for Performance
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Athletic performance isn't just about strength, endurance, or skill—it's about how efficiently your body can express those qualities. A misaligned structure creates friction, wastes energy, and increases injury risk. When your body is organized around better alignment, movement becomes more fluid, powerful, and sustainable.
+              Athletic performance isn't just about strength, endurance, or skill-it's about how efficiently your body can express those qualities. A misaligned structure creates friction, wastes energy, and increases injury risk. When your body is organized around better alignment, movement becomes more fluid, powerful, and sustainable.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Structural Integration releases the fascial restrictions that limit your range of motion, create asymmetries, and cause compensations. It reorganizes your body around better balance and alignment, so forces transfer cleanly through your structure. The result? More power, better control, and movements that feel easier and more natural.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Athletes often describe feeling "faster," "lighter," or "more connected" after structural work. They find movements that were previously difficult now come easily. They discover power they couldn't access before. This isn't about adding something new—it's about removing what was in the way.
+              Athletes often describe feeling "faster," "lighter," or "more connected" after structural work. They find movements that were previously difficult now come easily. They discover power they couldn't access before. This isn't about adding something new-it's about removing what was in the way.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -172,13 +172,13 @@ function SportsPerformanceHub() {
               Injury Prevention and Resilience
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Most sports injuries aren't random accidents—they're the predictable result of structural imbalances, movement compensations, and accumulated stress. That nagging shoulder pain, recurring hamstring strain, or persistent tendonitis? Your body was telling you something needed attention long before the injury occurred.
+              Most sports injuries aren't random accidents-they're the predictable result of structural imbalances, movement compensations, and accumulated stress. That nagging shoulder pain, recurring hamstring strain, or persistent tendonitis? Your body was telling you something needed attention long before the injury occurred.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Our approach to injury prevention addresses root causes rather than symptoms. We identify and correct the structural and movement patterns that create excessive stress on vulnerable tissues. We build balanced strength and mobility throughout your body, not just in the muscles you use most. We teach you to recognize and respond to your body's signals before they become injuries.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              The result is genuine resilience—not just the ability to withstand stress, but the capacity to adapt, recover, and stay healthy over long athletic careers. Athletes who invest in structural and movement work tend to have fewer injuries, faster recovery, and longer participation in their sports.
+              The result is genuine resilience-not just the ability to withstand stress, but the capacity to adapt, recover, and stay healthy over long athletic careers. Athletes who invest in structural and movement work tend to have fewer injuries, faster recovery, and longer participation in their sports.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -198,13 +198,13 @@ function SportsPerformanceHub() {
               The Performance Edge: Efficiency and Power
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Athletic performance isn't just about strength, speed, or skill—it's about efficiency. When your body is properly aligned and moving optimally, every ounce of strength and conditioning you've built gets used effectively. You generate more power with less effort. You move faster because you're not fighting your own structure. You maintain performance longer because you're not wasting energy on compensations.
+              Athletic performance isn't just about strength, speed, or skill-it's about efficiency. When your body is properly aligned and moving optimally, every ounce of strength and conditioning you've built gets used effectively. You generate more power with less effort. You move faster because you're not fighting your own structure. You maintain performance longer because you're not wasting energy on compensations.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Structural Integration creates this efficiency by optimizing your body's alignment and releasing restrictions that limit power transfer. Movement Education refines your technique to eliminate wasteful compensations. Together, they create a performance edge that comes from moving better, not just training harder. Many athletes discover they can perform at higher levels with less training volume once their movement quality improves.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This efficiency also supports recovery. When your body moves efficiently, it creates less stress and fatigue. You recover faster between training sessions and competitions. You maintain performance throughout long events. You reduce the wear and tear that accumulates over athletic careers. Better structure and movement quality don't just improve performance—they extend your athletic lifespan.
+              This efficiency also supports recovery. When your body moves efficiently, it creates less stress and fatigue. You recover faster between training sessions and competitions. You maintain performance throughout long events. You reduce the wear and tear that accumulates over athletic careers. Better structure and movement quality don't just improve performance-they extend your athletic lifespan.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -224,7 +224,7 @@ function SportsPerformanceHub() {
               Who This Helps
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Our sports performance work serves athletes at all levels—from weekend warriors to competitive athletes to professionals. If you're dealing with recurring injuries, feeling stuck at a performance plateau, or simply wanting to optimize your movement quality, this work can help.
+              Our sports performance work serves athletes at all levels-from weekend warriors to competitive athletes to professionals. If you're dealing with recurring injuries, feeling stuck at a performance plateau, or simply wanting to optimize your movement quality, this work can help.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               We work with golfers wanting more power and consistency, climbers dealing with shoulder or finger issues, cyclists and runners optimizing biomechanics, surfers improving paddle strength and wave performance, and athletes from every sport imaginable. The principles of good structure and movement quality are universal, even as we tailor the application to your specific needs.

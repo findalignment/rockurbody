@@ -134,10 +134,10 @@ function SmartStarts() {
               Structural Integration: Reorganizing Your Foundation
             </h3>
             <p className="text-neutralDark/80 leading-relaxed mb-4">
-              Your body is wrapped in a web of connective tissue (fascia) that holds everything together. When one part gets tight or restricted—from injury, stress, or how you've been moving—it pulls on everything else. Over time, these compensations stack up, creating pain, stiffness, or movement limitations that won't budge with stretching or strength training alone.
+              Your body is wrapped in a web of connective tissue (fascia) that holds everything together. When one part gets tight or restricted-from injury, stress, or how you've been moving-it pulls on everything else. Over time, these compensations stack up, creating pain, stiffness, or movement limitations that won't budge with stretching or strength training alone.
             </p>
             <p className="text-neutralDark/80 leading-relaxed mb-4">
-              Structural Integration addresses these restrictions directly. Through skilled hands-on work, I release tight areas and help your body reorganize around better alignment. This isn't passive bodywork—we'll get you up and moving during sessions, teaching your nervous system a better way to organize itself.
+              Structural Integration addresses these restrictions directly. Through skilled hands-on work, I release tight areas and help your body reorganize around better alignment. This isn't passive bodywork-we'll get you up and moving during sessions, teaching your nervous system a better way to organize itself.
             </p>
             <p className="text-neutralDark/80 leading-relaxed">
               <Link to="/what-is-structural-integration" className="text-accent hover:underline font-semibold">Learn more about Structural Integration →</Link>
@@ -156,7 +156,7 @@ function SmartStarts() {
               We work slowly and methodically, exploring movement patterns, finding where you're compensating, and teaching your nervous system a better way. You'll learn how to breathe with your movement, find and use your deep core stabilizers, move without compensation, and build strength that transfers to everything you do.
             </p>
             <p className="text-neutralDark/80 leading-relaxed mb-4">
-              Every session includes 2–3 movement patterns we'll work on together. You'll learn what to feel for, how to self-correct, and how to practice effectively. You'll leave with simple practices you can do daily—not hour-long workouts, but 5 to 10 minutes of focused movement that builds the patterns we worked on.
+              Every session includes 2–3 movement patterns we'll work on together. You'll learn what to feel for, how to self-correct, and how to practice effectively. You'll leave with simple practices you can do daily-not hour-long workouts, but 5 to 10 minutes of focused movement that builds the patterns we worked on.
             </p>
             <p className="text-neutralDark/80 leading-relaxed">
               <Link to="/what-is-movement-education" className="text-accent hover:underline font-semibold">Learn more about Movement Education →</Link>
@@ -172,7 +172,7 @@ function SmartStarts() {
               Here's the thing: you can have the most beautifully organized structure, but if you go right back to your old movement patterns, you'll recreate the same problems. That's why these programs combine both.
             </p>
             <p className="text-neutralDark/80 leading-relaxed mb-4">
-              The structural work creates space and releases restrictions. The movement education teaches you how to use that new space intelligently. Together, they create change that lasts because you're not just getting "worked on"—you're learning a better way to inhabit your body.
+              The structural work creates space and releases restrictions. The movement education teaches you how to use that new space intelligently. Together, they create change that lasts because you're not just getting "worked on"-you're learning a better way to inhabit your body.
             </p>
             <p className="text-neutralDark/80 leading-relaxed">
               <Link to="/combo-programs" className="text-accent hover:underline font-semibold">Learn more about combining SI and Movement →</Link>
@@ -194,7 +194,7 @@ function SmartStarts() {
                 1. Assess
               </h3>
               <p className="text-neutralDark/80 leading-relaxed">
-                We start by understanding where you are. How do you stand, walk, and breathe? Where are you compensating? What patterns need attention? This isn't a quick checklist—it's a comprehensive look at your unique body.
+                We start by understanding where you are. How do you stand, walk, and breathe? Where are you compensating? What patterns need attention? This isn't a quick checklist-it's a comprehensive look at your unique body.
               </p>
             </div>
 
@@ -203,7 +203,7 @@ function SmartStarts() {
                 2. Work
               </h3>
               <p className="text-neutralDark/80 leading-relaxed">
-                Through hands-on structural work and movement education, we address the root patterns—not just the symptoms. This is where change happens: slowly, intelligently, and with your body's full participation. You're actively learning as we work.
+                Through hands-on structural work and movement education, we address the root patterns-not just the symptoms. This is where change happens: slowly, intelligently, and with your body's full participation. You're actively learning as we work.
               </p>
             </div>
 
@@ -212,7 +212,7 @@ function SmartStarts() {
                 3. Reinforce
               </h3>
               <p className="text-neutralDark/80 leading-relaxed">
-                You leave with 1–2 micro-practices tailored to your patterns. Simple things you can do daily to maintain and build on what we've opened up. Not hour-long workouts—just focused movement that makes the changes stick.
+                You leave with 1–2 micro-practices tailored to your patterns. Simple things you can do daily to maintain and build on what we've opened up. Not hour-long workouts-just focused movement that makes the changes stick.
               </p>
             </div>
           </div>
@@ -250,7 +250,7 @@ function SmartStarts() {
                 This work combines both
               </h3>
               <p className="text-neutralDark/80 leading-relaxed font-medium">
-                Structural work to reorganize your body, plus movement education to make the changes last. You're not just getting stronger or getting worked on—you're learning a better way to inhabit your body. That's what creates lasting change.
+                Structural work to reorganize your body, plus movement education to make the changes last. You're not just getting stronger or getting worked on-you're learning a better way to inhabit your body. That's what creates lasting change.
               </p>
             </div>
           </div>
@@ -264,7 +264,7 @@ function SmartStarts() {
             Three Clear Entry Points
           </h2>
           <p className="text-lg text-neutralDark/80 text-center mb-12 max-w-3xl mx-auto">
-            Each program is designed for different needs, timelines, and levels of commitment. All combine structural integration and movement education—just in different amounts and intensities.
+            Each program is designed for different needs, timelines, and levels of commitment. All combine structural integration and movement education-just in different amounts and intensities.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -24,7 +24,7 @@ function NeckPainRelief() {
     },
     {
       question: "Can I still work at my computer while doing this work?",
-      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your neck. The goal isn't to stop you from working—it's to help you work in ways that don't create neck problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to move your head and neck in ways that don't strain them. Many clients find they can work longer without pain."
+      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your neck. The goal isn't to stop you from working-it's to help you work in ways that don't create neck problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to move your head and neck in ways that don't strain them. Many clients find they can work longer without pain."
     },
     {
       question: "What if I've already tried chiropractic adjustments for my neck?",

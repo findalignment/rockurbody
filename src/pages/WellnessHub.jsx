@@ -16,23 +16,23 @@ function WellnessHub() {
   const faqs = [
     {
       question: "Do I need to have pain or problems to benefit from wellness work?",
-      answer: "Not at all. Preventive wellness work is most effective when started before problems develop. Many clients begin when they notice minor issues—creeping tension, slight limitations, or just wanting to feel better. Addressing these early prevents them from becoming bigger problems. Think of it like dental care: you brush and floss preventively, not just when you have a cavity. Similarly, maintaining your body's structure proactively keeps you functioning optimally."
+      answer: "Not at all. Preventive wellness work is most effective when started before problems develop. Many clients begin when they notice minor issues-creeping tension, slight limitations, or just wanting to feel better. Addressing these early prevents them from becoming bigger problems. Think of it like dental care: you brush and floss preventively, not just when you have a cavity. Similarly, maintaining your body's structure proactively keeps you functioning optimally."
     },
     {
       question: "How often should I do wellness sessions?",
-      answer: "Frequency depends on your needs, activities, and goals. Many clients do an initial series to address accumulated issues and optimize their structure, then maintain with periodic tune-ups—anywhere from monthly to quarterly. Some people do intensive periods of regular sessions, then maintain with less frequent visits. We'll discuss what makes sense for your situation. The key is consistency—regular maintenance prevents problems from accumulating."
+      answer: "Frequency depends on your needs, activities, and goals. Many clients do an initial series to address accumulated issues and optimize their structure, then maintain with periodic tune-ups-anywhere from monthly to quarterly. Some people do intensive periods of regular sessions, then maintain with less frequent visits. We'll discuss what makes sense for your situation. The key is consistency-regular maintenance prevents problems from accumulating."
     },
     {
       question: "Is wellness work covered by insurance?",
-      answer: "No, we don't bill insurance. Sessions are out-of-pocket. However, some HSA/FSA accounts may reimburse for bodywork or training—check with your provider. We can provide receipts for your records. Many clients find that preventive wellness work actually saves money long-term by preventing problems that would require more expensive treatments later."
+      answer: "No, we don't bill insurance. Sessions are out-of-pocket. However, some HSA/FSA accounts may reimburse for bodywork or training-check with your provider. We can provide receipts for your records. Many clients find that preventive wellness work actually saves money long-term by preventing problems that would require more expensive treatments later."
     },
     {
       question: "Can wellness work help with stress and anxiety?",
-      answer: "Yes. Chronic stress and anxiety create physical patterns—tension stored in your body, restricted breathing, nervous system dysregulation. Structural Integration releases stored tension and improves breathing mechanics. Movement Education helps regulate your nervous system through movement and breath. Many clients find that addressing the physical aspects of stress significantly reduces their experience of stress and anxiety. The work supports both physical and emotional wellness."
+      answer: "Yes. Chronic stress and anxiety create physical patterns-tension stored in your body, restricted breathing, nervous system dysregulation. Structural Integration releases stored tension and improves breathing mechanics. Movement Education helps regulate your nervous system through movement and breath. Many clients find that addressing the physical aspects of stress significantly reduces their experience of stress and anxiety. The work supports both physical and emotional wellness."
     },
     {
       question: "What's the difference between wellness work and treatment?",
-      answer: "Wellness work is proactive—maintaining optimal function and addressing issues before they become problems. Treatment is reactive—addressing problems that have already developed. Both use the same techniques (Structural Integration and Movement Education), but the context and goals differ. Wellness work focuses on maintaining and optimizing, while treatment focuses on resolving specific issues. Many clients transition from treatment to wellness work once their immediate problems are resolved."
+      answer: "Wellness work is proactive-maintaining optimal function and addressing issues before they become problems. Treatment is reactive-addressing problems that have already developed. Both use the same techniques (Structural Integration and Movement Education), but the context and goals differ. Wellness work focuses on maintaining and optimizing, while treatment focuses on resolving specific issues. Many clients transition from treatment to wellness work once their immediate problems are resolved."
     },
     {
       question: "Is wellness work appropriate for older adults?",
@@ -139,7 +139,7 @@ function WellnessHub() {
               Wellness and prevention work at Rock Your Body takes a proactive approach to your body's health. We help you maintain optimal structure and movement quality throughout your life, addressing small issues before they become big problems. Whether you're navigating the physical demands of desk work, managing stress, staying active as you age, or supporting your body through life transitions like pregnancy, our work helps you stay resilient, capable, and comfortable in your body.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This isn't about treating disease or managing symptoms—it's about cultivating lasting health and vitality. Through regular Structural Integration sessions and Movement Education, you maintain your body like you maintain your car: addressing wear and tear before it leads to breakdowns, keeping everything functioning smoothly, and extending your years of active, pain-free living.
+              This isn't about treating disease or managing symptoms-it's about cultivating lasting health and vitality. Through regular Structural Integration sessions and Movement Education, you maintain your body like you maintain your car: addressing wear and tear before it leads to breakdowns, keeping everything functioning smoothly, and extending your years of active, pain-free living.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -152,7 +152,7 @@ function WellnessHub() {
               Proactive wellness means investing modest time and resources in maintaining your body's structure and function. You catch and address minor issues before they become major problems. You maintain optimal movement quality and structural balance. You stay active and pain-free in your body. The investment is smaller, the results better, and the quality of life significantly higher.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              People who engage in preventive structural and movement work tend to have fewer injuries, less chronic pain, better posture, more energy, and greater resilience to the stresses of modern life. They age better, maintaining independence and capability well into their later years. This is healthcare as it should be—supporting your body's natural capacity for health rather than waiting to manage disease.
+              People who engage in preventive structural and movement work tend to have fewer injuries, less chronic pain, better posture, more energy, and greater resilience to the stresses of modern life. They age better, maintaining independence and capability well into their later years. This is healthcare as it should be-supporting your body's natural capacity for health rather than waiting to manage disease.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -165,17 +165,17 @@ function WellnessHub() {
               During pregnancy and postpartum, structural work supports your body through profound changes and helps you recover your function afterward. As you age, preventive work maintains the mobility, strength, and balance that keep you independent and active. At every life stage, addressing your structure proactively makes everything else easier.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              We tailor our approach to your current life circumstances and future goals. A desk worker needs different support than an aging athlete. A new mother has different needs than someone preparing for retirement. But everyone benefits from maintaining optimal structural alignment and movement capacity—it's the foundation of lifelong wellness.
+              We tailor our approach to your current life circumstances and future goals. A desk worker needs different support than an aging athlete. A new mother has different needs than someone preparing for retirement. But everyone benefits from maintaining optimal structural alignment and movement capacity-it's the foundation of lifelong wellness.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
               Modern Life Demands Modern Solutions
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Human bodies evolved for varied, whole-body movement throughout the day. Instead, modern life gives us prolonged sitting, repetitive movements, chronic stress, and minimal physical challenge. Your body adapts to what you do—and what you don't do. Structures that aren't used lose capacity. Patterns that repeat constantly create imbalances. Stress accumulates in your tissues.
+              Human bodies evolved for varied, whole-body movement throughout the day. Instead, modern life gives us prolonged sitting, repetitive movements, chronic stress, and minimal physical challenge. Your body adapts to what you do-and what you don't do. Structures that aren't used lose capacity. Patterns that repeat constantly create imbalances. Stress accumulates in your tissues.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This mismatch between our bodies' design and modern demands creates predictable problems: forward head posture from screen time, hip tightness from sitting, shoulder dysfunction from keyboard work, stress stored in jaw and breathing patterns. These aren't inevitable consequences of modern life—they're addressable through structural work and movement education.
+              This mismatch between our bodies' design and modern demands creates predictable problems: forward head posture from screen time, hip tightness from sitting, shoulder dysfunction from keyboard work, stress stored in jaw and breathing patterns. These aren't inevitable consequences of modern life-they're addressable through structural work and movement education.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Our wellness work helps your body adapt to modern demands while maintaining optimal function. You'll develop awareness of how your daily habits affect your structure. You'll learn strategies to counter the effects of sitting, stress, and repetitive activities. You'll build the resilience to thrive in the modern world rather than just survive it.
@@ -185,10 +185,10 @@ function WellnessHub() {
               Building a Sustainable Wellness Practice
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Wellness isn't a destination—it's an ongoing practice. Many clients begin with a series of sessions to address accumulated issues and optimize their structure. Then they maintain those improvements with periodic tune-up sessions, anywhere from monthly to quarterly depending on their needs and activities.
+              Wellness isn't a destination-it's an ongoing practice. Many clients begin with a series of sessions to address accumulated issues and optimize their structure. Then they maintain those improvements with periodic tune-up sessions, anywhere from monthly to quarterly depending on their needs and activities.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Between sessions, you'll have practices and principles to support your body independently. Simple movement routines, postural awareness, breathing exercises, and self-care strategies become part of your daily life. We're not creating dependency—we're giving you tools to maintain your own wellness while providing expert support and course corrections when needed.
+              Between sessions, you'll have practices and principles to support your body independently. Simple movement routines, postural awareness, breathing exercises, and self-care strategies become part of your daily life. We're not creating dependency-we're giving you tools to maintain your own wellness while providing expert support and course corrections when needed.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Think of it like dental care: you brush and floss daily, but you still see your dentist regularly for professional cleaning and to catch small problems before they become serious. Similarly, you can do much for your body's structure and movement independently, but periodic professional work keeps you functioning optimally and addresses issues in their early stages.
@@ -198,7 +198,7 @@ function WellnessHub() {
               Stress, Nervous System, and Structural Health
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Chronic stress doesn't just affect your mind—it creates physical patterns in your body. Stress hormones create muscle tension. Emotional stress gets stored in your tissues. Your nervous system stays in fight-or-flight mode, affecting breathing, posture, and movement. These physical patterns can persist long after the stressful situation passes, creating ongoing tension and dysfunction.
+              Chronic stress doesn't just affect your mind-it creates physical patterns in your body. Stress hormones create muscle tension. Emotional stress gets stored in your tissues. Your nervous system stays in fight-or-flight mode, affecting breathing, posture, and movement. These physical patterns can persist long after the stressful situation passes, creating ongoing tension and dysfunction.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Structural Integration releases stored tension and helps your nervous system return to a more regulated state. Movement Education teaches breathing and movement patterns that support calm rather than stress. Together, they address the physical aspects of stress, which often reduces your overall experience of stress and anxiety. Many clients find they feel more grounded, calm, and resilient after structural and movement work.
@@ -214,7 +214,7 @@ function WellnessHub() {
               Life brings transitions that affect your body: pregnancy, postpartum recovery, aging, career changes, lifestyle shifts. Each transition creates new demands and patterns. Structural and movement work can support you through these transitions, helping your body adapt to change while maintaining optimal function.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              During pregnancy, structural work supports your changing body and prepares you for birth. Postpartum, it helps you recover your function and strength. As you age, it maintains mobility, balance, and independence. During career transitions or lifestyle changes, it helps your body adapt to new demands. Wellness work isn't just about maintaining—it's about supporting your body through life's changes.
+              During pregnancy, structural work supports your changing body and prepares you for birth. Postpartum, it helps you recover your function and strength. As you age, it maintains mobility, balance, and independence. During career transitions or lifestyle changes, it helps your body adapt to new demands. Wellness work isn't just about maintaining-it's about supporting your body through life's changes.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               These transitions are opportunities to optimize your structure and movement. Pregnancy might reveal patterns that needed addressing anyway. Aging might prompt you to invest in maintaining function. Career changes might create new postural demands. Wellness work helps you navigate these transitions with greater ease and resilience.
@@ -224,13 +224,13 @@ function WellnessHub() {
               Who Wellness Work Serves
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Preventive wellness work is for anyone who wants to feel good in their body and maintain that feeling throughout their life. You don't need to be in pain or have specific problems to benefit. In fact, the best time to start is before issues develop—though it's never too late to begin caring for your structure proactively.
+              Preventive wellness work is for anyone who wants to feel good in their body and maintain that feeling throughout their life. You don't need to be in pain or have specific problems to benefit. In fact, the best time to start is before issues develop-though it's never too late to begin caring for your structure proactively.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               If you're a desk worker noticing creeping tension and postural strain, preventive work can reverse these patterns before chronic pain develops. If you're aging and want to maintain your independence and activity level, structural work keeps you mobile and capable. If you're managing stress and want to feel more grounded and resilient, this work supports nervous system regulation and embodied calm.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              The common thread? A commitment to taking care of your body proactively, investing in long-term health rather than waiting to manage problems. If you value feeling good, moving well, and aging gracefully, wellness work is for you. It's an investment in your future self—maintaining the structure and movement quality that support an active, pain-free, vibrant life.
+              The common thread? A commitment to taking care of your body proactively, investing in long-term health rather than waiting to manage problems. If you value feeling good, moving well, and aging gracefully, wellness work is for you. It's an investment in your future self-maintaining the structure and movement quality that support an active, pain-free, vibrant life.
             </p>
           </div>
 

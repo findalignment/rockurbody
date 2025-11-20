@@ -16,11 +16,11 @@ function HeadacheMigraineRelief() {
   const faqs = [
     {
       question: "How long does it take to fix headaches and migraines?",
-      answer: "Many clients notice immediate improvements in headache frequency and intensity after their first session, but lasting relief typically requires 6-10 sessions as we systematically address the underlying causes—often neck tension, forward head posture, and fascial restrictions. Most people see significant improvement within 8-12 sessions. The key is addressing the structural contributors to headaches."
+      answer: "Many clients notice immediate improvements in headache frequency and intensity after their first session, but lasting relief typically requires 6-10 sessions as we systematically address the underlying causes-often neck tension, forward head posture, and fascial restrictions. Most people see significant improvement within 8-12 sessions. The key is addressing the structural contributors to headaches."
     },
     {
       question: "Will this help with migraines or just tension headaches?",
-      answer: "Structural Integration can help with both tension headaches and some migraines. Many migraines have structural and fascial contributors—neck tension, forward head posture, and restrictions pulling on the skull. By releasing these restrictions and improving alignment, we often eliminate or significantly reduce migraine frequency. Clients frequently report that their migraines become less frequent and less severe."
+      answer: "Structural Integration can help with both tension headaches and some migraines. Many migraines have structural and fascial contributors-neck tension, forward head posture, and restrictions pulling on the skull. By releasing these restrictions and improving alignment, we often eliminate or significantly reduce migraine frequency. Clients frequently report that their migraines become less frequent and less severe."
     },
     {
       question: "What if my headaches are from stress or other causes?",

@@ -32,11 +32,11 @@ function InjuryRecoveryHub() {
     },
     {
       question: "Can I do this work while still seeing my doctor or physical therapist?",
-      answer: "Absolutely. Our work complements medical care and physical therapy. Many healthcare providers refer patients to us specifically for the structural and fascial work that enhances their treatment. We're happy to coordinate with your medical team and work within any necessary limitations. The key is that we're addressing different aspects of recovery—structure and movement patterns—that other treatments may not address."
+      answer: "Absolutely. Our work complements medical care and physical therapy. Many healthcare providers refer patients to us specifically for the structural and fascial work that enhances their treatment. We're happy to coordinate with your medical team and work within any necessary limitations. The key is that we're addressing different aspects of recovery-structure and movement patterns-that other treatments may not address."
     },
     {
       question: "What if my injury is preventing me from being active?",
-      answer: "That's exactly what we address. Our work helps restore function so you can return to activity safely. We don't just manage symptoms—we address the structural and movement patterns that limit your activity. As you recover, we progressively restore movement capacity and teach you how to move in ways that support healing. Many clients find they can return to activities they thought were lost, often moving better than before their injury."
+      answer: "That's exactly what we address. Our work helps restore function so you can return to activity safely. We don't just manage symptoms-we address the structural and movement patterns that limit your activity. As you recover, we progressively restore movement capacity and teach you how to move in ways that support healing. Many clients find they can return to activities they thought were lost, often moving better than before their injury."
     }
   ];
 
@@ -133,10 +133,10 @@ function InjuryRecoveryHub() {
               Recovery Beyond Symptom Management
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Injury recovery shouldn't just mean "getting back to normal." Most conventional rehabilitation focuses on the injured tissue in isolation—strengthening specific muscles, reducing local inflammation, managing pain until symptoms subside. But this approach misses the bigger picture: why did you get injured in the first place? What patterns set you up for that injury? And how can you return not just to your previous state, but to something better?
+              Injury recovery shouldn't just mean "getting back to normal." Most conventional rehabilitation focuses on the injured tissue in isolation-strengthening specific muscles, reducing local inflammation, managing pain until symptoms subside. But this approach misses the bigger picture: why did you get injured in the first place? What patterns set you up for that injury? And how can you return not just to your previous state, but to something better?
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              At Rock Your Body, injury recovery means more than treating symptoms. We investigate the structural and movement factors that contributed to your injury. We address compensations throughout your body, not just at the injury site. We restore optimal function and build resilience against re-injury. The goal isn't just recovery—it's coming back stronger, more balanced, and less vulnerable than before.
+              At Rock Your Body, injury recovery means more than treating symptoms. We investigate the structural and movement factors that contributed to your injury. We address compensations throughout your body, not just at the injury site. We restore optimal function and build resilience against re-injury. The goal isn't just recovery-it's coming back stronger, more balanced, and less vulnerable than before.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Whether you're recovering from a sports injury, car accident, surgical procedure, or chronic overuse pattern, our approach combines Structural Integration to address fascial restrictions and alignment issues, with Movement Education to retrain dysfunctional patterns and build robust function. We work with your body's natural healing capacity, supporting complete recovery.
@@ -146,13 +146,13 @@ function InjuryRecoveryHub() {
               Why Injuries Don't Happen in Isolation
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Your rotator cuff didn't tear randomly—it had been compensating for restrictions elsewhere in your shoulder girdle, gradually weakening under abnormal stress. Your IT band didn't suddenly start hurting—it had been working overtime to stabilize a hip that wasn't functioning properly. Your Achilles tendonitis didn't appear from nowhere—it developed as your foot and ankle mechanics deteriorated over time.
+              Your rotator cuff didn't tear randomly-it had been compensating for restrictions elsewhere in your shoulder girdle, gradually weakening under abnormal stress. Your IT band didn't suddenly start hurting-it had been working overtime to stabilize a hip that wasn't functioning properly. Your Achilles tendonitis didn't appear from nowhere-it developed as your foot and ankle mechanics deteriorated over time.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Most injuries are the predictable outcome of accumulated structural imbalances and movement compensations. Something in your body wasn't working optimally, so other structures took up the slack. Eventually, those compensating structures break down under excessive demand. If you only treat the injured tissue without addressing why it was overloaded, you're setting yourself up for re-injury or problems elsewhere.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This is where our whole-body, structural approach excels. We don't just work on your injured shoulder, knee, or back—we investigate your entire structure and movement patterns. We find and release the restrictions, imbalances, and compensations that created excessive stress on the injured area. We restore balanced function throughout your body, not just local symptom relief.
+              This is where our whole-body, structural approach excels. We don't just work on your injured shoulder, knee, or back-we investigate your entire structure and movement patterns. We find and release the restrictions, imbalances, and compensations that created excessive stress on the injured area. We restore balanced function throughout your body, not just local symptom relief.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -165,7 +165,7 @@ function InjuryRecoveryHub() {
               In early stages of recovery, we work gently to support your body's healing process. Structural Integration can reduce inflammation, improve circulation, and release compensatory tension that might be slowing recovery. We address areas away from the acute injury that are contributing to the problem, preparing your structure for more direct work as healing progresses.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              As you heal, we progressively restore function through hands-on structural work and movement re-education. You'll learn to move in ways that support healing rather than re-aggravating your injury. We build balanced strength and mobility throughout your body, not just in the injured area. The pace is individually tailored—we never push beyond what your body is ready for.
+              As you heal, we progressively restore function through hands-on structural work and movement re-education. You'll learn to move in ways that support healing rather than re-aggravating your injury. We build balanced strength and mobility throughout your body, not just in the injured area. The pace is individually tailored-we never push beyond what your body is ready for.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Finally, we focus on building resilience and preventing re-injury. You'll develop movement patterns that support healthy function rather than creating future problems. You'll understand your body better and know how to maintain the improvements we've created together. Many clients discover they move better after recovery than they did before their injury.
@@ -175,13 +175,13 @@ function InjuryRecoveryHub() {
               Common Injury Patterns We Address
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Shoulder injuries—rotator cuff tears, frozen shoulder, impingement—often stem from restrictions in the ribcage, neck, and spine that limit natural shoulder mechanics. We restore mobility throughout the shoulder girdle complex, not just the shoulder itself.
+              Shoulder injuries-rotator cuff tears, frozen shoulder, impingement-often stem from restrictions in the ribcage, neck, and spine that limit natural shoulder mechanics. We restore mobility throughout the shoulder girdle complex, not just the shoulder itself.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Lower extremity injuries—IT band syndrome, Achilles tendonitis, plantar fasciitis—typically involve the entire chain from low back through foot. We address hip function, pelvic alignment, and foot mechanics to eliminate the patterns causing overload.
+              Lower extremity injuries-IT band syndrome, Achilles tendonitis, plantar fasciitis-typically involve the entire chain from low back through foot. We address hip function, pelvic alignment, and foot mechanics to eliminate the patterns causing overload.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Spinal injuries—whiplash, disc issues, chronic back pain—require addressing the entire structural context. We work with fascia throughout your body to reduce strain on vulnerable spinal tissues and restore balanced support.
+              Spinal injuries-whiplash, disc issues, chronic back pain-require addressing the entire structural context. We work with fascia throughout your body to reduce strain on vulnerable spinal tissues and restore balanced support.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Whatever your specific injury, we treat it within the context of your complete structure and movement. This comprehensive approach produces better outcomes than isolated injury-site treatment.
@@ -191,7 +191,7 @@ function InjuryRecoveryHub() {
               The Role of Fascia in Injury Recovery
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Injuries don't just affect the injured tissue—they create fascial restrictions and compensation patterns throughout your body. When you injure your shoulder, your body compensates by using your neck, back, and ribs differently. When you injure your knee, your hip, pelvis, and foot adapt. These compensations can persist long after the original injury heals, creating ongoing problems.
+              Injuries don't just affect the injured tissue-they create fascial restrictions and compensation patterns throughout your body. When you injure your shoulder, your body compensates by using your neck, back, and ribs differently. When you injure your knee, your hip, pelvis, and foot adapt. These compensations can persist long after the original injury heals, creating ongoing problems.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Structural Integration addresses these fascial restrictions and compensation patterns. We release scar tissue, improve fascial mobility around injured areas, and restore balanced function throughout your body. This comprehensive approach supports complete recovery, not just healing of the injured tissue. Many clients discover that addressing these broader patterns resolves problems they thought were permanent.
@@ -207,10 +207,10 @@ function InjuryRecoveryHub() {
               True recovery means not just healing from your injury, but preventing it from happening again. This requires addressing why you got injured in the first place. Was it a structural imbalance? A movement compensation? An accumulated pattern that finally broke down? We investigate these factors and address them systematically.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Through Structural Integration, we release the restrictions and imbalances that created excessive stress on the injured area. Through Movement Education, we teach you movement patterns that support healthy function rather than creating problems. Together, these create resilience—not just the ability to withstand stress, but the capacity to move in ways that prevent future injuries.
+              Through Structural Integration, we release the restrictions and imbalances that created excessive stress on the injured area. Through Movement Education, we teach you movement patterns that support healthy function rather than creating problems. Together, these create resilience-not just the ability to withstand stress, but the capacity to move in ways that prevent future injuries.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Many clients find they move better after recovery than they did before their injury. The injury forced attention to patterns that needed addressing anyway. By addressing these comprehensively, we don't just restore function—we optimize it. You return to activity not just healed, but improved.
+              Many clients find they move better after recovery than they did before their injury. The injury forced attention to patterns that needed addressing anyway. By addressing these comprehensively, we don't just restore function-we optimize it. You return to activity not just healed, but improved.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">

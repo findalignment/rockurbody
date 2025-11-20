@@ -15,13 +15,13 @@ function Movement10Sessions() {
       content: (
         <>
           <p className="mb-4">
-            Movement Education is intelligent, personalized training that teaches you how to move better. Not generic workouts—specific patterns based on how your body actually moves.
+            Movement Education is intelligent, personalized training that teaches you how to move better. Not generic workouts-specific patterns based on how your body actually moves.
           </p>
           <p className="mb-4">
             We focus on quality over quantity. Foundation over flashy exercises. You'll learn strength, core stability, mobility, coordination, awareness, balance, and flexibility. But we start with the basics and build systematically.
           </p>
           <p>
-            This isn't about crushing yourself. It's about moving well. The workouts are challenging but sustainable—you won't feel deterred from training.
+            This isn't about crushing yourself. It's about moving well. The workouts are challenging but sustainable-you won't feel deterred from training.
           </p>
         </>
       )
@@ -31,13 +31,13 @@ function Movement10Sessions() {
       content: (
         <>
           <p className="mb-4">
-            Each 60-minute session is one-on-one. We start with movement assessment—how does your body move right now? Where are the restrictions, compensations, or weak links?
+            Each 60-minute session is one-on-one. We start with movement assessment-how does your body move right now? Where are the restrictions, compensations, or weak links?
           </p>
           <p className="mb-4">
             Then we work on specific patterns. Maybe we're building core stability. Maybe we're improving hip mobility. Maybe we're teaching you how to squat without your knees caving in. Every session is tailored to what your body needs.
           </p>
           <p>
-            We often train barefoot (your feet are your foundation). Exercises progress based on your ability—not someone else's program. Sessions are structured but adaptive.
+            We often train barefoot (your feet are your foundation). Exercises progress based on your ability-not someone else's program. Sessions are structured but adaptive.
           </p>
         </>
       )

@@ -18,7 +18,7 @@ function HipFreedomBasic() {
             Hip Freedom is a comprehensive hip program combining Structural Integration (hands-on fascia work) with Movement Education (personalized training). We address both WHY your hips don't move well (structure) and HOW to move them better (function).
           </p>
           <p className="mb-4">
-            The Basic program includes 4 SI sessions to release hip restrictions and 4 movement sessions to teach your body new patterns. This combination creates lasting change—not just temporary relief.
+            The Basic program includes 4 SI sessions to release hip restrictions and 4 movement sessions to teach your body new patterns. This combination creates lasting change-not just temporary relief.
           </p>
           <p>
             Think of it as the Hip Series plus movement education. Structure + Function = results that hold.
@@ -31,7 +31,7 @@ function HipFreedomBasic() {
       content: (
         <>
           <p className="mb-4">
-            <strong>4 SI Sessions:</strong> We work with the fascia around your hips—hip flexors, glutes, lateral hip, deep rotators, IT band. This releases restrictions and improves tissue organization. You'll feel immediate changes in hip mobility.
+            <strong>4 SI Sessions:</strong> We work with the fascia around your hips-hip flexors, glutes, lateral hip, deep rotators, IT band. This releases restrictions and improves tissue organization. You'll feel immediate changes in hip mobility.
           </p>
           <p className="mb-4">
             <strong>4 Movement Sessions:</strong> We teach you how to use your newly mobile hips. Squat patterns. Hip hinging. Single-leg stability. Core control. Functional strength. These sessions reinforce the structural work so changes last.

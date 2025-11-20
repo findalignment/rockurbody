@@ -16,7 +16,7 @@ function MovementTrainingHub() {
   const faqs = [
     {
       question: "How is Movement Education different from personal training?",
-      answer: "Traditional personal training focuses on exercises, reps, and sets—building strength and fitness through repetition. Movement Education focuses on how you move, not just what exercises you do. We teach movement quality, efficiency, and awareness. You'll learn to sense what your body is doing, understand movement principles, and develop skills that transfer to everything you do. It's education, not just exercise—you gain understanding and tools you can use for life."
+      answer: "Traditional personal training focuses on exercises, reps, and sets-building strength and fitness through repetition. Movement Education focuses on how you move, not just what exercises you do. We teach movement quality, efficiency, and awareness. You'll learn to sense what your body is doing, understand movement principles, and develop skills that transfer to everything you do. It's education, not just exercise-you gain understanding and tools you can use for life."
     },
     {
       question: "Do I need to be in shape to start Movement Training?",
@@ -28,15 +28,15 @@ function MovementTrainingHub() {
     },
     {
       question: "Why do you train barefoot?",
-      answer: "Your feet are your foundation. Shoes mask problems and prevent your feet from doing their job properly. Training barefoot lets you feel the ground, activate stabilizing muscles, and build real stability from the ground up. It's not about being trendy—it's about developing foot function that supports everything else. You'll develop better balance, proprioception, and movement quality. Many clients find their foot pain, knee issues, or back problems improve once their feet start working properly."
+      answer: "Your feet are your foundation. Shoes mask problems and prevent your feet from doing their job properly. Training barefoot lets you feel the ground, activate stabilizing muscles, and build real stability from the ground up. It's not about being trendy-it's about developing foot function that supports everything else. You'll develop better balance, proprioception, and movement quality. Many clients find their foot pain, knee issues, or back problems improve once their feet start working properly."
     },
     {
       question: "How often should I do Movement Training sessions?",
-      answer: "Frequency depends on your goals and situation. Many clients come 2-3 times per week initially to establish new patterns, then reduce to weekly or bi-weekly as they develop independence. Some people do intensive periods of regular sessions, then maintain with periodic tune-ups. We'll discuss what makes sense for your schedule, goals, and budget. The key is consistency—regular practice helps new patterns stick."
+      answer: "Frequency depends on your goals and situation. Many clients come 2-3 times per week initially to establish new patterns, then reduce to weekly or bi-weekly as they develop independence. Some people do intensive periods of regular sessions, then maintain with periodic tune-ups. We'll discuss what makes sense for your schedule, goals, and budget. The key is consistency-regular practice helps new patterns stick."
     },
     {
       question: "Will I get exercises to do at home?",
-      answer: "Yes. Each session includes practices you can do independently. These aren't generic exercises—they're specific movements tailored to what your body needs. You'll learn why you're doing them and how to progress them. The goal is building independence, not dependency. Most clients find the home practices become part of their daily routine because they feel good and make a noticeable difference."
+      answer: "Yes. Each session includes practices you can do independently. These aren't generic exercises-they're specific movements tailored to what your body needs. You'll learn why you're doing them and how to progress them. The goal is building independence, not dependency. Most clients find the home practices become part of their daily routine because they feel good and make a noticeable difference."
     }
   ];
 
@@ -138,7 +138,7 @@ function MovementTrainingHub() {
               Rediscover How Good Movement Can Feel
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Movement is your body's native language. When you move well, everything feels easier—whether you're reaching for something on a high shelf, getting up from the floor, hiking a trail, or performing in your sport. But most of us have lost touch with our natural movement capacity, accumulating restrictions, compensations, and inefficient patterns over years of modern living.
+              Movement is your body's native language. When you move well, everything feels easier-whether you're reaching for something on a high shelf, getting up from the floor, hiking a trail, or performing in your sport. But most of us have lost touch with our natural movement capacity, accumulating restrictions, compensations, and inefficient patterns over years of modern living.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Movement Training at Rock Your Body isn't about copying exercises from a screen or grinding through generic workout routines. It's about rediscovering your body's innate intelligence and relearning how to move with efficiency, ease, and power. Through personalized coaching and hands-on guidance, you'll develop movement skills that translate directly into your daily life and activities.
@@ -151,20 +151,20 @@ function MovementTrainingHub() {
               What Makes Our Movement Training Different
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Unlike conventional personal training that focuses on muscle isolation and repetitive exercises, our movement training emphasizes integration, variability, and functional transfer. We're not interested in how much weight you can lift in a controlled gym environment—we care about how well you move in real life.
+              Unlike conventional personal training that focuses on muscle isolation and repetitive exercises, our movement training emphasizes integration, variability, and functional transfer. We're not interested in how much weight you can lift in a controlled gym environment-we care about how well you move in real life.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Every session is tailored to your unique body, goals, and challenges. We start by assessing your current movement patterns, identifying restrictions and compensations, then design practices that address your specific needs. You might work on breathing mechanics one day, hip mobility another, and full-body integration the next—whatever your body needs most.
+              Every session is tailored to your unique body, goals, and challenges. We start by assessing your current movement patterns, identifying restrictions and compensations, then design practices that address your specific needs. You might work on breathing mechanics one day, hip mobility another, and full-body integration the next-whatever your body needs most.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              We draw from diverse movement disciplines—developmental patterns, natural movement, athletic training, somatic practices, and functional biomechanics—to create a rich, effective approach. The goal isn't to make you dependent on us, but to give you tools and understanding you can use independently for life.
+              We draw from diverse movement disciplines-developmental patterns, natural movement, athletic training, somatic practices, and functional biomechanics-to create a rich, effective approach. The goal isn't to make you dependent on us, but to give you tools and understanding you can use independently for life.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
               Core Principles of Effective Movement
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Good movement starts with awareness. You can't change what you can't feel. We help you develop refined body sense—the ability to notice what you're actually doing, not what you think you're doing. This awareness is the foundation for all lasting change.
+              Good movement starts with awareness. You can't change what you can't feel. We help you develop refined body sense-the ability to notice what you're actually doing, not what you think you're doing. This awareness is the foundation for all lasting change.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               From there, we focus on fundamental patterns that underlie all human movement: breathing, core control, hip function, shoulder organization, foot stability, and spinal articulation. Master these basics and everything else becomes easier. Skip them and you'll struggle with compensation patterns no matter how much you train.
@@ -180,7 +180,7 @@ function MovementTrainingHub() {
               Your movement journey begins with assessment. We observe how you move through basic patterns, identify limitations and compensations, and discuss your goals and challenges. This gives us a clear starting point and helps us design your personalized program.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              In sessions, you'll receive hands-on guidance and coaching as you explore new movement patterns. We might use props, gravity variations, or specific constraints to help your nervous system discover better options. The atmosphere is exploratory and curious rather than demanding or punishing—we're investigating possibilities, not grinding through reps.
+              In sessions, you'll receive hands-on guidance and coaching as you explore new movement patterns. We might use props, gravity variations, or specific constraints to help your nervous system discover better options. The atmosphere is exploratory and curious rather than demanding or punishing-we're investigating possibilities, not grinding through reps.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Between sessions, you'll practice key patterns on your own, integrating improvements into your daily movement. We provide clear practices you can do at home, along with ongoing support and adjustment as you progress. The real work happens in how you move throughout your day, not just during our sessions.
@@ -190,13 +190,13 @@ function MovementTrainingHub() {
               The Role of Awareness in Movement
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Awareness is the foundation of all movement improvement. You can't change what you can't feel. Most people move through life with minimal body awareness—they don't notice their patterns until pain or limitation forces attention. Movement Education develops refined proprioception and interoception—the ability to sense your body's position, movement, and internal state.
+              Awareness is the foundation of all movement improvement. You can't change what you can't feel. Most people move through life with minimal body awareness-they don't notice their patterns until pain or limitation forces attention. Movement Education develops refined proprioception and interoception-the ability to sense your body's position, movement, and internal state.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               As your awareness develops, you begin noticing things you never felt before: how you're holding tension, where you're compensating, how your breathing affects your movement, where you're stable and where you're not. This awareness becomes your guide for making better movement choices throughout your day. You start catching yourself before patterns become problems.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This isn't about constant self-monitoring or perfectionism—it's about developing a relationship with your body where you can sense what's happening and respond appropriately. Many clients describe feeling more "at home" in their bodies, more connected, more present. This embodied awareness is a skill that serves you for life.
+              This isn't about constant self-monitoring or perfectionism-it's about developing a relationship with your body where you can sense what's happening and respond appropriately. Many clients describe feeling more "at home" in their bodies, more connected, more present. This embodied awareness is a skill that serves you for life.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -206,7 +206,7 @@ function MovementTrainingHub() {
               Safety is paramount in Movement Education. We never push beyond what your body is ready for. Instead, we create conditions where your nervous system can safely explore new movement possibilities. This might mean starting with simpler patterns, using props for support, or working in positions that reduce load while you develop capacity.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              We respect injuries, limitations, and your body's signals. If something doesn't feel right, we adjust. The goal isn't to force your body into positions—it's to help your body discover better options naturally. This patient, respectful approach builds trust between you and your body, which is essential for lasting change.
+              We respect injuries, limitations, and your body's signals. If something doesn't feel right, we adjust. The goal isn't to force your body into positions-it's to help your body discover better options naturally. This patient, respectful approach builds trust between you and your body, which is essential for lasting change.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Many people come to us after injuring themselves trying to push through limitations or force their bodies into positions they weren't ready for. Our approach is different: we build capacity progressively, ensuring each step is solid before moving to the next. This might feel slower initially, but it produces better, safer, more lasting results.
@@ -222,7 +222,7 @@ function MovementTrainingHub() {
               Without movement education, structural changes can fade as old movement patterns pull your body back into familiar shapes. Without structural work, movement education can feel like trying to build on a shaky foundation. Together, they create lasting transformation: better structure supports better movement, and better movement maintains better structure.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Many clients do both simultaneously—structural sessions to optimize alignment, movement sessions to develop new patterns. Others alternate between periods focused on structure and periods focused on movement. We'll discuss what combination makes sense for your goals and situation.
+              Many clients do both simultaneously-structural sessions to optimize alignment, movement sessions to develop new patterns. Others alternate between periods focused on structure and periods focused on movement. We'll discuss what combination makes sense for your goals and situation.
             </p>
 
             <h2 className="text-3xl font-heading font-bold text-primary mb-6 mt-12">
@@ -232,10 +232,10 @@ function MovementTrainingHub() {
               Our movement training serves anyone wanting to improve their movement quality and capacity. Athletes use it to enhance performance and prevent injury. People recovering from injuries use it to rebuild function safely. Older adults use it to maintain independence and vitality. Desk workers use it to counter the effects of prolonged sitting.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              If you're dealing with chronic pain, movement training often provides the missing piece—teaching you how to move in ways that support healing rather than perpetuating problems. If you're already active but feeling limited, it can unlock new levels of capability. If you've never considered yourself "athletic," it can help you discover what your body can really do.
+              If you're dealing with chronic pain, movement training often provides the missing piece-teaching you how to move in ways that support healing rather than perpetuating problems. If you're already active but feeling limited, it can unlock new levels of capability. If you've never considered yourself "athletic," it can help you discover what your body can really do.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              The common thread? A genuine interest in moving better. If you're curious about your body, willing to explore, and ready to invest in long-term improvement rather than quick fixes, this work is for you. Movement Education isn't about becoming a movement expert—it's about developing practical skills that make your daily life easier and more enjoyable.
+              The common thread? A genuine interest in moving better. If you're curious about your body, willing to explore, and ready to invest in long-term improvement rather than quick fixes, this work is for you. Movement Education isn't about becoming a movement expert-it's about developing practical skills that make your daily life easier and more enjoyable.
             </p>
           </div>
 
