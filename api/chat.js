@@ -10,7 +10,6 @@
  */
 
 import OpenAI from 'openai';
-import { checkAvailability, bookAppointment } from './booking.js';
 
 // Booking function definitions for OpenAI
 const bookingFunctions = [
@@ -70,13 +69,7 @@ const openai = apiKey ? new OpenAI({ apiKey }) : null;
 
 export default async function handler(req, res) {
   try {
-    // Verify imports are available
-    if (typeof checkAvailability !== 'function' || typeof bookAppointment !== 'function') {
-      console.error('Booking functions not available:', {
-        checkAvailability: typeof checkAvailability,
-        bookAppointment: typeof bookAppointment
-      });
-    }
+    // Note: Booking functions are imported dynamically when needed
 
     console.log('[API/CHAT] Request received:', {
       method: req.method,
@@ -224,6 +217,10 @@ Be helpful, direct, and conversational. Help people understand if this work is r
 
       // Execute the requested function with error handling
       try {
+        // Dynamically import booking functions to avoid module load failures
+        const bookingModule = await import('./booking.js');
+        const { checkAvailability, bookAppointment } = bookingModule;
+
         if (functionName === "check_availability") {
           functionResponse = await checkAvailability(
             functionArgs.start_time,
@@ -242,6 +239,11 @@ Be helpful, direct, and conversational. Help people understand if this work is r
         }
       } catch (functionError) {
         console.error(`Error executing function ${functionName}:`, functionError);
+        console.error('Function error details:', {
+          message: functionError.message,
+          stack: functionError.stack,
+          name: functionError.name
+        });
         functionResponse = {
           error: `Failed to execute ${functionName}: ${functionError.message}`,
           success: false
