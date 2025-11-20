@@ -70,11 +70,21 @@ const openai = apiKey ? new OpenAI({ apiKey }) : null;
 
 export default async function handler(req, res) {
   try {
+    // Verify imports are available
+    if (typeof checkAvailability !== 'function' || typeof bookAppointment !== 'function') {
+      console.error('Booking functions not available:', {
+        checkAvailability: typeof checkAvailability,
+        bookAppointment: typeof bookAppointment
+      });
+    }
+
     console.log('[API/CHAT] Request received:', {
       method: req.method,
       url: req.url,
       hasBody: !!req.body,
-      timestamp: new Date().toISOString()
+      timestamp: new Date().toISOString(),
+      hasOpenAI: !!openai,
+      hasApiKey: !!apiKey
     });
 
     // Set CORS headers
@@ -212,21 +222,29 @@ Be helpful, direct, and conversational. Help people understand if this work is r
 
       let functionResponse;
 
-      // Execute the requested function
-      if (functionName === "check_availability") {
-        functionResponse = await checkAvailability(
-          functionArgs.start_time,
-          functionArgs.end_time
-        );
-      } else if (functionName === "book_appointment") {
-        functionResponse = await bookAppointment(
-          functionArgs.name,
-          functionArgs.email,
-          functionArgs.start_time
-        );
-      } else {
+      // Execute the requested function with error handling
+      try {
+        if (functionName === "check_availability") {
+          functionResponse = await checkAvailability(
+            functionArgs.start_time,
+            functionArgs.end_time
+          );
+        } else if (functionName === "book_appointment") {
+          functionResponse = await bookAppointment(
+            functionArgs.name,
+            functionArgs.email,
+            functionArgs.start_time
+          );
+        } else {
+          functionResponse = {
+            error: `Unknown function: ${functionName}`
+          };
+        }
+      } catch (functionError) {
+        console.error(`Error executing function ${functionName}:`, functionError);
         functionResponse = {
-          error: `Unknown function: ${functionName}`
+          error: `Failed to execute ${functionName}: ${functionError.message}`,
+          success: false
         };
       }
 
