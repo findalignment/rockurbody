@@ -106,7 +106,7 @@ function BodyAlignment() {
                 transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(-5px) rotate(-0.2deg)',
               }}
             >
-              But here's the thing: your body doesn't work like a webpage. And that's exactly why fixing alignment is so much more complex-and why it requires looking at your entire body, not just the part that hurts.
+              But here's the thing: your body doesn't work like a webpage. And that's exactly why finding alignment is so much more complex-and why it requires looking at your entire body, not just the part that hurts.
             </p>
           </div>
 
