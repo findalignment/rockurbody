@@ -98,7 +98,7 @@ function SmartStarts() {
       <div className="bg-offWhite pt-8 pb-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg text-neutralDark/80 leading-relaxed">
-            Starting something new with your body shouldn't feel overwhelming. These programs offer clear entry points for <strong>structural integration in Santa Cruz</strong>, <strong>movement education</strong>, and <strong>personalized exercise instruction</strong>. Each one meets you where you are and takes you where you want to go.
+            Starting something new with your body shouldn't feel overwhelming. These programs offer clear entry points for <strong>structural integration</strong>, <strong>movement education</strong>, and <strong>personalized exercise instruction in Santa Cruz</strong>. Each one meets you where you are and takes you where you want to go.
           </p>
         </div>
       </div>
