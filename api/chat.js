@@ -9,7 +9,14 @@
  * - CAL_API_KEY: Your Cal.com API key
  */
 
-import OpenAI from 'openai';
+// Import OpenAI with error handling
+let OpenAI;
+try {
+  OpenAI = (await import('openai')).default;
+} catch (importError) {
+  console.error('Failed to import OpenAI:', importError);
+  OpenAI = null;
+}
 
 // Booking function definitions for OpenAI
 const bookingFunctions = [
