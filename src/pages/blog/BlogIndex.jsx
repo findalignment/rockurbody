@@ -8,7 +8,7 @@ function BlogIndex() {
       id: 'discomfort-becomes-normal',
       title: 'When Discomfort Becomes Normal: The Hidden Tension We Carry',
       subtitle: 'How We Learn to Live with Misalignment Without Even Noticing',
-      date: 'January 15, 2025',
+      date: 'November 20, 2025',
       excerpt: "Your body adapts to misalignment so gradually that you stop noticing the tension. Learn how subtle compensations become your normal, and what it feels like to let them go.",
       path: '/blog/discomfort-becomes-normal'
     },

@@ -59,7 +59,7 @@ function DiscomfortBecomesNormal() {
                   transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(-3px) rotate(-0.1deg)',
                 }}
               >
-                January 15, 2025
+                November 20, 2025
               </p>
             </header>
 
