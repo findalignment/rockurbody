@@ -165,6 +165,7 @@ const StressAnxietyRelief = lazy(() => import('./pages/StressAnxietyRelief'));
 const RotatorCuffInjury = lazy(() => import('./pages/RotatorCuffInjury'));
 const AchillesTendonitis = lazy(() => import('./pages/AchillesTendonitis'));
 const BunionFootPain = lazy(() => import('./pages/BunionFootPain'));
+const BodyAlignment = lazy(() => import('./pages/BodyAlignment'));
 const CoreStrengthening = lazy(() => import('./pages/CoreStrengthening'));
 const ThoracicOutletSyndrome = lazy(() => import('./pages/ThoracicOutletSyndrome'));
 const PersonalTrainingPosture = lazy(() => import('./pages/PersonalTrainingPosture'));
