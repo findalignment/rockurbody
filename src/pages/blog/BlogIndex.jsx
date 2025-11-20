@@ -5,6 +5,14 @@ import PageHero from '../../components/PageHero';
 function BlogIndex() {
   const blogPosts = [
     {
+      id: 'discomfort-becomes-normal',
+      title: 'When Discomfort Becomes Normal: The Hidden Tension We Carry',
+      subtitle: 'How We Learn to Live with Misalignment Without Even Noticing',
+      date: 'January 15, 2025',
+      excerpt: "Your body adapts to misalignment so gradually that you stop noticing the tension. Learn how subtle compensations become your normal, and what it feels like to let them go.",
+      path: '/blog/discomfort-becomes-normal'
+    },
+    {
       id: 'tech-changes-posture',
       title: 'When Tech Changes Our Posture: Understanding the Hidden Cost of Our Digital Lives',
       subtitle: 'The biomechanics, economics, and solutions for our screen-saturated world',

@@ -116,6 +116,7 @@ const BlogIndex = lazy(() => import('./pages/blog/BlogIndex'));
 const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/IntegratingStructureAndMovement'));
 const PhoneReshapingSkeleton = lazy(() => import('./pages/blog/PhoneReshapingSkeleton'));
 const TechChangesPosture = lazy(() => import('./pages/blog/TechChangesPosture'));
+const DiscomfortBecomesNormal = lazy(() => import('./pages/blog/DiscomfortBecomesNormal'));
 
 // Hub Pages (Pillar Pages)
 const PainReliefHub = lazy(() => import('./pages/PainReliefHub'));
@@ -384,6 +385,7 @@ function AppRoutes() {
         <Route path="/blog/integrating-structure-and-movement" element={<IntegratingStructureAndMovement />} />
         <Route path="/blog/phone-reshaping-skeleton" element={<PhoneReshapingSkeleton />} />
         <Route path="/blog/tech-changes-posture" element={<TechChangesPosture />} />
+        <Route path="/blog/discomfort-becomes-normal" element={<DiscomfortBecomesNormal />} />
         
         {/* Certification Pages - Not in navigation menu */}
         <Route path="/certifications/anatomy-trains-structural-integration" element={<AnatomyTrainsSI />} />
