@@ -350,18 +350,6 @@ function WhatIsStructuralIntegration() {
             </Button>
           </div>
           
-          {/* Interactive element - button to align the page */}
-          {!isAligned && (
-            <div className="fixed bottom-8 right-8 bg-accent text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-pulse">
-              <button
-                onClick={() => setIsAligned(true)}
-                className="font-semibold"
-              >
-                Click to Align Page →
-              </button>
-            </div>
-          )}
-
           {/* Related Pages */}
           <div 
             className="mt-12 pt-8 border-t border-neutralDark/20 transition-all duration-1000"
@@ -399,6 +387,18 @@ function WhatIsStructuralIntegration() {
           </div>
         </div>
       </div>
+      
+      {/* Interactive element - button to align the page */}
+      {!isAligned && (
+        <div className="fixed bottom-8 right-8 bg-accent text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-pulse">
+          <button
+            onClick={() => setIsAligned(true)}
+            className="font-semibold"
+          >
+            Click to Align Page →
+          </button>
+        </div>
+      )}
     </PageLayout>
   );
 }
