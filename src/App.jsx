@@ -1,7 +1,54 @@
-import { useEffect, Suspense, lazy } from 'react';
+import { useEffect, Suspense, lazy, Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import PageTransition from './components/PageTransition';
 import RoutePrefetcher from './components/RoutePrefetcher';
+
+// Error Boundary Component
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error('Route Error:', error, errorInfo);
+    // Log to error tracking service if available
+  }
+
+  componentDidUpdate(prevProps) {
+    // Reset error state when location changes
+    if (prevProps.location?.pathname !== this.props.location?.pathname) {
+      this.setState({ hasError: false, error: null });
+    }
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-white p-6">
+          <div className="text-center max-w-md">
+            <h1 className="text-2xl font-bold text-neutralDark mb-4">Something went wrong</h1>
+            <p className="text-neutralDark/80 mb-6">
+              There was an error loading this page. Please try refreshing.
+            </p>
+            <button
+              onClick={() => window.location.reload()}
+              className="px-6 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary/90"
+            >
+              Refresh Page
+            </button>
+          </div>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
 
 // Lazy load all pages for code splitting
 const Home = lazy(() => import('./pages/Home'));
@@ -189,12 +236,28 @@ function AppRoutes() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  // Catch unhandled promise rejections (like lazy loading errors)
+  useEffect(() => {
+    const handleUnhandledRejection = (event) => {
+      console.error('Unhandled Promise Rejection:', event.reason);
+      // Prevent default browser error handling
+      event.preventDefault();
+      // You could show a user-friendly error message here
+    };
+
+    window.addEventListener('unhandledrejection', handleUnhandledRejection);
+    return () => {
+      window.removeEventListener('unhandledrejection', handleUnhandledRejection);
+    };
+  }, []);
   
   return (
     <PageTransition key={location.pathname}>
       <RoutePrefetcher />
       <Suspense fallback={<LoadingSpinner />}>
-        <Routes location={location}>
+        <ErrorBoundary location={location}>
+          <Routes location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
@@ -381,6 +444,7 @@ function AppRoutes() {
         {/* San Francisco */}
         <Route path="/san-francisco-personal-training" element={<SanFrancisco />} />
         </Routes>
+        </ErrorBoundary>
       </Suspense>
     </PageTransition>
   );
