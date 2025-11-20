@@ -314,21 +314,6 @@ Be helpful, direct, and conversational. Help people understand if this work is r
         message: error.message
       } : undefined
     });
-  } catch (outerError) {
-    // Catch any errors that occur outside the main try block (e.g., import errors, module loading)
-    console.error('Outer error in chat handler:', outerError);
-    console.error('Outer error stack:', outerError?.stack);
-    console.error('Outer error name:', outerError?.name);
-    
-    return res.status(500).json({
-      error: outerError?.message || 'Server error',
-      message: "I'm sorry, the chatbot service encountered an unexpected error. Please try again later.",
-      details: process.env.NODE_ENV === 'development' ? {
-        message: outerError?.message,
-        stack: outerError?.stack,
-        name: outerError?.name
-      } : undefined
-    });
   }
 }
 
