@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 
 function SmartStarts() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -115,9 +116,157 @@ function SmartStarts() {
         </div>
       </div>
 
-      {/* Interactive Cards */}
+      {/* What This Work Is - NEW SECTION */}
       <div className="bg-gradient-to-b from-white to-offWhite py-20 px-4">
+        <div className="max-w-4xl mx-auto space-y-12">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-6">
+              What This Work Is
+            </h2>
+            <p className="text-xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto">
+              This isn't personal training in the traditional sense. It's not massage or chiropractic. It's something different: a combination of hands-on structural work and intelligent movement education that addresses both how your body is organized and how you've learned to move.
+            </p>
+          </div>
+
+          {/* Structural Integration Explanation */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <h3 className="text-2xl font-heading text-primary mb-4">
+              Structural Integration: Reorganizing Your Foundation
+            </h3>
+            <p className="text-neutralDark/80 leading-relaxed mb-4">
+              Your body is wrapped in a web of connective tissue (fascia) that holds everything together. When one part gets tight or restricted—from injury, stress, or how you've been moving—it pulls on everything else. Over time, these compensations stack up, creating pain, stiffness, or movement limitations that won't budge with stretching or strength training alone.
+            </p>
+            <p className="text-neutralDark/80 leading-relaxed mb-4">
+              Structural Integration addresses these restrictions directly. Through skilled hands-on work, I release tight areas and help your body reorganize around better alignment. This isn't passive bodywork—we'll get you up and moving during sessions, teaching your nervous system a better way to organize itself.
+            </p>
+            <p className="text-neutralDark/80 leading-relaxed">
+              <Link to="/what-is-structural-integration" className="text-accent hover:underline font-semibold">Learn more about Structural Integration →</Link>
+            </p>
+          </div>
+
+          {/* Movement Education Explanation */}
+          <div className="bg-white rounded-2xl p-8 shadow-sm">
+            <h3 className="text-2xl font-heading text-primary mb-4">
+              Movement Education: Learning to Move Well
+            </h3>
+            <p className="text-neutralDark/80 leading-relaxed mb-4">
+              Most training focuses on <em>what</em> you're doing. Movement Education focuses on <em>how</em> you're doing it. This isn't about exercises, reps, or crushing yourself. It's about learning to move with intelligence, efficiency, and awareness.
+            </p>
+            <p className="text-neutralDark/80 leading-relaxed mb-4">
+              We work slowly and methodically, exploring movement patterns, finding where you're compensating, and teaching your nervous system a better way. You'll learn how to breathe with your movement, find and use your deep core stabilizers, move without compensation, and build strength that transfers to everything you do.
+            </p>
+            <p className="text-neutralDark/80 leading-relaxed mb-4">
+              Every session includes 2–3 movement patterns we'll work on together. You'll learn what to feel for, how to self-correct, and how to practice effectively. You'll leave with simple practices you can do daily—not hour-long workouts, but 5 to 10 minutes of focused movement that builds the patterns we worked on.
+            </p>
+            <p className="text-neutralDark/80 leading-relaxed">
+              <Link to="/what-is-movement-education" className="text-accent hover:underline font-semibold">Learn more about Movement Education →</Link>
+            </p>
+          </div>
+
+          {/* Why They Work Together */}
+          <div className="bg-gradient-to-br from-accent/10 to-sage/10 rounded-2xl p-8 border-2 border-accent/20">
+            <h3 className="text-2xl font-heading text-primary mb-4">
+              Why They Work Together
+            </h3>
+            <p className="text-neutralDark/80 leading-relaxed mb-4">
+              Here's the thing: you can have the most beautifully organized structure, but if you go right back to your old movement patterns, you'll recreate the same problems. That's why these programs combine both.
+            </p>
+            <p className="text-neutralDark/80 leading-relaxed mb-4">
+              The structural work creates space and releases restrictions. The movement education teaches you how to use that new space intelligently. Together, they create change that lasts because you're not just getting "worked on"—you're learning a better way to inhabit your body.
+            </p>
+            <p className="text-neutralDark/80 leading-relaxed">
+              <Link to="/combo-programs" className="text-accent hover:underline font-semibold">Learn more about combining SI and Movement →</Link>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* How Sessions Work */}
+      <div className="bg-white py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-heading text-primary mb-12 text-center">
+            How Sessions Work
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="border-l-4 border-sage pl-6">
+              <h3 className="text-xl font-heading text-primary mb-3">
+                1. Assess
+              </h3>
+              <p className="text-neutralDark/80 leading-relaxed">
+                We start by understanding where you are. How do you stand, walk, and breathe? Where are you compensating? What patterns need attention? This isn't a quick checklist—it's a comprehensive look at your unique body.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-accent pl-6">
+              <h3 className="text-xl font-heading text-primary mb-3">
+                2. Work
+              </h3>
+              <p className="text-neutralDark/80 leading-relaxed">
+                Through hands-on structural work and movement education, we address the root patterns—not just the symptoms. This is where change happens: slowly, intelligently, and with your body's full participation. You're actively learning as we work.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-highlight pl-6">
+              <h3 className="text-xl font-heading text-primary mb-3">
+                3. Reinforce
+              </h3>
+              <p className="text-neutralDark/80 leading-relaxed">
+                You leave with 1–2 micro-practices tailored to your patterns. Simple things you can do daily to maintain and build on what we've opened up. Not hour-long workouts—just focused movement that makes the changes stick.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* What Makes This Different */}
+      <div className="bg-offWhite py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-heading text-primary mb-12 text-center">
+            What Makes This Different
+          </h2>
+          
+          <div className="space-y-8">
+            <div className="bg-white rounded-xl p-6">
+              <h3 className="text-xl font-heading text-primary mb-3">
+                Most personal training focuses on exercises
+              </h3>
+              <p className="text-neutralDark/80 leading-relaxed">
+                You do squats, you do deadlifts, you get stronger. But if your structure is off or your movement patterns are inefficient, you're just reinforcing compensations. You might get stronger, but you won't necessarily move better.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6">
+              <h3 className="text-xl font-heading text-primary mb-3">
+                Most bodywork focuses on relaxation
+              </h3>
+              <p className="text-neutralDark/80 leading-relaxed">
+                You feel good for a day or two, then everything tightens back up. That's because the work didn't address how you move. Without changing your movement patterns, your body will recreate the same restrictions.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-accent/10 to-sage/10 rounded-xl p-6 border-2 border-accent/20">
+              <h3 className="text-xl font-heading text-primary mb-3">
+                This work combines both
+              </h3>
+              <p className="text-neutralDark/80 leading-relaxed font-medium">
+                Structural work to reorganize your body, plus movement education to make the changes last. You're not just getting stronger or getting worked on—you're learning a better way to inhabit your body. That's what creates lasting change.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* The Three Programs - Simplified Cards */}
+      <div className="bg-gradient-to-b from-offWhite to-white py-20 px-4">
         <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-heading text-primary mb-4 text-center">
+            Three Clear Entry Points
+          </h2>
+          <p className="text-lg text-neutralDark/80 text-center mb-12 max-w-3xl mx-auto">
+            Each program is designed for different needs, timelines, and levels of commitment. All combine structural integration and movement education—just in different amounts and intensities.
+          </p>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {packages.map((pkg) => (
               <div
@@ -148,11 +297,6 @@ function SmartStarts() {
                   <p className="text-lg text-accent italic mb-4">
                     {pkg.tagline}
                   </p>
-                  <div className="text-4xl font-bold text-primary mb-2">
-                    ${pkg.price.toLocaleString()}
-                  </div>
-                  <p className="text-sm text-neutralDark/60">{pkg.sessions}</p>
-                  <p className="text-sm text-neutralDark/60">{pkg.breakdown}</p>
                 </div>
 
                 {/* Expandable Content */}
@@ -191,6 +335,18 @@ function SmartStarts() {
                           </li>
                         ))}
                       </ul>
+                    </div>
+
+                    {/* Pricing moved here, inside expandable */}
+                    <div className="mb-6 pt-6 border-t border-neutralLight">
+                      <div className="text-center">
+                        <div className="text-3xl font-bold text-primary mb-2">
+                          ${pkg.price.toLocaleString()}
+                        </div>
+                        <p className="text-sm text-neutralDark/60 mb-1">{pkg.sessions}</p>
+                        <p className="text-sm text-neutralDark/60">{pkg.breakdown}</p>
+                        <p className="text-xs text-neutralDark/50 mt-2">{pkg.duration}</p>
+                      </div>
                     </div>
                   </div>
 
@@ -237,8 +393,72 @@ function SmartStarts() {
         </div>
       </div>
 
-      {/* Still not sure? */}
+      {/* Pricing Details Section - MOVED TO BOTTOM */}
       <div className="bg-white py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-heading text-primary mb-12 text-center">
+            Investment & Details
+          </h2>
+
+          <div className="space-y-8">
+            {packages.map((pkg) => (
+              <div key={pkg.id} className="bg-offWhite rounded-2xl p-8">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-heading text-primary mb-2">
+                      {pkg.name}
+                    </h3>
+                    <p className="text-lg text-accent italic mb-4">{pkg.tagline}</p>
+                    <p className="text-neutralDark/80 mb-4">{pkg.description}</p>
+                    <div className="flex flex-wrap gap-4 text-sm text-neutralDark/70">
+                      <span>{pkg.sessions}</span>
+                      <span>•</span>
+                      <span>{pkg.breakdown}</span>
+                      <span>•</span>
+                      <span>{pkg.duration}</span>
+                    </div>
+                  </div>
+                  <div className="text-center md:text-right">
+                    <div className="text-4xl font-bold text-primary mb-2">
+                      ${pkg.price.toLocaleString()}
+                    </div>
+                    <a
+                      href={
+                        pkg.id === 'reset' ? 'https://buy.stripe.com/dRmfZhgcLcNF0l31wSefC04' :
+                        pkg.id === 'hip' ? 'https://buy.stripe.com/bJe8wPaSr7tl5FndfAefC05' :
+                        'https://buy.stripe.com/3cI9ATf8H3d50l32AWefC09'
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-accent text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent/90 transition-colors border border-black"
+                    >
+                      Purchase {pkg.name}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 bg-gradient-to-br from-sage/10 to-accent/10 rounded-2xl p-8 border-2 border-sage/20">
+            <h3 className="text-xl font-heading text-primary mb-4">
+              What's Included
+            </h3>
+            <ul className="space-y-2 text-neutralDark/80">
+              <li>✓ All sessions scheduled at your convenience</li>
+              <li>✓ Comprehensive movement and structural assessment</li>
+              <li>✓ Hands-on structural integration work</li>
+              <li>✓ Movement education and pattern retraining</li>
+              <li>✓ Personalized practice plans for between sessions</li>
+              <li>✓ Email support for questions between sessions</li>
+              <li>✓ Flexible scheduling to fit your life</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Still not sure? */}
+      <div className="bg-offWhite py-20 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <h3 className="text-3xl font-heading text-primary mb-6">
             Still not sure which path is right?
@@ -257,7 +477,7 @@ function SmartStarts() {
       </div>
 
       {/* SEO footer content */}
-      <div className="bg-offWhite py-12 px-4">
+      <div className="bg-white py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl font-heading text-primary mb-4 text-center">
             Why Choose Movement Education & Structural Integration in Santa Cruz?

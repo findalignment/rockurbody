@@ -58,27 +58,42 @@ const bookingFunctions = [
 // Initialize OpenAI client
 // Note: Vercel serverless functions don't expose VITE_ prefixed vars at runtime
 // Use OPENAI_API_KEY (without VITE_ prefix) in Vercel environment variables
-const apiKey = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY;
+let apiKey, openai;
 
-if (!apiKey) {
-  console.error('No OpenAI API key found in environment variables');
-  console.error('Available env vars with OPENAI:', Object.keys(process.env).filter(k => k.toUpperCase().includes('OPENAI')));
+try {
+  apiKey = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY;
+  
+  if (!apiKey) {
+    console.error('No OpenAI API key found in environment variables');
+    console.error('Available env vars with OPENAI:', Object.keys(process.env).filter(k => k.toUpperCase().includes('OPENAI')));
+  } else {
+    // Only initialize OpenAI if we have a key
+    try {
+      openai = new OpenAI({ apiKey });
+    } catch (openaiInitError) {
+      console.error('Failed to initialize OpenAI client:', openaiInitError);
+      openai = null;
+    }
+  }
+} catch (initError) {
+  console.error('Error during module initialization:', initError);
+  apiKey = null;
+  openai = null;
 }
 
-const openai = apiKey ? new OpenAI({ apiKey }) : null;
-
+// Main handler function
 export default async function handler(req, res) {
   try {
     // Note: Booking functions are imported dynamically when needed
 
     console.log('[API/CHAT] Request received:', {
-      method: req.method,
-      url: req.url,
-      hasBody: !!req.body,
-      timestamp: new Date().toISOString(),
-      hasOpenAI: !!openai,
-      hasApiKey: !!apiKey
-    });
+    method: req.method,
+    url: req.url,
+    hasBody: !!req.body,
+    timestamp: new Date().toISOString(),
+    hasOpenAI: !!openai,
+    hasApiKey: !!apiKey
+  });
 
     // Set CORS headers
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -312,6 +327,21 @@ Be helpful, direct, and conversational. Help people understand if this work is r
         stack: error.stack,
         name: error.name,
         message: error.message
+      } : undefined
+    });
+  } catch (outerError) {
+    // Catch any errors that occur outside the main try block
+    console.error('Fatal error in chat handler:', outerError);
+    console.error('Outer error stack:', outerError?.stack);
+    console.error('Outer error name:', outerError?.name);
+    
+    return res.status(500).json({
+      error: outerError?.message || 'Server error',
+      message: "I'm sorry, the chatbot service encountered an unexpected error. Please try again later.",
+      details: process.env.NODE_ENV === 'development' ? {
+        message: outerError?.message,
+        stack: outerError?.stack,
+        name: outerError?.name
       } : undefined
     });
   }
