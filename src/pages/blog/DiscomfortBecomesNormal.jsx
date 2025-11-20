@@ -290,7 +290,7 @@ function DiscomfortBecomesNormal() {
                     Notice the Difference?
                   </h3>
                   <p className="leading-relaxed mb-4">
-                    When you clicked that button, everything snapped into alignment. The discomfort disappeared. The page became easier to read. Your eyes stopped trying to compensate for the misalignment.
+                    Everything snapped into alignment. The discomfort disappeared. The page became easier to read. Your eyes stopped trying to compensate for the misalignment.
                   </p>
                   <p className="leading-relaxed mb-4">
                     This is what happens in your body when we release the restrictions. The compensations let go. The tension releases. Everything finds its natural place. And suddenly, you remember what ease feels like.
