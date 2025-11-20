@@ -275,9 +275,9 @@ function SportsInjuryPrevention() {
             </Button>
           </div>
           {/* Related Pages */}
-          <div className="mt-12 pt-8 border-t border-neutralDark/20">
+          <div className="mt-12 pt-8 border-t border-neutralDark/20 text-center">
             <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center">
               <Link to="/sports-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 Sports Performance Hub
               </Link>

@@ -296,7 +296,7 @@ function WhatIsStructuralIntegration() {
                 transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(-3px) rotate(-0.1deg)',
               }}
             >
-              If you've tried stretching, strengthening, and adjustments but still feel stuck.or if you want to build a body that works better for the long haul.Structural Integration might be exactly what you need.
+              If you've tried stretching, strengthening, and adjustments but still feel stuck, or if you want to build a body that works better for the long haul.Structural Integration might be exactly what you need.
             </p>
           </div>
 
@@ -352,13 +352,13 @@ function WhatIsStructuralIntegration() {
           
           {/* Related Pages */}
           <div 
-            className="mt-12 pt-8 border-t border-neutralDark/20 transition-all duration-1000"
+            className="mt-12 pt-8 border-t border-neutralDark/20 transition-all duration-1000 text-center"
             style={{
               transform: isAligned ? 'translateX(0) rotate(0deg)' : 'translateX(6px) rotate(0.2deg)',
             }}
           >
             <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 justify-center">
               <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 Structural Integration Hub
               </Link>
