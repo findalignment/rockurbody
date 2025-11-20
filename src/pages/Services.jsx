@@ -58,13 +58,6 @@ function Services() {
               >
                 Book a Free 15-minute Call
               </Button>
-              <Button
-                to="/smart-starts"
-                variant="outline"
-                size="lg"
-              >
-                Start Here
-              </Button>
             </div>
             
             <div className="space-y-16">

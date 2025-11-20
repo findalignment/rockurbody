@@ -31,13 +31,6 @@ function ComboPrograms() {
             >
               Book This Service
             </Button>
-            <Button
-              to="/smart-starts"
-              variant="outline"
-              size="lg"
-            >
-              Start Here
-            </Button>
           </div>
         </div>
       </div>
@@ -266,13 +259,6 @@ function ComboPrograms() {
               className="font-bold"
             >
               Book This Service
-            </Button>
-            <Button
-              to="/smart-starts"
-              variant="outline"
-              size="lg"
-            >
-              Start Here
             </Button>
           </div>
         </div>

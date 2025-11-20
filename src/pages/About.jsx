@@ -64,13 +64,6 @@ function About() {
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
                     Hands-on fascial release to address the restrictions that limit your movement. This isn't massage. It's systematic bodywork that reorganizes your structure. You'll feel things shift. You'll move differently. It's kind of wild, honestly.
                   </p>
-                  <Button
-                    to="/smart-starts"
-                    variant="outline"
-                    size="sm"
-                  >
-                    Start Here →
-                  </Button>
                 </div>
                 
                 <div className="border-l-4 border-accent pl-6">

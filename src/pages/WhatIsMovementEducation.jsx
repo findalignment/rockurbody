@@ -47,13 +47,6 @@ function WhatIsMovementEducation() {
             >
               Book This Service
             </Button>
-            <Button
-              to="/smart-starts"
-              variant="outline"
-              size="lg"
-            >
-              Start Here
-            </Button>
           </div>
         </div>
       </div>
