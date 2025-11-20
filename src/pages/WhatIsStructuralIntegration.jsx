@@ -27,15 +27,34 @@ function WhatIsStructuralIntegration() {
       />
 
 
-      {/* SEO-optimized intro */}
-      <div className="bg-offWhite pt-8 pb-16 px-4">
+      {/* SEO-optimized intro with CTA above fold */}
+      <div className="bg-offWhite pt-8 pb-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading text-primary mb-6">
             Structural Integration in Santa Cruz
           </h2>
-          <p className="text-lg text-neutralDark/80 leading-relaxed">
-            <strong>Structural Integration</strong> is precise hands-on work that helps your body's connective tissue (fascia) glide and coordinate better. It's not massage.it's systematic bodywork that reorganizes how your whole body functions.
+          <p className="text-lg md:text-xl text-neutralDark/90 leading-relaxed mb-8">
+            <strong>Structural Integration</strong> is hands-on bodywork that helps restore your natural movement, reduce pain, and improve performance. Think of your body like a three-dimensional web—when one part gets tight or restricted, it pulls on everything else. This work releases those restrictions so your whole body can function better.
           </p>
+          
+          {/* CTA Above Fold */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              to="/book"
+              variant="accent"
+              size="lg"
+              className="font-bold"
+            >
+              Book This Service
+            </Button>
+            <Button
+              to="/smart-starts"
+              variant="outline"
+              size="lg"
+            >
+              Start Here
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -49,10 +68,10 @@ function WhatIsStructuralIntegration() {
               What It Is
             </h3>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              Your body is wrapped in a web of connective tissue called fascia. Think of it like a three-dimensional sweater.when one part gets tight or restricted, it pulls on everything else. Over time, compensations stack up, and you end up with pain, stiffness, or movement limitations that won't budge with stretching or strength training alone.
+              Your body is wrapped in a web of connective tissue (think of it like a three-dimensional sweater). When one part gets tight or restricted—from injury, stress, or just how you've been moving—it pulls on everything else. Over time, these compensations stack up, and you end up with pain, stiffness, or movement limitations that won't budge with stretching or strength training alone.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              Structural Integration addresses the fascia directly. Through skilled hands-on work, I release restrictions and help your body reorganize around better alignment. I pair this with simple movement cues, so the changes "stick" when you stand, walk, lift, and live.
+              Structural Integration addresses these restrictions directly. Through skilled hands-on work, I release tight areas and help your body reorganize around better alignment. I pair this with simple movement cues, so the changes "stick" when you stand, walk, lift, and live. The goal: restore natural movement, reduce pain, and improve how your body performs.
             </p>
           </div>
 
@@ -65,22 +84,22 @@ function WhatIsStructuralIntegration() {
               <li className="flex items-start gap-3">
                 <span className="text-2xl">💪</span>
                 <div>
-                  <strong className="text-neutralDark">Relief from nagging tension and "stuck" spots</strong>
-                  <p className="text-neutralDark/70 mt-1">That shoulder that never quite loosens up, the hip that's always tight.these aren't just muscle problems. They're often fascial restrictions.</p>
+                  <strong className="text-neutralDark">Restore Natural Movement</strong>
+                  <p className="text-neutralDark/70 mt-1">Release tight spots and restrictions so your body moves the way it was designed to. That shoulder that never quite loosens up, the hip that's always tight—these aren't just muscle problems. They're often restrictions in your connective tissue that need hands-on work.</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-2xl">🌬️</span>
                 <div>
-                  <strong className="text-neutralDark">Better posture and easier breathing</strong>
-                  <p className="text-neutralDark/70 mt-1">When your structure is organized, your body doesn't have to work so hard to hold you upright. Breathing becomes easier, deeper.</p>
+                  <strong className="text-neutralDark">Reduce Pain</strong>
+                  <p className="text-neutralDark/70 mt-1">When your structure is organized, your body doesn't have to work so hard to hold you upright. This reduces strain, tension, and the pain that comes from compensation patterns. Breathing becomes easier and deeper too.</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-2xl">🏃</span>
                 <div>
-                  <strong className="text-neutralDark">Stronger, smoother movement in daily life and training</strong>
-                  <p className="text-neutralDark/70 mt-1">Whether you're lifting, running, or just moving through your day, better structure means better function.</p>
+                  <strong className="text-neutralDark">Improve Performance</strong>
+                  <p className="text-neutralDark/70 mt-1">Whether you're lifting, running, or just moving through your day, better structure means better function. You'll move stronger, smoother, and more efficiently in everything you do.</p>
                 </div>
               </li>
             </ul>
@@ -172,18 +191,19 @@ function WhatIsStructuralIntegration() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              to="/packages"
-              variant="primary"
+              to="/book"
+              variant="accent"
               size="lg"
+              className="font-bold"
             >
-              View Programs & Packages
+              Book This Service
             </Button>
             <Button
-              to="/consult"
+              to="/smart-starts"
               variant="outline"
               size="lg"
             >
-              Book Free Consultation
+              Start Here
             </Button>
           </div>
           {/* Related Pages */}

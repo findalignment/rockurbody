@@ -12,8 +12,7 @@ function Header() {
   const navLinks = [
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
-    { name: 'Packages', path: '/packages' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Start Here', path: '/smart-starts' },
   ];
   
   // Handle scroll effect
@@ -76,9 +75,10 @@ function Header() {
             <Button
               to="/book"
               variant="accent"
-              className="border-transparent"
+              size="lg"
+              className="border-transparent font-bold"
             >
-              Book Now
+              Book
             </Button>
           </nav>
           
@@ -107,13 +107,13 @@ function Header() {
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 space-y-3 bg-white/95 backdrop-blur-lg rounded-lg p-4 shadow-lg">
+          <nav className="md:hidden mt-4 pb-4 space-y-2 bg-white/95 backdrop-blur-lg rounded-lg p-4 shadow-lg">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block font-semibold text-neutralDark hover:text-accent transition-colors"
+                className="block font-semibold text-lg text-neutralDark hover:text-accent transition-colors py-3 px-2 min-h-[44px] flex items-center"
               >
                 {link.name}
               </Link>
@@ -122,10 +122,11 @@ function Header() {
               to="/book"
               onClick={() => setMobileMenuOpen(false)}
               variant="accent"
+              size="lg"
               fullWidth
-              className="border-transparent"
+              className="border-transparent font-bold mt-2"
             >
-              Book Now
+              Book
             </Button>
           </nav>
         )}

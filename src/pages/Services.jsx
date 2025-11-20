@@ -12,9 +12,9 @@ function Services() {
   return (
     <PageLayout>
       <Helmet>
-        <title>Structural Integration & Movement Education Services | Rock Your Body Santa Cruz</title>
-        <meta name="description" content="Rock Your Body offers structural integration (Rolfing-style bodywork) and functional movement coaching in Santa Cruz. Mobile service available throughout Bay Area. Expert fascia work, posture correction, and personalized training." />
-        <meta name="keywords" content="structural integration Santa Cruz, Rolfing Santa Cruz, movement education, functional movement coaching, mobile personal training, fascia therapy, posture correction, bodywork Santa Cruz, corrective exercise, movement specialist" />
+        <title>Structural Integration Santa Cruz | Rolfing & Movement Education Services - Rock Ur Body</title>
+        <meta name="description" content="Expert structural integration (Rolfing-style bodywork) and functional movement coaching in Santa Cruz. Hands-on fascia work, posture correction, and personalized training. Mobile service available throughout Bay Area. Book your session today." />
+        <meta name="keywords" content="structural integration Santa Cruz, Rolfing Santa Cruz, movement education Santa Cruz, functional movement coaching, mobile personal training Santa Cruz, fascia therapy, posture correction Santa Cruz, bodywork Santa Cruz, corrective exercise, movement specialist Bay Area, private training Santa Cruz" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Structural Integration & Movement Education | Rock Your Body" />
@@ -30,8 +30,8 @@ function Services() {
 
       <PageHero 
         imageSrc="/services-hero.jpg"
-        title="Rock Your Body Services"
-        subtitle="Structural Integration & Movement Education"
+        title="Structural Integration & Movement Education Services"
+        subtitle="Expert hands-on fascia work and functional movement coaching in Santa Cruz"
       />
       {/* Add soft wave divider */}
       <div className="relative bg-white">
@@ -44,19 +44,44 @@ function Services() {
               Your movement holds your story
             </PullQuote>
             
-            <p className="text-xl text-neutralDark/80 mb-16 leading-relaxed text-center">
-              I offer two complementary approaches: hands-on structural work and movement education. Most clients benefit from both.
+            <p className="text-xl md:text-2xl text-neutralDark/90 mb-8 leading-relaxed text-center">
+              I offer two complementary approaches: hands-on structural work and movement education. Most clients benefit from both to restore natural movement, reduce pain, and improve performance.
             </p>
+            
+            {/* CTA Above Fold */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+              <Button
+                to="/book"
+                variant="accent"
+                size="lg"
+                className="font-bold"
+              >
+                Book a Free 15-minute Call
+              </Button>
+              <Button
+                to="/smart-starts"
+                variant="outline"
+                size="lg"
+              >
+                Start Here
+              </Button>
+            </div>
             
             <div className="space-y-16">
             {/* Service 1 */}
-            <div className="bg-white rounded-2xl p-10 shadow-sm">
-              <h2 className="text-3xl font-heading text-neutralDark mb-6">
+            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-neutralDark mb-4 md:mb-6">
                 Structural Integration
               </h2>
-              <p className="text-lg text-neutralDark/80 mb-8 leading-relaxed">
-                Structural Integration is precise hands-on work that helps your body's connective tissue (fascia) glide and coordinate better. I pair it with simple movement cues so changes "stick" when you stand, walk, lift, and live.
+              <p className="text-base md:text-lg text-neutralDark/80 mb-6 md:mb-8 leading-relaxed">
+                Hands-on bodywork that releases tight areas and restrictions in your connective tissue (think of it like a web that connects everything in your body). When one part gets tight, it pulls on everything else. This work releases those restrictions so your whole body can function better. Paired with movement cues so changes "stick" when you stand, walk, lift, and live.
               </p>
+              
+              {/* Benefit Highlight */}
+              <div className="bg-accent/5 rounded-lg p-4 md:p-6 mb-6 md:mb-8 border-l-4 border-accent">
+                <p className="text-base md:text-lg font-semibold text-neutralDark mb-2">Key Benefits:</p>
+                <p className="text-base md:text-lg text-neutralDark/90">Restore natural movement, reduce pain, and improve performance in daily life and training.</p>
+              </div>
               
               <Callout variant="info" title="The Bottom Line">
                 Hands-on fascia work + movement education to realign how you move so life feels easier
@@ -145,11 +170,11 @@ function Services() {
               
               {/* CTA Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button to="/what-is-structural-integration" variant="primary" fullWidth>
-                  Learn About Structural Integration
+                <Button to="/book" variant="accent" size="lg" fullWidth className="font-bold">
+                  Book This Service
                 </Button>
-                <Button to="/consult" variant="outline" fullWidth>
-                  Book Free Consultation
+                <Button to="/what-is-structural-integration" variant="outline" fullWidth>
+                  Learn More About SI
                 </Button>
               </div>
             </div>
@@ -160,22 +185,39 @@ function Services() {
             </div>
             
             {/* Service 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <h2 className="text-3xl font-heading text-neutralDark mb-4">
+            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-neutralDark mb-4 md:mb-6">
                 Movement Education
               </h2>
-              <p className="text-lg text-neutralDark/80 mb-4">
+              <p className="text-base md:text-lg text-neutralDark/80 mb-6 md:mb-8 leading-relaxed">
                 One-on-one training focused on how you move, not just what exercises you do. We work on fundamental movement patterns that improve everything you do.
               </p>
-              <div className="space-y-2 text-neutralDark/80">
-                <p><strong>What we work on:</strong></p>
-                <ul className="space-y-1 ml-6">
+              
+              {/* Benefit Highlight */}
+              <div className="bg-sage/5 rounded-lg p-4 md:p-6 mb-6 md:mb-8 border-l-4 border-sage">
+                <p className="text-base md:text-lg font-semibold text-neutralDark mb-2">Key Benefits:</p>
+                <p className="text-base md:text-lg text-neutralDark/90">Restore natural movement patterns, reduce pain from compensation, and improve performance. Movement that serves your life, not just the gym. Strength, balance, and injury prevention that transfers to everything you do.</p>
+              </div>
+              
+              <div className="space-y-2 text-base md:text-lg text-neutralDark/80 mb-6">
+                <p className="font-semibold text-neutralDark">What we work on:</p>
+                <ul className="space-y-2 ml-4">
                   <li>• Efficient breathing and core integration</li>
                   <li>• Fundamental movement patterns (squat, hinge, push, pull)</li>
                   <li>• Balance and proprioception</li>
                   <li>• Strength that serves your life, not just the gym</li>
                   <li>• Injury prevention and movement problem-solving</li>
                 </ul>
+              </div>
+              
+              {/* CTA Buttons */}
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <Button to="/book" variant="accent" size="lg" fullWidth className="font-bold">
+                  Book This Service
+                </Button>
+                <Button to="/what-is-movement-education" variant="outline" fullWidth>
+                  Learn More
+                </Button>
               </div>
             </div>
             
@@ -204,11 +246,11 @@ function Services() {
             
             {/* CTA Buttons */}
             <div className="mt-12 flex flex-col sm:flex-row gap-4">
-              <Button to="/what-is-movement-education" variant="primary" fullWidth>
-                Learn About Movement Education
+              <Button to="/book" variant="accent" size="lg" fullWidth className="font-bold">
+                Book This Service
               </Button>
-              <Button to="/consult" variant="outline" fullWidth>
-                Book Free Consultation
+              <Button to="/what-is-movement-education" variant="outline" fullWidth>
+                Learn More About Movement Education
               </Button>
             </div>
             </div>

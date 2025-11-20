@@ -6,6 +6,7 @@ import ServicesOverview from './ServicesOverview';
 import Footer from './Footer';
 import MarkdownText from './MarkdownText';
 import ChatbotStatus from './ChatbotStatus';
+import SEO from './SEO';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
@@ -321,6 +322,12 @@ function LandingPage() {
 
   return (
     <>
+    <SEO
+      title="Structural Integration Santa Cruz | Rock Ur Body - Functional Fitness & Movement Education"
+      description="We restore alignment, strength and balance through structural integration and functional fitness in Santa Cruz. Expert fascia work, posture correction, and personalized movement coaching. Mobile service available throughout Bay Area."
+      keywords="structural integration Santa Cruz, Rolfing Santa Cruz, functional fitness Santa Cruz, movement education, fascia therapy, bodywork Santa Cruz, mobile personal training, posture correction, pain relief Santa Cruz, movement specialist Bay Area, structural integrator, functional movement coach"
+      url="/"
+    />
     <Hero>
       <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[85vh] md:pt-[90vh]">
         <HeroContent />

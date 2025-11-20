@@ -65,11 +65,11 @@ function About() {
                     Hands-on fascial release to address the restrictions that limit your movement. This isn't massage. It's systematic bodywork that reorganizes your structure. You'll feel things shift. You'll move differently. It's kind of wild, honestly.
                   </p>
                   <Button
-                    to="/what-is-structural-integration"
+                    to="/smart-starts"
                     variant="outline"
                     size="sm"
                   >
-                    Learn More →
+                    Start Here →
                   </Button>
                 </div>
                 

@@ -16,11 +16,11 @@ function Button({
   // Base styles - matching Packages page buttons
   const baseStyles = 'font-semibold transition-all duration-200 inline-flex items-center justify-center gap-2 border border-black';
   
-  // Size variants
+  // Size variants - ensuring minimum 44px touch target for mobile
   const sizeStyles = {
-    sm: 'px-4 py-2 text-sm rounded-lg',
-    md: 'px-6 py-3 text-base rounded-xl',
-    lg: 'px-8 py-4 text-lg rounded-xl'
+    sm: 'px-4 py-2.5 text-base md:text-sm rounded-lg min-h-[44px]',
+    md: 'px-6 py-3.5 text-base md:text-base rounded-xl min-h-[48px]',
+    lg: 'px-8 py-4 text-lg md:text-lg rounded-xl min-h-[52px]'
   };
   
   // Color variants

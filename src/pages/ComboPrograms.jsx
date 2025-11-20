@@ -11,15 +11,34 @@ function ComboPrograms() {
         subtitle="Structural Integration + Movement Education = Lasting Change"
       />
 
-      {/* Intro */}
-      <div className="bg-offWhite pt-8 pb-16 px-4">
+      {/* Intro with CTA above fold */}
+      <div className="bg-offWhite pt-8 pb-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading text-primary mb-6">
             Why Combine Both?
           </h2>
-          <p className="text-lg text-neutralDark/80 leading-relaxed">
-            Most clients see the best results when we combine Structural Integration (hands-on fascial work) with Movement Education (learning better patterns). Here's why.
+          <p className="text-lg md:text-xl text-neutralDark/90 leading-relaxed mb-8">
+            Most clients see the best results when we combine Structural Integration (hands-on bodywork that releases restrictions) with Movement Education (learning better movement patterns). Together, they restore natural movement, reduce pain, and improve performance.
           </p>
+          
+          {/* CTA Above Fold */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              to="/book"
+              variant="accent"
+              size="lg"
+              className="font-bold"
+            >
+              Book This Service
+            </Button>
+            <Button
+              to="/smart-starts"
+              variant="outline"
+              size="lg"
+            >
+              Start Here
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -241,18 +260,19 @@ function ComboPrograms() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              to="/packages"
-              variant="primary"
+              to="/book"
+              variant="accent"
               size="lg"
+              className="font-bold"
             >
-              View All Programs & Pricing
+              Book This Service
             </Button>
             <Button
-              to="/consult"
+              to="/smart-starts"
               variant="outline"
               size="lg"
             >
-              Book Free Consultation
+              Start Here
             </Button>
           </div>
         </div>

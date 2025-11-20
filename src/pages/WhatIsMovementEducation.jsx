@@ -27,15 +27,34 @@ function WhatIsMovementEducation() {
       />
 
 
-      {/* SEO-optimized intro */}
-      <div className="bg-offWhite pt-8 pb-16 px-4">
+      {/* SEO-optimized intro with CTA above fold */}
+      <div className="bg-offWhite pt-8 pb-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-heading text-primary mb-6">
             Movement Education in Santa Cruz
           </h2>
-          <p className="text-lg text-neutralDark/80 leading-relaxed">
-            <strong>Movement Education</strong> isn't personal training. It's not about exercises, reps, or crushing yourself. It's about learning to move with intelligence, efficiency, and awareness.so your body works better for the rest of your life.
+          <p className="text-lg md:text-xl text-neutralDark/90 leading-relaxed mb-8">
+            <strong>Movement Education</strong> isn't personal training. It's not about exercises, reps, or crushing yourself. It's about learning to move with intelligence, efficiency, and awareness—so you can restore natural movement, reduce pain, and improve performance in everything you do.
           </p>
+          
+          {/* CTA Above Fold */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              to="/book"
+              variant="accent"
+              size="lg"
+              className="font-bold"
+            >
+              Book This Service
+            </Button>
+            <Button
+              to="/smart-starts"
+              variant="outline"
+              size="lg"
+            >
+              Start Here
+            </Button>
+          </div>
         </div>
       </div>
 
@@ -206,18 +225,19 @@ function WhatIsMovementEducation() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              to="/packages"
-              variant="primary"
+              to="/book"
+              variant="accent"
               size="lg"
+              className="font-bold"
             >
-              View Programs & Packages
+              Book This Service
             </Button>
             <Button
-              to="/consult"
+              to="/smart-starts"
               variant="outline"
               size="lg"
             >
-              Book Free Consultation
+              Start Here
             </Button>
           </div>
           {/* Related Pages */}
