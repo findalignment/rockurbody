@@ -16,7 +16,7 @@ function BlogIndex() {
       id: 'tech-changes-posture',
       title: 'When Tech Changes Our Posture: Understanding the Hidden Cost of Our Digital Lives',
       subtitle: 'The biomechanics, economics, and solutions for our screen-saturated world',
-      date: 'November 2, 2025',
+      date: 'November 11, 2025',
       excerpt: "We spend 6+ hours daily on screens. Dive deep into the biomechanics of forward head posture, upper crossed syndrome, the breath connection, and evidence-based interventions that actually work.",
       path: '/blog/tech-changes-posture'
     },
