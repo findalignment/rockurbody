@@ -27,16 +27,23 @@ export async function logChatQuestion(question, metadata = {}) {
 
     // Log to Formspree (free tier allows 50 submissions/month)
     // You can replace this with your preferred logging service
-    await fetch(LOG_ENDPOINT, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        subject: 'Chat Question Log',
-        message: `Question: ${question}\n\nMetadata: ${JSON.stringify(logData, null, 2)}`
-      }),
-    });
+    // Only log if endpoint is configured (not the default placeholder)
+    if (LOG_ENDPOINT && !LOG_ENDPOINT.includes('YOUR_FORM_ID')) {
+      // Use fetch with catch to prevent errors from blocking the app
+      fetch(LOG_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          subject: 'Chat Question Log',
+          message: `Question: ${question}\n\nMetadata: ${JSON.stringify(logData, null, 2)}`
+        }),
+      }).catch(err => {
+        // Silently fail - logging is optional
+        logger.error('[Chat Logging Failed]:', err);
+      });
+    }
 
     // Also log to console in production for debugging
     logger.log('[Chat Question Logged]:', question);
@@ -61,16 +68,23 @@ export async function logChatEvent(eventType, eventData = {}) {
       page: window.location.pathname,
     };
 
-    await fetch(LOG_ENDPOINT, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        subject: `Chat Event: ${eventType}`,
-        message: JSON.stringify(logData, null, 2)
-      }),
-    });
+    // Only log if endpoint is configured (not the default placeholder)
+    if (LOG_ENDPOINT && !LOG_ENDPOINT.includes('YOUR_FORM_ID')) {
+      // Use fetch with catch to prevent errors from blocking the app
+      fetch(LOG_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          subject: `Chat Event: ${eventType}`,
+          message: JSON.stringify(logData, null, 2)
+        }),
+      }).catch(err => {
+        // Silently fail - logging is optional
+        logger.error('[Chat Event Logging Failed]:', err);
+      });
+    }
 
     logger.log('[Chat Event Logged]:', eventType);
   } catch (error) {
