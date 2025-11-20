@@ -10,10 +10,10 @@ function WhatIsStructuralIntegration() {
   const [isAligned, setIsAligned] = useState(false);
 
   useEffect(() => {
-    // After 3 seconds, allow user to align the page
+    // After 6 seconds, allow user to align the page
     const timer = setTimeout(() => {
       setIsAligned(true);
-    }, 3000);
+    }, 6000);
     return () => clearTimeout(timer);
   }, []);
   const breadcrumbs = [
