@@ -167,7 +167,7 @@ function Services() {
                   Book This Service
                 </Button>
                 <Button to="/what-is-structural-integration" variant="outline" fullWidth>
-                  Learn More About SI
+                  Learn More
                 </Button>
               </div>
             </div>
@@ -243,7 +243,7 @@ function Services() {
                 Book This Service
               </Button>
               <Button to="/what-is-movement-education" variant="outline" fullWidth>
-                Learn More About Movement Education
+                Learn More
               </Button>
             </div>
             </div>
