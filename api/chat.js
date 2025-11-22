@@ -63,14 +63,22 @@ let openai = null;
 
 // Main handler function
 export default async function handler(req, res) {
+  // Wrap everything in try-catch to catch any initialization errors
   try {
+    // Log immediately to verify function is being called
+    console.log('[API/CHAT] Handler called at:', new Date().toISOString());
+    console.log('[API/CHAT] Method:', req.method);
+    console.log('[API/CHAT] URL:', req.url);
+    
     // Initialize OpenAI client inside handler to ensure environment variables are loaded
     if (!apiKey || !openai) {
       apiKey = process.env.OPENAI_API_KEY || process.env.VITE_OPENAI_API_KEY;
       
       if (!apiKey) {
         console.error('[API/CHAT] No OpenAI API key found in environment variables');
-        console.error('[API/CHAT] Available env vars with OPENAI:', Object.keys(process.env).filter(k => k.toUpperCase().includes('OPENAI')));
+        const allEnvKeys = Object.keys(process.env);
+        console.error('[API/CHAT] Total env vars:', allEnvKeys.length);
+        console.error('[API/CHAT] Available env vars with OPENAI:', allEnvKeys.filter(k => k.toUpperCase().includes('OPENAI')));
         return res.status(500).json({ 
           error: 'Server configuration error: Missing OPENAI_API_KEY',
           message: "I'm sorry, the chatbot service is not properly configured. The OpenAI API key is missing. Please set OPENAI_API_KEY (without VITE_ prefix) in Vercel environment variables.",
@@ -79,10 +87,16 @@ export default async function handler(req, res) {
       }
       
       try {
+        console.log('[API/CHAT] Initializing OpenAI client...');
         openai = new OpenAI({ apiKey });
         console.log('[API/CHAT] OpenAI client initialized successfully');
       } catch (openaiInitError) {
         console.error('[API/CHAT] Failed to initialize OpenAI client:', openaiInitError);
+        console.error('[API/CHAT] OpenAI init error details:', {
+          message: openaiInitError?.message,
+          stack: openaiInitError?.stack,
+          name: openaiInitError?.name
+        });
         return res.status(500).json({ 
           error: 'Failed to initialize OpenAI client',
           message: "I'm sorry, the chatbot service encountered an initialization error. Please try again later."
