@@ -349,18 +349,3 @@ Be helpful, direct, and conversational. Help people understand if this work is r
   }
 }
 
-// Wrap the entire handler export in a try-catch to catch module-level errors
-try {
-  // Handler is already exported above
-} catch (moduleError) {
-  console.error('[API/CHAT] Module-level error:', moduleError);
-  // Export a fallback handler
-  export default async function fallbackHandler(req, res) {
-    console.error('[API/CHAT] Using fallback handler due to module error');
-    return res.status(500).json({
-      error: 'Module initialization failed',
-      message: "I'm sorry, the chatbot service encountered an initialization error."
-    });
-  }
-}
-
