@@ -114,7 +114,6 @@ export default async function handler(req, res) {
       return res.status(405).json({ error: 'Method not allowed' });
     }
 
-    try {
     // Parse request body if it's a string (Vercel sometimes sends string bodies)
     let body = req.body;
     if (typeof body === 'string') {
