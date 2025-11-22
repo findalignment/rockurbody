@@ -319,20 +319,47 @@ Be helpful, direct, and conversational. Help people understand if this work is r
     });
 
   } catch (error) {
-    console.error('Chat API error:', error);
-    console.error('Error stack:', error.stack);
-    console.error('Error name:', error.name);
-    console.error('Error message:', error.message);
+    // Log everything we can about the error
+    console.error('[API/CHAT] ===== ERROR CAUGHT =====');
+    console.error('[API/CHAT] Error type:', typeof error);
+    console.error('[API/CHAT] Error name:', error?.name);
+    console.error('[API/CHAT] Error message:', error?.message);
+    console.error('[API/CHAT] Error stack:', error?.stack);
+    console.error('[API/CHAT] Full error object:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
     
-    // Return a user-friendly error message
-    return res.status(500).json({ 
-      error: error.message || 'An error occurred while processing your message',
-      message: "I'm sorry, I encountered an error. Please try again.",
-      details: process.env.NODE_ENV === 'development' ? {
-        stack: error.stack,
-        name: error.name,
-        message: error.message
-      } : undefined
+    // Ensure we always return a response
+    try {
+      return res.status(500).json({ 
+        error: error?.message || 'An error occurred while processing your message',
+        message: "I'm sorry, I encountered an error. Please try again.",
+        details: process.env.NODE_ENV === 'development' ? {
+          stack: error?.stack,
+          name: error?.name,
+          message: error?.message
+        } : undefined
+      });
+    } catch (responseError) {
+      // If we can't even send a response, log it
+      console.error('[API/CHAT] Failed to send error response:', responseError);
+      // Try to send a basic response
+      if (!res.headersSent) {
+        res.status(500).end('Internal server error');
+      }
+    }
+  }
+}
+
+// Wrap the entire handler export in a try-catch to catch module-level errors
+try {
+  // Handler is already exported above
+} catch (moduleError) {
+  console.error('[API/CHAT] Module-level error:', moduleError);
+  // Export a fallback handler
+  export default async function fallbackHandler(req, res) {
+    console.error('[API/CHAT] Using fallback handler due to module error');
+    return res.status(500).json({
+      error: 'Module initialization failed',
+      message: "I'm sorry, the chatbot service encountered an initialization error."
     });
   }
 }
