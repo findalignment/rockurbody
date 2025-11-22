@@ -335,7 +335,7 @@ function Packages() {
                   </ul>
                   
                   <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
-                    Learn More & Pricing →
+                    Learn More →
                   </div>
                 </Link>
 
@@ -362,7 +362,7 @@ function Packages() {
                   </ul>
                   
                   <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
-                    Learn More & Pricing →
+                    Learn More →
                   </div>
                 </Link>
               </div>
@@ -395,7 +395,7 @@ function Packages() {
                   </ul>
                   
                   <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
-                    Learn More & Pricing →
+                    Learn More →
                   </div>
                 </Link>
 
@@ -422,7 +422,7 @@ function Packages() {
                   </ul>
                   
                   <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
-                    Learn More & Pricing →
+                    Learn More →
                   </div>
                 </Link>
 
@@ -448,7 +448,7 @@ function Packages() {
                   </ul>
                   
                   <div className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold text-center group-hover:bg-accent transition">
-                    Learn More & Pricing →
+                    Learn More →
                   </div>
                 </Link>
               </div>
