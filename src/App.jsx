@@ -2,6 +2,7 @@ import { useEffect, Suspense, lazy, Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import PageTransition from './components/PageTransition';
 import RoutePrefetcher from './components/RoutePrefetcher';
+import { trackPageView } from './utils/analytics';
 
 // Error Boundary Component
 class ErrorBoundary extends Component {
@@ -238,6 +239,11 @@ function AppRoutes() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  // Track page views with Google Analytics
+  useEffect(() => {
+    trackPageView(location.pathname + location.search, document.title);
+  }, [location.pathname, location.search]);
 
   // Catch unhandled promise rejections (like lazy loading errors)
   useEffect(() => {

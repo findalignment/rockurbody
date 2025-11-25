@@ -25,6 +25,19 @@
     <link rel="dns-prefetch" href="https://api.stripe.com" />
     <link rel="dns-prefetch" href="https://js.stripe.com" />
     <link rel="dns-prefetch" href="https://cal.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ35KZ8B5Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LJ35KZ8B5Q', {
+        page_path: window.location.pathname,
+        send_page_view: false // We'll track page views manually for SPA
+      });
+    </script>
     
     <!-- Preload critical hero image for LCP optimization -->
     <link rel="preload" as="image" href="/hero-background.webp" type="image/webp" />
