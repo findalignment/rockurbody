@@ -111,7 +111,12 @@ const ScheduleSingleSI90 = lazy(() => import('./pages/ScheduleSingleSI90'));
 const ScheduleSingleSI120 = lazy(() => import('./pages/ScheduleSingleSI120'));
 const ScheduleTheReset = lazy(() => import('./pages/ScheduleTheReset'));
 const ScheduleHipFreedom = lazy(() => import('./pages/ScheduleHipFreedom'));
+const ScheduleHipFreedomBasic = lazy(() => import('./pages/ScheduleHipFreedomBasic'));
+const ScheduleHipFreedomExtended = lazy(() => import('./pages/ScheduleHipFreedomExtended'));
 const ScheduleFullRepatterning = lazy(() => import('./pages/ScheduleFullRepatterning'));
+const ScheduleFullRepatterningBasic = lazy(() => import('./pages/ScheduleFullRepatterningBasic'));
+const ScheduleFullRepatterningPremium = lazy(() => import('./pages/ScheduleFullRepatterningPremium'));
+const ScheduleFullRepatterningUltimate = lazy(() => import('./pages/ScheduleFullRepatterningUltimate'));
 const ScheduleCombo = lazy(() => import('./pages/ScheduleCombo'));
 const BlogIndex = lazy(() => import('./pages/blog/BlogIndex'));
 const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/IntegratingStructureAndMovement'));
@@ -385,7 +390,12 @@ function AppRoutes() {
         <Route path="/schedule/single-si-120" element={<ScheduleSingleSI120 />} />
         <Route path="/schedule/the-reset" element={<ScheduleTheReset />} />
         <Route path="/schedule/hip-freedom" element={<ScheduleHipFreedom />} />
+        <Route path="/schedule/hip-freedom-basic" element={<ScheduleHipFreedomBasic />} />
+        <Route path="/schedule/hip-freedom-extended" element={<ScheduleHipFreedomExtended />} />
         <Route path="/schedule/full-repatterning" element={<ScheduleFullRepatterning />} />
+        <Route path="/schedule/full-repatterning-basic" element={<ScheduleFullRepatterningBasic />} />
+        <Route path="/schedule/full-repatterning-premium" element={<ScheduleFullRepatterningPremium />} />
+        <Route path="/schedule/full-repatterning-ultimate" element={<ScheduleFullRepatterningUltimate />} />
         <Route path="/schedule/combo" element={<ScheduleCombo />} />
         
         {/* Blog Routes - Not in navigation menu */}

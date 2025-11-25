@@ -102,6 +102,7 @@ function BookComboPrograms() {
                   description={packageConfigs['The Reset'].name}
                   packageType={packageConfigs['The Reset'].name}
                   totalSessions={6}
+                  successUrl="https://rockurbody.com/schedule/the-reset"
                   className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Purchase
@@ -138,6 +139,7 @@ function BookComboPrograms() {
                   description={packageConfigs['Hip Freedom - Basic'].name}
                   packageType={packageConfigs['Hip Freedom - Basic'].name}
                   totalSessions={8}
+                  successUrl="https://rockurbody.com/schedule/hip-freedom-basic"
                   className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Purchase
@@ -168,6 +170,7 @@ function BookComboPrograms() {
                   description={packageConfigs['Hip Freedom - Extended'].name}
                   packageType={packageConfigs['Hip Freedom - Extended'].name}
                   totalSessions={12}
+                  successUrl="https://rockurbody.com/schedule/hip-freedom-extended"
                   className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Purchase
@@ -204,6 +207,7 @@ function BookComboPrograms() {
                   description={packageConfigs['Full Repatterning - Basic'].name}
                   packageType={packageConfigs['Full Repatterning - Basic'].name}
                   totalSessions={24}
+                  successUrl="https://rockurbody.com/schedule/full-repatterning-basic"
                   className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Purchase
@@ -234,6 +238,7 @@ function BookComboPrograms() {
                   description={packageConfigs['Full Repatterning - Premium'].name}
                   packageType={packageConfigs['Full Repatterning - Premium'].name}
                   totalSessions={36}
+                  successUrl="https://rockurbody.com/schedule/full-repatterning-premium"
                   className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Purchase
@@ -263,6 +268,7 @@ function BookComboPrograms() {
                   description={packageConfigs['Full Repatterning - Ultimate'].name}
                   packageType={packageConfigs['Full Repatterning - Ultimate'].name}
                   totalSessions={48}
+                  successUrl="https://rockurbody.com/schedule/full-repatterning-ultimate"
                   className="w-full bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors border border-black"
                 >
                   Purchase
