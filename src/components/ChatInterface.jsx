@@ -87,7 +87,9 @@ export default function ChatInterface() {
           onKeyPress={(e) => e.key === 'Enter' && !loading && sendMessage()}
           placeholder="Ask about booking a session..."
           disabled={loading}
-          className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
+          aria-label="Chat message input"
+          className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100 min-h-[44px]"
+          style={{ fontSize: '16px' }} // Prevent iOS zoom on focus
         />
         <button 
           onClick={sendMessage} 

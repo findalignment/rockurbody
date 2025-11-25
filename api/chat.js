@@ -10,6 +10,7 @@
  */
 
 import OpenAI from 'openai';
+import { rateLimitMiddleware } from './rate-limit.js';
 
 // Booking function definitions for OpenAI
 // These are optional - chat will work without them if Cal.com integration fails
@@ -142,6 +143,18 @@ export default async function handler(req, res) {
     if (req.method !== 'POST') {
       console.log('[API/CHAT] Invalid method:', req.method);
       return res.status(405).json({ error: 'Method not allowed' });
+    }
+
+    // Rate limiting: 20 requests per minute per IP
+    const rateLimitResult = rateLimitMiddleware(req, res, {
+      maxRequests: 20,
+      windowMs: 60000, // 1 minute
+      message: "You're sending messages too quickly. Please slow down and try again in a moment."
+    });
+    
+    if (rateLimitResult) {
+      // Rate limit exceeded, response already sent
+      return;
     }
 
     // Parse request body if it's a string (Vercel sometimes sends string bodies)

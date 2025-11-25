@@ -46,7 +46,9 @@ function AnimatedInput({
         onChange={onChange}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        className={`w-full px-4 py-3 border-2 rounded-lg transition-all duration-300 ease-out focus:outline-none ${
+        inputMode={type === 'email' ? 'email' : type === 'tel' ? 'tel' : 'text'}
+        autoComplete={type === 'email' ? 'email' : type === 'tel' ? 'tel' : 'off'}
+        className={`w-full px-4 py-3 border-2 rounded-lg transition-all duration-300 ease-out focus:outline-none min-h-[44px] ${
           isFocused 
             ? 'border-accent shadow-md scale-[1.01]' 
             : 'border-neutralLight hover:border-neutralDark/30'
@@ -54,6 +56,7 @@ function AnimatedInput({
         style={{
           transitionTimingFunction: 'cubic-bezier(0.22, 1, 0.36, 1)',
           willChange: 'border-color, box-shadow, transform',
+          fontSize: '16px', // Prevent iOS zoom on focus
         }}
         {...props}
       />

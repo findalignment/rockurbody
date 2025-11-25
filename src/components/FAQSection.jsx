@@ -26,17 +26,22 @@ function FAQSection({ faqs, title = "Frequently Asked Questions" }) {
             >
               <button
                 onClick={() => setOpenFAQ(isOpen ? null : index)}
-                className="w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-accent/50"
+                className="w-full text-left p-6 flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-accent/50 min-h-[44px]"
                 aria-expanded={isOpen}
+                aria-controls={`faq-answer-${index}`}
+                aria-labelledby={`faq-question-${index}`}
               >
-                <h3 className="text-xl font-semibold text-primary pr-8">
+                <h3 id={`faq-question-${index}`} className="text-xl font-semibold text-primary pr-8">
                   {faq.question}
                 </h3>
-                <span className={`text-accent text-2xl font-bold transition-transform flex-shrink-0 ${isOpen ? 'rotate-45' : ''}`}>
+                <span className={`text-accent text-2xl font-bold transition-transform flex-shrink-0 ${isOpen ? 'rotate-45' : ''}`} aria-hidden="true">
                   +
                 </span>
               </button>
               <div
+                id={`faq-answer-${index}`}
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${
                   isOpen ? 'max-h-96' : 'max-h-0'
                 }`}

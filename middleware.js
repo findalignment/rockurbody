@@ -96,8 +96,10 @@ export default function middleware(request) {
   }
 
   // Allow US visitors to proceed
-  // Return undefined to continue to the route handler
-  return undefined;
+  // Return a new Response to continue (Vercel Edge Middleware format)
+  return new Response(null, {
+    status: 200,
+  });
 }
 
 // Configure which routes the middleware should run on

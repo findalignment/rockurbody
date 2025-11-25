@@ -71,10 +71,13 @@ function AnimatedInput({
       {/* Input Field */}
       <input
         type={type}
+        inputMode={type === 'email' ? 'email' : type === 'tel' ? 'tel' : type === 'number' ? 'numeric' : 'text'}
+        autoComplete={type === 'email' ? 'email' : type === 'tel' ? 'tel' : 'off'}
         className={`
           w-full px-4 py-3 rounded-xl border-2 
           transition-all duration-200
           focus:outline-none
+          min-h-[44px]
           ${error 
             ? 'border-red-500 focus:border-red-600 focus:ring-2 focus:ring-red-200' 
             : 'border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20'
@@ -84,7 +87,8 @@ function AnimatedInput({
         onFocus={handleFocus}
         onBlur={handleBlur}
         style={{
-          willChange: shouldReduceMotion ? 'auto' : 'border-color, box-shadow'
+          willChange: shouldReduceMotion ? 'auto' : 'border-color, box-shadow',
+          fontSize: '16px', // Prevent iOS zoom on focus
         }}
         {...props}
       />

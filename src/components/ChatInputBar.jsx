@@ -30,7 +30,9 @@ function ChatInputBar({ onSend, isLoading }) {
             onKeyPress={handleKeyPress}
             placeholder="What brings you here today?"
             disabled={isLoading}
-            className="flex-1 px-6 py-4 border-2 border-neutralDark/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent disabled:bg-neutralLight disabled:cursor-not-allowed text-base"
+            aria-label="Chat input"
+            className="flex-1 px-6 py-4 border-2 border-neutralDark/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent disabled:bg-neutralLight disabled:cursor-not-allowed text-base min-h-[52px]"
+            style={{ fontSize: '16px' }} // Prevent iOS zoom on focus
           />
           <Button 
             variant="accent" 

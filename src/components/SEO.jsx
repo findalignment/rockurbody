@@ -29,7 +29,7 @@ const SEO = ({
   // Site configuration
   const siteConfig = {
     siteName: 'Rock Your Body',
-    siteUrl: 'https://rockyourbody.com', // Update with your actual domain
+    siteUrl: 'https://rockurbody.com', // Correct domain
     defaultImage: '/og-image.jpg', // Update with your actual OG image
     twitterHandle: '@rockyourbody', // Update with your actual Twitter handle
     locale: 'en_US',

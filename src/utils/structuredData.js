@@ -10,11 +10,11 @@ export const getOrganizationSchema = () => ({
   '@type': 'HealthAndBeautyBusiness',
   name: 'Rock Your Body',
   description: 'Movement education and structural integration services in Santa Cruz, CA',
-  url: 'https://rockyourbody.com',
-  logo: 'https://rockyourbody.com/logo.png',
-  image: 'https://rockyourbody.com/og-image.jpg',
+  url: 'https://rockurbody.com',
+  logo: 'https://rockurbody.com/logo.png',
+  image: 'https://rockurbody.com/og-image.jpg',
   telephone: '+1-831-216-6410', // Add your phone number
-  email: 'rock@rockyourbody.com', // Add your email
+  email: 'rock@rockurbody.com', // Add your email
   address: {
     '@type': 'PostalAddress',
     streetAddress: '311 Soquel Ave',
@@ -220,7 +220,7 @@ export const getBreadcrumbSchema = (breadcrumbs) => ({
     '@type': 'ListItem',
     position: index + 1,
     name: crumb.name,
-    item: `https://rockyourbody.com${crumb.url || crumb.path}`,
+    item: `https://rockurbody.com${crumb.url || crumb.path}`,
   })),
 });
 
@@ -228,11 +228,11 @@ export const getBreadcrumbSchema = (breadcrumbs) => ({
 export const getLocalBusinessSchema = () => ({
   '@context': 'https://schema.org',
   '@type': ['HealthAndBeautyBusiness', 'LocalBusiness', 'FitnessCenter', 'MedicalBusiness'],
-  '@id': 'https://rockyourbody.com/#organization',
+  '@id': 'https://rockurbody.com/#organization',
   name: 'Rock Your Body',
   alternateName: 'Rock Your Body Movement & Alignment',
   description: 'Mobile personal training and structural integration serving Santa Cruz, Monterey, and San Francisco Bay Area. Expert movement education, bodywork, and corrective exercise in your home or location of choice.',
-  url: 'https://rockyourbody.com',
+  url: 'https://rockurbody.com',
   logo: {
     '@type': 'ImageObject',
     url: 'https://rockyourbody.com/logo.png',
@@ -246,7 +246,7 @@ export const getLocalBusinessSchema = () => ({
     height: 630,
   },
   telephone: '+1-XXX-XXX-XXXX',
-  email: 'rock@rockyourbody.com',
+  email: 'rock@rockurbody.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '311 Soquel Ave',

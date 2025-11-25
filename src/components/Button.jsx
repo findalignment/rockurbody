@@ -68,6 +68,7 @@ function Button({
       type={type}
       onClick={onClick}
       disabled={disabled}
+      aria-disabled={disabled}
       className={buttonClasses}
       {...props}
     >

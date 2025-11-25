@@ -12,6 +12,7 @@ import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
 import { handleChatbotRequest, retryChatbotRequest, startHealthMonitoring } from '../utils/chatbotReliability';
 import logger from '../utils/logger';
+import { getLocalBusinessSchema } from '../utils/structuredData';
 
 function LandingPage() {
   const [input, setInput] = useState('');
@@ -323,9 +324,10 @@ function LandingPage() {
   return (
     <>
     <SEO
-      title="Structural Integration Santa Cruz | Rock Ur Body - Functional Fitness & Movement Education"
-      description="We restore alignment, strength and balance through structural integration and functional fitness in Santa Cruz. Expert fascia work, posture correction, and personalized movement coaching. Mobile service available throughout Bay Area."
+      title="Movement Education & Structural Integration in Santa Cruz, CA"
+      description="Expert movement education and structural integration in Santa Cruz, CA. Specializing in pain relief, posture correction, and performance enhancement through hands-on fascia work and personalized movement coaching."
       keywords="structural integration Santa Cruz, Rolfing Santa Cruz, functional fitness Santa Cruz, movement education, fascia therapy, bodywork Santa Cruz, mobile personal training, posture correction, pain relief Santa Cruz, movement specialist Bay Area, structural integrator, functional movement coach"
+      structuredData={getLocalBusinessSchema()}
       url="/"
     />
     <Hero>
@@ -448,18 +450,20 @@ function LandingPage() {
                           href="/consult"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="px-4 py-2 bg-primary text-white text-sm rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center justify-center gap-2"
+                          aria-label="Schedule a free consultation"
+                          className="px-4 py-2 bg-primary text-white text-sm rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]"
                         >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                           </svg>
                           <span>Schedule Free Consultation</span>
                         </a>
                         <a
                           href="mailto:rock@rockurbody.com"
-                          className="px-4 py-2 bg-secondary text-white text-sm rounded-lg font-semibold hover:bg-secondary/90 transition-all duration-200 flex items-center justify-center gap-2"
+                          aria-label="Email Rock Hudson at rock@rockurbody.com"
+                          className="px-4 py-2 bg-secondary text-white text-sm rounded-lg font-semibold hover:bg-secondary/90 transition-all duration-200 flex items-center justify-center gap-2 min-h-[44px]"
                         >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                           </svg>
                           <span>Email Rock</span>
@@ -470,10 +474,11 @@ function LandingPage() {
                     {message.role === 'assistant' && message.suggestedPage && !message.isLimit && (
                       <button
                         onClick={() => handleNavigateToPage(message.suggestedPage)}
-                        className="mt-2 ml-2 px-4 py-2 bg-accent/90 hover:bg-accent text-white text-sm rounded-lg font-semibold transition-all duration-200 flex items-center gap-2"
+                        aria-label={`Navigate to ${getPageName(message.suggestedPage)} page`}
+                        className="mt-2 ml-2 px-4 py-2 bg-accent/90 hover:bg-accent text-white text-sm rounded-lg font-semibold transition-all duration-200 flex items-center gap-2 min-h-[44px]"
                       >
                         <span>View {getPageName(message.suggestedPage)}</span>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </button>
@@ -488,9 +493,10 @@ function LandingPage() {
                             <button
                               key={index}
                               onClick={() => handleSuggestionClick(suggestion)}
-                              className="px-3 py-1.5 bg-white/20 hover:bg-white/30 text-white text-xs rounded-lg transition-all duration-200 flex items-center gap-1.5 backdrop-blur-sm border border-white/20"
+                              aria-label={`Quick question: ${suggestion.text}`}
+                              className="px-3 py-1.5 bg-white/20 hover:bg-white/30 text-white text-xs rounded-lg transition-all duration-200 flex items-center gap-1.5 backdrop-blur-sm border border-white/20 min-h-[44px]"
                             >
-                              <span>{suggestion.icon}</span>
+                              <span aria-hidden="true">{suggestion.icon}</span>
                               <span>{suggestion.text}</span>
                             </button>
                           ))}
@@ -541,12 +547,16 @@ function LandingPage() {
                   onKeyPress={handleKeyPress}
                   placeholder={questionCount >= MAX_QUESTIONS ? "Question limit reached" : "How can I help you?"}
                   disabled={isLoading || questionCount >= MAX_QUESTIONS}
-                  className="flex-1 px-4 py-3 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-accent text-neutralDark placeholder:text-neutralDark/50 disabled:bg-neutralLight disabled:cursor-not-allowed text-sm md:text-base"
+                  aria-label="Chat message input"
+                  className="flex-1 px-4 py-3 bg-white rounded-xl focus:outline-none focus:ring-2 focus:ring-accent text-neutralDark placeholder:text-neutralDark/50 disabled:bg-neutralLight disabled:cursor-not-allowed text-sm md:text-base min-h-[44px]"
+                  style={{ fontSize: '16px' }} // Prevent iOS zoom on focus
                 />
                 <button 
                   type="submit"
                   disabled={isLoading || !input.trim() || questionCount >= MAX_QUESTIONS}
-                  className="px-5 py-3 bg-accent text-white rounded-xl font-semibold hover:bg-accent/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 whitespace-nowrap text-sm md:text-base"
+                  aria-label={isLoading ? 'Sending message' : 'Send message'}
+                  aria-busy={isLoading}
+                  className="px-5 py-3 bg-accent text-white rounded-xl font-semibold hover:bg-accent/90 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-95 whitespace-nowrap text-sm md:text-base min-h-[44px]"
                 >
                   {isLoading ? '...' : 'Send'}
                 </button>
