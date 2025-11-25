@@ -23,6 +23,16 @@ const TIMEZONE = "America/Los_Angeles";
  */
 export async function checkAvailability(startTime, endTime, eventTypeId = DEFAULT_EVENT_TYPE_ID) {
   try {
+    // Check if Cal.com API key is configured
+    if (!CAL_API_KEY) {
+      console.warn('[BOOKING] CAL_API_KEY not configured, returning fallback response');
+      return {
+        available: true,
+        slots: {},
+        message: "Cal.com integration is not configured. Please contact rock@rockurbody.com directly to check availability."
+      };
+    }
+
     const params = new URLSearchParams({
       apiKey: CAL_API_KEY,
       eventTypeId: eventTypeId,
@@ -37,17 +47,30 @@ export async function checkAvailability(startTime, endTime, eventTypeId = DEFAUL
 
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(`Cal.com API error: ${response.status} - ${errorText}`);
+      console.error('[BOOKING] Cal.com API error:', response.status, errorText);
+      // Return graceful error instead of throwing
+      return {
+        available: false,
+        slots: {},
+        error: `Unable to check availability at this time. Please contact rock@rockurbody.com or visit https://rockurbody.com/book to schedule directly.`,
+        apiError: `Cal.com API error: ${response.status}`
+      };
     }
 
     const data = await response.json();
     return {
       available: data.slots && Object.keys(data.slots).length > 0,
-      slots: data.slots
+      slots: data.slots || {}
     };
   } catch (error) {
-    console.error('Error checking availability:', error);
-    return { error: error.message };
+    console.error('[BOOKING] Error checking availability:', error);
+    // Return graceful error instead of throwing
+    return {
+      available: false,
+      slots: {},
+      error: `Unable to check availability at this time. Please contact rock@rockurbody.com or visit https://rockurbody.com/book to schedule directly.`,
+      apiError: error.message
+    };
   }
 }
 
@@ -57,6 +80,16 @@ export async function checkAvailability(startTime, endTime, eventTypeId = DEFAUL
  */
 export async function bookAppointment(name, email, startTime, eventTypeId = DEFAULT_EVENT_TYPE_ID) {
   try {
+    // Check if Cal.com API key is configured
+    if (!CAL_API_KEY) {
+      console.warn('[BOOKING] CAL_API_KEY not configured, returning fallback response');
+      return {
+        success: false,
+        error: "Cal.com integration is not configured. Please visit https://rockurbody.com/book to schedule directly, or contact rock@rockurbody.com for assistance.",
+        bookingLink: "https://rockurbody.com/book"
+      };
+    }
+
     const payload = {
       eventTypeId: eventTypeId,
       start: startTime,
@@ -83,7 +116,14 @@ export async function bookAppointment(name, email, startTime, eventTypeId = DEFA
 
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
-      throw new Error(`Booking failed: ${JSON.stringify(errorData)}`);
+      console.error('[BOOKING] Cal.com booking API error:', response.status, errorData);
+      // Return graceful error instead of throwing
+      return {
+        success: false,
+        error: `Unable to complete booking at this time. Please visit https://rockurbody.com/book to schedule directly, or contact rock@rockurbody.com for assistance.`,
+        apiError: `Cal.com API error: ${response.status}`,
+        bookingLink: "https://rockurbody.com/book"
+      };
     }
 
     const booking = await response.json();
@@ -93,8 +133,14 @@ export async function bookAppointment(name, email, startTime, eventTypeId = DEFA
       bookingUid: booking.uid
     };
   } catch (error) {
-    console.error('Error booking appointment:', error);
-    return { error: error.message };
+    console.error('[BOOKING] Error booking appointment:', error);
+    // Return graceful error instead of throwing
+    return {
+      success: false,
+      error: `Unable to complete booking at this time. Please visit https://rockurbody.com/book to schedule directly, or contact rock@rockurbody.com for assistance.`,
+      apiError: error.message,
+      bookingLink: "https://rockurbody.com/book"
+    };
   }
 }
 

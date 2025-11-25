@@ -12,6 +12,7 @@
 import OpenAI from 'openai';
 
 // Booking function definitions for OpenAI
+// These are optional - chat will work without them if Cal.com integration fails
 const bookingFunctions = [
   {
     name: "check_availability",
@@ -54,6 +55,21 @@ const bookingFunctions = [
     }
   }
 ];
+
+// Check if booking module can be loaded (for graceful degradation)
+let bookingModuleAvailable = null;
+async function checkBookingModuleAvailability() {
+  if (bookingModuleAvailable === null) {
+    try {
+      await import('./booking.js');
+      bookingModuleAvailable = true;
+    } catch (e) {
+      console.warn('[API/CHAT] Booking module not available, chat will work without booking functions');
+      bookingModuleAvailable = false;
+    }
+  }
+  return bookingModuleAvailable;
+}
 
 // Initialize OpenAI client inside handler to ensure environment variables are loaded
 // Note: Vercel serverless functions don't expose VITE_ prefixed vars at runtime
@@ -145,11 +161,12 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Message is required' });
     }
 
+    // Check if booking is available for system message
+    const bookingAvailable = await checkBookingModuleAvailability();
+    
     // Build messages array with history
-    const messages = [
-      {
-        role: "system",
-        content: `You are a helpful assistant for Rock Your Body, a movement education and structural integration practice in Santa Cruz, California run by Rock Hudson.
+    const systemMessage = bookingAvailable 
+      ? `You are a helpful assistant for Rock Your Body, a movement education and structural integration practice in Santa Cruz, California run by Rock Hudson.
 
 BOOKING FUNCTIONALITY:
 You have access to two functions that allow you to check availability and book appointments:
@@ -164,6 +181,17 @@ When users ask about booking or availability:
 - Always confirm the booking details before executing the function
 
 Be helpful, direct, and conversational. Help people understand if this work is right for them.`
+      : `You are a helpful assistant for Rock Your Body, a movement education and structural integration practice in Santa Cruz, California run by Rock Hudson.
+
+BOOKING:
+When users ask about booking or scheduling, direct them to visit https://rockurbody.com/book to schedule directly, or they can contact rock@rockurbody.com for assistance.
+
+Be helpful, direct, and conversational. Help people understand if this work is right for them.`;
+
+    const messages = [
+      {
+        role: "system",
+        content: systemMessage
       },
       ...history,
       {
@@ -172,18 +200,24 @@ Be helpful, direct, and conversational. Help people understand if this work is r
       }
     ];
 
-    // Initial call to OpenAI with function definitions
+    // Initial call to OpenAI with function definitions (only if booking is available)
     // Using functions format (more widely supported than tools)
     let response;
     try {
-      response = await openai.chat.completions.create({
+      const requestOptions = {
         model: "gpt-4o-mini",
         messages: messages,
-        functions: bookingFunctions,
-        function_call: "auto",
         max_tokens: 250,
         temperature: 0.7
-      });
+      };
+      
+      // Only include functions if booking module is available
+      if (bookingAvailable) {
+        requestOptions.functions = bookingFunctions;
+        requestOptions.function_call = "auto";
+      }
+      
+      response = await openai.chat.completions.create(requestOptions);
     } catch (openaiError) {
       console.error('OpenAI API call failed:', openaiError);
       console.error('Error details:', {
@@ -238,34 +272,49 @@ Be helpful, direct, and conversational. Help people understand if this work is r
       // Execute the requested function with error handling
       try {
         // Dynamically import booking functions to avoid module load failures
-        const bookingModule = await import('./booking.js');
-        const { checkAvailability, bookAppointment } = bookingModule;
-
-        if (functionName === "check_availability") {
-          functionResponse = await checkAvailability(
-            functionArgs.start_time,
-            functionArgs.end_time
-          );
-        } else if (functionName === "book_appointment") {
-          functionResponse = await bookAppointment(
-            functionArgs.name,
-            functionArgs.email,
-            functionArgs.start_time
-          );
-        } else {
+        let bookingModule;
+        try {
+          bookingModule = await import('./booking.js');
+        } catch (importError) {
+          console.error('[API/CHAT] Failed to import booking module:', importError);
+          // If booking module fails to load, provide fallback response
           functionResponse = {
-            error: `Unknown function: ${functionName}`
+            error: "Booking functionality is temporarily unavailable. Please visit https://rockurbody.com/book to schedule directly, or contact rock@rockurbody.com for assistance.",
+            bookingLink: "https://rockurbody.com/book"
           };
         }
+
+        if (bookingModule) {
+          const { checkAvailability, bookAppointment } = bookingModule;
+
+          if (functionName === "check_availability") {
+            functionResponse = await checkAvailability(
+              functionArgs.start_time,
+              functionArgs.end_time
+            );
+          } else if (functionName === "book_appointment") {
+            functionResponse = await bookAppointment(
+              functionArgs.name,
+              functionArgs.email,
+              functionArgs.start_time
+            );
+          } else {
+            functionResponse = {
+              error: `Unknown function: ${functionName}`
+            };
+          }
+        }
       } catch (functionError) {
-        console.error(`Error executing function ${functionName}:`, functionError);
-        console.error('Function error details:', {
+        console.error(`[API/CHAT] Error executing function ${functionName}:`, functionError);
+        console.error('[API/CHAT] Function error details:', {
           message: functionError.message,
           stack: functionError.stack,
           name: functionError.name
         });
+        // Provide graceful fallback instead of breaking the chat
         functionResponse = {
-          error: `Failed to execute ${functionName}: ${functionError.message}`,
+          error: `I'm having trouble with the booking system right now. Please visit https://rockurbody.com/book to schedule directly, or contact rock@rockurbody.com for assistance.`,
+          bookingLink: "https://rockurbody.com/book",
           success: false
         };
       }
