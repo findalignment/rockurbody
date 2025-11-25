@@ -53,6 +53,7 @@ function TMJRelief() {
         imageSrc="/approach-hero.jpg"
         title="TMJ & Jaw Pain Relief"
         subtitle="Fix jaw pain, reduce tension, stop the clicking"
+        alt="TMJ and jaw pain relief treatment using structural integration to address tension and dysfunction in Santa Cruz"
       />
 
 

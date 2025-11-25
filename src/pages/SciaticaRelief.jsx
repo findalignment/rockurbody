@@ -53,6 +53,7 @@ function SciaticaRelief() {
         imageSrc="/approach-hero.jpg"
         title="Sciatica Relief"
         subtitle="Stop the radiating pain. Fix what's causing it."
+        alt="Sciatica relief treatment using structural integration to address radiating leg pain and numbness in Santa Cruz"
       />
 
 

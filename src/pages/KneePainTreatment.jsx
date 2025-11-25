@@ -53,6 +53,7 @@ function KneePainTreatment() {
         imageSrc="/training-hero.jpg"
         title="Knee Pain Treatment"
         subtitle="Fix knee pain by addressing what's above and below it"
+        alt="Knee pain treatment using structural integration to address runner's knee and joint pain in Santa Cruz"
       />
 
 

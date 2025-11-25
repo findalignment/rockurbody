@@ -25,6 +25,7 @@ function FrozenShoulder() {
         imageSrc="/training-hero.jpg"
         title="Frozen Shoulder Treatment"
         subtitle="Getting your shoulder unstuck takes patience and the right approach"
+        alt="Frozen shoulder treatment using structural integration to restore shoulder mobility and function in Santa Cruz"
       />
 
 
