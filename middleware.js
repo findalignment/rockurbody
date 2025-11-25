@@ -11,6 +11,26 @@
  */
 
 export default function middleware(request) {
+  const url = new URL(request.url);
+  const pathname = url.pathname;
+  
+  // Skip geo-blocking for excluded paths
+  const excludedPaths = [
+    '/api',
+    '/_next',
+    '/favicon.ico',
+    '/robots.txt',
+    '/sitemap.xml',
+  ];
+  
+  const isExcluded = excludedPaths.some(path => pathname.startsWith(path)) ||
+    /\.(jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|eot|js|css)$/i.test(pathname);
+  
+  if (isExcluded) {
+    // Allow excluded paths to proceed without geo-check
+    return undefined;
+  }
+  
   // Get the country code from Vercel's geolocation
   // Try multiple methods to get country code
   const country = 
@@ -96,21 +116,16 @@ export default function middleware(request) {
   }
 
   // Allow US visitors to proceed
-  // Return a new Response to continue (Vercel Edge Middleware format)
-  return new Response(null, {
-    status: 200,
-  });
+  // Return undefined to allow the request to proceed (Vercel Edge Middleware format)
+  return undefined;
 }
 
 // Configure which routes the middleware should run on
+// Exclusions are handled in the middleware function above
 export const config = {
   matcher: [
-    /*
-     * Match all request paths except:
-     * - api routes (these are handled separately)
-     * - static assets (images, fonts, etc.)
-     * - favicon.ico, robots.txt, sitemap.xml
-     */
-    '/(?!api|_next|favicon\\.ico|robots\\.txt|sitemap\\.xml|.*\\.(?:jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|eot|js|css)).*',
+    // Match all paths except those excluded in the middleware function
+    // Using a simple pattern without regex special characters
+    '/:path*',
   ],
 };
