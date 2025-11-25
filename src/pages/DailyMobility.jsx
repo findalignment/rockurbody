@@ -44,6 +44,7 @@ function DailyMobility() {
         imageSrc="/daily-mobility-hero.jpg"
         title="The 5-Minute Mobility Routine"
         subtitle="Movement hygiene for your body"
+        alt="Daily mobility routine demonstration showing simple movement exercises for joint health and flexibility"
       />
 
       <div className="bg-white py-20 px-6">

@@ -5,6 +5,7 @@
  * @param {string} imageSrc - Path to hero image (e.g., "/about-hero.jpg")
  * @param {string} title - Page title to display over image
  * @param {string} subtitle - Optional subtitle
+ * @param {string} alt - SEO-friendly alt text for the image (defaults to title if not provided)
  * @param {string} overlayOpacity - Opacity of dark overlay (0-100, default 40)
  * @param {boolean} priority - If true, loads image eagerly (for above-fold images)
  * 
@@ -14,11 +15,15 @@ function PageHero({
   imageSrc, 
   title, 
   subtitle,
+  alt,
   overlayOpacity = 40,
   priority = false
 }) {
   // Convert image path to WebP (e.g., "/about-hero.jpg" -> "/about-hero.webp")
   const webpSrc = imageSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+  
+  // Use provided alt text or fall back to title
+  const altText = alt || title;
   
   return (
     <div className="relative pt-20 -mx-[100vw] left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
@@ -29,7 +34,7 @@ function PageHero({
           <source srcSet={webpSrc} type="image/webp" />
           <img
             src={imageSrc}
-            alt={title}
+            alt={altText}
             className="absolute inset-0 w-full h-full object-cover object-top"
             loading={priority ? 'eager' : 'lazy'}
             fetchpriority={priority ? 'high' : 'auto'}

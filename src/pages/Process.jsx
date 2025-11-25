@@ -78,6 +78,7 @@ function Process() {
         imageSrc="/process.hero.jpg"
         title="The Process"
         subtitle="How we work together"
+        alt="The structural integration and movement education process showing assessment, hands-on work, and integration in Santa Cruz"
       />
 
       {/* SEO.optimized intro */}

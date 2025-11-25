@@ -92,6 +92,7 @@ function SmartStarts() {
         imageSrc="/smart-starts-hero.jpg"
         title="Smart Starts"
         subtitle="The right beginning for your body"
+        alt="Smart Starts program introduction for structural integration and movement education in Santa Cruz"
       />
 
       {/* Intro */}

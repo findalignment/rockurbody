@@ -102,6 +102,7 @@ function Packages() {
         imageSrc="/packages-hero.jpg"
         title="Programs Designed Around You"
         subtitle="Move Better. Feel Stronger. Stay Adventurous."
+        alt="Personalized structural integration and movement education programs in Santa Cruz, California"
       />
       <div className="pt-16 pb-24 px-6">
         <div className="max-w-6xl mx-auto">

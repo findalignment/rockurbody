@@ -206,6 +206,7 @@ function Pricing() {
     <PageLayout>
       <PageHero 
         imageSrc="/pricing-hero.jpg"
+        alt="Pricing for structural integration and movement education services in Santa Cruz, California"
         title="Pricing"
         subtitle="Clear, transparent pricing. Choose what works for you."
       />

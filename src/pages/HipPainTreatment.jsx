@@ -53,6 +53,7 @@ function HipPainTreatment() {
         imageSrc="/hip-series-hero.jpg"
         title="Hip Pain Treatment"
         subtitle="Restore hip mobility, eliminate pain, move freely"
+        alt="Hip pain treatment using structural integration to restore hip mobility and eliminate pain in Santa Cruz"
       />
 
 

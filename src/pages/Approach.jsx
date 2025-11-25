@@ -44,6 +44,7 @@ function Approach() {
         imageSrc="/approach-hero.jpg"
         title="My Approach"
         subtitle="How I think about bodies, movement, and lasting change"
+        alt="Rock Hudson's approach to structural integration and movement education in Santa Cruz, California"
       />
 
       {/* Intro */}

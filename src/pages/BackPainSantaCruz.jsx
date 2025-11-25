@@ -53,6 +53,7 @@ function BackPainSantaCruz() {
         imageSrc="/back-pain-hero.jpg"
         title="Back Pain Relief in Santa Cruz"
         subtitle="Address the root cause, not just the symptoms"
+        alt="Structural integration treatment for back pain relief in Santa Cruz, addressing fascial restrictions and spinal alignment"
       />
 
 

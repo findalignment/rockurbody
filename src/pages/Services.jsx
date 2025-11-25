@@ -32,6 +32,7 @@ function Services() {
         imageSrc="/services-hero.jpg"
         title="Structural Integration & Movement Education Services"
         subtitle="Expert hands-on fascia work and functional movement coaching in Santa Cruz"
+        alt="Structural integration session showing hands-on fascia work and movement education in Santa Cruz"
       />
       {/* Add soft wave divider */}
       <div className="relative bg-white">

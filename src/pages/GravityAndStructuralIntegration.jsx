@@ -51,6 +51,7 @@ function GravityAndStructuralIntegration() {
         imageSrc="/gravity-structural-integration-hero.jpg"
         title="Improving Your Relationship With Gravity"
         subtitle="What if instead of fighting gravity, you could work with it?"
+        alt="Structural integration work showing balanced posture and alignment, working with gravity instead of against it"
       />
 
 

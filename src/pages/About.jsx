@@ -28,6 +28,7 @@ function About() {
         imageSrc="/about-hero.jpg"
         title="About Rock Your Body"
         subtitle="Rock Hudson, Structural Integrator & Movement Specialist"
+        alt="Rock Hudson providing structural integration bodywork to a client in Santa Cruz, California"
       />
       <div className="pt-16 pb-24 px-6">
         <div className="max-w-4xl mx-auto">

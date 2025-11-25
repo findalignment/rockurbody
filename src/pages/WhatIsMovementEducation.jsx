@@ -24,6 +24,7 @@ function WhatIsMovementEducation() {
         imageSrc="/services-hero.jpg"
         title="What is Movement Education?"
         subtitle="Learning to move the way your body was designed to"
+        alt="Movement education session teaching functional movement patterns and movement intelligence in Santa Cruz"
       />
 
 

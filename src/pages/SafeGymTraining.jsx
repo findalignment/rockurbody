@@ -44,6 +44,7 @@ function SafeGymTraining() {
         imageSrc="/safe-gym-training-hero.jpg"
         title="How to Not Get Hurt in the Gym"
         subtitle="Because taking 6 weeks off for an injury is worse than missing a PR"
+        alt="Safe gym training demonstration showing proper exercise form and injury prevention techniques"
       />
 
       <div className="bg-white py-20 px-6">

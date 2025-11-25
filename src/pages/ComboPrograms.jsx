@@ -9,6 +9,7 @@ function ComboPrograms() {
         imageSrc="/services-hero.jpg"
         title="Combination Programs"
         subtitle="Structural Integration + Movement Education = Lasting Change"
+        alt="Combined structural integration and movement education program for comprehensive body transformation in Santa Cruz"
       />
 
       {/* Intro with CTA above fold */}

@@ -8,6 +8,7 @@ function TrainingLineage() {
         imageSrc="/training-hero.jpg"
         title="Training & Lineage"
         subtitle="Mentors who shaped my approach"
+        alt="Training and mentorship in structural integration and movement education"
       />
       <div className="pt-16 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
@@ -27,7 +28,7 @@ function TrainingLineage() {
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
                     src="/tom-myers.jpg" 
-                    alt="Tom Myers" 
+                    alt="Tom Myers, founder of Anatomy Trains Structural Integration and author of Anatomy Trains" 
                     className="w-full h-64 object-cover rounded-lg"
                     style={{ border: '2px solid black' }}
                   />
@@ -68,7 +69,7 @@ function TrainingLineage() {
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
                     src="/sharon-wheeler.jpg" 
-                    alt="Sharon Wheeler" 
+                    alt="Sharon Wheeler, structural integration master teacher with over 50 years of experience in advanced techniques" 
                     className="w-full h-64 object-cover rounded-lg"
                     style={{ border: '2px solid black' }}
                   />
@@ -110,7 +111,7 @@ function TrainingLineage() {
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
                     src="/til-luchau.jpg" 
-                    alt="Til Luchau" 
+                    alt="Til Luchau, author of Advanced Myofascial Techniques and structural integration educator" 
                     className="w-full h-64 object-cover rounded-lg"
                     style={{ border: '2px solid black' }}
                   />
@@ -151,7 +152,7 @@ function TrainingLineage() {
                 <div className="md:w-1/3 flex-shrink-0">
                   <img 
                     src="/wojtek-cackowski.jpg" 
-                    alt="Wojtek Cackowski" 
+                    alt="Wojtek Cackowski, physiotherapist and creator of Zoga movement system, Anatomy Trains instructor" 
                     className="w-full h-64 object-cover rounded-lg"
                     style={{ border: '2px solid black' }}
                   />

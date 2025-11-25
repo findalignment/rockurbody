@@ -1,7 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 
-function Hero({ children, backgroundImage = '/hero-astronaut.jpg', altText = 'Astronaut symbolizing freedom of movement – Rock Your Body Santa Cruz' }) {
+function Hero({ children, backgroundImage = '/hero-astronaut.jpg', altText = 'Structural integration and movement education services in Santa Cruz, California - Rock Your Body' }) {
   return (
     <div className="relative min-h-screen flex flex-col">
       <Header />

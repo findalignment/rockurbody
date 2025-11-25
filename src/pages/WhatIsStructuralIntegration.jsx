@@ -34,6 +34,7 @@ function WhatIsStructuralIntegration() {
         imageSrc="/services-hero.jpg"
         title="What is Structural Integration?"
         subtitle="Understanding the foundation of lasting change"
+        alt="Structural integration bodywork session showing systematic fascia work and body alignment in Santa Cruz"
       />
 
 

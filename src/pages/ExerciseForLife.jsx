@@ -44,6 +44,7 @@ function ExerciseForLife() {
         imageSrc="/exercise-for-life-hero.jpg"
         title="Exercise for Life's Challenges"
         subtitle="Because picking up your kid matters more than your bench press PR"
+        alt="Functional movement training for real-world activities and daily life challenges in Santa Cruz"
       />
 
       <div className="bg-white py-20 px-6">

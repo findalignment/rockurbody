@@ -9,6 +9,7 @@ function Contact() {
         imageSrc="/contact-hero.jpg"
         title="Get in Touch"
         subtitle="Located in Santa Cruz, CA"
+        alt="Contact Rock Your Body structural integration and movement education studio in Santa Cruz, California"
       />
       <div className="pt-16 pb-16 px-4">
         <div className="max-w-4xl mx-auto">

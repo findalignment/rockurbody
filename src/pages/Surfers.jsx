@@ -53,6 +53,7 @@ function Surfers() {
         imageSrc="/surfers-hero.jpg"
         title="For Surfers"
         subtitle="Stay in the water, surf longer, feel better"
+        alt="Surfer receiving structural integration treatment to improve shoulder mobility, hip flexibility, and surfing performance in Santa Cruz"
       />
 
 

@@ -8,6 +8,7 @@ function Credentials() {
         imageSrc="/credentials-hero.jpg"
         title="Credentials & Certifications"
         subtitle="Professional training and expertise"
+        alt="Rock Hudson's professional credentials and certifications in structural integration and movement education"
       />
     <div style={{ padding: '40px 20px 50px', maxWidth: '1000px', margin: '0 auto' }}>
 
