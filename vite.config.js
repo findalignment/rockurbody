@@ -103,8 +103,8 @@ export default defineConfig({
         },
       },
     },
-    // Increase chunk size warning limit
-    chunkSizeWarningLimit: 800,
+    // Increase chunk size warning limit (default is 500KB)
+    chunkSizeWarningLimit: 1000,
     // Additional optimizations
     target: 'esnext',
     sourcemap: false,

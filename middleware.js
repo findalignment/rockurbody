@@ -111,6 +111,6 @@ export const config = {
      * - static assets (images, fonts, etc.)
      * - favicon.ico, robots.txt, sitemap.xml
      */
-    '/((?!api|_next|favicon.ico|robots.txt|sitemap.xml|.*\\.(jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|eot|js|css)).*)',
+    '/(?!api|_next|favicon\\.ico|robots\\.txt|sitemap\\.xml|.*\\.(?:jpg|jpeg|png|gif|webp|svg|ico|woff|woff2|ttf|eot|js|css)).*',
   ],
 };
