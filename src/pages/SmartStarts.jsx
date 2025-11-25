@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
-import { Link } from 'react-router-dom';
 
 function SmartStarts() {
   const [selectedCard, setSelectedCard] = useState(null);
