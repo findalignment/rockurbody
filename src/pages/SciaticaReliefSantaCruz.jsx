@@ -24,6 +24,7 @@ function SciaticaReliefSantaCruz() {
         imageSrc="/hip-series-hero.jpg"
         title="Sciatica Relief"
         subtitle="Stop the shooting pain down your leg"
+        alt="Sciatica relief treatment using structural integration to address piriformis syndrome and nerve pain in Santa Cruz"
       />
 
 

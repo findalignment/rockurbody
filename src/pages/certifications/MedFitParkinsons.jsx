@@ -16,6 +16,7 @@ function MedFitParkinsons() {
         imageSrc="/training-hero.jpg"
         title="MedFit Parkinson's Disease Fitness Specialist"
         subtitle="Movement as medicine for Parkinson's Disease"
+        alt="MedFit Parkinson's Disease Fitness Specialist certification for specialized movement training for Parkinson's in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

@@ -23,6 +23,7 @@ function BookMovementEducation() {
         imageSrc="/services-hero.jpg"
         title="Book Movement Education"
         subtitle="One-on-one movement training"
+        alt="Book movement education sessions for one-on-one movement training and coaching in Santa Cruz"
       />
 
       <div className="bg-offWhite py-20 px-4">

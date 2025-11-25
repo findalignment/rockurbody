@@ -158,6 +158,7 @@ function FAQ() {
         imageSrc="/services-hero.jpg"
         title="Frequently Asked Questions"
         subtitle="Everything you need to know before you start"
+        alt="Frequently asked questions about structural integration and movement education services in Santa Cruz"
       />
 
       <div className="bg-white py-20 px-4">

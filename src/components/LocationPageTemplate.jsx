@@ -75,6 +75,7 @@ function LocationPageTemplate({
         imageSrc={heroImage}
         title={`Personal Training in ${city}`}
         subtitle={`Mobile Movement Education & Structural Integration • ${county}`}
+        alt={`Personal training and structural integration services in ${city}, ${county} - Mobile service available`}
       />
 
 

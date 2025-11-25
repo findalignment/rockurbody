@@ -16,6 +16,7 @@ function ACECorrectiveExercise() {
         imageSrc="/training-hero.jpg"
         title="ACE Corrective Exercise Specialist"
         subtitle="Addressing movement dysfunction before it becomes chronic pain"
+        alt="ACE Corrective Exercise Specialist certification for addressing movement dysfunction and muscle imbalances in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

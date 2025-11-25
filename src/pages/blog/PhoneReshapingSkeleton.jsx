@@ -17,6 +17,7 @@ function PhoneReshapingSkeleton() {
         imageSrc="/blog-hero.jpg"
         title="Your Phone is Reshaping Your Skeleton (And We Can Do Better)"
         subtitle="Technology is literally changing people's bodies. Here's how and what we can do about it."
+        alt="Blog article about how phones and technology reshape our bodies and fascial system"
       />
 
       <article className="max-w-4xl mx-auto px-6 py-16">

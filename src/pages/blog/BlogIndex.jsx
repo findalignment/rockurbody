@@ -44,6 +44,7 @@ function BlogIndex() {
         imageSrc="/blog-hero.jpg"
         title="Blog"
         subtitle="Insights on movement, structure, and wellness"
+        alt="Blog featuring articles about movement, structural integration, and wellness in Santa Cruz"
       />
       <div className="pt-16 pb-16 px-4">
         <div className="max-w-4xl mx-auto">

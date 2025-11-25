@@ -18,6 +18,7 @@ function BookStructuralIntegration() {
         imageSrc="/services-hero.jpg"
         title="Book Structural Integration"
         subtitle="Choose your session length or series"
+        alt="Book structural integration sessions - choose from single sessions or complete series in Santa Cruz"
       />
 
       <div className="bg-offWhite py-20 px-4">

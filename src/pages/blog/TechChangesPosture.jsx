@@ -17,6 +17,7 @@ function TechChangesPosture() {
         imageSrc="/blog-hero.jpg"
         title="When Tech Changes Our Posture: Understanding the Hidden Cost of Our Digital Lives"
         subtitle="The biomechanics, economics, and solutions for our screen-saturated world"
+        alt="Blog article about how technology affects posture and forward head posture from screen time"
       />
 
       <article className="max-w-4xl mx-auto px-6 py-16">

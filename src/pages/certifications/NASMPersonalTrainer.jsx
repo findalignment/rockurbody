@@ -16,6 +16,7 @@ function NASMPersonalTrainer() {
         imageSrc="/nasm-cpt-hero.jpg"
         title="NASM Certified Personal Trainer"
         subtitle="Evidence-based training backed by exercise science"
+        alt="NASM Certified Personal Trainer - evidence-based personal training certification in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

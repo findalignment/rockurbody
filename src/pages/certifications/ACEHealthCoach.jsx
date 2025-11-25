@@ -16,6 +16,7 @@ function ACEHealthCoach() {
         imageSrc="/training-hero.jpg"
         title="ACE Health Coach"
         subtitle="Behavior change and lifestyle transformation, not just workouts"
+        alt="ACE Health Coach certification for behavior change and sustainable lifestyle transformation in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

@@ -16,6 +16,7 @@ function AnatomyTrainsTeacher() {
         imageSrc="/training-hero.jpg"
         title="Anatomy Trains Teacher in Training"
         subtitle="Trained directly with Tom Myers, creator of the Anatomy Trains system"
+        alt="Anatomy Trains Teacher in Training - advanced training with Tom Myers in myofascial meridians and structural integration"
       />
 
       <div className="bg-white py-16 px-6">

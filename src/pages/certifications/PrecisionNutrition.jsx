@@ -16,6 +16,7 @@ function PrecisionNutrition() {
         imageSrc="/training-hero.jpg"
         title="Precision Nutrition Coach Level 2"
         subtitle="Evidence-based nutrition coaching, not dieting"
+        alt="Precision Nutrition Level 2 certification for evidence-based nutrition coaching and habit change in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

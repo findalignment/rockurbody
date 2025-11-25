@@ -16,6 +16,7 @@ function NASMCorrectiveExercise() {
         imageSrc="/training-hero.jpg"
         title="NASM Corrective Exercise Specialist"
         subtitle="Advanced training in identifying and addressing movement dysfunction"
+        alt="NASM Corrective Exercise Specialist certification for identifying and fixing movement dysfunction in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

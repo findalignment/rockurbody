@@ -16,6 +16,7 @@ function MovNat() {
         imageSrc="/training-hero.jpg"
         title="MovNat Level 2 Certified Trainer"
         subtitle="Natural movement for real-world strength and capability"
+        alt="MovNat Level 2 certification for natural movement training and practical fitness in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

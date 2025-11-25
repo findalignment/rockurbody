@@ -16,6 +16,7 @@ function MedFitRecovery() {
         imageSrc="/training-hero.jpg"
         title="MedFit Drug & Alcohol Recovery Fitness Specialist"
         subtitle="Movement as part of the recovery journey"
+        alt="MedFit Drug and Alcohol Recovery Fitness Specialist certification for fitness programs supporting addiction recovery in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

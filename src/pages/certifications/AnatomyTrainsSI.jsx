@@ -16,6 +16,7 @@ function AnatomyTrainsSI() {
         imageSrc="/atsi-certification-hero.jpg"
         title="Anatomy Trains Structural Integration"
         subtitle="The foundation of my structural bodywork practice"
+        alt="Anatomy Trains Structural Integration certification - ATSI certified practitioner in Santa Cruz"
       />
 
       <div className="bg-white py-16 px-6">

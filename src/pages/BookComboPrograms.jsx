@@ -66,6 +66,7 @@ function BookComboPrograms() {
         imageSrc="/packages-hero.jpg"
         title="Book Combination Programs"
         subtitle="Structural Integration + Movement Education"
+        alt="Book combination programs combining structural integration and movement education sessions in Santa Cruz"
       />
 
       <div className="bg-offWhite py-20 px-4">
