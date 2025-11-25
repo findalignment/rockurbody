@@ -122,6 +122,7 @@ function PainReliefHub() {
         imageSrc="/services-hero.jpg"
         title="Pain Relief Solutions"
         subtitle="Address the root cause, not just symptoms"
+        alt="Pain relief hub for comprehensive chronic pain treatment solutions in Santa Cruz"
       />
 
 

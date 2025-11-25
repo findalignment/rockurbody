@@ -25,6 +25,7 @@ function BreathingCore() {
         imageSrc="/training-hero.jpg"
         title="Breathing & Core Training"
         subtitle="Your diaphragm is your most important core muscle"
+        alt="Breathing and core training focusing on diaphragm function and functional core stability in Santa Cruz"
       />
 
 

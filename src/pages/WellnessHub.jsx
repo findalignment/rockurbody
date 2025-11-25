@@ -121,6 +121,7 @@ function WellnessHub() {
         imageSrc="/approach-hero.jpg"
         title="Wellness & Prevention"
         subtitle="Invest in lifelong vitality and resilience"
+        alt="Wellness and prevention hub for proactive health maintenance and active aging in Santa Cruz"
       />
 
 

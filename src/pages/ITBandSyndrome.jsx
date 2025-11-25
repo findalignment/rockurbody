@@ -25,6 +25,7 @@ function ITBandSyndrome() {
         imageSrc="/training-hero.jpg"
         title="IT Band Syndrome Treatment"
         subtitle="Stop foam rolling your IT band. It's not the problem."
+        alt="IT band syndrome treatment using structural integration to address lateral knee pain and running injuries in Santa Cruz"
       />
 
 

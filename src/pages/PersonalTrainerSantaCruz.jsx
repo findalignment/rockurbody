@@ -25,6 +25,7 @@ function PersonalTrainerSantaCruz() {
         imageSrc="/training-hero.jpg"
         title="Personal Training in Santa Cruz"
         subtitle="Movement that serves your life, not just the gym"
+        alt="Personal training and movement coaching focused on functional movement and real-world application in Santa Cruz"
       />
 
 

@@ -121,6 +121,7 @@ function SportsPerformanceHub() {
         imageSrc="/surfers-hero.jpg"
         title="Sports Performance"
         subtitle="Move better, perform better, stay healthy"
+        alt="Sports performance hub for athletic enhancement and injury prevention in Santa Cruz"
       />
 
 

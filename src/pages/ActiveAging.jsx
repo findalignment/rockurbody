@@ -25,6 +25,7 @@ function ActiveAging() {
         imageSrc="/approach-hero.jpg"
         title="Active Aging"
         subtitle="Stay strong, mobile, and independent at any age"
+        alt="Active aging program using structural integration and movement training to maintain mobility and independence for seniors in Santa Cruz"
       />
 
 

@@ -25,6 +25,7 @@ function MovementScreening() {
         imageSrc="/training-hero.jpg"
         title="Movement Assessment"
         subtitle="Understand how you move. Fix what's not working."
+        alt="Movement assessment and functional movement screening to identify imbalances and injury risk in Santa Cruz"
       />
 
 

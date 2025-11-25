@@ -126,6 +126,7 @@ function MovementTrainingHub() {
         imageSrc="/training-hero.jpg"
         title="Movement Training"
         subtitle="Move better, feel better, perform better"
+        alt="Movement training hub for functional movement education and movement quality improvement in Santa Cruz"
       />
 
 

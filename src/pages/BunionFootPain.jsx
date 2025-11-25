@@ -25,6 +25,7 @@ function BunionFootPain() {
         imageSrc="/training-hero.jpg"
         title="Bunion & Foot Pain Treatment"
         subtitle="Your feet are your foundation. Let's improve them."
+        alt="Bunion and foot pain treatment using structural integration to improve foot alignment and address chronic foot issues in Santa Cruz"
       />
 
 

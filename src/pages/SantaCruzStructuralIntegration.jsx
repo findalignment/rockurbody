@@ -25,6 +25,7 @@ function SantaCruzStructuralIntegration() {
         imageSrc="/services-hero.jpg"
         title="Structural Integration in Santa Cruz"
         subtitle="Expert bodywork that helps you move, feel, and live better"
+        alt="Structural integration and Rolfing bodywork services in Santa Cruz, California with certified practitioner Rock Hudson"
       />
 
 

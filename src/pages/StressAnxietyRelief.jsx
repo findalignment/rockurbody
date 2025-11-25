@@ -25,6 +25,7 @@ function StressAnxietyRelief() {
         imageSrc="/training-hero.jpg"
         title="Stress & Anxiety Relief"
         subtitle="Your body holds your stress. Let's release it."
+        alt="Stress and anxiety relief through structural integration and bodywork to address physical manifestations of stress in Santa Cruz"
       />
 
 

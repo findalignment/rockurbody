@@ -25,6 +25,7 @@ function FascialRelease() {
         imageSrc="/approach-hero.jpg"
         title="Fascial Release"
         subtitle="Address pain at its source.the connective tissue"
+        alt="Fascial release and myofascial therapy to address chronic pain and movement restrictions in Santa Cruz"
       />
 
 

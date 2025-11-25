@@ -53,6 +53,7 @@ function DeskWorkerWellness() {
         imageSrc="/approach-hero.jpg"
         title="Desk Worker Wellness"
         subtitle="Undo the damage of sitting all day"
+        alt="Desk worker wellness program using structural integration and movement training to address posture and sitting-related pain in Santa Cruz"
       />
 
 

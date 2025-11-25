@@ -53,6 +53,7 @@ function PostureCorrection() {
         imageSrc="/approach-hero.jpg"
         title="Posture Correction"
         subtitle="Stand taller, move better, feel confident"
+        alt="Posture correction using structural integration and movement education to improve alignment naturally in Santa Cruz"
       />
 
 

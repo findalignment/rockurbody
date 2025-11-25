@@ -25,6 +25,7 @@ function RolfingVsMassage() {
         imageSrc="/approach-hero.jpg"
         title="Structural Integration vs. Massage"
         subtitle="Understanding the difference to make the right choice"
+        alt="Comparison of structural integration and massage therapy approaches to bodywork in Santa Cruz"
       />
 
 

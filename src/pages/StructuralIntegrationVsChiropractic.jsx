@@ -25,6 +25,7 @@ function StructuralIntegrationVsChiropractic() {
         imageSrc="/approach-hero.jpg"
         title="Structural Integration vs. Chiropractic"
         subtitle="Different approaches, different results"
+        alt="Comparison of structural integration and chiropractic care approaches to body alignment in Santa Cruz"
       />
 
 

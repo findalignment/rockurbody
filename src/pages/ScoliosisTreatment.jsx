@@ -25,6 +25,7 @@ function ScoliosisTreatment() {
         imageSrc="/training-hero.jpg"
         title="Scoliosis Treatment"
         subtitle="Working with your body, not against it"
+        alt="Scoliosis treatment using structural integration to address spinal curves and improve alignment in Santa Cruz"
       />
 
 

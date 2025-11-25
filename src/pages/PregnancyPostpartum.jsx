@@ -25,6 +25,7 @@ function PregnancyPostpartum() {
         imageSrc="/approach-hero.jpg"
         title="Pregnancy & Postpartum Support"
         subtitle="Move comfortably through pregnancy. Recover fully postpartum."
+        alt="Pregnancy and postpartum bodywork and movement training to support mothers through pregnancy and recovery in Santa Cruz"
       />
 
 

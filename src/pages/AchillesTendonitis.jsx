@@ -25,6 +25,7 @@ function AchillesTendonitis() {
         imageSrc="/training-hero.jpg"
         title="Achilles Tendonitis Treatment"
         subtitle="Your Achilles hurts. Let's address why."
+        alt="Achilles tendonitis treatment using structural integration and movement training to address heel pain and tendon issues in Santa Cruz"
       />
 
 

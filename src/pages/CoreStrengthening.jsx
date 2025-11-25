@@ -25,6 +25,7 @@ function CoreStrengthening() {
         imageSrc="/training-hero.jpg"
         title="Core Strengthening"
         subtitle="Forget crunches. Build a core that actually works."
+        alt="Core strengthening and functional core stability training to build real core strength in Santa Cruz"
       />
 
 

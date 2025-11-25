@@ -111,6 +111,7 @@ function StructuralIntegrationHub() {
         imageSrc="/gravity-structural-integration-hero.jpg"
         title="Structural Integration"
         subtitle="Transform your body's structure, transform your life"
+        alt="Structural integration hub for comprehensive fascial bodywork and structural transformation in Santa Cruz"
       />
 
 

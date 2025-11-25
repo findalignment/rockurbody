@@ -121,6 +121,7 @@ function InjuryRecoveryHub() {
         imageSrc="/services-hero.jpg"
         title="Injury Recovery"
         subtitle="Recover completely, return stronger"
+        alt="Injury recovery and rehabilitation hub for comprehensive sports injury treatment in Santa Cruz"
       />
 
 

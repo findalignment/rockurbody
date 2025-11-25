@@ -27,6 +27,7 @@ function BodyAlignment() {
         imageSrc="/services-hero.jpg"
         title="Body Alignment"
         subtitle="Why fixing one thing affects everything else"
+        alt="Body alignment and structural integration explaining whole-body approach to alignment in Santa Cruz"
       />
 
       {/* Dramatic misaligned intro */}

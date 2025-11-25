@@ -25,6 +25,7 @@ function PersonalTrainingPosture() {
         imageSrc="/training-hero.jpg"
         title="Personal Training & Posture Improvement"
         subtitle="Not your typical personal trainer. I improve how you move, then make you stronger."
+        alt="Personal training combined with structural bodywork for movement quality and posture improvement in Santa Cruz"
       />
 
 

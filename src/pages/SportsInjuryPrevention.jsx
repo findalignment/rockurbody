@@ -25,6 +25,7 @@ function SportsInjuryPrevention() {
         imageSrc="/training-hero.jpg"
         title="Sports Injury Prevention"
         subtitle="Don't wait until you're hurt. Prevent injuries before they happen."
+        alt="Sports injury prevention through movement assessment and structural balance for athletes in Santa Cruz"
       />
 
 
