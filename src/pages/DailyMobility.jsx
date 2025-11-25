@@ -250,6 +250,37 @@ function DailyMobility() {
             </div>
           </div>
 
+          {/* Related Topics */}
+          <div className="mb-16 pt-8 border-t border-neutralDark/20 text-center">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link to="/mobility-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Mobility Training
+              </Link>
+              <Link to="/exercise-for-life" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Exercise for Life
+              </Link>
+              <Link to="/safe-gym-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Safe Gym Training
+              </Link>
+              <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Education
+              </Link>
+              <Link to="/balance-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Balance Training
+              </Link>
+              <Link to="/active-aging" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Active Aging
+              </Link>
+              <Link to="/wellness" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Wellness Hub
+              </Link>
+              <Link to="/movement-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Training Hub
+              </Link>
+            </div>
+          </div>
+
           {/* CTA */}
           <div className="bg-primary text-white rounded-2xl p-12 text-center">
             <h2 className="text-3xl font-heading mb-4">Ready to Start Taking Care of Your Body?</h2>

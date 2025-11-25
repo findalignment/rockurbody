@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 
@@ -215,6 +216,37 @@ function TrainingLineage() {
               >
                 Book Free Consultation
               </a>
+            </div>
+          </div>
+
+          {/* Related Topics */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20 text-center">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link to="/about" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                About
+              </Link>
+              <Link to="/credentials" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Credentials
+              </Link>
+              <Link to="/approach" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                My Approach
+              </Link>
+              <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration
+              </Link>
+              <Link to="/services" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Services
+              </Link>
+              <Link to="/process" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                The Process
+              </Link>
+              <Link to="/packages" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Programs & Packages
+              </Link>
+              <Link to="/contact" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Contact
+              </Link>
             </div>
           </div>
         </div>

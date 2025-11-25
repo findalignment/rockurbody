@@ -236,6 +236,37 @@ function SafeGymTraining() {
             </div>
           </div>
 
+          {/* Related Topics */}
+          <div className="mb-16 pt-8 border-t border-neutralDark/20 text-center">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link to="/injury-recovery" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Injury Recovery
+              </Link>
+              <Link to="/sports-injury-prevention" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Sports Injury Prevention
+              </Link>
+              <Link to="/movement-screening" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Screening
+              </Link>
+              <Link to="/mobility-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Mobility Training
+              </Link>
+              <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Education
+              </Link>
+              <Link to="/athletic-performance" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Athletic Performance
+              </Link>
+              <Link to="/core-strengthening" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Core Strengthening
+              </Link>
+              <Link to="/movement-training" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Training Hub
+              </Link>
+            </div>
+          </div>
+
           {/* CTA */}
           <div className="bg-primary text-white rounded-2xl p-12 text-center">
             <h2 className="text-3xl font-heading mb-4">Train Smarter, Not Just Harder</h2>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import FAQSection from '../components/FAQSection';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
@@ -300,6 +301,45 @@ function WhatIsStructuralIntegration() {
               If you've tried stretching, strengthening, and adjustments but still feel stuck, or if you want to build a body that works better for the long haul.Structural Integration might be exactly what you need.
             </p>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection
+            faqs={[
+              {
+                question: "Is Structural Integration the same as massage?",
+                answer: <>No. Massage focuses on relaxation and releasing muscle tension. Structural Integration reorganizes the connective tissue (fascia) to improve your body's alignment and function. It's systematic, not just 'where it hurts.' The pressure is specific and intentional, and we work with your whole structure, not just tight spots.</>
+              },
+              {
+                question: "Does Structural Integration hurt?",
+                answer: "It shouldn't. You'll feel pressure and sensation as we work with restricted tissue, but it should never be painful. We work at your edge, not past it. You're in control. If something doesn't feel right, speak up. Good work doesn't require suffering."
+              },
+              {
+                question: "How is Structural Integration different from chiropractic or physical therapy?",
+                answer: <>Chiropractors adjust bones. Physical therapists rehabilitate injuries and strengthen weak areas. Structural Integration works with fascia to change how your whole structure is organized. We're not treating symptoms or injuries. We're reorganizing your body so it works better. These approaches can complement each other.</>
+              },
+              {
+                question: "How long do results last?",
+                answer: <>Structural Integration creates lasting change in your tissue and alignment. Most people maintain results for years. Your body learns a new organization. That said, if you go back to old habits or don't maintain your structure, patterns can creep back. Movement education and occasional tune-ups help maintain the work.</>
+              },
+              {
+                question: "What should I wear for a Structural Integration session?",
+                answer: "Wear comfortable clothing that allows you to move freely. Athletic shorts and a sports bra or tank top work well. I need to see and access the tissue, so avoid loose or restrictive clothing. You'll be moving during the session, not just lying down."
+              },
+              {
+                question: "How many sessions do I need?",
+                answer: <>Many people feel a meaningful shift in 1–3 sessions. But lasting change usually needs 6–12 sessions with light homework between. The <Link to="/12-series" className="text-accent hover:underline">12-Series</Link> is the complete protocol, but you can also do targeted work like the <Link to="/hip-series" className="text-accent hover:underline">Hip Series</Link> or single sessions for specific issues.</>
+              },
+              {
+                question: "Can I combine Structural Integration with other treatments?",
+                answer: "Yes. Structural Integration works well alongside chiropractic, physical therapy, massage, and other bodywork. In fact, many clients find that combining approaches gives them the best results. Just let me know what other work you're doing so we can coordinate."
+              },
+              {
+                question: "What's the difference between Structural Integration and Rolfing?",
+                answer: <>Structural Integration is the broader term that includes Rolfing. Rolfing specifically refers to the work developed by Ida Rolf. I'm trained in Anatomy Trains Structural Integration, which builds on Rolf's work with modern understanding of fascia and movement. The principles are similar: systematic, whole-body reorganization through hands-on work.</>
+              }
+            ]}
+            title="Frequently Asked Questions About Structural Integration"
+          />
 
         </div>
       </div>

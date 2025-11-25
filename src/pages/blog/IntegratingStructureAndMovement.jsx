@@ -150,6 +150,37 @@ function IntegratingStructureAndMovement() {
                   Book Free Consultation
                 </Link>
               </div>
+
+              {/* Related Topics */}
+              <div className="mt-12 pt-8 border-t border-neutralDark/20 text-center">
+                <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+                <div className="flex flex-wrap gap-3 justify-center">
+                  <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    Structural Integration
+                  </Link>
+                  <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    Movement Education
+                  </Link>
+                  <Link to="/combo-programs" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    Combination Programs
+                  </Link>
+                  <Link to="/approach" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    My Approach
+                  </Link>
+                  <Link to="/process" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    The Process
+                  </Link>
+                  <Link to="/services" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    Services
+                  </Link>
+                  <Link to="/packages" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    Programs & Packages
+                  </Link>
+                  <Link to="/blog" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                    Blog
+                  </Link>
+                </div>
+              </div>
             </div>
           </article>
         </div>

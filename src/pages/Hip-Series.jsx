@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function HipSeries() {
   return (
     <div style={{ padding: '100px 20px 50px', maxWidth: '1000px', margin: '0 auto' }}>
@@ -77,8 +79,8 @@ function HipSeries() {
 
       <div style={{ textAlign: 'center', padding: '40px' }}>
         <h3 style={{ fontSize: '28px', marginBottom: '20px' }}>Start your hip transformation</h3>
-        <a 
-          href="/packages" 
+        <Link 
+          to="/packages" 
           style={{ 
             display: 'inline-block', 
             padding: '16px 32px', 
@@ -91,7 +93,22 @@ function HipSeries() {
           }}
         >
           View Hip Series Package
-        </a>
+        </Link>
+      </div>
+
+      {/* Related Topics */}
+      <div style={{ marginTop: '48px', paddingTop: '32px', borderTop: '1px solid rgba(0,0,0,0.1)', textAlign: 'center' }}>
+        <p style={{ fontSize: '14px', color: '#666', marginBottom: '16px' }}>Related Topics:</p>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', justifyContent: 'center' }}>
+          <Link to="/hip-pain-treatment" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>Hip Pain Treatment</Link>
+          <Link to="/12-series" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>12-Series</Link>
+          <Link to="/what-is-structural-integration" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>Structural Integration</Link>
+          <Link to="/combo-programs" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>Combination Programs</Link>
+          <Link to="/back-pain-santa-cruz" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>Back Pain Relief</Link>
+          <Link to="/packages" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>Programs & Packages</Link>
+          <Link to="/process" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>The Process</Link>
+          <Link to="/services" style={{ fontSize: '14px', padding: '8px 16px', background: 'rgba(34, 197, 94, 0.1)', color: '#1e3a8a', borderRadius: '8px', textDecoration: 'none' }}>Services</Link>
+        </div>
       </div>
     </div>
   );

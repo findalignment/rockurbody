@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
@@ -486,6 +487,37 @@ function SmartStarts() {
           <p className="text-base text-neutralDark/70 leading-relaxed text-center">
             Whether you're seeking relief from chronic pain, improved athletic performance, or simply want to feel more at home in your body, these programs combine the best of hands-on <strong>structural integration</strong> and intelligent <strong>movement education</strong>. Located in Santa Cruz, I work with clients throughout the Bay Area who are ready to invest in lasting change.not quick solutions.
           </p>
+        </div>
+
+        {/* Related Topics */}
+        <div className="mt-12 pt-8 border-t border-neutralDark/20 text-center">
+          <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link to="/packages" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              Programs & Packages
+            </Link>
+            <Link to="/pricing" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              Pricing
+            </Link>
+            <Link to="/services" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              Services
+            </Link>
+            <Link to="/combo-programs" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              Combination Programs
+            </Link>
+            <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              Structural Integration
+            </Link>
+            <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              Movement Education
+            </Link>
+            <Link to="/process" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              The Process
+            </Link>
+            <Link to="/approach" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+              My Approach
+            </Link>
+          </div>
         </div>
       </div>
     </PageLayout>

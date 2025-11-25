@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import FAQSection from '../components/FAQSection';
 
 function ComboPrograms() {
   return (
@@ -261,6 +263,84 @@ function ComboPrograms() {
             >
               Book This Service
             </Button>
+          </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="bg-white py-12 px-6">
+          <div className="max-w-4xl mx-auto">
+            <FAQSection
+              faqs={[
+                {
+                  question: "Why combine Structural Integration and Movement Education?",
+                  answer: <>Structural Integration releases restrictions and reorganizes your structure, but without teaching you how to move from that new place, old patterns return. Movement Education teaches better patterns, but if you're starting from a restricted structure, you're building on a shaky foundation. Together, they create lasting change that neither can achieve alone.</>
+                },
+                {
+                  question: "Do I have to do both, or can I choose one?",
+                  answer: <>You can absolutely choose one. Many clients start with just Structural Integration or just Movement Education. But most people see the best results when they combine both. The combination creates a positive feedback loop: better structure makes learning new movement easier, and better movement patterns maintain and improve your structure.</>
+                },
+                {
+                  question: "How are combo sessions structured?",
+                  answer: "Typically we alternate: Structural Integration session to release and reorganize, then Movement Education session to teach your body how to use the new space. Or we combine them in longer sessions. We adapt to what your body needs. Early on, we focus more on structural work. As you open up, we shift more toward movement training."
+                },
+                {
+                  question: "Which combo program should I start with?",
+                  answer: <>If you're not sure, start with <Link to="/smart-starts" className="text-accent hover:underline">The Reset</Link> (3 weeks, 6 sessions). It's a perfect introduction that clears the biggest roadblocks and teaches fundamental movement patterns. If your main issue is hips or low back, the <Link to="/packages" className="text-accent hover:underline">Hip Freedom programs</Link> might be a better fit. For comprehensive transformation, the <Link to="/packages" className="text-accent hover:underline">Full Repatterning programs</Link> offer the complete approach.</>
+                },
+                {
+                  question: "How long do combo programs take?",
+                  answer: "It depends on the program. The Reset is 3 weeks (6 sessions). Hip Freedom programs are 8-12 sessions. Full Repatterning programs are 12+ weeks (24-48 sessions depending on the option). We'll work at your pace, focusing on what matters most to you."
+                },
+                {
+                  question: "Will I become dependent on sessions?",
+                  answer: "No. The goal is independence. You learn practices you can do yourself. Occasional tune-ups? Sure. But you'll have the tools to maintain and continue improving on your own. By the end of a program, you should feel confident managing your body's needs independently."
+                },
+                {
+                  question: "Can I do a combo program if I have an injury?",
+                  answer: <>Yes, but we'll work with your injury. Structural Integration can help address the underlying patterns contributing to your injury, and Movement Education can help you move better despite limitations. However, if you have an active injury, make sure you have medical clearance before starting. I'm not treating your injury, but we can work with your body to improve function.</>
+                },
+                {
+                  question: "What's the difference between the combo program options?",
+                  answer: <>The Reset (3 weeks) is perfect for getting unstuck or addressing a specific issue. Hip Freedom programs (8-12 sessions) focus on hip/low back issues. Full Repatterning programs (12+ weeks) offer comprehensive transformation with the complete <Link to="/12-series" className="text-accent hover:underline">12-Series</Link> Structural Integration plus ongoing movement education. The difference between Basic, Premium, and Ultimate Full Repatterning is session length and frequency.</>
+                }
+              ]}
+              title="Frequently Asked Questions About Combination Programs"
+            />
+          </div>
+        </div>
+
+        {/* Related Topics */}
+      <div className="bg-white py-12 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="pt-8 border-t border-neutralDark/20 text-center">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                What Is Structural Integration?
+              </Link>
+              <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                What Is Movement Education?
+              </Link>
+              <Link to="/smart-starts" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Smart Starts
+              </Link>
+              <Link to="/packages" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Programs & Packages
+              </Link>
+              <Link to="/services" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Services
+              </Link>
+              <Link to="/pricing" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Pricing
+              </Link>
+              <Link to="/process" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                The Process
+              </Link>
+              <Link to="/approach" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                My Approach
+              </Link>
+            </div>
           </div>
         </div>
       </div>

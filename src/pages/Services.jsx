@@ -1,10 +1,12 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import WaveDivider from '../components/dividers/WaveDivider';
 import PullQuote from '../components/content/PullQuote';
 import Callout from '../components/content/Callout';
 import ExpandableSection from '../components/content/ExpandableSection';
+import FAQSection from '../components/FAQSection';
 import Button from '../components/Button';
 import { getLocalBusinessSchema } from '../utils/structuredData';
 
@@ -260,6 +262,76 @@ function Services() {
               <Button to="/combo-programs" variant="accent" size="lg">
                 Learn About Combination Programs
               </Button>
+            </div>
+
+            {/* FAQ Section */}
+            <FAQSection
+              faqs={[
+                {
+                  question: "What's the difference between Structural Integration and Movement Education?",
+                  answer: <>Structural Integration is hands-on bodywork that releases restrictions in your connective tissue (fascia) and reorganizes your structure. Movement Education is training focused on how you move, teaching you better movement patterns. Most clients benefit from both: Structural Integration opens you up, and Movement Education teaches you how to use that new space.</>
+                },
+                {
+                  question: "Which service should I start with?",
+                  answer: <>It depends on your goals. If you have chronic pain or restrictions, start with Structural Integration. If you want to improve how you move and prevent injury, start with Movement Education. Most people see the best results combining both. Check out our <Link to="/smart-starts" className="text-accent hover:underline">Smart Starts</Link> page for recommendations based on your situation.</>
+                },
+                {
+                  question: "Do I need to commit to a series, or can I try a single session?",
+                  answer: <>Both options are available. You can book a <Link to="/pricing" className="text-accent hover:underline">single session</Link> to try the work, or commit to a <Link to="/packages" className="text-accent hover:underline">package</Link> for better pricing and systematic results. Most people see the best results with a series, but you're not locked in.</>
+                },
+                {
+                  question: "How long are sessions?",
+                  answer: <>It depends on what you book. Movement sessions are typically 60 minutes. Structural Integration sessions can be 60 minutes, but I find people get significantly better results from 90-minute sessions. The 90-minute format allows deeper work and better integration. Single sessions range from 60-120 minutes depending on your needs.</>
+                },
+                {
+                  question: "Where are sessions held?",
+                  answer: "Sessions are held at Mavericks Fitness (311 Soquel Ave, Santa Cruz, CA) by appointment only. Very selectively, I take a limited number of mobile clients based on fit, location, and availability. This requires a consultation first."
+                },
+                {
+                  question: "Do you take insurance?",
+                  answer: "No. I don't bill insurance. Sessions are out-of-pocket. Some HSA/FSA accounts may reimburse for bodywork or training. Check with your provider. I can provide receipts for your records."
+                },
+                {
+                  question: "What's your cancellation policy?",
+                  answer: "Life happens. Please give 4 hours notice if you need to cancel or reschedule. Late cancellations or no-shows will be charged a $50 fee."
+                },
+                {
+                  question: "How do I prepare for my first session?",
+                  answer: "Come as you are. No special preparation needed. Wear comfortable clothing you can move in. Avoid eating a heavy meal right before your session. If you have any injuries, medical conditions, or specific concerns, let me know when you arrive."
+                }
+              ]}
+              title="Frequently Asked Questions About Our Services"
+            />
+
+            {/* Related Topics */}
+            <div className="mt-12 pt-8 border-t border-neutralDark/20 text-center">
+              <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  What Is Structural Integration?
+                </Link>
+                <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  What Is Movement Education?
+                </Link>
+                <Link to="/combo-programs" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  Combination Programs
+                </Link>
+                <Link to="/packages" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  Programs & Packages
+                </Link>
+                <Link to="/pricing" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  Pricing
+                </Link>
+                <Link to="/smart-starts" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  Smart Starts
+                </Link>
+                <Link to="/process" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  The Process
+                </Link>
+                <Link to="/approach" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                  My Approach
+                </Link>
+              </div>
             </div>
           </div>
         </div>

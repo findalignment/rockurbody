@@ -1,6 +1,7 @@
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import FAQSection from '../components/FAQSection';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
@@ -204,6 +205,45 @@ function WhatIsMovementEducation() {
               When you move well, training becomes more effective, pain decreases, and life gets easier. That's the promise.
             </p>
           </div>
+
+          {/* FAQ Section */}
+          <FAQSection
+            faqs={[
+              {
+                question: "Is Movement Education the same as personal training?",
+                answer: <>Yes, but evolved. I started as a personal trainer and kept learning until I developed a thorough practice for people who just want to live better and more comfortably in their body. I teach strength, core stability, mobility, coordination, awareness, balance, and flexibility. But the foundation comes first. We set the foundation through quality movement, then build from there.</>
+              },
+              {
+                question: "Can I combine Movement Education with my workout routine?",
+                answer: <>Absolutely. In fact, that's the point. Movement Education makes your training more effective and sustainable. You'll move better, lift with better form, and reduce injury risk. Most clients continue their regular workouts while working with me. We just clean up how you're moving.</>
+              },
+              {
+                question: "Why do we train barefoot?",
+                answer: "Your feet are your foundation. Shoes mask problems and prevent your feet from doing their job. Training barefoot lets you feel the ground, activate the small stabilizing muscles in your feet, and build real stability from the ground up. It's not about being trendy. It's about building a body that works."
+              },
+              {
+                question: "Do I need to be in shape to start?",
+                answer: <>No. We meet you where you are. Movement Education isn't about crushing yourself. It's about learning to move well. Whether you're deconditioned, injured, or highly trained, we start with quality movement and build from there.</>
+              },
+              {
+                question: "What if I have an injury or chronic pain?",
+                answer: <>We work with it. Movement Education can help you move better despite limitations, and <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link> often helps address the underlying patterns contributing to pain. I'm not treating your injury, but we can work with your body to improve function and reduce compensation patterns.</>
+              },
+              {
+                question: "How often should I come for Movement Education sessions?",
+                answer: "Most clients come 2-3 times per week for ongoing movement work. This frequency allows for consistent practice and progressive improvement. For maintenance after initial training, monthly or quarterly sessions can keep you on track. We'll figure out what makes sense for your body and schedule."
+              },
+              {
+                question: "What should I wear for Movement Education sessions?",
+                answer: "Wear comfortable workout clothes that allow you to move freely. You'll be moving, not just lying down. We often train barefoot, so be prepared to take your shoes off. Avoid restrictive clothing that limits your range of motion."
+              },
+              {
+                question: "How long are Movement Education sessions?",
+                answer: <>Movement sessions are typically 60 minutes. This gives us time to assess, work on 2-3 movement patterns, and create a practice plan. Some clients prefer 30-minute focused sessions for specific issues, or 90-minute sessions that combine movement work with <Link to="/what-is-structural-integration" className="text-accent hover:underline">Structural Integration</Link>.</>
+              }
+            ]}
+            title="Frequently Asked Questions About Movement Education"
+          />
 
         </div>
       </div>

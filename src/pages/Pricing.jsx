@@ -400,6 +400,37 @@ function Pricing() {
             </Link>
           </div>
 
+          {/* Related Topics */}
+          <div className="mt-12 pt-8 border-t border-neutralDark/20 text-center">
+            <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link to="/packages" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Programs & Packages
+              </Link>
+              <Link to="/smart-starts" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Smart Starts
+              </Link>
+              <Link to="/services" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Services
+              </Link>
+              <Link to="/combo-programs" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Combination Programs
+              </Link>
+              <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Structural Integration
+              </Link>
+              <Link to="/what-is-movement-education" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Movement Education
+              </Link>
+              <Link to="/book" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Book a Session
+              </Link>
+              <Link to="/contact" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                Contact
+              </Link>
+            </div>
+          </div>
+
         </div>
       </div>
     </PageLayout>
