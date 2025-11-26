@@ -97,34 +97,64 @@ export function getClientIdentifier(req) {
  * @returns {object|null} Error response if rate limited, null otherwise
  */
 export function rateLimitMiddleware(req, res, options = {}) {
-  const {
-    maxRequests = 10,
-    windowMs = 60000, // 1 minute
-    message = 'Too many requests. Please try again later.'
-  } = options;
-  
-  const identifier = getClientIdentifier(req);
-  const result = checkRateLimit(identifier, maxRequests, windowMs);
-  
-  if (!result.allowed) {
-    res.setHeader('X-RateLimit-Limit', maxRequests);
-    res.setHeader('X-RateLimit-Remaining', result.remaining);
-    res.setHeader('X-RateLimit-Reset', new Date(result.resetTime).toISOString());
-    res.setHeader('Retry-After', result.retryAfter);
+  try {
+    const {
+      maxRequests = 10,
+      windowMs = 60000, // 1 minute
+      message = 'Too many requests. Please try again later.'
+    } = options;
     
-    return res.status(429).json({
-      error: 'Rate limit exceeded',
-      message: message,
-      retryAfter: result.retryAfter
-    });
+    // Safely get client identifier
+    let identifier;
+    try {
+      identifier = getClientIdentifier(req);
+    } catch (idError) {
+      console.warn('[RATE-LIMIT] Failed to get client identifier, using default:', idError);
+      identifier = 'unknown';
+    }
+    
+    const result = checkRateLimit(identifier, maxRequests, windowMs);
+    
+    if (!result.allowed) {
+      try {
+        res.setHeader('X-RateLimit-Limit', String(maxRequests));
+        res.setHeader('X-RateLimit-Remaining', String(result.remaining || 0));
+        res.setHeader('X-RateLimit-Reset', new Date(result.resetTime || Date.now()).toISOString());
+        if (result.retryAfter) {
+          res.setHeader('Retry-After', String(result.retryAfter));
+        }
+        
+        return res.status(429).json({
+          error: 'Rate limit exceeded',
+          message: message,
+          retryAfter: result.retryAfter
+        });
+      } catch (headerError) {
+        console.error('[RATE-LIMIT] Failed to set headers:', headerError);
+        // If we can't set headers, just return the response
+        return res.status(429).json({
+          error: 'Rate limit exceeded',
+          message: message
+        });
+      }
+    }
+    
+    // Set rate limit headers for allowed requests
+    try {
+      res.setHeader('X-RateLimit-Limit', String(maxRequests));
+      res.setHeader('X-RateLimit-Remaining', String(result.remaining || 0));
+      res.setHeader('X-RateLimit-Reset', new Date(result.resetTime || Date.now()).toISOString());
+    } catch (headerError) {
+      // If headers fail, continue anyway - rate limiting is not critical
+      console.warn('[RATE-LIMIT] Failed to set rate limit headers:', headerError);
+    }
+    
+    return null; // Continue processing
+  } catch (error) {
+    // If rate limiting completely fails, log and allow the request to proceed
+    console.error('[RATE-LIMIT] Rate limiting error, allowing request:', error);
+    return null; // Don't block the request if rate limiting fails
   }
-  
-  // Set rate limit headers
-  res.setHeader('X-RateLimit-Limit', maxRequests);
-  res.setHeader('X-RateLimit-Remaining', result.remaining);
-  res.setHeader('X-RateLimit-Reset', new Date(result.resetTime).toISOString());
-  
-  return null; // Continue processing
 }
 
 export default {

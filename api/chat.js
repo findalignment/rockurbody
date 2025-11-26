@@ -150,6 +150,7 @@ export default async function handler(req, res) {
     }
 
     // Rate limiting: 20 requests per minute per IP
+    // Wrap in try-catch to ensure it never breaks the request
     try {
       const rateLimitResult = rateLimitMiddleware(req, res, {
         maxRequests: 20,
@@ -157,24 +158,49 @@ export default async function handler(req, res) {
         message: "You're sending messages too quickly. Please slow down and try again in a moment."
       });
       
-      if (rateLimitResult) {
+      // If rate limit middleware returned a response, it means rate limit was exceeded
+      // Check if headers were sent to determine if response was sent
+      if (rateLimitResult && res.headersSent) {
         // Rate limit exceeded, response already sent
         return;
       }
     } catch (rateLimitError) {
-      // If rate limiting fails, log but continue (don't block requests)
-      console.warn('[API/CHAT] Rate limit check failed, continuing:', rateLimitError);
+      // If rate limiting fails completely, log but continue (don't block requests)
+      console.error('[API/CHAT] Rate limit check failed, continuing:', rateLimitError);
+      // Continue processing the request
     }
 
     // Parse request body if it's a string (Vercel sometimes sends string bodies)
     let body = req.body;
+    
+    // Handle case where body might be undefined or null
+    if (!body) {
+      console.error('[API/CHAT] Request body is missing');
+      return res.status(400).json({ 
+        error: 'Request body is required',
+        message: 'Please include a message in your request.'
+      });
+    }
+    
     if (typeof body === 'string') {
       try {
         body = JSON.parse(body);
       } catch (e) {
-        console.error('Failed to parse request body:', e);
-        return res.status(400).json({ error: 'Invalid request body format' });
+        console.error('[API/CHAT] Failed to parse request body:', e);
+        return res.status(400).json({ 
+          error: 'Invalid request body format',
+          message: 'The request body must be valid JSON.'
+        });
       }
+    }
+
+    // Ensure body is an object
+    if (typeof body !== 'object' || body === null) {
+      console.error('[API/CHAT] Invalid body type:', typeof body);
+      return res.status(400).json({ 
+        error: 'Invalid request body',
+        message: 'The request body must be a JSON object.'
+      });
     }
 
     const { message, history = [] } = body;
