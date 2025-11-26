@@ -80,12 +80,15 @@ let openai = null;
 
 // Main handler function
 export default async function handler(req, res) {
+  // Log immediately at the very start - this should appear in Vercel logs if function is called
+  console.log('[API/CHAT] ===== FUNCTION INVOKED =====');
+  console.log('[API/CHAT] Timestamp:', new Date().toISOString());
+  console.log('[API/CHAT] Method:', req.method);
+  console.log('[API/CHAT] URL:', req.url);
+  console.log('[API/CHAT] Headers:', JSON.stringify(req.headers || {}));
+  
   // Wrap everything in try-catch to catch any initialization errors
   try {
-    // Log immediately to verify function is being called
-    console.log('[API/CHAT] Handler called at:', new Date().toISOString());
-    console.log('[API/CHAT] Method:', req.method);
-    console.log('[API/CHAT] URL:', req.url);
     
     // Initialize OpenAI client inside handler to ensure environment variables are loaded
     if (!apiKey || !openai) {

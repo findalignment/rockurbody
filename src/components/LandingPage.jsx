@@ -150,6 +150,8 @@ function LandingPage() {
       const result = await retryChatbotRequest(
         async (message, history) => {
           try {
+            console.log('[CHAT] Sending request to /api/chat', { message, historyLength: history.length });
+            
             const response = await fetch('/api/chat', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
@@ -160,6 +162,13 @@ function LandingPage() {
                   content: msg.content
                 }))
               })
+            });
+            
+            console.log('[CHAT] Response received:', {
+              ok: response.ok,
+              status: response.status,
+              statusText: response.statusText,
+              headers: Object.fromEntries(response.headers.entries())
             });
 
             if (!response.ok) {

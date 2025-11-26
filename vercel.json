@@ -90,10 +90,18 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api).*)",
+      "source": "/((?!api|_next|favicon.ico|robots.txt|sitemap.xml).*)",
       "destination": "/index.html"
     }
   ],
+  "functions": {
+    "api/chat.js": {
+      "maxDuration": 30
+    },
+    "api/booking.js": {
+      "maxDuration": 30
+    }
+  },
   "github": {
     "silent": true
   }
