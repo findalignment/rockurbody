@@ -68,11 +68,20 @@ export function checkRateLimit(identifier, maxRequests = 10, windowMs = 60000) {
  */
 export function getClientIdentifier(req) {
   // Try to get IP from various headers (Vercel, Cloudflare, etc.)
+  // In Vercel serverless functions, headers are accessed via req.headers.get() or req.headers object
+  const headers = req.headers || {};
+  const getHeader = (name) => {
+    if (typeof headers.get === 'function') {
+      return headers.get(name);
+    }
+    return headers[name] || headers[name.toLowerCase()];
+  };
+  
   const ip = 
-    req.headers['x-forwarded-for']?.split(',')[0]?.trim() ||
-    req.headers['x-real-ip'] ||
-    req.headers['cf-connecting-ip'] ||
-    req.headers['x-vercel-forwarded-for'] ||
+    getHeader('x-forwarded-for')?.split(',')[0]?.trim() ||
+    getHeader('x-real-ip') ||
+    getHeader('cf-connecting-ip') ||
+    getHeader('x-vercel-forwarded-for') ||
     req.connection?.remoteAddress ||
     'unknown';
   

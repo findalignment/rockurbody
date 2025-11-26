@@ -130,10 +130,11 @@ export default async function handler(req, res) {
       hasApiKey: !!apiKey
     });
 
-    // Set CORS headers
+    // Set CORS headers (must be set before any response)
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS, GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.setHeader('Access-Control-Max-Age', '86400'); // 24 hours
 
     if (req.method === 'OPTIONS') {
       console.log('[API/CHAT] OPTIONS request, returning 200');
@@ -146,15 +147,20 @@ export default async function handler(req, res) {
     }
 
     // Rate limiting: 20 requests per minute per IP
-    const rateLimitResult = rateLimitMiddleware(req, res, {
-      maxRequests: 20,
-      windowMs: 60000, // 1 minute
-      message: "You're sending messages too quickly. Please slow down and try again in a moment."
-    });
-    
-    if (rateLimitResult) {
-      // Rate limit exceeded, response already sent
-      return;
+    try {
+      const rateLimitResult = rateLimitMiddleware(req, res, {
+        maxRequests: 20,
+        windowMs: 60000, // 1 minute
+        message: "You're sending messages too quickly. Please slow down and try again in a moment."
+      });
+      
+      if (rateLimitResult) {
+        // Rate limit exceeded, response already sent
+        return;
+      }
+    } catch (rateLimitError) {
+      // If rate limiting fails, log but continue (don't block requests)
+      console.warn('[API/CHAT] Rate limit check failed, continuing:', rateLimitError);
     }
 
     // Parse request body if it's a string (Vercel sometimes sends string bodies)
