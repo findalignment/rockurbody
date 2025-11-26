@@ -13,9 +13,9 @@ function Hero({ children, backgroundImage = '/hero-astronaut.jpg', altText = 'St
           <img 
             src={backgroundImage}
             alt={altText}
-            className="absolute inset-0 w-full h-full object-cover object-center md:object-[center_30%]"
+            className="absolute inset-0 w-full h-full object-cover"
             style={{ 
-              objectPosition: 'center 50%' // On mobile, center vertically to show more of the image
+              objectPosition: 'center 50%' // On mobile, center vertically to avoid face overlap
             }}
             loading="eager"
             fetchpriority="high"
