@@ -82,6 +82,12 @@ const ComboPrograms = lazy(() => import('./pages/ComboPrograms'));
 const Credentials = lazy(() => import('./pages/Credentials'));
 const TrainingLineage = lazy(() => import('./pages/TrainingLineage'));
 const FAQ = lazy(() => import('./pages/FAQ'));
+const HowItWorks = lazy(() => import('./pages/HowItWorks'));
+const BodySystemsCheck = lazy(() => import('./pages/BodySystemsCheck'));
+const SoftwareUpgradePlan = lazy(() => import('./pages/SoftwareUpgradePlan'));
+const PerformanceLongevityCoaching = lazy(() => import('./pages/PerformanceLongevityCoaching'));
+const OffersComparison = lazy(() => import('./pages/OffersComparison'));
+const BodyOperatingSystemChecklist = lazy(() => import('./pages/BodyOperatingSystemChecklist'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const RefundPolicy = lazy(() => import('./pages/RefundPolicy'));
 const Book = lazy(() => import('./pages/Book'));
@@ -311,6 +317,14 @@ function AppRoutes() {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
+        
+        {/* New Service Pages */}
+        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/body-systems-check" element={<BodySystemsCheck />} />
+        <Route path="/software-upgrade-plan" element={<SoftwareUpgradePlan />} />
+        <Route path="/performance-longevity-coaching" element={<PerformanceLongevityCoaching />} />
+        <Route path="/offers-comparison" element={<OffersComparison />} />
+        <Route path="/body-operating-system-checklist" element={<BodyOperatingSystemChecklist />} />
         
         {/* SEO Pages */}
         <Route path="/santa-cruz-structural-integration" element={<SantaCruzStructuralIntegration />} />
