@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Body Operating System Checklist - RockUrBody</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a472a;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        h2 {
+            color: #1a472a;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        h3 {
+            color: #2c3e50;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .subheadline {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .intro-bullets {
+            background: #f0f7f4;
+            padding: 25px;
+            border-left: 4px solid #4a7c59;
+            margin: 30px 0;
+        }
+        .intro-bullets ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .intro-bullets li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .intro-bullets li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4a7c59;
+            font-weight: bold;
+        }
+        .form-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            font-family: inherit;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #4a7c59;
+        }
+        .checklist {
+            margin: 30px 0;
+        }
+        .checklist-item {
+            padding: 15px;
+            margin-bottom: 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #ddd;
+        }
+        .checklist-item:hover {
+            background: #f0f7f4;
+            border-left-color: #4a7c59;
+        }
+        .checklist-item label {
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+            font-weight: normal;
+        }
+        .checklist-item input[type="checkbox"] {
+            margin-right: 12px;
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .checklist-number {
+            font-weight: 600;
+            color: #4a7c59;
+            margin-right: 8px;
+        }
+        .privacy-note {
+            background: #e8f4ed;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #4a7c59;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #3a6b49;
+        }
+        .results-section {
+            margin: 40px 0;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .results-low {
+            background: #fee;
+            border-left: 4px solid #c33;
+        }
+        .results-medium {
+            background: #fff8e1;
+            border-left: 4px solid #f57c00;
+        }
+        .results-high {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+        .results-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .results-low .results-title {
+            color: #c33;
+        }
+        .results-medium .results-title {
+            color: #f57c00;
+        }
+        .results-high .results-title {
+            color: #4caf50;
+        }
+        .score-display {
+            font-size: 2em;
+            font-weight: 700;
+            margin: 20px 0;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Body Operating System Checklist</h1>
+        
+        <p class="subheadline">
+            A 10-item self-assessment to evaluate how well your body's systems are functioning. Get clarity on what's working, what's not, and what needs upgrading.
+        </p>
+
+        <div class="intro-bullets">
+            <h3>Why This Matters</h3>
+            <ul>
+                <li>Many people don't realize how their body's limitations affect daily life until they assess systematically</li>
+                <li>Catch imbalances and restrictions before they become bigger problems or injuries</li>
+                <li>Understand what needs attention and prioritize your body's upgrade path</li>
+                <li>Use this as a baseline to track improvements as you upgrade your body's software</li>
+            </ul>
+        </div>
+
+        <div class="form-section">
+            <h2>Your Information</h2>
+            <p style="margin-bottom: 20px; color: #666;">
+                We'll send your results and personalized recommendations to your email. Your information is private and secure.
+            </p>
+            
+            <form id="checklistForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="privacy-note">
+                    <strong>Privacy:</strong> Your information is secure and will only be used to send you your results and relevant information about our services. We never share your data with third parties.
+                </div>
+            </form>
+        </div>
+
+        <div class="checklist">
+            <h2>Self-Assessment Checklist</h2>
+            <p style="margin-bottom: 20px; color: #666;">
+                Answer honestly: Can you do each of these things consistently? Check "Yes" if it's true for you most of the time.
+            </p>
+
+            <form id="checklistForm">
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item1" value="1">
+                        <span class="checklist-number">1.</span>
+                        <span>I can stand with good alignment (ears over shoulders, shoulders over hips, hips over ankles) without effort</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item2" value="1">
+                        <span class="checklist-number">2.</span>
+                        <span>I can take a full, deep breath without restriction or tension</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item3" value="1">
+                        <span class="checklist-number">3.</span>
+                        <span>I can move through full range of motion in all major joints without pain or restriction</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item4" value="1">
+                        <span class="checklist-number">4.</span>
+                        <span>I have adequate strength for daily activities and my chosen activities</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item5" value="1">
+                        <span class="checklist-number">5.</span>
+                        <span>I can balance on one leg for 30 seconds without wobbling</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item6" value="1">
+                        <span class="checklist-number">6.</span>
+                        <span>I am free from chronic pain, tension, or discomfort</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item7" value="1">
+                        <span class="checklist-number">7.</span>
+                        <span>I move smoothly and efficiently without compensation patterns</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item8" value="1">
+                        <span class="checklist-number">8.</span>
+                        <span>I recover well from activity and don't feel stiff or sore for days</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item9" value="1">
+                        <span class="checklist-number">9.</span>
+                        <span>I can maintain good posture throughout the day without fatigue</span>
+                    </label>
+                </div>
+
+                <div class="checklist-item">
+                    <label>
+                        <input type="checkbox" name="item10" value="1">
+                        <span class="checklist-number">10.</span>
+                        <span>My movements feel coordinated and integrated, not disconnected or awkward</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+
+        <div style="text-align: center; margin: 40px 0;">
+            <button type="button" class="cta-button" onclick="calculateScore()">Get My Results</button>
+        </div>
+
+        <div id="results" style="display: none;">
+            <div id="resultsContent"></div>
+            
+            <div style="background: #f0f7f4; padding: 25px; border-radius: 8px; margin: 30px 0;">
+                <h3>What's Next?</h3>
+                <p style="margin-bottom: 15px;">
+                    We've sent your detailed results and recommendations to your email. Check your inbox (and spam folder) for your personalized report.
+                </p>
+                <p style="margin-bottom: 20px;">
+                    Ready to take action? Book a Body Systems Check for a comprehensive, hands-on assessment that goes deeper than this checklist.
+                </p>
+                <div style="text-align: center;">
+                    <a href="https://rockurbody.com/body-systems-check" class="cta-button">Book a Body Systems Check</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-section results-low" id="resultsLow" style="display: none;">
+            <div class="results-title">Your Body's Operating System Needs Attention</div>
+            <p style="margin-bottom: 15px;">
+                You're experiencing significant limitations in how your body functions. Multiple systems are not operating optimally, which likely affects your daily life, performance, and long-term health.
+            </p>
+            <p style="margin-bottom: 15px;">
+                A Body Systems Check would be highly valuable. We'll identify the root causes of these limitations and create a clear roadmap for upgrading your body's software.
+            </p>
+        </div>
+
+        <div class="results-section results-medium" id="resultsMedium" style="display: none;">
+            <div class="results-title">Your Body's Operating System Has Room for Improvement</div>
+            <p style="margin-bottom: 15px;">
+                Some systems are working well, but others need attention. You may be compensating for limitations without realizing it, which can lead to problems over time.
+            </p>
+            <p style="margin-bottom: 15px;">
+                A Body Systems Check would help identify which systems need the most attention and prioritize your upgrade path.
+            </p>
+        </div>
+
+        <div class="results-section results-high" id="resultsHigh" style="display: none;">
+            <div class="results-title">Your Body's Operating System Is Functioning Well</div>
+            <p style="margin-bottom: 15px;">
+                Most of your systems are operating well. However, even high-functioning bodies benefit from regular maintenance and optimization.
+            </p>
+            <p style="margin-bottom: 15px;">
+                Consider a Body Systems Check to identify any subtle improvements or preventive maintenance that could optimize your performance further.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            if (!name || !email) {
+                alert('Please enter your name and email to get your results.');
+                return;
+            }
+            
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            let score = 0;
+            checkboxes.forEach(cb => {
+                if (cb.checked) score++;
+            });
+            
+            // Hide all result sections
+            document.getElementById('resultsLow').style.display = 'none';
+            document.getElementById('resultsMedium').style.display = 'none';
+            document.getElementById('resultsHigh').style.display = 'none';
+            
+            // Show appropriate result section
+            const resultsDiv = document.getElementById('results');
+            const resultsContent = document.getElementById('resultsContent');
+            
+            let resultClass = '';
+            let resultTitle = '';
+            let resultDescription = '';
+            let resultRecommendation = '';
+            
+            if (score >= 0 && score <= 3) {
+                resultClass = 'results-low';
+                resultTitle = 'Your Body\'s Operating System Needs Attention';
+                resultDescription = 'You\'re experiencing significant limitations in how your body functions. Multiple systems are not operating optimally, which likely affects your daily life, performance, and long-term health.';
+                resultRecommendation = 'A Body Systems Check would be highly valuable. We\'ll identify the root causes of these limitations and create a clear roadmap for upgrading your body\'s software.';
+                document.getElementById('resultsLow').style.display = 'block';
+            } else if (score >= 4 && score <= 6) {
+                resultClass = 'results-medium';
+                resultTitle = 'Your Body\'s Operating System Has Room for Improvement';
+                resultDescription = 'Some systems are working well, but others need attention. You may be compensating for limitations without realizing it, which can lead to problems over time.';
+                resultRecommendation = 'A Body Systems Check would help identify which systems need the most attention and prioritize your upgrade path.';
+                document.getElementById('resultsMedium').style.display = 'block';
+            } else {
+                resultClass = 'results-high';
+                resultTitle = 'Your Body\'s Operating System Is Functioning Well';
+                resultDescription = 'Most of your systems are operating well. However, even high-functioning bodies benefit from regular maintenance and optimization.';
+                resultRecommendation = 'Consider a Body Systems Check to identify any subtle improvements or preventive maintenance that could optimize your performance further.';
+                document.getElementById('resultsHigh').style.display = 'block';
+            }
+            
+            resultsContent.innerHTML = `
+                <div class="score-display">Your Score: ${score} / 10</div>
+                <div class="results-section ${resultClass}">
+                    <div class="results-title">${resultTitle}</div>
+                    <p style="margin-bottom: 15px;">${resultDescription}</p>
+                    <p>${resultRecommendation}</p>
+                </div>
+            `;
+            
+            resultsDiv.style.display = 'block';
+            resultsDiv.scrollIntoView({ behavior: 'smooth' });
+            
+            // Here you would typically send the data to your email service or backend
+            console.log('Form submitted:', { name, email, score });
+        }
+    </script>
+</body>
+</html>
+
