@@ -50,7 +50,7 @@ function HeadacheMigraineRelief() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/headache-migraine-hero.jpg"
         title="Headache & Migraine Relief"
         subtitle="Most headaches start in your neck and shoulders, not your head"
         alt="Headache and migraine relief treatment using structural integration to address neck tension and cervicogenic headaches in Santa Cruz"

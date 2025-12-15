@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function WhatIsAlignmentInTheBody() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="What Is Alignment In The Body - Understanding Body Alignment | RockUrBody"
         description="Learn what alignment means in the body, why it matters for movement and pain, and how to improve alignment through structural integration and movement education."
         keywords="body alignment, postural alignment, structural alignment, movement alignment, alignment training, Santa Cruz"
         url="/what-is-alignment-in-the-body"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              What Is Alignment In The Body?
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Alignment isn't about perfect posture. It's about how your body organizes itself to move efficiently.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/alignment-body-hero.jpg"
+        title="What Is Alignment In The Body?"
+        subtitle="Alignment isn't about perfect posture. It's about how your body organizes itself to move efficiently."
+        alt="Understanding body alignment and how it affects movement and pain"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -86,9 +81,8 @@ function WhatIsAlignmentInTheBody() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

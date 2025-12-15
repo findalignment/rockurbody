@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function AlignmentBasedStrengthTraining() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Alignment-Based Strength Training - Strength Without Compensation | RockUrBody"
         description="Build strength from proper alignment, not compensation patterns. Learn how alignment-based strength training prevents injury and creates lasting change. Santa Cruz, CA."
         keywords="alignment based strength training, strength without compensation, proper form training, functional strength, movement quality, Santa Cruz"
         url="/alignment-based-strength-training"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Alignment-Based Strength Training
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Build strength from proper alignment, not compensation patterns. Strong movement from a weak foundation creates problems. We build the foundation first.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/alignment-strength-hero.jpg"
+        title="Alignment-Based Strength Training"
+        subtitle="Build strength from proper alignment, not compensation patterns. Strong movement from a weak foundation creates problems. We build the foundation first."
+        alt="Alignment-based strength training that builds strength without compensation"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -82,9 +77,8 @@ function AlignmentBasedStrengthTraining() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

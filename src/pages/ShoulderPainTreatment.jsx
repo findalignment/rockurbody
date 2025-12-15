@@ -21,7 +21,7 @@ function ShoulderPainTreatment() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/shoulder-pain-hero.jpg"
         title="Shoulder Pain Treatment"
         subtitle="Get your shoulders back to full, pain-free function"
         alt="Shoulder pain treatment using structural integration to address rotator cuff issues and shoulder impingement in Santa Cruz"

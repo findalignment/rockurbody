@@ -1,40 +1,26 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function BodySystemsCheck() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Body Systems Check - Comprehensive Assessment | RockUrBody"
         description="A comprehensive 90-minute assessment of your alignment, movement patterns, and structural imbalances. Identify what's working, what's not, and create a clear roadmap for improvement."
         keywords="body assessment Santa Cruz, movement screening, structural assessment, body systems check, alignment evaluation"
         url="/body-systems-check"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Body Systems Check
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              A comprehensive 90-minute assessment that identifies what's working, what's not, and creates a clear roadmap for upgrading your body's software.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                to="/book"
-                variant="primary"
-                size="lg"
-              >
-                Book Your Systems Check
-              </Button>
-            </div>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/body-systems-check-hero.jpg"
+        title="Body Systems Check"
+        subtitle="A comprehensive 90-minute assessment that identifies what's working, what's not, and creates a clear roadmap for upgrading your body's software."
+        alt="Body systems check assessment in Santa Cruz"
+      />
+      <div className="pt-16 pb-24 px-6">
+        <div className="max-w-4xl mx-auto">
 
         {/* What You'll Get */}
         <section className="py-16 md:py-24 px-4">
@@ -260,9 +246,8 @@ function BodySystemsCheck() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

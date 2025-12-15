@@ -22,7 +22,7 @@ function BalanceTraining() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/balance-training-hero.jpg"
         title="Balance & Stability Training"
         subtitle="Confidence in movement comes from better balance"
         alt="Balance and stability training for fall prevention and improved coordination in Santa Cruz"

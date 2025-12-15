@@ -14,7 +14,7 @@ function PhoneReshapingSkeleton() {
       />
 
       <PageHero 
-        imageSrc="/blog-hero.jpg"
+        imageSrc="/blog-phone-skeleton-hero.jpg"
         title="Your Phone is Reshaping Your Skeleton (And We Can Do Better)"
         subtitle="Technology is literally changing people's bodies. Here's how and what we can do about it."
         alt="Blog article about how phones and technology reshape our bodies and fascial system"

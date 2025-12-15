@@ -50,7 +50,7 @@ function InjuryRecovery() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/injury-recovery-hero.jpg"
         title="Injury Recovery & Prevention"
         subtitle="Heal faster, come back stronger, stay injury-free"
         alt="Sports injury recovery and rehabilitation using structural integration and movement therapy in Santa Cruz"

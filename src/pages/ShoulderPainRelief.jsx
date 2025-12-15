@@ -50,7 +50,7 @@ function ShoulderPainRelief() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/shoulder-pain-hero.jpg"
         title="Shoulder Pain Relief"
         subtitle="Get your shoulder moving freely again"
         alt="Shoulder pain relief treatment using structural integration to restore shoulder mobility and function in Santa Cruz"

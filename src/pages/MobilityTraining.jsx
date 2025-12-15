@@ -22,7 +22,7 @@ function MobilityTraining() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/mobility-training-hero.jpg"
         title="Mobility Training"
         subtitle="Real flexibility that translates to how you move"
         alt="Mobility training and flexibility work using functional movement patterns to improve movement quality in Santa Cruz"

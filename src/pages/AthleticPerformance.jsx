@@ -50,7 +50,7 @@ function AthleticPerformance() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/athletic-performance-hero.jpg"
         title="Athletic Performance Enhancement"
         subtitle="Move better. Perform better. Win more."
         alt="Athletic performance enhancement using structural integration and movement optimization for serious athletes in Santa Cruz"

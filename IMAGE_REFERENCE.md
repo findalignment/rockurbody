@@ -1,10 +1,4 @@
-# Site Images Reference
 
-This document lists all images currently used or needed across the Rock Your Body website. The "Current Filename" is what's in the code now, and "Airtable Name" is what you should name these in your Airtable database.
-
-## Hero Images (PageHero component)
-
-These are the large banner images at the top of pages. Currently using placeholder names, but should be replaced with descriptive content-specific images.
 
 ### Main Pages
 
@@ -49,18 +43,18 @@ These are the large banner images at the top of pages. Currently using placehold
 | Chronic Pain Relief | `/approach-hero.jpg` | `chronic-pain-hero` | Chronic pain treatment | |
 | Back Pain Santa Cruz | `/back-pain-hero.jpg` | `back-pain-hero` | Back pain relief | ✅ |
 | Hip Pain Treatment | `/hip-series-hero.jpg` | `hip-pain-hero` | Hip pain treatment | ✅ |
-| Shoulder Pain Relief | `/training-hero.jpg` | `shoulder-pain-hero` | Shoulder pain | |
+| Shoulder Pain Relief | `/shoulder-pain-hero.jpg` | `shoulder-pain-hero` | Shoulder pain | ✅ |
 | Neck Pain Relief | `/neck-pain-treatment-hero.jpg` | `neck-pain-hero` | Neck pain | ✅ |
 | Sciatica Relief | `/approach-hero.jpg` | `sciatica-hero` | Sciatica treatment | |
 | Knee Pain Treatment | `/training-hero.jpg` | `knee-pain-hero` | Knee pain | |
 | TMJ Relief | `/approach-hero.jpg` | `tmj-hero` | TMJ dysfunction | |
 | Plantar Fasciitis | `/training-hero.jpg` | `plantar-fasciitis-hero` | Plantar fasciitis | |
-| Frozen Shoulder | `/training-hero.jpg` | `frozen-shoulder-hero` | Frozen shoulder | |
+| Frozen Shoulder | `/frozen-shoulder-hero.jpg` | `frozen-shoulder-hero` | Frozen shoulder | ✅ |
 | IT Band Syndrome | `/training-hero.jpg` | `it-band-hero` | IT band syndrome | |
 | Rotator Cuff Injury | `/rotator-cuff-treatment-hero.jpg` | `rotator-cuff-hero` | Rotator cuff | ✅ |
 | Achilles Tendonitis | `/training-hero.jpg` | `achilles-hero` | Achilles tendonitis | |
 | Bunion & Foot Pain | `/training-hero.jpg` | `bunion-foot-pain-hero` | Bunion and foot pain | |
-| Headache & Migraine | `/training-hero.jpg` | `headache-migraine-hero` | Headaches and migraines | |
+| Headache & Migraine | `/headache-migraine-hero.jpg` | `headache-migraine-hero` | Headaches and migraines | ✅ |
 | Thoracic Outlet Syndrome | `/training-hero.jpg` | `thoracic-outlet-hero` | Thoracic outlet syndrome | |
 | Whiplash Recovery | `/training-hero.jpg` | `whiplash-hero` | Whiplash recovery | |
 | Scoliosis Treatment | `/training-hero.jpg` | `scoliosis-hero` | Scoliosis | |
@@ -75,8 +69,8 @@ These are the large banner images at the top of pages. Currently using placehold
 | Desk Worker Wellness | `/approach-hero.jpg` | `desk-worker-hero` | For desk workers | |
 | Active Aging | `/approach-hero.jpg` | `active-aging-hero` | For older adults | |
 | Pregnancy & Postpartum | `/approach-hero.jpg` | `pregnancy-postpartum-hero` | Pregnancy/postpartum | |
-| Golf Performance | `/training-hero.jpg` | `golf-hero` | Golf performance | |
-| Athletic Performance | `/training-hero.jpg` | `athletic-performance-hero` | General athletics | |
+| Golf Performance | `/golf-hero.jpg` | `golf-hero` | Golf performance | ✅ |
+| Athletic Performance | `/athletic-performance-hero.jpg` | `athletic-performance-hero` | General athletics | ✅ |
 | Personal Trainer SC | `/training-hero.jpg` | `personal-trainer-hero` | Personal training | |
 
 ### Educational/Comparison Pages
@@ -87,13 +81,13 @@ These are the large banner images at the top of pages. Currently using placehold
 | SI vs Chiropractic | `/approach-hero.jpg` | `si-vs-chiro-hero` | Comparison page | |
 | Posture Correction | `/approach-hero.jpg` | `posture-correction-hero` | Posture improvement | |
 | Fascial Release | `/approach-hero.jpg` | `fascial-release-hero` | Fascial work explanation | |
-| Mobility Training | `/training-hero.jpg` | `mobility-training-hero` | Mobility training | |
-| Balance Training | `/training-hero.jpg` | `balance-training-hero` | Balance work | |
+| Mobility Training | `/mobility-training-hero.jpg` | `mobility-training-hero` | Mobility training | ✅ |
+| Balance Training | `/balance-training-hero.jpg` | `balance-training-hero` | Balance work | ✅ |
 | Core Strengthening | `/training-hero.jpg` | `core-strengthening-hero` | Core work | |
 | Breathing & Core | `/training-hero.jpg` | `breathing-core-hero` | Breathing mechanics | |
 | Movement Screening | `/training-hero.jpg` | `movement-screening-hero` | Movement assessment | |
 | Sports Injury Prevention | `/training-hero.jpg` | `sports-injury-prevention-hero` | Injury prevention | |
-| Injury Recovery | `/training-hero.jpg` | `injury-recovery-hero` | Injury recovery | |
+| Injury Recovery | `/injury-recovery-hero.jpg` | `injury-recovery-hero` | Injury recovery | ✅ |
 | Stress & Anxiety Relief | `/training-hero.jpg` | `stress-anxiety-hero` | Stress relief | |
 | Personal Training Posture | `/training-hero.jpg` | `personal-training-posture-hero` | PT with posture focus | |
 | Santa Cruz SI | `/services-hero.jpg` | `santa-cruz-si-hero` | Local SI page | |
@@ -118,7 +112,7 @@ These are the large banner images at the top of pages. Currently using placehold
 
 | Page | Current Filename | Airtable Name | Description | Has Unique Image |
 |------|-----------------|---------------|-------------|------------------|
-| Phone Reshaping Skeleton | `/blog-hero.jpg` | `blog-phone-skeleton-hero` | Tech neck blog | |
+| Phone Reshaping Skeleton | `/blog-phone-skeleton-hero.jpg` | `blog-phone-skeleton-hero` | Tech neck blog | ✅ |
 | Tech Changes Posture | `/blog-hero.jpg` | `blog-tech-posture-hero` | Digital posture blog | |
 
 ### New Core Pillar Pages (2025)
@@ -153,7 +147,7 @@ These are the large banner images at the top of pages. Currently using placehold
 | What Are Compensation Patterns | (gradient background) | `compensation-patterns-hero` | Compensation explanation | |
 | Mobility vs Stability vs Control | (gradient background) | `mobility-stability-control-hero` | Movement components | |
 | Breathing & Posture Connection | (gradient background) | `breathing-posture-hero` | Breathing-posture link | |
-| What Is Alignment In The Body | (gradient background) | `alignment-body-hero` | Alignment explanation | |
+| What Is Alignment In The Body | `/alignment-body-hero.jpg` | `alignment-body-hero` | Alignment explanation | ✅ |
 | Why Core Work Doesn't Fix Back Pain | (gradient background) | `core-back-pain-hero` | Core work limitations | |
 | Strength Without Wear and Tear | (gradient background) | `strength-wear-tear-hero` | Longevity training | |
 | Load Management For Longevity | (gradient background) | `load-management-hero` | Load management | |

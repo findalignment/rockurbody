@@ -1,31 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function UpgradeYourBodySoftware() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Upgrade Your Body's Software - Systematic Body Transformation | RockUrBody"
         description="Upgrade your body's software through systematic structural integration and movement education. Transform alignment, strength, and movement longevity. Santa Cruz, CA."
         keywords="upgrade body software, body systems upgrade, structural integration, movement education, body transformation, Santa Cruz"
         url="/upgrade-your-body-software"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Upgrade Your Body's Software
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Your body runs on patterns—alignment, strength, movement longevity. We identify what's not working and rebuild it from the ground up.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/upgrade-body-software-hero.jpg"
+        title="Upgrade Your Body's Software"
+        subtitle="Your body runs on patterns—alignment, strength, movement longevity. We identify what's not working and rebuild it from the ground up."
+        alt="Upgrade your body's software through systematic structural integration and movement education"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         {/* The Concept */}
         <section className="py-16 md:py-24 px-4">
@@ -153,9 +147,8 @@ function UpgradeYourBodySoftware() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

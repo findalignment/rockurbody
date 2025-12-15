@@ -22,7 +22,7 @@ function GolfPerformance() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/golf-hero.jpg"
         title="Golf Performance & Mobility"
         subtitle="Your body is the foundation of your swing"
         alt="Golf performance training using structural integration and movement training to improve swing mechanics and rotational mobility in Santa Cruz"
