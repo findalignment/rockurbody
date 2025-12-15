@@ -1,4 +1,10 @@
+# Site Images Reference
 
+This document lists all images currently used or needed across the Rock Your Body website. The "Current Filename" is what's in the code now, and "Airtable Name" is what you should name these in your Airtable database.
+
+## Hero Images (PageHero component)
+
+These are the large banner images at the top of pages. Currently using placeholder names, but should be replaced with descriptive content-specific images.
 
 ### Main Pages
 
@@ -16,6 +22,7 @@
 | Smart Starts | `/smart-starts-hero.jpg` | `smart-starts-hero` | Smart Starts programs | ✅ |
 | Blog Index | `/blog-hero.jpg` | `blog-hero` | Blog landing page | ✅ |
 | Process | `/process.hero.jpg` | `process-hero` | Process page | ✅ |
+| FAQ | `/services-hero.jpg` | `faq-hero` | FAQ page | |
 
 ### Service Description Pages
 
@@ -26,6 +33,44 @@
 | 12-Series | (no hero image) | `12-series-hero` | 12-Series program | |
 | Hip Series | (no hero image) | `hip-series-hero` | Hip Series program | |
 | Combo Programs | `/services-hero.jpg` | `combo-programs-hero` | Combination programs | |
+| Book Structural Integration | `/services-hero.jpg` | `book-si-hero` | Booking page for SI | |
+| Book Movement Education | `/services-hero.jpg` | `book-movement-hero` | Booking page for Movement | |
+| Book Combo Programs | `/packages-hero.jpg` | `book-combo-hero` | Booking page for combos | |
+
+### Educational Pages
+
+| Page | Current Filename | Airtable Name | Description | Has Unique Image |
+|------|-----------------|---------------|-------------|------------------|
+| Gravity & SI | `/gravity-structural-integration-hero.jpg` | `gravity-structural-integration-hero` | Working with gravity page | ✅ |
+| Exercise for Life | `/exercise-for-life-hero.jpg` | `exercise-for-life-hero` | Functional training page | ✅ |
+| Safe Gym Training | `/safe-gym-training-hero.jpg` | `safe-gym-training-hero` | Injury prevention page | ✅ |
+| Daily Mobility | `/daily-mobility-hero.jpg` | `daily-mobility-hero` | 5-minute mobility routine | ✅ |
+
+### Problem-Specific SEO Pages
+
+| Page | Current Filename | Airtable Name | Description | Has Unique Image |
+|------|-----------------|---------------|-------------|------------------|
+| Chronic Pain Relief | `/approach-hero.jpg` | `chronic-pain-hero` | Chronic pain treatment | |
+| Back Pain Santa Cruz | `/back-pain-hero.jpg` | `back-pain-hero` | Back pain relief | ✅ |
+| Hip Pain Treatment | `/hip-series-hero.jpg` | `hip-pain-hero` | Hip pain treatment | ✅ |
+| Shoulder Pain Relief | `/shoulder-pain-hero.jpg` | `shoulder-pain-hero` | Shoulder pain | ✅ |
+| Shoulder Pain Treatment | `/shoulder-pain-hero.jpg` | `shoulder-pain-treatment-hero` | Shoulder pain treatment | ✅ |
+| Neck Pain Relief | `/neck-pain-treatment-hero.jpg` | `neck-pain-hero` | Neck pain | ✅ |
+| Neck Pain Santa Cruz | `/neck-pain-treatment-hero.jpg` | `neck-pain-santa-cruz-hero` | Neck pain local | ✅ |
+| Sciatica Relief | `/sciatica-hero.jpg` | `sciatica-hero` | Sciatica treatment | ✅ |
+| Sciatica Relief Santa Cruz | `/hip-series-hero.jpg` | `sciatica-santa-cruz-hero` | Sciatica local | |
+| Knee Pain Treatment | `/knee-pain-hero.jpg` | `knee-pain-hero` | Knee pain | ✅ |
+| TMJ Relief | `/approach-hero.jpg` | `tmj-hero` | TMJ dysfunction | |
+| Plantar Fasciitis | `/plantar-fasciitis-hero.jpg` | `plantar-fasciitis-hero` | Plantar fasciitis | ✅ |
+| Frozen Shoulder | `/frozen-shoulder-hero.jpg` | `frozen-shoulder-hero` | Frozen shoulder | ✅ |
+| IT Band Syndrome | `/it-band-hero.jpg` | `it-band-hero` | IT band syndrome | ✅ |
+| Rotator Cuff Injury | `/rotator-cuff-treatment-hero.jpg` | `rotator-cuff-hero` | Rotator cuff | ✅ |
+| Achilles Tendonitis | `/achilles-hero.jpg` | `achilles-hero` | Achilles tendonitis | ✅ |
+| Bunion & Foot Pain | `/bunion-foot-pain-hero.jpg` | `bunion-foot-pain-hero` | Bunion and foot pain | ✅ |
+| Headache & Migraine | `/headache-migraine-hero.jpg` | `headache-migraine-hero` | Headaches and migraines | ✅ |
+| Thoracic Outlet Syndrome | `/thoracic-outlet-hero.jpg` | `thoracic-outlet-hero` | Thoracic outlet syndrome | ✅ |
+| Whiplash Recovery | `/whiplash-hero.jpg` | `whiplash-hero` | Whiplash recovery | ✅ |
+| Scoliosis Treatment | `/scoliosis-hero.jpg` | `scoliosis-hero` | Scoliosis | ✅ |
 
 ### Activity/Demographic Pages
 
@@ -59,7 +104,18 @@
 | Stress & Anxiety Relief | `/training-hero.jpg` | `stress-anxiety-hero` | Stress relief | |
 | Personal Training Posture | `/training-hero.jpg` | `personal-training-posture-hero` | PT with posture focus | |
 | Santa Cruz SI | `/services-hero.jpg` | `santa-cruz-si-hero` | Local SI page | |
-| Gravity & SI | `/gravity-structural-integration-hero.jpg` | `gravity-structural-integration-hero` | Working with gravity page | ✅ |
+| Body Alignment | `/services-hero.jpg` | `body-alignment-hero` | Body alignment page | |
+
+### Hub Pages
+
+| Page | Current Filename | Airtable Name | Description | Has Unique Image |
+|------|-----------------|---------------|-------------|------------------|
+| Pain Relief Hub | `/services-hero.jpg` | `pain-relief-hub-hero` | Pain relief hub | |
+| Movement Training Hub | `/training-hero.jpg` | `movement-training-hub-hero` | Movement training hub | |
+| Structural Integration Hub | `/gravity-structural-integration-hero.jpg` | `structural-integration-hub-hero` | SI hub | |
+| Sports Performance Hub | `/surfers-hero.jpg` | `sports-performance-hub-hero` | Sports performance hub | |
+| Injury Recovery Hub | `/services-hero.jpg` | `injury-recovery-hub-hero` | Injury recovery hub | |
+| Wellness Hub | `/approach-hero.jpg` | `wellness-hub-hero` | Wellness hub | |
 
 ### Certification Pages
 
@@ -82,6 +138,8 @@
 |------|-----------------|---------------|-------------|------------------|
 | Phone Reshaping Skeleton | `/blog-phone-skeleton-hero.jpg` | `blog-phone-skeleton-hero` | Tech neck blog | ✅ |
 | Tech Changes Posture | `/blog-hero.jpg` | `blog-tech-posture-hero` | Digital posture blog | |
+| Discomfort Becomes Normal | (no hero image) | `blog-discomfort-normal-hero` | Discomfort blog | |
+| Integrating Structure & Movement | (no hero image) | `blog-integrating-structure-hero` | Integration blog | |
 
 ### New Core Pillar Pages (2025)
 
@@ -92,6 +150,11 @@
 | Movement Coaching Santa Cruz | (gradient background) | `movement-coaching-sc-hero` | Main local service page | |
 | Alignment-Based Strength Training | `/alignment-strength-hero.jpg` | `alignment-strength-hero` | Strength without compensation | ✅ |
 | Train for Longevity | (gradient background) | `train-longevity-hero` | Dividends philosophy | |
+| How It Works | (gradient background) | `how-it-works-hero` | How it works page | |
+| Software Upgrade Plan | (gradient background) | `software-upgrade-plan-hero` | Software upgrade plan | |
+| Performance + Longevity Coaching | (gradient background) | `performance-longevity-coaching-hero` | Ongoing coaching | |
+| Offers Comparison | (gradient background) | `offers-comparison-hero` | Comparison page | |
+| Body Operating System Checklist | (gradient background) | `body-operating-system-checklist-hero` | Lead magnet | |
 
 ### New Problem Pages (2025)
 
@@ -172,15 +235,6 @@ These are portrait photos of teachers/mentors shown on the Training Lineage page
   - All existing images have both `.jpg` and `.webp` versions
   - Images should be optimized for web (compressed appropriately)
 
-## Priority Images Needed
-
-These pages were recently created and need proper hero images:
-
-1. **gravity-structural-integration-hero** - Image showing balanced posture or SI work
-2. **exercise-for-life-hero** - Functional movement, real-world activity
-3. **safe-gym-training-hero** - Training with proper form
-4. **daily-mobility-hero** - Mobility/stretching work
-
 ## How to Use This Reference
 
 1. In your Airtable "Site Images" base, the **Name** field should match the "Airtable Name" column
@@ -193,14 +247,21 @@ These pages were recently created and need proper hero images:
 
 To convert images to WebP format, use the provided script:
 ```bash
-cd /Users/rockhudson/Desktop/rockurbody
+cd /Users/rockhudson/Documents/Websites/rockurbody
 ./optimize-images.sh
 ```
 
 This will create WebP versions of all JPG/PNG files in the public directory.
 
+## Summary Statistics
+
+- **Total Pages Listed:** ~120+ pages
+- **Pages with Unique Images:** ~50+ pages (marked with ✅)
+- **Pages Needing Images:** ~70+ pages
+- **Profile Images:** 4 portraits
+- **Special Images:** 3 (favicon, hero astronaut, hero raccoons)
+
 ---
 
-**Last Updated:** November 4, 2025
-**Total Images Needed:** ~100+ hero images + 4 portraits + 2 special images
-
+**Last Updated:** December 2025
+**Next Steps:** Download images from Airtable using `npm run download-images` and update pages as images become available.
