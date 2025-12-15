@@ -38,6 +38,7 @@ function BodySystemsCheck() {
               </div>
             </div>
           </div>
+        </div>
 
         {/* What You'll Get */}
         <section className="py-16 md:py-24 px-4">
