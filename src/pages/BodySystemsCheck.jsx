@@ -3,6 +3,7 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
+import FAQSection from '../components/FAQSection';
 
 function BodySystemsCheck() {
   return (
@@ -19,8 +20,24 @@ function BodySystemsCheck() {
         subtitle="A comprehensive 90-minute assessment that identifies what's working, what's not, and creates a clear roadmap for upgrading your body's software."
         alt="Body systems check assessment in Santa Cruz"
       />
-      <div className="pt-16 pb-24 px-6">
+      <div className="pt-24 md:pt-32 pb-24 px-6">
         <div className="max-w-4xl mx-auto">
+          {/* Important Notice */}
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-12 rounded-r-lg">
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <svg className="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Important Notice</h3>
+                <p className="text-blue-800 leading-relaxed">
+                  The Body Systems Check is an assessment and educational service, not a medical diagnosis. This evaluation focuses on movement patterns, alignment, and structural relationships. It does not diagnose medical conditions, diseases, or injuries. If you have concerns about a medical condition, please consult with a qualified healthcare provider.
+                </p>
+              </div>
+            </div>
+          </div>
 
         {/* What You'll Get */}
         <section className="py-16 md:py-24 px-4">
@@ -202,7 +219,7 @@ function BodySystemsCheck() {
               Investment
             </h2>
             <div className="bg-white rounded-xl p-8 md:p-12 shadow-lg max-w-2xl mx-auto">
-              <div className="text-5xl font-bold text-primary mb-4">$180</div>
+              <div className="text-5xl font-bold text-primary mb-4">$250</div>
               <p className="text-xl text-neutralDark/80 mb-6">90 minutes</p>
               <p className="text-lg text-neutralDark/70 mb-8">
                 Includes comprehensive assessment, written summary, and personalized roadmap for your body's upgrade.
@@ -216,6 +233,44 @@ function BodySystemsCheck() {
                 Book Your Systems Check
               </Button>
             </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 md:py-24 px-4">
+          <div className="max-w-4xl mx-auto">
+            <FAQSection
+              faqs={[
+                {
+                  question: "What is included in the Body Systems Check?",
+                  answer: "The Body Systems Check is a comprehensive 90-minute assessment that includes: a detailed conversation about your goals and history, movement pattern screening (walking, squatting, reaching), hands-on structural evaluation of your fascia and alignment, breathing and core function assessment, and a personalized roadmap with recommendations for your specific needs."
+                },
+                {
+                  question: "Is this a medical diagnosis?",
+                  answer: "No. The Body Systems Check is an assessment and educational service focused on movement patterns, alignment, and structural relationships. It is not a medical diagnosis and does not diagnose medical conditions, diseases, or injuries. If you have concerns about a medical condition, please consult with a qualified healthcare provider."
+                },
+                {
+                  question: "What should I expect during the assessment?",
+                  answer: "You'll start with a conversation about your goals and movement history (15 min), then move through various movement patterns while we observe how your body organizes itself (30 min). We'll do hands-on assessment of your structure, fascia, and alignment (30 min), and finish with a review of findings and recommendations for next steps (15 min)."
+                },
+                {
+                  question: "Do I need to prepare anything beforehand?",
+                  answer: "Wear comfortable clothing that allows you to move freely. You may want to bring a list of any questions or concerns you have. No other preparation is needed—just come as you are."
+                },
+                {
+                  question: "What happens after the Body Systems Check?",
+                  answer: "After your assessment, you'll receive a clear roadmap with recommendations tailored to your specific needs. This may include priority areas for structural work, movement patterns to develop or correct, recommended service packages or programs, and a timeline for expected outcomes. Many clients then choose to begin a Structural Integration series or Movement Education program."
+                },
+                {
+                  question: "Can I use this assessment if I'm already working with a physical therapist or doctor?",
+                  answer: "Yes. The Body Systems Check complements medical care by focusing on movement patterns and structural relationships. It's not a replacement for medical treatment, but it can provide valuable insights into how your body moves and organizes itself. We're happy to work alongside your healthcare providers."
+                },
+                {
+                  question: "How is this different from a physical therapy evaluation?",
+                  answer: "While physical therapy focuses on diagnosing and treating medical conditions, the Body Systems Check focuses on movement patterns, alignment, and structural relationships. We assess how your body organizes itself in movement and identify patterns that may be contributing to restrictions or inefficiencies. It's complementary to medical care, not a replacement."
+                }
+              ]}
+            />
           </div>
         </section>
 
