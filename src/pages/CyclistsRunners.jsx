@@ -22,7 +22,7 @@ function CyclistsRunners() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/cyclists-runners-hero.jpg"
         title="For Cyclists & Runners"
         subtitle="Go longer, perform better, stay injury-free"
         alt="Structural integration and movement training for cyclists and runners to improve performance and prevent injuries in Santa Cruz"

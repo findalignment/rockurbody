@@ -22,7 +22,7 @@ function Climbers() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/climbers-hero.jpg"
         title="For Climbers"
         subtitle="Climb stronger, recover faster, prevent injuries"
         alt="Structural integration and movement training for rock climbers to improve performance and prevent injuries in Santa Cruz"
