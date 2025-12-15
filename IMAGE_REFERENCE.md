@@ -27,38 +27,15 @@
 | Hip Series | (no hero image) | `hip-series-hero` | Hip Series program | |
 | Combo Programs | `/services-hero.jpg` | `combo-programs-hero` | Combination programs | |
 
-### Problem-Specific SEO Pages
-
-| Page | Current Filename | Airtable Name | Description | Has Unique Image |
-|------|-----------------|---------------|-------------|------------------|
-| Chronic Pain Relief | `/approach-hero.jpg` | `chronic-pain-hero` | Chronic pain treatment | |
-| Back Pain Santa Cruz | `/back-pain-hero.jpg` | `back-pain-hero` | Back pain relief | ✅ |
-| Hip Pain Treatment | `/hip-series-hero.jpg` | `hip-pain-hero` | Hip pain treatment | ✅ |
-| Shoulder Pain Relief | `/shoulder-pain-hero.jpg` | `shoulder-pain-hero` | Shoulder pain | ✅ |
-| Neck Pain Relief | `/neck-pain-treatment-hero.jpg` | `neck-pain-hero` | Neck pain | ✅ |
-| Sciatica Relief | `/approach-hero.jpg` | `sciatica-hero` | Sciatica treatment | |
-| Knee Pain Treatment | `/training-hero.jpg` | `knee-pain-hero` | Knee pain | |
-| TMJ Relief | `/approach-hero.jpg` | `tmj-hero` | TMJ dysfunction | |
-| Plantar Fasciitis | `/training-hero.jpg` | `plantar-fasciitis-hero` | Plantar fasciitis | |
-| Frozen Shoulder | `/frozen-shoulder-hero.jpg` | `frozen-shoulder-hero` | Frozen shoulder | ✅ |
-| IT Band Syndrome | `/training-hero.jpg` | `it-band-hero` | IT band syndrome | |
-| Rotator Cuff Injury | `/rotator-cuff-treatment-hero.jpg` | `rotator-cuff-hero` | Rotator cuff | ✅ |
-| Achilles Tendonitis | `/training-hero.jpg` | `achilles-hero` | Achilles tendonitis | |
-| Bunion & Foot Pain | `/training-hero.jpg` | `bunion-foot-pain-hero` | Bunion and foot pain | |
-| Headache & Migraine | `/headache-migraine-hero.jpg` | `headache-migraine-hero` | Headaches and migraines | ✅ |
-| Thoracic Outlet Syndrome | `/training-hero.jpg` | `thoracic-outlet-hero` | Thoracic outlet syndrome | |
-| Whiplash Recovery | `/training-hero.jpg` | `whiplash-hero` | Whiplash recovery | |
-| Scoliosis Treatment | `/training-hero.jpg` | `scoliosis-hero` | Scoliosis | |
-
 ### Activity/Demographic Pages
 
 | Page | Current Filename | Airtable Name | Description | Has Unique Image |
 |------|-----------------|---------------|-------------|------------------|
 | Surfers | `/surfers-hero.jpg` | `surfers-hero` | For surfers | ✅ |
-| Climbers | `/training-hero.jpg` | `climbers-hero` | For climbers | |
-| Cyclists & Runners | `/training-hero.jpg` | `cyclists-runners-hero` | For cyclists and runners | |
-| Desk Worker Wellness | `/approach-hero.jpg` | `desk-worker-hero` | For desk workers | |
-| Active Aging | `/approach-hero.jpg` | `active-aging-hero` | For older adults | |
+| Climbers | `/climbers-hero.jpg` | `climbers-hero` | For climbers | ✅ |
+| Cyclists & Runners | `/cyclists-runners-hero.jpg` | `cyclists-runners-hero` | For cyclists and runners | ✅ |
+| Desk Worker Wellness | `/desk-worker-hero.jpg` | `desk-worker-hero` | For desk workers | ✅ |
+| Active Aging | `/active-aging-hero.jpg` | `active-aging-hero` | For older adults | ✅ |
 | Pregnancy & Postpartum | `/approach-hero.jpg` | `pregnancy-postpartum-hero` | Pregnancy/postpartum | |
 | Golf Performance | `/golf-hero.jpg` | `golf-hero` | Golf performance | ✅ |
 | Athletic Performance | `/athletic-performance-hero.jpg` | `athletic-performance-hero` | General athletics | ✅ |
