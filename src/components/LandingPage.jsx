@@ -339,7 +339,7 @@ function LandingPage() {
       structuredData={getLocalBusinessSchema()}
       url="/"
     />
-    <Hero backgroundImage="/hero-background.jpg" altText="Rock Your Body - Structural integration and movement education in Santa Cruz, California">
+    <Hero backgroundImage="/home-hero.jpg" altText="Rock Your Body - Structural integration and movement education in Santa Cruz, California">
       <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[85vh] md:pt-[90vh]">
         <HeroContent />
         

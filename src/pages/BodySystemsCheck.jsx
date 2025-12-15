@@ -15,7 +15,7 @@ function BodySystemsCheck() {
         url="/body-systems-check"
       />
       <PageHero 
-        imageSrc="/approach-hero.jpg"
+        imageSrc="/body-systems-check-hero.jpg"
         title="Body Systems Check"
         subtitle="A comprehensive 90-minute assessment that identifies what's working, what's not, and creates a clear roadmap for upgrading your body's software."
         alt="Body systems check assessment in Santa Cruz"
