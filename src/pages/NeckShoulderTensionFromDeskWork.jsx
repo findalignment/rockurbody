@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function NeckShoulderTensionFromDeskWork() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Neck & Shoulder Tension From Desk Work - Posture Problems | RockUrBody"
         description="Neck and shoulder tension from desk work isn't just about posture. Learn how desk work creates structural restrictions and compensation patterns, and how to fix them."
         keywords="neck tension desk work, shoulder pain from sitting, desk posture problems, neck shoulder tension, structural integration, Santa Cruz"
         url="/neck-shoulder-tension-from-desk-work"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Neck & Shoulder Tension From Desk Work
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Desk work doesn't just create bad posture. It creates structural restrictions and compensation patterns that cause chronic tension.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/neck-shoulder-desk-hero.jpg"
+        title="Neck & Shoulder Tension From Desk Work"
+        subtitle="Desk work doesn't just create bad posture. It creates structural restrictions and compensation patterns that cause chronic tension."
+        alt="Neck and shoulder tension from desk work treatment"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -79,9 +74,8 @@ function NeckShoulderTensionFromDeskWork() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function WhyMyBackKeepsGoingOut() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Why My Back Keeps Going Out - Recurring Back Problems | RockUrBody"
         description="Recurring back problems aren't random. Learn why your back keeps going out and how to address the root causes through structural integration and movement education."
         keywords="recurring back pain, back keeps going out, chronic back problems, structural issues, compensation patterns, Santa Cruz"
         url="/why-my-back-keeps-going-out"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Why My Back Keeps Going Out
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Recurring back problems aren't random. They're patterns. And patterns can be changed.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/back-going-out-hero.jpg"
+        title="Why My Back Keeps Going Out"
+        subtitle="Recurring back problems aren't random. They're patterns. And patterns can be changed."
+        alt="Recurring back problems treatment through structural integration"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function WhyMyBackKeepsGoingOut() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

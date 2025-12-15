@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function StrongButStillInPain() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Strong But Still In Pain - Why Strength Alone Isn't Enough | RockUrBody"
         description="You're strong but still in pain. Learn why strength alone isn't enough and how alignment, movement quality, and structural work address chronic pain."
         keywords="strong but in pain, chronic pain despite strength, pain with strength training, movement quality, alignment issues, Santa Cruz"
         url="/strong-but-still-in-pain"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Strong But Still In Pain
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              You're strong. You train hard. But you're still in pain. Strength alone isn't enough.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/strong-pain-hero.jpg"
+        title="Strong But Still In Pain"
+        subtitle="You're strong. You train hard. But you're still in pain. Strength alone isn't enough."
+        alt="Strong but still in pain - addressing chronic pain despite strength"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function StrongButStillInPain() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function WhyIFeelTightAllTheTime() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Why I Feel Tight All The Time - Understanding Chronic Tension | RockUrBody"
         description="Chronic tightness isn't just about flexibility. Learn why you feel tight all the time and how to address the root causes through structural integration and movement education."
         keywords="chronic tightness, always feel tight, muscle tension, flexibility issues, structural restrictions, Santa Cruz"
         url="/why-i-feel-tight-all-the-time"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Why I Feel Tight All The Time
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Chronic tightness isn't a flexibility problem. It's a structural and movement pattern problem.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/feel-tight-hero.jpg"
+        title="Why I Feel Tight All The Time"
+        subtitle="Chronic tightness isn't a flexibility problem. It's a structural and movement pattern problem."
+        alt="Understanding chronic tightness and tension through structural integration"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function WhyIFeelTightAllTheTime() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

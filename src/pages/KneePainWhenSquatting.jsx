@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function KneePainWhenSquatting() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Knee Pain When Squatting - Movement Quality Issues | RockUrBody"
         description="Knee pain when squatting isn't a knee problem. Learn how poor movement patterns, alignment issues, and compensation create knee pain, and how to fix it."
         keywords="knee pain squatting, knee pain when squatting, squat form problems, movement quality, alignment issues, Santa Cruz"
         url="/knee-pain-when-squatting"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Knee Pain When Squatting
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Knee pain when squatting isn't a knee problem. It's a movement pattern problem.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/knee-pain-squatting-hero.jpg"
+        title="Knee Pain When Squatting"
+        subtitle="Knee pain when squatting isn't a knee problem. It's a movement pattern problem."
+        alt="Knee pain when squatting treatment through movement quality improvement"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function KneePainWhenSquatting() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

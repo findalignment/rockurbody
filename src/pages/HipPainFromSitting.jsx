@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function HipPainFromSitting() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Hip Pain From Sitting - Desk Work Hip Problems | RockUrBody"
         description="Hip pain from sitting isn't just about time in a chair. Learn how sitting creates structural restrictions and movement patterns that cause hip pain, and how to fix it."
         keywords="hip pain from sitting, desk work hip pain, sitting hip problems, hip restrictions, structural integration, Santa Cruz"
         url="/hip-pain-from-sitting"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Hip Pain From Sitting
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Sitting doesn't just make your hips tight. It creates structural restrictions and movement patterns that cause pain.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/hip-pain-sitting-hero.jpg"
+        title="Hip Pain From Sitting"
+        subtitle="Sitting doesn't just make your hips tight. It creates structural restrictions and movement patterns that cause pain."
+        alt="Hip pain from sitting treatment through structural integration"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -71,9 +66,8 @@ function HipPainFromSitting() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

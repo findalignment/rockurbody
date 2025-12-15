@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function WhyStretchingDoesntFixIt() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Why Stretching Doesn't Fix It - Addressing Root Causes | RockUrBody"
         description="Stretching addresses symptoms, not causes. Learn why stretching doesn't fix chronic tightness and how to address the root causes through structural integration."
         keywords="why stretching doesn't work, chronic tightness, flexibility issues, structural restrictions, compensation patterns, Santa Cruz"
         url="/why-stretching-doesnt-fix-it"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Why Stretching Doesn't Fix It
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Stretching addresses the symptom, not the cause. If your body is tight because it's compensating, stretching won't fix it.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/stretching-doesnt-fix-hero.jpg"
+        title="Why Stretching Doesn't Fix It"
+        subtitle="Stretching addresses the symptom, not the cause. If your body is tight because it's compensating, stretching won't fix it."
+        alt="Why stretching doesn't fix chronic tightness - addressing root causes"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function WhyStretchingDoesntFixIt() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

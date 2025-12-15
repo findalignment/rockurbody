@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function GymInjuriesFromBadMechanics() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Gym Injuries From Bad Mechanics - Movement Quality Training | RockUrBody"
         description="Gym injuries aren't accidents. They're the result of bad movement mechanics. Learn how poor form, compensation patterns, and alignment issues create injuries."
         keywords="gym injuries, bad form injuries, movement mechanics, training injuries, compensation patterns, Santa Cruz"
         url="/gym-injuries-from-bad-mechanics"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Gym Injuries From Bad Mechanics
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Gym injuries aren't accidents. They're the result of bad movement mechanics.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/gym-injuries-hero.jpg"
+        title="Gym Injuries From Bad Mechanics"
+        subtitle="Gym injuries aren't accidents. They're the result of bad movement mechanics."
+        alt="Gym injuries from bad mechanics - movement quality training"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function GymInjuriesFromBadMechanics() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function PlantarFasciitisAndLoadingPatterns() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Plantar Fasciitis & Loading Patterns - Root Cause Treatment | RockUrBody"
         description="Plantar fasciitis isn't just a foot problem. Learn how loading patterns, alignment issues, and compensation create plantar fasciitis, and how to fix it."
         keywords="plantar fasciitis, loading patterns, foot pain, structural issues, compensation patterns, Santa Cruz"
         url="/plantar-fasciitis-and-loading-patterns"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Plantar Fasciitis & Loading Patterns
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Plantar fasciitis isn't a foot problem. It's a loading pattern problem.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/plantar-loading-hero.jpg"
+        title="Plantar Fasciitis & Loading Patterns"
+        subtitle="Plantar fasciitis isn't a foot problem. It's a loading pattern problem."
+        alt="Plantar fasciitis and loading patterns treatment through structural integration"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -79,9 +74,8 @@ function PlantarFasciitisAndLoadingPatterns() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

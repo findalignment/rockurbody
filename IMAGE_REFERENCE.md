@@ -160,16 +160,16 @@ These are the large banner images at the top of pages. Currently using placehold
 
 | Page | Current Filename | Airtable Name | Description | Has Unique Image |
 |------|-----------------|---------------|-------------|------------------|
-| Why I Feel Tight All The Time | (gradient background) | `feel-tight-hero` | Chronic tightness | |
-| Strong But Still In Pain | (gradient background) | `strong-pain-hero` | Strength-pain paradox | |
-| Why Stretching Doesn't Fix It | (gradient background) | `stretching-doesnt-fix-hero` | Stretching limitations | |
-| Why My Back Keeps Going Out | (gradient background) | `back-going-out-hero` | Recurring back problems | |
-| Hip Pain From Sitting | (gradient background) | `hip-pain-sitting-hero` | Desk work hip pain | |
-| Neck Shoulder Tension From Desk Work | (gradient background) | `neck-shoulder-desk-hero` | Desk work tension | |
-| Knee Pain When Squatting | (gradient background) | `knee-pain-squatting-hero` | Squat form problems | |
-| Plantar Fasciitis & Loading Patterns | (gradient background) | `plantar-loading-hero` | Loading patterns | |
+| Why I Feel Tight All The Time | `/feel-tight-hero.jpg` | `feel-tight-hero` | Chronic tightness | ✅ |
+| Strong But Still In Pain | `/strong-pain-hero.jpg` | `strong-pain-hero` | Strength-pain paradox | ✅ |
+| Why Stretching Doesn't Fix It | `/stretching-doesnt-fix-hero.jpg` | `stretching-doesnt-fix-hero` | Stretching limitations | ✅ |
+| Why My Back Keeps Going Out | `/back-going-out-hero.jpg` | `back-going-out-hero` | Recurring back problems | ✅ |
+| Hip Pain From Sitting | `/hip-pain-sitting-hero.jpg` | `hip-pain-sitting-hero` | Desk work hip pain | ✅ |
+| Neck Shoulder Tension From Desk Work | `/neck-shoulder-desk-hero.jpg` | `neck-shoulder-desk-hero` | Desk work tension | ✅ |
+| Knee Pain When Squatting | `/knee-pain-squatting-hero.jpg` | `knee-pain-squatting-hero` | Squat form problems | ✅ |
+| Plantar Fasciitis & Loading Patterns | `/plantar-loading-hero.jpg` | `plantar-loading-hero` | Loading patterns | ✅ |
 | Runner Tight Hips & Compensation | `/runner-hips-hero.jpg` | `runner-hips-hero` | Running compensation | ✅ |
-| Gym Injuries From Bad Mechanics | (gradient background) | `gym-injuries-hero` | Movement mechanics | |
+| Gym Injuries From Bad Mechanics | `/gym-injuries-hero.jpg` | `gym-injuries-hero` | Movement mechanics | ✅ |
 
 ### New Mechanism Pages (2025)
 
