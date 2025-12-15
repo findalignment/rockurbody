@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function RunnerTightHipsAndCompensation() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Runner Tight Hips & Compensation - Running Injury Prevention | RockUrBody"
         description="Tight hips in runners aren't just about flexibility. Learn how running creates compensation patterns, structural restrictions, and how to fix them. Santa Cruz, CA."
         keywords="runner tight hips, running compensation patterns, running injuries, hip restrictions runners, movement patterns runners, Santa Cruz"
         url="/runner-tight-hips-and-compensation"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Runner Tight Hips & Compensation
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Tight hips in runners aren't a flexibility problem. They're a compensation pattern problem.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/runner-hips-hero.jpg"
+        title="Runner Tight Hips & Compensation"
+        subtitle="Tight hips in runners aren't a flexibility problem. They're a compensation pattern problem."
+        alt="Runner tight hips and compensation patterns treatment in Santa Cruz"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function RunnerTightHipsAndCompensation() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 

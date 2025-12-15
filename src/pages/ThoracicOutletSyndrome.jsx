@@ -22,7 +22,7 @@ function ThoracicOutletSyndrome() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/thoracic-outlet-hero.jpg"
         title="Thoracic Outlet Syndrome"
         subtitle="Numbness, tingling, weird symptoms. Let's decompress."
         alt="Thoracic outlet syndrome treatment using structural integration to address nerve compression and arm numbness in Santa Cruz"

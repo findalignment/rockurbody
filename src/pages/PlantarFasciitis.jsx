@@ -22,7 +22,7 @@ function PlantarFasciitis() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/plantar-fasciitis-hero.jpg"
         title="Plantar Fasciitis Relief"
         subtitle="Fix heel pain by addressing what's actually causing it"
         alt="Plantar fasciitis and heel pain relief treatment using structural integration in Santa Cruz"

@@ -22,7 +22,7 @@ function WhiplashRecovery() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/whiplash-hero.jpg"
         title="Whiplash Recovery"
         subtitle="Healing from car accident injuries takes more than time"
         alt="Whiplash recovery and car accident injury treatment using structural integration to address neck pain and compensation patterns in Santa Cruz"

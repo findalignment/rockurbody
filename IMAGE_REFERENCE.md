@@ -27,15 +27,6 @@
 | Hip Series | (no hero image) | `hip-series-hero` | Hip Series program | |
 | Combo Programs | `/services-hero.jpg` | `combo-programs-hero` | Combination programs | |
 
-### New Educational Pages (Need Images)
-
-| Page | Current Filename | Airtable Name | Description | Has Unique Image |
-|------|-----------------|---------------|-------------|------------------|
-| Gravity & SI | `/gravity-structural-integration-hero.jpg` | `gravity-structural-integration-hero` | Working with gravity page | ✅ |
-| Exercise for Life | `/exercise-for-life-hero.jpg` | `exercise-for-life-hero` | Functional training page | ✅ |
-| Safe Gym Training | `/safe-gym-training-hero.jpg` | `safe-gym-training-hero` | Injury prevention page | ✅ |
-| Daily Mobility | `/daily-mobility-hero.jpg` | `daily-mobility-hero` | 5-minute mobility routine | ✅ |
-
 ### Problem-Specific SEO Pages
 
 | Page | Current Filename | Airtable Name | Description | Has Unique Image |
@@ -119,10 +110,10 @@
 
 | Page | Current Filename | Airtable Name | Description | Has Unique Image |
 |------|-----------------|---------------|-------------|------------------|
-| Body Systems Check | (gradient background) | `body-systems-check-hero` | Systems check page | |
-| Upgrade Your Body Software | (gradient background) | `upgrade-body-software-hero` | Software upgrade concept | |
+| Body Systems Check | `/body-systems-check-hero.jpg` | `body-systems-check-hero` | Systems check page | ✅ |
+| Upgrade Your Body Software | `/upgrade-body-software-hero.jpg` | `upgrade-body-software-hero` | Software upgrade concept | ✅ |
 | Movement Coaching Santa Cruz | (gradient background) | `movement-coaching-sc-hero` | Main local service page | |
-| Alignment-Based Strength Training | (gradient background) | `alignment-strength-hero` | Strength without compensation | |
+| Alignment-Based Strength Training | `/alignment-strength-hero.jpg` | `alignment-strength-hero` | Strength without compensation | ✅ |
 | Train for Longevity | (gradient background) | `train-longevity-hero` | Dividends philosophy | |
 
 ### New Problem Pages (2025)
@@ -137,7 +128,7 @@
 | Neck Shoulder Tension From Desk Work | (gradient background) | `neck-shoulder-desk-hero` | Desk work tension | |
 | Knee Pain When Squatting | (gradient background) | `knee-pain-squatting-hero` | Squat form problems | |
 | Plantar Fasciitis & Loading Patterns | (gradient background) | `plantar-loading-hero` | Loading patterns | |
-| Runner Tight Hips & Compensation | (gradient background) | `runner-hips-hero` | Running compensation | |
+| Runner Tight Hips & Compensation | `/runner-hips-hero.jpg` | `runner-hips-hero` | Running compensation | ✅ |
 | Gym Injuries From Bad Mechanics | (gradient background) | `gym-injuries-hero` | Movement mechanics | |
 
 ### New Mechanism Pages (2025)
