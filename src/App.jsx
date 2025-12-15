@@ -88,6 +88,37 @@ const SoftwareUpgradePlan = lazy(() => import('./pages/SoftwareUpgradePlan'));
 const PerformanceLongevityCoaching = lazy(() => import('./pages/PerformanceLongevityCoaching'));
 const OffersComparison = lazy(() => import('./pages/OffersComparison'));
 const BodyOperatingSystemChecklist = lazy(() => import('./pages/BodyOperatingSystemChecklist'));
+const UpgradeYourBodySoftware = lazy(() => import('./pages/UpgradeYourBodySoftware'));
+const MovementCoachingSantaCruz = lazy(() => import('./pages/MovementCoachingSantaCruz'));
+const AlignmentBasedStrengthTraining = lazy(() => import('./pages/AlignmentBasedStrengthTraining'));
+const TrainForLongevity = lazy(() => import('./pages/TrainForLongevity'));
+const WhyIFeelTightAllTheTime = lazy(() => import('./pages/WhyIFeelTightAllTheTime'));
+const StrongButStillInPain = lazy(() => import('./pages/StrongButStillInPain'));
+const WhyStretchingDoesntFixIt = lazy(() => import('./pages/WhyStretchingDoesntFixIt'));
+const WhyMyBackKeepsGoingOut = lazy(() => import('./pages/WhyMyBackKeepsGoingOut'));
+const HipPainFromSitting = lazy(() => import('./pages/HipPainFromSitting'));
+const NeckShoulderTensionFromDeskWork = lazy(() => import('./pages/NeckShoulderTensionFromDeskWork'));
+const KneePainWhenSquatting = lazy(() => import('./pages/KneePainWhenSquatting'));
+const PlantarFasciitisAndLoadingPatterns = lazy(() => import('./pages/PlantarFasciitisAndLoadingPatterns'));
+const RunnerTightHipsAndCompensation = lazy(() => import('./pages/RunnerTightHipsAndCompensation'));
+const GymInjuriesFromBadMechanics = lazy(() => import('./pages/GymInjuriesFromBadMechanics'));
+const WhatAreCompensationPatterns = lazy(() => import('./pages/WhatAreCompensationPatterns'));
+const MobilityVsStabilityVsControl = lazy(() => import('./pages/MobilityVsStabilityVsControl'));
+const BreathingAndPostureConnection = lazy(() => import('./pages/BreathingAndPostureConnection'));
+const WhatIsAlignmentInTheBody = lazy(() => import('./pages/WhatIsAlignmentInTheBody'));
+const WhyCoreWorkDoesntFixBackPain = lazy(() => import('./pages/WhyCoreWorkDoesntFixBackPain'));
+const StrengthWithoutWearAndTear = lazy(() => import('./pages/StrengthWithoutWearAndTear'));
+const LoadManagementForLongevity = lazy(() => import('./pages/LoadManagementForLongevity'));
+const PersonalTrainerSantaCruzForLongevity = lazy(() => import('./pages/PersonalTrainerSantaCruzForLongevity'));
+const PrivatePersonalTrainingSantaCruz = lazy(() => import('./pages/PrivatePersonalTrainingSantaCruz'));
+const MovementAssessmentSantaCruz = lazy(() => import('./pages/MovementAssessmentSantaCruz'));
+const PostureCoachingSantaCruz = lazy(() => import('./pages/PostureCoachingSantaCruz'));
+const PainAwareTrainingSantaCruz = lazy(() => import('./pages/PainAwareTrainingSantaCruz'));
+const TrainingForBusyProfessionals = lazy(() => import('./pages/TrainingForBusyProfessionals'));
+const TrainingFor40sAnd50s = lazy(() => import('./pages/TrainingFor40sAnd50s'));
+const TrainingAfterInjuryReturnToStrength = lazy(() => import('./pages/TrainingAfterInjuryReturnToStrength'));
+const TrainingForSurfersSantaCruz = lazy(() => import('./pages/TrainingForSurfersSantaCruz'));
+const TrainingForHikersAndTrailRunners = lazy(() => import('./pages/TrainingForHikersAndTrailRunners'));
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
 const RefundPolicy = lazy(() => import('./pages/RefundPolicy'));
 const Book = lazy(() => import('./pages/Book'));
@@ -325,6 +356,47 @@ function AppRoutes() {
         <Route path="/performance-longevity-coaching" element={<PerformanceLongevityCoaching />} />
         <Route path="/offers-comparison" element={<OffersComparison />} />
         <Route path="/body-operating-system-checklist" element={<BodyOperatingSystemChecklist />} />
+        
+        {/* Core Pillar Pages */}
+        <Route path="/upgrade-your-body-software" element={<UpgradeYourBodySoftware />} />
+        <Route path="/movement-coaching-santa-cruz" element={<MovementCoachingSantaCruz />} />
+        <Route path="/alignment-based-strength-training" element={<AlignmentBasedStrengthTraining />} />
+        <Route path="/train-for-longevity" element={<TrainForLongevity />} />
+        
+        {/* Problem Pages */}
+        <Route path="/why-i-feel-tight-all-the-time" element={<WhyIFeelTightAllTheTime />} />
+        <Route path="/strong-but-still-in-pain" element={<StrongButStillInPain />} />
+        <Route path="/why-stretching-doesnt-fix-it" element={<WhyStretchingDoesntFixIt />} />
+        <Route path="/why-my-back-keeps-going-out" element={<WhyMyBackKeepsGoingOut />} />
+        <Route path="/hip-pain-from-sitting" element={<HipPainFromSitting />} />
+        <Route path="/neck-shoulder-tension-from-desk-work" element={<NeckShoulderTensionFromDeskWork />} />
+        <Route path="/knee-pain-when-squatting" element={<KneePainWhenSquatting />} />
+        <Route path="/plantar-fasciitis-and-loading-patterns" element={<PlantarFasciitisAndLoadingPatterns />} />
+        <Route path="/runner-tight-hips-and-compensation" element={<RunnerTightHipsAndCompensation />} />
+        <Route path="/gym-injuries-from-bad-mechanics" element={<GymInjuriesFromBadMechanics />} />
+        
+        {/* Mechanism Pages */}
+        <Route path="/what-are-compensation-patterns" element={<WhatAreCompensationPatterns />} />
+        <Route path="/mobility-vs-stability-vs-control" element={<MobilityVsStabilityVsControl />} />
+        <Route path="/breathing-and-posture-connection" element={<BreathingAndPostureConnection />} />
+        <Route path="/what-is-alignment-in-the-body" element={<WhatIsAlignmentInTheBody />} />
+        <Route path="/why-core-work-doesnt-fix-back-pain" element={<WhyCoreWorkDoesntFixBackPain />} />
+        <Route path="/strength-without-wear-and-tear" element={<StrengthWithoutWearAndTear />} />
+        <Route path="/load-management-for-longevity" element={<LoadManagementForLongevity />} />
+        
+        {/* Local Pages */}
+        <Route path="/personal-trainer-santa-cruz-for-longevity" element={<PersonalTrainerSantaCruzForLongevity />} />
+        <Route path="/private-personal-training-santa-cruz" element={<PrivatePersonalTrainingSantaCruz />} />
+        <Route path="/movement-assessment-santa-cruz" element={<MovementAssessmentSantaCruz />} />
+        <Route path="/posture-coaching-santa-cruz" element={<PostureCoachingSantaCruz />} />
+        <Route path="/pain-aware-training-santa-cruz" element={<PainAwareTrainingSantaCruz />} />
+        
+        {/* Audience Pages */}
+        <Route path="/training-for-busy-professionals" element={<TrainingForBusyProfessionals />} />
+        <Route path="/training-for-40s-and-50s" element={<TrainingFor40sAnd50s />} />
+        <Route path="/training-after-injury-return-to-strength" element={<TrainingAfterInjuryReturnToStrength />} />
+        <Route path="/training-for-surfers-santa-cruz" element={<TrainingForSurfersSantaCruz />} />
+        <Route path="/training-for-hikers-and-trail-runners" element={<TrainingForHikersAndTrailRunners />} />
         
         {/* SEO Pages */}
         <Route path="/santa-cruz-structural-integration" element={<SantaCruzStructuralIntegration />} />
