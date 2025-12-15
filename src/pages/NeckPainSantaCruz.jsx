@@ -21,7 +21,7 @@ function NeckPainSantaCruz() {
       />
       
       <PageHero 
-        imageSrc="/approach-hero.jpg"
+        imageSrc="/neck-pain-treatment-hero.jpg"
         title="Neck Pain & Tension Relief"
         subtitle="Stop living with a stiff, painful neck"
         alt="Neck pain and tension relief treatment using structural integration to address tech neck and chronic neck pain in Santa Cruz"

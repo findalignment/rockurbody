@@ -50,14 +50,14 @@ These are the large banner images at the top of pages. Currently using placehold
 | Back Pain Santa Cruz | `/back-pain-hero.jpg` | `back-pain-hero` | Back pain relief | ✅ |
 | Hip Pain Treatment | `/hip-series-hero.jpg` | `hip-pain-hero` | Hip pain treatment | ✅ |
 | Shoulder Pain Relief | `/training-hero.jpg` | `shoulder-pain-hero` | Shoulder pain | |
-| Neck Pain Relief | `/approach-hero.jpg` | `neck-pain-hero` | Neck pain | |
+| Neck Pain Relief | `/neck-pain-treatment-hero.jpg` | `neck-pain-hero` | Neck pain | ✅ |
 | Sciatica Relief | `/approach-hero.jpg` | `sciatica-hero` | Sciatica treatment | |
 | Knee Pain Treatment | `/training-hero.jpg` | `knee-pain-hero` | Knee pain | |
 | TMJ Relief | `/approach-hero.jpg` | `tmj-hero` | TMJ dysfunction | |
 | Plantar Fasciitis | `/training-hero.jpg` | `plantar-fasciitis-hero` | Plantar fasciitis | |
 | Frozen Shoulder | `/training-hero.jpg` | `frozen-shoulder-hero` | Frozen shoulder | |
 | IT Band Syndrome | `/training-hero.jpg` | `it-band-hero` | IT band syndrome | |
-| Rotator Cuff Injury | `/training-hero.jpg` | `rotator-cuff-hero` | Rotator cuff | |
+| Rotator Cuff Injury | `/rotator-cuff-treatment-hero.jpg` | `rotator-cuff-hero` | Rotator cuff | ✅ |
 | Achilles Tendonitis | `/training-hero.jpg` | `achilles-hero` | Achilles tendonitis | |
 | Bunion & Foot Pain | `/training-hero.jpg` | `bunion-foot-pain-hero` | Bunion and foot pain | |
 | Headache & Migraine | `/training-hero.jpg` | `headache-migraine-hero` | Headaches and migraines | |

@@ -50,7 +50,7 @@ function NeckPainRelief() {
       />
       
       <PageHero 
-        imageSrc="/approach-hero.jpg"
+        imageSrc="/neck-pain-treatment-hero.jpg"
         title="Neck Pain Relief"
         subtitle="Free your neck, improve your posture, lose the headaches"
         alt="Structural integration treatment for neck pain relief, addressing tension, posture, and headaches in Santa Cruz"

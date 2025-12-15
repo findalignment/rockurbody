@@ -22,7 +22,7 @@ function RotatorCuffInjury() {
       />
       
       <PageHero 
-        imageSrc="/training-hero.jpg"
+        imageSrc="/rotator-cuff-treatment-hero.jpg"
         title="Rotator Cuff Injury Treatment"
         subtitle="Strengthen what's weak, release what's tight, address what needs work"
         alt="Rotator cuff injury treatment and rehabilitation using structural integration and movement training in Santa Cruz"
