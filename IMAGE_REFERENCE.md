@@ -180,7 +180,7 @@ These are the large banner images at the top of pages. Currently using placehold
 | Breathing & Posture Connection | (gradient background) | `breathing-posture-hero` | Breathing-posture link | |
 | What Is Alignment In The Body | `/alignment-body-hero.jpg` | `alignment-body-hero` | Alignment explanation | ✅ |
 | Why Core Work Doesn't Fix Back Pain | (gradient background) | `core-back-pain-hero` | Core work limitations | |
-| Strength Without Wear and Tear | (gradient background) | `strength-wear-tear-hero` | Longevity training | |
+| Strength Without Wear and Tear | `/strength-wear-tear-hero.jpg` | `strength-wear-tear-hero` | Longevity training | ✅ |
 | Load Management For Longevity | (gradient background) | `load-management-hero` | Load management | |
 
 ### New Local Pages (2025)

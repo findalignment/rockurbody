@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function StrengthWithoutWearAndTear() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Strength Without Wear and Tear - Longevity Training | RockUrBody"
         description="Learn how to build strength without creating wear and tear. Alignment-based training, load management, and movement quality for long-term health. Santa Cruz, CA."
         keywords="strength without wear and tear, longevity training, sustainable strength training, alignment based training, load management, Santa Cruz"
         url="/strength-without-wear-and-tear"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Strength Without Wear and Tear
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              You can build strength without breaking down. It's about how you train, not just how much.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/strength-wear-tear-hero.jpg"
+        title="Strength Without Wear and Tear"
+        subtitle="You can build strength without breaking down. It's about how you train, not just how much."
+        alt="Strength training without wear and tear for longevity"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
@@ -83,9 +78,8 @@ function StrengthWithoutWearAndTear() {
             <Button to="/body-systems-check" variant="primary" size="lg">Book a Systems Check</Button>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 
