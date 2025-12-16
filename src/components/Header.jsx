@@ -154,8 +154,13 @@ function Header() {
                 >
                   <button
                     type="button"
-                    onClick={() => setOpenDropdown(openDropdown === link.dropdownId ? null : link.dropdownId)}
-                    className={`relative font-semibold transition-colors group flex items-center gap-1 ${
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      console.log('[Header] Button clicked:', link.dropdownId);
+                      setOpenDropdown(openDropdown === link.dropdownId ? null : link.dropdownId);
+                    }}
+                    className={`relative font-semibold transition-colors group flex items-center gap-1 cursor-pointer ${
                       isHomePage 
                         ? scrolled
                           ? 'text-neutralDark hover:text-accent'
