@@ -7,6 +7,7 @@ import Footer from './Footer';
 import MarkdownText from './MarkdownText';
 import ChatbotStatus from './ChatbotStatus';
 import SEO from './SEO';
+import QuickStartQuiz from './QuickStartQuiz';
 import { sendMessageToAI, detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
@@ -580,6 +581,21 @@ function LandingPage() {
         </div>
       </div>
     </Hero>
+    
+    {/* Quick Start Quiz Section */}
+    <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-primary/5 to-accent/5">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-heading text-primary mb-4">
+            Not Sure Where to Start?
+          </h2>
+          <p className="text-lg text-neutralDark/80 max-w-2xl mx-auto">
+            Answer 3 quick questions and we'll guide you to the perfect starting point for your needs.
+          </p>
+        </div>
+        <QuickStartQuiz />
+      </div>
+    </section>
     
     {/* Services Overview Section - After Chat */}
     <div className="relative bg-white">

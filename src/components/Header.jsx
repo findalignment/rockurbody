@@ -1,19 +1,43 @@
 import { Link, useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Button from './Button';
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const location = useLocation();
+  const dropdownRef = useRef(null);
   
   const isHomePage = location.pathname === '/';
   
   const navLinks = [
     { name: 'About', path: '/about' },
-    { name: 'Services', path: '/services' },
+    { 
+      name: 'Services', 
+      path: '/services',
+      dropdown: [
+        { name: 'Climbers', path: '/climbers' },
+        { name: 'Posture', path: '/posture-correction' },
+        { name: 'Movement', path: '/movement-coaching-santa-cruz' },
+      ]
+    },
     { name: 'Start Here', path: '/smart-starts' },
   ];
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setServicesDropdownOpen(false);
+      }
+    };
+
+    if (servicesDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [servicesDropdownOpen]);
   
   // Handle scroll effect
   useEffect(() => {
@@ -27,12 +51,12 @@ function Header() {
   
   return (
     <header 
-      className={`w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`w-full sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isHomePage 
           ? scrolled 
-            ? 'bg-white/80 backdrop-blur-xl shadow-md py-4' 
+            ? 'bg-white/95 backdrop-blur-xl shadow-md py-4' 
             : 'bg-transparent backdrop-blur-md py-6'
-          : 'bg-white shadow-sm py-4'
+          : 'bg-white/95 backdrop-blur-xl shadow-sm py-4'
       }`}
       style={isHomePage && !scrolled ? { backdropFilter: 'blur(12px)' } : {}}
     >
@@ -55,22 +79,70 @@ function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`relative font-semibold transition-colors group ${
-                  isHomePage 
-                    ? scrolled
-                      ? 'text-neutralDark hover:text-accent'
-                      : 'text-white hover:text-white/90' 
-                    : 'text-neutralDark hover:text-accent'
-                }`}
-              >
-                {link.name}
-                <span className={`absolute left-0 bottom-0 w-0 h-0.5 transition-all duration-300 ease-out group-hover:w-full ${
-                  isHomePage && !scrolled ? 'bg-white' : 'bg-accent'
-                }`}></span>
-              </Link>
+              link.dropdown ? (
+                <div
+                  key={link.path}
+                  ref={dropdownRef}
+                  className="relative"
+                  onMouseEnter={() => setServicesDropdownOpen(true)}
+                  onMouseLeave={() => setServicesDropdownOpen(false)}
+                >
+                  <Link
+                    to={link.path}
+                    className={`relative font-semibold transition-colors group flex items-center gap-1 ${
+                      isHomePage 
+                        ? scrolled
+                          ? 'text-neutralDark hover:text-accent'
+                          : 'text-white hover:text-white/90' 
+                        : 'text-neutralDark hover:text-accent'
+                    }`}
+                  >
+                    {link.name}
+                    <svg 
+                      className={`w-4 h-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`}
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                    <span className={`absolute left-0 bottom-0 w-0 h-0.5 transition-all duration-300 ease-out group-hover:w-full ${
+                      isHomePage && !scrolled ? 'bg-white' : 'bg-accent'
+                    }`}></span>
+                  </Link>
+                  {servicesDropdownOpen && (
+                    <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden">
+                      {link.dropdown.map((item) => (
+                        <Link
+                          key={item.path}
+                          to={item.path}
+                          className="block px-4 py-3 text-neutralDark hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                          onClick={() => setServicesDropdownOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`relative font-semibold transition-colors group ${
+                    isHomePage 
+                      ? scrolled
+                        ? 'text-neutralDark hover:text-accent'
+                        : 'text-white hover:text-white/90' 
+                      : 'text-neutralDark hover:text-accent'
+                  }`}
+                >
+                  {link.name}
+                  <span className={`absolute left-0 bottom-0 w-0 h-0.5 transition-all duration-300 ease-out group-hover:w-full ${
+                    isHomePage && !scrolled ? 'bg-white' : 'bg-accent'
+                  }`}></span>
+                </Link>
+              )
             ))}
             <Button
               to="/book"
@@ -109,14 +181,29 @@ function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 space-y-2 bg-white/95 backdrop-blur-lg rounded-lg p-4 shadow-lg">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block font-semibold text-lg text-neutralDark hover:text-accent transition-colors py-3 px-2 min-h-[44px] flex items-center"
-              >
-                {link.name}
-              </Link>
+              <div key={link.path}>
+                <Link
+                  to={link.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="block font-semibold text-lg text-neutralDark hover:text-accent transition-colors py-3 px-2 min-h-[44px] flex items-center"
+                >
+                  {link.name}
+                </Link>
+                {link.dropdown && (
+                  <div className="ml-4 space-y-1">
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="block text-base text-neutralDark/80 hover:text-accent transition-colors py-2 px-2"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
             <Button
               to="/book"
