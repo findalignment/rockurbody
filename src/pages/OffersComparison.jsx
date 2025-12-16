@@ -74,7 +74,7 @@ function OffersComparison() {
                   <tr className="border-b border-neutralLight bg-neutralLight/30">
                     <td className="p-4 font-semibold text-primary">Investment</td>
                     <td className="p-4 text-center border-l border-neutralLight">
-                      <div className="text-2xl font-bold text-primary">$180</div>
+                      <div className="text-2xl font-bold text-primary">$250</div>
                       <div className="text-sm text-neutralDark/70">One-time</div>
                     </td>
                     <td className="p-4 text-center border-l border-neutralLight">

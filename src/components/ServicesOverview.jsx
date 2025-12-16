@@ -11,7 +11,7 @@ function ServicesOverview() {
     {
       title: "Body Systems Check",
       description: "A comprehensive assessment of your alignment, movement patterns, and structural imbalances. We identify what's working, what's not, and create a clear roadmap for improvement.",
-      pricing: "90 minutes • $180",
+      pricing: "90 minutes • $250",
       link: "/body-systems-check",
       cta: "Learn More",
       bookLink: "/body-systems-check",

@@ -5,22 +5,41 @@ import Button from './Button';
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null); // 'about', 'services', or null
   const location = useLocation();
-  const dropdownRef = useRef(null);
+  const aboutDropdownRef = useRef(null);
+  const servicesDropdownRef = useRef(null);
   
   const isHomePage = location.pathname === '/';
   
   const navLinks = [
-    { name: 'About', path: '/about' },
+    { 
+      name: 'About', 
+      path: '/about',
+      dropdown: [
+        { name: 'About', path: '/about' },
+        { name: 'Testimonials', path: '/testimonials' },
+        { name: 'Packages', path: '/packages' },
+        { name: 'Training Lineage', path: '/training-lineage' },
+        { name: 'FAQ', path: '/faq' },
+        { name: 'Credentials', path: '/credentials' },
+      ],
+      dropdownId: 'about'
+    },
     { 
       name: 'Services', 
       path: '/services',
       dropdown: [
+        { name: 'Body Systems Check', path: '/body-systems-check' },
+        { name: 'Software Upgrade Plan', path: '/software-upgrade-plan' },
+        { name: 'Performance & Longevity', path: '/performance-longevity-coaching' },
+        { name: 'Structural Integration', path: '/what-is-structural-integration' },
+        { name: 'Movement Education', path: '/movement-coaching-santa-cruz' },
         { name: 'Climbers', path: '/climbers' },
-        { name: 'Posture', path: '/posture-correction' },
-        { name: 'Movement', path: '/movement-coaching-santa-cruz' },
-      ]
+        { name: 'Posture Correction', path: '/posture-correction' },
+        { name: 'Alignment-Based Strength', path: '/alignment-based-strength-training' },
+      ],
+      dropdownId: 'services'
     },
     { name: 'Start Here', path: '/smart-starts' },
   ];
@@ -28,16 +47,17 @@ function Header() {
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setServicesDropdownOpen(false);
+      if (aboutDropdownRef.current && !aboutDropdownRef.current.contains(event.target) &&
+          servicesDropdownRef.current && !servicesDropdownRef.current.contains(event.target)) {
+        setOpenDropdown(null);
       }
     };
 
-    if (servicesDropdownOpen) {
+    if (openDropdown) {
       document.addEventListener('mousedown', handleClickOutside);
       return () => document.removeEventListener('mousedown', handleClickOutside);
     }
-  }, [servicesDropdownOpen]);
+  }, [openDropdown]);
   
   // Handle scroll effect
   useEffect(() => {
@@ -82,10 +102,10 @@ function Header() {
               link.dropdown ? (
                 <div
                   key={link.path}
-                  ref={dropdownRef}
+                  ref={link.dropdownId === 'about' ? aboutDropdownRef : servicesDropdownRef}
                   className="relative"
-                  onMouseEnter={() => setServicesDropdownOpen(true)}
-                  onMouseLeave={() => setServicesDropdownOpen(false)}
+                  onMouseEnter={() => setOpenDropdown(link.dropdownId)}
+                  onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <Link
                     to={link.path}
@@ -99,7 +119,7 @@ function Header() {
                   >
                     {link.name}
                     <svg 
-                      className={`w-4 h-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`}
+                      className={`w-4 h-4 transition-transform ${openDropdown === link.dropdownId ? 'rotate-180' : ''}`}
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
@@ -110,14 +130,14 @@ function Header() {
                       isHomePage && !scrolled ? 'bg-white' : 'bg-accent'
                     }`}></span>
                   </Link>
-                  {servicesDropdownOpen && (
-                    <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden">
+                  {openDropdown === link.dropdownId && (
+                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-50">
                       {link.dropdown.map((item) => (
                         <Link
                           key={item.path}
                           to={item.path}
                           className="block px-4 py-3 text-neutralDark hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
-                          onClick={() => setServicesDropdownOpen(false)}
+                          onClick={() => setOpenDropdown(null)}
                         >
                           {item.name}
                         </Link>
