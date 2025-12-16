@@ -177,18 +177,25 @@ export default async function handler(req, res) {
       // Continue processing the request - don't block on rate limit errors
     }
 
-    // Parse request body if it's a string (Vercel sometimes sends string bodies)
+    // Parse request body - Vercel automatically parses JSON, but handle edge cases
     let body = req.body;
     
     // Handle case where body might be undefined or null
     if (!body) {
       console.error('[API/CHAT] Request body is missing');
+      console.error('[API/CHAT] Request details:', {
+        method: req.method,
+        url: req.url,
+        headers: req.headers,
+        hasBody: !!req.body
+      });
       return res.status(400).json({ 
         error: 'Request body is required',
         message: 'Please include a message in your request.'
       });
     }
     
+    // Vercel should auto-parse JSON, but handle string case
     if (typeof body === 'string') {
       try {
         body = JSON.parse(body);
@@ -203,7 +210,7 @@ export default async function handler(req, res) {
 
     // Ensure body is an object
     if (typeof body !== 'object' || body === null) {
-      console.error('[API/CHAT] Invalid body type:', typeof body);
+      console.error('[API/CHAT] Invalid body type:', typeof body, body);
       return res.status(400).json({ 
         error: 'Invalid request body',
         message: 'The request body must be a JSON object.'
@@ -211,9 +218,19 @@ export default async function handler(req, res) {
     }
 
     const { message, history = [] } = body;
+    
+    console.log('[API/CHAT] Parsed request:', {
+      hasMessage: !!message,
+      messageLength: message?.length,
+      historyLength: history?.length
+    });
 
     if (!message || !message.trim()) {
-      return res.status(400).json({ error: 'Message is required' });
+      console.error('[API/CHAT] Message is missing or empty');
+      return res.status(400).json({ 
+        error: 'Message is required',
+        message: 'Please provide a message to send.'
+      });
     }
 
     // Check if booking is available for system message
