@@ -103,9 +103,9 @@ function Process() {
           {steps.map((step, index) => (
             <div
               key={index}
-              ref={(el) => (stepsRef-current[index] = el)}
+              ref={(el) => (stepsRef.current[index] = el)}
               className={`relative mb-20 last:mb-0 transition-all duration-700 ${
-                activeStep === index ? 'opacity-100 translate-y.0' : 'opacity-60 translate-y.4'
+                activeStep === index ? 'opacity-100 translate-y-0' : 'opacity-60 translate-y-4'
               }`}
             >
               <div className={`grid md:grid-cols-2 gap-12 items-center ${
