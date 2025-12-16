@@ -12,13 +12,78 @@ function PersonalTrainerSantaCruz() {
     { name: 'Personal Trainer Santa Cruz', url: '/personal-trainer-santa-cruz' }
   ];
 
+  // LocalBusiness Schema for SEO
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "HealthAndBeautyBusiness", "SportsActivityLocation"],
+    "name": "RockUrBody - Personal Training Santa Cruz",
+    "image": "https://rockurbody.com/logo.png",
+    "description": "One-on-one personal training and movement education in Santa Cruz. Functional training focused on how you move, not just exercises. Build strength that serves your life.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Santa Cruz",
+      "addressLocality": "Santa Cruz",
+      "addressRegion": "CA",
+      "postalCode": "95060",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.9741,
+      "longitude": -122.0308
+    },
+    "url": "https://rockurbody.com/personal-trainer-santa-cruz",
+    "telephone": "+1-831-419-4422",
+    "priceRange": "$$$$",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "06:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/RockUrBody",
+      "https://www.instagram.com/rockurbody"
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Santa Cruz"
+      },
+      {
+        "@type": "City",
+        "name": "Capitola"
+      },
+      {
+        "@type": "City",
+        "name": "Aptos"
+      },
+      {
+        "@type": "City",
+        "name": "Soquel"
+      },
+      {
+        "@type": "City",
+        "name": "Scotts Valley"
+      }
+    ]
+  };
+
+  // Combine schemas
+  const combinedSchema = [
+    getBreadcrumbSchema(breadcrumbs),
+    localBusinessSchema
+  ];
+
   return (
     <PageLayout>
       <SEO 
         title="Personal Trainer Santa Cruz | Movement Education & Functional Training"
         description="One-on-one movement training in Santa Cruz focused on how you move, not just exercises. Build strength that serves your life."
         keywords="personal trainer santa cruz, movement coach, functional training santa cruz, movement education, private training santa cruz"
-        structuredData={getBreadcrumbSchema(breadcrumbs)}
+        structuredData={combinedSchema}
       />
       
       <PageHero 
