@@ -107,8 +107,9 @@ function Header() {
                   onMouseEnter={() => setOpenDropdown(link.dropdownId)}
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
-                  <Link
-                    to={link.path}
+                  <button
+                    type="button"
+                    onClick={() => setOpenDropdown(openDropdown === link.dropdownId ? null : link.dropdownId)}
                     className={`relative font-semibold transition-colors group flex items-center gap-1 ${
                       isHomePage 
                         ? scrolled
@@ -129,9 +130,9 @@ function Header() {
                     <span className={`absolute left-0 bottom-0 w-0 h-0.5 transition-all duration-300 ease-out group-hover:w-full ${
                       isHomePage && !scrolled ? 'bg-white' : 'bg-accent'
                     }`}></span>
-                  </Link>
+                  </button>
                   {openDropdown === link.dropdownId && (
-                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-50">
+                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[100] animate-fadeIn">
                       {link.dropdown.map((item) => (
                         <Link
                           key={item.path}
