@@ -61,7 +61,7 @@
       ]
     },
     {
-      "source": "/:path*\\.(js|css)",
+      "source": "/assets/:path*\\.(js|css)",
       "headers": [
         {
           "key": "Cache-Control",
