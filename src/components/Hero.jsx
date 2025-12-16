@@ -23,7 +23,7 @@ function Hero({ children, backgroundImage = '/hero-astronaut.jpg', altText = 'St
         </picture>
         
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-neutralDark/40 z-[1]"></div>
+        <div className="absolute inset-0 bg-neutralDark/55 z-[1]"></div>
 
         {/* Main Content Area */}
         <div className="relative z-10 flex-1 flex items-end justify-center px-4 pb-4">
