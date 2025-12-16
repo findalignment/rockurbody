@@ -192,28 +192,18 @@ function Header() {
                   )}
                   {openDropdown === link.dropdownId && (
                     <div 
-                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[9999]"
+                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-[9999]"
                       style={{ 
                         pointerEvents: 'auto',
-                        opacity: 1,
-                        visibility: 'visible',
-                        display: 'block',
-                        backgroundColor: 'white' // Ensure background is visible
                       }}
-                      onMouseEnter={() => {
-                        console.log('[Header] Dropdown content mouse enter');
-                        handleDropdownMouseEnter(link.dropdownId);
-                      }}
-                      onMouseLeave={() => {
-                        console.log('[Header] Dropdown content mouse leave');
-                        handleDropdownMouseLeave();
-                      }}
+                      onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
+                      onMouseLeave={handleDropdownMouseLeave}
                     >
                       {link.dropdown.map((item) => (
                         <Link
                           key={item.path}
                           to={item.path}
-                          className="block px-4 py-3 text-neutralDark hover:bg-accent/10 hover:text-accent transition-colors font-semibold"
+                          className="block px-4 py-3 text-gray-700 hover:bg-accent/10 hover:text-accent transition-colors"
                           onClick={() => setOpenDropdown(null)}
                         >
                           {item.name}
