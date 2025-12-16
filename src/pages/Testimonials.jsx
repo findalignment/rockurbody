@@ -1,6 +1,7 @@
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
+import Button from '../components/Button';
 
 function Testimonials() {
   const testimonials = [
