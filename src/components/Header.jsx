@@ -164,7 +164,8 @@ function Header() {
                   </button>
                   {openDropdown === link.dropdownId && (
                     <div 
-                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[100] animate-fadeIn"
+                      className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[100] animate-fadeIn"
+                      style={{ pointerEvents: 'auto' }}
                       onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
                       onMouseLeave={handleDropdownMouseLeave}
                     >
