@@ -71,6 +71,7 @@ function Header() {
 
   // Handle dropdown mouse enter/leave with delay
   const handleDropdownMouseEnter = (dropdownId) => {
+    // Clear any pending close timeout
     if (dropdownTimeoutRef.current) {
       clearTimeout(dropdownTimeoutRef.current);
       dropdownTimeoutRef.current = null;
@@ -87,7 +88,7 @@ function Header() {
     // Delay closing to allow mouse to move to dropdown
     dropdownTimeoutRef.current = setTimeout(() => {
       setOpenDropdown(null);
-    }, 150);
+    }, 200); // Increased delay to 200ms
   };
   
   // Handle scroll effect
@@ -164,8 +165,12 @@ function Header() {
                   </button>
                   {openDropdown === link.dropdownId && (
                     <div 
-                      className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[100] animate-fadeIn"
-                      style={{ pointerEvents: 'auto' }}
+                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[9999]"
+                      style={{ 
+                        pointerEvents: 'auto',
+                        opacity: 1,
+                        visibility: 'visible'
+                      }}
                       onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
                       onMouseLeave={handleDropdownMouseLeave}
                     >
