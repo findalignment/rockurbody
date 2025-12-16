@@ -120,16 +120,57 @@ function Credentials() {
       </div>
 
       <div style={{ background: 'white', padding: '40px', borderRadius: '16px', marginBottom: '40px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+        <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>Education</h2>
+        
+        <div style={{ marginBottom: '30px' }}>
+          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
+            San Jose State University
+          </h3>
+          <p style={{ color: '#999', marginBottom: '10px' }}>Bachelor of Science in Business Administration - Management</p>
+          <p style={{ color: '#666', lineHeight: '1.8' }}>
+            Comprehensive business education focusing on management principles, organizational behavior, and strategic decision-making.
+          </p>
+        </div>
+
+        <div style={{ marginBottom: '25px' }}>
+          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
+            Cabrillo College
+          </h3>
+          <p style={{ color: '#999', marginBottom: '10px' }}>Associate of Arts & Associate of Science</p>
+          <p style={{ color: '#666', lineHeight: '1.8', marginBottom: '10px' }}>
+            Completed multiple associate degrees demonstrating breadth of knowledge across disciplines:
+          </p>
+          <ul style={{ color: '#666', lineHeight: '1.8', marginLeft: '20px' }}>
+            <li>AA in General Business</li>
+            <li>AA in Communication</li>
+            <li>AA in Chemistry</li>
+            <li>AA in Economics</li>
+            <li>AA in Kinesiology</li>
+            <li>AA in Philosophy</li>
+            <li>AA in Anthropology</li>
+            <li>AA in Psychology</li>
+            <li>AS in Business</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style={{ background: 'white', padding: '40px', borderRadius: '16px', marginBottom: '40px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
         <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>Professional Experience</h2>
         <p style={{ color: '#666', lineHeight: '1.8' }}>
-          [Add your experience working with clients, types of cases you've worked on, etc.]
+          Over a decade of experience working with diverse populations, from competitive athletes to individuals managing chronic pain and neurological conditions. Specialized in helping clients understand their bodies, move better, and achieve lasting change through education and sustainable practices.
         </p>
       </div>
 
       <div style={{ background: '#f0f9ff', padding: '40px', borderRadius: '16px' }}>
         <h2 style={{ fontSize: '32px', marginBottom: '20px' }}>Philosophy</h2>
+        <p style={{ color: '#666', lineHeight: '1.8', marginBottom: '15px' }}>
+          My approach is rooted in helping you discover what works for your unique body and circumstances. There's no one-size-fits-all solution—what matters is finding what you enjoy, what helps you reach your goals, and what you can sustain over time.
+        </p>
+        <p style={{ color: '#666', lineHeight: '1.8', marginBottom: '15px' }}>
+          I believe in teaching you to understand your body so you can make informed decisions about your movement and health. My diverse educational background—spanning business, communication, psychology, kinesiology, and philosophy—informs a holistic approach that considers not just the physical, but the mental and emotional aspects of change.
+        </p>
         <p style={{ color: '#666', lineHeight: '1.8' }}>
-          [Add a paragraph about your philosophy and approach to working with clients]
+          The goal isn't perfection—it's continuous improvement. Together, we'll build a foundation of understanding and develop practical strategies that fit your life, helping you move better, feel better, and maintain those improvements long-term.
         </p>
       </div>
 
