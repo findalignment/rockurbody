@@ -3,6 +3,7 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
+import GlossaryTerm from '../components/GlossaryTerm';
 
 function HowItWorks() {
   return (
@@ -53,11 +54,13 @@ function HowItWorks() {
                     Reorganize Structure
                   </h2>
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                    Through Structural Integration, we work hands-on with your fascia (connective tissue) to release restrictions and reorganize how your body is put together. This isn't massage it's systematic, progressive work that builds on itself.
+                    Through <GlossaryTerm term="Structural Integration" definition="Systematic bodywork that reorganizes your body's connective tissue (fascia) to improve alignment and function. Unlike massage, SI works strategically with fascia throughout your entire structure for lasting structural change.">Structural Integration</GlossaryTerm>, we work hands-on with your <GlossaryTerm term="fascia" definition="The connective tissue network that wraps every muscle, bone, nerve, and organ in your body, creating one continuous system. When healthy, fascia is mobile and resilient. Restrictions in fascia can limit movement and pull your structure out of alignment." videoUrl="https://www.youtube.com/watch?v=_FtSP-tkSUg">fascia</GlossaryTerm> to release restrictions and reorganize how your body is put together. This isn't massage—it's systematic, progressive work that builds on itself.
                   </p>
-                  <p className="text-neutralDark/70 leading-relaxed">
-                    Each session addresses specific lines of tension, creating space and alignment that allows your body to move more efficiently.
-                  </p>
+                  <ul className="text-neutralDark/70 leading-relaxed space-y-2 ml-6 list-disc">
+                    <li>Each session addresses specific lines of tension</li>
+                    <li>Creates space and alignment for efficient movement</li>
+                    <li>Builds progressively, session by session</li>
+                  </ul>
                 </div>
               </div>
 
@@ -71,11 +74,14 @@ function HowItWorks() {
                     Teach New Movement Patterns
                   </h2>
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                    Structural work creates the potential for change. Movement Education makes it stick. We teach you how to move in ways that reinforce the structural changes, building strength, mobility, and coordination from a better foundation.
+                    Structural work creates the potential for change. <GlossaryTerm term="Movement Education" definition="Intelligent training that teaches your body new movement patterns. Unlike traditional exercise, Movement Education focuses on how you move, not just what exercises you do. It reinforces structural changes and builds strength, mobility, and coordination from a better foundation.">Movement Education</GlossaryTerm> makes it stick.
                   </p>
-                  <p className="text-neutralDark/70 leading-relaxed">
-                    You'll learn movement patterns that support your upgraded structure, preventing old compensations from returning.
-                  </p>
+                  <ul className="text-neutralDark/70 leading-relaxed space-y-2 ml-6 list-disc">
+                    <li>Learn movement patterns that support your upgraded structure</li>
+                    <li>Build strength, mobility, and coordination from a better foundation</li>
+                    <li>Prevent old compensations from returning</li>
+                    <li>Make structural changes stick through movement</li>
+                  </ul>
                 </div>
               </div>
 

@@ -4,6 +4,7 @@ import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
 import FAQSection from '../components/FAQSection';
+import GlossaryTerm from '../components/GlossaryTerm';
 
 function SoftwareUpgradePlan() {
   return (
@@ -491,21 +492,30 @@ function SoftwareUpgradePlan() {
             <div className="space-y-8">
               <div className="bg-white rounded-xl p-6 md:p-8 shadow-md">
                 <h3 className="text-2xl font-semibold text-primary mb-4">Weeks 1-2: Foundation</h3>
-                <p className="text-lg text-neutralDark/80 leading-relaxed">
-                  Release major restrictions, begin teaching new movement patterns. We start with the biggest restrictions and imbalances. Structural work releases major tension patterns, and movement education begins teaching your body new ways to organize itself.
-                </p>
+                <ul className="text-lg text-neutralDark/80 leading-relaxed space-y-2 ml-6 list-disc">
+                  <li>Release major restrictions and imbalances</li>
+                  <li><GlossaryTerm term="Structural Integration" definition="Systematic bodywork that reorganizes your body's connective tissue (fascia) to improve alignment and function. Unlike massage, SI works strategically with fascia throughout your entire structure for lasting structural change.">Structural work</GlossaryTerm> releases major tension patterns</li>
+                  <li>Begin teaching new movement patterns</li>
+                  <li>Your body learns new ways to organize itself</li>
+                </ul>
               </div>
               <div className="bg-white rounded-xl p-6 md:p-8 shadow-md">
                 <h3 className="text-2xl font-semibold text-primary mb-4">Weeks 3-4: Integration</h3>
-                <p className="text-lg text-neutralDark/80 leading-relaxed">
-                  Address deeper patterns, refine movement quality. We build on the foundation, addressing deeper patterns and refining movement quality. Your body starts to "remember" the new patterns.
-                </p>
+                <ul className="text-lg text-neutralDark/80 leading-relaxed space-y-2 ml-6 list-disc">
+                  <li>Address deeper patterns</li>
+                  <li>Refine movement quality</li>
+                  <li>Build on the foundation</li>
+                  <li>Your body starts to "remember" the new patterns</li>
+                </ul>
               </div>
               <div className="bg-white rounded-xl p-6 md:p-8 shadow-md">
                 <h3 className="text-2xl font-semibold text-primary mb-4">Weeks 5-8: Refinement</h3>
-                <p className="text-lg text-neutralDark/80 leading-relaxed">
-                  Fine-tune system, build long-term movement patterns. We fine-tune the system, address remaining restrictions, and build movement patterns that support your upgraded structure long-term.
-                </p>
+                <ul className="text-lg text-neutralDark/80 leading-relaxed space-y-2 ml-6 list-disc">
+                  <li>Fine-tune the system</li>
+                  <li>Address remaining restrictions</li>
+                  <li>Build long-term movement patterns</li>
+                  <li>Support your upgraded structure long-term</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -520,27 +530,35 @@ function SoftwareUpgradePlan() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl p-6 shadow-md border-2 border-neutralLight">
                 <h3 className="text-xl font-semibold text-primary mb-3">Upgraded Structure</h3>
-                <p className="text-neutralDark/80">
-                  Better alignment, restrictions released. Your body is better aligned, with restrictions released and fascial patterns reorganized. Movement happens from a stronger foundation.
-                </p>
+                <ul className="text-neutralDark/80 space-y-2 ml-6 list-disc">
+                  <li>Better alignment with restrictions released</li>
+                  <li><GlossaryTerm term="fascia" definition="The connective tissue network that wraps every muscle, bone, nerve, and organ in your body, creating one continuous system. When healthy, fascia is mobile and resilient. Restrictions in fascia can limit movement and pull your structure out of alignment." videoUrl="https://www.youtube.com/watch?v=_FtSP-tkSUg">Fascial</GlossaryTerm> patterns reorganized</li>
+                  <li>Movement happens from a stronger foundation</li>
+                </ul>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md border-2 border-neutralLight">
                 <h3 className="text-xl font-semibold text-primary mb-3">New Movement Patterns</h3>
-                <p className="text-neutralDark/80">
-                  Automatic, supportive of upgraded structure. You've learned how to move in ways that support your upgraded structure. These patterns become automatic.
-                </p>
+                <ul className="text-neutralDark/80 space-y-2 ml-6 list-disc">
+                  <li>Automatic, supportive of upgraded structure</li>
+                  <li>Learn how to move in ways that support your upgraded structure</li>
+                  <li>Patterns become automatic over time</li>
+                </ul>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md border-2 border-neutralLight">
                 <h3 className="text-xl font-semibold text-primary mb-3">Self-Maintenance Tools</h3>
-                <p className="text-neutralDark/80">
-                  Exercises and practices to maintain improvements. You have specific exercises and practices to maintain the improvements and continue upgrading over time.
-                </p>
+                <ul className="text-neutralDark/80 space-y-2 ml-6 list-disc">
+                  <li>Specific exercises and practices to maintain improvements</li>
+                  <li>Continue upgrading over time</li>
+                  <li>Tools you can use independently</li>
+                </ul>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md border-2 border-neutralLight">
                 <h3 className="text-xl font-semibold text-primary mb-3">Lasting Change</h3>
-                <p className="text-neutralDark/80">
-                  Built into movement patterns. The changes hold because they're built into your movement patterns, not just applied from the outside.
-                </p>
+                <ul className="text-neutralDark/80 space-y-2 ml-6 list-disc">
+                  <li>Built into movement patterns</li>
+                  <li>Changes hold because they're integrated, not just applied</li>
+                  <li>Long-term transformation, not temporary relief</li>
+                </ul>
               </div>
             </div>
           </div>

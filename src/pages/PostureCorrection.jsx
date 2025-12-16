@@ -3,6 +3,7 @@ import PageHero from '../components/PageHero';
 import Button from '../components/Button';
 import SEO from '../components/SEO';
 import FAQSection from '../components/FAQSection';
+import GlossaryTerm from '../components/GlossaryTerm';
 import { getBreadcrumbSchema, getFAQSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
@@ -175,7 +176,7 @@ function PostureCorrection() {
                   Step 1: Release Structural Restrictions
                 </h3>
                 <p className="text-lg text-neutralDark/80 mb-3">
-                  Through Structural Integration, I release the fascial restrictions holding you in poor posture:
+                  Through <GlossaryTerm term="Structural Integration" definition="Systematic bodywork that reorganizes your body's connective tissue (fascia) to improve alignment and function. Unlike massage, SI works strategically with fascia throughout your entire structure for lasting structural change.">Structural Integration</GlossaryTerm>, I release the <GlossaryTerm term="fascia" definition="The connective tissue network that wraps every muscle, bone, nerve, and organ in your body, creating one continuous system. When healthy, fascia is mobile and resilient. Restrictions in fascia can limit movement and pull your structure out of alignment." videoUrl="https://www.youtube.com/watch?v=_FtSP-tkSUg">fascial</GlossaryTerm> restrictions holding you in poor posture:
                 </p>
                 <ul className="space-y-2 text-neutralDark/80 ml-6">
                   <li>• Open shortened front-body tissue (chest, hip flexors, anterior neck)</li>
@@ -220,21 +221,35 @@ function PostureCorrection() {
           {/* Benefits */}
           <div className="mb-16 bg-primary/5 rounded-2xl p-8">
             <h2 className="text-3xl font-heading text-primary mb-6">
-              What Changes When Your Posture Improves
+              What You'll Achieve
             </h2>
             
-            <div className="grid md:grid-cols-2 gap-4 text-lg text-neutralDark/80">
-              <div>✓ Less pain (neck, shoulders, back)</div>
-              <div>✓ More energy throughout the day</div>
-              <div>✓ Better breathing & more oxygen</div>
-              <div>✓ Improved confidence & presence</div>
-              <div>✓ Easier, more efficient movement</div>
-              <div>✓ Better athletic performance</div>
-              <div>✓ Reduced injury risk</div>
-              <div>✓ Look taller and younger</div>
-              <div>✓ Less tension & stress</div>
-              <div>✓ Improved digestion</div>
-            </div>
+            <ul className="space-y-3 text-lg text-neutralDark/80">
+              <li className="flex items-start gap-3">
+                <span className="text-accent font-bold">•</span>
+                <span><strong>Fix rounded shoulders:</strong> Less pain, better posture in 6 sessions</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent font-bold">•</span>
+                <span><strong>Correct forward head posture:</strong> Reduce neck pain and headaches in 4-8 sessions</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent font-bold">•</span>
+                <span><strong>Improve alignment:</strong> More energy, easier movement, better breathing</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent font-bold">•</span>
+                <span><strong>Reduce chronic tension:</strong> Less pain in neck, shoulders, and back</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent font-bold">•</span>
+                <span><strong>Better athletic performance:</strong> Improved power, efficiency, and reduced injury risk</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-accent font-bold">•</span>
+                <span><strong>Effortless posture:</strong> Good alignment becomes automatic, no constant reminders needed</span>
+              </li>
+            </ul>
           </div>
 
           {/* Timeline */}

@@ -4,6 +4,7 @@ import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
 import FAQSection from '../components/FAQSection';
+import GlossaryTerm from '../components/GlossaryTerm';
 
 function BodySystemsCheck() {
   return (
@@ -69,7 +70,7 @@ function BodySystemsCheck() {
                     <svg className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Structural integration assessment (fascial restrictions)</span>
+                    <span><GlossaryTerm term="Structural Integration" definition="Systematic bodywork that reorganizes your body's connective tissue (fascia) to improve alignment and function. Unlike massage, SI works strategically with fascia throughout your entire structure for lasting structural change.">Structural Integration</GlossaryTerm> assessment (<GlossaryTerm term="fascia" definition="The connective tissue network that wraps every muscle, bone, nerve, and organ in your body, creating one continuous system. When healthy, fascia is mobile and resilient. Restrictions in fascia can limit movement and pull your structure out of alignment." videoUrl="https://www.youtube.com/watch?v=_FtSP-tkSUg">fascial</GlossaryTerm> restrictions)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

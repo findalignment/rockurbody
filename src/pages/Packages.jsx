@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
+import GlossaryTerm from '../components/GlossaryTerm';
 
 function Packages() {
   // Movement session packages - matches Pricing page
@@ -290,7 +291,7 @@ function Packages() {
               <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-neutralLight hover:border-accent/30 transition-all">
                 <h3 className="text-2xl font-heading text-primary mb-4">Structural Integration</h3>
                 <p className="text-neutralDark/80 mb-6 leading-relaxed">
-                  Hands-on bodywork that reorganizes your connective tissue (fascia) for better alignment, easier movement, and lasting change. Systematic, progressive, transformative.
+                  Hands-on bodywork that reorganizes your connective tissue (<GlossaryTerm term="fascia" definition="The connective tissue network that wraps every muscle, bone, nerve, and organ in your body, creating one continuous system. When healthy, fascia is mobile and resilient. Restrictions in fascia can limit movement and pull your structure out of alignment." videoUrl="https://www.youtube.com/watch?v=_FtSP-tkSUg">fascia</GlossaryTerm>) for better alignment, easier movement, and lasting change. Systematic, progressive, transformative.
                 </p>
                 <div className="mb-6">
                   <p className="text-lg font-semibold text-primary">60-120 minutes • From $180</p>
