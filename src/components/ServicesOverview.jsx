@@ -161,6 +161,30 @@ function ServicesOverview() {
           </div>
         </div>
 
+        {/* Santa Cruz Personal Training Section */}
+        <div className="bg-white rounded-2xl p-8 md:p-12 mb-12 border-2 border-accent/20">
+          <div className="max-w-3xl mx-auto text-center">
+            <h3 className="text-2xl md:text-3xl font-heading text-primary mb-4">
+              Santa Cruz Personal Training & Movement Coaching
+            </h3>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+              Based in Santa Cruz, I work with clients throughout the area who want intelligent, personalized training. Whether you're in downtown Santa Cruz, Westside, Capitola, or Aptos, we can work together at my private studio or at select outdoor locations.
+            </p>
+            <p className="text-neutralDark/80 mb-6">
+              Looking for a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline font-semibold">personal trainer in Santa Cruz</Link> who understands the unique needs of active people? From surfers and trail runners to desk workers and active seniors, I help Santa Cruz residents move better, feel better, and build strength that lasts.
+            </p>
+            <Link 
+              to="/personal-trainer-santa-cruz"
+              className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors group"
+            >
+              <span>Learn more about Santa Cruz personal training</span>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <div className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

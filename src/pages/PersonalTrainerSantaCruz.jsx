@@ -282,13 +282,110 @@ function PersonalTrainerSantaCruz() {
             </div>
           </div>
 
-          <div className="mb-16 border-l-4 border-accent pl-6">
-            <h2 className="text-2xl font-heading text-primary mb-4">
-              Training Locations in Santa Cruz
+          <div className="mb-16 bg-accent/5 rounded-2xl p-8">
+            <h2 className="text-3xl font-heading text-primary mb-6">
+              Why Choose a Santa Cruz Personal Trainer?
             </h2>
-            <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Sessions are one-on-one and can be held at my studio or, for local clients, outdoors at parks or beaches. I serve Santa Cruz County including Capitola, Aptos, Soquel, and surrounding areas.
+            <div className="space-y-6 text-lg text-neutralDark/80">
+              <div className="flex items-start gap-4">
+                <div className="text-accent text-2xl mt-1">🌊</div>
+                <div>
+                  <strong className="text-primary block mb-2">Understanding the Active Santa Cruz Lifestyle</strong>
+                  <p>Santa Cruz isn't just another beach town. It's a hub for surfers, mountain bikers, trail runners, rock climbers, and outdoor enthusiasts. A local personal trainer understands the unique demands of this lifestyle—how surfing at Steamer Lane requires different shoulder mobility than desk work, or how trail running in Nisene Marks tests your ankles and balance differently than road running.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="text-accent text-2xl mt-1">🏔️</div>
+                <div>
+                  <strong className="text-primary block mb-2">Local Knowledge of Training Locations</strong>
+                  <p>Know where to train beyond four walls. From West Cliff Drive for mobility work with ocean views, to DeLaveaga Park for hill training, to the quiet beaches perfect for movement practice. A Santa Cruz-based trainer can take sessions outdoors to spaces that inspire movement, not just endure it.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="text-accent text-2xl mt-1">🤝</div>
+                <div>
+                  <strong className="text-primary block mb-2">Proximity Creates Accountability</strong>
+                  <p>When your trainer is local, you're more likely to show up. No hour-long drives to a gym across town. Sessions can fit into your lunch break, before work, or after work without eating your whole day. Local means accessible, and accessible means sustainable.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="text-accent text-2xl mt-1">🌲</div>
+                <div>
+                  <strong className="text-primary block mb-2">Community & Connection</strong>
+                  <p>Training locally means supporting your community and potentially training alongside others who share your values. You're not just a client number at a corporate gym chain—you're part of a local movement practice that values quality, sustainability, and the Santa Cruz way of life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16 border-l-4 border-accent pl-6">
+            <h2 className="text-3xl font-heading text-primary mb-6">
+              Training Locations Throughout Santa Cruz County
+            </h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
+              Private one-on-one sessions at my studio, or for local clients, we can meet at outdoor locations throughout the area. I work with clients across Santa Cruz County, making training accessible wherever you are.
             </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <h3 className="font-semibold text-primary mb-3">Santa Cruz Central</h3>
+                <ul className="space-y-2 text-neutralDark/80">
+                  <li>• Downtown Santa Cruz</li>
+                  <li>• Westside</li>
+                  <li>• Eastside/Seabright</li>
+                  <li>• Midtown</li>
+                  <li>• Harvey West</li>
+                  <li>• Twin Lakes</li>
+                  <li>• Live Oak</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <h3 className="font-semibold text-primary mb-3">Beach Communities</h3>
+                <ul className="space-y-2 text-neutralDark/80">
+                  <li>• Capitola Village</li>
+                  <li>• Aptos</li>
+                  <li>• Rio Del Mar</li>
+                  <li>• Pleasure Point</li>
+                  <li>• La Selva Beach</li>
+                  <li>• Seacliff</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <h3 className="font-semibold text-primary mb-3">Greater County</h3>
+                <ul className="space-y-2 text-neutralDark/80">
+                  <li>• Soquel</li>
+                  <li>• Scotts Valley</li>
+                  <li>• Felton</li>
+                  <li>• Ben Lomond</li>
+                  <li>• Boulder Creek</li>
+                  <li>• Bonny Doon</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-primary/5 rounded-lg p-6">
+              <h3 className="font-semibold text-primary mb-3">Favorite Outdoor Training Spots:</h3>
+              <div className="grid md:grid-cols-2 gap-4 text-neutralDark/80">
+                <div>
+                  <strong>West Cliff Drive:</strong> Perfect for walking assessments and mobility work with stunning ocean views
+                </div>
+                <div>
+                  <strong>DeLaveaga Park:</strong> Hill training, trail work, and functional movement in nature
+                </div>
+                <div>
+                  <strong>Natural Bridges:</strong> Beach training and sand work for stability and power
+                </div>
+                <div>
+                  <strong>Nisene Marks:</strong> Trail running assessments and endurance work in the redwoods
+                </div>
+                <div>
+                  <strong>Seabright Beach:</strong> Low-impact training location near the harbor
+                </div>
+                <div>
+                  <strong>Capitola Wharf Area:</strong> Flat, accessible training for all fitness levels
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">

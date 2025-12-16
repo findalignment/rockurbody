@@ -303,6 +303,33 @@ function Services() {
               title="Frequently Asked Questions About Our Services"
             />
 
+            {/* Santa Cruz Personal Training Section */}
+            <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-2xl p-10 shadow-sm mt-12">
+              <h2 className="text-3xl font-heading text-neutralDark mb-6 text-center">
+                Personal Training & Movement Coaching in Santa Cruz
+              </h2>
+              <p className="text-lg text-neutralDark/80 leading-relaxed mb-6 text-center max-w-3xl mx-auto">
+                Looking for a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline font-semibold">personal trainer in Santa Cruz</Link> who combines structural integration with intelligent movement education? I work with clients throughout Santa Cruz County—from downtown to Westside, Capitola to Aptos—offering private one-on-one sessions at my studio or select outdoor locations.
+              </p>
+              <p className="text-lg text-neutralDark/80 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
+                Whether you need <Link to="/private-personal-training-santa-cruz" className="text-accent hover:underline">private personal training</Link>, <Link to="/movement-assessment-santa-cruz" className="text-accent hover:underline">movement assessment</Link>, <Link to="/posture-coaching-santa-cruz" className="text-accent hover:underline">posture coaching</Link>, or specialized support for active Santa Cruz lifestyles (surfing, trail running, climbing, cycling), we can work together to help you move better and feel better.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <Link to="/personal-trainer-santa-cruz" className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white rounded-lg hover:bg-accent/90 transition font-semibold">
+                  Learn About Santa Cruz Training
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                <Link to="/body-systems-check" className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-accent border-2 border-accent rounded-lg hover:bg-accent/5 transition font-semibold">
+                  Book a Systems Check
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
             {/* Related Topics */}
             <div className="mt-12 pt-8 border-t border-neutralDark/20 text-center">
               <p className="text-sm text-neutralDark/70 mb-4">Related Topics:</p>

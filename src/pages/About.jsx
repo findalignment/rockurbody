@@ -101,6 +101,33 @@ function About() {
                 </div>
               </div>
             </div>
+            
+            {/* Santa Cruz Local Section */}
+            <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-2xl p-10 shadow-sm">
+              <h2 className="text-3xl font-heading text-neutralDark mb-6">
+                Based in Santa Cruz, Serving the Community
+              </h2>
+              <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+                I'm proud to serve as a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline font-semibold">personal trainer in Santa Cruz</Link>, working with clients throughout the area—from downtown to Westside, Capitola to Aptos, and the surrounding communities. Being local means I understand the unique lifestyle here: the surfers at Steamer Lane, the trail runners in Nisene Marks, the climbers at Pacific Edge, and the professionals working from home offices.
+              </p>
+              <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+                Whether you're looking for <Link to="/private-personal-training-santa-cruz" className="text-accent hover:underline">private personal training in Santa Cruz</Link>, <Link to="/movement-assessment-santa-cruz" className="text-accent hover:underline">movement assessment</Link>, or specialized work for your specific needs, we can work together at my private studio or at select outdoor locations throughout Santa Cruz County.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <Link to="/personal-trainer-santa-cruz" className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white rounded-lg hover:bg-accent/90 transition font-semibold">
+                  Santa Cruz Personal Training
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+                <Link to="/movement-assessment-santa-cruz" className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-accent border-2 border-accent rounded-lg hover:bg-accent/5 transition font-semibold">
+                  Movement Assessment
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Related Topics */}
