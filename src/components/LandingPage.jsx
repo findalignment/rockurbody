@@ -8,7 +8,7 @@ import MarkdownText from './MarkdownText';
 import ChatbotStatus from './ChatbotStatus';
 import SEO from './SEO';
 import QuickStartQuiz from './QuickStartQuiz';
-import { sendMessageToAI, detectIntent } from '../utils/openai';
+import { detectIntent } from '../utils/openai';
 import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
 import { handleChatbotRequest, retryChatbotRequest, startHealthMonitoring } from '../utils/chatbotReliability';
@@ -181,10 +181,25 @@ function LandingPage() {
               try {
                 errorData = await response.json();
               } catch (e) {
-                errorData = { error: `HTTP ${response.status}: ${response.statusText}` };
+                const text = await response.text().catch(() => 'Unknown error');
+                errorData = { 
+                  error: `HTTP ${response.status}: ${response.statusText}`,
+                  message: text.substring(0, 200)
+                };
               }
               logger.error('Chat API error response:', response.status, errorData);
-              const errorMessage = errorData.error || errorData.message || `API error: ${response.status}`;
+              
+              // Provide helpful error messages based on status code
+              let errorMessage = errorData.error || errorData.message || `API error: ${response.status}`;
+              
+              if (response.status === 500 && errorData.message?.includes('OPENAI_API_KEY')) {
+                errorMessage = 'Server configuration error: The OpenAI API key is not set. Please configure OPENAI_API_KEY in Vercel environment variables.';
+              } else if (response.status === 500) {
+                errorMessage = errorData.message || 'Server error: The chatbot service encountered an error. Please try again later.';
+              } else if (response.status === 429) {
+                errorMessage = 'Rate limit exceeded: Please wait a moment before sending another message.';
+              }
+              
               throw new Error(errorMessage);
             }
 
@@ -208,11 +223,19 @@ function LandingPage() {
           } catch (error) {
             logger.error('Chat API error:', error);
             console.error('Chat API error details:', error);
-            // Re-throw with a user-friendly message if it's a network error
+            
+            // Provide user-friendly error messages
             if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
-              throw new Error('Network error: Unable to connect to the server. Please check your connection.');
+              throw new Error('Network error: Unable to connect to the chatbot service. This might be a CORS issue or the API endpoint is not accessible. Please check your browser console for more details.');
             }
-            throw error;
+            
+            // If error message already contains helpful info, use it
+            if (error.message && error.message.length > 20) {
+              throw error;
+            }
+            
+            // Generic fallback
+            throw new Error(`Chatbot error: ${error.message || 'Unknown error occurred. Please try again.'}`);
           }
         },
         userMessage,
