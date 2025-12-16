@@ -214,10 +214,13 @@ async function processImages() {
       const ext = path.extname(originalFilename).toLowerCase();
       
       // Construct output filename (name from Airtable + original extension)
-      let outputFilename = name;
-      if (!outputFilename.endsWith(ext)) {
-        outputFilename += ext;
-      }
+      // Remove any existing extension from name first to avoid duplicates
+      let outputFilename = name.replace(/\.(jpg|jpeg|png|webp)$/i, '');
+      // Then add the correct extension from the URL
+      outputFilename += ext;
+      
+      // Log the actual filename being used
+      console.log(`   📝 Output filename: ${outputFilename}`);
 
       const outputPath = path.join(PUBLIC_DIR, outputFilename);
 
