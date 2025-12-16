@@ -20,6 +20,15 @@ export default defineConfig({
     cors: {
       origin: ['http://localhost:3000', 'http://localhost:5173'],
       credentials: true
+    },
+    // Proxy API routes for local development
+    // In production, Vercel handles these routes automatically
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false
+      }
     }
   },
   build: {

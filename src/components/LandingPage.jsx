@@ -152,9 +152,17 @@ function LandingPage() {
           try {
             console.log('[CHAT] Sending request to /api/chat', { message, historyLength: history.length });
             
-            const response = await fetch('/api/chat', {
+            // Use absolute URL in production, relative in development
+            const apiUrl = import.meta.env.PROD 
+              ? '/api/chat' 
+              : (import.meta.env.VITE_API_URL || '/api/chat');
+            
+            const response = await fetch(apiUrl, {
               method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
+              headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
               body: JSON.stringify({
                 message: message,
                 history: history.map(msg => ({
