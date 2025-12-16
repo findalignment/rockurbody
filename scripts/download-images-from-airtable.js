@@ -169,6 +169,7 @@ async function processImages() {
     let downloaded = 0;
     let skipped = 0;
     let errors = 0;
+    const processedFiles = new Map(); // Track files we've already processed to avoid duplicates
 
     // Process each record
     for (const record of records) {
@@ -223,6 +224,16 @@ async function processImages() {
       console.log(`   📝 Output filename: ${outputFilename}`);
 
       const outputPath = path.join(PUBLIC_DIR, outputFilename);
+
+      // Check if we've already processed this filename in this run
+      if (processedFiles.has(outputFilename)) {
+        console.log(`⚠️  Skipping duplicate "${name}": Already processed in this run`);
+        skipped++;
+        continue;
+      }
+
+      // Mark as processed
+      processedFiles.set(outputFilename, imageUrl);
 
       try {
         console.log(`📥 Downloading: ${name}${ext}`);
