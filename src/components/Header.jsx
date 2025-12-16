@@ -13,8 +13,9 @@ function Header() {
   
   const isHomePage = location.pathname === '/';
   
-  // Debug: Log state changes
+  // Debug: Log state changes - UPDATED 2025-12-16
   console.log('[Header] Render - openDropdown:', openDropdown);
+  console.log('[Header] Dropdown functionality active - version 2.0');
   
   const navLinks = [
     { 
