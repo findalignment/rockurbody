@@ -9,6 +9,7 @@ function Header() {
   const location = useLocation();
   const aboutDropdownRef = useRef(null);
   const servicesDropdownRef = useRef(null);
+  const dropdownTimeoutRef = useRef(null);
   
   const isHomePage = location.pathname === '/';
   
@@ -58,6 +59,36 @@ function Header() {
       return () => document.removeEventListener('mousedown', handleClickOutside);
     }
   }, [openDropdown]);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  // Handle dropdown mouse enter/leave with delay
+  const handleDropdownMouseEnter = (dropdownId) => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setOpenDropdown(dropdownId);
+  };
+
+  const handleDropdownMouseLeave = () => {
+    // Clear any existing timeout
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+    }
+    
+    // Delay closing to allow mouse to move to dropdown
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 150);
+  };
   
   // Handle scroll effect
   useEffect(() => {
@@ -104,8 +135,8 @@ function Header() {
                   key={link.path}
                   ref={link.dropdownId === 'about' ? aboutDropdownRef : servicesDropdownRef}
                   className="relative"
-                  onMouseEnter={() => setOpenDropdown(link.dropdownId)}
-                  onMouseLeave={() => setOpenDropdown(null)}
+                  onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
+                  onMouseLeave={handleDropdownMouseLeave}
                 >
                   <button
                     type="button"
@@ -132,7 +163,11 @@ function Header() {
                     }`}></span>
                   </button>
                   {openDropdown === link.dropdownId && (
-                    <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[100] animate-fadeIn">
+                    <div 
+                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[100] animate-fadeIn"
+                      onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
+                      onMouseLeave={handleDropdownMouseLeave}
+                    >
                       {link.dropdown.map((item) => (
                         <Link
                           key={item.path}
