@@ -106,6 +106,70 @@ function Packages() {
       />
       <div className="pt-16 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
+          {/* New Service Tiles Section */}
+          <section className="mb-20">
+            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8 text-center">
+              Core Services
+            </h2>
+            <p className="text-lg text-neutralDark/80 mb-12 text-center max-w-3xl mx-auto">
+              Start here with our core offerings. Each service can stand alone or be combined into a comprehensive program.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Body Systems Check */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-neutralLight hover:border-accent/30 transition-all">
+                <h3 className="text-2xl font-heading text-primary mb-4">Body Systems Check</h3>
+                <p className="text-neutralDark/80 mb-6 leading-relaxed">
+                  A comprehensive assessment of your alignment, movement patterns, and structural imbalances. We identify what's working, what's not, and create a clear roadmap for improvement.
+                </p>
+                <div className="mb-6">
+                  <p className="text-lg font-semibold text-primary">90 minutes • $250</p>
+                  <p className="text-sm text-neutralDark/60 mt-1">Comprehensive assessment and roadmap</p>
+                </div>
+                <Link
+                  to="/body-systems-check"
+                  className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold"
+                >
+                  Learn More →
+                </Link>
+              </div>
+
+              {/* Private Movement Coaching */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-neutralLight hover:border-accent/30 transition-all">
+                <h3 className="text-2xl font-heading text-primary mb-4">Private Movement Coaching</h3>
+                <p className="text-neutralDark/80 mb-6 leading-relaxed">
+                  Intelligent training that builds strength, mobility, and movement quality from the ground up. Foundation first, then build. Personalized to your body and goals.
+                </p>
+                <div className="mb-6">
+                  <p className="text-lg font-semibold text-primary">30-120 minutes • From $100</p>
+                </div>
+                <Link
+                  to="/movement-coaching-santa-cruz"
+                  className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold"
+                >
+                  Learn More →
+                </Link>
+              </div>
+
+              {/* Structural Integration */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-neutralLight hover:border-accent/30 transition-all">
+                <h3 className="text-2xl font-heading text-primary mb-4">Structural Integration</h3>
+                <p className="text-neutralDark/80 mb-6 leading-relaxed">
+                  Hands-on bodywork that reorganizes your connective tissue (fascia) for better alignment, easier movement, and lasting change. Systematic, progressive, transformative.
+                </p>
+                <div className="mb-6">
+                  <p className="text-lg font-semibold text-primary">60-120 minutes • From $180</p>
+                </div>
+                <Link
+                  to="/what-is-structural-integration"
+                  className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold"
+                >
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+          </section>
+
           <p className="text-xl text-neutralDark/80 mb-8 text-center max-w-4xl mx-auto leading-relaxed">
             These aren't cookie-cutter workout plans. Each program is designed to actually address what's holding you back, whether that's a chronically tight hip, a stiff shoulder, or just feeling like your body's betraying you. You're not just buying sessions, you're buying freedom from stiff-body days. Not sure where to start? Let's chat. No fluff, no pushy sales, just us figuring out what your body wants to do.
           </p>
