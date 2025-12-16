@@ -83,6 +83,7 @@ const Credentials = lazy(() => import('./pages/Credentials'));
 const TrainingLineage = lazy(() => import('./pages/TrainingLineage'));
 const FAQ = lazy(() => import('./pages/FAQ'));
 const HowItWorks = lazy(() => import('./pages/HowItWorks'));
+const Testimonials = lazy(() => import('./pages/Testimonials'));
 const BodySystemsCheck = lazy(() => import('./pages/BodySystemsCheck'));
 const SoftwareUpgradePlan = lazy(() => import('./pages/SoftwareUpgradePlan'));
 const PerformanceLongevityCoaching = lazy(() => import('./pages/PerformanceLongevityCoaching'));
@@ -351,6 +352,7 @@ function AppRoutes() {
         
         {/* New Service Pages */}
         <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/body-systems-check" element={<BodySystemsCheck />} />
         <Route path="/software-upgrade-plan" element={<SoftwareUpgradePlan />} />
         <Route path="/performance-longevity-coaching" element={<PerformanceLongevityCoaching />} />
