@@ -76,6 +76,7 @@ function Header() {
       clearTimeout(dropdownTimeoutRef.current);
       dropdownTimeoutRef.current = null;
     }
+    console.log('[Header] Opening dropdown:', dropdownId);
     setOpenDropdown(dropdownId);
   };
 
@@ -169,10 +170,17 @@ function Header() {
                       style={{ 
                         pointerEvents: 'auto',
                         opacity: 1,
-                        visibility: 'visible'
+                        visibility: 'visible',
+                        display: 'block'
                       }}
-                      onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
-                      onMouseLeave={handleDropdownMouseLeave}
+                      onMouseEnter={() => {
+                        console.log('[Header] Mouse entered dropdown:', link.dropdownId);
+                        handleDropdownMouseEnter(link.dropdownId);
+                      }}
+                      onMouseLeave={() => {
+                        console.log('[Header] Mouse left dropdown:', link.dropdownId);
+                        handleDropdownMouseLeave();
+                      }}
                     >
                       {link.dropdown.map((item) => (
                         <Link
