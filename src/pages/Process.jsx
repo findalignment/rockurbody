@@ -163,7 +163,7 @@ function Process() {
 
               {/* Center Dot */}
               <div className={`
-                hidden md:block absolute left-1/2 top-1/2 transform .translate-x.1/2 .translate-y.1/2
+                hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2
                 w-6 h-6 rounded-full border-4 border-white transition-all duration-500
                 ${activeStep === index ? `bg.${step-color} scale-125 shadow-lg` : 'bg-neutralLight'}
               `} />
