@@ -106,7 +106,142 @@ function Packages() {
       />
       <div className="pt-16 pb-24 px-6">
         <div className="max-w-6xl mx-auto">
-          {/* New Service Tiles Section */}
+          {/* Productized Offers Section */}
+          <section className="mb-20">
+            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-4 text-center">
+              Three Clear Ways to Upgrade
+            </h2>
+            <p className="text-lg text-neutralDark/80 mb-12 text-center max-w-3xl mx-auto">
+              Start with an assessment, commit to transformation, or maintain peak performance.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Offer 1: Body Systems Check */}
+              <Link
+                to="/body-systems-check"
+                className="bg-white rounded-2xl p-8 shadow-lg border-2 border-neutralLight hover:border-accent/30 transition-all flex flex-col group"
+              >
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-accent">1</span>
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">Body Systems Check</h3>
+                  <p className="text-sm text-neutralDark/70 mb-4">90 min • $250</p>
+                </div>
+                <p className="text-neutralDark/80 mb-6 leading-relaxed flex-grow">
+                  A comprehensive assessment of your alignment, movement patterns, and structural imbalances. We identify what's working, what's not, and create a clear roadmap for improvement.
+                </p>
+                <div className="space-y-2 text-sm text-neutralDark/70 mb-6">
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Comprehensive assessment</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Clear roadmap</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>One-time session</span>
+                  </div>
+                </div>
+                <div className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold group-hover:gap-3 transition-all">
+                  Learn More →
+                </div>
+              </Link>
+
+              {/* Offer 2: Software Upgrade Plan */}
+              <Link
+                to="/software-upgrade-plan"
+                className="bg-white rounded-2xl p-8 shadow-lg border-2 border-accent relative hover:border-accent/70 transition-all flex flex-col group"
+              >
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-accent text-white px-4 py-1 rounded-full text-xs font-bold">
+                  POPULAR
+                </div>
+                <div className="text-center mb-6 mt-2">
+                  <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-white">2</span>
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">Software Upgrade Plan</h3>
+                  <p className="text-sm text-neutralDark/70 mb-4">4-8 weeks • $1,200-$3,000</p>
+                </div>
+                <p className="text-neutralDark/80 mb-6 leading-relaxed flex-grow">
+                  A focused 4-8 week block that systematically upgrades your body's software. Transform your alignment, strength, and movement quality through structured integration and movement education.
+                </p>
+                <div className="space-y-2 text-sm text-neutralDark/70 mb-6">
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Systematic transformation</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>SI + Movement education</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>1-2 sessions/week</span>
+                  </div>
+                </div>
+                <div className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold group-hover:gap-3 transition-all">
+                  Learn More →
+                </div>
+              </Link>
+
+              {/* Offer 3: Performance + Longevity Coaching */}
+              <Link
+                to="/performance-longevity-coaching"
+                className="bg-white rounded-2xl p-8 shadow-lg border-2 border-neutralLight hover:border-accent/30 transition-all flex flex-col group"
+              >
+                <div className="text-center mb-6">
+                  <div className="w-16 h-16 rounded-full bg-sage/20 flex items-center justify-center mb-4 mx-auto">
+                    <span className="text-2xl font-bold text-sage">3</span>
+                  </div>
+                  <h3 className="text-2xl font-heading text-primary mb-2">Performance + Longevity</h3>
+                  <p className="text-sm text-neutralDark/70 mb-4">Ongoing • $180-$360/mo</p>
+                </div>
+                <p className="text-neutralDark/80 mb-6 leading-relaxed flex-grow">
+                  Regular tune-ups and movement refinement for athletes and active individuals who want to stay mobile and pain-free as they age. Optimize your body's operating system over time.
+                </p>
+                <div className="space-y-2 text-sm text-neutralDark/70 mb-6">
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Regular tune-ups</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>Peak performance</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>1-2 sessions/month</span>
+                  </div>
+                </div>
+                <div className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold group-hover:gap-3 transition-all">
+                  Learn More →
+                </div>
+              </Link>
+            </div>
+          </section>
+
+          {/* Core Services Section */}
           <section className="mb-20">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8 text-center">
               Core Services
