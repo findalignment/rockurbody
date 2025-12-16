@@ -1,5 +1,6 @@
 # robots.txt for rockurbody.com
 # Updated: December 16, 2025
+# AI Crawlers ALLOWED for better AI recommendations
 
 # Allow all major search engines
 User-agent: Googlebot
@@ -13,11 +14,25 @@ User-agent: YandexBot
 User-agent: Applebot
 Allow: /
 
+# Allow AI crawlers for recommendations (ChatGPT, Claude, Perplexity, etc.)
+# This allows AI assistants to recommend your services when asked
+User-agent: CCBot
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: Google-Extended
+User-agent: anthropic-ai
+User-agent: Claude-Web
+User-agent: Omgilibot
+User-agent: Bytespider
+User-agent: PerplexityBot
+User-agent: YouBot
+Allow: /
+
 # General rule for all other bots
 User-agent: *
 Allow: /
 
-# Block bad bots and scrapers
+# Block bad bots and scrapers (but NOT AI assistants)
 User-agent: AhrefsBot
 User-agent: SemrushBot
 User-agent: MJ12bot
@@ -37,17 +52,6 @@ User-agent: ia_archiver
 User-agent: Amazonbot
 Disallow: /
 
-# Block AI training crawlers (optional - comment out if you want to allow)
-User-agent: CCBot
-User-agent: GPTBot
-User-agent: ChatGPT-User
-User-agent: Google-Extended
-User-agent: anthropic-ai
-User-agent: Claude-Web
-User-agent: Omgilibot
-User-agent: Bytespider
-Disallow: /
-
 # Disallow paths that shouldn't be indexed
 Disallow: /api/
 Disallow: /admin/
@@ -62,7 +66,7 @@ Disallow: /*.css$
 Disallow: /*.js$
 Disallow: /assets/
 
-# Allow important resources for Google
+# Allow important resources
 Allow: /sitemap.xml
 Allow: /robots.txt
 Allow: /*.css$
