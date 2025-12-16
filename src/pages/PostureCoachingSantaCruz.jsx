@@ -5,6 +5,31 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function PostureCoachingSantaCruz() {
+  // LocalBusiness Schema for SEO
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "HealthAndBeautyBusiness"],
+    "name": "RockUrBody - Posture Coaching Santa Cruz",
+    "image": "https://rockurbody.com/logo.png",
+    "description": "Posture coaching and correction in Santa Cruz. Fix poor posture through structural integration and movement education. Address root causes, not just symptoms.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Santa Cruz",
+      "addressLocality": "Santa Cruz",
+      "addressRegion": "CA",
+      "postalCode": "95060",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.9741,
+      "longitude": -122.0308
+    },
+    "url": "https://rockurbody.com/posture-coaching-santa-cruz",
+    "telephone": "+1-831-419-4422",
+    "priceRange": "$$$"
+  };
+
   return (
     <>
       <SEO
@@ -13,6 +38,9 @@ function PostureCoachingSantaCruz() {
         keywords="posture coaching Santa Cruz, posture correction Santa Cruz, improve posture, postural alignment, desk posture, Santa Cruz"
         url="/posture-coaching-santa-cruz"
       />
+      <script type="application/ld+json">
+        {JSON.stringify(localBusinessSchema)}
+      </script>
       <Header />
       <main className="min-h-screen bg-white">
         <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
@@ -65,12 +93,87 @@ function PostureCoachingSantaCruz() {
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Who This Is For</h2>
-            <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
               Posture coaching is for anyone with poor posture desk workers, athletes, people with chronic pain. If your posture is affecting your life, we can help.
             </p>
-            <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Learn about <Link to="/desk-worker-wellness" className="text-accent hover:underline">desk worker wellness</Link> and <Link to="/neck-shoulder-tension-from-desk-work" className="text-accent hover:underline">neck and shoulder tension from desk work</Link>.
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-accent/5 rounded-lg p-6 border-l-4 border-accent">
+                <h3 className="font-semibold text-primary mb-3">Common Posture Problems:</h3>
+                <ul className="space-y-2 text-neutralDark/80">
+                  <li>• Rounded shoulders and forward head</li>
+                  <li>• Anterior pelvic tilt or posterior tilt</li>
+                  <li>• Slouching at desk or computer</li>
+                  <li>• One shoulder higher than the other</li>
+                  <li>• Neck and upper back tension</li>
+                  <li>• Mid-back stiffness</li>
+                </ul>
+              </div>
+              <div className="bg-primary/5 rounded-lg p-6 border-l-4 border-primary">
+                <h3 className="font-semibold text-primary mb-3">What Improves:</h3>
+                <ul className="space-y-2 text-neutralDark/80">
+                  <li>• Less neck and shoulder tension</li>
+                  <li>• Better breathing capacity</li>
+                  <li>• Reduced headaches</li>
+                  <li>• Improved confidence and presence</li>
+                  <li>• Better movement efficiency</li>
+                  <li>• Reduced fatigue from standing/sitting</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mt-8">
+              Learn more about <Link to="/posture-correction" className="text-accent hover:underline font-semibold">posture correction</Link>, <Link to="/desk-worker-wellness" className="text-accent hover:underline">desk worker wellness</Link>, and <Link to="/neck-shoulder-tension-from-desk-work" className="text-accent hover:underline">neck and shoulder tension from desk work</Link>.
             </p>
+          </div>
+        </section>
+
+        <section className="bg-neutralLight py-16 md:py-24 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8 text-center">Posture Coaching in Santa Cruz</h2>
+            <p className="text-lg text-neutralDark/80 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
+              Based in Santa Cruz, serving desk workers, remote professionals, and active individuals throughout the area who are tired of poor posture affecting their quality of life.
+            </p>
+            
+            <div className="bg-white rounded-xl p-8 shadow-md mb-8">
+              <h3 className="text-xl font-semibold text-primary mb-4 text-center">Serving Santa Cruz County:</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div className="text-neutralDark/80">Downtown Santa Cruz</div>
+                <div className="text-neutralDark/80">Westside</div>
+                <div className="text-neutralDark/80">Eastside</div>
+                <div className="text-neutralDark/80">Capitola</div>
+                <div className="text-neutralDark/80">Aptos</div>
+                <div className="text-neutralDark/80">Soquel</div>
+                <div className="text-neutralDark/80">Scotts Valley</div>
+                <div className="text-neutralDark/80">Santa Cruz Mountains</div>
+              </div>
+            </div>
+
+            <div className="bg-accent/10 rounded-xl p-6 border-l-4 border-accent">
+              <p className="text-neutralDark/80 leading-relaxed">
+                <strong className="text-primary">Perfect for Santa Cruz Professionals:</strong> If you work remotely, spend hours at a computer, or notice your posture getting worse as the day goes on, posture coaching can help. Learn how to set up your workspace, move better throughout the day, and address the structural issues causing poor posture.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white py-16 md:py-24 px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8 text-center">Client Success Stories</h2>
+            
+            <div className="space-y-8">
+              <div className="bg-neutralLight rounded-xl p-8 shadow-md">
+                <p className="text-lg text-neutralDark/80 leading-relaxed mb-4 italic">
+                  "My strength, balance, and confidence have all improved in ways I can feel in day-to-day life. Rock listens carefully, adjusts on the spot, and pays attention to details most people miss."
+                </p>
+                <p className="text-primary font-semibold">Ellen M., Santa Cruz</p>
+              </div>
+
+              <div className="bg-neutralLight rounded-xl p-8 shadow-md">
+                <p className="text-lg text-neutralDark/80 leading-relaxed mb-4 italic">
+                  "Rock is an encyclopedia of anatomy knowledge with deep intuition on how to help people address and move through their physical challenges. Rock meets me where I am and offers challenges with genuine care."
+                </p>
+                <p className="text-primary font-semibold">Tahlia D., Santa Cruz</p>
+              </div>
+            </div>
           </div>
         </section>
 
