@@ -157,20 +157,20 @@ function Credentials() {
       <div style={{ background: 'white', padding: '40px', borderRadius: '16px', marginBottom: '40px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
         <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>Professional Experience</h2>
         <p style={{ color: '#666', lineHeight: '1.8' }}>
-          Over a decade of experience working with diverse populations, from competitive athletes to individuals managing chronic pain and neurological conditions. Specialized in helping clients understand their bodies, move better, and achieve lasting change through education and sustainable practices.
+          Over a decade of experience working with diverse populations, from competitive athletes to individuals managing chronic pain and neurological conditions. I specialize in helping clients understand their bodies, move better, and achieve lasting change through education and sustainable practices.
         </p>
       </div>
 
       <div style={{ background: '#f0f9ff', padding: '40px', borderRadius: '16px' }}>
         <h2 style={{ fontSize: '32px', marginBottom: '20px' }}>Philosophy</h2>
         <p style={{ color: '#666', lineHeight: '1.8', marginBottom: '15px' }}>
-          My approach is rooted in helping you discover what works for your unique body and circumstances. There's no one-size-fits-all solution—what matters is finding what you enjoy, what helps you reach your goals, and what you can sustain over time.
+          My approach is rooted in helping you discover what works for your unique body and circumstances. There's no one-size-fits-all solution. What matters is finding what you enjoy, what helps you reach your goals, and what you can sustain over time.
         </p>
         <p style={{ color: '#666', lineHeight: '1.8', marginBottom: '15px' }}>
-          I believe in teaching you to understand your body so you can make informed decisions about your movement and health. My diverse educational background—spanning business, communication, psychology, kinesiology, and philosophy—informs a holistic approach that considers not just the physical, but the mental and emotional aspects of change.
+          I believe in teaching you to understand your body so you can make informed decisions about your movement and health. My diverse educational background (spanning business, communication, psychology, kinesiology, and philosophy) informs a holistic approach that considers not just the physical, but the mental and emotional aspects of change.
         </p>
         <p style={{ color: '#666', lineHeight: '1.8' }}>
-          The goal isn't perfection—it's continuous improvement. Together, we'll build a foundation of understanding and develop practical strategies that fit your life, helping you move better, feel better, and maintain those improvements long-term.
+          The goal isn't perfection. It's continuous improvement. Together, we'll build a foundation of understanding and develop practical strategies that fit your life, helping you move better, feel better, and maintain those improvements long-term.
         </p>
       </div>
 
