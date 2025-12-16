@@ -87,6 +87,7 @@ const Testimonials = lazy(() => import('./pages/Testimonials'));
 const BodySystemsCheck = lazy(() => import('./pages/BodySystemsCheck'));
 const SoftwareUpgradePlan = lazy(() => import('./pages/SoftwareUpgradePlan'));
 const PerformanceLongevityCoaching = lazy(() => import('./pages/PerformanceLongevityCoaching'));
+const BodyAlignmentScorePage = lazy(() => import('./pages/BodyAlignmentScore'));
 const OffersComparison = lazy(() => import('./pages/OffersComparison'));
 const BodyOperatingSystemChecklist = lazy(() => import('./pages/BodyOperatingSystemChecklist'));
 const UpgradeYourBodySoftware = lazy(() => import('./pages/UpgradeYourBodySoftware'));
@@ -358,6 +359,7 @@ function AppRoutes() {
         <Route path="/performance-longevity-coaching" element={<PerformanceLongevityCoaching />} />
         <Route path="/offers-comparison" element={<OffersComparison />} />
         <Route path="/body-operating-system-checklist" element={<BodyOperatingSystemChecklist />} />
+        <Route path="/body-alignment-score" element={<BodyAlignmentScorePage />} />
         
         {/* Core Pillar Pages */}
         <Route path="/upgrade-your-body-software" element={<UpgradeYourBodySoftware />} />
