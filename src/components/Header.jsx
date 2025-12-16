@@ -40,7 +40,6 @@ function Header() {
         { name: 'Performance & Longevity', path: '/performance-longevity-coaching' },
         { name: 'Structural Integration', path: '/what-is-structural-integration' },
         { name: 'Movement Education', path: '/movement-coaching-santa-cruz' },
-        { name: 'Climbers', path: '/climbers' },
         { name: 'Posture Correction', path: '/posture-correction' },
         { name: 'Alignment-Based Strength', path: '/alignment-based-strength-training' },
       ],
