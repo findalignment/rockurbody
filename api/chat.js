@@ -87,6 +87,18 @@ export default async function handler(req, res) {
   console.log('[API/CHAT] URL:', req.url);
   console.log('[API/CHAT] Headers:', JSON.stringify(req.headers || {}));
   
+  // Set CORS headers FIRST before any other operations
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS, GET');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.setHeader('Access-Control-Max-Age', '86400');
+  
+  // Handle OPTIONS request for CORS preflight
+  if (req.method === 'OPTIONS') {
+    console.log('[API/CHAT] OPTIONS request, returning 200');
+    return res.status(200).end();
+  }
+  
   // Wrap everything in try-catch to catch any initialization errors
   try {
     
@@ -132,17 +144,6 @@ export default async function handler(req, res) {
       hasOpenAI: !!openai,
       hasApiKey: !!apiKey
     });
-
-    // Set CORS headers (must be set before any response)
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS, GET');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.setHeader('Access-Control-Max-Age', '86400'); // 24 hours
-
-    if (req.method === 'OPTIONS') {
-      console.log('[API/CHAT] OPTIONS request, returning 200');
-      return res.status(200).end();
-    }
 
     if (req.method !== 'POST') {
       console.log('[API/CHAT] Invalid method:', req.method);
