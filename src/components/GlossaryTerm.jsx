@@ -9,6 +9,7 @@ function GlossaryTerm({ term, definition, videoUrl, children }) {
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const termRef = useRef(null);
   const tooltipRef = useRef(null);
+  const closeTimeoutRef = useRef(null);
 
   useEffect(() => {
     if (isOpen && termRef.current) {
@@ -41,6 +42,7 @@ function GlossaryTerm({ term, definition, videoUrl, children }) {
     }
   }, [isOpen]);
 
+  // Handle closing tooltip when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -59,6 +61,55 @@ function GlossaryTerm({ term, definition, videoUrl, children }) {
     }
   }, [isOpen]);
 
+  // Clear timeout when component unmounts
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+      }
+    };
+  }, []);
+
+  // Handle delayed close with mouse leave
+  const handleMouseLeave = (e) => {
+    // Clear any existing timeout
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+    }
+    
+    // Get mouse position from the event
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    
+    // Set a small delay before closing to allow mouse to move to tooltip
+    closeTimeoutRef.current = setTimeout(() => {
+      // Check if mouse is actually over tooltip before closing
+      if (tooltipRef.current) {
+        const tooltipRect = tooltipRef.current.getBoundingClientRect();
+        
+        // Check if mouse is still over tooltip (with small buffer for edge cases)
+        if (
+          mouseX >= tooltipRect.left - 10 &&
+          mouseX <= tooltipRect.right + 10 &&
+          mouseY >= tooltipRect.top - 10 &&
+          mouseY <= tooltipRect.bottom + 10
+        ) {
+          return; // Don't close if mouse is over tooltip
+        }
+      }
+      setIsOpen(false);
+    }, 150); // 150ms delay to allow mouse movement from term to tooltip
+  };
+
+  // Cancel close when mouse enters term or tooltip
+  const handleMouseEnter = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setIsOpen(true);
+  };
+
   return (
     <>
       <span
@@ -68,8 +119,8 @@ function GlossaryTerm({ term, definition, videoUrl, children }) {
           e.stopPropagation();
           setIsOpen(!isOpen);
         }}
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         aria-label={`${term} - Click for definition`}
       >
         {children || term}
@@ -97,6 +148,8 @@ function GlossaryTerm({ term, definition, videoUrl, children }) {
             left: `${position.left}px`,
           }}
           onClick={(e) => e.stopPropagation()}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           <div className="flex items-start justify-between gap-2 mb-2">
             <h4 className="font-semibold text-primary text-sm">{term}</h4>
