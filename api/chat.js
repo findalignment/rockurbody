@@ -160,9 +160,13 @@ export default async function handler(req, res) {
       
       // If rate limit middleware returned a response, it means rate limit was exceeded
       // Check if headers were sent to determine if response was sent
-      if (rateLimitResult && res.headersSent) {
-        // Rate limit exceeded, response already sent
-        return;
+      if (rateLimitResult && rateLimitResult.error) {
+        // Rate limit exceeded, response already sent by middleware
+        if (res.headersSent) {
+          return;
+        }
+        // If middleware didn't send response, send it now
+        return res.status(429).json(rateLimitResult);
       }
     } catch (rateLimitError) {
       // If rate limiting fails completely, log but continue (don't block requests)
