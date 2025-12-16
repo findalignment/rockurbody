@@ -158,8 +158,7 @@ export default async function handler(req, res) {
         message: "You're sending messages too quickly. Please slow down and try again in a moment."
       });
       
-      // If rate limit middleware returned a response, it means rate limit was exceeded
-      // Check if headers were sent to determine if response was sent
+      // If rate limit middleware returned an error response, stop processing
       if (rateLimitResult && rateLimitResult.error) {
         // Rate limit exceeded, response already sent by middleware
         if (res.headersSent) {
@@ -168,10 +167,13 @@ export default async function handler(req, res) {
         // If middleware didn't send response, send it now
         return res.status(429).json(rateLimitResult);
       }
+      
+      // If rateLimitResult is null, it means the request is allowed - continue processing
+      // No action needed, just continue
     } catch (rateLimitError) {
       // If rate limiting fails completely, log but continue (don't block requests)
       console.error('[API/CHAT] Rate limit check failed, continuing:', rateLimitError);
-      // Continue processing the request
+      // Continue processing the request - don't block on rate limit errors
     }
 
     // Parse request body if it's a string (Vercel sometimes sends string bodies)
