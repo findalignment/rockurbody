@@ -710,14 +710,11 @@ function SoftwareUpgradePlan() {
         {/* FAQ Section */}
         <section className="py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-12 text-center">
-              Frequently Asked Questions
-            </h2>
             <FAQSection
               faqs={[
                 {
                   question: "How is the Software Upgrade Plan different from just booking individual sessions?",
-                  answer: "The Software Upgrade Plan is a structured, systematic approach designed to create lasting change. Instead of random sessions, we follow a progressive protocol where each session builds on the previous one. We alternate between structural work and movement education in a specific sequence that maximizes results. Individual sessions can help, but the upgrade plan ensures comprehensive transformation."
+                  answer: "The Software Upgrade Plan is a structured, systematic approach designed to create lasting change. We follow a progressive protocol where each session builds on the previous one, alternating between structural work and movement education in a specific sequence that maximizes results. This is a shorter-term solution for people who don't need as much accountability or don't have as many injuries or issues. Regular training is a longer-term solution with ongoing movement education and accountability."
                 },
                 {
                   question: "Do I need to do the Body Systems Check before starting the Software Upgrade Plan?",
