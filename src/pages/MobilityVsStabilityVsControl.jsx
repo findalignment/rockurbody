@@ -73,7 +73,7 @@ function MobilityVsStabilityVsControl() {
             <div className="bg-white rounded-xl p-6 shadow-md mt-6">
               <h3 className="text-xl font-semibold text-primary mb-3">Example: Squatting</h3>
               <p className="text-neutralDark/80">
-                You need ankle mobility to squat deep. You need hip stability to resist collapse. But you need control to use both together—to move through range while maintaining stability. That's control.
+                You need ankle mobility to squat deep. You need hip stability to resist collapse. But you need control to use both together to move through range while maintaining stability. That's control.
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ function MobilityVsStabilityVsControl() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">How We Train All Three</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              We don't just stretch for mobility or brace for stability. We train control—the ability to use mobility and stability together in movement.
+              We don't just stretch for mobility or brace for stability. We train control the ability to use mobility and stability together in movement.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               Learn about <Link to="/movement-coaching-santa-cruz" className="text-accent hover:underline font-semibold">movement coaching</Link> to develop mobility, stability, and control together.

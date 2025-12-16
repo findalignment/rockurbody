@@ -33,7 +33,7 @@ function TrainForLongevity() {
               Most training is transactional. You work out, you get stronger today. But what about next year? Next decade? Most training doesn't account for the long term.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              The Dividends Philosophy is different. Every movement, every exercise, every training session is an investment in your future self. You're not just training for today—you're building movement capital that pays dividends for decades.
+              The Dividends Philosophy is different. Every movement, every exercise, every training session is an investment in your future self. You're not just training for today you're building movement capital that pays dividends for decades.
             </p>
           </div>
         </section>
@@ -66,7 +66,7 @@ function TrainForLongevity() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">The Long-Term Payoff</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              When you train for longevity, you're investing in your future self. The movements you build today serve you tomorrow, next year, next decade. You're not just getting stronger—you're building a body that ages well.
+              When you train for longevity, you're investing in your future self. The movements you build today serve you tomorrow, next year, next decade. You're not just getting stronger you're building a body that ages well.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               This isn't about training less. It's about training smarter. Training that builds you up, not breaks you down. Training that pays dividends.

@@ -116,7 +116,7 @@ function PerformanceLongevityCoaching() {
                   Your body's software gets regular updates. We address new patterns, adapt to changes in your life or training, and keep optimizing.
                 </p>
                 <p className="text-neutralDark/70">
-                  You're not just maintaining—you're continuously improving.
+                  You're not just maintaining you're continuously improving.
                 </p>
               </div>
             </div>

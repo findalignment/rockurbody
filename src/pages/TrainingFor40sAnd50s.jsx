@@ -21,7 +21,7 @@ function TrainingFor40sAnd50s() {
               Training For 40s & 50s
             </h1>
             <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Movement coaching designed for midlife. Build strength, maintain mobility, and train for longevity—movement that serves you for decades.
+              Movement coaching designed for midlife. Build strength, maintain mobility, and train for longevity movement that serves you for decades.
             </p>
           </div>
         </section>
@@ -33,7 +33,7 @@ function TrainingFor40sAnd50s() {
               Your body changes in your 40s and 50s. You might notice more stiffness, more aches, less recovery. But that doesn't mean you have to slow down. It means you need to train smarter.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Midlife training isn't about training less—it's about training better. Building strength without wear and tear. Maintaining mobility without breaking down. Training for the long term.
+              Midlife training isn't about training less it's about training better. Building strength without wear and tear. Maintaining mobility without breaking down. Training for the long term.
             </p>
           </div>
         </section>

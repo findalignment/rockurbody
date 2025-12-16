@@ -35,7 +35,7 @@ function MovementCoachingSantaCruz() {
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-                Movement Coaching isn't just exercise. It's education. We teach you how to move better—how to build strength without compensation, how to develop mobility that serves function, how to train for longevity, not just performance.
+                Movement Coaching isn't just exercise. It's education. We teach you how to move better how to build strength without compensation, how to develop mobility that serves function, how to train for longevity, not just performance.
               </p>
               <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
                 Most training focuses on exercises. We focus on movement patterns. The difference? Exercises are things you do. Movement patterns are how your body organizes itself to do them. Upgrade the patterns, and everything improves.

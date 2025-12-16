@@ -25,7 +25,7 @@ function RunnerTightHipsAndCompensation() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">How Running Creates Compensation</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Running is repetitive. If your body doesn't move well, running amplifies those problems. Your hips get tight because they're compensating for restrictions elsewhere—ankles that don't move, core that doesn't control, alignment that's off.
+              Running is repetitive. If your body doesn't move well, running amplifies those problems. Your hips get tight because they're compensating for restrictions elsewhere ankles that don't move, core that doesn't control, alignment that's off.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Over time, these compensation patterns create structural restrictions. Your fascia adapts to the compensation, and the tightness becomes structural, not just muscular.

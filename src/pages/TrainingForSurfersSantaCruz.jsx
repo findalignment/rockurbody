@@ -30,7 +30,7 @@ function TrainingForSurfersSantaCruz() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Surfing-Specific Challenges</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Surfing creates specific movement patterns and demands. Paddling, popping up, balancing, rotating—surfing requires mobility, stability, and control in ways that other activities don't.
+              Surfing creates specific movement patterns and demands. Paddling, popping up, balancing, rotating surfing requires mobility, stability, and control in ways that other activities don't.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               These demands create specific problems: shoulder issues from paddling, lower back problems from arching, hip restrictions from the pop-up. We address these surfing-specific patterns.
@@ -56,7 +56,7 @@ function TrainingForSurfersSantaCruz() {
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Build Surfing-Specific Strength</h3>
-                <p className="text-neutralDark/80">Strength that serves surfing. Rotational power, stability, mobility—training that improves your surfing.</p>
+                <p className="text-neutralDark/80">Strength that serves surfing. Rotational power, stability, mobility training that improves your surfing.</p>
               </div>
             </div>
           </div>

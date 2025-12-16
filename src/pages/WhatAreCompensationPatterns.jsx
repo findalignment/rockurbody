@@ -30,7 +30,7 @@ function WhatAreCompensationPatterns() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">What Is Compensation?</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Compensation is your body's way of working around a problem. If something isn't working right—a restriction, an alignment issue, a weakness—your body finds another way to do the job.
+              Compensation is your body's way of working around a problem. If something isn't working right a restriction, an alignment issue, a weakness your body finds another way to do the job.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               That's not necessarily bad. Compensation is adaptive. But when compensation becomes a pattern, it creates problems. Your body compensates, and that compensation creates new problems.

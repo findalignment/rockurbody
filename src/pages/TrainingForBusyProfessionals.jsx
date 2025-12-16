@@ -21,7 +21,7 @@ function TrainingForBusyProfessionals() {
               Training For Busy Professionals
             </h1>
             <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto mb-8">
-              Efficient training that fits your schedule. Address desk work problems, build strength, and maintain movement quality—without taking over your life.
+              Efficient training that fits your schedule. Address desk work problems, build strength, and maintain movement quality without taking over your life.
             </p>
           </div>
         </section>
@@ -33,7 +33,7 @@ function TrainingForBusyProfessionals() {
               You're busy. You work long hours, you sit at a desk, you don't have time for long workouts. But you still want to move well, stay strong, and avoid the problems that desk work creates.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              You need training that's efficient—sessions that deliver results without taking hours. You need training that addresses your specific problems—desk work, stress, time constraints.
+              You need training that's efficient sessions that deliver results without taking hours. You need training that addresses your specific problems desk work, stress, time constraints.
             </p>
           </div>
         </section>
@@ -44,7 +44,7 @@ function TrainingForBusyProfessionals() {
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Efficient Sessions</h3>
-                <p className="text-neutralDark/80">30-60 minute sessions that deliver results. No wasted time, no fluff—just effective training.</p>
+                <p className="text-neutralDark/80">30-60 minute sessions that deliver results. No wasted time, no fluff just effective training.</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Desk Work Solutions</h3>

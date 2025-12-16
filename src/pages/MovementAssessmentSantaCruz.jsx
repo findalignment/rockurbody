@@ -69,7 +69,7 @@ function MovementAssessmentSantaCruz() {
               After your assessment, you'll get a clear picture of your movement patterns, restrictions, and needs. We'll create a personalized plan to address what we find.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              This is part of our <Link to="/body-systems-check" className="text-accent hover:underline font-semibold">Body Systems Check</Link>—a comprehensive assessment that includes movement screening.
+              This is part of our <Link to="/body-systems-check" className="text-accent hover:underline font-semibold">Body Systems Check</Link> a comprehensive assessment that includes movement screening.
             </p>
           </div>
         </section>

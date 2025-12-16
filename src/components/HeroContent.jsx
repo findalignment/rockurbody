@@ -10,7 +10,7 @@ function HeroContent() {
       
       {/* Pivot to Practical Clarity */}
       <p className="text-white/95 text-sm md:text-base lg:text-lg xl:text-xl font-medium leading-relaxed mb-4 md:mb-6 lg:mb-8 drop-shadow-md">
-        Your body runs on patterns—alignment, strength, movement longevity. We identify what's not working and rebuild it from the ground up through structural integration and intelligent movement coaching.
+        Your body runs on patterns alignment, strength, movement longevity. We identify what's not working and rebuild it from the ground up through structural integration and intelligent movement coaching.
       </p>
       
       {/* Call to Action Buttons */}

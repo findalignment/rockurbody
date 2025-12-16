@@ -25,7 +25,7 @@ function AlignmentBasedStrengthTraining() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">The Problem with Traditional Strength Training</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Most strength training focuses on moving weight. It doesn't care how you move it. If you can squat 200 pounds, great—even if your knees cave, your back rounds, and your body compensates everywhere to make it happen.
+              Most strength training focuses on moving weight. It doesn't care how you move it. If you can squat 200 pounds, great even if your knees cave, your back rounds, and your body compensates everywhere to make it happen.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               That's not strength. That's compensation masquerading as strength. And it creates problems: injuries, pain, movement restrictions, and patterns that break down over time.
@@ -60,7 +60,7 @@ function AlignmentBasedStrengthTraining() {
               When you build strength from proper alignment, you're not just getting stronger. You're upgrading your body's operating system. The strength serves your movement, not the other way around.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This approach prevents injuries, reduces pain, and creates strength that lasts. You're not just strong—you're strong in ways that support everything else you do.
+              This approach prevents injuries, reduces pain, and creates strength that lasts. You're not just strong you're strong in ways that support everything else you do.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               Learn more about <Link to="/what-are-compensation-patterns" className="text-accent hover:underline">compensation patterns</Link> and how we address them.

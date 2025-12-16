@@ -52,7 +52,7 @@ function TrainingAfterInjuryReturnToStrength() {
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Address Root Causes</h3>
-                <p className="text-neutralDark/80">We don't just strengthen the injured area—we address what caused the injury. Structural work, alignment work, movement education.</p>
+                <p className="text-neutralDark/80">We don't just strengthen the injured area we address what caused the injury. Structural work, alignment work, movement education.</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Pain-Aware Training</h3>

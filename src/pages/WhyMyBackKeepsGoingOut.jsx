@@ -28,7 +28,7 @@ function WhyMyBackKeepsGoingOut() {
               Your back goes out. You rest, ice, maybe see a chiropractor. It gets better. Then it happens again. And again. Why?
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Because the underlying pattern hasn't changed. Your back is compensating for something—a structural restriction, an alignment issue, a movement pattern that doesn't serve your body. Until you address that pattern, your back will keep going out.
+              Because the underlying pattern hasn't changed. Your back is compensating for something a structural restriction, an alignment issue, a movement pattern that doesn't serve your body. Until you address that pattern, your back will keep going out.
             </p>
           </div>
         </section>

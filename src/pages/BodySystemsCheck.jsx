@@ -256,7 +256,7 @@ function BodySystemsCheck() {
                 },
                 {
                   question: "Do I need to prepare anything beforehand?",
-                  answer: "Wear comfortable clothing that allows you to move freely. You may want to bring a list of any questions or concerns you have. No other preparation is needed—just come as you are."
+                  answer: "Wear comfortable clothing that allows you to move freely. You may want to bring a list of any questions or concerns you have. No other preparation is needed just come as you are."
                 },
                 {
                   question: "What happens after the Body Systems Check?",

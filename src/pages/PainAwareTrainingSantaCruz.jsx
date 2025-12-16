@@ -33,7 +33,7 @@ function PainAwareTrainingSantaCruz() {
               Pain-aware training means training with awareness of your body's limitations. If something hurts, we find a better way. If you have restrictions, we work around them. If you have injuries, we train around them.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This isn't about avoiding training. It's about training smart. You can still get stronger, still move better, still make progress—you just do it in ways that respect your body's limitations.
+              This isn't about avoiding training. It's about training smart. You can still get stronger, still move better, still make progress you just do it in ways that respect your body's limitations.
             </p>
           </div>
         </section>
@@ -48,7 +48,7 @@ function PainAwareTrainingSantaCruz() {
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Address Root Causes</h3>
-                <p className="text-neutralDark/80">We don't just work around pain—we address what's causing it. Structural work, alignment work, movement education.</p>
+                <p className="text-neutralDark/80">We don't just work around pain we address what's causing it. Structural work, alignment work, movement education.</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Build Strength Safely</h3>
@@ -66,7 +66,7 @@ function PainAwareTrainingSantaCruz() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Who This Is For</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Pain-aware training is for anyone dealing with pain, injuries, or movement restrictions. You don't have to stop training—you just need to train differently.
+              Pain-aware training is for anyone dealing with pain, injuries, or movement restrictions. You don't have to stop training you just need to train differently.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               Learn about <Link to="/upgrade-your-body-software" className="text-accent hover:underline font-semibold">upgrading your body's software</Link> to address pain while training.

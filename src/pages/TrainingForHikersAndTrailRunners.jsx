@@ -30,7 +30,7 @@ function TrainingForHikersAndTrailRunners() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Trail-Specific Challenges</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Hiking and trail running create specific demands. Uneven terrain, elevation changes, long distances—trail activities require stability, mobility, and endurance in ways that road running doesn't.
+              Hiking and trail running create specific demands. Uneven terrain, elevation changes, long distances trail activities require stability, mobility, and endurance in ways that road running doesn't.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               These demands create specific problems: hip restrictions from repetitive patterns, knee issues from compensation, lower back problems from load. We address these trail-specific patterns.
@@ -56,7 +56,7 @@ function TrainingForHikersAndTrailRunners() {
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Build Trail-Specific Strength</h3>
-                <p className="text-neutralDark/80">Strength that serves trail activities. Stability, mobility, endurance—training that improves your hiking and running.</p>
+                <p className="text-neutralDark/80">Strength that serves trail activities. Stability, mobility, endurance training that improves your hiking and running.</p>
               </div>
             </div>
           </div>

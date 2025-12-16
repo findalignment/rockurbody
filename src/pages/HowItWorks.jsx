@@ -22,7 +22,7 @@ function HowItWorks() {
               How It Works
             </h1>
             <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto">
-              A systematic approach to upgrading your body's operating system—from assessment to integration to lasting change.
+              A systematic approach to upgrading your body's operating system from assessment to integration to lasting change.
             </p>
           </div>
         </section>
@@ -59,7 +59,7 @@ function HowItWorks() {
                     Reorganize Structure
                   </h2>
                   <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                    Through Structural Integration, we work hands-on with your fascia (connective tissue) to release restrictions and reorganize how your body is put together. This isn't massage—it's systematic, progressive work that builds on itself.
+                    Through Structural Integration, we work hands-on with your fascia (connective tissue) to release restrictions and reorganize how your body is put together. This isn't massage it's systematic, progressive work that builds on itself.
                   </p>
                   <p className="text-neutralDark/70 leading-relaxed">
                     Each session addresses specific lines of tension, creating space and alignment that allows your body to move more efficiently.
@@ -98,7 +98,7 @@ function HowItWorks() {
                     The final phase is integration. Your body learns to use its new structure automatically. You develop movement habits that maintain the improvements, and you have the tools to keep upgrading your body's software over time.
                   </p>
                   <p className="text-neutralDark/70 leading-relaxed">
-                    This isn't a quick fix—it's a fundamental upgrade to how your body operates. The changes last because they're built into your movement patterns.
+                    This isn't a quick fix it's a fundamental upgrade to how your body operates. The changes last because they're built into your movement patterns.
                   </p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ function HowItWorks() {
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-3">Structure + Movement</h3>
                 <p className="text-neutralDark/80">
-                  Hands-on work reorganizes tissue. Movement education makes it stick. Most practitioners focus on one or the other—we do both.
+                  Hands-on work reorganizes tissue. Movement education makes it stick. Most practitioners focus on one or the other we do both.
                 </p>
               </div>
               <div>

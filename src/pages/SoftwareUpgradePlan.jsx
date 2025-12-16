@@ -107,7 +107,7 @@ function SoftwareUpgradePlan() {
                   We fine-tune the system, address remaining restrictions, and build movement patterns that support your upgraded structure long-term.
                 </p>
                 <p className="text-neutralDark/70">
-                  The changes feel automatic. Your body operates differently—better alignment, stronger movement, less effort.
+                  The changes feel automatic. Your body operates differently better alignment, stronger movement, less effort.
                 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@ function SoftwareUpgradePlan() {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Session Frequency</h3>
                   <p className="text-lg text-neutralDark/80">
-                    Most clients do 1-2 sessions per week, depending on their schedule and goals. The program is flexible—we can adjust the cadence to fit your life.
+                    Most clients do 1-2 sessions per week, depending on their schedule and goals. The program is flexible we can adjust the cadence to fit your life.
                   </p>
                 </div>
                 <div>
@@ -192,7 +192,7 @@ function SoftwareUpgradePlan() {
                 <div>
                   <h3 className="text-xl font-semibold text-primary mb-3">Between Sessions</h3>
                   <p className="text-lg text-neutralDark/80">
-                    You'll have light homework—specific movements or practices to reinforce what we've worked on. This isn't intense training; it's integration work that makes the changes stick.
+                    You'll have light homework specific movements or practices to reinforce what we've worked on. This isn't intense training; it's integration work that makes the changes stick.
                   </p>
                 </div>
               </div>

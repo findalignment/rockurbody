@@ -66,7 +66,7 @@ function PostureCoachingSantaCruz() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Who This Is For</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Posture coaching is for anyone with poor posture—desk workers, athletes, people with chronic pain. If your posture is affecting your life, we can help.
+              Posture coaching is for anyone with poor posture desk workers, athletes, people with chronic pain. If your posture is affecting your life, we can help.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               Learn about <Link to="/desk-worker-wellness" className="text-accent hover:underline">desk worker wellness</Link> and <Link to="/neck-shoulder-tension-from-desk-work" className="text-accent hover:underline">neck and shoulder tension from desk work</Link>.

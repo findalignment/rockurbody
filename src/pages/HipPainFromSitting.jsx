@@ -28,7 +28,7 @@ function HipPainFromSitting() {
               When you sit all day, your hips are in a shortened position. Your hip flexors get tight. Your glutes get weak. Your pelvis tilts. Over time, this creates structural restrictions in your fascia that don't just go away when you stand up.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              These restrictions create compensation patterns. Your body adapts to sitting, and those adaptations cause problems when you move. That's why your hips hurt—not just when you sit, but when you walk, squat, or do anything else.
+              These restrictions create compensation patterns. Your body adapts to sitting, and those adaptations cause problems when you move. That's why your hips hurt not just when you sit, but when you walk, squat, or do anything else.
             </p>
           </div>
         </section>

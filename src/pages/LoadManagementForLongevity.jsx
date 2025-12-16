@@ -30,7 +30,7 @@ function LoadManagementForLongevity() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">What Is Load Management?</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Load management is how you balance training stress with recovery. It's not about training less—it's about training smarter. You need stress to adapt, but you also need recovery to adapt.
+              Load management is how you balance training stress with recovery. It's not about training less it's about training smarter. You need stress to adapt, but you also need recovery to adapt.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               Most people train too hard, too often, without enough recovery. That creates wear and tear. Load management prevents that.

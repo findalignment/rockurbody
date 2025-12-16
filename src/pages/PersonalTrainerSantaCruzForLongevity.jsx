@@ -33,7 +33,7 @@ function PersonalTrainerSantaCruzForLongevity() {
               Most personal training focuses on short-term goals: lose weight, get stronger, look better. That's fine, but it doesn't account for the long term.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Longevity-focused training is different. Every movement, every exercise, every session is an investment in your future self. You're not just training for today—you're building movement capital that pays dividends for decades.
+              Longevity-focused training is different. Every movement, every exercise, every session is an investment in your future self. You're not just training for today you're building movement capital that pays dividends for decades.
             </p>
           </div>
         </section>
@@ -66,7 +66,7 @@ function PersonalTrainerSantaCruzForLongevity() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Who This Is For</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This is for people who want to train for the long term. You're not just looking for quick results—you want movement that serves you for decades. You want to age well, stay mobile, stay strong, stay independent.
+              This is for people who want to train for the long term. You're not just looking for quick results you want movement that serves you for decades. You want to age well, stay mobile, stay strong, stay independent.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               Learn about <Link to="/train-for-longevity" className="text-accent hover:underline font-semibold">training for longevity</Link> and the dividends philosophy.

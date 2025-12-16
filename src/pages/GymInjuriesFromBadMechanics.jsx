@@ -28,7 +28,7 @@ function GymInjuriesFromBadMechanics() {
               When you lift with poor form, your body compensates. You might be able to move the weight, but you're doing it in ways that create problems. Over time, these compensation patterns lead to injuries.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Common issues: knees that cave, backs that round, shoulders that compensate. These aren't just form problems—they're movement pattern problems that create wear and tear.
+              Common issues: knees that cave, backs that round, shoulders that compensate. These aren't just form problems they're movement pattern problems that create wear and tear.
             </p>
           </div>
         </section>

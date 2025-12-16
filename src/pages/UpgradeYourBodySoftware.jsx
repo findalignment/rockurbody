@@ -16,7 +16,7 @@ function UpgradeYourBodySoftware() {
       <PageHero 
         imageSrc="/upgrade-body-software-hero.jpg"
         title="Upgrade Your Body's Software"
-        subtitle="Your body runs on patterns—alignment, strength, movement longevity. We identify what's not working and rebuild it from the ground up."
+        subtitle="Your body runs on patterns alignment, strength, movement longevity. We identify what's not working and rebuild it from the ground up."
         alt="Upgrade your body's software through systematic structural integration and movement education"
       />
       <div className="pt-16 pb-24 px-6">
@@ -32,7 +32,7 @@ function UpgradeYourBodySoftware() {
                 Think of your body like a computer operating system. Over time, it accumulates bugs, inefficient code, and outdated patterns. You can patch symptoms (pain, tightness, restrictions), or you can upgrade the entire system.
               </p>
               <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-                We don't just fix problems. We systematically upgrade how your body operates—its alignment, its movement patterns, its structural organization. The result isn't temporary relief. It's a fundamentally better operating system.
+                We don't just fix problems. We systematically upgrade how your body operates its alignment, its movement patterns, its structural organization. The result isn't temporary relief. It's a fundamentally better operating system.
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ function UpgradeYourBodySoftware() {
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Structure + Movement</h3>
                 <p className="text-neutralDark/80">
-                  Hands-on work reorganizes tissue. Movement education makes it stick. Most practitioners focus on one or the other—we do both.
+                  Hands-on work reorganizes tissue. Movement education makes it stick. Most practitioners focus on one or the other we do both.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
