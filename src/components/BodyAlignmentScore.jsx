@@ -93,32 +93,40 @@ function BodyAlignmentScore() {
   ];
 
   const handleAnswer = (questionId, value, optionScore) => {
-    setAnswers((prev) => ({
-      ...prev,
+    const updatedAnswers = {
+      ...answers,
       [questionId]: { value, score: optionScore },
-    }));
+    };
+    
+    setAnswers(updatedAnswers);
 
     if (step < questions.length) {
       setTimeout(() => setStep(step + 1), 300);
     } else {
-      calculateResults();
+      // Use updatedAnswers directly to include the last answer
+      calculateResults(updatedAnswers);
     }
   };
 
-  const calculateResults = () => {
+  const calculateResults = (answersToUse = null) => {
+    // Use provided answers or fall back to state
+    const answersForCalculation = answersToUse || answers;
+    
     let totalScore = 0;
     const maxScore = questions.length * 20; // 8 questions * 20 max points each = 160
     
-    Object.values(answers).forEach((answer) => {
+    Object.values(answersForCalculation).forEach((answer) => {
       totalScore += answer.score;
     });
 
     const percentage = Math.round((totalScore / maxScore) * 100);
     setScore(percentage);
-    generateTips(percentage);
+    generateTips(percentage, answersForCalculation);
   };
 
-  const generateTips = (scorePercentage) => {
+  const generateTips = (scorePercentage, answersToUse = null) => {
+    // Use provided answers or fall back to state
+    const answersForTips = answersToUse || answers;
     const tipsList = [];
 
     if (scorePercentage >= 85) {
@@ -188,7 +196,7 @@ function BodyAlignmentScore() {
     }
 
     // Add general tips based on specific answers
-    if (answers.desk?.value === 'high' || answers.desk?.value === 'moderate') {
+    if (answersForTips.desk?.value === 'high' || answersForTips.desk?.value === 'moderate') {
       tipsList.push({
         title: 'Desk Ergonomics',
         tip: 'Optimize your workstation setup: monitor at eye level, feet flat on floor, knees at 90 degrees, and take regular movement breaks.',
@@ -196,7 +204,7 @@ function BodyAlignmentScore() {
       });
     }
 
-    if (answers.pain?.value === 'severe' || answers.pain?.value === 'moderate') {
+    if (answersForTips.pain?.value === 'severe' || answersForTips.pain?.value === 'moderate') {
       tipsList.push({
         title: 'Pain Management',
         tip: 'Chronic pain often indicates structural imbalances. Addressing alignment can reduce or eliminate pain by removing the root cause.',
@@ -204,7 +212,7 @@ function BodyAlignmentScore() {
       });
     }
 
-    if (answers.injuries?.value === 'major' || answers.injuries?.value === 'moderate') {
+    if (answersForTips.injuries?.value === 'major' || answersForTips.injuries?.value === 'moderate') {
       tipsList.push({
         title: 'Injury Recovery',
         tip: 'Previous injuries can create compensation patterns. Structural Integration helps release restrictions and restore proper movement patterns.',
