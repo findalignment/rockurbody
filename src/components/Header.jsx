@@ -110,14 +110,13 @@ function Header() {
   
   return (
     <header 
-      className={`w-full sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isHomePage 
           ? scrolled 
             ? 'bg-white/95 backdrop-blur-xl shadow-md py-4' 
-            : 'bg-transparent backdrop-blur-md py-6'
+            : 'bg-black/20 backdrop-blur-md py-6'
           : 'bg-white/95 backdrop-blur-xl shadow-sm py-4'
       }`}
-      style={isHomePage && !scrolled ? { backdropFilter: 'blur(12px)' } : {}}
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between gap-4">
@@ -128,9 +127,10 @@ function Header() {
               isHomePage 
                 ? scrolled 
                   ? 'text-primary' 
-                  : 'text-white' 
+                  : 'text-white drop-shadow-lg' 
                 : 'text-primary'
             }`}
+            style={isHomePage && !scrolled ? { textShadow: '0 2px 8px rgba(0,0,0,0.5)' } : {}}
           >
             Rock Your Body
           </Link>
@@ -164,9 +164,10 @@ function Header() {
                       isHomePage 
                         ? scrolled
                           ? 'text-neutralDark hover:text-accent'
-                          : 'text-white hover:text-white/90' 
+                          : 'text-white hover:text-white/90 drop-shadow-lg' 
                         : 'text-neutralDark hover:text-accent'
                     }`}
+                    style={isHomePage && !scrolled ? { textShadow: '0 2px 8px rgba(0,0,0,0.5)' } : {}}
                   >
                     {link.name}
                     <svg 
@@ -217,11 +218,12 @@ function Header() {
                   to={link.path}
                   className={`relative font-semibold transition-colors group ${
                     isHomePage 
-                      ? scrolled
-                        ? 'text-neutralDark hover:text-accent'
-                        : 'text-white hover:text-white/90' 
+                      ? scrolled 
+                        ? 'text-neutralDark hover:text-accent' 
+                        : 'text-white hover:text-white/90 drop-shadow-lg'
                       : 'text-neutralDark hover:text-accent'
                   }`}
+                  style={isHomePage && !scrolled ? { textShadow: '0 2px 8px rgba(0,0,0,0.5)' } : {}}
                 >
                   {link.name}
                   <span className={`absolute left-0 bottom-0 w-0 h-0.5 transition-all duration-300 ease-out group-hover:w-full ${
@@ -247,9 +249,10 @@ function Header() {
               isHomePage 
                 ? scrolled 
                   ? 'text-neutralDark' 
-                  : 'text-white' 
+                  : 'text-white drop-shadow-lg' 
                 : 'text-neutralDark'
             }`}
+            style={isHomePage && !scrolled ? { filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.5))' } : {}}
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileMenuOpen}
           >
