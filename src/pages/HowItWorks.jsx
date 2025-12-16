@@ -1,31 +1,25 @@
 import { Link } from 'react-router-dom';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function HowItWorks() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="How It Works - Upgrade Your Body's Software | RockUrBody"
         description="Learn how we upgrade your body's software through systematic assessment, structural integration, and movement education. Clear process, lasting results."
         keywords="how structural integration works, movement education process, body systems upgrade, Santa Cruz bodywork"
         url="/how-it-works"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              How It Works
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto">
-              A systematic approach to upgrading your body's operating system from assessment to integration to lasting change.
-            </p>
-          </div>
-        </section>
+      <PageHero 
+        imageSrc="/approach-hero.jpg"
+        title="How It Works"
+        subtitle="A systematic approach to upgrading your body's operating system from assessment to integration to lasting change."
+        alt="How structural integration and movement education works at RockUrBody"
+      />
+      <div className="pt-16 pb-24 px-6">
 
         {/* Process Steps */}
         <section className="py-16 md:py-24 px-4">
@@ -168,9 +162,8 @@ function HowItWorks() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </PageLayout>
   );
 }
 
