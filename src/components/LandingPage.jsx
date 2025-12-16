@@ -178,15 +178,20 @@ function LandingPage() {
 
             if (!response.ok) {
               let errorData;
+              // Read body as text first (can only be read once)
+              const responseText = await response.text().catch(() => 'Unknown error');
+              
+              // Try to parse as JSON, but don't fail if it's not JSON
               try {
-                errorData = await response.json();
+                errorData = JSON.parse(responseText);
               } catch (e) {
-                const text = await response.text().catch(() => 'Unknown error');
+                // Not JSON, use the raw text as the error message
                 errorData = { 
                   error: `HTTP ${response.status}: ${response.statusText}`,
-                  message: text.substring(0, 200)
+                  message: responseText.substring(0, 200) || 'Unknown error occurred'
                 };
               }
+              
               logger.error('Chat API error response:', response.status, errorData);
               
               // Provide helpful error messages based on status code
