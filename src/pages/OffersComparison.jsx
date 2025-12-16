@@ -1,34 +1,25 @@
-import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import PageLayout from '../components/PageLayout';
+import PageHero from '../components/PageHero';
 
 function OffersComparison() {
   return (
-    <>
+    <PageLayout>
       <SEO
         title="Compare Our Service Offers - Body Systems Check, Upgrade Plan, Coaching | RockUrBody"
         description="Compare our three service offers: Body Systems Check (intro), Software Upgrade Plan (4-8 weeks), and Performance + Longevity Coaching (ongoing). Find the right fit for your goals."
         keywords="service comparison, body systems check vs upgrade plan, coaching comparison, structural integration programs"
         url="/offers-comparison"
       />
-      <Header />
-      <main className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary/10 to-accent/10 py-16 md:py-24 px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading text-primary mb-6">
-              Choose Your Upgrade Path
-            </h1>
-            <p className="text-xl md:text-2xl text-neutralDark/80 leading-relaxed max-w-3xl mx-auto">
-              Three clear ways to upgrade your body's software. Compare options and find the right fit for your goals.
-            </p>
-          </div>
-        </section>
+      <PageHero
+        title="Choose Your Upgrade Path"
+        subtitle="Three clear ways to upgrade your body's software. Compare options and find the right fit for your goals."
+        imageSrc="/approach-hero.jpg"
+      />
 
-        {/* Comparison Table */}
-        <section className="py-16 md:py-24 px-4">
+      {/* Comparison Table */}
+      <section className="py-16 md:py-24 px-4 bg-offWhite">
           <div className="max-w-6xl mx-auto">
             <div className="overflow-x-auto">
               <table className="w-full border-collapse bg-white shadow-lg rounded-xl overflow-hidden">
@@ -154,10 +145,10 @@ function OffersComparison() {
               </div>
             </div>
           </div>
-        </section>
+      </section>
 
-        {/* Next Steps */}
-        <section className="bg-neutralLight py-16 md:py-24 px-4">
+      {/* Next Steps */}
+      <section className="bg-neutralLight py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-6">
               Not Sure Which Is Right?
@@ -173,10 +164,8 @@ function OffersComparison() {
               Book a Systems Check
             </Button>
           </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+      </section>
+    </PageLayout>
   );
 }
 
