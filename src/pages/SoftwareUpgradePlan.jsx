@@ -532,7 +532,7 @@ function SoftwareUpgradePlan() {
                 <h3 className="text-xl font-semibold text-primary mb-3">Upgraded Structure</h3>
                 <ul className="text-neutralDark/80 space-y-2 ml-6 list-disc">
                   <li>Better alignment with restrictions released</li>
-                  <li><GlossaryTerm term="fascia" definition="The connective tissue network that wraps every muscle, bone, nerve, and organ in your body, creating one continuous system. When healthy, fascia is mobile and resilient. Restrictions in fascia can limit movement and pull your structure out of alignment." videoUrl="https://www.youtube.com/watch?v=_FtSP-tkSUg">Fascial</GlossaryTerm> patterns reorganized</li>
+                  <li><GlossaryTerm term="fascia" definition="The connective tissue network that wraps every muscle, bone, nerve, and organ in your body, creating one continuous system. When healthy, fascia is mobile and resilient. Restrictions in fascia can limit movement and pull your structure out of alignment.">Fascial</GlossaryTerm> patterns reorganized</li>
                   <li>Movement happens from a stronger foundation</li>
                 </ul>
               </div>
