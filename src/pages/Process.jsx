@@ -96,7 +96,7 @@ function Process() {
 
       {/* Visual Process Steps */}
       <div className="bg-white py-20 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto relative">
           {/* Progress Line */}
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-neutralLight transform -translate-x-1/2" />
 
