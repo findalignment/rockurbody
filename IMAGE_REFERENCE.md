@@ -21,7 +21,7 @@ These are the large banner images at the top of pages. Currently using placehold
 | Training & Lineage | `/training-hero.jpg` | `training-lineage-hero` | Training lineage page | ✅ |
 | Smart Starts | `/smart-starts-hero.jpg` | `smart-starts-hero` | Smart Starts programs | ✅ |
 | Blog Index | `/blog-hero.jpg` | `blog-hero` | Blog landing page | ✅ |
-| Process | `/process.hero.jpg` | `process-hero` | Process page | ✅ |
+| Process | `/process-hero.jpg` | `process-hero` | Process page | ✅ |
 | FAQ | `/services-hero.jpg` | `faq-hero` | FAQ page | |
 
 ### Service Description Pages
