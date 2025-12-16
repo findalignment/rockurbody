@@ -76,7 +76,6 @@ function Header() {
       clearTimeout(dropdownTimeoutRef.current);
       dropdownTimeoutRef.current = null;
     }
-    console.log('[Header] Opening dropdown:', dropdownId);
     setOpenDropdown(dropdownId);
   };
 
@@ -89,7 +88,7 @@ function Header() {
     // Delay closing to allow mouse to move to dropdown
     dropdownTimeoutRef.current = setTimeout(() => {
       setOpenDropdown(null);
-    }, 200); // Increased delay to 200ms
+    }, 300); // Increased delay to 300ms to give more time
   };
   
   // Handle scroll effect
@@ -164,6 +163,14 @@ function Header() {
                       isHomePage && !scrolled ? 'bg-white' : 'bg-accent'
                     }`}></span>
                   </button>
+                  {/* Invisible bridge to prevent gap from closing dropdown */}
+                  {openDropdown === link.dropdownId && (
+                    <div 
+                      className="absolute top-full left-0 w-full h-2 z-[9998]"
+                      onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
+                      style={{ pointerEvents: 'auto' }}
+                    />
+                  )}
                   {openDropdown === link.dropdownId && (
                     <div 
                       className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border-2 border-neutralLight overflow-hidden z-[9999]"
@@ -173,14 +180,8 @@ function Header() {
                         visibility: 'visible',
                         display: 'block'
                       }}
-                      onMouseEnter={() => {
-                        console.log('[Header] Mouse entered dropdown:', link.dropdownId);
-                        handleDropdownMouseEnter(link.dropdownId);
-                      }}
-                      onMouseLeave={() => {
-                        console.log('[Header] Mouse left dropdown:', link.dropdownId);
-                        handleDropdownMouseLeave();
-                      }}
+                      onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
+                      onMouseLeave={handleDropdownMouseLeave}
                     >
                       {link.dropdown.map((item) => (
                         <Link
