@@ -28,7 +28,7 @@ function WhatIsStructuralIntegration() {
       <SEO 
         title="What is Structural Integration? | Santa Cruz SI Explained"
         description="Learn what Structural Integration is and how it differs from massage and other bodywork. Systematic bodywork that reorganizes how your whole body functions."
-        keywords="what is structural integration, rolfing explained, structural integration santa cruz, fascia bodywork, systematic bodywork"
+        keywords="what is structural integration, structural integration santa cruz, fascia bodywork, systematic bodywork"
         structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       <PageHero 
@@ -332,10 +332,6 @@ function WhatIsStructuralIntegration() {
               {
                 question: "Can I combine Structural Integration with other treatments?",
                 answer: "Yes. Structural Integration works well alongside chiropractic, physical therapy, massage, and other bodywork. In fact, many clients find that combining approaches gives them the best results. Just let me know what other work you're doing so we can coordinate."
-              },
-              {
-                question: "What's the difference between Structural Integration and Rolfing?",
-                answer: <>Structural Integration is the broader term that includes Rolfing. Rolfing specifically refers to the work developed by Ida Rolf. I'm trained in Anatomy Trains Structural Integration, which builds on Rolf's work with modern understanding of fascia and movement. The principles are similar: systematic, whole-body reorganization through hands-on work.</>
               }
             ]}
             title="Frequently Asked Questions About Structural Integration"
@@ -405,9 +401,6 @@ function WhatIsStructuralIntegration() {
               </Link>
               <Link to="/santa-cruz-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 Santa Cruz SI
-              </Link>
-              <Link to="/rolfing-vs-massage" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
-                Rolfing vs Massage
               </Link>
               <Link to="/structural-integration-vs-chiropractic" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 SI vs Chiropractic
