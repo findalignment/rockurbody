@@ -175,6 +175,11 @@ function LandingPage() {
               statusText: response.statusText,
               headers: Object.fromEntries(response.headers.entries())
             });
+            
+            // Log response for debugging
+            if (!response.ok) {
+              console.error('[CHAT] API Error - Status:', response.status);
+            }
 
             if (!response.ok) {
               let errorData;
@@ -291,14 +296,15 @@ function LandingPage() {
           };
           setConversation(prev => [...prev, fallbackMessage]);
         } else {
-          // Show error message for retryable failures
+          // Show error message for retryable failures with more detail
           const errorMessage = {
             id: Date.now() + 1,
             role: 'system',
-            content: 'Sorry, I\'m having trouble responding right now. Please try again or use the navigation menu above.',
+            content: `Sorry, I'm having trouble responding right now. Error: ${result.error || 'Unknown error'}. Please check the browser console (F12) for more details or try again.`,
             isError: true
           };
           setConversation(prev => [...prev, errorMessage]);
+          console.error('[CHAT] Chatbot request failed:', result.error);
         }
       }
     } catch (err) {
