@@ -5,6 +5,46 @@ import PageHero from '../../components/PageHero';
 function BlogIndex() {
   const blogPosts = [
     {
+      id: 'santa-cruz-personal-training-prices-2025',
+      title: 'Santa Cruz Personal Training Prices 2025: What to Expect',
+      subtitle: 'Understanding the real cost and value of personal training in Santa Cruz',
+      date: 'December 16, 2025',
+      excerpt: "Complete guide to personal training costs in Santa Cruz. Compare rates, understand pricing factors, and learn how to get the best value for your fitness investment.",
+      path: '/blog/santa-cruz-personal-training-prices-2025'
+    },
+    {
+      id: 'best-outdoor-training-spots-santa-cruz',
+      title: 'Best Outdoor Training Spots in Santa Cruz: A Personal Trainer\'s Guide',
+      subtitle: 'Why train indoors when you have ocean views and redwood forests?',
+      date: 'December 16, 2025',
+      excerpt: "Discover the best outdoor workout locations in Santa Cruz. From West Cliff Drive to DeLaveaga Park, find perfect spots for training with ocean views and redwood trails.",
+      path: '/blog/best-outdoor-training-spots-santa-cruz'
+    },
+    {
+      id: 'how-to-choose-personal-trainer-santa-cruz',
+      title: 'How to Choose a Personal Trainer in Santa Cruz: Complete Guide 2025',
+      subtitle: 'Making the right choice for your health, goals, and budget',
+      date: 'December 16, 2025',
+      excerpt: "Expert guide to finding the right personal trainer in Santa Cruz. Learn what certifications matter, red flags to avoid, and questions to ask before hiring.",
+      path: '/blog/how-to-choose-personal-trainer-santa-cruz'
+    },
+    {
+      id: 'personal-training-vs-group-classes-santa-cruz',
+      title: 'Personal Training vs. Group Classes in Santa Cruz: Which Is Right for You?',
+      subtitle: 'Making an informed choice between private training and group fitness',
+      date: 'December 16, 2025',
+      excerpt: "Comparing personal training and group fitness classes in Santa Cruz. Learn the pros, cons, and costs of each to make the best choice for your fitness goals.",
+      path: '/blog/personal-training-vs-group-classes-santa-cruz'
+    },
+    {
+      id: 'top-5-personal-trainers-santa-cruz',
+      title: 'Top 5 Personal Trainers in Santa Cruz (2025): What Makes Them Great',
+      subtitle: 'Finding the right trainer for your goals in Santa Cruz\'s diverse fitness community',
+      date: 'December 16, 2025',
+      excerpt: "Discover the best personal trainers in Santa Cruz. From structural integration to athletic performance, find the right trainer for your unique needs and goals.",
+      path: '/blog/top-5-personal-trainers-santa-cruz'
+    },
+    {
       id: 'discomfort-becomes-normal',
       title: 'When Discomfort Becomes Normal: The Hidden Tension We Carry',
       subtitle: 'How We Learn to Live with Misalignment Without Even Noticing',

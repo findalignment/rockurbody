@@ -162,6 +162,11 @@ const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/Integrat
 const PhoneReshapingSkeleton = lazy(() => import('./pages/blog/PhoneReshapingSkeleton'));
 const TechChangesPosture = lazy(() => import('./pages/blog/TechChangesPosture'));
 const DiscomfortBecomesNormal = lazy(() => import('./pages/blog/DiscomfortBecomesNormal'));
+const Top5PersonalTrainersSantaCruz = lazy(() => import('./pages/blog/Top5PersonalTrainersSantaCruz'));
+const PersonalTrainingVsGroupClassesSantaCruz = lazy(() => import('./pages/blog/PersonalTrainingVsGroupClassesSantaCruz'));
+const HowToChoosePersonalTrainerSantaCruz = lazy(() => import('./pages/blog/HowToChoosePersonalTrainerSantaCruz'));
+const BestOutdoorTrainingSpotsSantaCruz = lazy(() => import('./pages/blog/BestOutdoorTrainingSpotsSantaCruz'));
+const SantaCruzPersonalTrainingPrices2025 = lazy(() => import('./pages/blog/SantaCruzPersonalTrainingPrices2025'));
 
 // Hub Pages (Pillar Pages)
 const PainReliefHub = lazy(() => import('./pages/PainReliefHub'));
@@ -494,6 +499,11 @@ function AppRoutes() {
         <Route path="/blog/phone-reshaping-skeleton" element={<PhoneReshapingSkeleton />} />
         <Route path="/blog/tech-changes-posture" element={<TechChangesPosture />} />
         <Route path="/blog/discomfort-becomes-normal" element={<DiscomfortBecomesNormal />} />
+        <Route path="/blog/top-5-personal-trainers-santa-cruz" element={<Top5PersonalTrainersSantaCruz />} />
+        <Route path="/blog/personal-training-vs-group-classes-santa-cruz" element={<PersonalTrainingVsGroupClassesSantaCruz />} />
+        <Route path="/blog/how-to-choose-personal-trainer-santa-cruz" element={<HowToChoosePersonalTrainerSantaCruz />} />
+        <Route path="/blog/best-outdoor-training-spots-santa-cruz" element={<BestOutdoorTrainingSpotsSantaCruz />} />
+        <Route path="/blog/santa-cruz-personal-training-prices-2025" element={<SantaCruzPersonalTrainingPrices2025 />} />
         
         {/* Certification Pages - Not in navigation menu */}
         <Route path="/certifications/anatomy-trains-structural-integration" element={<AnatomyTrainsSI />} />
