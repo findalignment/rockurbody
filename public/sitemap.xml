@@ -1,139 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- Main Pages -->
+  <!-- Homepage -->
   <url>
     <loc>https://rockurbody.com/</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
+  <!-- Main Navigation Pages -->
   <url>
     <loc>https://rockurbody.com/about</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/services</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/testimonials</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://rockurbody.com/pricing</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://rockurbody.com/packages</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
   
   <url>
-    <loc>https://rockurbody.com/packages</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://rockurbody.com/pricing</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/contact</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/smart-starts</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Core Service Pages -->
+  <url>
+    <loc>https://rockurbody.com/body-systems-check</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/software-upgrade-plan</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/performance-longevity-coaching</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/offers-comparison</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   
   <!-- Programs -->
   <url>
     <loc>https://rockurbody.com/12-series</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/hip-series</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/smart-starts</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <!-- Hub Pages (Pillar Content) -->
-  <url>
-    <loc>https://rockurbody.com/pain-relief</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/movement-training</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/structural-integration</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/sports-performance</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/injury-recovery</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/wellness</loc>
-    <lastmod>2025-11-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
   </url>
   
   <!-- About Pages -->
   <url>
     <loc>https://rockurbody.com/approach</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/process</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/credentials</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/training-lineage</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -141,750 +135,724 @@
   <!-- Educational Pages -->
   <url>
     <loc>https://rockurbody.com/what-is-structural-integration</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/what-is-movement-education</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/what-are-compensation-patterns</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/faq</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   
-  <!-- SEO Pages -->
+  <!-- Interactive Tools -->
+  <url>
+    <loc>https://rockurbody.com/body-alignment-score</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Hub Pages (Pillar Content) -->
+  <url>
+    <loc>https://rockurbody.com/pain-relief</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/movement-training</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/structural-integration</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/sports-performance</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/injury-recovery</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/wellness</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <!-- Local SEO Pages -->
   <url>
     <loc>https://rockurbody.com/santa-cruz-structural-integration</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/chronic-pain-relief</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/rolfing-vs-massage</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/surfers</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/back-pain-santa-cruz</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/posture-correction</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/services/injury-recovery</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/cyclists-and-runners</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/desk-worker-wellness</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/active-aging</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/climbers</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/hip-pain-treatment</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/structural-integration-vs-chiropractic</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/personal-trainer-santa-cruz</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/movement-coaching-santa-cruz</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Problem Pages (Pain Relief) -->
+  <url>
+    <loc>https://rockurbody.com/chronic-pain-relief</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/back-pain-santa-cruz</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/hip-pain-treatment</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/shoulder-pain-relief</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/neck-pain-relief</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/athletic-performance</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/fascial-release</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/tmj-relief</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/sciatica-relief</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/knee-pain-treatment</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://rockurbody.com/movement-screening</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://rockurbody.com/sciatica-relief</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/pregnancy-postpartum</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/sports-injury-prevention</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/plantar-fasciitis</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
-    <loc>https://rockurbody.com/mobility-training</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/whiplash-recovery</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/breathing-and-core</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/golf-performance</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/frozen-shoulder</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/headache-migraine-relief</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://rockurbody.com/tmj-relief</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/it-band-syndrome</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/stress-anxiety-relief</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/scoliosis-treatment</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/balance-training</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/rotator-cuff-injury</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/achilles-tendonitis</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/bunion-foot-pain</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
+    <loc>https://rockurbody.com/thoracic-outlet-syndrome</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/whiplash-recovery</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/scoliosis-treatment</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/frozen-shoulder</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/rotator-cuff-injury</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/headache-migraine-relief</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Mechanism Pages -->
+  <url>
+    <loc>https://rockurbody.com/posture-correction</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/alignment-based-strength-training</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/fascial-release</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/mobility-training</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
     <loc>https://rockurbody.com/core-strengthening</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/balance-training</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/movement-screening</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/breathing-and-core</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- Audience Pages -->
+  <url>
+    <loc>https://rockurbody.com/climbers</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/cyclists-and-runners</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/desk-worker-wellness</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/active-aging</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/surfers</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/athletic-performance</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/golf-performance</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/pregnancy-postpartum</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- Comparison & Educational SEO Pages -->
+  <url>
+    <loc>https://rockurbody.com/rolfing-vs-massage</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://rockurbody.com/thoracic-outlet-syndrome</loc>
-    <lastmod>2025-11-02</lastmod>
+    <loc>https://rockurbody.com/structural-integration-vs-chiropractic</loc>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/gravity-and-structural-integration</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/exercise-for-life</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/safe-gym-training</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/5-minute-mobility</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/personal-training-posture</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/sports-injury-prevention</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://rockurbody.com/stress-anxiety-relief</loc>
+    <lastmod>2025-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   
   <!-- Booking Pages -->
   <url>
     <loc>https://rockurbody.com/book</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/consult</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/book/structural-integration</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/book/movement-education</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/book/combo-programs</loc>
-    <lastmod>2024-10-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   
   <!-- Blog -->
   <url>
     <loc>https://rockurbody.com/blog</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/blog/tech-changes-posture</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/blog/phone-reshaping-skeleton</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/blog/integrating-structure-and-movement</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <!-- Certification Pages -->
-  <url>
-    <loc>https://rockurbody.com/certifications/anatomy-trains-structural-integration</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <url>
-    <loc>https://rockurbody.com/certifications/anatomy-trains-teacher</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/nasm-personal-trainer</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/nasm-corrective-exercise</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/ace-health-coach</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/ace-corrective-exercise</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/medfit-parkinsons</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/medfit-recovery</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/precision-nutrition</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/certifications/movnat</loc>
-    <lastmod>2025-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <!-- Educational SEO Pages -->
-  <url>
-    <loc>https://rockurbody.com/gravity-and-structural-integration</loc>
-    <lastmod>2025-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/exercise-for-life</loc>
-    <lastmod>2025-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/safe-gym-training</loc>
-    <lastmod>2025-11-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://rockurbody.com/5-minute-mobility</loc>
-    <lastmod>2025-11-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  
-  <!-- Location Pages - Mobile Training Service Areas -->
-  <!-- Santa Cruz County -->
+  <!-- Location Pages - Santa Cruz County -->
   <url>
     <loc>https://rockurbody.com/capitola-personal-training</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/aptos-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/watsonville-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/scotts-valley-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/soquel-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/live-oak-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/felton-personal-training</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/boulder-creek-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Monterey County -->
+  <!-- Location Pages - Monterey County -->
   <url>
     <loc>https://rockurbody.com/monterey-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/carmel-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/pacific-grove-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/seaside-personal-training</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/marina-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/salinas-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/carmel-valley-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Santa Clara County -->
+  <!-- Location Pages - Santa Clara County -->
   <url>
     <loc>https://rockurbody.com/san-jose-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/los-gatos-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/saratoga-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/campbell-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/los-altos-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/mountain-view-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/palo-alto-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/sunnyvale-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/santa-clara-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/cupertino-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/milpitas-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/morgan-hill-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- San Mateo County -->
+  <!-- Location Pages - San Mateo County -->
   <url>
     <loc>https://rockurbody.com/redwood-city-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/san-mateo-personal-training</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/burlingame-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/san-carlos-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/belmont-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/foster-city-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/half-moon-bay-personal-training</loc>
-    <lastmod>2025-11-20</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/pacifica-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- San Francisco -->
+  <!-- Location Pages - San Francisco -->
   <url>
     <loc>https://rockurbody.com/san-francisco-personal-training</loc>
-    <lastmod>2025-11-08</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.85</priority>
   </url>
   
   <!-- Legal Pages -->
   <url>
     <loc>https://rockurbody.com/privacy-policy</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
   <url>
     <loc>https://rockurbody.com/refund-policy</loc>
-    <lastmod>2024-10-31</lastmod>
+    <lastmod>2025-12-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   
 </urlset>
-
