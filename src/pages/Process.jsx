@@ -9,22 +9,22 @@ function Process() {
   const stepsRef = useRef([]);
 
   useEffect(() => {
-    const observers = stepsRef-current-map((ref, index) => {
+    const observers = stepsRef.current.map((ref, index) => {
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry-isIntersecting) {
+          if (entry.isIntersecting) {
             setActiveStep(index);
           }
         },
         { threshold: 0.6 }
       );
 
-      if (ref) observer-observe(ref);
+      if (ref) observer.observe(ref);
       return observer;
     });
 
     return () => {
-      observers-forEach((observer) => observer-disconnect());
+      observers.forEach((observer) => observer.disconnect());
     };
   }, []);
 
@@ -115,19 +115,19 @@ function Process() {
                 <div className={index % 2 === 0 ? 'md:text-right' : 'md:col-start-2'}>
                   <div className="inline-block">
                     <div className="flex items-center gap-4 mb-4">
-                      <span className={`text-6xl md:text-7xl font-heading font-bold text.${step-color}/20`}>
-                        {step-number}
+                      <span className={`text-6xl md:text-7xl font-heading font-bold text-${step.color}/20`}>
+                        {step.number}
                       </span>
-                      <div className="text-5xl">{step-icon}</div>
+                      <div className="text-5xl">{step.icon}</div>
                     </div>
                     <h3 className="text-3xl md:text-4xl font-heading text-primary mb-2">
-                      {step-title}
+                      {step.title}
                     </h3>
                     <p className="text-xl text-accent font-light italic mb-6">
-                      {step-subtitle}
+                      {step.subtitle}
                     </p>
                     <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-                      {step-description}
+                      {step.description}
                     </p>
                     <ul className="space-y-3 text-neutralDark/70">
                       {step.details.map((detail, i) => (
@@ -144,16 +144,16 @@ function Process() {
                 <div className={`${index % 2 === 0 ? 'md:col-start-2' : ''}`}>
                   <div className={`
                     relative h-80 rounded-2xl overflow-hidden
-                    bg-gradient-to-br from.${step-color}/10 to.${step-color}/5
-                    border-2 border.${step-color}/20
+                    bg-gradient-to-br from-${step.color}/10 to-${step.color}/5
+                    border-2 border-${step.color}/20
                     transform transition-all duration-500
                     ${activeStep === index ? 'scale-100 shadow-xl' : 'scale-95 shadow-sm'}
                   `}>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center p-8">
-                        <div className="text-8xl mb-4 opacity-50">{step-icon}</div>
-                        <div className={`text-6xl font-heading font-bold text.${step-color}/40`}>
-                          {step-number}
+                        <div className="text-8xl mb-4 opacity-50">{step.icon}</div>
+                        <div className={`text-6xl font-heading font-bold text-${step.color}/40`}>
+                          {step.number}
                         </div>
                       </div>
                     </div>
@@ -165,7 +165,7 @@ function Process() {
               <div className={`
                 hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2
                 w-6 h-6 rounded-full border-4 border-white transition-all duration-500
-                ${activeStep === index ? `bg.${step-color} scale-125 shadow-lg` : 'bg-neutralLight'}
+                ${activeStep === index ? `bg-${step.color} scale-125 shadow-lg` : 'bg-neutralLight'}
               `} />
             </div>
           ))}
