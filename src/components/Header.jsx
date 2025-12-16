@@ -13,6 +13,9 @@ function Header() {
   
   const isHomePage = location.pathname === '/';
   
+  // Debug: Log state changes
+  console.log('[Header] Render - openDropdown:', openDropdown);
+  
   const navLinks = [
     { 
       name: 'About', 
@@ -71,15 +74,18 @@ function Header() {
 
   // Handle dropdown mouse enter/leave with delay
   const handleDropdownMouseEnter = (dropdownId) => {
+    console.log('[Header] Mouse enter dropdown:', dropdownId);
     // Clear any pending close timeout
     if (dropdownTimeoutRef.current) {
       clearTimeout(dropdownTimeoutRef.current);
       dropdownTimeoutRef.current = null;
     }
     setOpenDropdown(dropdownId);
+    console.log('[Header] Set openDropdown to:', dropdownId);
   };
 
   const handleDropdownMouseLeave = () => {
+    console.log('[Header] Mouse leave dropdown');
     // Clear any existing timeout
     if (dropdownTimeoutRef.current) {
       clearTimeout(dropdownTimeoutRef.current);
@@ -87,6 +93,7 @@ function Header() {
     
     // Delay closing to allow mouse to move to dropdown
     dropdownTimeoutRef.current = setTimeout(() => {
+      console.log('[Header] Closing dropdown (delayed)');
       setOpenDropdown(null);
     }, 300); // Increased delay to 300ms to give more time
   };
@@ -136,8 +143,14 @@ function Header() {
                   key={link.path}
                   ref={link.dropdownId === 'about' ? aboutDropdownRef : servicesDropdownRef}
                   className="relative"
-                  onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
-                  onMouseLeave={handleDropdownMouseLeave}
+                  onMouseEnter={() => {
+                    console.log('[Header] Container mouse enter:', link.dropdownId);
+                    handleDropdownMouseEnter(link.dropdownId);
+                  }}
+                  onMouseLeave={() => {
+                    console.log('[Header] Container mouse leave:', link.dropdownId);
+                    handleDropdownMouseLeave();
+                  }}
                 >
                   <button
                     type="button"
@@ -178,10 +191,17 @@ function Header() {
                         pointerEvents: 'auto',
                         opacity: 1,
                         visibility: 'visible',
-                        display: 'block'
+                        display: 'block',
+                        backgroundColor: 'white' // Ensure background is visible
                       }}
-                      onMouseEnter={() => handleDropdownMouseEnter(link.dropdownId)}
-                      onMouseLeave={handleDropdownMouseLeave}
+                      onMouseEnter={() => {
+                        console.log('[Header] Dropdown content mouse enter');
+                        handleDropdownMouseEnter(link.dropdownId);
+                      }}
+                      onMouseLeave={() => {
+                        console.log('[Header] Dropdown content mouse leave');
+                        handleDropdownMouseLeave();
+                      }}
                     >
                       {link.dropdown.map((item) => (
                         <Link
