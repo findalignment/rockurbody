@@ -152,12 +152,8 @@ function LandingPage() {
           try {
             console.log('[CHAT] Sending request to /api/chat', { message, historyLength: history.length });
             
-            // Use absolute URL in production, relative in development
-            const apiUrl = import.meta.env.PROD 
-              ? '/api/chat' 
-              : (import.meta.env.VITE_API_URL || '/api/chat');
-            
-            const response = await fetch(apiUrl, {
+            // Always use relative URL - Vercel handles routing
+            const response = await fetch('/api/chat', {
               method: 'POST',
               headers: { 
                 'Content-Type': 'application/json',

@@ -262,7 +262,7 @@ Be helpful, direct, and conversational. Help people understand if this work is r
       const requestOptions = {
         model: "gpt-4o-mini",
         messages: messages,
-        max_tokens: 250,
+        max_tokens: 500,
         temperature: 0.7
       };
       
@@ -272,7 +272,19 @@ Be helpful, direct, and conversational. Help people understand if this work is r
         requestOptions.function_call = "auto";
       }
       
+      console.log('[API/CHAT] Calling OpenAI API with', {
+        model: requestOptions.model,
+        messageCount: messages.length,
+        hasFunctions: !!requestOptions.functions
+      });
+      
       response = await openai.chat.completions.create(requestOptions);
+      
+      console.log('[API/CHAT] OpenAI API response received:', {
+        hasChoices: !!response.choices,
+        choiceCount: response.choices?.length,
+        hasMessage: !!response.choices?.[0]?.message
+      });
     } catch (openaiError) {
       console.error('OpenAI API call failed:', openaiError);
       console.error('Error details:', {
