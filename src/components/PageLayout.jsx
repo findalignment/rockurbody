@@ -12,7 +12,7 @@ function PageLayout({ children }) {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className={`flex-1 ${!hasHero ? 'pt-32 md:pt-40' : ''}`}>
+      <main className={`flex-1 ${!hasHero ? 'pt-32 md:pt-40' : 'pt-0'}`}>
         {children}
       </main>
       <Footer />

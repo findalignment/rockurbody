@@ -26,7 +26,7 @@ function PageHero({
   const altText = alt || title;
   
   return (
-    <div className="relative -mx-[100vw] left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
+    <div className="relative -mt-24 -mx-[100vw] left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen">
       {/* Hero Image - Full Width */}
       <div className="relative h-screen overflow-hidden">
         {/* Use picture element for WebP with fallback */}
