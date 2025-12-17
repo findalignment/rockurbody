@@ -242,7 +242,7 @@ function LocationPageTemplate({
                 <p className="text-sm text-neutralDark/70">Fix alignment and movement patterns</p>
               </Link>
               <Link 
-                to="/services/injury-recovery" 
+                to="/injury-recovery" 
                 className="p-4 bg-white border border-neutralLight rounded-lg hover:border-accent hover:shadow-md transition-all duration-200"
               >
                 <h3 className="font-semibold text-neutralDark mb-2">Injury Recovery</h3>
