@@ -90,7 +90,7 @@ function SciaticaRelief() {
                   Piriformis Syndrome (Most Common)
                 </h3>
                 <p className="text-neutralDark/80">
-                  Your piriformis muscle sits deep in your hip. When it gets tight or spasms, it compresses the sciatic nerve that runs right underneath (or sometimes through) it. This is "true" piriformis syndrome—and it's way more common than actual disc problems.
+                  Your piriformis muscle sits deep in your hip. When it gets tight or spasms, it compresses the sciatic nerve that runs right underneath (or sometimes through) it. This is "true" piriformis syndrome, and it's way more common than actual disc problems.
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ function SciaticaRelief() {
                   Tight Psoas & Hip Flexors
                 </h3>
                 <p className="text-neutralDark/80">
-                  Sitting all day shortens your hip flexors. They pull on your lower back, creating compression and nerve irritation. The psoas muscle is especially guilty—it attaches to your lumbar spine right where nerve roots exit.
+                  Sitting all day shortens your hip flexors. They pull on your lower back, creating compression and nerve irritation. The psoas muscle is especially guilty because it attaches to your lumbar spine right where nerve roots exit.
                 </p>
               </div>
 
@@ -117,7 +117,7 @@ function SciaticaRelief() {
                   Disc Issues (Sometimes)
                 </h3>
                 <p className="text-neutralDark/80">
-                  Yes, herniated or bulging discs can cause sciatica. But they're less common than people think. Most people with disc bulges on MRI have zero symptoms. The disc might not be the problem—it might be everything around it.
+                  Yes, herniated or bulging discs can cause sciatica. But they're less common than people think. Most people with disc bulges on MRI have zero symptoms. The disc might not be the problem; it might be everything around it.
                 </p>
               </div>
 
@@ -139,7 +139,7 @@ function SciaticaRelief() {
 
             <div className="space-y-4 text-lg text-neutralDark/80">
               <p className="leading-relaxed">
-                Most treatments focus on the pain—anti-inflammatories, muscle relaxers, stretching the piriformis. These might help temporarily, but they don't address WHY your piriformis is tight or WHY your hip is rotated or WHY your psoas won't release.
+                Most treatments focus on the pain with anti-inflammatories, muscle relaxers, and stretching the piriformis. These might help temporarily, but they don't address WHY your piriformis is tight or WHY your hip is rotated or WHY your psoas won't release.
               </p>
               <p className="leading-relaxed">
                 You need to address the structural patterns causing the problem. That's what I do.
@@ -224,7 +224,7 @@ function SciaticaRelief() {
                   The Work Can Be Intense
                 </h3>
                 <p className="text-neutralDark/80">
-                  Releasing deep hip muscles (like piriformis) can be uncomfortable. It shouldn't be unbearable, but you'll feel it. Most people say it's "hurts so good"—they can feel it's the right kind of pressure.
+                  Releasing deep hip muscles (like piriformis) can be uncomfortable. It shouldn't be unbearable, but you'll feel it. Most people say it's "hurts so good," and they can feel it's the right kind of pressure.
                 </p>
               </div>
 
@@ -233,7 +233,7 @@ function SciaticaRelief() {
                   Results Build Over Time
                 </h3>
                 <p className="text-neutralDark/80">
-                  Each session builds on the last. The goal isn't just to stop the pain—it's to address the underlying structure so it doesn't come back. That takes commitment.
+                  Each session builds on the last. The goal isn't just to stop the pain; it's to address the underlying structure so it doesn't come back. That takes commitment.
                 </p>
               </div>
             </div>
