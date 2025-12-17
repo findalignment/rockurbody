@@ -16,7 +16,7 @@ function BlogIndex() {
       id: 'best-outdoor-training-spots-santa-cruz',
       title: 'Best Outdoor Training Spots in Santa Cruz: A Personal Trainer\'s Guide',
       subtitle: 'Why train indoors when you have ocean views and redwood forests?',
-      date: 'December 16, 2025',
+      date: 'December 14, 2025',
       excerpt: "Discover the best outdoor workout locations in Santa Cruz. From West Cliff Drive to DeLaveaga Park, find perfect spots for training with ocean views and redwood trails.",
       path: '/blog/best-outdoor-training-spots-santa-cruz'
     },
