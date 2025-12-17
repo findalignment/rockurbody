@@ -12,7 +12,7 @@ function FAQSection({ faqs, title = "Frequently Asked Questions" }) {
   }
 
   return (
-    <div className="mb-16">
+    <div className="mt-20 mb-16">
       <h2 className="text-3xl font-heading font-bold text-primary mb-8 text-center">
         {title}
       </h2>
