@@ -63,7 +63,7 @@ function PrivatePersonalTrainingSantaCruz() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 px-4">
+        <section className="pt-20 md:pt-32 pb-16 md:pb-24 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Why Private Training?</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
