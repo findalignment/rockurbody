@@ -188,7 +188,7 @@ function PersonalTrainerSantaCruz() {
                   Strength for Life
                 </h3>
                 <p className="text-neutralDark/80 mb-2">
-                  Building strength in movement patterns that actually matter.picking things up, reaching overhead, getting up from the floor, carrying groceries.
+                  Building strength in movement patterns that actually matter: picking things up, reaching overhead, getting up from the floor, carrying groceries.
                 </p>
               </div>
 
