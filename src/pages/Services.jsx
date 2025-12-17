@@ -8,9 +8,16 @@ import Callout from '../components/content/Callout';
 import ExpandableSection from '../components/content/ExpandableSection';
 import FAQSection from '../components/FAQSection';
 import Button from '../components/Button';
-import { getLocalBusinessSchema } from '../utils/structuredData';
+import { getLocalBusinessSchema, getServiceSchema, getProfessionalServiceSchema } from '../utils/structuredData';
 
 function Services() {
+  const structuredData = [
+    getLocalBusinessSchema(),
+    getServiceSchema('structural-integration'),
+    getServiceSchema('movement-education'),
+    getProfessionalServiceSchema()
+  ];
+
   return (
     <PageLayout>
       <Helmet>
@@ -25,9 +32,11 @@ function Services() {
         <link rel="canonical" href="https://rockyourbody.com/services" />
         
         {/* Schema.org */}
-        <script type="application/ld+json">
-          {JSON.stringify(getLocalBusinessSchema())}
-        </script>
+        {structuredData.map((schema, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(schema)}
+          </script>
+        ))}
       </Helmet>
 
       <PageHero 

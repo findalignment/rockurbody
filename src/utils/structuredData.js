@@ -370,3 +370,110 @@ export const getLocalBusinessSchema = () => ({
     },
   ],
 });
+
+// Review Schema
+export const getReviewSchema = (review) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Review',
+  itemReviewed: {
+    '@type': 'LocalBusiness',
+    name: 'Rock Your Body',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Santa Cruz',
+      addressRegion: 'CA',
+    },
+  },
+  author: {
+    '@type': 'Person',
+    name: review.authorName,
+  },
+  reviewRating: {
+    '@type': 'Rating',
+    ratingValue: review.rating || 5,
+    bestRating: 5,
+  },
+  reviewBody: review.text,
+  datePublished: review.date,
+});
+
+// Aggregate Rating Schema
+export const getAggregateRatingSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Rock Your Body',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '50',
+    bestRating: '5',
+    worstRating: '1',
+  },
+});
+
+// Video Object Schema
+export const getVideoSchema = (video) => ({
+  '@context': 'https://schema.org',
+  '@type': 'VideoObject',
+  name: video.name,
+  description: video.description,
+  thumbnailUrl: video.thumbnail,
+  uploadDate: video.uploadDate,
+  duration: video.duration,
+  contentUrl: video.url,
+  embedUrl: video.embedUrl,
+});
+
+// Professional Service Schema
+export const getProfessionalServiceSchema = () => ({
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Rock Your Body - Personal Training & Structural Integration',
+  image: 'https://rockurbody.com/og-image.jpg',
+  '@id': 'https://rockurbody.com',
+  url: 'https://rockurbody.com',
+  telephone: '+1-831-419-4422',
+  priceRange: '$$',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '311 Soquel Ave',
+    addressLocality: 'Santa Cruz',
+    addressRegion: 'CA',
+    postalCode: '95062',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 36.9735,
+    longitude: -122.0285,
+  },
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+    ],
+    opens: '06:00',
+    closes: '20:00',
+  },
+  sameAs: [
+    'https://www.facebook.com/rockurbody',
+    'https://www.instagram.com/rockurbody',
+  ],
+});
+
+// Medical Condition Schema (for pain relief pages)
+export const getMedicalConditionSchema = (condition) => ({
+  '@context': 'https://schema.org',
+  '@type': 'MedicalCondition',
+  name: condition.name,
+  description: condition.description,
+  possibleTreatment: {
+    '@type': 'MedicalTherapy',
+    name: 'Structural Integration & Movement Education',
+    description: condition.treatment,
+  },
+});

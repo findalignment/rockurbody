@@ -13,7 +13,7 @@ import { securityCheck } from '../utils/chatSecurity';
 import { logChatQuestion, logChatEvent } from '../utils/chatLogger';
 import { handleChatbotRequest, retryChatbotRequest, startHealthMonitoring } from '../utils/chatbotReliability';
 import logger from '../utils/logger';
-import { getLocalBusinessSchema } from '../utils/structuredData';
+import { getLocalBusinessSchema, getOrganizationSchema, getProfessionalServiceSchema, getAggregateRatingSchema } from '../utils/structuredData';
 
 function LandingPage() {
   const [input, setInput] = useState('');
@@ -375,7 +375,12 @@ function LandingPage() {
       title="Movement Education & Structural Integration in Santa Cruz, CA"
       description="Expert movement education and structural integration in Santa Cruz, CA. Specializing in pain relief, posture correction, and performance enhancement through hands-on fascia work and personalized movement coaching."
       keywords="structural integration Santa Cruz, Rolfing Santa Cruz, functional fitness Santa Cruz, movement education, fascia therapy, bodywork Santa Cruz, mobile personal training, posture correction, pain relief Santa Cruz, movement specialist Bay Area, structural integrator, functional movement coach"
-      structuredData={getLocalBusinessSchema()}
+      structuredData={[
+        getLocalBusinessSchema(),
+        getOrganizationSchema(),
+        getProfessionalServiceSchema(),
+        getAggregateRatingSchema()
+      ]}
       url="/"
     />
     <Hero backgroundImage="/home-hero.jpg" altText="Rock Your Body - Structural integration and movement education in Santa Cruz, California">

@@ -2,6 +2,7 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import SEO from '../components/SEO';
 import Button from '../components/Button';
+import { getReviewSchema, getAggregateRatingSchema } from '../utils/structuredData';
 
 function Testimonials() {
   const testimonials = [
@@ -29,6 +30,22 @@ function Testimonials() {
     }
   ];
 
+  // Generate review schemas for structured data
+  const reviewSchemas = testimonials.map(testimonial => 
+    getReviewSchema({
+      authorName: testimonial.author,
+      rating: 5,
+      text: testimonial.quote + ' ' + testimonial.fullReview,
+      date: '2024-01-01', // Update with actual dates if available
+    })
+  );
+
+  // Combine aggregate rating with reviews
+  const structuredData = [
+    getAggregateRatingSchema(),
+    ...reviewSchemas
+  ];
+
   return (
     <PageLayout>
       <SEO
@@ -36,6 +53,7 @@ function Testimonials() {
         description="Read testimonials from clients who have worked with Rock Hudson. Learn how structural integration and movement education have transformed their strength, balance, and daily comfort."
         keywords="testimonials, client reviews, Santa Cruz personal trainer reviews, structural integration testimonials, movement education success stories"
         url="/testimonials"
+        structuredData={structuredData}
       />
       <PageHero 
         imageSrc="/approach-hero.jpg"

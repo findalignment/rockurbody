@@ -3,9 +3,14 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
-import { getPersonSchema } from '../utils/structuredData';
+import { getPersonSchema, getOrganizationSchema } from '../utils/structuredData';
 
 function About() {
+  const structuredData = [
+    getPersonSchema(),
+    getOrganizationSchema()
+  ];
+
   return (
     <PageLayout>
       <Helmet>
@@ -20,9 +25,11 @@ function About() {
         <link rel="canonical" href="https://rockyourbody.com/about" />
         
         {/* Schema.org */}
-        <script type="application/ld+json">
-          {JSON.stringify(getPersonSchema())}
-        </script>
+        {structuredData.map((schema, index) => (
+          <script key={index} type="application/ld+json">
+            {JSON.stringify(schema)}
+          </script>
+        ))}
       </Helmet>
 
       <PageHero 
