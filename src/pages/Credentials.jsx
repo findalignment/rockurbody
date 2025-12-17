@@ -19,9 +19,11 @@ function Credentials() {
         <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>Certifications & Training</h2>
         
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            Anatomy Trains Structural Integration
-          </h3>
+          <Link to="/certifications/anatomy-trains-si" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              Anatomy Trains Structural Integration →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>Comprehensive 12-session protocol training</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Completed comprehensive training in Tom Myers' Anatomy Trains approach to structural integration, focusing on fascial system reorganization and whole-body structural alignment.
@@ -29,9 +31,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            Anatomy Trains Teacher in Training
-          </h3>
+          <Link to="/certifications/anatomy-trains-teacher" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              Anatomy Trains Teacher in Training →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>Advanced teaching certification</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Training to become a certified instructor in the Anatomy Trains methodology, deepening understanding of fascial anatomy and teaching techniques.
@@ -39,9 +43,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            NASM Certified Personal Trainer
-          </h3>
+          <Link to="/certifications/nasm-personal-trainer" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              NASM Certified Personal Trainer →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>National Academy of Sports Medicine</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Certified personal trainer with expertise in exercise science, program design, and client assessment.
@@ -49,9 +55,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            NASM Corrective Exercise Specialist
-          </h3>
+          <Link to="/certifications/nasm-corrective-exercise" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              NASM Corrective Exercise Specialist →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>National Academy of Sports Medicine</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Specialized training in identifying and correcting movement dysfunctions and postural imbalances.
@@ -59,9 +67,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            ACE Health Coach
-          </h3>
+          <Link to="/certifications/ace-health-coach" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              ACE Health Coach →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>American Council on Exercise</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Certified health coach with training in behavior change, motivation, and holistic wellness approaches.
@@ -69,9 +79,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            ACE Corrective Exercise Specialist
-          </h3>
+          <Link to="/certifications/ace-corrective-exercise" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              ACE Corrective Exercise Specialist →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>American Council on Exercise</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Advanced certification in corrective exercise techniques for addressing movement limitations and pain.
@@ -79,9 +91,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            MedFit Parkinson's Disease Fitness Specialist
-          </h3>
+          <Link to="/certifications/medfit-parkinsons" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              MedFit Parkinson's Disease Fitness Specialist →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>Medical Fitness Network</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Specialized training in exercise programming for individuals with Parkinson's disease, focusing on balance, mobility, and quality of life.
@@ -89,9 +103,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            MedFit Drug & Alcohol Recovery Fitness Specialist
-          </h3>
+          <Link to="/certifications/medfit-recovery" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              MedFit Drug & Alcohol Recovery Fitness Specialist →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>Medical Fitness Network</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Specialized training in supporting individuals in recovery through targeted exercise and movement therapy.
@@ -99,9 +115,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            Precision Nutrition Coach Level 2
-          </h3>
+          <Link to="/certifications/precision-nutrition" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              Precision Nutrition Coach Level 2 →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>Precision Nutrition</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Advanced nutrition coaching certification focusing on evidence-based nutrition strategies and behavior change.
@@ -109,9 +127,11 @@ function Credentials() {
         </div>
 
         <div style={{ marginBottom: '25px' }}>
-          <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px' }}>
-            MovNat Level 2
-          </h3>
+          <Link to="/certifications/movnat" style={{ textDecoration: 'none' }}>
+            <h3 style={{ fontSize: '24px', color: '#06b6d4', marginBottom: '5px', cursor: 'pointer', transition: 'color 0.2s' }} className="hover:text-accent">
+              MovNat Level 2 →
+            </h3>
+          </Link>
           <p style={{ color: '#999', marginBottom: '10px' }}>Natural Movement Training</p>
           <p style={{ color: '#666', lineHeight: '1.8' }}>
             Advanced certification in natural movement training, focusing on practical, real-world movement skills and functional fitness.
