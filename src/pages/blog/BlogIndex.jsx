@@ -24,7 +24,7 @@ function BlogIndex() {
       id: 'how-to-choose-personal-trainer-santa-cruz',
       title: 'How to Choose a Personal Trainer in Santa Cruz: Complete Guide 2025',
       subtitle: 'Making the right choice for your health, goals, and budget',
-      date: 'December 16, 2025',
+      date: 'December 10, 2025',
       excerpt: "Expert guide to finding the right personal trainer in Santa Cruz. Learn what certifications matter, red flags to avoid, and questions to ask before hiring.",
       path: '/blog/how-to-choose-personal-trainer-santa-cruz'
     },
