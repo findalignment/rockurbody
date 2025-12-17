@@ -4,7 +4,7 @@ import PageLayout from '../components/PageLayout';
 function PaymentCancelled() {
   return (
     <PageLayout>
-      <div className="pt-24 pb-16 px-4">
+      <div className="pb-16 px-4">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-yellow-50 border border-yellow-200 rounded-2xl p-8 mb-8">
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
