@@ -76,7 +76,7 @@ function ChronicPainRelief() {
               There's a better way.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Chronic pain often comes from structural imbalances and movement compensation patterns that have developed over years. To get lasting relief, we need to address the root cause.not just treat symptoms.
+              Chronic pain often comes from structural imbalances and movement compensation patterns that have developed over years. To get lasting relief, we need to address the root cause—not just treat symptoms.
             </p>
           </div>
 
