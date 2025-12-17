@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 
 function SmartStarts() {
   const [selectedCard, setSelectedCard] = useState(null);
@@ -88,6 +89,12 @@ function SmartStarts() {
 
   return (
     <PageLayout>
+      <SEO 
+        title="Smart Starts | Three Clear Starting Points for Movement Transformation"
+        description="Three proven starting points for your movement journey in Santa Cruz: The Reset (6 sessions), Hip Freedom (8-12 sessions), and Full Repatterning (24-48 sessions). Combine structural integration and movement education for lasting change."
+        keywords="smart starts, starting programs Santa Cruz, movement transformation, structural integration packages, beginner programs, The Reset, Hip Freedom, Full Repatterning"
+        url="/smart-starts"
+      />
       <PageHero 
         imageSrc="/smart-starts-hero.jpg"
         title="Smart Starts"

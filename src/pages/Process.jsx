@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 
 function Process() {
   const [activeStep, setActiveStep] = useState(0);
@@ -75,6 +76,12 @@ function Process() {
 
   return (
     <PageLayout>
+      <SEO 
+        title="Our Process | How Structural Integration & Movement Education Work"
+        description="Discover the 4-step process behind Rock Hudson's structural integration and movement education in Santa Cruz: Assess, Release, Realign, Integrate. From initial evaluation to lasting movement transformation."
+        keywords="training process, structural integration process, movement education steps, how SI works, session process, transformation journey, Santa Cruz"
+        url="/process"
+      />
       <PageHero 
         imageSrc="/approach-hero.jpg"
         title="The Process"

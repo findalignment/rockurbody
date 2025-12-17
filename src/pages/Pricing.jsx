@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 function Pricing() {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -204,6 +205,12 @@ function Pricing() {
 
   return (
     <PageLayout>
+      <SEO 
+        title="Pricing | Personal Training & Structural Integration Packages Santa Cruz"
+        description="Transparent pricing for personal training, structural integration, and movement education in Santa Cruz. Packages from $250-$5,400. Single sessions and multi-session programs available. Investment in lasting movement quality."
+        keywords="personal training prices Santa Cruz, structural integration cost, movement education pricing, Santa Cruz training packages, SI pricing, bodywork rates Santa Cruz"
+        url="/pricing"
+      />
       <PageHero 
         imageSrc="/pricing-hero.jpg"
         alt="Pricing for structural integration and movement education services in Santa Cruz, California"

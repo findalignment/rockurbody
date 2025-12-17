@@ -2,10 +2,17 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 
 function Contact() {
   return (
     <PageLayout>
+      <SEO 
+        title="Contact | Rock Hudson - Personal Training & Structural Integration Santa Cruz"
+        description="Get in touch with Rock Hudson for personal training, structural integration, and movement education in Santa Cruz, CA. Located at Mavericks Fitness. Book your consultation today. Monday-Friday 6am-8pm."
+        keywords="contact Santa Cruz personal trainer, book structural integration Santa Cruz, movement education contact, Mavericks Fitness, Santa Cruz CA, Rock Hudson contact"
+        url="/contact"
+      />
       <PageHero 
         imageSrc="/contact-hero.jpg"
         title="Get in Touch"

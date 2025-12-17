@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import Button from '../components/Button';
+import SEO from '../components/SEO';
 
 function Approach() {
   const [visiblePhrases, setVisiblePhrases] = useState([]);
@@ -41,6 +42,12 @@ function Approach() {
 
   return (
     <PageLayout>
+      <SEO 
+        title="Our Approach | Structural Integration & Movement Education Philosophy"
+        description="Learn about Rock Hudson's approach to movement and structural integration in Santa Cruz. Hands-on fascial work meets intelligent movement education. Address root causes, not just symptoms. Whole-body solutions for lasting change."
+        keywords="training approach, structural integration philosophy, movement education method, hands-on bodywork, fascia work approach, whole-body solutions, Santa Cruz methodology"
+        url="/approach"
+      />
       <PageHero 
         imageSrc="/approach-hero.jpg"
         title="My Approach"

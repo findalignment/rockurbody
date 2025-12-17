@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 function TrainingLineage() {
   return (
     <PageLayout>
+      <SEO 
+        title="Training & Lineage | Mentors & Teachers in Structural Integration"
+        description="Rock Hudson's training lineage in structural integration and movement education. Learn from teachers like Tom Myers (Anatomy Trains), James Earls, and other leaders in fascial bodywork and functional movement in Santa Cruz."
+        keywords="training lineage, structural integration teachers, Anatomy Trains mentors, Tom Myers, James Earls, SI lineage, bodywork teachers, movement education mentors"
+        url="/training-lineage"
+      />
       <PageHero 
         imageSrc="/training-hero.jpg"
         title="Training & Lineage"

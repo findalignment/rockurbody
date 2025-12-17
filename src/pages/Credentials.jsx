@@ -1,10 +1,17 @@
 import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
+import SEO from '../components/SEO';
 
 function Credentials() {
   return (
     <PageLayout>
+      <SEO 
+        title="Credentials & Certifications | Rock Hudson - Santa Cruz Personal Trainer"
+        description="Rock Hudson's professional credentials: Anatomy Trains Structural Integrator, NASM Personal Trainer, ACE Health Coach, MovNat Level 2, and more. 12+ years experience in Santa Cruz. Expert training in fascial bodywork and functional movement."
+        keywords="Rock Hudson credentials, Santa Cruz personal trainer certifications, Anatomy Trains certified, NASM trainer, structural integration certified, movement education credentials, professional qualifications"
+        url="/credentials"
+      />
       <PageHero 
         imageSrc="/credentials-hero.jpg"
         title="Credentials & Certifications"

@@ -3,6 +3,7 @@ import PageLayout from '../components/PageLayout';
 import PageHero from '../components/PageHero';
 import PaymentButton from '../components/PaymentButton';
 import GlossaryTerm from '../components/GlossaryTerm';
+import SEO from '../components/SEO';
 
 function Packages() {
   // Movement session packages - matches Pricing page
@@ -99,6 +100,12 @@ function Packages() {
 
   return (
     <PageLayout>
+      <SEO 
+        title="Training Packages | Structural Integration & Movement Programs Santa Cruz"
+        description="Explore training packages for structural integration and movement education in Santa Cruz. The Reset (6 sessions), Hip Freedom (8-12 sessions), Full Repatterning (24-48 sessions). Save 10-25% with multi-session programs designed for real transformation."
+        keywords="training packages Santa Cruz, structural integration programs, movement education packages, SI series, combo programs, bulk session discounts, transformation packages"
+        url="/packages"
+      />
       <PageHero 
         imageSrc="/packages-hero.jpg"
         title="Programs Designed Around You"
