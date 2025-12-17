@@ -379,7 +379,7 @@ function LandingPage() {
       url="/"
     />
     <Hero backgroundImage="/home-hero.jpg" altText="Rock Your Body - Structural integration and movement education in Santa Cruz, California">
-      <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[85vh] md:pt-[90vh]">
+      <div className="w-full flex flex-col items-center justify-center min-h-[70vh] md:min-h-[75vh] py-16">
         <HeroContent />
         
         {/* CHATBOT TEMPORARILY DISABLED - Will be re-enabled once fixed */}
