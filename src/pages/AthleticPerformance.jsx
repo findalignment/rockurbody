@@ -65,7 +65,7 @@ function AthleticPerformance() {
               You're Already Good. Let's Make You Great.
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              You train hard. You're dedicated. You've hit a plateau or you're dealing with nagging issues that limit your performance. You want that edge.but working harder isn't the answer.
+              You train hard. You're dedicated. You've hit a plateau or you're dealing with nagging issues that limit your performance. You want that edge—but working harder isn't the answer.
             </p>
             <p className="text-xl text-accent font-semibold mb-6">
               Working smarter is.
@@ -104,7 +104,7 @@ function AthleticPerformance() {
                   Fascial Restrictions
                 </h3>
                 <p className="text-neutralDark/80">
-                  Tight fascia limits range of motion, reduces power transfer, and increases injury risk. You can't fire a cannon from a canoe.you need a stable, mobile structure.
+                  Tight fascia limits range of motion, reduces power transfer, and increases injury risk. You can't fire a cannon from a canoe—you need a stable, mobile structure.
                 </p>
               </div>
 

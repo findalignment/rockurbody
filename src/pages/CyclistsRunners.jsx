@@ -37,7 +37,7 @@ function CyclistsRunners() {
               You Love Riding/Running. Your Body is Fighting Back.
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Whether you're climbing Empire Grade, running West Cliff, or putting in miles for your next race.repetitive movement takes a toll. The same issues keep coming back:
+              Whether you're climbing Empire Grade, running West Cliff, or putting in miles for your next race—repetitive movement takes a toll. The same issues keep coming back:
             </p>
             <ul className="space-y-3 text-lg text-neutralDark/80">
               <li>• IT band tightness that won't release</li>
