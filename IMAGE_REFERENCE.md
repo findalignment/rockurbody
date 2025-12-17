@@ -37,15 +37,6 @@ These are the large banner images at the top of pages. Currently using placehold
 | Book Movement Education | `/services-hero.jpg` | `book-movement-hero` | Booking page for Movement | |
 | Book Combo Programs | `/packages-hero.jpg` | `book-combo-hero` | Booking page for combos | |
 
-### Educational Pages
-
-| Page | Current Filename | Airtable Name | Description | Has Unique Image |
-|------|-----------------|---------------|-------------|------------------|
-| Gravity & SI | `/gravity-structural-integration-hero.jpg` | `gravity-structural-integration-hero` | Working with gravity page | ✅ |
-| Exercise for Life | `/exercise-for-life-hero.jpg` | `exercise-for-life-hero` | Functional training page | ✅ |
-| Safe Gym Training | `/safe-gym-training-hero.jpg` | `safe-gym-training-hero` | Injury prevention page | ✅ |
-| Daily Mobility | `/daily-mobility-hero.jpg` | `daily-mobility-hero` | 5-minute mobility routine | ✅ |
-
 ### Problem-Specific SEO Pages
 
 | Page | Current Filename | Airtable Name | Description | Has Unique Image |
