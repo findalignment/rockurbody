@@ -382,8 +382,8 @@ function LandingPage() {
       <div className="w-full flex flex-col items-center justify-end space-y-4 pb-8 pt-[85vh] md:pt-[90vh]">
         <HeroContent />
         
-        <div className="w-full max-w-4xl mx-auto px-4" id="chatbot-section">
-          {/* Fallback UI when chat fails */}
+        {/* CHATBOT TEMPORARILY DISABLED - Will be re-enabled once fixed */}
+        {/* <div className="w-full max-w-4xl mx-auto px-4" id="chatbot-section">
           {chatFailed ? (
             <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 animate-fadeIn p-8">
               <div className="text-center mb-6">
@@ -612,7 +612,7 @@ function LandingPage() {
             </form>
           </div>
           )}
-        </div>
+        </div> */}
       </div>
     </Hero>
     
