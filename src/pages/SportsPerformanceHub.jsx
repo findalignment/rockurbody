@@ -43,62 +43,62 @@ function SportsPerformanceHub() {
   const performanceServices = [
     {
       title: 'Athletic Performance Enhancement',
-      url: '/services/athletic-performance',
+      url: '/athletic-performance',
       description: 'Optimize biomechanics, power, and efficiency for peak athletic performance.'
     },
     {
       title: 'Golf Performance',
-      url: '/services/golf-performance',
+      url: '/golf-performance',
       description: 'Improve swing mechanics, increase power, and eliminate compensations.'
     },
     {
       title: 'Climbers',
-      url: '/services/climbers',
+      url: '/climbers',
       description: 'Enhance movement efficiency and prevent climbing-specific injuries.'
     },
     {
       title: 'Cyclists & Runners',
-      url: '/services/cyclists-runners',
+      url: '/cyclists-and-runners',
       description: 'Optimize biomechanics for endurance and reduce overuse injuries.'
     },
     {
       title: 'Surfers Program',
-      url: '/location/santa-cruz-surfers',
+      url: '/surfers',
       description: 'Santa Cruz surfer-specific training for better performance in the water.'
     },
     {
       title: 'Sports Injury Prevention',
-      url: '/services/sports-injury-prevention',
+      url: '/sports-injury-prevention',
       description: 'Build resilience and reduce injury risk through structural work.'
     },
     {
       title: 'Injury Recovery Services',
-      url: '/services/injury-recovery',
+      url: '/injury-recovery',
       description: 'Return to sport stronger and more resilient than before.'
     },
     {
       title: 'Movement Screening',
-      url: '/services/movement-screening',
+      url: '/movement-screening',
       description: 'Comprehensive assessment to identify limitations and asymmetries.'
     },
     {
       title: 'Core Strengthening',
-      url: '/services/core-strengthening',
+      url: '/core-strengthening',
       description: 'Build functional core strength that transfers to athletic performance.'
     },
     {
       title: 'Mobility Training',
-      url: '/services/mobility-training',
+      url: '/mobility-training',
       description: 'Increase range of motion and movement quality for better performance.'
     },
     {
       title: 'Balance Training',
-      url: '/services/balance-training',
+      url: '/balance-training',
       description: 'Improve stability, proprioception, and body control.'
     },
     {
       title: 'Breathing & Core Training',
-      url: '/services/breathing-core',
+      url: '/breathing-and-core',
       description: 'Master breath mechanics for optimal performance and recovery.'
     }
   ];
