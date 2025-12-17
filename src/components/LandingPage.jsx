@@ -388,6 +388,11 @@ function LandingPage() {
       </div>
     </Hero>
     
+    {/* Services Overview Section */}
+    <div className="relative bg-white">
+      <ServicesOverview />
+    </div>
+    
     {/* Quick Start Quiz Section */}
     <section className="py-16 md:py-24 px-4 bg-gradient-to-br from-primary/5 to-accent/5">
       <div className="max-w-6xl mx-auto">
@@ -402,11 +407,6 @@ function LandingPage() {
         <QuickStartQuiz />
       </div>
     </section>
-    
-    {/* Services Overview Section - After Chat */}
-    <div className="relative bg-white">
-      <ServicesOverview />
-    </div>
     
     {/* Footer */}
     <Footer />
