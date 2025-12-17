@@ -27,7 +27,7 @@ function Top5PersonalTrainersSantaCruz() {
           </p>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-            I've spent over a decade in the Santa Cruz fitness community as both a practitioner and a student. Here are five trainers (including myself) who represent different approaches to training, each excellent in their own way. What makes a trainer "great" isn't universal—it's about finding the right fit for your goals, your body, and your values.
+            I've spent over a decade in the Santa Cruz fitness community as both a practitioner and a student. Here are five trainers (including myself) who represent different approaches to training, each excellent in their own way. What makes a trainer "great" isn't universal, it's about finding the right fit for your goals, your body, and your values.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">
@@ -61,7 +61,7 @@ function Top5PersonalTrainersSantaCruz() {
               <strong className="text-primary">Credentials:</strong> Certified Anatomy Trains Structural Integrator (500+ hours), NASM Personal Trainer, MovNat Level 2, 12+ years experience
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              <strong className="text-primary">What Makes Them Great:</strong> Rock doesn't just train you—he educates you about your body's patterns and restrictions. Sessions combine hands-on bodywork with movement coaching, addressing both structure and function. Ideal for people who've "tried everything" or want to train for longevity, not just aesthetics.
+              <strong className="text-primary">What Makes Them Great:</strong> Rock doesn't just train you, he educates you about your body's patterns and restrictions. Sessions combine hands-on bodywork with movement coaching, addressing both structure and function. Ideal for people who've "tried everything" or want to train for longevity, not just aesthetics.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ function Top5PersonalTrainersSantaCruz() {
           </h2>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            Several trainers in Santa Cruz excel at preparing athletes for competitive performance—whether you're training for ultra-marathons, triathlons, or competitive surfing. Look for trainers with backgrounds in:
+            Several trainers in Santa Cruz excel at preparing athletes for competitive performance, whether you're training for ultra-marathons, triathlons, or competitive surfing. Look for trainers with backgrounds in:
           </p>
 
           <ul className="text-lg text-neutralDark/80 leading-relaxed mb-8 space-y-3 ml-6">
@@ -105,7 +105,7 @@ function Top5PersonalTrainersSantaCruz() {
           </h2>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            Some trainers in Santa Cruz work closely with physical therapists and specialize in post-rehab training—the critical bridge between physical therapy and returning to full activity. Look for:
+            Some trainers in Santa Cruz work closely with physical therapists and specialize in post-rehab training, the critical bridge between physical therapy and returning to full activity. Look for:
           </p>
 
           <ul className="text-lg text-neutralDark/80 leading-relaxed mb-8 space-y-3 ml-6">
@@ -149,7 +149,7 @@ function Top5PersonalTrainersSantaCruz() {
               <li><strong>2. What experience do you have with my specific needs?</strong> (chronic pain, sports performance, post-injury, etc.)</li>
               <li><strong>3. What's your availability and location?</strong> Can they accommodate your schedule? How far do you need to travel?</li>
               <li><strong>4. What does a typical session look like?</strong> Understand the structure and focus</li>
-              <li><strong>5. What's your cancellation policy?</strong> Life happens—know the terms</li>
+              <li><strong>5. What's your cancellation policy?</strong> Life happens, know the terms</li>
               <li><strong>6. Can I try a sample session or consultation?</strong> Most great trainers offer this</li>
             </ul>
           </div>
@@ -171,7 +171,7 @@ function Top5PersonalTrainersSantaCruz() {
           </h2>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-            There's no "best" personal trainer in Santa Cruz—only the best trainer FOR YOU. Someone who's perfect for a competitive triathlete might not be right for someone recovering from back surgery. Someone who thrives in high-intensity CrossFit might not enjoy the slower, more methodical pace of structural integration work.
+            There's no "best" personal trainer in Santa Cruz, only the best trainer FOR YOU. Someone who's perfect for a competitive triathlete might not be right for someone recovering from back surgery. Someone who thrives in high-intensity CrossFit might not enjoy the slower, more methodical pace of structural integration work.
           </p>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">

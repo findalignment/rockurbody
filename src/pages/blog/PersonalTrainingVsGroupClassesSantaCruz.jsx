@@ -23,11 +23,11 @@ function PersonalTrainingVsGroupClassesSantaCruz() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-neutralDark/80 leading-relaxed mb-8">
-            Santa Cruz has an incredible variety of fitness options—from boutique studios offering spin classes and yoga, to CrossFit boxes with group WODs, to private personal trainers working one-on-one. But when you're investing time and money in your health, how do you choose? Is private training worth the higher cost? Or do group classes offer better value and community?
+            Santa Cruz has an incredible variety of fitness options, from boutique studios offering spin classes and yoga, to CrossFit boxes with group WODs, to private personal trainers working one-on-one. But when you're investing time and money in your health, how do you choose? Is private training worth the higher cost? Or do group classes offer better value and community?
           </p>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            As both a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link> and someone who has participated in group classes, I've seen both sides. Neither is universally "better"—they serve different needs. Let's break down the real differences.
+            As both a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link> and someone who has participated in group classes, I've seen both sides. Neither is universally "better", they serve different needs. Let's break down the real differences.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">

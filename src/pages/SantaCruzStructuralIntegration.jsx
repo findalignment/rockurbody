@@ -35,7 +35,7 @@ function SantaCruzStructuralIntegration() {
           {/* Intro */}
           <div className="mb-16">
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Santa Cruz is a community that moves—surfers catching dawn patrol, cyclists climbing empire grade, weekend warriors hiking the redwoods. When your body isn't working right, everything gets harder.
+              Santa Cruz is a community that moves, surfers catching dawn patrol, cyclists climbing empire grade, weekend warriors hiking the redwoods. When your body isn't working right, everything gets harder.
             </p>
             <p className="text-xl text-neutralDark/80 leading-relaxed">
               I'm Rock Hudson, a certified Structural Integrator serving Santa Cruz and the greater Bay Area. I help people get out of pain and back to the activities they love through precise hands-on work and intelligent movement training.
@@ -48,7 +48,7 @@ function SantaCruzStructuralIntegration() {
               What is Structural Integration?
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              Structural Integration (often called Rolfing) is a specialized form of bodywork that focuses on your body's connective tissue—the fascia that wraps around every muscle, bone, and organ. When this tissue gets tight, restricted, or misaligned, it creates:
+              Structural Integration (often called Rolfing) is a specialized form of bodywork that focuses on your body's connective tissue, the fascia that wraps around every muscle, bone, and organ. When this tissue gets tight, restricted, or misaligned, it creates:
             </p>
             <ul className="space-y-3 text-lg text-neutralDark/80 ml-6 mb-6">
               <li>• Chronic pain and tension</li>
@@ -131,7 +131,7 @@ function SantaCruzStructuralIntegration() {
               </div>
               <div>
                 <strong className="text-neutralDark block mb-2">Active Participation:</strong>
-                You're not just lying on a table—we'll get you moving during sessions and give you simple practices to reinforce the work between visits.
+                You're not just lying on a table, we'll get you moving during sessions and give you simple practices to reinforce the work between visits.
               </div>
             </div>
           </div>

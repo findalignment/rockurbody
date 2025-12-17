@@ -23,10 +23,10 @@ function WhatAreCompensationPatterns() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">What Is Compensation?</h2>
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-            Compensation is your body's way of working around a problem. If something isn't working right—a restriction, an alignment issue, a weakness—your body finds another way to do the job.
+            Compensation is your body's way of working around a problem. If something isn't working right, a restriction, an alignment issue, a weakness, your body finds another way to do the job.
           </p>
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-            That's not necessarily bad. Compensation is adaptive. It's what allows you to keep moving after an injury or when something isn't working properly. But when compensation becomes a pattern—when your body keeps doing it for months or years—it creates problems.
+            That's not necessarily bad. Compensation is adaptive. It's what allows you to keep moving after an injury or when something isn't working properly. But when compensation becomes a pattern, when your body keeps doing it for months or years, it creates problems.
           </p>
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
             The original problem might be small, but the compensation creates a cascade of issues. Your body compensates, and that compensation creates stress somewhere else, which creates another compensation, and so on.
@@ -86,7 +86,7 @@ function WhatAreCompensationPatterns() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Why Traditional Treatment Fails</h2>
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-            Most treatment focuses on the symptom—the place that hurts. You get massage for your tight back, stretching for your tight hamstrings, strengthening exercises for your weak knee. And it helps... temporarily.
+            Most treatment focuses on the symptom, the place that hurts. You get massage for your tight back, stretching for your tight hamstrings, strengthening exercises for your weak knee. And it helps... temporarily.
           </p>
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
             But the relief doesn't last because you're not addressing the compensation pattern. You're treating the symptom, not the cause.
@@ -197,7 +197,7 @@ function WhatAreCompensationPatterns() {
             <div className="flex items-start gap-4">
               <span className="text-accent text-2xl font-bold">•</span>
               <div>
-                <p className="text-lg text-neutralDark/80"><strong className="text-primary">Strengthening doesn't help.</strong> If you've tried strengthening exercises but the problem persists, the issue isn't weakness—it's compensation.</p>
+                <p className="text-lg text-neutralDark/80"><strong className="text-primary">Strengthening doesn't help.</strong> If you've tried strengthening exercises but the problem persists, the issue isn't weakness, it's compensation.</p>
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ function WhatAreCompensationPatterns() {
             </div>
             <div className="bg-white rounded-xl p-6 shadow-md">
               <h3 className="text-xl font-semibold text-primary mb-3">4. Integration</h3>
-              <p className="text-neutralDark/80">We give you tools to maintain the changes—simple practices that keep your body organized and prevent compensation patterns from returning.</p>
+              <p className="text-neutralDark/80">We give you tools to maintain the changes, simple practices that keep your body organized and prevent compensation patterns from returning.</p>
             </div>
           </div>
         </div>

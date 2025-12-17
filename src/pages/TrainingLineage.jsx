@@ -197,7 +197,7 @@ function TrainingLineage() {
                   Each mentor has contributed unique perspectives: Tom's systematic approach to fascial anatomy, Sharon's advanced cranial and bone work, Til's gentle precision, and Wojtek's movement integration. This diverse training allows me to adapt my approach to each client's specific needs.
                 </p>
                 <p className="leading-relaxed">
-                  When you work with me, you're not just getting my experience—you're benefiting from the accumulated wisdom of the structural integration community's most respected teachers.
+                  When you work with me, you're not just getting my experience, you're benefiting from the accumulated wisdom of the structural integration community's most respected teachers.
                 </p>
               </div>
             </div>

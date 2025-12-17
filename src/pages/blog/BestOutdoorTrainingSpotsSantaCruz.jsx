@@ -138,7 +138,7 @@ function BestOutdoorTrainingSpotsSantaCruz() {
           </ul>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            <strong>Pro Tip:</strong> Bring trail shoes with good grip—roots and rocks make this slippery, especially in winter. Also, cell service is spotty, so tell someone where you're going.
+            <strong>Pro Tip:</strong> Bring trail shoes with good grip, roots and rocks make this slippery, especially in winter. Also, cell service is spotty, so tell someone where you're going.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">

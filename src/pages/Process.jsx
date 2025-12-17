@@ -33,7 +33,7 @@ function Process() {
       number: '01',
       title: 'Assess',
       subtitle: 'Where are you now?',
-      description: 'We begin by understanding your body\'s current story. Not just symptoms, but patterns—how you move, where you hold tension, what your structure is asking for.',
+      description: 'We begin by understanding your body\'s current story. Not just symptoms, but patterns, how you move, where you hold tension, what your structure is asking for.',
       details: [
         'Comprehensive movement assessment',
         'Postural and structural analysis',
@@ -47,7 +47,7 @@ function Process() {
       number: '02',
       title: 'Work',
       subtitle: 'Meeting your body where it is',
-      description: 'Through hands-on structural work and movement education, we address the root patterns—not just the pain. This is where change happens: slowly, intelligently, and with your body\'s full participation.',
+      description: 'Through hands-on structural work and movement education, we address the root patterns, not just the pain. This is where change happens: slowly, intelligently, and with your body\'s full participation.',
       details: [
         'Hands-on Structural Integration sessions',
         'Personalized movement training',

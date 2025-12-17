@@ -108,7 +108,7 @@ function About() {
                 Based in Santa Cruz, Serving the Community
               </h2>
               <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-                I'm proud to serve as a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline font-semibold">personal trainer in Santa Cruz</Link>, working with clients throughout the area—from downtown to Westside, Capitola to Aptos, and the surrounding communities. Being local means I understand the unique lifestyle here: the surfers at Steamer Lane, the trail runners in Nisene Marks, the climbers at Pacific Edge, and the professionals working from home offices.
+                I'm proud to serve as a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline font-semibold">personal trainer in Santa Cruz</Link>, working with clients throughout the area, from downtown to Westside, Capitola to Aptos, and the surrounding communities. Being local means I understand the unique lifestyle here: the surfers at Steamer Lane, the trail runners in Nisene Marks, the climbers at Pacific Edge, and the professionals working from home offices.
               </p>
               <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
                 Whether you're looking for <Link to="/private-personal-training-santa-cruz" className="text-accent hover:underline">private personal training in Santa Cruz</Link>, <Link to="/movement-assessment-santa-cruz" className="text-accent hover:underline">movement assessment</Link>, or specialized work for your specific needs, we can work together at my private studio or at select outdoor locations throughout Santa Cruz County.

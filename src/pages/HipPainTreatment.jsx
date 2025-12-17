@@ -65,7 +65,7 @@ function HipPainTreatment() {
               Your Hips Affect Everything
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Hip pain isn't just annoying—it changes how you walk, sit, sleep, and move through life. And it rarely stays localized. When your hips don't work right, everything else compensates:
+              Hip pain isn't just annoying, it changes how you walk, sit, sleep, and move through life. And it rarely stays localized. When your hips don't work right, everything else compensates:
             </p>
             <ul className="space-y-3 text-lg text-neutralDark/80">
               <li>• Lower back takes over and gets painful</li>

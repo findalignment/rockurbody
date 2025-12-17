@@ -25,7 +25,7 @@ function AlignmentBasedStrengthTraining() {
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">The Problem with Traditional Strength Training</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              Most strength training focuses on moving weight. It doesn't care how you move it. If you can squat 200 pounds, great—even if your knees cave, your back rounds, and your body compensates everywhere to make it happen.
+              Most strength training focuses on moving weight. It doesn't care how you move it. If you can squat 200 pounds, great, even if your knees cave, your back rounds, and your body compensates everywhere to make it happen.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
               That's not strength. That's compensation masquerading as strength. And it creates problems: injuries, pain, movement restrictions, and patterns that break down over time.
@@ -108,7 +108,7 @@ function AlignmentBasedStrengthTraining() {
             <div className="space-y-6 mb-12">
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Foundation First</h3>
-                <p className="text-neutralDark/80">We establish proper alignment before adding load. Your body learns to organize itself correctly, then we build strength from that foundation. This means we might spend weeks on movement quality before touching a heavy weight—and that's exactly the point.</p>
+                <p className="text-neutralDark/80">We establish proper alignment before adding load. Your body learns to organize itself correctly, then we build strength from that foundation. This means we might spend weeks on movement quality before touching a heavy weight, and that's exactly the point.</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md">
                 <h3 className="text-xl font-semibold text-primary mb-3">Quality Over Quantity</h3>
@@ -128,8 +128,8 @@ function AlignmentBasedStrengthTraining() {
               <h3 className="text-2xl font-semibold text-primary mb-4">What a Session Looks Like</h3>
               <div className="space-y-4 text-neutralDark/80">
                 <p><strong className="text-primary">Assessment (5-10 minutes):</strong> We check in on how you're feeling, what's working, and what needs attention. We might reassess specific movement patterns to track progress.</p>
-                <p><strong className="text-primary">Movement Prep (10-15 minutes):</strong> We prep your body with targeted mobility work and activation exercises. This isn't generic stretching—it's specific prep for your alignment needs.</p>
-                <p><strong className="text-primary">Skill Work (15-20 minutes):</strong> We practice movement patterns with attention to alignment. This might be bodyweight squats, hinge patterns, pressing, pulling—whatever your body needs to learn or refine.</p>
+                <p><strong className="text-primary">Movement Prep (10-15 minutes):</strong> We prep your body with targeted mobility work and activation exercises. This isn't generic stretching; it's specific prep for your alignment needs.</p>
+                <p><strong className="text-primary">Skill Work (15-20 minutes):</strong> We practice movement patterns with attention to alignment. This might be bodyweight squats, hinge patterns, pressing, or pulling, whatever your body needs to learn or refine.</p>
                 <p><strong className="text-primary">Strength Work (20-25 minutes):</strong> Once your body is ready, we load the patterns. This could be kettlebells, barbells, dumbbells, or bodyweight progressions. The load serves the movement, not the other way around.</p>
                 <p><strong className="text-primary">Integration (5-10 minutes):</strong> We finish with movement that integrates what you've worked on. This helps your body remember the new patterns and carry them into daily life.</p>
               </div>
@@ -144,7 +144,7 @@ function AlignmentBasedStrengthTraining() {
               When you build strength from proper alignment, you're not just getting stronger. You're upgrading your body's operating system. The strength serves your movement, not the other way around.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              This approach prevents injuries, reduces pain, and creates strength that lasts. You're not just strong—you're strong in ways that support everything else you do.
+              This approach prevents injuries, reduces pain, and creates strength that lasts. You're not just strong; you're strong in ways that support everything else you do.
             </p>
             
             <div className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-xl p-8 mb-8">
@@ -156,7 +156,7 @@ function AlignmentBasedStrengthTraining() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-accent text-xl font-bold">→</span>
-                  <span><strong>Movement quality improves across the board.</strong> Better squat mechanics translate to better hiking, climbing, running—everything.</span>
+                  <span><strong>Movement quality improves across the board.</strong> Better squat mechanics translate to better hiking, climbing, running, everything.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-accent text-xl font-bold">→</span>

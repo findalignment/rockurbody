@@ -309,7 +309,7 @@ function Services() {
                 Personal Training & Movement Coaching in Santa Cruz
               </h2>
               <p className="text-lg text-neutralDark/80 leading-relaxed mb-6 text-center max-w-3xl mx-auto">
-                Looking for a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline font-semibold">personal trainer in Santa Cruz</Link> who combines structural integration with intelligent movement education? I work with clients throughout Santa Cruz County—from downtown to Westside, Capitola to Aptos—offering private one-on-one sessions at my studio or select outdoor locations.
+                Looking for a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline font-semibold">personal trainer in Santa Cruz</Link> who combines structural integration with intelligent movement education? I work with clients throughout Santa Cruz County, from downtown to Westside, Capitola to Aptos, offering private one-on-one sessions at my studio or select outdoor locations.
               </p>
               <p className="text-lg text-neutralDark/80 leading-relaxed mb-8 text-center max-w-3xl mx-auto">
                 Whether you need <Link to="/private-personal-training-santa-cruz" className="text-accent hover:underline">private personal training</Link>, <Link to="/movement-assessment-santa-cruz" className="text-accent hover:underline">movement assessment</Link>, <Link to="/posture-coaching-santa-cruz" className="text-accent hover:underline">posture coaching</Link>, or specialized support for active Santa Cruz lifestyles (surfing, trail running, climbing, cycling), we can work together to help you move better and feel better.

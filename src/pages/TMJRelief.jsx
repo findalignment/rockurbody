@@ -95,7 +95,7 @@ function TMJRelief() {
               <div className="border-l-4 border-accent pl-6">
                 <h3 className="font-semibold text-neutralDark mb-2">Neck & Shoulder Tension</h3>
                 <p className="text-neutralDark/80">
-                  Tight neck and shoulder muscles pull on your jaw. The same nerves that supply your jaw also supply your neck—tension in one area creates tension in the other.
+                  Tight neck and shoulder muscles pull on your jaw. The same nerves that supply your jaw also supply your neck, tension in one area creates tension in the other.
                 </p>
               </div>
 

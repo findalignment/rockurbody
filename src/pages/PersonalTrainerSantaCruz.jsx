@@ -291,7 +291,7 @@ function PersonalTrainerSantaCruz() {
                 <div className="text-accent text-2xl mt-1">🌊</div>
                 <div>
                   <strong className="text-primary block mb-2">Understanding the Active Santa Cruz Lifestyle</strong>
-                  <p>Santa Cruz isn't just another beach town. It's a hub for surfers, mountain bikers, trail runners, rock climbers, and outdoor enthusiasts. A local personal trainer understands the unique demands of this lifestyle—how surfing at Steamer Lane requires different shoulder mobility than desk work, or how trail running in Nisene Marks tests your ankles and balance differently than road running.</p>
+                  <p>Santa Cruz isn't just another beach town. It's a hub for surfers, mountain bikers, trail runners, rock climbers, and outdoor enthusiasts. A local personal trainer understands the unique demands of this lifestyle, how surfing at Steamer Lane requires different shoulder mobility than desk work, or how trail running in Nisene Marks tests your ankles and balance differently than road running.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -312,7 +312,7 @@ function PersonalTrainerSantaCruz() {
                 <div className="text-accent text-2xl mt-1">🌲</div>
                 <div>
                   <strong className="text-primary block mb-2">Community & Connection</strong>
-                  <p>Training locally means supporting your community and potentially training alongside others who share your values. You're not just a client number at a corporate gym chain—you're part of a local movement practice that values quality, sustainability, and the Santa Cruz way of life.</p>
+                  <p>Training locally means supporting your community and potentially training alongside others who share your values. You're not just a client number at a corporate gym chain, you're part of a local movement practice that values quality, sustainability, and the Santa Cruz way of life.</p>
                 </div>
               </div>
             </div>

@@ -102,7 +102,7 @@ function Approach() {
                 The body is a system
               </h3>
               <p className="text-lg text-neutralDark/80 leading-relaxed">
-                Pain in your knee might come from your hip. Shoulder issues might be about your ribcage. I look at the whole picture, not just where it hurts. Everything is connected through fascia—your body's connective tissue web.
+                Pain in your knee might come from your hip. Shoulder issues might be about your ribcage. I look at the whole picture, not just where it hurts. Everything is connected through fascia, your body's connective tissue web.
               </p>
             </div>
 
@@ -138,7 +138,7 @@ function Approach() {
                 You have to move it
               </h3>
               <p className="text-lg text-neutralDark/80 leading-relaxed">
-                I can release restrictions, but you have to integrate the change through movement. The goal isn't to make you dependent on bodywork—it's to teach you to move well on your own.
+                I can release restrictions, but you have to integrate the change through movement. The goal isn't to make you dependent on bodywork, it's to teach you to move well on your own.
               </p>
             </div>
           </div>

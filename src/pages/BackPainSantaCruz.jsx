@@ -73,7 +73,7 @@ function BackPainSantaCruz() {
               <p className="text-accent font-semibold">Sound familiar?</p>
             </div>
             <p className="text-xl text-neutralDark/80 leading-relaxed">
-              Here's why: Most treatments focus on your back. But your back pain often isn't actually a back problem—it's a whole-body compensation pattern that's been building for years.
+              Here's why: Most treatments focus on your back. But your back pain often isn't actually a back problem, it's a whole-body compensation pattern that's been building for years.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ function BackPainSantaCruz() {
             <div className="space-y-6 text-lg text-neutralDark/80">
               <div>
                 <strong className="text-neutralDark block mb-2">Your hips are stuck</strong>
-                Tight hip flexors and restricted hip mobility force your lower back to do work your hips should be doing. Every step, every sit-to-stand, every reach—your back compensates.
+                Tight hip flexors and restricted hip mobility force your lower back to do work your hips should be doing. Every step, every sit-to-stand, every reach, your back compensates.
               </div>
               <div>
                 <strong className="text-neutralDark block mb-2">Your core isn't working right</strong>

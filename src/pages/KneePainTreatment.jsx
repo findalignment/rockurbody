@@ -81,7 +81,7 @@ function KneePainTreatment() {
             </h2>
             
             <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
-              Your knee is a hinge joint—it wants to bend and straighten in one plane. But it's stuck between your hip (which rotates) and your ankle (which should be mobile but often isn't).
+              Your knee is a hinge joint, it wants to bend and straighten in one plane. But it's stuck between your hip (which rotates) and your ankle (which should be mobile but often isn't).
             </p>
 
             <p className="text-lg text-neutralDark/80 mb-6 leading-relaxed">
@@ -129,7 +129,7 @@ function KneePainTreatment() {
                   <strong>Symptoms:</strong> Sharp pain on outside of knee, especially with running or cycling
                 </p>
                 <p className="text-neutralDark/80">
-                  <strong>Real cause:</strong> Weak glutes and hip abductors create excessive friction where IT band crosses the knee. The IT band isn't the problem—it's the victim.
+                  <strong>Real cause:</strong> Weak glutes and hip abductors create excessive friction where IT band crosses the knee. The IT band isn't the problem, it's the victim.
                 </p>
               </div>
 
@@ -250,7 +250,7 @@ function KneePainTreatment() {
               For Santa Cruz Active People
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              Whether you're a runner dealing with IT band pain, a hiker with bad knees going downhill, a surfer with knee issues from pop-ups, or just someone who wants to go up stairs without pain—I help Santa Cruz residents address knee problems by addressing what's actually causing them.
+              Whether you're a runner dealing with IT band pain, a hiker with bad knees going downhill, a surfer with knee issues from pop-ups, or just someone who wants to go up stairs without pain, I help Santa Cruz residents address knee problems by addressing what's actually causing them.
             </p>
           </div>
 

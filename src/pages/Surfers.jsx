@@ -92,7 +92,7 @@ function Surfers() {
                   Address the Root Causes
                 </h3>
                 <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-                  Most surfer injuries aren't from one big wipeout—they're from cumulative stress and poor movement patterns. Through Structural Integration, I:
+                  Most surfer injuries aren't from one big wipeout, they're from cumulative stress and poor movement patterns. Through Structural Integration, I:
                 </p>
                 <ul className="space-y-2 text-lg text-neutralDark/80 ml-6">
                   <li>• Release fascial restrictions in shoulders, back, and hips</li>
@@ -183,7 +183,7 @@ function Surfers() {
             </h2>
             
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-              When your structure improves and movement patterns optimize, you don't just hurt less—you surf better:
+              When your structure improves and movement patterns optimize, you don't just hurt less, you surf better:
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">

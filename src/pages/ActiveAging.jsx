@@ -37,7 +37,7 @@ function ActiveAging() {
               Age is Just a Number. Movement is What Matters.
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              You're in your 50s, 60s, 70s, or beyond. You live in Santa Cruz because you love being active—hiking, gardening, playing with grandkids, maybe still surfing or cycling. But lately, your body isn't keeping up with your spirit.
+              You're in your 50s, 60s, 70s, or beyond. You live in Santa Cruz because you love being active, hiking, gardening, playing with grandkids, maybe still surfing or cycling. But lately, your body isn't keeping up with your spirit.
             </p>
             <ul className="space-y-3 text-lg text-neutralDark/80 mb-6">
               <li>• Getting up from a chair takes effort</li>
@@ -116,7 +116,7 @@ function ActiveAging() {
                   Maintain Your Independence
                 </h3>
                 <p className="text-lg text-neutralDark/80 mb-3">
-                  The goal isn't just pain relief—it's maintaining quality of life:
+                  The goal isn't just pain relief, it's maintaining quality of life:
                 </p>
                 <ul className="space-y-2 text-neutralDark/80 ml-6">
                   <li>• Continue doing activities you love</li>
@@ -204,7 +204,7 @@ function ActiveAging() {
               I work at your pace. Sessions are adapted to your needs and comfort level. The work is challenging but never painful. You're always in control.
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
-              My goal is to help you maintain independence, reduce pain, and keep doing what you love for as long as possible. You've earned the right to enjoy these years—let's make sure your body allows it.
+              My goal is to help you maintain independence, reduce pain, and keep doing what you love for as long as possible. You've earned the right to enjoy these years, let's make sure your body allows it.
             </p>
           </div>
 

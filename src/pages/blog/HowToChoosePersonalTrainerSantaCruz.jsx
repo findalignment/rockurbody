@@ -23,7 +23,7 @@ function HowToChoosePersonalTrainerSantaCruz() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-neutralDark/80 leading-relaxed mb-8">
-            Choosing a personal trainer is one of the most important health decisions you'll make. The right trainer can transform your life—helping you move better, feel stronger, and build habits that last decades. The wrong trainer wastes your time, money, and potentially injures you. With dozens of trainers in Santa Cruz, how do you choose?
+            Choosing a personal trainer is one of the most important health decisions you'll make. The right trainer can transform your life, helping you move better, feel stronger, and build habits that last decades. The wrong trainer wastes your time, money, and potentially injures you. With dozens of trainers in Santa Cruz, how do you choose?
           </p>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
@@ -172,7 +172,7 @@ function HowToChoosePersonalTrainerSantaCruz() {
           </div>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">
-            Step 6: The Trial Session—What to Watch For
+            Step 6: The Trial Session, What to Watch For
           </h2>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
@@ -231,7 +231,7 @@ function HowToChoosePersonalTrainerSantaCruz() {
           </div>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            The right trainer will check all these boxes. If someone checks most but not all, that's okay—perfection isn't the goal. But if you're missing multiple boxes, keep looking.
+            The right trainer will check all these boxes. If someone checks most but not all, that's okay, perfection isn't the goal. But if you're missing multiple boxes, keep looking.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">
