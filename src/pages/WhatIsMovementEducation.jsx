@@ -72,7 +72,7 @@ function WhatIsMovementEducation() {
                   Slow and Methodical
                 </h4>
                 <p className="text-neutralDark/80 leading-relaxed">
-                  We're not rushing through sets. We're exploring movement patterns, finding where you're compensating, and teaching your nervous system a better way. Speed comes later.precision comes first.
+                  We're not rushing through sets. We're exploring movement patterns, finding where you're compensating, and teaching your nervous system a better way. Speed comes later—precision comes first.
                 </p>
               </div>
 
@@ -81,7 +81,7 @@ function WhatIsMovementEducation() {
                   Practicing Great Movement
                 </h4>
                 <p className="text-neutralDark/80 leading-relaxed">
-                  Every rep is practice. You're not just building strength.you're building skill. Good movement is a learnable skill, and like any skill, it takes deliberate practice.
+                  Every rep is practice. You're not just building strength—you're building skill. Good movement is a learnable skill, and like any skill, it takes deliberate practice.
                 </p>
               </div>
 
@@ -123,7 +123,7 @@ function WhatIsMovementEducation() {
                 <span className="text-accent text-xl font-bold">→</span>
                 <div>
                   <strong className="text-neutralDark">How to find and use your core</strong>
-                  <p className="text-neutralDark/70 mt-1">Not the six-pack muscles.the deep stabilizers that actually support your spine and pelvis.</p>
+                  <p className="text-neutralDark/70 mt-1">Not the six-pack muscles—the deep stabilizers that actually support your spine and pelvis.</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

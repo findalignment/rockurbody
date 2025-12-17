@@ -37,7 +37,7 @@ function StructuralIntegrationVsChiropractic() {
               Same Goal, Different Paths
             </h2>
             <p className="text-xl text-neutralDark/80 leading-relaxed mb-6">
-              Both Structural Integration and chiropractic care aim to help you move better and feel better. But the approaches are fundamentally different.and understanding those differences helps you choose what's right for your situation.
+              Both Structural Integration and chiropractic care aim to help you move better and feel better. But the approaches are fundamentally different—and understanding those differences helps you choose what's right for your situation.
             </p>
             <p className="text-xl text-accent font-semibold">
               This isn't about one being "better." It's about understanding which approach serves your needs.
@@ -100,7 +100,7 @@ function StructuralIntegrationVsChiropractic() {
                   Chiropractic: Joint-Focused
                 </h3>
                 <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-                  Chiropractors work primarily with joints.especially the spine. They use adjustments (quick, controlled force) to restore proper joint movement and alignment.
+                  Chiropractors work primarily with joints—especially the spine. They use adjustments (quick, controlled force) to restore proper joint movement and alignment.
                 </p>
                 <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
                   <strong>The theory:</strong> When joints are misaligned or not moving properly, it affects the nervous system and creates pain/dysfunction. Restoring proper joint function improves nervous system communication.
@@ -115,7 +115,7 @@ function StructuralIntegrationVsChiropractic() {
                   Structural Integration: Fascia-Focused
                 </h3>
                 <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-                  Structural Integrators work with fascia.the connective tissue that wraps everything in your body. Through sustained manual pressure and movement education, we reorganize your structure.
+                  Structural Integrators work with fascia—the connective tissue that wraps everything in your body. Through sustained manual pressure and movement education, we reorganize your structure.
                 </p>
                 <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
                   <strong>The theory:</strong> Chronic pain and dysfunction come from fascial restrictions and poor movement patterns built up over years. To create lasting change, we need to address the whole system, not just individual joints.
@@ -192,7 +192,7 @@ function StructuralIntegrationVsChiropractic() {
                   Does Structural Integration involve "cracking" or adjustments?
                 </h3>
                 <p className="text-neutralDark/80">
-                  No. There are no quick, forceful movements. The work is slow, sustained pressure on fascia combined with movement. Sometimes joints will release or make sounds, but that's not the goal.it's a side effect of tissue releasing.
+                  No. There are no quick, forceful movements. The work is slow, sustained pressure on fascia combined with movement. Sometimes joints will release or make sounds, but that's not the goal—it's a side effect of tissue releasing.
                 </p>
               </div>
 
@@ -210,7 +210,7 @@ function StructuralIntegrationVsChiropractic() {
                   Why doesn't my chiropractor work on fascia?
                 </h3>
                 <p className="text-neutralDark/80">
-                  Different training and philosophy. Chiropractors specialize in spinal manipulation and joint function. Structural Integrators specialize in fascial work and whole-body structure. Both are valuable.just different approaches.
+                  Different training and philosophy. Chiropractors specialize in spinal manipulation and joint function. Structural Integrators specialize in fascial work and whole-body structure. Both are valuable—just different approaches.
                 </p>
               </div>
             </div>

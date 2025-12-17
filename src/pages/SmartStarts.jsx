@@ -42,7 +42,7 @@ function SmartStarts() {
       breakdown: 'Targeted hip work',
       duration: 'Focused sessions',
       totalSessions: 4,
-      description: 'Your hips carry everything.your posture, your gait, your story. When they\'re stuck, everything else compensates. This series gets them moving again.',
+      description: 'Your hips carry everything—your posture, your gait, your story. When they\'re stuck, everything else compensates. This series gets them moving again.',
       ideal: [
         'Hip pain or tightness affecting your life',
         'Limited mobility in your lower body',
@@ -67,7 +67,7 @@ function SmartStarts() {
       breakdown: '12 SI (60 min) + 12 Movement (60 min)',
       duration: '60 minutes each',
       totalSessions: 24,
-      description: 'This isn\'t a tune-up.it\'s a complete rebuild. For when you\'re ready to fundamentally change how your body works, feels, and moves through life.',
+      description: 'This isn\'t a tune-up—it\'s a complete rebuild. For when you\'re ready to fundamentally change how your body works, feels, and moves through life.',
       ideal: [
         'Chronic issues that won\'t resolve with other approaches',
         'Ready for significant, lasting change',
@@ -112,7 +112,7 @@ function SmartStarts() {
             You're not alone.
           </p>
           <p className="text-lg text-neutralDark/80 leading-relaxed text-center">
-            Most people come to this work because something isn't working anymore. Maybe it's pain that won't quit, movement that feels stuck, or just a sense that your body could feel better. Whatever brought you here, these three programs are designed as clear starting points.each one addressing different needs, timelines, and goals.
+            Most people come to this work because something isn't working anymore. Maybe it's pain that won't quit, movement that feels stuck, or just a sense that your body could feel better. Whatever brought you here, these three programs are designed as clear starting points—each one addressing different needs, timelines, and goals.
           </p>
         </div>
       </div>
@@ -484,7 +484,7 @@ function SmartStarts() {
             Why Choose Movement Education & Structural Integration in Santa Cruz?
           </h3>
           <p className="text-base text-neutralDark/70 leading-relaxed text-center">
-            Whether you're seeking relief from chronic pain, improved athletic performance, or simply want to feel more at home in your body, these programs combine the best of hands-on <strong>structural integration</strong> and intelligent <strong>movement education</strong>. Located in Santa Cruz, I work with clients throughout the Bay Area who are ready to invest in lasting change.not quick solutions.
+            Whether you're seeking relief from chronic pain, improved athletic performance, or simply want to feel more at home in your body, these programs combine the best of hands-on <strong>structural integration</strong> and intelligent <strong>movement education</strong>. Located in Santa Cruz, I work with clients throughout the Bay Area who are ready to invest in lasting change—not quick solutions.
           </p>
         </div>
 
