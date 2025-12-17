@@ -162,7 +162,6 @@ const IntegratingStructureAndMovement = lazy(() => import('./pages/blog/Integrat
 const PhoneReshapingSkeleton = lazy(() => import('./pages/blog/PhoneReshapingSkeleton'));
 const TechChangesPosture = lazy(() => import('./pages/blog/TechChangesPosture'));
 const DiscomfortBecomesNormal = lazy(() => import('./pages/blog/DiscomfortBecomesNormal'));
-const Top5PersonalTrainersSantaCruz = lazy(() => import('./pages/blog/Top5PersonalTrainersSantaCruz'));
 const PersonalTrainingVsGroupClassesSantaCruz = lazy(() => import('./pages/blog/PersonalTrainingVsGroupClassesSantaCruz'));
 const HowToChoosePersonalTrainerSantaCruz = lazy(() => import('./pages/blog/HowToChoosePersonalTrainerSantaCruz'));
 const BestOutdoorTrainingSpotsSantaCruz = lazy(() => import('./pages/blog/BestOutdoorTrainingSpotsSantaCruz'));
@@ -499,7 +498,6 @@ function AppRoutes() {
         <Route path="/blog/phone-reshaping-skeleton" element={<PhoneReshapingSkeleton />} />
         <Route path="/blog/tech-changes-posture" element={<TechChangesPosture />} />
         <Route path="/blog/discomfort-becomes-normal" element={<DiscomfortBecomesNormal />} />
-        <Route path="/blog/top-5-personal-trainers-santa-cruz" element={<Top5PersonalTrainersSantaCruz />} />
         <Route path="/blog/personal-training-vs-group-classes-santa-cruz" element={<PersonalTrainingVsGroupClassesSantaCruz />} />
         <Route path="/blog/how-to-choose-personal-trainer-santa-cruz" element={<HowToChoosePersonalTrainerSantaCruz />} />
         <Route path="/blog/best-outdoor-training-spots-santa-cruz" element={<BestOutdoorTrainingSpotsSantaCruz />} />

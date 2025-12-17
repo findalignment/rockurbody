@@ -37,14 +37,6 @@ function BlogIndex() {
       path: '/blog/personal-training-vs-group-classes-santa-cruz'
     },
     {
-      id: 'top-5-personal-trainers-santa-cruz',
-      title: 'Top 5 Personal Trainers in Santa Cruz (2025): What Makes Them Great',
-      subtitle: 'Finding the right trainer for your goals in Santa Cruz\'s diverse fitness community',
-      date: 'December 16, 2025',
-      excerpt: "Discover the best personal trainers in Santa Cruz. From structural integration to athletic performance, find the right trainer for your unique needs and goals.",
-      path: '/blog/top-5-personal-trainers-santa-cruz'
-    },
-    {
       id: 'discomfort-becomes-normal',
       title: 'When Discomfort Becomes Normal: The Hidden Tension We Carry',
       subtitle: 'How We Learn to Live with Misalignment Without Even Noticing',
