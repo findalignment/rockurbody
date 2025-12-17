@@ -50,7 +50,7 @@ function ChronicPainRelief() {
       />
       
       <PageHero 
-        imageSrc="/approach-hero.jpg"
+        imageSrc="/chronic-pain-hero.jpg"
         title="Chronic Pain Relief That Lasts"
         subtitle="Address the root cause, not just symptoms"
         alt="Chronic pain relief using structural integration to address root causes of persistent pain in Santa Cruz"

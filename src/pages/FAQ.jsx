@@ -155,7 +155,7 @@ function FAQ() {
         structuredData={getFAQSchema(flattenedFAQs)}
       />
       <PageHero 
-        imageSrc="/services-hero.jpg"
+        imageSrc="/faq-hero.jpg"
         title="Frequently Asked Questions"
         subtitle="Everything you need to know before you start"
         alt="Frequently asked questions about structural integration and movement education services in Santa Cruz"
