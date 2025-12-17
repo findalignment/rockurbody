@@ -43,62 +43,62 @@ function PainReliefHub() {
   const painConditions = [
     {
       title: 'Back Pain Relief',
-      url: '/services/back-pain-santa-cruz',
+      url: '/back-pain-santa-cruz',
       description: 'Comprehensive solutions for lower back pain, upper back tension, and chronic back discomfort.'
     },
     {
       title: 'Neck Pain Treatment',
-      url: '/services/neck-pain-relief',
+      url: '/neck-pain-relief',
       description: 'Release chronic neck tension, restore mobility, and eliminate persistent neck pain.'
     },
     {
       title: 'Shoulder Pain Relief',
-      url: '/services/shoulder-pain-relief',
+      url: '/shoulder-pain-relief',
       description: 'Address shoulder impingement, frozen shoulder, and chronic shoulder discomfort.'
     },
     {
       title: 'Hip Pain Treatment',
-      url: '/services/hip-pain-treatment',
+      url: '/hip-pain-treatment',
       description: 'Resolve hip impingement, restore natural hip mobility, and eliminate hip discomfort.'
     },
     {
       title: 'Sciatica Relief',
-      url: '/services/sciatica-relief',
+      url: '/sciatica-relief',
       description: 'Target the root causes of sciatic nerve pain and restore pain-free movement.'
     },
     {
       title: 'Knee Pain Treatment',
-      url: '/services/knee-pain-treatment',
+      url: '/knee-pain-treatment',
       description: 'Address knee tracking issues, patellar pain, and chronic knee discomfort.'
     },
     {
       title: 'Chronic Pain Relief',
-      url: '/services/chronic-pain-relief',
+      url: '/chronic-pain-relief',
       description: 'Long-term solutions for persistent pain patterns throughout the body.'
     },
     {
       title: 'TMJ Relief',
-      url: '/services/tmj-relief',
+      url: '/tmj-relief',
       description: 'Release jaw tension, improve bite alignment, and eliminate TMJ dysfunction.'
     },
     {
       title: 'Plantar Fasciitis',
-      url: '/services/plantar-fasciitis',
+      url: '/plantar-fasciitis',
       description: 'Resolve heel pain and restore natural foot function from the ground up.'
     },
     {
       title: 'Headache & Migraine Relief',
-      url: '/services/headache-migraine-relief',
+      url: '/headache-migraine-relief',
       description: 'Address structural and fascial contributions to chronic headaches and migraines.'
     },
     {
       title: 'Bunion & Foot Pain',
-      url: '/services/bunion-foot-pain',
+      url: '/bunion-foot-pain',
       description: 'Improve foot alignment and reduce pain from bunions and foot dysfunction.'
     },
     {
       title: 'Thoracic Outlet Syndrome',
-      url: '/services/thoracic-outlet-syndrome',
+      url: '/thoracic-outlet-syndrome',
       description: 'Release compression affecting nerves and blood vessels in the shoulder girdle.'
     }
   ];

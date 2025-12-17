@@ -43,62 +43,62 @@ function InjuryRecoveryHub() {
   const injuryServices = [
     {
       title: 'Injury Recovery Services',
-      url: '/services/injury-recovery',
+      url: '/injury-recovery',
       description: 'Comprehensive approach to recovering from injuries and preventing recurrence.'
     },
     {
       title: 'Rotator Cuff Injury',
-      url: '/services/rotator-cuff-injury',
+      url: '/rotator-cuff-injury',
       description: 'Restore shoulder function and eliminate pain from rotator cuff issues.'
     },
     {
       title: 'Frozen Shoulder',
-      url: '/services/frozen-shoulder',
+      url: '/frozen-shoulder',
       description: 'Release adhesive capsulitis and restore natural shoulder mobility.'
     },
     {
       title: 'IT Band Syndrome',
-      url: '/services/it-band-syndrome',
+      url: '/it-band-syndrome',
       description: 'Address the true causes of IT band pain beyond the band itself.'
     },
     {
       title: 'Achilles Tendonitis',
-      url: '/services/achilles-tendonitis',
+      url: '/achilles-tendonitis',
       description: 'Resolve Achilles pain and restore healthy tendon function.'
     },
     {
       title: 'Whiplash Recovery',
-      url: '/services/whiplash-recovery',
+      url: '/whiplash-recovery',
       description: 'Release trauma patterns and restore neck function after whiplash.'
     },
     {
       title: 'Plantar Fasciitis',
-      url: '/services/plantar-fasciitis',
+      url: '/plantar-fasciitis',
       description: 'Eliminate heel pain by addressing foot structure and mechanics.'
     },
     {
       title: 'Sciatica Relief',
-      url: '/services/sciatica-relief',
+      url: '/sciatica-relief',
       description: 'Get to the root cause of sciatic nerve compression and pain.'
     },
     {
       title: 'Sports Injury Prevention',
-      url: '/services/sports-injury-prevention',
+      url: '/sports-injury-prevention',
       description: 'Build resilience and prevent future injuries through better structure.'
     },
     {
       title: 'Fascial Release',
-      url: '/services/fascial-release',
+      url: '/fascial-release',
       description: 'Release scar tissue and restrictions from old injuries.'
     },
     {
       title: 'Movement Screening',
-      url: '/services/movement-screening',
+      url: '/movement-screening',
       description: 'Identify movement compensations and injury risk factors.'
     },
     {
       title: 'Back Pain Relief',
-      url: '/services/back-pain-santa-cruz',
+      url: '/back-pain-santa-cruz',
       description: 'Address structural causes of back pain for lasting relief.'
     }
   ];

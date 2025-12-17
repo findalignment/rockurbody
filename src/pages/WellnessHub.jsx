@@ -43,62 +43,62 @@ function WellnessHub() {
   const wellnessServices = [
     {
       title: 'Active Aging',
-      url: '/services/active-aging',
+      url: '/active-aging',
       description: 'Stay strong, mobile, and independent throughout your later years.'
     },
     {
       title: 'Desk Worker Wellness',
-      url: '/services/desk-worker-wellness',
+      url: '/desk-worker-wellness',
       description: 'Counter the effects of prolonged sitting and screen time on your body.'
     },
     {
       title: 'Pregnancy & Postpartum',
-      url: '/services/pregnancy-postpartum',
+      url: '/pregnancy-postpartum',
       description: 'Support your body through pregnancy and recover your strength postpartum.'
     },
     {
       title: 'Stress & Anxiety Relief',
-      url: '/services/stress-anxiety-relief',
+      url: '/stress-anxiety-relief',
       description: 'Release stored tension and restore nervous system balance.'
     },
     {
       title: 'Posture Correction',
-      url: '/services/posture-correction',
+      url: '/posture-correction',
       description: 'Develop natural, effortless posture that supports long-term health.'
     },
     {
       title: 'Balance Training',
-      url: '/services/balance-training',
+      url: '/balance-training',
       description: 'Improve stability and reduce fall risk at any age.'
     },
     {
       title: 'Mobility Training',
-      url: '/services/mobility-training',
+      url: '/mobility-training',
       description: 'Maintain and improve range of motion for lifelong movement capacity.'
     },
     {
       title: 'Core Strengthening',
-      url: '/services/core-strengthening',
+      url: '/core-strengthening',
       description: 'Build functional core strength that protects your spine and supports daily activities.'
     },
     {
       title: 'Breathing & Core Training',
-      url: '/services/breathing-core',
+      url: '/breathing-and-core',
       description: 'Master breath mechanics for stress management and optimal function.'
     },
     {
       title: 'Headache & Migraine Relief',
-      url: '/services/headache-migraine-relief',
+      url: '/headache-migraine-relief',
       description: 'Address structural contributions to chronic headaches and migraines.'
     },
     {
       title: 'Movement Screening',
-      url: '/services/movement-screening',
+      url: '/movement-screening',
       description: 'Proactive assessment to identify and address issues before they become problems.'
     },
     {
       title: 'Sports Injury Prevention',
-      url: '/services/sports-injury-prevention',
+      url: '/sports-injury-prevention',
       description: 'Stay healthy and active in your sport with preventive structural work.'
     }
   ];

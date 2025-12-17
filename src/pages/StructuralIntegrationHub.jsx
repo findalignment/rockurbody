@@ -43,27 +43,27 @@ function StructuralIntegrationHub() {
   const siServices = [
     {
       title: 'Fascial Release',
-      url: '/services/fascial-release',
+      url: '/fascial-release',
       description: 'Release restrictions in the fascial network to restore natural movement and reduce pain.'
     },
     {
       title: 'Posture Correction',
-      url: '/services/posture-correction',
+      url: '/posture-correction',
       description: 'Realign your structure for effortless, sustainable posture.'
     },
     {
       title: 'Scoliosis Treatment',
-      url: '/services/scoliosis-treatment',
+      url: '/scoliosis-treatment',
       description: 'Address spinal curvature and asymmetry through structural work.'
     },
     {
       title: 'Chronic Pain Relief',
-      url: '/services/chronic-pain-relief',
+      url: '/chronic-pain-relief',
       description: 'Break free from persistent pain patterns through structural change.'
     },
     {
       title: 'Injury Recovery Services',
-      url: '/services/injury-recovery',
+      url: '/injury-recovery',
       description: 'Restore function and prevent re-injury with structural integration.'
     },
     {
@@ -88,7 +88,7 @@ function StructuralIntegrationHub() {
     },
     {
       title: 'Stress & Anxiety Relief',
-      url: '/services/stress-anxiety-relief',
+      url: '/stress-anxiety-relief',
       description: 'Release stored tension and restore nervous system regulation.'
     }
   ];

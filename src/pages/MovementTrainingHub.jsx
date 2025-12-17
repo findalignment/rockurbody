@@ -43,67 +43,67 @@ function MovementTrainingHub() {
   const movementServices = [
     {
       title: 'Mobility Training',
-      url: '/services/mobility-training',
+      url: '/mobility-training',
       description: 'Restore natural range of motion and move with ease in all directions.'
     },
     {
       title: 'Balance Training',
-      url: '/services/balance-training',
+      url: '/balance-training',
       description: 'Improve stability, coordination, and confidence in your movement.'
     },
     {
       title: 'Core Strengthening',
-      url: '/services/core-strengthening',
+      url: '/core-strengthening',
       description: 'Build functional core strength that supports every movement you make.'
     },
     {
       title: 'Breathing & Core Training',
-      url: '/services/breathing-core',
+      url: '/breathing-and-core',
       description: 'Master breath mechanics and integrate breathing with core function.'
     },
     {
       title: 'Posture Correction',
-      url: '/services/posture-correction',
+      url: '/posture-correction',
       description: 'Develop natural, effortless posture that supports your structure.'
     },
     {
       title: 'Movement Screening',
-      url: '/services/movement-screening',
+      url: '/movement-screening',
       description: 'Comprehensive assessment to identify movement limitations and asymmetries.'
     },
     {
       title: 'Active Aging',
-      url: '/services/active-aging',
+      url: '/active-aging',
       description: 'Stay strong, mobile, and independent as you age gracefully.'
     },
     {
       title: 'Desk Worker Wellness',
-      url: '/services/desk-worker-wellness',
+      url: '/desk-worker-wellness',
       description: 'Counter the effects of prolonged sitting and screen time.'
     },
     {
       title: 'Athletic Performance',
-      url: '/services/athletic-performance',
+      url: '/athletic-performance',
       description: 'Enhance power, efficiency, and resilience for any sport.'
     },
     {
       title: 'Sports Injury Prevention',
-      url: '/services/sports-injury-prevention',
+      url: '/sports-injury-prevention',
       description: 'Build resilience and reduce injury risk through better movement.'
     },
     {
       title: 'Golf Performance',
-      url: '/services/golf-performance',
+      url: '/golf-performance',
       description: 'Improve your swing mechanics, power, and consistency.'
     },
     {
       title: 'Climbers',
-      url: '/services/climbers',
+      url: '/climbers',
       description: 'Optimize movement efficiency and prevent climbing-specific injuries.'
     },
     {
       title: 'Cyclists & Runners',
-      url: '/services/cyclists-runners',
+      url: '/cyclists-and-runners',
       description: 'Improve biomechanics and endurance for cycling and running.'
     }
   ];
