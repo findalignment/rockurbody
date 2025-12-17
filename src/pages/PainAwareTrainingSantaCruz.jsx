@@ -218,7 +218,7 @@ function PainAwareTrainingSantaCruz() {
 
             <div className="bg-accent/10 rounded-xl p-6 border-l-4 border-accent">
               <p className="text-neutralDark/80 leading-relaxed">
-                <strong className="text-primary">Specialized Expertise for Santa Cruz:</strong> With a background in Structural Integration (500+ hours of training) and 15+ years of experience working with chronic pain and movement restrictions, I understand how to work with bodies that hurt. You don't have to choose between training and managing pain you can do both.
+                <strong className="text-primary">Specialized Expertise for Santa Cruz:</strong> With a background in Structural Integration (500+ hours of training) and 12+ years of experience working with chronic pain and movement restrictions, I understand how to work with bodies that hurt. You don't have to choose between training and managing pain you can do both.
               </p>
             </div>
           </div>

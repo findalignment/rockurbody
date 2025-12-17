@@ -12,7 +12,7 @@ function ComparisonTable() {
     },
     {
       category: "Trainer Background",
-      rock: "Certified Structural Integration Practitioner (500+ hours), 15+ years experience, multiple certifications",
+      rock: "Certified Structural Integration Practitioner (500+ hours), 12+ years experience, multiple certifications",
       bigBox: "Weekend certification, often rotating staff"
     },
     {

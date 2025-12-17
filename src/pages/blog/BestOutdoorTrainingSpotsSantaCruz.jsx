@@ -23,7 +23,7 @@ function BestOutdoorTrainingSpotsSantaCruz() {
       <article className="max-w-4xl mx-auto px-6 py-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-neutralDark/80 leading-relaxed mb-8">
-            Santa Cruz is paradise for outdoor training. While most of California stares at gym walls, we get to train with ocean breezes, redwood forests, and year-round sunshine. As a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link>, I've spent 15+ years exploring the best outdoor training locations. Here's your insider guide.
+            Santa Cruz is paradise for outdoor training. While most of California stares at gym walls, we get to train with ocean breezes, redwood forests, and year-round sunshine. As a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link>, I've spent 12+ years exploring the best outdoor training locations. Here's your insider guide.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">

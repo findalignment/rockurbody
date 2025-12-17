@@ -27,7 +27,7 @@ function SantaCruzPersonalTrainingPrices2025() {
           </p>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            As a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link> for 15+ years, I'll give you the full breakdown—from budget options to premium services—and help you understand what you're actually paying for.
+            As a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link> for 12+ years, I'll give you the full breakdown—from budget options to premium services—and help you understand what you're actually paying for.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">
@@ -56,7 +56,7 @@ function SantaCruzPersonalTrainingPrices2025() {
 
           <h3 className="text-2xl font-semibold text-primary mb-4">1. Trainer Experience & Credentials</h3>
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-6">
-            A trainer fresh out of certification school charging $60/session is very different from someone with 15 years experience and specialized certifications charging $150/session. Experience isn't just about years—it's about results, knowledge depth, and problem-solving ability.
+            A trainer fresh out of certification school charging $60/session is very different from someone with 12 years experience and specialized certifications charging $150/session. Experience isn't just about years—it's about results, knowledge depth, and problem-solving ability.
           </p>
 
           <div className="bg-neutralLight rounded-xl p-6 mb-8">
@@ -260,7 +260,7 @@ function SantaCruzPersonalTrainingPrices2025() {
           </div>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            My rates are on the higher end because I combine 15+ years of experience, structural integration certification (500+ training hours), and specialized expertise in pain management and movement optimization. You're not just paying for a workout—you're paying for deep bodywork knowledge and movement education.
+            My rates are on the higher end because I combine 12+ years of experience, structural integration certification (500+ training hours), and specialized expertise in pain management and movement optimization. You're not just paying for a workout—you're paying for deep bodywork knowledge and movement education.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">

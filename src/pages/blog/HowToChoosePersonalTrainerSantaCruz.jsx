@@ -27,7 +27,7 @@ function HowToChoosePersonalTrainerSantaCruz() {
           </p>
 
           <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-            As a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link> with 15+ years of experience, I've seen what works (and what doesn't). This guide will help you make an informed decision.
+            As a <Link to="/personal-trainer-santa-cruz" className="text-accent hover:underline">personal trainer in Santa Cruz</Link> with 12+ years of experience, I've seen what works (and what doesn't). This guide will help you make an informed decision.
           </p>
 
           <h2 className="text-3xl font-heading text-primary mt-12 mb-6">
@@ -246,7 +246,7 @@ function HowToChoosePersonalTrainerSantaCruz() {
             <li>• <strong>Specialization:</strong> Structural integration + movement education for lasting change</li>
             <li>• <strong>Best for:</strong> People with chronic pain, movement restrictions, or who want to understand their body deeply</li>
             <li>• <strong>Philosophy:</strong> Train for longevity, address root causes, build movement competence</li>
-            <li>• <strong>Credentials:</strong> Anatomy Trains SI (500+ hours), NASM-CPT, MovNat L2, 15+ years</li>
+            <li>• <strong>Credentials:</strong> Anatomy Trains SI (500+ hours), NASM-CPT, MovNat L2, 12+ years</li>
             <li>• <strong>Environment:</strong> Private studio in Santa Cruz, select outdoor locations</li>
           </ul>
 

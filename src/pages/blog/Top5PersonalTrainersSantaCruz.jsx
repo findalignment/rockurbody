@@ -58,7 +58,7 @@ function Top5PersonalTrainersSantaCruz() {
               <strong className="text-primary">Best For:</strong> People dealing with chronic pain, movement restrictions, posture issues, or those who want to understand WHY their body moves the way it does
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              <strong className="text-primary">Credentials:</strong> Certified Anatomy Trains Structural Integrator (500+ hours), NASM Personal Trainer, MovNat Level 2, 15+ years experience
+              <strong className="text-primary">Credentials:</strong> Certified Anatomy Trains Structural Integrator (500+ hours), NASM Personal Trainer, MovNat Level 2, 12+ years experience
             </p>
             <p className="text-lg text-neutralDark/80 leading-relaxed">
               <strong className="text-primary">What Makes Them Great:</strong> Rock doesn't just train you—he educates you about your body's patterns and restrictions. Sessions combine hands-on bodywork with movement coaching, addressing both structure and function. Ideal for people who've "tried everything" or want to train for longevity, not just aesthetics.
