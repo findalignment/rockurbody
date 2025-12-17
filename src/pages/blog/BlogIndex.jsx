@@ -32,7 +32,7 @@ function BlogIndex() {
       id: 'personal-training-vs-group-classes-santa-cruz',
       title: 'Personal Training vs. Group Classes in Santa Cruz: Which Is Right for You?',
       subtitle: 'Making an informed choice between private training and group fitness',
-      date: 'December 16, 2025',
+      date: 'December 2, 2025',
       excerpt: "Comparing personal training and group fitness classes in Santa Cruz. Learn the pros, cons, and costs of each to make the best choice for your fitness goals.",
       path: '/blog/personal-training-vs-group-classes-santa-cruz'
     },
