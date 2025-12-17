@@ -21,7 +21,7 @@ function PhoneReshapingSkeleton() {
       />
 
       <article className="max-w-4xl mx-auto px-6 py-16">
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none text-neutralDark/80 leading-relaxed">
           <p className="text-xl text-neutralDark/80 leading-relaxed mb-8">
             Let me tell you about the moment I realized technology was literally changing people's bodies.
           </p>
@@ -98,7 +98,7 @@ function PhoneReshapingSkeleton() {
             Let's talk numbers for a second, because this isn't just about individual bodies. It's an epidemic.
           </p>
 
-          <ul className="space-y-2 my-6">
+          <ul className="list-disc list-inside space-y-3 my-8 text-neutralDark/80">
             <li>Musculoskeletal disorders cost employers $20+ billion per year</li>
             <li>94.3% of computer users report pain in one or more body parts</li>
             <li>Extended sitting significantly harms even young, active adults, increasing cholesterol ratios and BMI after just 8 hours a day (and current exercise guidelines aren't enough to offset it)</li>
@@ -174,7 +174,7 @@ function PhoneReshapingSkeleton() {
             Smart technology could facilitate this. Imagine:
           </p>
 
-          <ul className="space-y-2 my-6">
+          <ul className="list-disc list-inside space-y-3 my-8 text-neutralDark/80">
             <li>Wearables that give you real-time biofeedback on postural patterns (not just "sit up straight" alerts, but nuanced information about how your fascial system is loading)</li>
             <li>Interfaces that incorporate therapeutic movement breaks based on fascial training principles</li>
             <li>Devices that progressively encourage healthier patterns as your body adapts, like a physical therapist built into your workstation</li>
@@ -264,7 +264,7 @@ function PhoneReshapingSkeleton() {
             You can make changes right now:
           </p>
 
-          <ul className="space-y-2 my-6">
+          <ul className="list-disc list-inside space-y-3 my-8 text-neutralDark/80">
             <li>Bring your devices up to eye level instead of bringing your head down to them</li>
             <li>Build in micro-movements throughout your day (change positions every 15-20 minutes)</li>
             <li>Do fascial release work to restore glide to stuck tissues</li>
