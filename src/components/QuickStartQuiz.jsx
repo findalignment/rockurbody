@@ -5,71 +5,41 @@ import Button from './Button';
 function QuickStartQuiz() {
   const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState({
-    mainGoal: null,
-    specific: null,
+    whoYouAre: null,
+    whatYouNeed: null,
+    painLevel: null,
   });
   const navigate = useNavigate();
 
-  const getSecondQuestion = () => {
-    switch (answers.mainGoal) {
-      case 'performance':
-        return {
-          id: 'specific',
-          question: 'What type of performance?',
-          options: [
-            { value: 'sports', label: 'Sports Performance', icon: '⚡' },
-            { value: 'injury-prevention', label: 'Injury Prevention', icon: '🛡️' },
-            { value: 'longevity', label: 'Train for Longevity', icon: '🌱' },
-            { value: 'specific-sport', label: 'Specific Sport', icon: '🎯' },
-          ],
-        };
-      case 'pain':
-        return {
-          id: 'specific',
-          question: 'What describes your situation?',
-          options: [
-            { value: 'chronic', label: 'Chronic Pain', icon: '🩹' },
-            { value: 'recent', label: 'Recent Injury', icon: '⚠️' },
-            { value: 'assessment', label: 'Full Assessment', icon: '🔍' },
-            { value: 'prevention', label: 'Prevent Issues', icon: '✅' },
-          ],
-        };
-      case 'posture':
-        return {
-          id: 'specific',
-          question: 'What best describes you?',
-          options: [
-            { value: 'desk-worker', label: 'Desk Worker', icon: '💻' },
-            { value: 'alignment', label: 'General Alignment', icon: '📐' },
-            { value: 'structural', label: 'Structural Work', icon: '🏗️' },
-            { value: 'movement', label: 'Movement Patterns', icon: '🤸' },
-          ],
-        };
-      case 'bodywork':
-        return {
-          id: 'specific',
-          question: 'What interests you most?',
-          options: [
-            { value: 'structural-integration', label: 'Structural Integration', icon: '🏗️' },
-            { value: 'fascia', label: 'Fascial Release', icon: '🌊' },
-            { value: 'assessment', label: 'Body Systems Check', icon: '🔍' },
-            { value: 'education', label: 'Movement Education', icon: '📚' },
-          ],
-        };
-      default:
-        return null;
-    }
-  };
-
   const questions = [
     {
-      id: 'mainGoal',
-      question: 'What brings you here?',
+      id: 'whoYouAre',
+      question: 'Who are you?',
       options: [
-        { value: 'performance', label: 'Athletic Performance', icon: '🏃' },
-        { value: 'pain', label: 'Pain Relief', icon: '🩹' },
-        { value: 'posture', label: 'Posture Improvement', icon: '📐' },
-        { value: 'bodywork', label: 'Bodywork/Fascia', icon: '🌊' },
+        { value: 'desk-worker', label: 'Desk Worker', icon: '💻' },
+        { value: 'athlete', label: 'Active Athlete', icon: '🏃' },
+        { value: 'active-adult', label: 'Active Adult', icon: '🚶' },
+        { value: 'senior', label: 'Active Senior', icon: '🌱' },
+      ],
+    },
+    {
+      id: 'whatYouNeed',
+      question: 'What do you need?',
+      options: [
+        { value: 'pain-relief', label: 'Pain Relief', icon: '🩹' },
+        { value: 'performance', label: 'Better Performance', icon: '⚡' },
+        { value: 'posture', label: 'Posture Help', icon: '📐' },
+        { value: 'movement', label: 'Movement Training', icon: '🤸' },
+      ],
+    },
+    {
+      id: 'painLevel',
+      question: 'Pain level?',
+      options: [
+        { value: 'none', label: 'No pain', icon: '✅' },
+        { value: 'mild', label: 'Mild discomfort', icon: '😐' },
+        { value: 'moderate', label: 'Moderate pain', icon: '😣' },
+        { value: 'severe', label: 'Severe pain', icon: '😰' },
       ],
     },
   ];
@@ -80,66 +50,58 @@ function QuickStartQuiz() {
       [questionId]: value,
     }));
 
-    if (step === 1) {
-      setTimeout(() => setStep(2), 300);
+    if (step < questions.length) {
+      setTimeout(() => setStep(step + 1), 300);
     } else {
-      setTimeout(() => handleSubmit(value), 300);
+      setTimeout(() => handleSubmit({ ...answers, [questionId]: value }), 300);
     }
   };
 
-  const handleSubmit = (specificValue) => {
-    const { mainGoal } = answers;
-    const specific = specificValue || answers.specific;
+  const handleSubmit = (finalAnswers) => {
+    const { whoYouAre, whatYouNeed, painLevel } = finalAnswers;
     let route = '/services'; // default
 
-    // Route based on main goal and specific answer
-    if (mainGoal === 'performance') {
-      if (specific === 'sports') {
-        route = '/sports-performance-hub';
-      } else if (specific === 'injury-prevention') {
-        route = '/injury-recovery-hub';
-      } else if (specific === 'longevity') {
-        route = '/train-for-longevity';
-      } else if (specific === 'specific-sport') {
-        route = '/sports-performance-hub';
-      }
-    } else if (mainGoal === 'pain') {
-      if (specific === 'chronic') {
+    // If severe pain, prioritize assessment
+    if (painLevel === 'severe') {
+      route = '/body-systems-check';
+    }
+    // Otherwise, route based on who they are and what they need
+    else if (whatYouNeed === 'pain-relief') {
+      if (painLevel === 'none') {
+        route = '/injury-recovery-hub'; // prevention
+      } else {
         route = '/pain-relief-hub';
-      } else if (specific === 'recent') {
-        route = '/injury-recovery-hub';
-      } else if (specific === 'assessment') {
-        route = '/body-systems-check';
-      } else if (specific === 'prevention') {
-        route = '/injury-recovery-hub';
       }
-    } else if (mainGoal === 'posture') {
-      if (specific === 'desk-worker') {
-        route = '/desk-worker-wellness';
-      } else if (specific === 'alignment') {
-        route = '/posture-correction';
-      } else if (specific === 'structural') {
-        route = '/structural-integration-hub';
-      } else if (specific === 'movement') {
+    } else if (whatYouNeed === 'performance') {
+      if (whoYouAre === 'athlete') {
+        route = '/sports-performance-hub';
+      } else if (whoYouAre === 'senior') {
+        route = '/train-for-longevity';
+      } else {
         route = '/movement-coaching-santa-cruz';
       }
-    } else if (mainGoal === 'bodywork') {
-      if (specific === 'structural-integration') {
-        route = '/structural-integration-hub';
-      } else if (specific === 'fascia') {
-        route = '/fascial-release';
-      } else if (specific === 'assessment') {
-        route = '/body-systems-check';
-      } else if (specific === 'education') {
-        route = '/what-is-movement-education';
+    } else if (whatYouNeed === 'posture') {
+      if (whoYouAre === 'desk-worker') {
+        route = '/desk-worker-wellness';
+      } else {
+        route = '/posture-correction';
       }
+    } else if (whatYouNeed === 'movement') {
+      route = '/movement-coaching-santa-cruz';
+    }
+
+    // Special cases based on who you are
+    if (whoYouAre === 'desk-worker' && whatYouNeed === 'posture') {
+      route = '/desk-worker-wellness';
+    } else if (whoYouAre === 'senior' && whatYouNeed === 'performance') {
+      route = '/train-for-longevity';
     }
 
     navigate(route);
   };
 
-  const currentQuestion = step === 1 ? questions[0] : getSecondQuestion();
-  const totalSteps = 2;
+  const currentQuestion = questions[step - 1];
+  const totalSteps = 3;
   const progress = (step / totalSteps) * 100;
 
   return (
@@ -163,10 +125,10 @@ function QuickStartQuiz() {
 
       <div className="mb-8">
         <h3 className="text-xl md:text-2xl font-semibold text-neutralDark mb-6 text-center">
-          {currentQuestion?.question}
+          {currentQuestion.question}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {currentQuestion?.options.map((option) => (
+          {currentQuestion.options.map((option) => (
             <button
               key={option.value}
               onClick={() => handleAnswer(currentQuestion.id, option.value)}
