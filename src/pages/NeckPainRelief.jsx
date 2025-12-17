@@ -24,7 +24,7 @@ function NeckPainRelief() {
     },
     {
       question: "Can I still work at my computer while doing this work?",
-      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your neck. The goal isn't to stop you from working-it's to help you work in ways that don't create neck problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to move your head and neck in ways that don't strain them. Many clients find they can work longer without pain."
+      answer: "Yes, but we'll teach you better ergonomics and movement patterns to support your neck. The goal isn't to stop you from working—it's to help you work in ways that don't create neck problems. We'll give you simple practices to do throughout your workday, improve your workstation setup, and teach you how to move your head and neck in ways that don't strain them. Many clients find they can work longer without pain."
     },
     {
       question: "What if I've already tried chiropractic adjustments for my neck?",
@@ -148,7 +148,7 @@ function NeckPainRelief() {
                   Nerve Issues / Tingling
                 </h3>
                 <p className="text-neutralDark/80">
-                  Tingling in your hands or arms can come from tight neck muscles compressing nerves. Not all nerve issues require surgery . many respond to releasing fascial restrictions.
+                  Tingling in your hands or arms can come from tight neck muscles compressing nerves. Not all nerve issues require surgery—many respond to releasing fascial restrictions.
                 </p>
               </div>
             </div>
@@ -217,7 +217,10 @@ function NeckPainRelief() {
 
           <div className="border-l-4 border-accent pl-6 mb-16">
             <p className="text-lg text-neutralDark/80 leading-relaxed italic">
-              "I had chronic neck pain and headaches for 5 years. Tried everything. After working with Rock, my headaches are gone and I can actually turn my head to check my blind spot without pain. Life-changing." . Sarah, 42, Software Engineer
+              "I had chronic neck pain and headaches for 5 years. Tried everything. After working with Rock, my headaches are gone and I can actually turn my head to check my blind spot without pain. Life-changing."
+            </p>
+            <p className="text-neutralDark/70 mt-3">
+              — Sarah, 42, Software Engineer
             </p>
           </div>
 
