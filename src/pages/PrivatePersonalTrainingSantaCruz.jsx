@@ -152,9 +152,9 @@ function PrivatePersonalTrainingSantaCruz() {
 
         <section className="bg-neutralLight py-16 md:py-24 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Private Training Studio in Santa Cruz</h2>
+            <h2 className="text-3xl md:text-4xl font-heading text-primary mb-8">Training Locations in Santa Cruz</h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-8">
-              The studio is located in Santa Cruz, easily accessible from downtown, the Westside, Eastside, and surrounding communities. It's a private, focused environment a world away from crowded gyms and mirrors everywhere.
+              We train at Mavericks Fitness in Santa Cruz or your private location. Both options provide a focused, distraction-free environment, easily accessible from downtown, the Westside, Eastside, and surrounding communities.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -165,7 +165,7 @@ function PrivatePersonalTrainingSantaCruz() {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold text-primary mb-2">100% Private</h3>
-                <p className="text-neutralDark/80">Just you and Rock. No distractions, no crowds.</p>
+                <p className="text-neutralDark/80">Just you and Rock Hudson. No distractions, no crowds.</p>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-md text-center">
                 <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
