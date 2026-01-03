@@ -204,7 +204,7 @@ function AnatomyTrainsTeacher() {
             </h2>
             
             <p className="text-lg text-neutralDark/80 mb-4 leading-relaxed">
-              Tom Myers studied with Ida Rolf (creator of Rolfing/Structural Integration), then spent decades refining and articulating the fascial continuities that make this work effective. His book "Anatomy Trains" is used in massage schools, physical therapy programs, and medical schools worldwide.
+              Tom Myers studied with Ida Rolf (founder of Structural Integration), then spent decades refining and articulating the fascial continuities that make this work effective. His book "Anatomy Trains" is used in massage schools, physical therapy programs, and medical schools worldwide.
             </p>
             
             <p className="text-lg text-neutralDark/80 leading-relaxed">

@@ -45,7 +45,7 @@ function Surfers() {
       <SEO 
         title="Bodywork for Surfers | Santa Cruz Structural Integration"
         description="Stay in the water longer. Structural Integration and movement training for surfers dealing with shoulder pain, back issues, and mobility restrictions."
-        keywords="surfers bodywork santa cruz, surfing injury prevention, shoulder pain surfing, surf fitness santa cruz, rolfing for surfers"
+        keywords="surfers bodywork santa cruz, surfing injury prevention, shoulder pain surfing, surf fitness santa cruz, structural integration for surfers"
         structuredData={[getBreadcrumbSchema(breadcrumbs), getFAQSchema(faqs)]}
       />
       

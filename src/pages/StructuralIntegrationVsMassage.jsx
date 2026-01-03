@@ -5,19 +5,19 @@ import SEO from '../components/SEO';
 import { getBreadcrumbSchema } from '../utils/structuredData';
 import { Link } from 'react-router-dom';
 
-function RolfingVsMassage() {
+function StructuralIntegrationVsMassage() {
   const breadcrumbs = [
     { name: 'Home', url: '/' },
     { name: 'Structural Integration', url: '/structural-integration' },
-    { name: 'Rolfing vs Massage', url: '/rolfing-vs-massage' }
+    { name: 'Structural Integration vs Massage', url: '/structural-integration-vs-massage' }
   ];
 
   return (
     <PageLayout>
       <SEO 
-        title="Rolfing vs Massage: What's the Difference? | Santa Cruz Bodywork"
-        description="Understand the key differences between Rolfing (Structural Integration) and massage therapy. Learn which approach is right for your goals."
-        keywords="rolfing vs massage, structural integration vs massage, difference between rolfing and massage, santa cruz bodywork"
+        title="Structural Integration vs Massage: What's the Difference? | Santa Cruz Bodywork"
+        description="Understand the key differences between Structural Integration and massage therapy. Learn which approach is right for your goals."
+        keywords="structural integration vs massage, SI vs massage, difference between structural integration and massage, santa cruz bodywork"
         structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
@@ -49,7 +49,7 @@ function RolfingVsMassage() {
                 <tr>
                   <th className="p-4 text-left"></th>
                   <th className="p-4 text-left">Massage Therapy</th>
-                  <th className="p-4 text-left">Rolfing / Structural Integration</th>
+                  <th className="p-4 text-left">Structural Integration</th>
                 </tr>
               </thead>
               <tbody className="text-neutralDark/80">
@@ -116,10 +116,10 @@ function RolfingVsMassage() {
                 </p>
               </div>
 
-              {/* Rolfing */}
+              {/* Structural Integration */}
               <div className="bg-accent/5 rounded-2xl p-8">
                 <h3 className="text-2xl font-semibold text-neutralDark mb-4">
-                  Rolfing / Structural Integration: Transformation
+                  Structural Integration: Transformation
                 </h3>
                 <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
                   Structural Integration works with fascia (connective tissue) to:
@@ -224,7 +224,7 @@ function RolfingVsMassage() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-semibold text-neutralDark mb-2">
-                  Does Rolfing hurt more than massage?
+                  Does Structural Integration hurt more than massage?
                 </h3>
                 <p className="text-neutralDark/80">
                   Not necessarily. We work at the edge of sensation, but never into pain. Some areas may be tender, but it should feel productive, not unbearable. Many find it deeply satisfying in a different way than relaxation massage.
@@ -233,7 +233,7 @@ function RolfingVsMassage() {
 
               <div>
                 <h3 className="text-xl font-semibold text-neutralDark mb-2">
-                  Can I get Rolfing for relaxation?
+                  Can I get Structural Integration for relaxation?
                 </h3>
                 <p className="text-neutralDark/80">
                   While therapeutic and often deeply satisfying, SI isn't primarily for relaxation. If you're looking to de-stress and unwind, massage is the better choice. If you want lasting structural change that happens to feel good, SI is for you.
@@ -297,4 +297,5 @@ function RolfingVsMassage() {
   );
 }
 
-export default RolfingVsMassage;
+export default StructuralIntegrationVsMassage;
+

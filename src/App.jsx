@@ -178,7 +178,7 @@ const WellnessHub = lazy(() => import('./pages/WellnessHub'));
 // SEO Pages
 const SantaCruzStructuralIntegration = lazy(() => import('./pages/SantaCruzStructuralIntegration'));
 const ChronicPainRelief = lazy(() => import('./pages/ChronicPainRelief'));
-const RolfingVsMassage = lazy(() => import('./pages/RolfingVsMassage'));
+const StructuralIntegrationVsMassage = lazy(() => import('./pages/StructuralIntegrationVsMassage'));
 const Surfers = lazy(() => import('./pages/Surfers'));
 const BackPainSantaCruz = lazy(() => import('./pages/BackPainSantaCruz'));
 const PostureCorrection = lazy(() => import('./pages/PostureCorrection'));
@@ -409,7 +409,9 @@ function AppRoutes() {
         {/* SEO Pages */}
         <Route path="/santa-cruz-structural-integration" element={<SantaCruzStructuralIntegration />} />
         <Route path="/chronic-pain-relief" element={<ChronicPainRelief />} />
-        <Route path="/rolfing-vs-massage" element={<RolfingVsMassage />} />
+        <Route path="/structural-integration-vs-massage" element={<StructuralIntegrationVsMassage />} />
+        {/* Redirect old Rolfing URL */}
+        <Route path="/rolfing-vs-massage" element={<Navigate to="/structural-integration-vs-massage" replace />} />
         <Route path="/surfers" element={<Surfers />} />
         <Route path="/back-pain-santa-cruz" element={<BackPainSantaCruz />} />
         <Route path="/posture-correction" element={<PostureCorrection />} />

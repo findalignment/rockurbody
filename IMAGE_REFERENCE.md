@@ -37,45 +37,6 @@ These are the large banner images at the top of pages. Currently using placehold
 | Book Movement Education | `/services-hero.jpg` | `book-movement-hero` | Booking page for Movement | |
 | Book Combo Programs | `/packages-hero.jpg` | `book-combo-hero` | Booking page for combos | |
 
-### Problem-Specific SEO Pages
-
-| Page | Current Filename | Airtable Name | Description | Has Unique Image |
-|------|-----------------|---------------|-------------|------------------|
-| Chronic Pain Relief | `/approach-hero.jpg` | `chronic-pain-hero` | Chronic pain treatment | |
-| Back Pain Santa Cruz | `/back-pain-hero.jpg` | `back-pain-hero` | Back pain relief | ✅ |
-| Hip Pain Treatment | `/hip-series-hero.jpg` | `hip-pain-hero` | Hip pain treatment | ✅ |
-| Shoulder Pain Relief | `/shoulder-pain-hero.jpg` | `shoulder-pain-hero` | Shoulder pain | ✅ |
-| Shoulder Pain Treatment | `/shoulder-pain-hero.jpg` | `shoulder-pain-treatment-hero` | Shoulder pain treatment | ✅ |
-| Neck Pain Relief | `/neck-pain-treatment-hero.jpg` | `neck-pain-hero` | Neck pain | ✅ |
-| Neck Pain Santa Cruz | `/neck-pain-treatment-hero.jpg` | `neck-pain-santa-cruz-hero` | Neck pain local | ✅ |
-| Sciatica Relief | `/sciatica-hero.jpg` | `sciatica-hero` | Sciatica treatment | ✅ |
-| Sciatica Relief Santa Cruz | `/hip-series-hero.jpg` | `sciatica-santa-cruz-hero` | Sciatica local | |
-| Knee Pain Treatment | `/knee-pain-hero.jpg` | `knee-pain-hero` | Knee pain | ✅ |
-| TMJ Relief | `/approach-hero.jpg` | `tmj-hero` | TMJ dysfunction | |
-| Plantar Fasciitis | `/plantar-fasciitis-hero.jpg` | `plantar-fasciitis-hero` | Plantar fasciitis | ✅ |
-| Frozen Shoulder | `/frozen-shoulder-hero.jpg` | `frozen-shoulder-hero` | Frozen shoulder | ✅ |
-| IT Band Syndrome | `/it-band-hero.jpg` | `it-band-hero` | IT band syndrome | ✅ |
-| Rotator Cuff Injury | `/rotator-cuff-treatment-hero.jpg` | `rotator-cuff-hero` | Rotator cuff | ✅ |
-| Achilles Tendonitis | `/achilles-hero.jpg` | `achilles-hero` | Achilles tendonitis | ✅ |
-| Bunion & Foot Pain | `/bunion-foot-pain-hero.jpg` | `bunion-foot-pain-hero` | Bunion and foot pain | ✅ |
-| Headache & Migraine | `/headache-migraine-hero.jpg` | `headache-migraine-hero` | Headaches and migraines | ✅ |
-| Thoracic Outlet Syndrome | `/thoracic-outlet-hero.jpg` | `thoracic-outlet-hero` | Thoracic outlet syndrome | ✅ |
-| Whiplash Recovery | `/whiplash-hero.jpg` | `whiplash-hero` | Whiplash recovery | ✅ |
-| Scoliosis Treatment | `/scoliosis-hero.jpg` | `scoliosis-hero` | Scoliosis | ✅ |
-
-### Activity/Demographic Pages
-
-| Page | Current Filename | Airtable Name | Description | Has Unique Image |
-|------|-----------------|---------------|-------------|------------------|
-| Surfers | `/surfers-hero.jpg` | `surfers-hero` | For surfers | ✅ |
-| Climbers | `/climbers-hero.jpg` | `climbers-hero` | For climbers | ✅ |
-| Cyclists & Runners | `/cyclists-runners-hero.jpg` | `cyclists-runners-hero` | For cyclists and runners | ✅ |
-| Desk Worker Wellness | `/desk-worker-hero.jpg` | `desk-worker-hero` | For desk workers | ✅ |
-| Active Aging | `/active-aging-hero.jpg` | `active-aging-hero` | For older adults | ✅ |
-| Pregnancy & Postpartum | `/approach-hero.jpg` | `pregnancy-postpartum-hero` | Pregnancy/postpartum | |
-| Golf Performance | `/golf-hero.jpg` | `golf-hero` | Golf performance | ✅ |
-| Athletic Performance | `/athletic-performance-hero.jpg` | `athletic-performance-hero` | General athletics | ✅ |
-| Personal Trainer SC | `/training-hero.jpg` | `personal-trainer-hero` | Personal training | |
 
 ### Educational/Comparison Pages
 

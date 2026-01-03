@@ -16,7 +16,7 @@ function About() {
       <Helmet>
         <title>About Rock Hudson | Certified Structural Integrator & Movement Specialist Santa Cruz</title>
         <meta name="description" content="Meet Rock Hudson, certified Anatomy Trains Structural Integrator and NASM personal trainer serving Santa Cruz and the Bay Area. 10+ years helping people move better through fascia work and functional movement coaching." />
-        <meta name="keywords" content="Rock Hudson, structural integrator Santa Cruz, certified Rolfing practitioner, NASM personal trainer, movement specialist, Anatomy Trains, fascia specialist, bodywork expert Santa Cruz, functional movement coach" />
+        <meta name="keywords" content="Rock Hudson, structural integrator Santa Cruz, certified structural integration practitioner, NASM personal trainer, movement specialist, Anatomy Trains, fascia specialist, bodywork expert Santa Cruz, functional movement coach" />
         
         {/* Open Graph */}
         <meta property="og:title" content="About Rock Hudson | Structural Integration Expert" />

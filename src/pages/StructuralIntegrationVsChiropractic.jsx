@@ -16,8 +16,8 @@ function StructuralIntegrationVsChiropractic() {
     <PageLayout>
       <SEO 
         title="Structural Integration vs Chiropractic | What's the Difference?"
-        description="Understand the key differences between Structural Integration (Rolfing) and chiropractic care. Learn which approach is right for your needs."
-        keywords="structural integration vs chiropractic, rolfing vs chiropractor, bodywork vs adjustment, fascia vs spine, santa cruz"
+        description="Understand the key differences between Structural Integration and chiropractic care. Learn which approach is right for your needs."
+        keywords="structural integration vs chiropractic, SI vs chiropractor, bodywork vs adjustment, fascia vs spine, santa cruz"
         structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
@@ -243,8 +243,8 @@ function StructuralIntegrationVsChiropractic() {
               <Link to="/structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 Structural Integration Hub
               </Link>
-              <Link to="/rolfing-vs-massage" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
-                Rolfing vs Massage
+              <Link to="/structural-integration-vs-massage" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                SI vs Massage
               </Link>
               <Link to="/santa-cruz-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 Santa Cruz SI

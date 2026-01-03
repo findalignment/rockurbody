@@ -228,7 +228,7 @@ INFORMATION PAGES TO REFERENCE:
 
 **Educational Pages:**
 . Structural Integration basics → /what-is-structural-integration
-. SI vs Massage → /rolfing-vs-massage
+. SI vs Massage → /structural-integration-vs-massage
 . SI vs Chiropractic → /structural-integration-vs-chiropractic
 . Fascia / fascial release → /fascial-release
 . Movement screening → /movement-screening
@@ -765,7 +765,7 @@ export function detectIntent(userMessage) {
   
   // Structural Integration without duration . suggest most common (90min) or show options
   if (message.includes('structural integration') || message.includes('fascial release') || 
-      message.includes('bodywork') || message.includes('rolfing')) {
+      message.includes('bodywork')) {
     // If they mention chronic pain or serious issues, suggest 120min
     if (message.includes('chronic') || message.includes('years') || message.includes('severe') || 
         message.includes('really bad') || message.includes('multiple areas')) {

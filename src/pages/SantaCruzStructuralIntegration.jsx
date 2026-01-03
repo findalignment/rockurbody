@@ -15,9 +15,9 @@ function SantaCruzStructuralIntegration() {
   return (
     <PageLayout>
       <SEO 
-        title="Structural Integration Santa Cruz | Rolfing & Bodywork | Rock Hudson"
-        description="Expert Structural Integration and Rolfing in Santa Cruz, CA. Relieve chronic pain, improve posture, and move better. Certified practitioner with 20+ years experience."
-        keywords="structural integration santa cruz, rolfing santa cruz, bodywork santa cruz, fascia work santa cruz, posture correction, chronic pain relief"
+        title="Structural Integration Santa Cruz | Bodywork | Rock Hudson"
+        description="Expert Structural Integration in Santa Cruz, CA. Relieve chronic pain, improve posture, and move better. Certified practitioner with 12+ years experience."
+        keywords="structural integration santa cruz, bodywork santa cruz, fascia work santa cruz, posture correction, chronic pain relief"
         structuredData={getBreadcrumbSchema(breadcrumbs)}
       />
       
@@ -25,7 +25,7 @@ function SantaCruzStructuralIntegration() {
         imageSrc="/services-hero.jpg"
         title="Structural Integration in Santa Cruz"
         subtitle="Expert bodywork that helps you move, feel, and live better"
-        alt="Structural integration and Rolfing bodywork services in Santa Cruz, California with certified practitioner Rock Hudson"
+        alt="Structural integration bodywork services in Santa Cruz, California with certified practitioner Rock Hudson"
       />
 
 
@@ -48,7 +48,7 @@ function SantaCruzStructuralIntegration() {
               What is Structural Integration?
             </h2>
             <p className="text-lg text-neutralDark/80 leading-relaxed mb-4">
-              Structural Integration (often called Rolfing) is a specialized form of bodywork that focuses on your body's connective tissue, the fascia that wraps around every muscle, bone, and organ. When this tissue gets tight, restricted, or misaligned, it creates:
+              Structural Integration is a specialized form of bodywork that focuses on your body's connective tissue—the fascia that wraps around every muscle, bone, and organ. When this tissue gets tight, restricted, or misaligned, it creates:
             </p>
             <ul className="space-y-3 text-lg text-neutralDark/80 ml-6 mb-6">
               <li>• Chronic pain and tension</li>
@@ -236,8 +236,8 @@ function SantaCruzStructuralIntegration() {
               <Link to="/what-is-structural-integration" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 What Is Structural Integration?
               </Link>
-              <Link to="/rolfing-vs-massage" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
-                Rolfing vs Massage
+              <Link to="/structural-integration-vs-massage" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
+                SI vs Massage
               </Link>
               <Link to="/structural-integration-vs-chiropractic" className="text-sm px-4 py-2 bg-sage/10 text-primary rounded-lg hover:bg-sage/20 transition">
                 SI vs Chiropractic

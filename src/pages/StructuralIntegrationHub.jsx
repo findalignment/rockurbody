@@ -101,9 +101,9 @@ function StructuralIntegrationHub() {
   return (
     <PageLayout>
       <SEO
-        title="Structural Integration Santa Cruz | Rolfing & Fascial Release"
+        title="Structural Integration Santa Cruz | Fascial Release"
         description="Expert Structural Integration (SI) in Santa Cruz. Transform your body's alignment, release chronic tension, and restore natural movement through fascial bodywork."
-        keywords="structural integration, rolfing, fascial release, bodywork, myofascial release, postural alignment, Santa Cruz SI"
+        keywords="structural integration, fascial release, bodywork, myofascial release, postural alignment, Santa Cruz SI"
         structuredData={structuredData}
       />
 

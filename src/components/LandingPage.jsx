@@ -374,7 +374,7 @@ function LandingPage() {
     <SEO
       title="Movement Education & Structural Integration in Santa Cruz, CA"
       description="Expert movement education and structural integration in Santa Cruz, CA. Specializing in pain relief, posture correction, and performance enhancement through hands-on fascia work and personalized movement coaching."
-      keywords="structural integration Santa Cruz, Rolfing Santa Cruz, functional fitness Santa Cruz, movement education, fascia therapy, bodywork Santa Cruz, mobile personal training, posture correction, pain relief Santa Cruz, movement specialist Bay Area, structural integrator, functional movement coach"
+      keywords="structural integration Santa Cruz, functional fitness Santa Cruz, movement education, fascia therapy, bodywork Santa Cruz, mobile personal training, posture correction, pain relief Santa Cruz, movement specialist Bay Area, structural integrator, functional movement coach"
       structuredData={[
         getLocalBusinessSchema(),
         getOrganizationSchema(),

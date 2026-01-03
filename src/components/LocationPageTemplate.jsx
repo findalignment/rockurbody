@@ -116,7 +116,7 @@ function LocationPageTemplate({
               </div>
               <div className="md:w-2/3">
                 <p className="text-lg md:text-xl text-neutralDark/80 leading-relaxed mb-6">
-                  Hi, I'm Rock Hudson. I specialize in helping people in {city} move better, feel better, and get lasting results through a unique combination of structural integration (like Rolfing) and intelligent movement education.
+                  Hi, I'm Rock Hudson. I specialize in helping people in {city} move better, feel better, and get lasting results through a unique combination of structural integration and intelligent movement education.
                 </p>
                 <p className="text-lg md:text-xl text-neutralDark/80 leading-relaxed mb-6">
                   Unlike typical personal trainers who just count reps, I look at <em>why</em> your body moves the way it does. Through hands-on bodywork and personalized movement coaching, I help you address the root causes of pain, stiffness, and limitation, not just treat symptoms.

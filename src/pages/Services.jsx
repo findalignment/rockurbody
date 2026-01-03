@@ -21,9 +21,9 @@ function Services() {
   return (
     <PageLayout>
       <Helmet>
-        <title>Structural Integration Santa Cruz | Rolfing & Movement Education Services - Rock Ur Body</title>
-        <meta name="description" content="Expert structural integration (Rolfing-style bodywork) and functional movement coaching in Santa Cruz. Hands-on fascia work, posture correction, and personalized training. Mobile service available throughout Bay Area. Book your session today." />
-        <meta name="keywords" content="structural integration Santa Cruz, Rolfing Santa Cruz, movement education Santa Cruz, functional movement coaching, mobile personal training Santa Cruz, fascia therapy, posture correction Santa Cruz, bodywork Santa Cruz, corrective exercise, movement specialist Bay Area, private training Santa Cruz" />
+        <title>Structural Integration Santa Cruz | Movement Education Services - Rock Ur Body</title>
+        <meta name="description" content="Expert structural integration and functional movement coaching in Santa Cruz. Hands-on fascia work, posture correction, and personalized training. Mobile service available throughout Bay Area. Book your session today." />
+        <meta name="keywords" content="structural integration Santa Cruz, movement education Santa Cruz, functional movement coaching, mobile personal training Santa Cruz, fascia therapy, posture correction Santa Cruz, bodywork Santa Cruz, corrective exercise, movement specialist Bay Area, private training Santa Cruz" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Structural Integration & Movement Education | Rock Your Body" />

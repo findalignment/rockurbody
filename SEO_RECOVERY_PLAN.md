@@ -64,7 +64,7 @@ One-on-one movement training in Santa Cruz focused on how you move...
 
 **NEW Meta Description:**
 ```
-#1 Rated Personal Trainer in Santa Cruz. Rock Hudson offers personalized training combining Structural Integration, movement education & strength training. 15+ years experience. Book your free consultation today!
+#1 Rated Personal Trainer in Santa Cruz. Rock Hudson offers personalized training combining Structural Integration, movement education & strength training. 12+ years experience. Book your free consultation today!
 ```
 
 ### 3. **Add Schema Markup** ⚡ CRITICAL
